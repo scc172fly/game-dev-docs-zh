@@ -2,6 +2,8 @@
 
 面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet 和 Microsoft Orleans 中文文档。
 
+**[进入中文文档导航首页](https://scc172fly.github.io/game-dev-docs-zh/)**
+
 ## 在线文档
 
 | 项目 | 中文文档 | 官方源码仓库 | 官方文档 |
