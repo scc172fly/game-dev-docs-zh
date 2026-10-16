@@ -1,6 +1,6 @@
 # 游戏开发中文文档
 
-面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet 和 Microsoft Orleans 中文文档。
+面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans 和 PureMVC 中文文档。
 
 **[进入中文文档导航首页](https://scc172fly.github.io/game-dev-docs-zh/)**
 
@@ -11,6 +11,7 @@
 | Mirror Networking | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/mirror-networking/) | [MirrorNetworking/Mirror](https://github.com/MirrorNetworking/Mirror) | [mirror-networking.gitbook.io/docs](https://mirror-networking.gitbook.io/docs/) |
 | FishNet | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/fish-net/) | [FirstGearGames/FishNet](https://github.com/FirstGearGames/FishNet) | [fish-networking.gitbook.io/docs](https://fish-networking.gitbook.io/docs/) |
 | Microsoft Orleans 10.4.0 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/orleans/) | [dotnet/orleans](https://github.com/dotnet/orleans) | [dotnet.github.io/orleans/docs](https://dotnet.github.io/orleans/docs/) |
+| PureMVC ActionScript 开发者指南 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/actionscript-developers-guide/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
 
 ## 免责声明与版权
 
