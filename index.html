@@ -359,10 +359,36 @@
 
     .source-link:hover { color: var(--text); text-decoration: underline; }
 
+    .doc-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0 26px 22px;
+    }
+
+    .related-doc {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .related-doc:hover { border-color: var(--accent); background: var(--accent-soft); }
+    .related-doc strong { display: block; font-size: 14px; }
+    .related-doc small { display: block; margin-top: 5px; color: var(--muted); line-height: 1.6; }
+    .card-main:focus-visible, .related-doc:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+    .puremvc > .tag { margin: auto 26px 22px; padding-top: 0; }
+
     .mirror { --accent: var(--blue); --accent-soft: var(--blue-soft); --glow: rgba(78, 142, 232, .24); }
     .fishnet { --accent: var(--cyan); --accent-soft: var(--cyan-soft); --glow: rgba(70, 200, 193, .21); }
     .orleans { --accent: var(--violet); --accent-soft: var(--violet-soft); --glow: rgba(148, 109, 234, .22); }
-    .puremvc { --accent: #73b6ff; --accent-soft: rgba(115, 182, 255, .12); --glow: rgba(61, 126, 255, .22); }
+    .puremvc { --accent: #73b6ff; --accent-soft: rgba(115, 182, 255, .12); --glow: rgba(61, 126, 255, .22); overflow: clip; }
 
     footer {
       display: flex;
@@ -392,6 +418,8 @@
       .section-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
       .card-main { padding: 22px 22px 18px; }
       .card-footer { padding: 13px 22px; }
+      .doc-links { grid-template-columns: 1fr; margin: 0 22px 18px; }
+      .puremvc > .tag { margin: auto 22px 18px; }
       footer { align-items: flex-start; flex-direction: column; }
     }
 
@@ -408,7 +436,7 @@
         <span>Game Dev Docs · ZH</span>
       </div>
       <div class="top-actions">
-        <span class="status">4 套中文文档在线</span>
+        <span class="status">4 个项目 · 5 套中文文档</span>
         <div class="theme-switcher" role="group" aria-label="页面主题">
           <button class="theme-button" type="button" data-theme-choice="light" aria-label="使用浅色主题" title="浅色主题">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -490,19 +518,28 @@
       </article>
 
       <article class="card puremvc">
-        <a class="card-main" href="https://scc172fly.github.io/game-dev-docs-zh/puremvc/actionscript-developers-guide/" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 PureMVC ActionScript 开发者指南中文译本">
+        <div class="card-main">
           <div class="card-top">
             <span class="icon" aria-hidden="true">
               <img class="project-logo" src="https://puremvc.org/images/favicon.ico" alt="">
             </span>
-            <span class="arrow" aria-hidden="true">↗</span>
           </div>
-          <h3>PureMVC 开发者指南</h3>
-          <p class="card-desc">《ActionScript Developer's Guide to PureMVC》中文译本，完整保留原书十章结构与代码示例。</p>
-          <span class="tag">ActionScript · MVC Architecture</span>
-        </a>
+          <h3>PureMVC</h3>
+          <p class="card-desc">跨语言、跨平台的轻量级 MVC 框架，通过 Model、View、Controller 的职责分离与通知机制组织应用，可用于客户端及服务端的应用架构。</p>
+        </div>
+        <nav class="doc-links" aria-label="PureMVC 中文文档">
+          <a class="related-doc" href="puremvc/trilogy/" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 PureMVC 三编中文文档">
+            <span><strong>三编中文文档</strong><small>概念架构 · UML · 最佳实践<br>附 UML 教程与技术勘误</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="related-doc" href="puremvc/actionscript-developers-guide/" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 PureMVC ActionScript 开发者指南中文译本">
+            <span><strong>ActionScript 开发者指南</strong><small>全 10 章中文译本<br>原书结构与代码示例</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </nav>
+        <span class="tag">Cross-platform · MVC Framework</span>
         <div class="card-footer">
-          <span>全 10 章中文译本</span>
+          <span>两套中文文档</span>
           <a class="source-link" href="https://puremvc.org/" target="_blank" rel="noopener noreferrer">官方网站 ↗</a>
         </div>
       </article>

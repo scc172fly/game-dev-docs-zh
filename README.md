@@ -1,6 +1,6 @@
 # 游戏开发中文文档
 
-面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans 和 PureMVC 中文文档。
+面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans 和 PureMVC 四个项目，共五套中文文档。
 
 **[进入中文文档导航首页](https://scc172fly.github.io/game-dev-docs-zh/)**
 
@@ -11,7 +11,18 @@
 | Mirror Networking | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/mirror-networking/) | [MirrorNetworking/Mirror](https://github.com/MirrorNetworking/Mirror) | [mirror-networking.gitbook.io/docs](https://mirror-networking.gitbook.io/docs/) |
 | FishNet | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/fish-net/) | [FirstGearGames/FishNet](https://github.com/FirstGearGames/FishNet) | [fish-networking.gitbook.io/docs](https://fish-networking.gitbook.io/docs/) |
 | Microsoft Orleans 10.4.0 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/orleans/) | [dotnet/orleans](https://github.com/dotnet/orleans) | [dotnet.github.io/orleans/docs](https://dotnet.github.io/orleans/docs/) |
+| PureMVC 三编文档 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/trilogy/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
 | PureMVC ActionScript 开发者指南 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/actionscript-developers-guide/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
+
+## PureMVC 阅读顺序
+
+建议先阅读[三编文档](https://scc172fly.github.io/game-dev-docs-zh/puremvc/trilogy/)，建立架构与角色协作的整体认识，再阅读 [ActionScript 开发者指南](https://scc172fly.github.io/game-dev-docs-zh/puremvc/actionscript-developers-guide/)中的完整章节与代码示例。
+
+- 第一编：概念架构与介绍。
+- 第二编：框架概述与 UML，涵盖核心角色、类图与接口。
+- 第三编：实现惯例与最佳实践。
+- 三编共 37 个正文小节，另附 33 节 UML 从入门到实践教程、C# 示例与技术校订勘误。
+- 开发者指南：保留原书全 10 章结构与代码示例。
 
 ## 免责声明与版权
 
