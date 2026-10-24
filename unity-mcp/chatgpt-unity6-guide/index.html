@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" data-theme-mode="auto" lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="dark light" name="color-scheme"/>
+<title>ChatGPT × Unity 6 MCP 接入实战指南｜Windows 桌面版</title>
+<link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImwiIHgxPSI3IiB5MT0iOSIgeDI9IjMzIiB5Mj0iNTQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjNjVhZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNDk4YmQ2Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9InIiIHgxPSIzNiIgeTE9IjEwIiB4Mj0iNjEiIHkyPSI1NiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiMzOGNiYjUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxZGE2YTQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNMjkgNSA3IDE4djI4bDIyIDEzVjVaIiBzdHJva2U9InVybCgjbCkiIHN0cm9rZS13aWR0aD0iMi43IiBmaWxsPSIjMzk3M2FmIiBmaWxsLW9wYWNpdHk9Ii4xIi8+PHBhdGggZD0iTTM1IDUgNTcgMTh2MjhMMzUgNTlWNVoiIHN0cm9rZT0idXJsKCNyKSIgc3Ryb2tlLXdpZHRoPSIyLjciIGZpbGw9IiMxOWI0YTMiIGZpbGwtb3BhY2l0eT0iLjA5Ii8+PHBhdGggZD0iTTcgMTggMjkgMzFNNTcgMTggMzUgMzEiIHN0cm9rZS13aWR0aD0iMi4yIiBzdHJva2U9IiM2Y2JhZWYiIG9wYWNpdHk9Ii42MyIvPjxwYXRoIGQ9Ik0yOSAyMGg2TTI5IDMxaDZNMjkgNDNoNiIgc3Ryb2tlPSIjMzRiZmM2IiBzdHJva2Utd2lkdGg9IjMuMyIvPjxwYXRoIGQ9Ik0yOSA1djU0TTM1IDV2NTQiIHN0cm9rZS13aWR0aD0iMS4yIiBvcGFjaXR5PSIuMjUiIHN0cm9rZT0iI2M1ZTZmNyIvPjwvc3ZnPg==" rel="icon" type="image/svg+xml"/>
+<meta content="#131a24" name="theme-color"/>
+<script>(function(){try{var v=localStorage.getItem('unity-mcp-doc-theme');var mode=(v==='light'||v==='dark'||v==='auto')?v:'auto';var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.dataset.themeMode=mode;document.documentElement.dataset.theme=(mode==='auto'?(dark?'dark':'light'):mode);}catch(e){document.documentElement.dataset.theme='dark';document.documentElement.dataset.themeMode='auto';}})();</script>
+<style>
+:root{--bg:#0c1017;--surface:#131a24;--panel:#18212d;--hover:#202e3b;--line:#2a3746;--text:#e7edf6;--muted:#a4b2c4;--soft:#7c8fa4;--blue:#72b9ff;--blue-dim:#152f49;--green:#75deb4;--amber:#f2c981;--red:#ff9696;--code:#0c1723;--shadow:rgba(0,0,0,.3);--mark:#25527b;--img-border:#40505e;--rail:288px;--top:62px}
+:root[data-theme="light"]{--bg:#f6f8fb;--surface:#ffffff;--panel:#f1f5fa;--hover:#e7eff7;--line:#dce4ed;--text:#1b2c3d;--muted:#526578;--soft:#6b8091;--blue:#176fba;--blue-dim:#e6f2fd;--green:#087d5c;--amber:#926419;--red:#ba343e;--code:#edf3f9;--shadow:rgba(29,52,80,.08);--mark:#c9e9ff;--img-border:#d3dfe9}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei UI","Microsoft YaHei","PingFang SC",sans-serif;letter-spacing:.08px;-webkit-font-smoothing:antialiased}button,input{font:inherit}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}::selection{background:var(--mark)}:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+#progress{position:fixed;top:0;left:0;z-index:1000;height:3px;width:0%;background:linear-gradient(90deg,#53aaff,#74e2b6);pointer-events:none;transition:width .08s linear}
+.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:12px;height:var(--top);padding:0 28px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 4px 15px var(--shadow)}.brand{display:flex;align-items:center;gap:11px;white-space:nowrap;color:var(--text);font-weight:700;letter-spacing:.1px}.mark{display:grid;place-items:center;width:30px;height:30px;border:1px solid #478cd1;border-radius:9px;background:var(--blue-dim);color:var(--blue);font-size:18px;font-weight:800}.topactions{display:flex;align-items:center;gap:7px}.button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:9px;cursor:pointer;padding:7px 12px;line-height:1.5;display:inline-flex;align-items:center;gap:7px;transition:.18s}.button:hover{color:var(--text);background:var(--hover);text-decoration:none}.button.primary{color:var(--blue);border-color:color-mix(in srgb,var(--blue) 38%,var(--line));background:var(--blue-dim)}.button:active{transform:translateY(1px)}.themeIcon{font-size:16px}.mobile-toggle{display:none}
+.layout{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);min-height:calc(100vh - var(--top))}.sidebar{position:sticky;top:var(--top);height:calc(100vh - var(--top));border-right:1px solid var(--line);background:var(--surface);overflow:hidden;display:flex;flex-direction:column}.sidebar-upper{padding:22px 18px 15px}.sidebar-label{font-size:11px;letter-spacing:2px;color:var(--soft);font-weight:800;margin-bottom:13px}.search-wrap{position:relative}.search-wrap input{width:100%;border:1px solid var(--line);border-radius:9px;color:var(--text);background:var(--bg);padding:10px 10px 10px 33px;outline:none;font-size:13px}.search-wrap input:focus{border-color:var(--blue)}.search-wrap:before{content:'⌕';position:absolute;top:0;left:11px;color:var(--soft);font-size:22px;line-height:40px}.search-hint{font-size:11px;color:var(--soft);padding-top:7px}.toc{overflow-y:auto;padding:4px 11px 48px;scrollbar-width:thin;scrollbar-color:var(--line) transparent;overscroll-behavior:contain}.toc-group{margin:2px 0}.toc-line{display:flex;align-items:stretch;border-radius:8px}.toc-line:hover{background:var(--hover)}.toc-line.active{background:var(--blue-dim)}.toc-link{color:var(--muted);font-size:13px;line-height:1.5;flex:1;padding:10px 0 10px 11px;min-width:0;overflow-wrap:anywhere}.toc-line.active>.toc-link{color:var(--blue);font-weight:700}.toc-index{color:var(--soft);font-size:11px;font-variant-numeric:tabular-nums;margin-right:7px}.toc-chevron{width:30px;display:grid;place-items:center;border:0;color:var(--soft);background:transparent;cursor:pointer;transition:transform .18s;font-size:11px}.toc-group.open .toc-chevron{transform:rotate(90deg)}.toc-children{display:none;border-left:1px solid var(--line);margin:1px 0 8px 20px;padding-left:8px}.toc-group.open .toc-children{display:block}.toc-child{display:block;padding:6px 9px;color:var(--muted);border-radius:6px;font-size:12px;line-height:1.5}.toc-child.active{color:var(--blue);font-weight:700;background:var(--blue-dim)}.toc-child:hover{background:var(--hover);text-decoration:none}.toc-group.filtered-out,.toc-child.filtered-out{display:none!important}.toc-empty{font-size:13px;color:var(--soft);padding:10px 11px}
+.main{min-width:0}.content{max-width:1030px;margin:0 auto;padding:49px 60px 90px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2.5px;color:var(--blue);text-transform:uppercase}.hero{padding-bottom:40px;border-bottom:1px solid var(--line)}.hero h1{font-size:clamp(31px,3.7vw,48px);letter-spacing:-1.5px;line-height:1.27;margin:16px 0 14px;font-weight:800}.hero .sub{font-size:16px;line-height:1.9;max-width:730px;color:var(--muted);margin:0 0 18px}.pills{display:flex;flex-wrap:wrap;gap:8px;margin:25px 0}.pill{font-size:12px;border:1px solid var(--line);color:var(--muted);border-radius:100px;padding:5px 11px;background:var(--surface)}.pill.green{border-color:color-mix(in srgb,var(--green) 40%,var(--line));color:var(--green)}.meta{color:var(--soft);font-size:12px}.quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:27px 0 5px}.stat{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:18px 17px}.stat b{display:block;font-size:21px;font-weight:800;line-height:1.3;color:var(--text)}.stat span{font-size:12px;color:var(--muted);margin-top:5px;display:block}
+.docsection{padding-top:42px;border-bottom:1px solid var(--line);padding-bottom:42px;scroll-margin-top:85px}.docsection:last-of-type{border:0}.section-kicker{font-size:12px;color:var(--blue);font-weight:700;letter-spacing:1px}.docsection h2{font-size:25px;line-height:1.38;letter-spacing:-.45px;margin:7px 0 19px;font-weight:760;scroll-margin-top:86px}.docsection h3{font-size:17px;line-height:1.45;margin:32px 0 12px;scroll-margin-top:94px;font-weight:740}.docsection p{margin:11px 0;color:var(--muted)}.docsection strong,.docsection b{color:var(--text)}.docsection ul,.docsection ol{padding-left:21px;color:var(--muted)}.docsection li{margin:7px 0}.docsection li strong{color:var(--text)}.docsection code:not(pre code){font-size:.9em;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:2px 5px;color:var(--blue);overflow-wrap:anywhere}
+.notice{padding:13px 17px;border-radius:10px;border:1px solid var(--line);border-left:3px solid var(--blue);background:var(--surface);margin:17px 0;color:var(--muted);font-size:14px}.notice b{color:var(--text)}.notice.success{border-left-color:var(--green)}.notice.warn{border-left-color:var(--amber)}.notice.danger{border-left-color:var(--red)}.step{display:flex;align-items:flex-start;gap:13px;margin:17px 0}.stepno{width:27px;height:27px;flex:none;display:grid;place-items:center;border-radius:8px;color:var(--blue);background:var(--blue-dim);font-weight:800;font-size:13px}.stepmain{flex:1;min-width:0}.stepmain>p:first-child{margin-top:0}.stepmain strong{display:block;margin:0 0 3px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:16px 0;background:var(--surface)}table{width:100%;border-collapse:collapse;min-width:510px;text-align:left;font-size:13.2px}th,td{padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--panel);font-size:12px;color:var(--muted);font-weight:700}tr:last-child td{border:0}td{color:var(--muted)}td:first-child{color:var(--text);font-weight:600}td code{white-space:nowrap}.tag-ok{color:var(--green);font-weight:700}.tag-warn{color:var(--amber);font-weight:700}
+.command{border:1px solid var(--line);border-radius:11px;margin:17px 0;overflow:hidden;background:var(--code)}.codebar{display:flex;justify-content:space-between;align-items:center;padding:8px 13px;border-bottom:1px solid var(--line);background:var(--panel);color:var(--soft);font-size:11px;font-weight:700;letter-spacing:.4px}.copy{cursor:pointer;color:var(--blue);background:transparent;border:0;font-size:12px;padding:3px 7px;border-radius:5px}.copy:hover{background:var(--hover)}pre{padding:15px 18px;overflow-x:auto;margin:0;font:13px/1.85 Consolas,"Cascadia Code","SFMono-Regular",monospace;color:var(--text);tab-size:2}pre code{font:inherit;white-space:pre}pre .cm{color:var(--soft)}.input-line{color:var(--green)}
+.figure img{display:block;max-width:100%;height:auto;margin:auto;border-radius:7px;border:1px solid var(--img-border);cursor:zoom-in}.figure figcaption{font-size:12px;line-height:1.6;color:var(--soft);margin-top:9px;text-align:center}.figure.portrait img{max-height:500px;width:auto}.figure.wide img{width:100%}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:13px}.gallery .gallery img{max-height:380px;width:auto}.flowdiagram{margin:20px 0;padding:23px;border-radius:13px;border:1px solid var(--line);background:var(--surface);display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}.flowbox{border:1px solid var(--line);border-radius:11px;padding:12px 19px;min-width:174px;text-align:center;background:var(--panel);font-size:13px}.flowbox b{display:block;font-size:14px}.flowbox small{display:block;color:var(--soft);font-size:11px}.flowarrow{color:var(--blue);font-size:21px}.status-line{display:grid;grid-template-columns:1fr auto;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);gap:10px;font-size:13px}.status-line:last-child{border:0}.status-line>span:first-child{color:var(--muted)}.badge{border:1px solid var(--line);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:800;white-space:nowrap}.badge.ok{color:var(--green);background:color-mix(in srgb,var(--green) 7%,transparent)}.badge.pending{color:var(--amber);background:color-mix(in srgb,var(--amber) 7%,transparent)}
+.link-list{display:grid;gap:10px}.link-list a{display:flex;justify-content:space-between;gap:8px;padding:12px 15px;border:1px solid var(--line);border-radius:9px;background:var(--surface);font-size:13px}.link-list a:hover{text-decoration:none;background:var(--hover)}.link-list a:after{content:'↗';font-size:17px}.footer{padding:38px 0 20px;color:var(--soft);font-size:12px}.footer strong{color:var(--text)}.backtop{position:fixed;bottom:24px;right:27px;z-index:22;width:42px;height:42px;border:1px solid var(--line);color:var(--text);border-radius:50%;background:var(--surface);box-shadow:0 6px 19px var(--shadow);cursor:pointer;opacity:0;pointer-events:none;transition:.2s}.backtop.show{opacity:1;pointer-events:auto}.backtop:hover{background:var(--hover)}.backdrop{display:none}
+#lightbox{border:0;max-width:min(96vw,1450px);max-height:94vh;background:transparent;padding:0;overflow:visible}#lightbox::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(4px)}#lightbox img{display:block;max-width:95vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 18px 65px #0008}#lightbox button{position:absolute;right:0;top:-46px;color:white;border:1px solid #ffffff50;background:#111a;border-radius:7px;padding:5px 12px;cursor:pointer}
+@media(max-width:1070px){:root{--rail:255px}.content{padding:40px 34px 80px}.topbar{padding:0 20px}}
+@media(max-width:760px){.topbar{padding:0 13px}.brand{font-size:13px}.mobile-toggle{display:inline-flex}.layout{display:block}.sidebar{position:fixed;top:var(--top);bottom:0;left:0;width:min(88vw,318px);height:auto;z-index:44;transform:translateX(-100%);transition:transform .2s ease;box-shadow:16px 0 34px #0003}.sidebar.open{transform:translateX(0)}.backdrop.open{display:block;position:fixed;z-index:40;inset:var(--top) 0 0;background:#0008}.content{padding:30px 20px 70px}.hero h1{font-size:31px;letter-spacing:-.6px}.quick-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.flowdiagram{flex-direction:column}.flowarrow{transform:rotate(90deg)}.docsection h2{font-size:23px}.topactions .desktop-label{display:none}.backtop{right:15px;bottom:15px}.figure.portrait img{max-height:460px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+@media print{html,html[data-theme="dark"]{--bg:white;--surface:white;--panel:#f5f7fa;--text:#101820;--muted:#313d49;--line:#d1dbe4;--code:#f5f7fa;--blue:#1767b1}.topbar,.sidebar,.backdrop,.backtop,#progress,.copy{display:none!important}.layout{display:block}.content{max-width:none;padding:0 12mm}.docsection{break-inside:auto}.command,.figure,.tablewrap{break-inside:avoid}.hero{padding-top:10px}body{font-size:12px}}
+
+/* 2026-10-24: UI revisions */
+.mark{width:34px;height:34px;border:0;border-radius:0;background:transparent;display:flex;align-items:center;justify-content:center;flex:none}
+.mark svg{width:31px;height:31px;display:block}
+.brand{gap:8px}
+.search-wrap{position:relative;display:block}
+.search-wrap input{height:44px;line-height:22px;padding:10px 34px 10px 41px;display:block}
+.search-wrap:before{content:none}
+.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;display:block;pointer-events:none;color:var(--soft)}
+.search-icon svg{width:17px;height:17px;display:block;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linejoin:round;stroke-linecap:round}
+.toc-link{font-weight:700;color:var(--text);font-size:13.5px;padding:10px 2px 10px 11px}
+.toc-line.active>.toc-link{font-weight:800}
+.toc-index{display:none}
+.section-kicker{letter-spacing:1.4px}
+.toc-line{cursor:pointer}
+.toc-chevron{width:33px;min-width:33px;align-self:stretch;line-height:1.1}
+.toc-group.open .toc-chevron{color:var(--blue)}
+.theme-menu-wrap{position:relative}
+#themeToggle{min-width:121px;justify-content:space-between;white-space:nowrap}
+.theme-menu{position:absolute;top:calc(100% + 9px);right:0;min-width:160px;z-index:70;background:var(--surface);border:1px solid var(--line);border-radius:11px;box-shadow:0 15px 40px var(--shadow);padding:5px;display:none}
+.theme-menu.open{display:block}
+.theme-option{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border:0;background:transparent;text-align:left;color:var(--muted);border-radius:7px;font-size:13px;cursor:pointer}
+.theme-option:hover,.theme-option[aria-checked="true"]{background:var(--blue-dim);color:var(--blue)}
+.theme-option .theme-check{margin-left:auto;opacity:0;font-weight:900}
+.theme-option[aria-checked="true"] .theme-check{opacity:1}
+.theme-option svg{flex:none;width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.theme-caret{font-size:10px;color:var(--soft)}
+@media(max-width:760px){#themeToggle{min-width:0}.theme-menu{min-width:154px}}
+
+</style>
+</head>
+<body>
+<div aria-hidden="true" id="progress"></div>
+<header class="topbar">
+<div class="brand"><button aria-expanded="false" aria-label="打开目录" class="button mobile-toggle" id="navToggle">☰</button><div aria-hidden="true" class="mark"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><lineargradient gradientunits="userSpaceOnUse" id="l" x1="7" x2="33" y1="9" y2="54"><stop stop-color="#65afff"></stop><stop offset="1" stop-color="#498bd6"></stop></lineargradient><lineargradient gradientunits="userSpaceOnUse" id="r" x1="36" x2="61" y1="10" y2="56"><stop stop-color="#38cbb5"></stop><stop offset="1" stop-color="#1da6a4"></stop></lineargradient></defs><path d="M29 5 7 18v28l22 13V5Z" fill="#3973af" fill-opacity=".1" stroke="url(#l)" stroke-width="2.7"></path><path d="M35 5 57 18v28L35 59V5Z" fill="#19b4a3" fill-opacity=".09" stroke="url(#r)" stroke-width="2.7"></path><path d="M7 18 29 31M57 18 35 31" opacity=".63" stroke="#6cbaef" stroke-width="2.2"></path><path d="M29 20h6M29 31h6M29 43h6" stroke="#34bfc6" stroke-width="3.3"></path><path d="M29 5v54M35 5v54" opacity=".25" stroke="#c5e6f7" stroke-width="1.2"></path></svg></div><span>Unity MCP <span style="color:var(--soft);font-weight:400">/ 接入手册</span></span></div>
+<div class="topactions"><div class="theme-menu-wrap" id="themeMenuWrap"><button aria-expanded="false" aria-haspopup="menu" aria-label="选择主题" class="button" id="themeToggle" type="button"><span class="themeIcon" id="themeIcon">◐</span><span class="desktop-label" id="themeText">跟随系统</span><span aria-hidden="true" class="theme-caret">▾</span></button><div aria-label="主题选项" class="theme-menu" id="themeMenu" role="menu"><button class="theme-option" data-mode="auto" role="menuitemradio" type="button"><svg viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="4"></rect><path d="M8 21h8M12 18v3"></path></svg>跟随系统<span class="theme-check">✓</span></button><button class="theme-option" data-mode="light" role="menuitemradio" type="button"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>浅色主题<span class="theme-check">✓</span></button><button class="theme-option" data-mode="dark" role="menuitemradio" type="button"><svg viewbox="0 0 24 24"><path d="M20.2 15.6A8.7 8.7 0 0 1 8.4 3.8 8.7 8.7 0 1 0 20.2 15.6Z"></path></svg>深色主题<span class="theme-check">✓</span></button></div></div><button class="button" id="printBtn">⎙ <span class="desktop-label">打印 / PDF</span></button></div>
+</header>
+<div class="backdrop" id="backdrop"></div>
+<div class="layout">
+<aside aria-label="章节书签" class="sidebar" id="sidebar">
+<div class="sidebar-upper"><div class="sidebar-label">文档目录 · 书签</div><label class="search-wrap"><span aria-hidden="true" class="search-icon"><svg viewbox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"></circle><path d="m15.8 15.8 5 5"></path></svg></span><input aria-label="搜索目录" autocomplete="off" id="tocSearch" placeholder="搜索章节或小节…" type="search"/></label><div class="search-hint">点击跳转；阅读时自动展开并跟随定位</div></div>
+<nav aria-label="文档目录" class="toc" id="toc"></nav>
+</aside>
+<main class="main"><article class="content" id="article">
+<header class="hero" id="top">
+<div class="eyebrow">WINDOWS · UNITY 6 · CHATGPT · MCP</div>
+<h1>ChatGPT × Unity 6<br/>MCP 接入实战指南</h1>
+<p class="sub">从 uv / Python 环境准备，到 Unity MCP 自动启动、ChatGPT 桌面版 HTTP 接入、真实调用验证与 PyYAML 故障排查。按实际成功接入的过程整理，可离线阅读。</p>
+<div class="pills"><span class="pill green">● 已验证：只读调用成功</span><span class="pill">MCP for Unity 10.3.0</span><span class="pill">Unity 6000.3.25f1</span><span class="pill">Python 3.12.15</span><span class="pill">Windows</span></div>
+<div class="quick-grid"><div class="stat"><b>HTTP Local</b><span>Unity 编辑器的服务传输方式</span></div><div class="stat"><b>127.0.0.1:8080</b><span>本机 MCP Server 监听地址</span></div><div class="stat"><b>3 项</b><span>已验证的实际 MCP 只读工具调用</span></div></div>
+<p class="meta">更新：2026 年 10 月 24 日 · 可分享通用版 · 工程名、路径及返回数据均已脱敏，不包含个人截图</p>
+</header>
+<section class="docsection" id="overview"><h2>概览与验证边界</h2>
+<p>这份文档适用于希望通过 <strong>ChatGPT Windows 桌面版</strong> 使用 MCP 工具直接读取和操作 Unity 编辑器的开发者。示例采用 <strong>CoplayDev MCP for Unity</strong>，不是 Unity 编辑器内置的 Unity AI Assistant。</p>
+<div class="notice success"><b>本次已实际验证：</b> Unity 端 HTTP Server 运行、Session Active、ChatGPT 识别 <code>unity-mcp</code>、读取活动场景、查询层级、读取 Console 错误。<br/><b>尚未实际验证：</b> 通过 ChatGPT 创建 GameObject、写入 Prefab、自动构建发布；对应步骤作为后续测试建议，不应误认为已完成。</div>
+<div class="tablewrap"><table><thead><tr><th>组件</th><th>本次版本 / 配置</th><th>验证结果</th></tr></thead><tbody>
+<tr><td>Windows 开发环境</td><td>ChatGPT Windows 桌面客户端</td><td><span class="tag-ok">已连接</span></td></tr>
+<tr><td>Unity Editor</td><td>6000.3.25f1（Unity 6）</td><td><span class="tag-ok">已读取</span></td></tr>
+<tr><td>Unity MCP 插件</td><td>MCP for Unity v10.3.0</td><td><span class="tag-ok">已启动</span></td></tr>
+<tr><td>uv</td><td>uv（以已安装版本为准）</td><td><span class="tag-ok">已安装</span></td></tr>
+<tr><td>Python</td><td>3.12.15（另有 3.15.1 共存）</td><td><span class="tag-ok">3.12 可用</span></td></tr>
+<tr><td>项目</td><td>D:\Projects\DemoUnityProject（虚构路径）</td><td>仅作填写示例</td></tr>
+</tbody></table></div>
+</section>
+<section class="docsection" id="architecture"><h2>连接原理：三段链路</h2>
+<div class="flowdiagram"><div class="flowbox"><b>ChatGPT Desktop</b><small>发起 MCP 工具调用</small></div><span class="flowarrow">→</span><div class="flowbox"><b>MCP HTTP Server</b><small>127.0.0.1:8080/mcp</small></div><span class="flowarrow">↔</span><div class="flowbox"><b>Unity 6 Editor</b><small>Session Active</small></div></div>
+<p>Unity 端使用 <code>HTTP Local</code> 传输，由 Unity 插件负责启动本地 MCP Server。ChatGPT 通过 <strong>Streamable HTTP</strong> 访问该服务。由于服务已经由 Unity 管理，因此 ChatGPT 端无需再配置 <code>uvx</code> 的 STDIO 启动命令。</p>
+<div class="notice"><b>两个地址不要混淆：</b> Unity 插件界面显示 <code>http://127.0.0.1:8080</code>；ChatGPT MCP 客户端填写 <code>http://127.0.0.1:8080/mcp</code>（带 <code>/mcp</code> 路径）。</div>
+<h3 id="architecture-modes">HTTP 与 STDIO 如何选择</h3>
+<div class="tablewrap"><table><thead><tr><th>模式</th><th>运行方式</th><th>本次建议</th></tr></thead><tbody><tr><td>HTTP Local + 流式 HTTP</td><td>Unity 启动 Server，ChatGPT 以 URL 接入</td><td><span class="tag-ok">推荐，已成功</span></td></tr><tr><td>STDIO</td><td>ChatGPT 启动 <code>uvx</code> 子进程</td><td>本次不需要</td></tr></tbody></table></div>
+</section>
+<section class="docsection" id="environment"><h2>准备 Windows 环境</h2>
+<h3 id="environment-uv">安装 uv / uvx</h3>
+<p><code>uv</code> 管理 Python 版本、项目依赖和虚拟环境，<code>uvx</code> 是它内置的独立工具运行命令（相当于 <code>uv tool run</code>）。<strong>只安装 uv 就会包含 uvx</strong>。</p>
+<div class="command"><div class="codebar">CMD / PowerShell · 安装 uv <button class="copy">复制</button></div><pre><code>winget install --id astral-sh.uv -e</code></pre></div>
+<div class="command"><div class="codebar">CMD · 验证 <button class="copy">复制</button></div><pre><code>uv --version
+uvx --version
+where uvx</code></pre></div>
+<h3 id="environment-python">安装 Python 3.12</h3>
+<p>本次已经安装了 Python 3.12.15。uv 可以自动下载对应版本，无需手动安装 Python 官方安装包。</p>
+<div class="command"><div class="codebar">CMD · Python 安装与查看 <button class="copy">复制</button></div><pre><code>uv python install 3.12
+uv python list --only-installed
+uv python find 3.12</code></pre></div>
+<div class="notice warn"><b>重要：</b> <code>python --version</code> 看起来切换到 3.12，不等于 <code>uvx</code> 必然选择 3.12。这正是本次排错的关键，详见后文“PyYAML 构建失败”章节。</div>
+<h3 id="environment-default">让 CMD 直接使用 Python</h3>
+<p>当 <code>where python</code> 只输出 WindowsApps 别名时，可能导致 <code>python --version</code> 没有预期结果。本次使用 uv 提供的默认可执行文件入口成功解决。</p>
+<div class="command"><div class="codebar">CMD · 默认 Python 与 PATH <button class="copy">复制</button></div><pre><code>uv python install 3.12 --default --preview-features python-install-default
+uv python update-shell</code></pre></div>
+<p>关闭并重开终端，使用 <code>where python</code> 和 <code>python --version</code> 检查。<code>--default</code> 在本次 uv 版本中属于预览功能；它管理的是 Windows 的 <code>python.exe</code> 入口。</p>
+</section>
+<section class="docsection" id="unity-install"><h2>Unity 6 安装 MCP for Unity</h2>
+<div class="step"><span class="stepno">1</span><div class="stepmain"><strong>打开项目</strong><p>在 Unity 6 中打开需要接入的项目，例如使用虚构示例工程 <code>DemoUnityProject</code>。</p></div></div>
+<div class="step"><span class="stepno">2</span><div class="stepmain"><strong>打开 Package Manager</strong><p>进入 <code>Window → Package Manager</code>，点击左上角 <code>+</code>，选择 <code>Install package from git URL</code>。</p></div></div>
+<div class="step"><span class="stepno">3</span><div class="stepmain"><strong>输入 Git URL</strong><div class="command"><div class="codebar">Git URL <button class="copy">复制</button></div><pre><code>https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main</code></pre></div><p>该地址对应本次安装方式。后续项目目录结构可能变化，重新安装时应对照仓库 README。</p></div></div>
+<div class="step"><span class="stepno">4</span><div class="stepmain"><strong>完成初次向导</strong><p>打开 <code>Window → MCP for Unity</code>，按照向导确认 Python、uv 等环境满足要求。本次插件版本为 <code>v10.3.0</code>。</p></div></div>
+</section>
+<section class="docsection" id="unity-server"><h2>在 Unity 内一键启动 Server</h2>
+<p>日常只需点击 <strong>Start Server</strong>，无需手动启动 CMD。这一工作流已成功验证。</p>
+<div class="step"><span class="stepno">1</span><div class="stepmain"><strong>Connect → Transport：HTTP Local</strong><p>HTTP URL 保持 <code>http://127.0.0.1:8080</code>。</p></div></div>
+<div class="step"><span class="stepno">2</span><div class="stepmain"><strong>点击 Start Server</strong><p>正常启动后按钮变为红色 <code>Stop Server</code>。如果还是 <code>No Session</code>，点击蓝色 <code>Connect</code>。</p></div></div>
+<div class="step"><span class="stepno">3</span><div class="stepmain"><strong>确认绿色 Session Active</strong><p>连接成功后应显示 <code>Session Active (DemoUnityProject)</code>，Console 同时出现以下日志：</p></div></div>
+<div class="command"><div class="codebar">Unity Console · 成功标志 <button class="copy">复制</button></div><pre><code>MCP-FOR-UNITY: Server ready on http://127.0.0.1:8080
+MCP-FOR-UNITY: Session connected</code></pre></div>
+<div class="notice success"><b>判定标准：</b> 最可靠的是同时看到 <code>Server ready</code> 和 <code>Session connected</code>。单纯出现 <code>Stop Server</code> 按钮，还不一定代表桥接已经建立成功。</div>
+</section>
+<section class="docsection" id="chatgpt-connect"><h2>ChatGPT Windows 接入 MCP</h2>
+<p>本次使用的桌面客户端具有自定义 MCP 服务器入口。打开：</p>
+<div class="notice"><b>设置 → 插件 → 添加 → 添加 MCP 服务器</b></div>
+<h3 id="chatgpt-connect-fields">参数如何填写</h3>
+<div class="tablewrap"><table><thead><tr><th>字段</th><th>填写值</th><th>说明</th></tr></thead><tbody>
+<tr><td>名称</td><td><code>unity-mcp</code></td><td>自定义名称</td></tr>
+<tr><td>类型</td><td><strong>流式 HTTP</strong></td><td>不要选 STDIO</td></tr>
+<tr><td>服务器 URL</td><td><code>http://127.0.0.1:8080/mcp</code></td><td>末尾必须是 MCP 服务端点</td></tr>
+<tr><td>启动命令 / 参数</td><td>不需要</td><td>HTTP 模式由 Unity 启动本地 Server</td></tr>
+</tbody></table></div>
+<div class="command"><div class="codebar">ChatGPT · HTTP 地址 <button class="copy">复制</button></div><pre><code>http://127.0.0.1:8080/mcp</code></pre></div>
+<div class="gallery">
+</div>
+<h3 id="chatgpt-connect-note">保存成功与工具可用的区别</h3>
+<p>保存配置没有报错，只能说明配置已被接纳。<strong>是否真正可用，必须再在对话中调用 MCP 工具获取 Unity 的实际数据。</strong> 本次已成功验证这个环节，见后文“只读调用验证”章节。</p>
+</section>
+<section class="docsection" id="read-test"><h2>只读调用验证（已成功）</h2>
+<p>在 ChatGPT 工作对话中要求工具实际读取 Unity，不允许猜测或模拟。以下为一次验证中提示词，可直接复制。</p>
+<div class="command"><div class="codebar">ChatGPT 测试提示词 <button class="copy">复制</button></div><pre><code>请使用 unity-mcp 连接当前打开的 Unity 6 编辑器，
+实际调用 MCP 工具读取：
+1. 项目名称和 Unity 版本
+2. 当前活动场景名称与路径
+3. GameObject 层级结构
+4. Console 错误
+所有操作只读，不要修改项目文件、场景或资源。
+如果工具不可用，请明确告知，不要模拟结果。</code></pre></div>
+<h3 id="read-test-results">返回结果示例（已脱敏）</h3>
+<div class="notice"><b>示例说明：</b> 下表使用虚构工程、路径和场景名称演示返回结果结构，不是可直接复制的真实工程数据。</div><div class="tablewrap"><table><thead><tr><th>项目</th><th>示例结果 / 以实际查询为准</th></tr></thead><tbody>
+<tr><td>编辑器实例</td><td>DemoUnityProject@…（示例）</td></tr>
+<tr><td>Unity 版本</td><td>Unity 6（以实际查询为准）</td></tr>
+<tr><td>项目名</td><td>DemoUnityProject（虚构名称）</td></tr>
+<tr><td>项目路径</td><td>D:\Projects\DemoUnityProject（虚构路径）</td></tr>
+<tr><td>活动场景</td><td>SampleScene（示例场景）</td></tr>
+<tr><td>场景文件</td><td>Assets/Scenes/SampleScene.unity（示例）</td></tr>
+<tr><td>根 GameObject</td><td>以实际层级查询为准</td></tr>
+<tr><td>Console 错误</td><td>以实际 Console 查询为准</td></tr>
+</tbody></table></div>
+<p>ChatGPT 的结果中明确记录了工具调用：<code>manage_scene(get_active)</code>、<code>manage_scene(get_hierarchy)</code>、<code>read_console(get, types=["error"])</code>。</p>
+<div class="notice success"><b>接入验证已完成：</b> 这一步证明 ChatGPT 可以与正在运行的 Unity 编辑器通信，不只是 MCP 服务在列表中显示为启用。</div>
+</section>
+<section class="docsection" id="write-test"><h2>写入能力验证（待测试）</h2>
+<p>本章为下一步推荐测试，<strong>不是本次已经执行的结果</strong>。建议先创建无关的测试对象，确认可写后再进行 UI 或 Prefab 自动化。</p>
+<div class="command"><div class="codebar">ChatGPT · 创建测试对象 <button class="copy">复制</button></div><pre><code>请通过 unity-mcp 在当前活动场景中创建一个空 GameObject：
+名称：ChatGPT_MCP_Test
+Position：(0, 0, 0)
+Rotation：(0, 0, 0)
+Scale：(1, 1, 1)
+仅修改这一处；创建后重新读取 Hierarchy 确认对象存在。
+不要自动保存场景。</code></pre></div>
+<p>成功后在 Unity Hierarchy 中核对对象。测试完成可手动删除该对象并恢复未保存场景。进行批量场景修改、资源覆盖或自动构建前，先确保 Git 工作区没有未经确认的重要变更。</p>
+<div class="notice warn"><b>写操作边界：</b> MCP 插件具备工具权限，不代表每项写入能力都已在当前 Unity / 项目配置下得到验证。对于高风险命令，建议先要求 ChatGPT 给出变更计划，再逐步执行。</div>
+</section>
+<section class="docsection" id="troubleshoot"><h2>本次真实故障：PyYAML 构建失败</h2>
+<p>在 Unity MCP 初次自动启动阶段，日志曾显示服务器无法访问：</p>
+<div class="command"><div class="codebar">失败日志 · 关键片段 <button class="copy">复制</button></div><pre><code>MCP-FOR-UNITY: Local HTTP server did not become reachable.
+Building pyyaml==6.0.3
+error: Failed to build `pyyaml==6.0.3`
+...
+build\lib.win-amd64-cpython-315
+...
+error: Microsoft Visual C++ 14.0 or greater is required.</code></pre></div>
+<h3 id="troubleshoot-cause">问题的准确含义</h3>
+<p>当时 uvx 为 MCP Server 安装依赖时选择了 <strong>Python 3.15</strong>（日志中的 <code>cpython-315</code>），PyYAML 6.0.3 因该执行环境没有使用适合的二进制包而尝试源码编译；系统缺少 C++ 编译工具链，最终导致启动失败。</p>
+<p>这与 Unity Setup 显示 Python 3.12 绿色并不矛盾：<strong>Setup 检查系统可见的 Python；uvx 作为独立工具运行器会自行解析解释器版本。</strong> 本次日志能证明失败使用了 3.15，但不能仅凭它断言所有 uvx 版本选择都只由单一配置项决定。</p>
+<h3 id="troubleshoot-fix">实际采用的解决办法</h3>
+<p>本次已经把系统默认的 Python 入口切换到 3.12，并通过 uv 的全局版本配置让 uvx 更容易选择兼容的 3.12，然后重启 Unity 内的 Server，最终得到 <code>Server ready</code> 和 <code>Session connected</code>。</p>
+<div class="command"><div class="codebar">CMD · 建议操作 <button class="copy">复制</button></div><pre><code>uv python install 3.12
+uv python pin --global 3.12
+uv python pin --global
+uv python list --only-installed</code></pre></div>
+<p>再次点击 Unity MCP 的 <strong>Start Server</strong>。如果启动成功，无需安装 C++ Build Tools。<code>uv python pin --global</code> 是 uv 的全局版本偏好，不等同于修改 <code>python.exe</code> 的 Windows PATH 入口。</p>
+<div class="notice"><b>为什么不推荐设置全局 <code>UV_PYTHON=3.12</code>？</b> 这会给继承该环境变量的其他 uv 命令施加版本要求，不利于经常切换多个 Python 版本的开发习惯。当前已通过更常规的方式解决问题，没有必要设置该变量。</div>
+<h3 id="troubleshoot-manual">如果以后再次出现相同错误</h3>
+<ol><li>在 <code>Connect</code> 查看是否出现 <code>Server ready</code> 与绿色 Session。</li><li>检查 Unity Console 错误和项目中的 <code>Library/MCPForUnity/Logs/server-launch-8080.log</code>。</li><li>如果仍有 <code>cpython-315</code>，确认 <code>uv python pin --global</code> 的结果；同时检查当前项目下是否存在覆盖它的 <code>.python-version</code>，以及是否设置了 <code>UV_PYTHON</code>。</li><li>如需精确验证版本，可临时运行带 <code>uvx --python 3.12</code> 的诊断命令，但这只是排查手段，不是日常的启动要求。</li><li>如选择正确的 Python 后依然需要源码编译，再评估依赖版本及 C++ Build Tools，不要一开始就安装大型编译工具链。</li></ol>
+<h3 id="troubleshoot-nosession">Server 已运行但显示 No Session</h3>
+<p>如果已出现 <code>Stop Server</code> 按钮，但下方仍有红点 <code>No Session</code>，可点击右侧的 <strong>Connect</strong>。本次就是在该步骤之后出现绿色 <code>Session Active (DemoUnityProject)</code>。</p>
+<h3 id="troubleshoot-chatgpt">ChatGPT 保存成功但不能调用工具</h3>
+<p>依次核对：Unity 仍在运行 → Session Active → ChatGPT 服务器处于启用状态 → 类型是流式 HTTP → URL 为 <code>http://127.0.0.1:8080/mcp</code> → 新建会话实际调用工具。不要将“保存配置无错误”误认为“工具调用成功”。</p>
+</section>
+<section class="docsection" id="uv-cheatsheet"><h2>uv / Python 常用命令速查</h2>
+<h3 id="uv-cheatsheet-versions">查看、安装、卸载</h3>
+<div class="tablewrap"><table><thead><tr><th>用途</th><th>命令（CMD）</th></tr></thead><tbody>
+<tr><td>查看当前命令行 Python</td><td><code>python --version</code></td></tr><tr><td>查看实际路径</td><td><code>where python</code></td></tr><tr><td>查看 uv 版本</td><td><code>uv --version</code></td></tr><tr><td>查看 uvx 版本</td><td><code>uvx --version</code></td></tr><tr><td>列出已安装 Python</td><td><code>uv python list --only-installed</code></td></tr><tr><td>安装 Python 3.12</td><td><code>uv python install 3.12</code></td></tr><tr><td>卸载 Python 3.15.1</td><td><code>uv python uninstall 3.15.1</code></td></tr><tr><td>查找指定解释器</td><td><code>uv python find 3.12</code></td></tr>
+</tbody></table></div>
+<h3 id="uv-cheatsheet-switch">三种不同的“切换版本”</h3>
+<div class="tablewrap"><table><thead><tr><th>需求</th><th>命令</th><th>影响范围</th></tr></thead><tbody>
+<tr><td>Windows 默认 <code>python</code></td><td><code>uv python install 3.12 --default --preview-features python-install-default</code></td><td>uv 管理的 Windows 可执行文件入口</td></tr>
+<tr><td>uv 全局 Python 偏好</td><td><code>uv python pin --global 3.12</code></td><td>uv 全局版本配置；可被项目设置覆盖</td></tr>
+<tr><td>当前项目指定版本</td><td><code>uv python pin 3.12</code></td><td>当前目录的 <code>.python-version</code></td></tr>
+<tr><td>临时运行某版本</td><td><code>uv run --no-project --python 3.15.1 python --version</code></td><td>仅该次命令</td></tr>
+</tbody></table></div>
+<div class="notice warn"><b>易混淆：</b> <code>uv python pin 3.12</code> 不等价于 <code>nvm use</code>；它不会立即更改普通 CMD 中 <code>python --version</code> 的结果。</div>
+<h3 id="uv-cheatsheet-mcp">Unity MCP 常用诊断命令</h3>
+<div class="command"><div class="codebar">CMD · 手动启动诊断（仅故障时） <button class="copy">复制</button></div><pre><code>uvx --python 3.12 --from "mcpforunityserver==10.3.0" mcp-for-unity --transport http --http-url http://127.0.0.1:8080 --project-scoped-tools</code></pre></div>
+<p>正常使用时<strong>不要同时</strong>在 CMD 与 Unity 内启动同一端口的 HTTP Server，否则可能引发端口占用。上面的命令仅用于定位问题，日常应直接使用 Unity 插件的 <code>Start Server</code>。</p>
+</section>
+<section class="docsection" id="workflow"><h2>建议的日常开发流程</h2>
+<div class="step"><span class="stepno">1</span><div class="stepmain"><strong>打开 Unity 项目</strong><p>优先保持 Git 工作区可控，特别是场景与资源操作之前。</p></div></div>
+<div class="step"><span class="stepno">2</span><div class="stepmain"><strong>打开 MCP for Unity → Start Server</strong><p>确认绿色 <code>Session Active</code>。正常情况下不再需要 CMD。</p></div></div>
+<div class="step"><span class="stepno">3</span><div class="stepmain"><strong>打开 ChatGPT Work / 新对话</strong><p>确认 <code>unity-mcp</code> 已启用，先从读取场景、Console 和资源索引开始。</p></div></div>
+<div class="step"><span class="stepno">4</span><div class="stepmain"><strong>先计划，后修改，再验收</strong><p>写入任务指定对象范围、保存策略、校验标准，必要时要求逐步确认。</p></div></div>
+<h3 id="workflow-safety">安全使用建议</h3>
+<ul><li>对场景、Prefab、资源的批量改动，先提交 Git 或建立备份。</li><li>区分只读查询与会修改文件的工具调用，明确要求“不要修改其他内容”。</li><li>出现异常时优先核对 Unity Console、MCP Session、工作区 Diff，而不只是接受 AI 的自然语言描述。</li><li>在真实 iOS / Android 打包或清理资源前检查构建目标与输出目录。</li></ul>
+<div class="notice warn"><b>工作区变更提示：</b> 如果 ChatGPT Work 显示了大量代码变更，不要仅凭计数推断是 MCP 读取引起的；应先查看 Git Diff，确认变更来源。</div>
+</section>
+<section class="docsection" id="faq"><h2>常见问题</h2>
+<h3 id="faq-empty">为什么返回的场景没有 GameObject？</h3><p>空场景可能返回根 GameObject 数量为 0，这不代表 MCP 出错。如果期望读取其他场景，请先在 Unity 中打开目标场景后重新查询。</p>
+<h3 id="faq-python">是否必须固定全局 UV_PYTHON？</h3><p>不需要。本次成功接入没有依赖常驻 <code>UV_PYTHON=3.12</code>。优先保持 uv 的全局版本偏好与具体项目配置清晰，必要时对单个工具进程显式指定 Python。</p>
+<h3 id="faq-http">HTTP Local 是否需要公网服务器？</h3><p>不需要。本次地址是 <code>127.0.0.1</code>（回环地址），ChatGPT 桌面客户端与 Unity 都运行在同一台 Windows 电脑上。不要把此地址误用于另一台机器的客户端。</p>
+<h3 id="faq-restart">Unity 重启后需要重新安装吗？</h3><p>通常不需要重新安装 Package。重新打开 Unity 项目后，再在 MCP for Unity 窗口启动 Server、确认 Session Active，并检查 ChatGPT 的 <code>unity-mcp</code> 是否可用即可。</p>
+<h3 id="faq-which">Unity AI 和 Unity MCP 是一回事吗？</h3><p>不是。Unity AI 偏向 Unity 官方在编辑器内提供的 AI 能力；MCP for Unity 则通过 MCP 协议让 ChatGPT 等外部客户端访问编辑器工具。本文记录的是后者的接入流程。</p>
+</section>
+<section class="docsection" id="references"><h2>官方资料与参考链接</h2>
+<p>本手册的实测结果来自这次连接过程；官方链接用于核对安装方法、协议地址和 uv 版本管理规则。在线参考链接需要联网，手册正文可离线使用。</p>
+<div class="link-list">
+<a href="https://github.com/CoplayDev/unity-mcp" rel="noopener noreferrer" target="_blank">CoplayDev / unity-mcp — GitHub 仓库</a>
+<a href="https://coplaydev.github.io/unity-mcp/getting-started/install" rel="noopener noreferrer" target="_blank">MCP for Unity — 官方安装与 HTTP 配置</a>
+<a href="https://docs.astral.sh/uv/" rel="noopener noreferrer" target="_blank">uv — 官方文档</a>
+<a href="https://docs.astral.sh/uv/guides/install-python/" rel="noopener noreferrer" target="_blank">uv — 安装与管理 Python</a>
+<a href="https://docs.astral.sh/uv/concepts/python-versions/" rel="noopener noreferrer" target="_blank">uv — Python 版本选择机制</a>
+<a href="https://github.com/astral-sh/uv" rel="noopener noreferrer" target="_blank">astral-sh / uv — GitHub 源代码</a>
+</div>
+</section>
+<footer class="footer"><strong>ChatGPT × Unity 6 MCP 接入实战指南</strong> · v1.2 · 2026-10-24<br/>通用示例工程 · 无个人截图 · 本地离线 HTML · 三种主题 · 目录滚动自动同步</footer>
+</article></main>
+</div>
+<button aria-label="返回顶部" class="backtop" id="backTop" title="返回顶部">↑</button>
+<script>
+(()=>{
+const root=document.documentElement;
+const toggle=document.getElementById('themeToggle');
+const menu=document.getElementById('themeMenu');
+const menuWrap=document.getElementById('themeMenuWrap');
+const themeIcon=document.getElementById('themeIcon');
+const themeText=document.getElementById('themeText');
+const media=matchMedia('(prefers-color-scheme: dark)');
+let mode=root.dataset.themeMode||'auto';
+function applyTheme(nextMode,persist=true){
+  mode=nextMode;
+  root.dataset.themeMode=mode;
+  root.dataset.theme=mode==='auto'?(media.matches?'dark':'light'):mode;
+  const names={auto:'跟随系统',light:'浅色主题',dark:'深色主题'};
+  const symbols={auto:'◐',light:'☀',dark:'☾'};
+  themeIcon.textContent=symbols[mode];
+  themeText.textContent=names[mode];
+  document.querySelectorAll('.theme-option').forEach(b=>b.setAttribute('aria-checked',String(b.dataset.mode===mode)));
+  if(persist){try{localStorage.setItem('unity-mcp-doc-theme',mode)}catch(e){}}
+}
+function closeTheme(){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false')}
+applyTheme(mode,false);
+media.addEventListener?.('change',()=>{if(mode==='auto')applyTheme('auto',false)});
+toggle.addEventListener('click',()=>{const show=!menu.classList.contains('open');menu.classList.toggle('open',show);toggle.setAttribute('aria-expanded',String(show))});
+menu.querySelectorAll('.theme-option').forEach(b=>b.addEventListener('click',()=>{applyTheme(b.dataset.mode);closeTheme()}));
+document.addEventListener('click',e=>{if(!menuWrap.contains(e.target))closeTheme()});
+document.getElementById('printBtn').onclick=()=>window.print();
+
+const nav=document.getElementById('toc');
+const sections=[...document.querySelectorAll('.docsection')];
+const items=[];
+const groups=[];
+sections.forEach((section)=>{
+  const heading=section.querySelector('h2');
+  if(!heading)return;
+  const group=document.createElement('div');group.className='toc-group';
+  const line=document.createElement('div');line.className='toc-line';
+  const link=document.createElement('a');link.className='toc-link';link.href='#'+section.id;
+  link.textContent=heading.textContent;line.appendChild(link);
+  const children=[...section.querySelectorAll('h3[id]')];
+  let chevron=null;
+  if(children.length){
+    chevron=document.createElement('button');chevron.className='toc-chevron';chevron.type='button';chevron.textContent='▶';
+    chevron.title='展开或折叠小节';chevron.setAttribute('aria-label','展开 '+heading.textContent+' 小节');
+    chevron.setAttribute('aria-expanded','false');line.appendChild(chevron);
+    chevron.addEventListener('click',()=>{setGroupOpen(group,!group.classList.contains('open'))});
+  }
+  group.appendChild(line);
+  const nested=document.createElement('div');nested.className='toc-children';
+  items.push({element:section,link,group,section,kind:'chapter'});
+  children.forEach(child=>{
+    const childLink=document.createElement('a');childLink.className='toc-child';childLink.href='#'+child.id;childLink.textContent=child.textContent;
+    nested.appendChild(childLink);
+    items.push({element:child,link:childLink,group,section,kind:'child'});
+  });
+  group.appendChild(nested);nav.appendChild(group);
+  groups.push({group,link,children:[...nested.children],chevron});
+});
+function setGroupOpen(group,isOpen){
+  group.classList.toggle('open',isOpen);
+  const btn=group.querySelector('.toc-chevron');
+  if(btn)btn.setAttribute('aria-expanded',String(isOpen));
+}
+const navToggle=document.getElementById('navToggle');
+const sidebar=document.getElementById('sidebar');
+const backdrop=document.getElementById('backdrop');
+function closeNav(){sidebar.classList.remove('open');backdrop.classList.remove('open');navToggle.setAttribute('aria-expanded','false')}
+navToggle.addEventListener('click',()=>{const open=sidebar.classList.toggle('open');backdrop.classList.toggle('open',open);navToggle.setAttribute('aria-expanded',String(open))});
+backdrop.addEventListener('click',closeNav);
+window.addEventListener('keydown',e=>{if(e.key==='Escape'){closeNav();closeTheme()}});
+const query=document.getElementById('tocSearch');
+query.addEventListener('input',()=>{
+  const val=query.value.trim().toLocaleLowerCase();let found=0;
+  groups.forEach(g=>{
+    const topMatch=g.link.textContent.toLocaleLowerCase().includes(val);
+    let childMatches=0;
+    g.children.forEach(c=>{
+      const match=!val||topMatch||c.textContent.toLocaleLowerCase().includes(val);
+      c.classList.toggle('filtered-out',!match);if(match)childMatches++;
+    });
+    const show=!val||topMatch||childMatches>0;
+    g.group.classList.toggle('filtered-out',!show);
+    if(show)found++;
+    if(val&&childMatches)setGroupOpen(g.group,true);
+  });
+  let empty=nav.querySelector('.toc-empty');
+  if(!found){if(!empty){empty=document.createElement('div');empty.className='toc-empty';empty.textContent='未找到匹配章节';nav.appendChild(empty)}}else empty?.remove();
+  if(!val)syncNav(true);
+});
+
+let active=null;
+let frame=0;
+const topOffset=112;
+function setActive(item,scrollSidebar=true){
+  if(!item)return;
+  if(active!==item){
+    if(active)active.link.classList.remove('active');
+    active=item;active.link.classList.add('active');
+  }
+  if(!query.value){
+    groups.forEach(g=>setGroupOpen(g.group,g.group===item.group));
+    if(scrollSidebar){
+      const box=item.link.getBoundingClientRect(),navBox=nav.getBoundingClientRect();
+      if(box.top<navBox.top+50||box.bottom>navBox.bottom-55){
+        nav.scrollTo({top:nav.scrollTop+box.top-navBox.top-navBox.height*.35,behavior:'auto'});
+      }
+    }
+  }
+}
+function updateProgress(){
+  const height=document.documentElement.scrollHeight-innerHeight;
+  document.getElementById('progress').style.width=(height>0?Math.min(100,scrollY/height*100):100)+'%';
+  document.getElementById('backTop').classList.toggle('show',scrollY>480);
+}
+function syncNav(force=false){
+  // Determine current section from document position rather than smooth-scroll intermediate states.
+  const pos=scrollY+topOffset+6;
+  let current=items[0];
+  for(const item of items){
+    const y=item.element.getBoundingClientRect().top+scrollY;
+    if(y<=pos)current=item;else break;
+  }
+  if(current&&(current!==active||force))setActive(current,true);
+  updateProgress();
+}
+nav.addEventListener('click',e=>{
+  const link=e.target.closest('a[href^="#"]');if(!link)return;
+  const item=items.find(i=>i.link===link);if(!item)return;
+  e.preventDefault();
+  if(query.value){query.value='';query.dispatchEvent(new Event('input'))}
+  // Exact section heading alignment prevents the previous chapter being displayed after a TOC click.
+  const y=Math.max(0,scrollY+item.element.getBoundingClientRect().top-topOffset);
+  history.pushState(null,'','#'+item.element.id);
+  window.scrollTo({top:y,behavior:'instant'});
+  setActive(item,true);
+  updateProgress();
+  closeNav();
+});
+window.addEventListener('scroll',()=>{
+  if(!frame)frame=requestAnimationFrame(()=>{frame=0;syncNav()});
+},{passive:true});
+window.addEventListener('resize',()=>syncNav(true));
+document.getElementById('backTop').onclick=()=>{window.scrollTo({top:0,behavior:'smooth'});history.replaceState(null,'',location.pathname+location.search)};
+window.addEventListener('hashchange',()=>{const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(!target)return;const item=items.find(i=>i.element===target);if(item){window.scrollTo({top:scrollY+target.getBoundingClientRect().top-topOffset,behavior:'instant'});setActive(item,true)}});
+setTimeout(()=>{if(location.hash){const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target){window.scrollTo({top:scrollY+target.getBoundingClientRect().top-topOffset,behavior:'instant'});}}syncNav(true)},80);
+// Copy snippets, including multiline commands. Unicode/Chinese is copied as raw source.
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{const src=b.closest('.command').querySelector('pre').innerText.replace(/\n$/,'');try{await navigator.clipboard.writeText(src);b.textContent='已复制 ✓'}catch(e){const ta=document.createElement('textarea');ta.value=src;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();b.textContent='已复制 ✓'}setTimeout(()=>b.textContent='复制',1500)}));
+
+})();
+</script>
+</body>
+</html>

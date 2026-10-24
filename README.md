@@ -1,6 +1,6 @@
 # 游戏开发中文文档
 
-面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans 和 PureMVC 四个项目，共五套中文文档。
+面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans、PureMVC 和 Unity MCP 五个项目，共七套中文文档。
 
 **[进入中文文档导航首页](https://scc172fly.github.io/game-dev-docs-zh/)**
 
@@ -13,6 +13,34 @@
 | Microsoft Orleans 10.4.0 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/orleans/) | [dotnet/orleans](https://github.com/dotnet/orleans) | [dotnet.github.io/orleans/docs](https://dotnet.github.io/orleans/docs/) |
 | PureMVC 三编文档 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/trilogy/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
 | PureMVC ActionScript 开发者指南 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/actionscript-developers-guide/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
+| MCP for Unity 官方文档中文整理 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/unity-mcp/official-docs/) | [CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp) | [官方仓库文档](https://github.com/CoplayDev/unity-mcp#readme) |
+| ChatGPT × Unity 6 MCP 接入实战指南 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/unity-mcp/chatgpt-unity6-guide/) | [CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp) | [官方仓库文档](https://github.com/CoplayDev/unity-mcp#readme) |
+
+## 目录结构
+
+同一项目有多套文档时，按文档主题划分子目录；每套文档统一使用 `index.html`，通过目录地址访问。
+
+```text
+game-dev-docs-zh/
+├── index.html                         # 文档导航首页
+├── README.md
+├── site-icon.svg                      # 站点图标
+├── mirror-networking/index.html
+├── fish-net/index.html
+├── orleans/index.html
+├── puremvc/
+│   ├── trilogy/index.html
+│   └── actionscript-developers-guide/index.html
+└── unity-mcp/
+    ├── official-docs/index.html        # MCP for Unity 官方文档中文整理
+    └── chatgpt-unity6-guide/index.html # ChatGPT × Unity 6 接入实战指南
+```
+
+## Unity MCP 阅读顺序
+
+建议先阅读 [MCP for Unity 官方文档中文整理](https://scc172fly.github.io/game-dev-docs-zh/unity-mcp/official-docs/)，了解安装配置、工作原理与工具参考；使用 ChatGPT Windows 桌面版连接 Unity 6 时，再参照[接入实战指南](https://scc172fly.github.io/game-dev-docs-zh/unity-mcp/chatgpt-unity6-guide/)完成连接验证与故障排查。
+
+接入实战指南记录了已成功的只读调用验证，写入能力仍标注为待测试；具体适用范围与验证边界以文档正文为准。
 
 ## PureMVC 阅读顺序
 

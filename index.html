@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mirror、FishNet、Microsoft Orleans 与 PureMVC 中文文档导航。">
+  <meta name="description" content="Mirror、FishNet、Microsoft Orleans、PureMVC 与 Unity MCP 中文文档导航。">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" type="image/svg+xml" href="site-icon.svg">
   <title>游戏开发中文文档</title>
@@ -383,12 +383,13 @@
     .related-doc strong { display: block; font-size: 14px; }
     .related-doc small { display: block; margin-top: 5px; color: var(--muted); line-height: 1.6; }
     .card-main:focus-visible, .related-doc:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
-    .puremvc > .tag { margin: auto 26px 22px; padding-top: 0; }
+    .puremvc > .tag, .unity-mcp > .tag { margin: auto 26px 22px; padding-top: 0; }
 
     .mirror { --accent: var(--blue); --accent-soft: var(--blue-soft); --glow: rgba(78, 142, 232, .24); }
     .fishnet { --accent: var(--cyan); --accent-soft: var(--cyan-soft); --glow: rgba(70, 200, 193, .21); }
     .orleans { --accent: var(--violet); --accent-soft: var(--violet-soft); --glow: rgba(148, 109, 234, .22); }
     .puremvc { --accent: #73b6ff; --accent-soft: rgba(115, 182, 255, .12); --glow: rgba(61, 126, 255, .22); overflow: clip; }
+    .unity-mcp { --accent: var(--cyan); --accent-soft: var(--cyan-soft); --glow: rgba(70, 200, 193, .21); overflow: clip; }
 
     footer {
       display: flex;
@@ -419,7 +420,7 @@
       .card-main { padding: 22px 22px 18px; }
       .card-footer { padding: 13px 22px; }
       .doc-links { grid-template-columns: 1fr; margin: 0 22px 18px; }
-      .puremvc > .tag { margin: auto 22px 18px; }
+      .puremvc > .tag, .unity-mcp > .tag { margin: auto 22px 18px; }
       footer { align-items: flex-start; flex-direction: column; }
     }
 
@@ -436,7 +437,7 @@
         <span>Game Dev Docs · ZH</span>
       </div>
       <div class="top-actions">
-        <span class="status">4 个项目 · 5 套中文文档</span>
+        <span class="status">5 个项目 · 7 套中文文档</span>
         <div class="theme-switcher" role="group" aria-label="页面主题">
           <button class="theme-button" type="button" data-theme-choice="light" aria-label="使用浅色主题" title="浅色主题">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -454,7 +455,7 @@
     <section class="hero" aria-labelledby="page-title">
       <p class="eyebrow">Documentation Hub</p>
       <h1 id="page-title">游戏开发<br>中文文档中心</h1>
-      <p class="lead">集中阅读游戏联网、分布式服务与软件架构相关的中文技术文档。选择一个项目，文档将在新标签页中打开。</p>
+      <p class="lead">集中阅读游戏联网、分布式服务、软件架构与 Unity AI 工具接入相关的中文技术文档。选择一个项目，文档将在新标签页中打开。</p>
     </section>
 
     <div class="section-heading">
@@ -541,6 +542,32 @@
         <div class="card-footer">
           <span>两套中文文档</span>
           <a class="source-link" href="https://puremvc.org/" target="_blank" rel="noopener noreferrer">官方网站 ↗</a>
+        </div>
+      </article>
+      <article class="card unity-mcp">
+        <div class="card-main">
+          <div class="card-top">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5v10l-9 5-9-5V7Z"/><path d="m3 7 9 5 9-5M12 12v10M8 10h8"/></svg>
+            </span>
+          </div>
+          <h3>Unity MCP</h3>
+          <p class="card-desc">通过 MCP 将 AI 助手连接到 Unity 编辑器，收录 MCP for Unity 官方文档中文整理与 ChatGPT × Unity 6 接入实战指南。</p>
+        </div>
+        <nav class="doc-links" aria-label="Unity MCP 中文文档">
+          <a class="related-doc" href="unity-mcp/official-docs/" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 MCP for Unity 官方文档中文整理">
+            <span><strong>官方文档中文整理</strong><small>安装配置 · 工具参考<br>MCP for Unity 使用说明</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="related-doc" href="unity-mcp/chatgpt-unity6-guide/" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 ChatGPT × Unity 6 MCP 接入实战指南">
+            <span><strong>ChatGPT × Unity 6 接入指南</strong><small>Windows 桌面版接入<br>连接验证与故障排查</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </nav>
+        <span class="tag">Unity · MCP · AI Tools</span>
+        <div class="card-footer">
+          <span>两套中文文档</span>
+          <a class="source-link" href="https://github.com/CoplayDev/unity-mcp" target="_blank" rel="noopener noreferrer">官方仓库 ↗</a>
         </div>
       </article>
     </section>
