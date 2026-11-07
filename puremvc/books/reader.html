@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PureMVC 中文 PDF 在线阅读器，支持原版排版、目录、搜索、缩放与下载。">
+  <link rel="icon" type="image/svg+xml" href="../../site-icon.svg">
+  <link rel="stylesheet" href="books.css">
+  <script src="theme.js" defer></script>
+  <script src="reader.js" type="module"></script>
+  <title>PureMVC PDF 在线阅读</title>
+</head>
+<body class="reader">
+  <header class="reader-header">
+    <a class="reader-back" href="./">← 书架</a>
+    <div class="reader-heading"><h1 id="book-title">PureMVC PDF 在线阅读</h1><p id="book-meta">保留原书排版 · 支持目录与搜索</p></div>
+    <div class="reader-actions">
+      <label class="visually-hidden" for="book-select">选择书籍</label><select id="book-select" class="reader-book-select" aria-label="按阅读顺序选择书籍"></select>
+      <label class="visually-hidden" for="theme">页面主题</label><select id="theme" aria-label="页面主题"><option value="system">系统主题</option><option value="light">浅色</option><option value="dark">深色</option></select>
+      <a id="original-link" class="original-link" hidden target="_blank" rel="noopener">打开 PDF ↗</a>
+      <a id="download-link" class="button primary" hidden download>下载 PDF ↓</a>
+    </div>
+  </header>
+  <nav class="reader-toolbar" aria-label="阅读顺序">
+    <p class="hint">左上角“管理页面” → “视图” → “文档大纲”可查看章节；页码使用 PDF 页序。</p>
+    <div class="book-pager"><a id="previous-book" hidden>← 上一本</a><a id="next-book" hidden>下一本 →</a><a href="./">查看全部四册 ↗</a></div>
+  </nav>
+  <p id="reader-error" class="reader-error" role="alert" hidden>阅读器未能加载此文件。请尝试<a id="fallback-link" target="_blank" rel="noopener">直接打开 PDF</a>，或使用上方的下载按钮。</p>
+  <iframe id="pdf-viewer" class="viewer-frame" title="PDF 书籍阅读器" allow="fullscreen" hidden></iframe>
+  <main id="invalid-book" class="reader-message" hidden><h2>没有找到这本书</h2><p>这个书籍链接无效，请从书架选择要阅读的书籍。</p><a class="button primary" href="./">返回 PureMVC 书架</a></main>
+  <noscript><div class="reader-message"><p>在线阅读器需要 JavaScript。你也可以从<a href="./">书架</a>直接下载 PDF 阅读。</p></div></noscript>
+</body>
+</html>

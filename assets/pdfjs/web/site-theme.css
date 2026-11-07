@@ -1,0 +1,11 @@
+/* Game Dev Docs skin for the bundled PDF.js reader. Original PDF pages stay intact. */
+:root {
+  --main-color: light-dark(#172335, #edf4ff);
+  --body-bg-color: light-dark(#dce4ee, #101723);
+  --toolbar-bg-color: light-dark(#f4f7fb, #182233);
+  --toolbar-border-color: light-dark(#cbd7e6, #304057);
+  --sidebar-bg-color: light-dark(#f4f7fb, #182233);
+  --doorhanger-bg-color: light-dark(#fff, #182233);
+  --button-hover-color: light-dark(#e3edf9, #2c405c);
+  --button-active-color: light-dark(#c9dff8, #36587f);
+}

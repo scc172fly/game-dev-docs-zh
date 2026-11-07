@@ -1,0 +1,38 @@
+export const books = [
+  {
+    id: "concepts",
+    title: "概念示意图与简介",
+    file: "PureMVC_概念示意图与简介.pdf",
+    pages: 1,
+    size: "0.54 MB",
+    description: "从一张概念示意图开始，认识核心角色及其协作方式。",
+    label: "建立整体认识",
+  },
+  {
+    id: "framework-uml",
+    title: "框架概览与 UML 图解",
+    file: "PureMVC_框架概览与UML图解.pdf",
+    pages: 14,
+    size: "1.76 MB",
+    description: "结合框架概览与 UML 类图，理解各个角色、接口与依赖关系。",
+    label: "理解结构与关系",
+  },
+  {
+    id: "best-practices",
+    title: "实现惯用法与最佳实践",
+    file: "PureMVC_实现惯用法与最佳实践.pdf",
+    pages: 46,
+    size: "1.77 MB",
+    description: "学习 Facade、Notification、Proxy、Mediator 与 Command 的具体用法。",
+    label: "掌握实现方法",
+  },
+  {
+    id: "actionscript-guide",
+    title: "ActionScript 开发者指南",
+    file: "PureMVC_ActionScript开发者指南.pdf",
+    pages: 262,
+    size: "6.86 MB",
+    description: "通过全书 10 章与完整示例，深入学习 PureMVC 应用的设计与实现。",
+    label: "深入完整示例",
+  },
+];
