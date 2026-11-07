@@ -226,15 +226,17 @@
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      columns: 2;
+      column-gap: 20px;
     }
 
     .card {
       position: relative;
-      display: flex;
-      min-height: 300px;
+      display: inline-flex;
+      width: 100%;
+      margin: 0 0 20px;
+      break-inside: avoid;
+      vertical-align: top;
       flex-direction: column;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -317,7 +319,7 @@
     }
 
     .card h3 {
-      margin: 48px 0 10px;
+      margin: 26px 0 10px;
       font-size: 23px;
       line-height: 1.25;
       letter-spacing: -.035em;
@@ -408,9 +410,8 @@
 
     @media (max-width: 850px) {
       .topbar { margin-bottom: 54px; }
-      .grid { grid-template-columns: 1fr; }
-      .card { min-height: 260px; }
-      .card h3 { margin-top: 38px; }
+      .grid { columns: 1; }
+      .card h3 { margin-top: 24px; }
     }
 
     @media (max-width: 560px) {
