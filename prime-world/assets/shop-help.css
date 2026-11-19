@@ -1,0 +1,12 @@
+.shop-help { padding: 4px; border: 0; background: transparent; color: inherit; cursor: help; vertical-align: middle; }
+.shop-help img { display: block; margin: 0; }
+.shop-help:focus-visible { outline: 2px solid #ebb965; }
+.shop-tip { position: fixed; inset: auto; margin: 0; box-sizing: border-box; width: min(270px, calc(100vw - 16px)); padding: .65rem .85rem; background: #17232e; border: 1px solid #687987; color: #fff; font-size: .875rem; line-height: 1.6; white-space: normal; }
+.shop-tip b { display: block; margin-bottom: .25rem; }
+.shop-tip strong { color: #ffcf78; }
+.scroll-uses .shop-help { flex: none; align-self: start; }
+.scroll-uses [data-shop-effect] strong { color: var(--gold, currentColor); }
+.camp-portraits { display: flex; flex-wrap: wrap; gap: .35rem .55rem; margin-top: .35rem; }
+.camp-portraits .camp-portrait { display: inline-flex; align-items: center; gap: .2rem; white-space: nowrap; }
+.camp-portraits .shop-help { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 2px; }
+.camp-portraits .shop-help img { margin: 0; }
