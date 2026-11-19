@@ -1,0 +1,47 @@
+
+/* v0.6.2 · provenance and artwork status */
+.a62-art-note{padding:10px 13px;margin:11px 0 8px;border-left:2px solid var(--gold-br);background:var(--panel2);color:var(--muted);font-size:12px;line-height:1.7}
+.a62-art-note a{color:var(--gold)}
+.a62-avatar-flag{position:absolute;z-index:4;left:8px;bottom:76px;display:block;padding:3px 7px;font-size:10px;font-weight:600;color:#dbd8cc;background:#101b25e8;border:1px solid #a08a6666;pointer-events:none}
+.a62-art-entry{border:1px solid var(--v6-frame);background:var(--panel);display:flex;min-height:200px;gap:18px;padding:12px}
+.a62-art-entry img{width:124px;height:167px;object-fit:cover;border:1px solid var(--gold-br);flex:none}
+.a62-art-entry .details{flex:1;min-width:0}
+.a62-art-entry h2{color:var(--gold);font-size:18px;margin:2px 0 5px;border:0!important;padding:0!important}
+.a62-art-entry p{font-size:12px;color:var(--muted);margin:3px 0 12px}
+.a62-art-entry .state{display:inline-block;font-size:11px;padding:2px 7px;border:1px solid var(--line);margin-bottom:8px}
+.a62-art-entry .source-link{display:inline-flex;padding:5px 8px;margin-right:7px;margin-bottom:7px;border:1px solid var(--gold-br);font-size:12px;color:var(--gold)}
+.a62-art-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}
+.a62-art-filters{display:flex;gap:8px;flex-wrap:wrap}
+.a62-art-filters button{border:1px solid var(--line);color:var(--text);background:var(--panel2);padding:8px 16px;cursor:pointer}
+.a62-art-filters button[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}
+@media(max-width:1240px){.a62-art-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.a62-art-grid{grid-template-columns:1fr}.a62-art-entry{gap:13px}.a62-art-entry img{width:96px;height:128px}}
+
+.a62-art-entry[hidden]{display:none!important}
+
+/* Announcement art fits within the frame without covering captions. */
+.hero-card .art img:is(.pw-official-art,.pw-model-shot),.hero-lead img:is(.pw-official-art,.pw-model-shot),.a62-art-entry img:is(.pw-official-art,.pw-model-shot){
+ object-fit:contain!important;
+ object-position:center!important;
+}
+.hero-card:hover .art img.pw-official-art{transform:none}
+.hero-lead img:is(.pw-official-art,.pw-model-shot){aspect-ratio:auto;height:auto}
+
+.hero-card.pw-art-card{display:grid!important;aspect-ratio:auto!important;grid-template-rows:auto auto auto}
+.hero-card.pw-art-card::after{display:none}
+.hero-card.pw-art-card .art{position:relative!important;inset:auto!important;min-height:0;height:auto!important;aspect-ratio:1/1!important}
+.hero-card.pw-art-card .hero-label{position:relative!important;inset:auto!important;min-height:0;padding:5px 10px 10px!important}
+.pw-art-card .hero-label b{margin-bottom:2px}
+.pw-art-meta{display:flex;align-items:center;justify-content:space-between;gap:4px;padding:5px 10px 0}
+.hero-card.pw-art-card .pw-art-meta>span{position:static!important;padding:0!important;backdrop-filter:none;border:0;background:none!important;white-space:nowrap}
+.pw-official-art[src$="/14-official-art.webp"],.pw-official-art[src$="/58-official-art.webp"]{object-view-box:inset(0 0 25% 0)}
+.pw-official-art[src$="/10-official-art.webp"],.pw-official-art[src$="/15-official-art.webp"],.pw-official-art[src$="/18-official-art.webp"],.pw-official-art[src$="/20-official-art.webp"],.pw-official-art[src$="/24-official-art.webp"],.pw-official-art[src$="/32-official-art.webp"],.pw-official-art[src$="/34-official-art.webp"],.pw-official-art[src$="/42-official-art.webp"],.pw-official-art[src$="/43-official-art.webp"],.pw-official-art[src$="/52-official-art.webp"]{object-view-box:inset(0 0 26% 0)}
+.pw-official-art[src$="/41-official-art.webp"],.pw-official-art[src$="/46-official-art.webp"],.pw-official-art[src$="/49-official-art.webp"],.pw-official-art[src$="/50-official-art.webp"],.pw-official-art[src$="/54-official-art.webp"]{object-view-box:inset(0 0 27% 0)}
+.pw-official-art[src$="/06-official-art.webp"]{object-view-box:inset(0 0 28% 0)}
+.pw-official-art[src$="/08-official-art.webp"]{object-view-box:inset(0 31% 27% 40%)}
+
+.hero-card.pw-art-card .art img.pw-legacy-art{object-view-box:inset(6%);object-fit:cover!important}
+.hero-card.pw-art-card:hover .art img{transform:none}
+
+.hero-lead img.pw-profile-art{aspect-ratio:1/1;object-fit:contain!important;height:auto}
+.hero-lead img.pw-profile-art.pw-legacy-art{object-view-box:inset(6%);object-fit:cover!important}

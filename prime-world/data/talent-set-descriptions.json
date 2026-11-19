@@ -1,0 +1,536 @@
+{
+  "names": {
+    "Items/Talents/TalentKits/RedSet2_1_AoE/RedSet2_1_AoE.TALKIT.xdb": "战斗陶醉",
+    "Items/Talents/TalentKits/RedSet2_2_Heal/RedSet2_2_Heal.TALKIT.xdb": "生命光辉",
+    "Items/Talents/TalentKits/RedSet2_3_Denai/RedSet2_3_Denai.TALKIT.xdb": "仪式灭绝",
+    "Items/Talents/TalentKits/RedSet2_4_Blow/RedSet2_4_Blow.TALKIT.xdb": "爆破狂热",
+    "Items/Talents/TalentKits/RedSet2_5_Blink/RedSet2_5_Blink.TALKIT.xdb": "决心冲动",
+    "Items/Talents/TalentKits/RedSet2_6_AAMod/RedSet2_6_AADmg.TALKIT.xdb": "致命触碰",
+    "Items/Talents/TalentKits/RedSet2_7_FireWard/RedSet2_7_FireWard.TALKIT.xdb": "烈焰守卫",
+    "Items/Talents/TalentKits/Redset1_2_Dot/R2_Dot.TALKIT.xdb": "恐惧诅咒",
+    "Items/Talents/TalentKits/Redset1_2_Resurrection/R1_Resurrection.TALKIT.xdb": "龙之路",
+    "Items/Talents/TalentKits/Redset1_3_Armor/R3_Armor.TALKIT.xdb": "稳固防御",
+    "Items/Talents/TalentKits/Redset1_4_AOEHealDmg/R4_AOEHealDmg.TALKIT.xdb": "坚定凯旋",
+    "Items/Talents/TalentKits/Redset1_5_Nuke/R5_Nuke.TALKIT.xdb": "灾厄激情",
+    "Items/Talents/TalentKits/Redset1_6_Warfog/R6_Warfog.TALKIT.xdb": "盲眼预言者",
+    "Items/Talents/TalentKits/Redset3_1_Boots/Redset3_1_Boots.TALKIT.xdb": "无畏旅者",
+    "Items/Talents/TalentKits/Redset3_2_IceCream/Redset3_2_IceCream.TALKIT.xdb": "魅惑丰饶",
+    "Items/Talents/TalentKits/Redset3_3_Shield/Redset3_3_Shield.TALKIT.xdb": "传承护符",
+    "Items/Talents/TalentKits/Redset3_4_Dot/Redset3_4_Dot.TALKIT.xdb": "剧毒之握",
+    "Items/Talents/TalentKits/Redset3_5_AOE/Redset3_5_AOE.TALKIT.xdb": "鼓舞颂歌",
+    "Items/Talents/TalentKits/Redset4_1_Silence/Redset4_1_Silence.TALKIT.xdb": "命运呐喊",
+    "Items/Talents/TalentKits/Redset4_2_Phantom/Redset4_2_Phantom.TALKIT.xdb": "爆炸幻象",
+    "Items/Talents/TalentKits/Redset4_3_Fire/Redset4_3_Fire.TALKIT.xdb": "诡诈火焰",
+    "Items/Talents/TalentKits/Redset4_4_Axes/Redset4_4_Axes.TALKIT.xdb": "绝对优势",
+    "Items/Talents/TalentKits/Redset4_5_CasterDot/Redset4_5_CasterDot.TALKIT.xdb": "森林象征",
+    "Items/Talents/TalentKits/Redset5_5_Caster/Redset5_5_Caster.TALKIT.xdb": "远古秘密",
+    "Items/Talents/TalentKits/Redset6_1_HealingWard/Redset6_1_HealingWard.TALKIT.xdb": "治疗之柱",
+    "Items/Talents/TalentKits/Redset6_2_CDR/Redset6_2_CDR.TALKIT.xdb": "绝境时刻",
+    "Items/Talents/TalentKits/Redset6_3_ReflectShield/Redset6_3_ReflectShield.TALKIT.xdb": "捍卫者报偿",
+    "Items/Talents/TalentKits/Redset6_4_AAPercentDmg/Redset6_4_ActiveAAPercent.TALKIT.xdb": "毁灭者之力",
+    "Items/Talents/TalentKits/Redset6_5_TowerDisable/Redset6_5_TowerDisable.TALKIT.xdb": "堡垒突袭",
+    "Items/Talents/TalentKits/Redset7_10_Buthcer/Redset7_10_Butcher.TALKIT.xdb": "刽子手之梦",
+    "Items/Talents/TalentKits/Redset7_11_MiniRefresher/Redset7_11_MiniRefresher.TALKIT.xdb": "良机",
+    "Items/Talents/TalentKits/Redset7_12_SuperMove/Redset7_12_SuperMove.TALKIT.xdb": "速度马蹄铁",
+    "Items/Talents/TalentKits/Redset7_1_Blind/Redset7_1_Blind.TALKIT.xdb": "耀眼荣光",
+    "Items/Talents/TalentKits/Redset7_2_Pirate/Redset7_2_Pirate.TALKIT.xdb": "海盗冒险",
+    "Items/Talents/TalentKits/Redset7_3_Panopticon/Redset7_3_Panopticon.TALKIT.xdb": "收藏家习性",
+    "Items/Talents/TalentKits/Redset7_4_NewYear/Redset7_4_NewYear.TALKIT.xdb": "珍藏心愿",
+    "Items/Talents/TalentKits/Redset7_5_Alchemy/Redset7_5_Alchemy.TALKIT.xdb": "炼金大师",
+    "Items/Talents/TalentKits/Redset7_6_Anticrit/Redset7_6_Anticrit.TALKIT.xdb": "英雄宁静",
+    "Items/Talents/TalentKits/Redset7_7_Glyph/Redset7_7_Glyph.TALKIT.xdb": "远古符文",
+    "Items/Talents/TalentKits/Redset7_8_Dejavu/Redset7_8_Dejavu.TALKIT.xdb": "似曾相识",
+    "Items/Talents/TalentKits/Redset7_9_AntiMnM/Redset7_9_AnitMnM.TALKIT.xdb": "诅咒封印",
+    "Items/Talents/TalentKits/Redset8_1_Meteor/Redset8_1_Meteor.TALKIT.xdb": "占星者之怒",
+    "Items/Talents/TalentKits/Redset8_2_Forest/Redset8_2_Forest.TALKIT.xdb": "密林囚笼",
+    "Items/Talents/TalentKits/Redset8_3_Flower/Redset8_3_Flower.TALKIT.xdb": "自然赠礼",
+    "Items/Talents/TalentKits/Redset8_4_TriggerShield/Redset8_4_TriggerShield.TALKIT.xdb": "守护护符",
+    "Items/Talents/TalentKits/Redset8_5_Warfog/Redset8_5_Warfog.TALKIT.xdb": "鹰隼目光",
+    "Items/Talents/TalentKits/Redset8_6_Invisible/Redset8_6_Invisible.TALKIT.xdb": "乌鸦帷幕",
+    "Items/Talents/TalentKits/Redset9_1_Crit/Redset9_1_Crit.TALKIT.xdb": "生命毁灭者",
+    "Items/Talents/TalentKits/Redset9_2_SpellPierce/Redset9_2_SpelPierce.TALKIT.xdb": "元素驯服者",
+    "Items/Talents/TalentKits/Redset9_3_SpellBlock/Redset9_3_Crit.TALKIT.xdb": "梦境守护者",
+    "Items/Talents/TalentKits/Redset9_4_Summon/Redset9_4_SummonBuff.TALKIT.xdb": "召唤师魔典",
+    "Items/Talents/TalentKits/Redset9_5_Anticontrol/Redset9_5_Anticontrol.TALKIT.xdb": "英雄解放者",
+    "Items/Talents/TalentKits/Redset9_6_DeathCompensation/Redset9_6_DeathCompensation.TALKIT.xdb": "必然预言者",
+    "Items/Talents/TalentKits/Redset_RessurectTime/Redset_RessurectTime.TALKIT.xdb": "金字塔之谜",
+    "Items/Talents/TalentKits/Vampiric1_Resurrection/V1_Resurrection.TALKIT.xdb": "不朽之秘",
+    "Items/Talents/TalentKits/Vampiric2_ArmourPush/V2_ArmourPush.TALKIT.xdb": "牧首意志",
+    "Items/Talents/TalentKits/Vampiric3_StunProc/V3_StunProc.TALKIT.xdb": "衰竭触碰",
+    "Items/Talents/TalentKits/Vampiric4_ArmourBlink/V4_ArmourBlink.TALKIT.xdb": "夜间猎手",
+    "Items/Talents/TalentKits/Vampiric5_CloneWall/V5_CloneWall.TALKIT.xdb": "本质映像",
+    "Items/Talents/TalentKits/Vampiric6_CasterBoost/V6_CasterBoost.TALKIT.xdb": "黑暗讯息"
+  },
+  "macros": {
+    "TTKitV1CommonDescription": {
+      "effect_zh": "本套装4项全部激活后，死亡时自动触发：等待{WaitTime}秒，在死亡地点以{HealAmount}生命复活。该套装复生效果的冷却为{G317_Cooldown}秒。",
+      "parameter_labels": {
+        "WaitTime": "死亡地点复活前等待时间",
+        "HealAmount": "复活后的生命量",
+        "G317_Cooldown": "套装复生冷却时间"
+      },
+      "notes": [
+        "已核核心G317的启用条件需要另外三项G297、G301、G307；这不是任意两项套装即可取得的复生。与其他复生效果的先后关系不能仅凭本公共说明推定为同时触发。"
+      ]
+    },
+    "TTKitV2CommonDescription": {
+      "effect_zh": "本套装4项全部激活后，可使自己或指定敌方英雄向前位移。冷却为{G313_Cooldown}秒。",
+      "parameter_labels": {
+        "G313_Cooldown": "向前位移能力冷却时间"
+      },
+      "notes": [
+        "已核核心G313在缺少G304、G310、G315任一项时禁用。宏未写位移距离，不自行填数；不能把“自己或敌方英雄”扩成任意友军。"
+      ]
+    },
+    "TTKitV3CommonDescription": {
+      "effect_zh": "本套装3项全部激活后，普通攻击有{AbilityChance}%概率使敌人眩晕{Stun_Duration}秒。触发冷却为{G306_Cooldown}秒。",
+      "parameter_labels": {
+        "AbilityChance": "普攻眩晕触发概率百分比",
+        "Stun_Duration": "眩晕持续时间",
+        "G306_Cooldown": "眩晕触发冷却时间"
+      },
+      "notes": [
+        "已核G306的强化需G295与G314同时激活。触发概率与触发冷却是两个条件，不能只按每次攻击独立概率估算无限连续控制。"
+      ]
+    },
+    "TTKitV4CommonDescription": {
+      "effect_zh": "本套装5项全部激活后，可传送到指定地点，消耗自身最大生命的{LifeCostPercent}%。冷却为{G311_Cooldown}秒。",
+      "parameter_labels": {
+        "LifeCostPercent": "传送消耗最大生命百分比",
+        "G311_Cooldown": "生命传送冷却时间"
+      },
+      "notes": [
+        "已核核心G311需G303、G309、G316、G319；生命费用是使用代价，不能省略或改写成能量费用。"
+      ]
+    },
+    "TTKitV5CommonDescription": {
+      "effect_zh": "本套装3项全部激活后，可创建持续{WallLifeTime}秒的屏障。敌人首次穿越时，眩晕{Stun_Duration}秒，并生成持续{CloneDuration}秒的对应分身。分身属性以产生它的英雄为依据，但力量与智力除以{CloneStrIntDecrease}，所受伤害变为{ModDamageAbility}倍。屏障能力冷却{G305_Cooldown}秒。",
+      "parameter_labels": {
+        "WallLifeTime": "屏障存在时间",
+        "Stun_Duration": "首次穿越眩晕时间",
+        "CloneDuration": "分身存在时间",
+        "CloneStrIntDecrease": "分身力量智力缩减除数",
+        "ModDamageAbility": "分身承伤倍率",
+        "G305_Cooldown": "屏障能力冷却时间"
+      },
+      "notes": [
+        "核心G305需G298与G299；G318是额外眩晕强化，不在这三项基本成员内。力量智力“缩至原值的几分之一”与“减少同样百分比”不能混用。"
+      ]
+    },
+    "TTKitV6CommonDescription": {
+      "effect_zh": "本套装3项全部激活后，使用专属天赋按基础能量或生命费用每{NeedCosts}点累积一层充能，最多{MaxStacks}层。主动使用时消耗全部充能，每层对目标造成{Damage}纯粹伤害，冷却{G308_Cooldown}秒。",
+      "parameter_labels": {
+        "NeedCosts": "每层充能所需基础资源费用",
+        "MaxStacks": "充能上限",
+        "Damage": "每层充能的纯粹伤害",
+        "G308_Cooldown": "充能攻击冷却时间"
+      },
+      "notes": [
+        "已核核心G308需G296与G302，并且有充能才可用。按基础费用累积，不按减耗后的实际扣除量擅自改算。"
+      ]
+    },
+    "TTKitR1CommonDescription": {
+      "effect_zh": "本套装5项全部激活后，死亡时自动变成小龙，持续{PolyDuration}秒。若小龙没有被击杀，英雄以{HealAmount}生命复生，并使附近所有敌方英雄致盲{Blind_Duration}秒。触发冷却{G455_Cooldown}秒。",
+      "parameter_labels": {
+        "PolyDuration": "小龙形态存活考验时间",
+        "HealAmount": "成功复生后的生命量",
+        "Blind_Duration": "复生时周围致盲时间",
+        "G455_Cooldown": "小龙复生冷却时间"
+      },
+      "notes": [
+        "已核核心G455需要G451至G454；小龙可以被杀，因此不是保证复活。该效果还与不朽之秘的复生状态存在先后判定，不能把多个死亡触发当作无条件同时兑现。"
+      ]
+    },
+    "TTKitR3CommonDescription": {
+      "effect_zh": "激活2项：每次受到敌方普通攻击或天赋伤害时，忽略{Redset1_3_Armor_Bonus2_TT}伤害。激活3项：固定抵消总量提高到{Redset1_3_Armor_Bonus3_TT}。激活4项：抵消总量提高到{Redset1_3_Armor_Bonus4_TT}，并使攻击自己的敌人减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。",
+      "parameter_labels": {
+        "Redset1_3_Armor_Bonus2_TT": "两项套装的固定伤害抵消量",
+        "Redset1_3_Armor_Bonus3_TT": "三项套装的固定伤害抵消总量",
+        "Redset1_3_Armor_Bonus4_TT": "四项套装的固定伤害抵消总量",
+        "Dec_MoveSpeed": "反制减速百分比",
+        "Slow_Duration": "减速持续时间"
+      },
+      "notes": [
+        "三项、四项显示的是累计总量，不再与前一档数值相加；固定抵消不是相同比例的百分比减伤。"
+      ]
+    },
+    "TTKitR6CommonDescription": {
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_RedSet}，并解锁“预言者之力”。激活3项：允许把“预言者之力”用于友方英雄，揭示离该盟友最近的隐藏敌方英雄。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装较高攻击属性增益"
+      },
+      "notes": [
+        "第三项扩展的是主动能力的友方目标用法，不等于默认全图揭示全部隐藏英雄。"
+      ]
+    },
+    "TTKitRedSet61CommonDescription": {
+      "effect_zh": "激活2项：周围所有友军的生命恢复提高{HealUpPercent}%。激活3项：解锁“治疗之柱”的主动使用。",
+      "parameter_labels": {
+        "HealUpPercent": "周围友军生命恢复提高百分比"
+      },
+      "notes": [
+        "恢复增益与主动治疗柱是不同层级的收益；主动效果细节见其核心天赋。"
+      ]
+    },
+    "TTKitRedSet62CommonDescription": {
+      "effect_zh": "激活2项：天赋冷却缩短{CooldownReduction}%。激活3项：解锁“绝境时刻”的主动使用。",
+      "parameter_labels": {
+        "CooldownReduction": "两项套装天赋冷却缩短百分比"
+      },
+      "notes": [
+        "公共宏只规定解锁层级，主动效果按核心天赋说明，不能从名字补出无敌或复活。"
+      ]
+    },
+    "TTKitRedSet63CommonDescription": {
+      "effect_zh": "激活2项：坚韧与意志中较高者提高{Add_Stat_Redset_6_3}。激活3项：解锁“捍卫者报偿”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_Redset_6_3": "两项套装较高防御属性增益"
+      },
+      "notes": []
+    },
+    "TTKitRedSet64CommonDescription": {
+      "effect_zh": "激活2项：攻速属性与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“毁灭者之力”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装较高进攻副属性增益"
+      },
+      "notes": [
+        "全套目录有4项，并不要求4项全部激活才解锁主动；宏规定的是3项门槛。"
+      ]
+    },
+    "TTKitRedSet65CommonDescription": {
+      "effect_zh": "激活1项：英雄附近友方防御塔对英雄的伤害提高{TowerDamagePercent}%，附近敌方防御塔对英雄的伤害降低同样比例。激活2项：力量与智力中较高者提高{Add_Stat_RedSet}。激活3项：解锁“堡垒突袭”的主动使用。",
+      "parameter_labels": {
+        "TowerDamagePercent": "附近防御塔对英雄伤害变化百分比",
+        "Add_Stat_RedSet": "两项套装较高攻击属性增益"
+      },
+      "notes": [
+        "第一项是对附近塔的方向相反的修正，不是自己对塔造成的伤害提高，也不扩展到全地图全部塔。"
+      ]
+    },
+    "TTKitLeg1CommonDescription": {
+      "effect_zh": "激活1项：普通攻击对士兵和建筑额外造成{Redset5_1_AddCreepDamage}物理伤害。激活2项：每{DamageHeroBuildingTime}秒，一次对建筑或英雄的普通攻击可额外造成{DamageHeroBuilding}魔法伤害。激活3项：力量与智力中较高者提高{Redset5_1_AddStat}。",
+      "parameter_labels": {
+        "Redset5_1_AddCreepDamage": "对士兵建筑的普攻附加物理伤害",
+        "DamageHeroBuildingTime": "对建筑英雄附加伤害的恢复间隔",
+        "DamageHeroBuilding": "对建筑英雄触发的附加魔法伤害",
+        "Redset5_1_AddStat": "三项套装较高攻击属性增益"
+      },
+      "notes": [
+        "两类伤害的类型来自原说明图标：第一档物理、第二档魔法；第二档有触发间隔，不是每次普攻都附加。"
+      ]
+    },
+    "TTKitLeg2CommonDescription": {
+      "effect_zh": "激活2项：坚韧与意志中较高者提高{Add_Stat_Redset_5_2}。激活3项：受到的伤害降低{DamageReductionPercent}%。",
+      "parameter_labels": {
+        "Add_Stat_Redset_5_2": "两项套装较高防御属性增益",
+        "DamageReductionPercent": "三项套装承伤降低百分比"
+      },
+      "notes": []
+    },
+    "TTKitLeg3CommonDescription": {
+      "effect_zh": "激活2项：智力提高{Redset5_3_AddInt}。激活3项：普通攻击降低目标力量{StrCut_Amount}，持续{StrCut_Duration}秒。",
+      "parameter_labels": {
+        "Redset5_3_AddInt": "两项套装智力增益",
+        "StrCut_Amount": "普攻降低的目标力量",
+        "StrCut_Duration": "力量削弱持续时间"
+      },
+      "notes": []
+    },
+    "TTKitLeg4CommonDescription": {
+      "effect_zh": "激活2项：力量提高{Redset5_4_AddStr}。激活3项：普通攻击降低目标智力{IntCutAmount}，持续{IntCutDuration}秒。",
+      "parameter_labels": {
+        "Redset5_4_AddStr": "两项套装力量增益",
+        "IntCutAmount": "普攻降低的目标智力",
+        "IntCutDuration": "智力削弱持续时间"
+      },
+      "notes": []
+    },
+    "TTKitLeg5CommonDescription": {
+      "effect_zh": "激活2项：使用天赋时恢复自己{Redset5_5_Heal}生命。激活3项：力量与智力中较高者提高{Add_Stat_RedSet}。",
+      "parameter_labels": {
+        "Redset5_5_Heal": "每次施法恢复生命",
+        "Add_Stat_RedSet": "三项套装较高攻击属性增益"
+      },
+      "notes": [
+        "宏未注明“只限专属”或“按费用比例”，不能借用其他施法回血天赋的限定与公式。"
+      ]
+    },
+    "TTKitLeg6CommonDescription": {
+      "effect_zh": "激活2项：固定量生命偷取提高{Redset5_6_AddVamp}。激活3项：普通攻击有{AbilityChance}%概率使敌人眩晕{Stun_Duration}秒，触发冷却为{Redset5_6_StunCooldown}秒。",
+      "parameter_labels": {
+        "Redset5_6_AddVamp": "两项套装固定量生命偷取增益",
+        "AbilityChance": "眩晕触发概率百分比",
+        "Stun_Duration": "触发眩晕时间",
+        "Redset5_6_StunCooldown": "眩晕触发冷却时间"
+      },
+      "notes": [
+        "生命偷取增益不是按伤害百分比吸血；触发冷却也不能漏算。"
+      ]
+    },
+    "TTKitSpinnersCommonDescription": {
+      "effect_zh": "激活2项陀螺天赋后，每{NaftaPeriod}秒获得{PrimeAmount} Prime。",
+      "parameter_labels": {
+        "NaftaPeriod": "套装Prime收入间隔",
+        "PrimeAmount": "每次额外Prime收入"
+      },
+      "notes": [
+        "这是共同套装收益，不是每件各产生同一份Prime；各陀螺自身逐分钟增长的属性另算。"
+      ]
+    },
+    "TTKitLeg7CommonDescription": {
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_Set}。激活4项：终极能力的冷却缩短{Total_CooldownUltimateReduction}%。",
+      "parameter_labels": {
+        "Add_Stat_Set": "两项套装较高攻击属性增益",
+        "Total_CooldownUltimateReduction": "四项套装终极能力冷却缩短百分比"
+      },
+      "notes": [
+        "第四项只写终极能力，不应扩写为全部天赋冷却一起缩短。"
+      ]
+    },
+    "TTKitHaloween": {
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_Set}。激活3项：攻速属性与灵巧中较高者也提高同样数值。",
+      "parameter_labels": {
+        "Add_Stat_Set": "套装每组较高属性增益"
+      },
+      "notes": [
+        "两档分别作用于两组属性；不是给四项属性全部各加同一数值。"
+      ]
+    },
+    "TTKitRedSet71CommonDescription": {
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_RedSet}。激活3项：解锁“耀眼荣光”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装较高攻击属性增益"
+      },
+      "notes": [
+        "目录成员数量不是解锁主动所需数量，宏明确要求3项。"
+      ]
+    },
+    "TTKitRedSet81CommonDescription": {
+      "effect_zh": "激活2项：位于己方或中立土地时，攻速属性与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“占星者之怒”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装条件性较高进攻副属性增益"
+      },
+      "notes": [
+        "第二档属性不在敌方土地上生效；不能把己方或中立写成仅己方。"
+      ]
+    },
+    "TTKitRedSet82CommonDescription": {
+      "effect_zh": "激活2项：位于己方或中立土地时，坚韧与意志中较高者提高{Add_Stat_RedSet}。激活3项：解锁“密林囚笼”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装条件性较高防御属性增益"
+      },
+      "notes": []
+    },
+    "TTKitRedSet83CommonDescription": {
+      "effect_zh": "激活2项：位于己方或中立土地时，力量与智力中较高者提高{Add_Stat_RedSet}。激活3项：解锁“自然赠礼”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装条件性较高攻击属性增益"
+      },
+      "notes": []
+    },
+    "TTKitRedSet84CommonDescription": {
+      "effect_zh": "激活1项：自己使用“传奇预兆”系列天赋时，获得持续{Duration}秒、容量为自身最大生命{ShieldCapacity}%的护盾。激活2项：附近友方英雄使用这一系列天赋也可触发自己的护盾。激活3项：附近敌方英雄使用这一系列天赋同样可触发。",
+      "parameter_labels": {
+        "Duration": "护盾持续时间",
+        "ShieldCapacity": "护盾占最大生命百分比"
+      },
+      "notes": [
+        "二、三项扩大触发来源，不是直接把一面护盾容量分别乘二、乘三；宏没有说明反复触发可无限叠盾。"
+      ]
+    },
+    "TTKitRedSet85CommonDescription": {
+      "effect_zh": "激活2项：白天力量与智力中较高者提高{Add_Stat_RedSet}。激活3项：解锁“鹰隼目光”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "白天较高攻击属性增益"
+      },
+      "notes": [
+        "白天条件只明确属于属性增益；不能据此断言主动能力夜晚不能用。"
+      ]
+    },
+    "TTKitRedSet86CommonDescription": {
+      "effect_zh": "激活2项：夜晚攻速属性与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“乌鸦帷幕”的主动使用。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "夜间较高进攻副属性增益"
+      },
+      "notes": [
+        "夜晚条件只明确属于属性增益；不能据此断言主动能力白天不能用。"
+      ]
+    },
+    "TTKitRedSet72CommonDescription": {
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_RedSet}。激活3项：近战英雄获得{Evade_Chance}%概率躲避敌方普攻；远程英雄则提高普攻射程{Redset7_2_Range_TT}%。多个射程增益只部分叠加。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装较高攻击属性增益",
+        "Evade_Chance": "近战英雄躲避敌方普攻概率百分比",
+        "Redset7_2_Range_TT": "远程英雄射程提高百分比"
+      },
+      "notes": [
+        "近战闪避与远程射程是按英雄攻击类型选择的两个分支；不能同时领取。原宏没有给部分叠加公式，不按简单相加计算。"
+      ]
+    },
+    "TTKitRedSet73CommonDescription": {
+      "effect_zh": "激活2项：所有基础属性提高{Add_Stat_RedSet}。",
+      "parameter_labels": {
+        "Add_Stat_RedSet": "两项套装各基础属性增益"
+      },
+      "notes": [
+        "“所有属性”按原版套装实际属性集合解释，不应扩展成移动速度、射程、暴击倍率等每个派生字段都增加同值。"
+      ]
+    },
+    "TTKitRedSet74CommonDescription": {
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat}。激活3项：解锁“珍藏心愿”的施法。激活4项：其控制时间延长{RedSet7_4_SleepTimeAdd}秒，提前唤醒所需伤害占最大生命的比例增加{RedSet7_4_DamageWakeUpAdd}个百分点。",
+      "parameter_labels": {
+        "Add_Stat": "两项套装较高攻击属性增益",
+        "RedSet7_4_SleepTimeAdd": "四项套装额外控制时间",
+        "RedSet7_4_DamageWakeUpAdd": "四项套装追加唤醒门槛百分点"
+      },
+      "notes": [
+        "G696实际把追加值直接加到最大生命百分比门槛上；不是把原门槛再乘1.05。"
+      ]
+    },
+    "TTKitRedSet91CommonDescription": {
+      "effect_zh": "激活2项：暴击概率增加{Add_CritChanceBonus}个百分点。激活3项：暴击倍率增加{Add_CriticalMultiplier_TT}个百分点，即倍率数值增加此显示值除以100。",
+      "parameter_labels": {
+        "Add_CritChanceBonus": "两项套装暴击概率增加百分点",
+        "Add_CriticalMultiplier_TT": "暴击倍率增量的百分数显示"
+      },
+      "notes": [
+        "倍率增量不等于把最终暴击伤害再乘一个相同比例。本套装显示增加40个百分点，实际倍率数值增加0.4；默认暴击倍率2会变为2.4。"
+      ]
+    },
+    "TTKitRedSet92CommonDescription": {
+      "effect_zh": "激活2项：天赋冷却缩短{CooldownReduction}%。激活3项：天赋穿透提高{Add_SpellPierce_TT}个百分点。",
+      "parameter_labels": {
+        "CooldownReduction": "两项套装天赋冷却缩短百分比",
+        "Add_SpellPierce_TT": "三项套装天赋穿透提高百分点"
+      },
+      "notes": [
+        "天赋穿透是独立效果，不能直接等同于力量或智力增加相同百分点。"
+      ]
+    },
+    "TTKitRedSet93CommonDescription": {
+      "effect_zh": "激活2项：提高{Add_SpellDef_TT}%对天赋伤害的防护。激活3项：受到超过最大生命{SpellBlock_Amount_TT}%的天赋伤害时，吸收其中{SpellBlock_Percentage_TT}%，并在随后{SpellBlock_Duration}秒内，使所受天赋伤害减少同样比例。该触发冷却{Spell_BlockCooldown}秒。",
+      "parameter_labels": {
+        "Add_SpellDef_TT": "两项套装天赋伤害防护百分比",
+        "SpellBlock_Amount_TT": "触发防护所需天赋伤害占最大生命百分比",
+        "SpellBlock_Percentage_TT": "触发伤害吸收及随后天赋减伤百分比",
+        "SpellBlock_Duration": "触发后的天赋减伤持续时间",
+        "Spell_BlockCooldown": "大伤害防护触发冷却时间"
+      },
+      "notes": [
+        "门槛、当次吸收和后续减伤是三件事；后续防护明确针对天赋伤害，不默认覆盖所有普通攻击。"
+      ]
+    },
+    "TTKitRedSet94CommonDescription": {
+      "effect_zh": "激活2项：召唤物的各项基础属性提高{Add_SummonBuff_TT}。激活3项：解锁“野兽召唤师”的主动使用，冷却为{SummonCooldown}秒。",
+      "parameter_labels": {
+        "Add_SummonBuff_TT": "召唤物各基础属性增益",
+        "SummonCooldown": "召唤能力冷却时间"
+      },
+      "notes": [
+        "收益作用于召唤物，不是英雄自身各属性；具体召唤内容见核心主动天赋。"
+      ]
+    },
+    "TTKitRedSet95CommonDescription": {
+      "effect_zh": "激活2项：受到的减速幅度与其他控制效果持续时间降低{Add_DecreasControlBonus_TT}%。激活3项：总削减幅度提高到{Total_DecrControlBonus_TT}%。",
+      "parameter_labels": {
+        "Add_DecreasControlBonus_TT": "两项套装减速强度及控制时长削减百分比",
+        "Total_DecrControlBonus_TT": "三项套装累计削减百分比"
+      },
+      "notes": [
+        "第三档是总值，不再与第二档相加；减速削弱强度、其他控制缩短时长，不等于完全免控。"
+      ]
+    },
+    "TTKitRedSet96CommonDescription": {
+      "effect_zh": "激活1项：被敌方英雄击杀时取得一张位移卷轴。激活2项：每次被敌方英雄击杀，基础属性各增加{Add_Redset9_6_AddStat}，最多叠{Add_Redset9_6_MaxStacks}层。激活3项：复活等待时间缩短{DeathTimeDecrease}%。",
+      "parameter_labels": {
+        "Add_Redset9_6_AddStat": "每次合格死亡增加的各基础属性",
+        "Add_Redset9_6_MaxStacks": "死亡属性补偿叠层上限",
+        "DeathTimeDecrease": "复活时间缩短百分比"
+      },
+      "notes": [
+        "死亡奖励明确要求死于敌方英雄；不能把被建筑或野怪击杀也算入。属性增长有层数上限，不能作为无限死亡成长。"
+      ]
+    },
+    "TTKitRedSet75CommonDescription": {
+      "effect_zh": "激活2项：商店全部物品价格降低{Discount2}%。激活3项：价格总降幅提高到{Discount3}%。",
+      "parameter_labels": {
+        "Discount2": "两项套装商店折扣百分比",
+        "Discount3": "三项套装商店总折扣百分比"
+      },
+      "notes": [
+        "三项显示总折扣，不是第二档之外再减同样比例；这是商店物品价格，不自动扩展成天赋激活Prime费用减少。"
+      ]
+    },
+    "TTKitRedSet76CommonDescription": {
+      "effect_zh": "激活2项：所受暴击伤害降低{DecreaseCrit_Bonus}%。激活3项：总降低幅度提高到{TTSDecreaseCrit_Bonus}%。",
+      "parameter_labels": {
+        "DecreaseCrit_Bonus": "两项套装暴击减伤百分比",
+        "TTSDecreaseCrit_Bonus": "三项套装累计暴击减伤百分比"
+      },
+      "notes": [
+        "已核Redset7_6_DecreaseCrit_Trigger与PFTriggerApplicator：对被判定为暴击的整次伤害事件乘减伤系数，不只削减暴击额外部分。三项为累计值，不能再加两项数值；这也不降低敌人的暴击概率。"
+      ]
+    },
+    "TTKitRedSet77CommonDescription": {
+      "effect_zh": "激活1项：符文增益持续时间延长{ExtraDuration}秒。激活2项：附近敌方攻城士兵死亡时，掉落一个随机小型符文。激活3项：力量与智力中较高者提高{Add_Stat_RedSet}。",
+      "parameter_labels": {
+        "ExtraDuration": "符文效果额外持续时间",
+        "Add_Stat_RedSet": "三项套装较高攻击属性增益"
+      },
+      "notes": [
+        "原文写附近死亡，不写必须自己补刀；对象限定攻城士兵，也不是任意士兵或英雄。"
+      ]
+    },
+    "TTKitRedSet78CommonDescription": {
+      "effect_zh": "激活2项：移动速度提高{Redset7_8_MoveSpeed}。激活3项：解锁“似曾相识”的主动使用。激活4项：用于记录受伤的回溯时间与护盾换算比例都提高{TTIncrease_ShieldAndPeriod}%。",
+      "parameter_labels": {
+        "Redset7_8_MoveSpeed": "两项套装移动速度增益",
+        "TTIncrease_ShieldAndPeriod": "回溯时长与转盾比例提高百分比"
+      },
+      "notes": [
+        "四项分别扩大时间窗口与转盾比例；实际盾量还取决于窗口内承受多少伤害，不能把两项50%简单合并成固定100%盾量提高。"
+      ]
+    },
+    "TTKitRedSet79CommonDescription": {
+      "effect_zh": "激活2项：“无声恐怖”模式提高{Redset7_9_DamageReduction}%对天赋伤害的防护，“束缚恐惧”模式则提高相同比例的普攻防护。激活3项：普通攻击敌方英雄时，前一模式使其无法使用天赋，后一模式使其无法普通攻击，持续{Redset7_9_CC_Duration}秒；触发冷却{Redset7_9_CC_Cooldown}秒。激活4项：力量与智力中较高者提高{Redset7_9_BonusStat}。",
+      "parameter_labels": {
+        "Redset7_9_DamageReduction": "对应类别伤害防护百分比",
+        "Redset7_9_CC_Duration": "封印触发控制持续时间",
+        "Redset7_9_CC_Cooldown": "封印控制触发冷却时间",
+        "Redset7_9_BonusStat": "四项套装较高攻击属性增益"
+      },
+      "notes": [
+        "两种模式需要切换，不能同时取得两种减伤与两种控制；切换及按附近事件缩短触发冷却的具体规则见“诅咒封印”核心天赋。"
+      ]
+    },
+    "TTPrimeGenerators": {
+      "effect_zh": "这类天赋产生的额外Prime共用累计上限{MaxNaftaGain}。当前已取得{CurrentNaftaGain}；达到上限后不再从这些天赋取得额外收入。",
+      "parameter_labels": {
+        "MaxNaftaGain": "同类天赋共享额外Prime累计上限",
+        "CurrentNaftaGain": "该共享计数已累计取得Prime"
+      },
+      "notes": [
+        "两个参数来自全局AILogic.AILP：MaxNaftaGain为1000，CurrentNaftaGain为英雄当前共享计数。适用于G562、G580、G563、G564、G565、G566，不与G016/G399的675上限混用，也不是每个天赋各有1000独立额度。"
+      ]
+    },
+    "TTMidasCommonDescription": {
+      "effect_zh": "对指定士兵或怪物造成{G566_Damage}伤害；若本次使其死亡，获得{NaftaBonus} Prime。",
+      "parameter_labels": {
+        "G566_Damage": "对士兵或怪物的主动伤害",
+        "NaftaBonus": "主动击杀额外Prime"
+      },
+      "notes": [
+        "这是相关主动天赋共享的效果说明，不代表拥有任一套装部件就能无条件使用全部主动能力；额外Prime还受同类收入共享上限约束。"
+      ]
+    },
+    "TTKitRedSet712CommonDescription": {
+      "effect_zh": "此部件使“速度马蹄铁”提供的基础移动速度增量再提高{G777_BonusSpeedPerTalent}。",
+      "parameter_labels": {
+        "G777_BonusSpeedPerTalent": "此部件追加的基础移动速度"
+      },
+      "notes": [
+        "这是一项部件联动增量；按套装实际激活部件及容量计算，不能把目录里所有可选成员自动叠满。"
+      ]
+    }
+  }
+}

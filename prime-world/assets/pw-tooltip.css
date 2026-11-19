@@ -1,0 +1,92 @@
+/* Prime World V0.8.3 unified icon-anchored tooltip */
+.pw-tooltip-hint{display:inline-flex;align-items:center;gap:6px;margin:8px 0 12px;padding:6px 10px;border:1px solid var(--line,#42515d);border-radius:2px;background:var(--panel2,#172430);color:var(--soft,#c2ccd4);font-size:11px;line-height:1.5}
+.pw-tooltip{position:fixed;box-sizing:border-box;z-index:99999;width:min(430px,calc(100vw - 20px));max-height:min(74vh,640px);overflow:auto;overscroll-behavior:contain;padding:0;border:1px solid #9c7944;border-radius:2px;background:#101820;color:#e8edf2;box-shadow:0 12px 34px rgba(0,0,0,.58),0 0 0 1px rgba(255,255,255,.025) inset;font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif;font-size:14px;line-height:1.6;pointer-events:auto}
+.pw-tooltip[hidden]{display:none}
+.pw-tooltip-head{display:flex;gap:11px;align-items:center;padding:11px 13px 10px;border-bottom:1px solid #34424e;background:#192530}
+.pw-tooltip-icon{width:46px;height:46px;flex:0 0 46px;object-fit:contain;border:1px solid #596775;border-radius:1px;background:#0c141c}
+.pw-tooltip-avatar{border-radius:50%}
+.pw-tooltip-icon.is-empty{display:grid;place-items:center;color:#d3ad6a;font-size:22px}
+.pw-tooltip-title{min-width:0;flex:1}
+.pw-tooltip-title strong{display:block;color:#e7c27e;font-size:17px;font-weight:bold;line-height:1.35;overflow-wrap:anywhere}
+.pw-tooltip-subtitle{margin-top:3px;color:#c4d0da;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+.pw-tooltip-id{display:block;margin-top:5px;padding:3px 6px;border:1px solid #43515d;border-radius:1px;background:#0d151d;color:#cbd5dd;font-family:Consolas,"Microsoft YaHei",monospace;font-size:13px;overflow-wrap:anywhere;max-width:100%;width:fit-content;line-height:1.5}
+.pw-tooltip-catalog{margin-top:4px;color:#bdcbd7;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.pw-tooltip-body{padding:11px 13px 12px}
+.pw-tooltip-section{margin:0 0 9px}
+.pw-tooltip-label{display:block;margin:0 0 5px;color:#d8b46f;font-size:13px;font-weight:bold;letter-spacing:normal}
+.pw-tooltip-effect{margin:0;color:#e1e7ed;font-size:14px;line-height:1.65;overflow-wrap:anywhere;white-space:normal}
+.pw-tooltip-tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 11px}
+.pw-tooltip-tag{display:inline-flex;align-items:center;padding:3px 7px;border:1px solid #4a5965;border-radius:2px;background:#1a2732;color:#dce5ec;font-size:12px;line-height:1.5}
+.pw-tooltip-tag.control{border-color:#92514e;background:#302020;color:#ffc0b8}
+.pw-tooltip-tag.debuff{border-color:#8a673d;background:#2c251b;color:#f0cb93}
+.pw-tooltip-tag.buff,.pw-tooltip-tag.healing{border-color:#47765a;background:#1b2a22;color:#b4e0c1}
+.pw-tooltip-tag.damage{border-color:#496b91;background:#1b2a3a;color:#b7d7fb}
+.pw-tooltip-tag.mobility,.pw-tooltip-tag.special{border-color:#6e5b91;background:#272136;color:#d7c6fa}
+.pw-tooltip-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin:9px 0 10px}
+.pw-tooltip-metric{min-width:0;padding:7px 8px;border:1px solid #34424e;border-radius:1px;background:#151f28}
+.pw-tooltip-metric span{display:block;color:#c1ced8;font-size:12px}
+.pw-tooltip-metric b{display:block;margin-top:3px;color:#f0f3f6;font-size:15px;font-weight:400;overflow-wrap:anywhere}
+.pw-tooltip-components{margin:5px 0 10px;padding-left:17px;color:#cbd5dd;font-size:13px}
+.pw-tooltip-components li{padding:1px 0}
+.pw-tooltip-note{margin:8px 0 0;padding:8px 9px;border-left:2px solid #b88f4e;border-radius:1px;background:#1b242b;color:#c0cbd4;font-size:13px;line-height:1.58}
+.pw-tooltip-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding-top:9px;border-top:1px solid #34424e;flex-wrap:wrap}
+.pw-tooltip-actions a{color:#e7c27e;font-size:13px;text-decoration:none}
+.pw-tooltip-actions a:hover{text-decoration:underline}
+.pw-tooltip-source{color:#c4d0da!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html[data-theme="light"] .pw-tooltip{background:#f7f9fb;color:#23313f;border-color:#a9854c;box-shadow:0 12px 32px rgba(24,39,55,.25)}
+html[data-theme="light"] .pw-tooltip-head{background:#e9eef2;border-color:#c9d2da}
+html[data-theme="light"] .pw-tooltip-title strong{color:#805a25}
+html[data-theme="light"] .pw-tooltip-subtitle,html[data-theme="light"] .pw-tooltip-catalog{color:#485b6b}
+html[data-theme="light"] .pw-tooltip-id{background:#edf1f4;border-color:#cbd4dc;color:#405364}
+html[data-theme="light"] .pw-tooltip-effect{color:#293b4b}
+html[data-theme="light"] .pw-tooltip-metric{border-color:#d4dce3;background:#edf1f4}
+html[data-theme="light"] .pw-tooltip-metric span{color:#485b6b}
+html[data-theme="light"] .pw-tooltip-metric b{color:#253747}
+html[data-theme="light"] .pw-tooltip-note{background:#f0f2f4;color:#526272}
+html[data-theme="light"] .pw-tooltip-label,html[data-theme="light"] .pw-tooltip-actions a{color:#74501c}
+html[data-theme="light"] .pw-tooltip-actions{border-color:#d4dce3}
+html[data-theme="light"] .pw-tooltip-source{color:#485b6b!important}
+@media(max-width:600px){.pw-tooltip{max-height:68vh}.pw-tooltip-head,.pw-tooltip-body{padding:10px}.pw-tooltip-icon{width:42px;height:42px;flex-basis:42px}}
+
+/* Effect glossary quick navigation */
+.pw-effect-index{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin:14px 0 20px;padding:14px 16px;border:1px solid var(--line,#42515d);border-left:3px solid var(--gold,#cba15e);border-radius:2px;background:var(--panel2,#172430)}
+.pw-effect-index strong{display:block;color:var(--gold,#cba15e);font-size:13px;letter-spacing:.04em}
+.pw-effect-index p{margin:5px 0 0;color:var(--soft,#c2ccd4);font-size:11px;line-height:1.6}
+.pw-effect-index nav{display:flex;flex-wrap:wrap;gap:6px}
+.pw-effect-index nav a{display:inline-flex;align-items:center;padding:6px 10px;border:1px solid var(--line,#42515d);border-radius:2px;background:var(--panel,#111b24);color:var(--text,#e8edf2);font-size:11px;text-decoration:none}
+.pw-effect-index nav a:hover{border-color:var(--gold,#cba15e);color:var(--gold,#cba15e)}
+.pw-effect-section{scroll-margin-top:88px}
+@media(max-width:650px){.pw-effect-index{align-items:flex-start}.pw-effect-index nav{width:100%}.pw-effect-index nav a{flex:1 1 42%;justify-content:center}}
+
+/* Talent effect and value accents */
+.pw-tooltip-value,.pw-tooltip-metric b{color:#f6d18b;font-weight:400;font-variant-numeric:tabular-nums}
+.pw-tooltip-condition{color:#d4bafd}
+.pw-tooltip-metrics{gap:4px 10px}
+.pw-tooltip-metric{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:2px 6px;padding:4px 0;background:none;border:0;border-bottom:1px solid #34424e}
+.pw-tooltip-metric b{margin:0;font-size:14px}
+html[data-theme="light"] .pw-tooltip-value,html[data-theme="light"] .pw-tooltip-metric b{color:#76500a}
+html[data-theme="light"] .pw-tooltip-condition{color:#65369b}
+html[data-theme="light"] html[data-theme="light"] .pw-tooltip-metric{background:none}
+
+.pw-tooltip-magic,.pw-tooltip-physical,.pw-tooltip-pure{font-weight:400}
+.pw-tooltip-magic{color:#9ccfff}
+.pw-tooltip-physical{color:#ffac93}
+.pw-tooltip-pure{color:#f3e8a5}
+html[data-theme="light"] .pw-tooltip-magic{color:#175b87}
+html[data-theme="light"] .pw-tooltip-physical{color:#963916}
+html[data-theme="light"] .pw-tooltip-pure{color:#695509}
+
+.pw-tooltip-damage{color:#ffbc9d}
+.pw-tooltip-control{color:#efb2d4}
+.pw-tooltip-defence,.pw-tooltip-recovery{color:#a9e1be}
+.pw-tooltip-utility,.pw-tooltip-stat{color:#a8d9f1}
+.pw-tooltip-damage,.pw-tooltip-control,.pw-tooltip-defence,.pw-tooltip-recovery,.pw-tooltip-utility,.pw-tooltip-stat{font-weight:400}
+html[data-theme="light"] .pw-tooltip-damage{color:#903d21}
+html[data-theme="light"] .pw-tooltip-control{color:#872754}
+html[data-theme="light"] .pw-tooltip-defence,html[data-theme="light"] .pw-tooltip-recovery{color:#17684b}
+html[data-theme="light"] .pw-tooltip-utility,html[data-theme="light"] .pw-tooltip-stat{color:#175b87}
+
+.skill-effect .parameter-ref,.skill-metrics b,.skill-card .values-cell b{font-weight:400;font-variant-numeric:tabular-nums}
+
+.pw-tooltip-skill-ref{color:#8cddd8;font-weight:400}
+html[data-theme="light"] .pw-tooltip-skill-ref{color:#126868}

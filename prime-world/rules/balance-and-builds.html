@@ -1,0 +1,728 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>07 原版平衡与配装分析｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="rules/balance-and-builds.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link is-active" href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class=""><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class="active"><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class=""><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 07 原版平衡与配装分析</div><div class="article-layout"><article class="article-body"><h1 id="07-原版平衡与配装分析">07 原版平衡与配装分析</h1>
+<blockquote>
+<p><strong>阅读范围</strong>：本章依据 Prime World 开源仓库固定提交 8de5df31fa122b6f51cd099883de74bf4a21228d，讨论原版规则。英雄职责、搭配取舍和评估方法是基于这些规则的策划分析；原始数值、条件及算例输入分别标明。没有对局胜率、使用率或玩家操作样本，因此不据此编制强度榜。本文中的假设属性仅用于说明公式，不是重制数值，也不是某名英雄的默认面板。</p>
+</blockquote>
+<h2 id="1-配装到底在改变什么">1. 配装到底在改变什么</h2>
+<p>一套天赋同时决定四件事：这局能使用哪些能力；每次点亮后增加多少属性；何时能形成技能联动；在交战中有多少次机会兑现这些能力。只比较招式面板伤害，容易漏掉命中条件、准备时间、资源消耗和防守窗口；只比较“每点 Prime 买多少属性”，又会漏掉发展点、分层成长和整套天赋的 Force。原版把这些因素实际连在了一起。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/DBTalent.h#L90-L96">天赋开层门槛</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L78-L118">按层学习费用</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L87-L98">Force 与额外成长</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/Stat.cpp#L203-L264">点亮后的属性成长</a>。</p>
+<p>分析时先固定比较条件：同一英雄、同一阶段、同样的局外加点与星级；说明已点亮的强化、土地归属、目标防御、战斗持续时间和命中人数。若这些输入不同，结论应写成“在该场景下收益更高”，不宜写成某张天赋或某名英雄始终更强。</p>
+<h2 id="2-六类职责的边界">2. 六类职责的边界</h2>
+<p>本册将 64 名英雄各归入一个主要职责，再保留副标签。这是方便阅读与配队的分析分类，不是为原版增设职业，也不表示同类必须使用相同天赋。</p>
+<table>
+<thead>
+<tr>
+<th>主类</th>
+<th style="text-align: right;">人数</th>
+<th>主要承担什么</th>
+<th>需要与相邻职责区分的地方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>坦克</td>
+<td style="text-align: right;">8</td>
+<td>承接接触、限制敌方行动、让队友安全输出或撤退</td>
+<td>生命高不自动等于坦克；需要看控制、伤害分担和持续占位是否构成主要贡献</td>
+</tr>
+<tr>
+<td>战士</td>
+<td style="text-align: right;">17</td>
+<td>在危险距离持续打击，并用回复、防御或机动维持接战</td>
+<td>能站前排，但经常需要把资源变成自己的攻击循环；不应默认替代全部团队保护</td>
+</tr>
+<tr>
+<td>刺客</td>
+<td style="text-align: right;">3</td>
+<td>利用准备、隐蔽、追踪或处决条件集中消灭关键目标</td>
+<td>是否隐身不是唯一标准；切入后能否兑现爆发和退出更关键</td>
+</tr>
+<tr>
+<td>辅助</td>
+<td style="text-align: right;">10</td>
+<td>让队友获得治疗、护盾、增益、信息、控制或资源优势</td>
+<td>辅助也可能近战、能打伤害、能偷 Prime；不能仅按个人伤害判断贡献</td>
+</tr>
+<tr>
+<td>法师</td>
+<td style="text-align: right;">17</td>
+<td>以专属施法、区域、召唤或条件组合完成主要输出与限制</td>
+<td>归法师不表示所有伤害都按智力，也不表示所有招式都是魔法伤害</td>
+</tr>
+<tr>
+<td>射手</td>
+<td style="text-align: right;">9</td>
+<td>维持远程攻击循环，并用技能延长有效输出时间</td>
+<td>炮手有弹匣与固定射速；女巫也能依靠施法和强化普攻。不能把所有射手套进同一普攻模型</td>
+</tr>
+</tbody>
+</table>
+<p>例如，狂战士虽然需要近身作战，但旋转、追击和偷取主要服务自己的持续进攻，因此列为战士；岩石巨人的近身限制、承压和进入战场能力更符合坦克。暗影／隐灵有隐身，却通过友军隐身、削防和团队攻击增益承担辅助职责；抹杀者则围绕猎物标记和击杀周转承担刺客职责。具体原版能力依据在下表各英雄的“原招式”链接中。</p>
+<h2 id="3-64-名英雄分别要算清什么">3. 64 名英雄分别要算清什么</h2>
+<p>下列每一项都在说明同类英雄之间的差异。右栏是由原版机制推导的配装判断，不是固定加点顺序。默认招式和替代招式分别核算；不能把互相替代的终极技、以及未点亮的强化同时塞入最高收益算式。</p>
+<h3 id="坦克8-名">坦克（8 名）</h3>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>关键差异</th>
+<th>配装与平衡分析要保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>达卡／哈卡（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Crusader">原招式</a>）</td>
+<td>施法积累信仰，下一次技能的特殊收益与盾冲、治疗和盾控相连</td>
+<td>消耗信仰的先后顺序会改变这一轮职责；治疗还受距离影响</td>
+</tr>
+<tr>
+<td>树魔（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Ent">原招式</a>）</td>
+<td>消耗树木取得恢复与属性，终极伤害按人数改变后分配</td>
+<td>环境资源有限；多人终极总收益不能当作每个目标都承受同一总伤害</td>
+</tr>
+<tr>
+<td>蛙语者／沼泽之王（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Frogenglut">原招式</a>）</td>
+<td>补刀增加最大生命，抓取命中路径上首个合适敌人，部分伤害依生命</td>
+<td>成长依赖实际补刀，不能默认达到最高生命；兵线和前排能改变抓取对象</td>
+</tr>
+<tr>
+<td>剑刃大师／舍沙（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Naga">原招式</a>）</td>
+<td>受击反制、毒与偷取配合嘲讽、闪避形成承压控制</td>
+<td>闪避主要针对适用攻击；嘲讽时敌人是否被迫打到自己影响反制价值</td>
+</tr>
+<tr>
+<td>岩石巨人／震地者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Rockman">原招式</a>）</td>
+<td>持续承压与近身减速，生命相关击飞，岩块形态保命并改变土地</td>
+<td>岩块保护同时失去主动行动；防御收益必须扣除无法追击和输出的时间</td>
+</tr>
+<tr>
+<td>战争领主／将军（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord">原招式</a>）</td>
+<td>附近友军提高防御，冲锋、反伤护甲和战旗形成团队阵地</td>
+<td>自身与友军减伤强化独立；离开队伍与旗区时不能保持满额阵地收益</td>
+</tr>
+<tr>
+<td>漫游者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Witcher">原招式</a>）</td>
+<td>承受或分担伤害积累勇气，勇气既提供防守也会被治疗／进攻消耗</td>
+<td>花掉勇气会改变后续承压；保护队友不能当作无成本生成额外生命</td>
+</tr>
+<tr>
+<td>陨落领主（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/WraithKing">原招式</a>）</td>
+<td>武器护甲充能兼顾吸收、指令与强化攻击，默认终极技提供区域沉默</td>
+<td>同一充能用于攻击会影响可用于防守的储备；沉默不等于禁止所有行动</td>
+</tr>
+</tbody>
+</table>
+<h3 id="战士17-名">战士（17 名）</h3>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>关键差异</th>
+<th>配装与平衡分析要保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>狱刃（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/BladeDancer">原招式</a>）</td>
+<td>切换姿态带来回复和机动，不同姿态分别偏攻击、追击或防御</td>
+<td>未进入允许并用的终极状态时，不把所有姿态效果同时叠入面板</td>
+</tr>
+<tr>
+<td>米米（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Fluffy">原招式</a>）</td>
+<td>普通攻击与受伤积累怒气，满怒自动变形，变形期有回复和怒气消耗</td>
+<td>临近自动变形时能否继续施法、进入后是否有目标，影响资源真正的价值</td>
+</tr>
+<tr>
+<td>弗里兹（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Freeze">原招式</a>）</td>
+<td>施法叠减伤并形成后续普攻收益，攻击又改善技能周转</td>
+<td>技能与普攻必须交替兑现；终极限制会因伤害而提前结束，需考虑队友行为</td>
+</tr>
+<tr>
+<td>高地人／不朽者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Highlander">原招式</a>）</td>
+<td>连续攻击与附近死亡维持恢复，死亡后灵魂状态消耗能量寻找复生位置</td>
+<td>复生能力仍受剩余能量和落点约束；不能把一次死亡当成免费全额重置</td>
+</tr>
+<tr>
+<td>狂战士（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/IronKnight">原招式</a>）</td>
+<td>偷取与旋转支撑近身持续战斗，锁链帮助跟住敌人</td>
+<td>续航依赖继续命中；被拉开或无法攻击时，理论吸收和回复都可能落空</td>
+</tr>
+<tr>
+<td>卡塔娜（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Katana">原招式</a>）</td>
+<td>跳跃落地控制，裂空斩可改善跳跃周转，但短期重复跳跃失去伤害与眩晕</td>
+<td>追击机动和再次打出完整控制不能混算；另有变形期行动限制</td>
+</tr>
+<tr>
+<td>斗士／武道宗师（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Marine">原招式</a>）</td>
+<td>普攻与施法攒怒，达到阈值产生纯粹收益，突进和回复维持近身</td>
+<td>进场时怒气状态决定第一轮强度；终极技的控制免疫不等于全伤害免疫</td>
+</tr>
+<tr>
+<td>弗里尔／诺克斯（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Monster">原招式</a>）</td>
+<td>脱战甲壳保护，破壳转为机动，连续攻击与潜地返回另有条件</td>
+<td>保护状态与破壳加速不是永久并存；脱战恢复与重新进入需要时间</td>
+</tr>
+<tr>
+<td>猎兵／狼舞者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Mowgli">原招式</a>）</td>
+<td>狼群数量影响攻击收益，长矛指挥宠物，击杀可延长团队终极增益</td>
+<td>狼群存活与可到达目标决定投资回报；不能把死亡的狼仍计作满编收益</td>
+</tr>
+<tr>
+<td>夜之女王／黑豹（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Night">原招式</a>）</td>
+<td>黑豹共享保护、伤害分担与生命相关收益，合体改变双方存活状态</td>
+<td>保护宠物也是保护自身；不能把本体与宠物当作互不影响的两份完整生命</td>
+</tr>
+<tr>
+<td>捣蛋少女（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/PinkGirl">原招式</a>）</td>
+<td>施法强化下一次普攻，短时闪避与翻滚、背后接近相互衔接</td>
+<td>不能只连续按技能而忽略插入普攻；闪避窗口外的承压需要另算</td>
+</tr>
+<tr>
+<td>决斗家／盗贼王子（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Prince">原招式</a>）</td>
+<td>概率抵挡有单次上限，攻击爆发与回复配合可继承普攻收益的剑气</td>
+<td>抵挡不能当作稳定全免；剑气是否继承暴击和偷取需按对应招式计算</td>
+</tr>
+<tr>
+<td>图雷胡（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Reaper">原招式</a>）</td>
+<td>技能消耗生命，缺血提高恢复与攻击收益，终极保护最低生命</td>
+<td>低生命有进攻回报也更易被控制集火；不能把濒死状态视作无风险常态</td>
+</tr>
+<tr>
+<td>义警（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Shadow">原招式</a>）</td>
+<td>怒气既支持进攻，也用于承受大额伤害，痛苦储存后再返还</td>
+<td>进攻消耗与防守储备竞争；返还伤害取决于之前实际承受和储存</td>
+</tr>
+<tr>
+<td>萨满（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Shaman">原招式</a>）</td>
+<td>附近友军获得魔法保护，死亡带来恢复，图腾、荆棘与连续跳跃联动</td>
+<td>魔法保护不能当作全类型减伤；固定区域和可用跳跃目标限制兑现</td>
+</tr>
+<tr>
+<td>潜猎者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Stalker">原招式</a>）</td>
+<td>削减目标较高防御并偷取，远距离弹道、调整位置与缴械相互配合</td>
+<td>远距离命中与近身追击的风险不同；缴械对施法型敌人不等于完全压制</td>
+</tr>
+<tr>
+<td>獠牙／利爪（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Werewolf">原招式</a>）</td>
+<td>攻击低血敌人获益，受击后的恢复／防御、追踪与强制攻击变形相连</td>
+<td>追残血收益和变形期行动限制同时存在；不能默认所有目标始终低血</td>
+</tr>
+</tbody>
+</table>
+<h3 id="刺客3-名">刺客（3 名）</h3>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>关键差异</th>
+<th>配装与平衡分析要保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>抹杀者／刺客（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Assassin">原招式</a>）</td>
+<td>标记需要观察准备，首击／飞刀兑现，击杀帮助技能周转</td>
+<td>进入前等待与进入后退出同样重要；未击杀时不能预支刷新收益</td>
+</tr>
+<tr>
+<td>无面者／幻影（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Faceless">原招式</a>）</td>
+<td>施法改善暴击，专属技能也能暴击，并有绝对生命门槛处决</td>
+<td>强化暴击的收益要分适用招式；处决判断看当前绝对生命，不能按比例想当然</td>
+</tr>
+<tr>
+<td>温迪戈（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Wendigo">原招式</a>）</td>
+<td>流血与追踪建立追击，夜间隐蔽，终极技提前结算并清除剩余流血</td>
+<td>立即爆发会消耗未来持续伤害；不能把终极结算后已移除的流血再算一次</td>
+</tr>
+</tbody>
+</table>
+<h3 id="辅助10-名">辅助（10 名）</h3>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>关键差异</th>
+<th>配装与平衡分析要保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>庇护者／守护者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Angel">原招式</a>）</td>
+<td>治疗弹道、信标区域、长枪回收与死亡后的灵魂窗口共同提供支援</td>
+<td>施法覆盖和站位决定多人收益；不要把死亡后仍可参与等同于没有死亡代价</td>
+</tr>
+<tr>
+<td>吟游诗人／缪斯（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Bard">原招式</a>）</td>
+<td>按音符施法取得 Prime 与灵感，群体护盾和小提琴形成团队覆盖</td>
+<td>救人可能需要偏离提示；未破盾返能、重复旋律和满灵感造地都有独立条件</td>
+</tr>
+<tr>
+<td>克瓦希尔（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Brewer">原招式</a>）</td>
+<td>蜂蜜给友军最大生命、压低敌人较高攻击属性，叠层开启进一步效果</td>
+<td>近身不等于坦克；传播对象、叠层速度与覆盖人数决定团队收益</td>
+</tr>
+<tr>
+<td>仙灵／妖精女王（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Fairy">原招式</a>）</td>
+<td>两群精灵的攻击与保护依位置变化，附身可保命但失去普通攻击</td>
+<td>安全附身与本体持续输出互有代价，不能既全程附身又计算本体满额普攻</td>
+</tr>
+<tr>
+<td>灵魂收割者／捕魂者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/GhostLord">原招式</a>）</td>
+<td>周围死亡取得幽灵，连线敌人回血、连线友军又要付出自身生命</td>
+<td>救人同时会压低自身安全线；幽灵、护盾与返能必须按先后和有效存量核算</td>
+</tr>
+<tr>
+<td>治疗师／女祭司（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Healer">原招式</a>）</td>
+<td>治疗可同时作用目标与自身，强化改变范围、低血收益与返还条件</td>
+<td>回复是否溢出、是否真治到队友和能否持续支付能量，比理论总治疗更重要</td>
+</tr>
+<tr>
+<td>暗影／隐灵（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Invisible">原招式</a>）</td>
+<td>隐身、友军隐身、削防与团队攻击增益构成支援</td>
+<td>给队友的隐蔽可能使自己暴露；可见性管理和团队跟进比个人爆发更关键</td>
+</tr>
+<tr>
+<td>魔笛手／鼠王（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Ratcatcher">原招式</a>）</td>
+<td>受控单位参与防御收益，改变敌地、魅惑／控制单位和窃取 Prime</td>
+<td>控制对象的类型、数量与存活都影响收益；经济收益也有触发条件</td>
+</tr>
+<tr>
+<td>少女／宁芙（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Unicorn">原招式</a>）</td>
+<td>附近持续恢复与有上限的伤害转化治疗，友军增益不一定覆盖自身</td>
+<td>群体治疗受共享容量与范围限制；不能把每个队友都按独立无限治疗池计算</td>
+</tr>
+<tr>
+<td>狂信者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Zealot">原招式</a>）</td>
+<td>普通攻击减少冷却，仪式攻击分配伤害，延迟治疗与反击按受伤变化</td>
+<td>反击不会撤销已受伤害；延迟回复必须在死亡前结算才有生存价值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="法师17-名">法师（17 名）</h3>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>关键差异</th>
+<th>配装与平衡分析要保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多克特琳娜（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Alchemist">原招式</a>）</td>
+<td>材料和法阵先准备，分身既是控制手段也是默认终极技的消耗品</td>
+<td>加强爆发前先看能否稳定生成并送达分身；提前被迫转移会损失准备收益</td>
+</tr>
+<tr>
+<td>女画师（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Artist">原招式</a>）</td>
+<td>保留颜料提高攻速属性与冷却收益，专属施法又消耗颜料</td>
+<td>满颜料普攻和连续技能爆发是不同状态，不能全程同时计算</td>
+</tr>
+<tr>
+<td>报丧女妖（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Banshee">原招式</a>）</td>
+<td>腐朽层数、恢复压制、自身恢复与死亡触发周转互相连接</td>
+<td>持续感染与短时爆发不同；睡眠被伤害唤醒会改变队友的跟进顺序</td>
+</tr>
+<tr>
+<td>克罗妮卡（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Chronicle">原招式</a>）</td>
+<td>附近眩晕触发收益，普通攻击和时间回返提供连续配合</td>
+<td>队友控制能提高兑现率，但回返也会改变站位，不能只统计增加的伤害</td>
+</tr>
+<tr>
+<td>恶魔学者（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Demonolog">原招式</a>）</td>
+<td>恶魔参与输出、替主人分担伤害，并可被终极技用于进攻</td>
+<td>同一只恶魔不能既按持续存活满额输出，又在开头被终极技消耗</td>
+</tr>
+<tr>
+<td>树精（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Dryad">原招式</a>）</td>
+<td>孢子强化普通攻击，生长层数改变技能伤害与费用，防护状态限制移动</td>
+<td>高层数能否维持和离开保护区的损失，决定爆发与站桩方案的差别</td>
+</tr>
+<tr>
+<td>渡鸦（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/FallenAngel">原招式</a>）</td>
+<td>首次攻击不同目标有额外收益，诅咒延迟与风暴选目标决定输出分布</td>
+<td>换目标收益与集火击杀存在取舍；随机或优先选取的伤害不能全算给一个敌人</td>
+</tr>
+<tr>
+<td>火狐／焰尾（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/FireFox">原招式</a>）</td>
+<td>施法带来自疗，静止补能，燃烧叠层与火球有各自命中约束</td>
+<td>为了补能停步会暴露位置；同一目标承受的火球次数不能按全发射量计算</td>
+</tr>
+<tr>
+<td>发明家（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Inventor">原招式</a>）</td>
+<td>零件用于装置与持续技能，花费零件又产生短时攻击和移动收益</td>
+<td>建设阵地和立即释放会争用库存；装置能活多久决定其实际总产出</td>
+</tr>
+<tr>
+<td>法师／术士（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Mage">原招式</a>）</td>
+<td>移动中施法、区域中心收益、变形控制与边界限制形成输出</td>
+<td>施法不迫停并不代表射程无限；敌人不踩中心或绕开边界时收益会下降</td>
+</tr>
+<tr>
+<td>露娜（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/MagicGirl">原招式</a>）</td>
+<td>昼夜改变施法延迟与传送条件，默认终极技把目标暂时移出交战</td>
+<td>暂时移除也可能让队友失去攻击目标；结算时机与夜间窗口须单算</td>
+</tr>
+<tr>
+<td>奥术飞龙／魔蜓（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/ManaWyrm">原招式</a>）</td>
+<td>成长能量池，能量盾与进攻共用资源，击杀和特殊形态帮助周转</td>
+<td>同时按满额护盾与满额施法计算会重复使用能量；击杀前不能先计刷新</td>
+</tr>
+<tr>
+<td>瘟疫医生（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/PlagueDoctor">原招式</a>）</td>
+<td>毒状态开启后续伤害与控制，区域干扰视野／命中，实际伤害转治疗</td>
+<td>预先上毒与命中次序影响收益；敌方防御和可造成的实际伤害也影响恢复</td>
+</tr>
+<tr>
+<td>克里奥／暴风雪（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/SnowQueen">原招式</a>）</td>
+<td>叠加移动与攻速限制，土地条件追加能量压制，冰封有解脱规则</td>
+<td>叠满前后强度不同；敌方队友接近可能改变冰封持续，不能只看最大时长</td>
+</tr>
+<tr>
+<td>雷霆大师／风暴投手（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/ThunderGod">原招式</a>）</td>
+<td>施法积累普攻电链，弹跳衰减，部分招式又消耗这份积累</td>
+<td>先普攻还是先施法决定链条收益；全图终极技与替代技能分别统计</td>
+</tr>
+<tr>
+<td>吸血鬼／达哈卡（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Vampire">原招式</a>）</td>
+<td>施法付生命，造成伤害后按专属规则回血，昼夜与土地改变循环</td>
+<td>先支付生命的时点会形成风险；被护盾、防御或恢复压制影响时净收益改变</td>
+</tr>
+<tr>
+<td>林地贤者／巫医（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/WitchDoctor">原招式</a>）</td>
+<td>树木／蘑菇环境减费与偷取，乌鸦、邪树和恶根组合施法</td>
+<td>环境供给、召唤存活与状态前置决定强度；吸取目标上限限制多人恢复</td>
+</tr>
+</tbody>
+</table>
+<h3 id="射手9-名">射手（9 名）</h3>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>关键差异</th>
+<th>配装与平衡分析要保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>弓手／亚马逊（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Archeress">原招式</a>）</td>
+<td>普通攻击附带不同伤害收益，机动与默认终极技各有目标条件</td>
+<td>攻击属性投资需要持续射击时间；百分比生命收益也要遵守单次上限</td>
+</tr>
+<tr>
+<td>爆破少女（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Bomber">原招式</a>）</td>
+<td>持有炸弹增强普攻，投出炸弹消耗库存，终极窗口改变投掷循环</td>
+<td>持续射击与立即投掷争用同一库存；爆发结束后的补充期要计入</td>
+</tr>
+<tr>
+<td>炮手（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Gunner">原招式</a>）</td>
+<td>弹匣、固定射击频率、不暴击与受攻速影响的装填共同定义普攻</td>
+<td>用完整弹匣与装填循环比较；别把普通射手的暴击和攻速模型直接搬过来</td>
+</tr>
+<tr>
+<td>亡命枪手（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Gunslinger">原招式</a>）</td>
+<td>普攻与受伤积怒，脱战时怒气又可转为恢复，强化攻击消耗怒气</td>
+<td>立即输出会减少留给恢复的资源；标记目标与保持接战影响积累速度</td>
+</tr>
+<tr>
+<td>神射手／猎人（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Hunter">原招式</a>）</td>
+<td>流血追踪、恢复压制、团队普攻增益与蓄力直线终极技协同</td>
+<td>持续压制和蓄力击杀分开评价；敌人转移与阻断射线会损失准备收益</td>
+</tr>
+<tr>
+<td>飞行员（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Plane">原招式</a>）</td>
+<td>施法加速，灼烧地面与攻击强化配合飞行终极技</td>
+<td>飞行保护期间不能照算普通攻击和其他施法；安全时间与输出时间分开</td>
+</tr>
+<tr>
+<td>斯普特尼克（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Rifleman">原招式</a>）</td>
+<td>技能标记帮助追踪与扩大普通攻击威胁，战熊与陷阱提供限制</td>
+<td>远程优势取决于标记、视野和准备；瞄准终极技不是即时可靠伤害</td>
+</tr>
+<tr>
+<td>诡术师（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Trickster">原招式</a>）</td>
+<td>施法给极短保护，攻击叠燃烧，狂热提频但降低单次伤害</td>
+<td>增加攻击次数不必然等比例增伤；分身不能攻击施法，不能当成第二个本体</td>
+</tr>
+<tr>
+<td>女巫／莫伊拉（<a href="https://github.com/nival/Prime-World/tree/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Witch">原招式</a>）</td>
+<td>诅咒强化后续伤害，普通攻击可耗能，连续机动逐步增加费用</td>
+<td>多次位移与持续攻击争用能量；默认终极按当前生命等条件结算，不是固定斩杀线</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-六种战斗收益各自付出什么代价">4. 六种战斗收益，各自付出什么代价</h2>
+<h3 id="41-普通攻击持续输出首先需要持续接触">4.1 普通攻击：持续输出首先需要持续接触</h3>
+<p>公共普攻分支以力量或智力作为攻击属性，乘基础攻击系数后形成 90%—110% 的随机伤害区间。这里是已核公共攻击资源的规则，不能拿一个全局波动常量替代每名英雄实际使用的攻击。随后仍要考虑攻击频率、可否暴击、是否允许闪避、防御穿透和攻击者能否留在射程内。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L18">公共普攻伤害</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L44">攻速换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L39">暴击换算</a>。</p>
+<p>通常攻击频率为“0.49＋攻速属性×0.00365”，常规分支上限每秒 2 次；存在显式攻击频率时走另一分支。炮手就是重要例外：基础弹匣 2 发，射击阶段每秒 5 次、不能暴击，攻速属性影响装填。只截取他射击的短窗口，会把换弹期间的输出空档抹掉。应该比较“打完弹匣并完成装填”的完整循环，再计入期间可穿插的技能、移动与目标离场。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L44">攻速换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Gunner/Ability_A0.TALENT.xdb">炮手：少射而精准</a>。</p>
+<p>因此，射手加一点理论输出和增加一段安全攻击时间并不等价。在原本被逼退的场景中，护盾、解控、位移或队友控制可能让更多普攻真正打出去；而原本没有受到威胁时，同一份防守投资又可能几乎不增加本轮输出。这里应分别记录理论输出、可攻击时间和实际命中，避免把差异一律归到攻击属性。</p>
+<h3 id="42-法术面板参数只是结算的起点">4.2 法术：面板参数只是结算的起点</h3>
+<p>技能原始参数经常使用两类不同标尺：属性型 damageScale 的锚点为 50 与 258，abilityScale 的锚点为 50 与 182；两者通常取整，向高属性端继续外推，没有把右锚点当成硬上限。文字里的两个数字也不能直接读成“一级伤害／满级伤害”。具体技能传入力量、智力、基础坚韧或生命／能量标尺，必须逐招确认。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L1052-L1085">技能缩放规则</a>。</p>
+<p>以战争领主的统领重击为例，基础伤害按力量在 57 与 425 两个端点间缩放；削坚韧强化却按自身基础坚韧在 2.6 与 19.5 两个端点间缩放。提高力量和提高坚韧，不会给这两个效果带来相同收益。技能基础学习费 300 Prime，基础能量费 60、冷却 5 秒；己方土地另有伤害收益。最终实耗和间隔还要考虑天赋修改与 Force 费用补偿。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/Ability1.TALENT.xdb">战争领主：统领重击</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L101-L135">费用补偿</a>。</p>
+<p>女画师的代价更隐蔽：每 5 秒得到一份颜料，基础最多 3 份；持有颜料提升攻速属性，并按每份 6% 提供专属冷却缩减。施法会消耗颜料。绘兽自身基础能量费 140、冷却 5 秒、基础攻击等待 1 秒，因此一次施法同时消耗能量、准备时间和持有颜料的收益。若只把多个招式最高伤害相加，却一直保留满颜料增益，会构造出实际不能持续维持的状态。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Artist/Ability_A0.TALENT.xdb">女画师：调色盘</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Artist/Ability_A1.TALENT.xdb">女画师：绘兽</a>。</p>
+<p>范围伤害也不能统一按“单体伤害×目标数”计算。树魔的默认终极技按目标数量改变伤害分配；恶魔学者的终极技又依赖当前恶魔数量与状态，而同一批恶魔同时承担其他输出和伤害分担。分析要保留目标上限、分摊、衰减和召唤物消耗。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Ent/Ability_A4.TALENT.xdb">树魔：默认终极技</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Demonolog/Ability3.TALENT.xdb">恶魔学者：伤害分担</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Demonolog/Ability4.TALENT.xdb">恶魔学者：默认终极技</a>。</p>
+<h3 id="43-控制时长稳定性和队友跟进缺一不可">4.3 控制：时长、稳定性和队友跟进缺一不可</h3>
+<p>眩晕、定身、减速、沉默、缴械和受伤唤醒的限制，关闭的是不同操作。同样 1 秒，能否打断关键施法、能否限制普通攻击、目标是否可以位移脱离、队友是否已经在射程内，都会改变收益。控制时间缩短只对相应名单与适用分支处理；减速又有自己的强度抵抗。把所有控制时长直接相加，不能得到可靠的团队压制能力。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/status_ControlTimeDecrease.APLR.xdb#L96-L98">控制时间缩短</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2856">减速抵抗</a>。</p>
+<p>尤其要分清“移动属性降低”和“实际移动速率降低”。原版通常先修改移动属性，再经非线性公式换算实际速率；技能说明的百分比不宜一律当成路径上实际速度按同一比例下降。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L34">移动属性换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2856">减速抵抗</a>。</p>
+<p>本轮复核也发现：战争领主统领重击的削坚韧和减速是两条独立强化；减速不需要先有削坚韧。林地贤者恶根的双倍伤害要求对应强化和乌鸦／邪树状态，取消恢复压制的土地限制则属于另一条强化。若把显示文本的嵌套结构直接当成战斗前置，便会低估某条单独配装的能力。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/Ability1.TALENT.xdb">战争领主：统领重击</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/WitchDoctor/Ability1.TALENT.xdb">林地贤者：恶根</a>。</p>
+<h3 id="44-治疗评价有效恢复也评价能否赶在死亡前到达">4.4 治疗：评价有效恢复，也评价能否赶在死亡前到达</h3>
+<p>正常治疗会受实际缺失生命封顶。满血时的理论治疗量、被恢复压制削去的量和未等到结算便死亡的量，都不能算作已经保护了队友。治疗师的基础治疗有 80 能量费和 4 秒冷却，同时影响指定目标与自身；范围、低生命强化和费用补偿又分别有自己的条件。不能把所有强化收益默认开着，也不能用一个目标的缺血量代表全队。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2314-L2346">实际治疗封顶</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Healer/Ability1.TALENT.xdb">治疗师：治疗</a>。</p>
+<p>治疗时间分布有独立价值。通用天赋“能量光辉”强化的是“生命光辉”的治疗节奏：把总治疗的 60% 前移为即时恢复，其余 40% 保留持续恢复。它不是直接恢复 60% 最大生命。瞬间恢复可能跨过致死门槛，持续恢复则需要足够受伤时间才能不溢出；这两种价值不能只由总治疗量说明。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G482_SelfHeal.TALENT.xdb">生命光辉的即时与持续治疗分配</a>。</p>
+<p>生命偷取也有两个不同概念。公共 LifeDrain 是受实际伤害等条件限制的固定量，不能译成同数值百分比吸血；英雄自己的按伤害比例回血另按专属规则处理。吸血鬼更把生命作为技能费用，例如第一招基础生命费表达式为 35，己方土地按其被动减费；这使施法前的生命安全线和施法后能否真正造成伤害都成为代价。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2156-L2179">固定量偷取</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Vampire/Ability_A1.TALENT.xdb">吸血鬼：第一招生命费用</a>。</p>
+<h3 id="45-护盾和减伤容量不等于已经吸收的伤害">4.5 护盾和减伤：容量不等于已经吸收的伤害</h3>
+<p>普通正容量护盾吸收的是进入该护盾事件的伤害，单盾剩余量与剩余伤害互相扣除。提前消失的未用容量不是有效吸收；护盾期间没有被攻击，也不能算抵消了全部标称容量。防御能降低进入护盾的伤害，但多个特殊盾、转移与触发效果的先后仍应按各自规则核对。纯粹伤害跳过普通双防御，也不代表它必然穿过普通护盾。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2736">防御与穿透结算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L1688-L1693">普通伤害减免</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTriggerApplicator.cpp#L277-L305">护盾与扣血</a>。</p>
+<p>吟游诗人的防护旋律基础费 80 能量、冷却 8 秒，盾持续 3 秒。学会返能强化后，只有存活到自然结束的未破护盾才返能，且最多按 2 个计。群体护盾覆盖越多队友，潜在保护越高；敌人快速打破盾，保护可能已经兑现，却无法同时再算全额返能。这里需要分开记录施盾人数、有效吸收、盾破数量和返能次数。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Bard/Ability_A3.TALENT.xdb">吟游诗人：防护旋律</a>。</p>
+<p>反伤也不能自动计作减伤。战争领主的战甲反伤与两个减伤强化是不同收益：自身减伤由“可靠护甲”开启，其他友军减伤由“并肩作战”独立开启，后者排除施法者；两者实际修改物理和魔法减伤，没有同时赋予纯粹伤害减免。不能把学会友军减伤写成自己也必得减伤。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/Ability3.TALENT.xdb#L213">战甲的自身减伤条件</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/status_A3_armor.APLR.xdb#L258">战甲的友军减伤条件</a>。</p>
+<h3 id="46-位移进入机会和退出余量要一起算">4.6 位移：进入机会和退出余量要一起算</h3>
+<p>位移的价值不仅是走了多远，还包括能否穿过危险区域、是否附带控制、落点是否有队友接应，以及用掉之后还能否退出。卡塔娜虎跃基础能量费 75、冷却 12 秒，落地伤害并眩晕 1 秒。对应强化让裂空斩在虎跃冷却时刷新其周转，却附带一段虎跃不造成伤害、不眩晕的状态。于是“多移动一次”和“多打一套伤害控制”是不同收益。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Katana/Ability_A2.TALENT.xdb">卡塔娜：虎跃</a>。</p>
+<p><strong>原文与实际效果批注</strong>：虎跃及其强化的说明引用 6 秒常量；实际限制由裂空斩施加，使用裂空斩自己持有的 5 秒常量。因此本册在运行分析中按 5 秒，并保留说明差异；不拿说明值直接覆盖实际状态。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Katana/Ability_A1.TALENT.xdb#L500">裂空斩实际施加的 5 秒状态</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Katana/Ability_A1.TALENT.xdb#L656">裂空斩自带的 5 秒常量</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Katana/const_A2_DebuffTime.xdb#L5">虎跃说明引用的 6 秒常量</a>。</p>
+<h2 id="5-五组同层同稀有度同星级的实际天赋比较">5. 五组同层、同稀有度、同星级的实际天赋比较</h2>
+<p>下表每组内部都固定为 <strong>1 星、同一层、同一稀有度</strong>；所列天赋均给 1 发展点，显式学习费为 −1，因而使用对应层的默认 Prime 费用。表内先列天赋自身的直接属性，不重复把英雄公共成长算进去；比较时还应保持同层其余槽位与整套配装条件相同。原版生命预算单位为 30，星级缩放是“1 星值＋每星增量×（星级−1）”。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L78-L118">按层学习费用</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2926">生命预算单位为 30</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L755">每星增量公式</a>。</p>
+<h3 id="第-1-组第一层稀有350-prime生命上限与恢复">第 1 组：第一层、稀有，350 Prime——生命上限与恢复</h3>
+<table>
+<thead>
+<tr>
+<th>天赋</th>
+<th style="text-align: right;">直接最大生命</th>
+<th style="text-align: right;">直接生命再生</th>
+<th style="text-align: right;">费用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G014_Life.TALENT.xdb#L58">自然恩赐</a></td>
+<td style="text-align: right;">+102</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G012_LifeRegen-Life.TALENT.xdb#L65">高贵之血</a></td>
+<td style="text-align: right;">+48</td>
+<td style="text-align: right;">+1.1／秒</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G015_Life_LifeRegen.TALENT.xdb#L47">顽强生命</a></td>
+<td style="text-align: right;">+48</td>
+<td style="text-align: right;">+1／秒</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+</tbody>
+</table>
+<p>自然恩赐比高贵之血多 54 生命。若满血进入交战，之后一直有可恢复的缺血、没有恢复压制且所有恢复都有效，那么高贵之血要累计约 54÷1.1＝<strong>49.09 秒有效恢复时间</strong>，才在“初始承伤容量＋累计恢复”的账面上补回 54 的差额。这个时长不保证实际存活相同：可能在恢复来得及之前已被击杀，也可能短暂脱战就把损失恢复完毕。</p>
+<p>同为 1 星时，高贵之血在表列直接效果上确实比顽强生命多 0.1／秒恢复；但两者每星成长不同。高贵之血每多一星增加 2.4 生命和 0.1／秒恢复，顽强生命每多一星增加 8.4 生命、恢复固定为 1／秒。因此不能把当前星级的局部优势扩写成所有星级都更好，也不能只抄一个总属性分数。数值来源即上表各天赋。</p>
+<h3 id="第-2-组第一层史诗350-prime同样-42并非同样收益">第 2 组：第一层、史诗，350 Prime——同样 +4.2，并非同样收益</h3>
+<table>
+<thead>
+<tr>
+<th>天赋</th>
+<th>直接效果</th>
+<th style="text-align: right;">费用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G129_Str.TALENT.xdb#L209">自然力量</a></td>
+<td>力量 +4.2</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G130_Int.TALENT.xdb#L204">自然智慧</a></td>
+<td>智力 +4.2</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G187_AttackSpeed.TALENT.xdb#L119">自然迅捷</a></td>
+<td>攻速属性 +4.2</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G188_Dex.TALENT.xdb#L109">自然灵巧</a></td>
+<td>灵巧 +4.2</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level1/G250_Int_Str.TALENT.xdb#L60">知识就是力量</a></td>
+<td>力量与智力中较高的一项 +4.2，不是两项都加</td>
+<td style="text-align: right;">350 Prime</td>
+</tr>
+</tbody>
+</table>
+<p>五者都可写成每 Prime 取得 0.012 点直接属性，但“属性点”不是相同单位的战斗收益。假设走常规攻击频率分支、原攻速属性为 100，加 4.2 后每秒攻击从 <strong>0.855 变为 0.87033</strong>，增加 0.01533 次／秒；不能写成攻速直接提高 4.2%。假设原灵巧为 100、没有额外暴击概率，暴击率从 <strong>11.8684% 变为 12.7915%</strong>，增加约 <strong>0.9231 个百分点</strong>，也不是增加 4.2 个百分点。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L44">攻速换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L39">暴击换算</a>。</p>
+<p>这两个算例还没有把攻速属性与灵巧参与穿透的影响合并进去，不能当成完整收益结论。力量／智力影响哪次普攻与哪招技能，也须按具体英雄读取；吟游诗人的护盾按灵巧成长，已经说明“灵巧只能给输出英雄使用”的判断不成立。炮手的显式射速又使常规攻击频率算例不直接适用。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L59">穿透换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Bard/Ability_A3.TALENT.xdb">吟游诗人：防护旋律</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Gunner/Ability_A0.TALENT.xdb">炮手：少射而精准</a>。</p>
+<h3 id="第-3-组第三层稀有675-prime坚韧与意志取决于敌方伤害">第 3 组：第三层、稀有，675 Prime——坚韧与意志取决于敌方伤害</h3>
+<table>
+<thead>
+<tr>
+<th>天赋</th>
+<th>直接效果</th>
+<th style="text-align: right;">费用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level3/G006_Stamina.TALENT.xdb#L57">耐力</a></td>
+<td>坚韧 +7</td>
+<td style="text-align: right;">675 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level3/G009_Will.TALENT.xdb#L64">可靠</a></td>
+<td>意志 +7</td>
+<td style="text-align: right;">675 Prime</td>
+</tr>
+</tbody>
+</table>
+<p>“耐力”在这里是天赋中文名，它增加的属性统一称为坚韧。原版物理防御量为 0.00536×（坚韧＋0.3×意志）−0.2，魔法防御量交换两项。因而 7 坚韧同时影响两类防御，但对物理的影响更大；意志反之。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L49">双防御换算</a>。</p>
+<p><strong>明确输入的算例</strong>：坚韧＝50、意志＝50，攻击方穿透＝0，无其他减伤，防御处在普通正值区间。面对一笔 1000 原始物理伤害，未加天赋时受伤 <strong>851.6</strong>；增加 7 坚韧后为 <strong>814.08</strong>；增加 7 意志后为 <strong>840.344</strong>。面对同条件魔法伤害，两种天赋的结果对调。这里同样的 7 点，在对口伤害上减少 37.52，在交叉伤害上减少 11.256；不是单独给所有伤害附加固定 7% 减免。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L49">双防御换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2736">防御与穿透结算</a>。</p>
+<p>若敌人有穿透、临时减防、混合伤害或纯粹伤害，必须把相应部分分别算完。对手名字属于“法师”并不能替代实际伤害类型统计；本册六类职责从来不是六种伤害结算类型。</p>
+<h3 id="第-4-组第三层稀有675-prime攻击成长换取短时或长时生存">第 4 组：第三层、稀有，675 Prime——攻击成长换取短时或长时生存</h3>
+<table>
+<thead>
+<tr>
+<th>天赋</th>
+<th style="text-align: right;">力量</th>
+<th>其他直接效果</th>
+<th style="text-align: right;">费用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level3/G145_Str.TALENT.xdb#L80">非凡力量</a></td>
+<td style="text-align: right;">+7</td>
+<td>—</td>
+<td style="text-align: right;">675 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level3/G099_Life-Str.TALENT.xdb#L64">健硕体格</a></td>
+<td style="text-align: right;">+4.5</td>
+<td>最大生命 +84</td>
+<td style="text-align: right;">675 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level3/G101_LifeReg-Str.TALENT.xdb#L57">生命之力</a></td>
+<td style="text-align: right;">+4.5</td>
+<td>生命再生 +1.5／秒</td>
+<td style="text-align: right;">675 Prime</td>
+</tr>
+</tbody>
+</table>
+<p>健硕体格和生命之力都让出 2.5 力量，分别换成 84 生命或 1.5／秒恢复。仍在满血开始、持续缺血、没有恢复压制、没有溢出的限定下，1.5／秒要 <strong>56 秒有效恢复</strong>才补回 84 的账面差额。健硕体格更直接改变单次爆发能否击杀的门槛；生命之力的收益取决于交战、赶路、等待期间有多少缺血可以补。</p>
+<p>对需要持续近身攻击的战士，活下来可能多打数次普攻；对能稳定从安全距离输出的英雄，让出的力量则可能没有得到等值的有效存活时间。两种结论都需要实际接战场景。力量本身是否还增加回复、控制附带伤害或召唤物能力，也要继续查该英雄专属天赋，不能只按一条普攻系数结案。</p>
+<h3 id="第-5-组第六层史诗1600-prime已有生命越高防御的乘法收益越明显">第 5 组：第六层、史诗，1600 Prime——已有生命越高，防御的乘法收益越明显</h3>
+<table>
+<thead>
+<tr>
+<th>天赋</th>
+<th style="text-align: right;">最大生命</th>
+<th>防御属性</th>
+<th style="text-align: right;">费用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level6/G245_Life.TALENT.xdb#L162">传奇生命</a></td>
+<td style="text-align: right;">+684</td>
+<td>—</td>
+<td style="text-align: right;">1600 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level6/G234_Stamina_Life.TALENT.xdb#L55">厚皮</a></td>
+<td style="text-align: right;">+288</td>
+<td>坚韧 +13</td>
+<td style="text-align: right;">1600 Prime</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level6/G235_Will_Life.TALENT.xdb#L67">沉着</a></td>
+<td style="text-align: right;">+288</td>
+<td>意志 +13</td>
+<td style="text-align: right;">1600 Prime</td>
+</tr>
+</tbody>
+</table>
+<p>仅看生命／Prime，传奇生命约为 0.4275，厚皮和沉着只有 0.18；这并未计入防御。为看清乘法关系，取两个<strong>公式演示输入</strong>：基础坚韧与意志均为 50，攻击方穿透为 0；只受普通物理伤害；满血开始；不考虑回复、盾、暴击变化和其他修正。以下 H 是已经计入共同成长、仅尚未加入本表差异效果的生命。</p>
+<p>用“加入天赋后的最大生命÷该条件下的伤害乘数”表示可承受的原始伤害总量：</p>
+<table>
+<thead>
+<tr>
+<th>演示输入</th>
+<th style="text-align: right;">传奇生命</th>
+<th style="text-align: right;">厚皮</th>
+<th>此限定中的比较</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H＝1000</td>
+<td style="text-align: right;">1684÷0.8516≈1977.45</td>
+<td style="text-align: right;">1288÷0.78192≈1647.23</td>
+<td>传奇生命更高</td>
+</tr>
+<tr>
+<td>H＝5000</td>
+<td style="text-align: right;">5684÷0.8516≈6674.50</td>
+<td style="text-align: right;">5288÷0.78192≈6762.84</td>
+<td>厚皮更高</td>
+</tr>
+</tbody>
+</table>
+<p>同一对天赋的顺序发生了变化，原因是额外防御同时保护了原先已经拥有的生命。换成普通魔法伤害，沉着承担对应比较；换成纯粹伤害，普通防御这部分收益不再照搬。1000 和 5000 都不是本册给某个英雄设定的属性，只用于说明为什么单独按直接生命／Prime 排名会漏掉已有属性与伤害类型。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L49">双防御换算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2736">防御与穿透结算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L1688-L1693">普通伤害减免</a>。</p>
+<h2 id="6-为什么这些比较还没有算完force行成长和形成时间">6. 为什么这些比较还没有算完：Force、行成长和形成时间</h2>
+<h3 id="61-同一张天赋有直接效果也有整套配装的成长背景">6.1 同一张天赋有直接效果，也有整套配装的成长背景</h3>
+<p>在本章所选、显式预算为 −1 的通用天赋中，1 星稀有天赋的单张 Force 为 <strong>3.6</strong>，1 星史诗天赋为 <strong>4.32</strong>。这是按原版预算公式计算后，再除掉层修正得到的值；不能把资源里另一个看起来像“战力奖励”的数字直接再加一遍。组内稀有度、星级、发展点与同层条件相同，才使直接效果的比较更有解释力。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L162-L186">天赋预算</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L87-L98">Force 与额外成长</a>。</p>
+<p>英雄 Force 来自整套装备天赋，不只是本局已经点亮的部分。额外总成长预算为 <strong>252＋max（Force−100，0）×3</strong>。因此，比较两个玩家时，即使双方现在亮着相同几张天赋，只要整套星级和稀有度不同，本体成长的背景也可能不同。Force 是成长输入，不是把每个技能最终伤害统一乘大的百分比。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L143">整套天赋的 Force 求和</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L87-L98">Force 与额外成长</a>。</p>
+<h3 id="62-不同层买到的发展点成长权重不同">6.2 不同层买到的发展点，成长权重不同</h3>
+<p>六层分摊的成长权重为 <strong>6%、9%、13%、16%、23%、33%</strong>。每层再按该层装入天赋的发展点总数分摊；默认每层 6 个、每个 1 点时，第一层每点分到 1%，第六层每点分到 5.5%。这部分作用于英雄成长链，不能在评价天赋时消失，也不能误读成当前生命直接增加同样百分比。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/Stat.cpp#L203-L264">点亮后的属性成长</a>。</p>
+<p>第六层天赋费用高，不只是因为直接属性更多；它处在不同的成长阶段，点亮也承担更高权重的本体成长。不过，玩家须先达到开层门槛并积累足够 Prime；一张更晚才学到的高收益天赋，不能补偿之前已经输掉的接战、丢失的目标和死亡时间。比较配装时，应分别看“完整天赋盘的终点”和“每个关键阶段实际形成了什么”。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/DBTalent.h#L90-L96">天赋开层门槛</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L78-L118">按层学习费用</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/Stat.cpp#L203-L264">点亮后的属性成长</a>。</p>
+<h3 id="63-强化同一招也可能是在购买不同职责">6.3 强化同一招，也可能是在购买不同职责</h3>
+<p>战争领主的削防强化可以帮助队伍集中输出；减速强化帮助保留攻击窗口；战甲的自身减伤和友军减伤又服务不同承压对象。林地贤者扩大恶根半径的强化，将半径从 1.8 提高到 2.7，并让恢复压制不再要求己方土地；这不能写成“伤害增加 50%”，甚至“作用面积增加 50%”也不准确——明确改的是半径。技能投资的收益有时来自命中稳定性和可用场景扩展。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/Ability1.TALENT.xdb">战争领主：统领重击</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/Ability3.TALENT.xdb#L213">战甲的自身减伤条件</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Warlord/status_A3_armor.APLR.xdb#L258">战甲的友军减伤条件</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/WitchDoctor/Ability1.TALENT.xdb">林地贤者：恶根</a>。</p>
+<p>高 Force 带来的生命／能量成长还关联费用补偿。分析连续施法能力时，要按实际可用资源、再生、返还条件与最终费用计算；不能一边使用高成长资源池，一边永久沿用未补偿的基础技能费用。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L101-L135">费用补偿</a>。</p>
+<h2 id="7-套装与条件收益最容易算重的五件事">7. 套装与条件收益，最容易算重的五件事</h2>
+<p><strong>第一，套装成员数不等于生效门槛。</strong> 原版既有必须凑齐指定成员的组合，也有按 2 件、3 件等逐级开启的套装。应先按套装库的件数与指定核心条件确定本局已经取得的效果，再计算每个部件的独立属性。没有点亮的联动不能提前算入；替代方案也不能并存计入。逐套证据与条件见本册套装库的原始资源链接。</p>
+<p><strong>第二，暴击倍率加成和暴击减伤的作用对象不同。</strong> 原版这套暴击强化给暴击倍率增加 0.4，默认 2 倍时成为 2.4 倍，不是把整次最终伤害再乘 1.4。抗暴套装则对被判定为暴击的整笔事件乘 0.8 或 0.7；孤立地看这一步，200 会变为 160 或 140，不是只减掉暴击额外的那一截。其余防御、护盾和触发规则仍须继续计算。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/TalentKits/Redset9_1_Crit/appl_Redset9_1_CriticalMultiplier.APLR.xdb#L15">增加暴击倍率的套装效果</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/TalentKits/Redset9_1_Crit/const_Redset9_1_CriticalMultiplierBonus.xdb#L11">原版倍率增量 0.4</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/TalentKits/Redset7_6_Anticrit/Redset7_6_DecreaseCrit_Trigger.APLR.xdb">抗暴套装的暴击伤害乘数</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTriggerApplicator.cpp#L512">暴击事件的实际减伤处理</a>。</p>
+<p><strong>第三，减少冷却要看减少的是哪里。</strong> “残酷技艺”的触发事件实际包含英雄击杀或助攻；百分比冷却缩减处理当前剩余冷却。假设某招当时剩余 10 秒，12% 对应减少 1.2 秒；不能因为该招原始冷却为 100 秒，就一律减去 12 秒。进入战斗时没在冷却的技能，也不会凭空储存下一次 12% 的折扣。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Level4/status_G414_CDRforKill.APLR.xdb">残酷技艺的击杀或助攻触发</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L489">百分比减少剩余冷却</a>。</p>
+<p><strong>第四，收入奖励要看共用上限。</strong> 若干 Prime 生成天赋共用额外收入累计上限 <strong>1000 Prime</strong>，并非每装一张就各有 1000。它们的价值与触发次数、达到上限的时间、为它们让出的战斗能力以及点亮顺序相关。不能只看单次收入乘理想次数，再把同一共同上限重复计入。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2952">共同的额外 Prime 收入上限</a>；具体适用天赋见天赋库中的共用收益上限批注。</p>
+<p><strong>第五，一份资源若有多个用途，不能在同一时刻重复消费。</strong> 女画师的颜料、恶魔学者的恶魔、义警的怒气，都需要按各自保持、使用和消耗状态计算。本章英雄矩阵已给出相应取舍。配装分析应把“进场前”“第一轮施法后”“反打时”“技能重新就绪时”分开，而不是把每一刻最有利的状态拼成一个不存在的角色。依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Artist/Ability_A0.TALENT.xdb">女画师：调色盘</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Demonolog/Ability3.TALENT.xdb">恶魔学者：伤害分担</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Demonolog/Ability4.TALENT.xdb">恶魔学者：默认终极技</a>，以及各英雄原招式。</p>
+<h2 id="8-从这些原版资料能形成怎样的平衡判断">8. 从这些原版资料，能形成怎样的平衡判断</h2>
+<p>本册已经能支持条件明确的计算：一套天赋在指定阶段提供哪些属性；一招在指定属性下有多少原始伤害或护盾；某组强化实际开启哪些独立效果；同费用天赋在指定承伤与恢复时间下怎样取舍。它也能揭示应观察的风险：技能是否绕过主要防御、保护是否依赖另一名单位、伤害是否要求预先叠层、移动刷新是否同时保留伤害和控制。</p>
+<p>要进一步回答“哪位英雄整体更强”“某套配装是否必选”，还需要与原版同规则的实际对局记录。记录时应让指标对应职责，而不是只排总伤害：</p>
+<table>
+<thead>
+<tr>
+<th>要回答的问题</th>
+<th>应同时记录的内容</th>
+<th>单个数字容易漏掉什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>输出投资有没有兑现</td>
+<td>对英雄有效伤害、命中数、攻击时间、爆发到达时间、换弹／准备空档</td>
+<td>只打兵线或只打高回复前排也能堆高总伤害</td>
+</tr>
+<tr>
+<td>坦克是否完成任务</td>
+<td>存活接触时间、控制的目标与时机、队友得到的攻击或撤退窗口</td>
+<td>承伤很高可能只是无效死亡，不自动等于保护成功</td>
+</tr>
+<tr>
+<td>治疗与护盾是否有效</td>
+<td>缺血量、溢出、受恢复压制时段、有效吸收、避免的致死伤害</td>
+<td>理论治疗量和标称盾量不能替代实际保护</td>
+</tr>
+<tr>
+<td>位移是否过强或不足</td>
+<td>成功接近、落点风险、退出次数、刷新条件、伴随伤害控制是否被限制</td>
+<td>位移距离相同，也可能有完全不同的追杀与逃生能力</td>
+</tr>
+<tr>
+<td>配装是否挤压选择</td>
+<td>相同星级／Force 的阶段收益、开层时间、对局长短、替代天赋失去的能力</td>
+<td>终盘属性更高可能只是成型更晚；星级差也可能被误当成机制差</td>
+</tr>
+<tr>
+<td>资源循环是否失去约束</td>
+<td>能量／生命净消耗、返还实际次数、召唤与充能存量、Prime 共同上限</td>
+<td>把所有返还视为必定触发，会得到虚假的无限续航</td>
+</tr>
+</tbody>
+</table>
+<p>这些是从已核规则推导的分析口径，不是新增游戏系统。本册保留公式、源条件和逐英雄差异，是为了让后续策划可以说明“为什么这样判断”，并在新证据出现时准确修订结论。</p><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

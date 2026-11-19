@@ -1,0 +1,344 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>地图 02｜经典边境之地：一局如何从成长走到攻破核心｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="maps/borderlands-analysis.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link is-active" href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class="active"><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class=""><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class=""><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 地图 02｜经典边境之地：一局如何从成长走到攻破核心</div><div class="article-layout"><article class="article-body"><h1 id="地图-02经典边境之地一局如何从成长走到攻破核心">地图 02｜经典边境之地：一局如何从成长走到攻破核心</h1>
+<p><strong>玩法定位：5 对 5、三路推进、局内成长与土地控制相互影响。</strong> 玩家不是靠个人击杀达到固定分数获胜，而是利用击杀、兵线、野区与目标争夺创造推进机会，摧毁敌方主建筑。场景为 41×41 地形块，完整寻路格为 820×820；双方基地位于地图左右两端。以下为原版固定版本的有效资源与规则，不是重制测试方案。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPDSCR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb">Data/Maps/Multiplayer/MOBA/_.ADMP.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.TERN.xdb">Data/Maps/Multiplayer/MOBA/_.TERN.xdb</a>。</p>
+<h2 id="1-看懂真实地图">1. 看懂真实地图</h2>
+<p><img alt="经典边境之地原版中性小地图" src="../assets/maps/borderlands-n.png" /></p>
+<p>原图来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/UI/Styles/MiniMap/MOBA/_N.dds">Data/UI/Styles/MiniMap/MOBA/_N.dds</a>。这张图保留原版底图，下面编号用于阅读顺序，不是在原图上添加的新地标。</p>
+<table>
+<thead>
+<tr>
+<th>阅读编号</th>
+<th>看图位置</th>
+<th>区域及作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>最左与最右</td>
+<td>双方基地；主建筑、恢复、商店及小游戏设施构成后方</td>
+</tr>
+<tr>
+<td>2</td>
+<td>上边缘贯通左右</td>
+<td>上路推进线；对应塔链、兵营与旗杆链</td>
+</tr>
+<tr>
+<td>3</td>
+<td>地图中央横向连接</td>
+<td>中路推进线；从中路可转向上下野区和河流</td>
+</tr>
+<tr>
+<td>4</td>
+<td>下边缘贯通左右</td>
+<td>下路推进线；与上路形成多线压力</td>
+</tr>
+<tr>
+<td>5</td>
+<td>中央纵向河流及两侧小路</td>
+<td>从一条兵线转移到另一条的连接区域，也是穿越敌我前线的接触区</td>
+</tr>
+<tr>
+<td>6</td>
+<td>三条路之间的树林与空地</td>
+<td>普通与精英中立营地；收益之外，还影响支援路径和视野风险</td>
+</tr>
+<tr>
+<td>7</td>
+<td>河流附近上下两处大型营地</td>
+<td>两个首领目标；上方脚本标识为 Boss_Cat，下方为 Boss_Dragon</td>
+</tr>
+<tr>
+<td>8</td>
+<td>上下最外缘的小型点位</td>
+<td>两个额外中立营地，不能在野区计数中漏掉</td>
+</tr>
+</tbody>
+</table>
+<p>这些区域的相互关系形成经典战斗节奏：玩家在兵线获取 Prime、点亮天赋；在可承担风险时进入野区或转线；获得人数与兵线优势后拆塔、推进土地；破坏兵营让后续兵线更强，最终攻击核心。这里的“节奏”是依据规则作出的策划分析，不是原版强制规定玩家必须按某分钟行动。</p>
+<h2 id="2-建筑目标链每方-12-塔3-兵营1-核心">2. 建筑目标链：每方 12 塔、3 兵营、1 核心</h2>
+<p>经典场景实际摆放 24 座塔，即每方 12 座。每条路的一方有外塔 1 座、中塔 1 座、基地阶段并列塔 2 座，随后是该路兵营。三路各一座兵营，另有一座核心。不能把地图简写为“每方三路各两座塔”，那会漏掉一半防御塔。</p>
+<table>
+<thead>
+<tr>
+<th>一条路从外到内的目标</th>
+<th style="text-align: right;">每方每路数量</th>
+<th>解锁关系与后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外塔</td>
+<td style="text-align: right;">1</td>
+<td>这条路最外侧的建筑阶段</td>
+</tr>
+<tr>
+<td>中塔</td>
+<td style="text-align: right;">1</td>
+<td>前一阶段的塔清除后，下阶段可受伤</td>
+</tr>
+<tr>
+<td>基地阶段塔</td>
+<td style="text-align: right;">2</td>
+<td>同一阶段放两座；需要清除该阶段的塔，下一阶段才解锁</td>
+</tr>
+<tr>
+<td>兵营／军械库</td>
+<td style="text-align: right;">1</td>
+<td>被拆后，对方对应兵线转为更强编制</td>
+</tr>
+<tr>
+<td>核心／阵营主建筑</td>
+<td style="text-align: right;">全队共 1</td>
+<td>至少一路兵营被拆后，核心所在目标链解锁；核心被毁判定该方失败</td>
+</tr>
+</tbody>
+</table>
+<p>原版通用建筑逻辑按“阵营、路线、阶段”管理保护，而非仅看物理距离。阶段内还有塔时，不能把下一个阶段当作已经完成。三路敌方兵营全部被拆，友方三条兵线提升到进一步强化状态。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp">Src/PF_GameLogic/PFAIWorld.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFMainBuilding.cpp">Src/PF_GameLogic/PFMainBuilding.cpp</a>；摆放与路线阶段见 <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Towers/TopA1.TOWR.xdb">Data/Maps/Multiplayer/MOBA/Towers/TopA1.TOWR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Towers/TopA2.TOWR.xdb">Data/Maps/Multiplayer/MOBA/Towers/TopA2.TOWR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Towers/TopA3.TOWR.xdb">Data/Maps/Multiplayer/MOBA/Towers/TopA3.TOWR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Barracks/TopA.QRTR.xdb">Data/Maps/Multiplayer/MOBA/Barracks/TopA.QRTR.xdb</a>。</p>
+<p>这使“拆塔”“拆兵营”“打核心”具有不同意义。拆塔削减安全屏障，并影响旗杆保护；拆兵营会持续改变对应兵线，让守方反复处理压力；攻击核心才是直接结束比赛的动作。领先方不必把三路所有物件全部清空才能取得最终胜利，但需要突破至少一条完整的建筑链。落后方仍可通过清兵和集中防守拖住推进，然而丢失兵营会增加长期防守成本。</p>
+<h3 id="建筑原始基础参数">建筑原始基础参数</h3>
+<p>下面是资源中的基础值，用于确认数量级与不同阶段职责。实战显示及最终承伤还会经过地图强度、等级、单位能力和伤害公式，不能把“力量”直接当作一次普攻伤害。</p>
+<table>
+<thead>
+<tr>
+<th>建筑</th>
+<th style="text-align: right;">基础生命</th>
+<th style="text-align: right;">基础力量</th>
+<th style="text-align: right;">坚韧 / 意志</th>
+<th>策划读法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外塔</td>
+<td style="text-align: right;">4400</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">46 / 46</td>
+<td>边线最早需要突破的屏障</td>
+</tr>
+<tr>
+<td>中塔</td>
+<td style="text-align: right;">5500</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">57 / 57</td>
+<td>单座生命和力量均提高</td>
+</tr>
+<tr>
+<td>基地阶段塔，每座</td>
+<td style="text-align: right;">4200</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">71 / 71</td>
+<td>单座生命低于中塔，但同阶段有两座，不能按单座比较整段强度</td>
+</tr>
+<tr>
+<td>兵营</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: right;">非主要攻击建筑</td>
+<td style="text-align: right;">按兵营资源</td>
+<td>被毁触发对应兵线强化</td>
+</tr>
+<tr>
+<td>核心</td>
+<td style="text-align: right;">10450</td>
+<td style="text-align: right;">275</td>
+<td style="text-align: right;">70 / 70</td>
+<td>最终目标，具备自身战斗参数</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower1.STCN.xdb">Data/Buildings/DefaultStats/Tower1.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower2.STCN.xdb">Data/Buildings/DefaultStats/Tower2.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower3.STCN.xdb">Data/Buildings/DefaultStats/Tower3.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Barrack.STCN.xdb">Data/Buildings/DefaultStats/Barrack.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Main_MOBA.STCN.xdb">Data/Buildings/DefaultStats/Main_MOBA.STCN.xdb</a>。经济奖励分配和伤害换算见本套资料的数值章节。</p>
+<h2 id="3-兵线波次攻城单位与拆营后的变化">3. 兵线：波次、攻城单位与拆营后的变化</h2>
+<p>地图设定战斗起始延迟 60 秒；通用兵线间隔 30 秒。标准阵营刷兵器每波安排 3 个近战位和 2 个远程位。近战资源在敌方该路兵营被毁前后切换，另有按波次加入的攻城单位。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb">Data/GameLogic/AILogic.AILP.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/A.CSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/A.CSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFCommonCreep.cpp">Src/PF_GameLogic/PFCommonCreep.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseSpawner.cpp">Src/PF_GameLogic/PFBaseSpawner.cpp</a>。</p>
+<table>
+<thead>
+<tr>
+<th>兵种位置</th>
+<th style="text-align: right;">每次满足条件的数量</th>
+<th>出现规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通近战</td>
+<td style="text-align: right;">3</td>
+<td>敌方该路兵营尚未拆除时，每波出现</td>
+</tr>
+<tr>
+<td>替代近战</td>
+<td style="text-align: right;">3</td>
+<td>敌方该路兵营已拆除时，替代前一类；不是额外再加 3 个</td>
+</tr>
+<tr>
+<td>远程</td>
+<td style="text-align: right;">2</td>
+<td>拆营前后均按每波安排</td>
+</tr>
+<tr>
+<td>第一攻城位</td>
+<td style="text-align: right;">1</td>
+<td>从第 4 次出兵起，每 4 波出现一次</td>
+</tr>
+<tr>
+<td>第二攻城位</td>
+<td style="text-align: right;">1</td>
+<td>从第 44 次出兵起，每 4 波出现一次，与第一攻城位可同时出现</td>
+</tr>
+</tbody>
+</table>
+<p>计时器中的起始值 3、43 是从零起算的波次条件，不是“第 3 秒、43 秒”。按首波 60 秒、之后每 30 秒的理想调度，第一攻城位首次在约 2:30，第二攻城位首次在约 22:30；引擎步进和刷兵上限等条件仍会影响实际触发，不能把推算时刻当录像实测。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/TimerMelee2.CSTM.xdb">Data/Maps/Multiplayer/MOBA/Spawners/TimerMelee2.CSTM.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/TimerMelee1.CSTM.xdb">Data/Maps/Multiplayer/MOBA/Spawners/TimerMelee1.CSTM.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/TimerRanged2.CSTM.xdb">Data/Maps/Multiplayer/MOBA/Spawners/TimerRanged2.CSTM.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/TimerSiege1.CSTM.xdb">Data/Maps/Multiplayer/MOBA/Spawners/TimerSiege1.CSTM.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/TimerSiege2.CSTM.xdb">Data/Maps/Multiplayer/MOBA/Spawners/TimerSiege2.CSTM.xdb</a>。</p>
+<p>策划含义是：兵线不是静态背景。固定波次给推进窗口提供节拍；拆兵营会改变后续压力；后期额外攻城单位则提高阵地被持续压迫时的负担。英雄离线追击时，兵线仍在走，错失的可能是拆塔机会，也可能是自家基地的防守时间。</p>
+<h2 id="4-野区18-个点位的实际构成">4. 野区：18 个点位的实际构成</h2>
+<p>经典场景有 18 个中立刷怪点：双方镜像的普通点共 10 个、精英点共 4 个、首领点 2 个、最外缘额外点 2 个。一个点可有多个怪物实体，点位数和怪物数不能混用。</p>
+<table>
+<thead>
+<tr>
+<th>点位资源／类型</th>
+<th style="text-align: right;">全图点数</th>
+<th style="text-align: right;">每组配置实体数</th>
+<th style="text-align: right;">首次偏移</th>
+<th style="text-align: right;">加上开场延迟后的首次时刻</th>
+<th style="text-align: right;">清空后重刷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通 Neutral_2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">33 秒</td>
+<td style="text-align: right;">约 1:33</td>
+<td style="text-align: right;">120 秒</td>
+</tr>
+<tr>
+<td>普通 Neutral_3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">33 秒</td>
+<td style="text-align: right;">约 1:33</td>
+<td style="text-align: right;">120 秒</td>
+</tr>
+<tr>
+<td>普通 Neutral_4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">33 秒</td>
+<td style="text-align: right;">约 1:33</td>
+<td style="text-align: right;">120 秒</td>
+</tr>
+<tr>
+<td>普通 Neutral_5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">33 秒</td>
+<td style="text-align: right;">约 1:33</td>
+<td style="text-align: right;">120 秒</td>
+</tr>
+<tr>
+<td>精英 Neutral_Elite_1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">33 秒</td>
+<td style="text-align: right;">约 1:33</td>
+<td style="text-align: right;">300 秒</td>
+</tr>
+<tr>
+<td>精英 Neutral_Elite_2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">33 秒</td>
+<td style="text-align: right;">约 1:33</td>
+<td style="text-align: right;">300 秒</td>
+</tr>
+<tr>
+<td>上方首领 Boss_Cat</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">330 秒</td>
+<td style="text-align: right;">约 6:30</td>
+<td style="text-align: right;">300 秒</td>
+</tr>
+<tr>
+<td>下方首领 Boss_Dragon</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2 个配置实体</td>
+<td style="text-align: right;">600 秒</td>
+<td style="text-align: right;">约 11:00</td>
+<td style="text-align: right;">300 秒</td>
+</tr>
+<tr>
+<td>最上／最下额外营地</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">43 秒</td>
+<td style="text-align: right;">约 1:43</td>
+<td style="text-align: right;">90 秒</td>
+</tr>
+</tbody>
+</table>
+<p>龙点的两个配置实体包含机制所用的辅助实体，不能翻译成“两只首领龙”。首次出现时间要把地图 60 秒起始延迟加进去；直接把资源偏移 330 秒说成开局 5:30 出首领会少算一分钟。重刷倒计时由营地清空条件驱动，也不是从第一只怪死时一律起算。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_2.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_2.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_3.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_3.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_4.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_4.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_5.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_5.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_1.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_1.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_2.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_2.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss3.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss3.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_TopBot.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_TopBot.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFNeutralCreep.cpp">Src/PF_GameLogic/PFNeutralCreep.cpp</a>。</p>
+<p>大龙的价值也不只是一笔钱。经典地图脚本在龙被击杀后，根据击杀方阵营转化出己方的行进龙单位，让它参与后续推进。这是“打中立目标”向“攻城压力”转换的直接连接。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Creeps/Bosses/Boss1/PVP_Walked.CREEP.xdb">Data/Creeps/Bosses/Boss1/PVP_Walked.CREEP.xdb</a>。</p>
+<h2 id="5-土地控制15-根旗杆组成三条前线链">5. 土地控制：15 根旗杆组成三条前线链</h2>
+<p>每条路有 5 根旗杆，三路合计 15 根。旗杆与塔的保护和前后连通关系相连，玩家不能绕过前线、随便点起敌后任意一根旗。己方已推进到更前方的旗会保护后方旗，塔也会影响其保护状态；土地前沿随旗杆链的变化推进或后退。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb">Data/Maps/Multiplayer/MOBA/_.ADMP.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFRoadFlagpole.cpp">Src/PF_GameLogic/PFRoadFlagpole.cpp</a>。</p>
+<p>原版夺旗的可读规则是：</p>
+<ol>
+<li>旗若已属于敌方，要先使它落为中立。旗杆满生命为 5；每个有效的正伤害事件扣 1，而不是照英雄伤害数值扣几十或几百，因此高伤害一击并不自动秒掉旗。</li>
+<li>只有中立、没有正在升起、满足旗链与防御塔保护条件的旗，才可开始升旗。</li>
+<li>英雄在 3 距离内站定，进行 4 秒引导；该互动的配置冷却为 4 秒，能量消耗为 0。同一旗有占用状态，不能多人同时各自完成同一升旗。</li>
+<li>自己移动、攻击、施法、使用天赋或消耗品会打断；中断事件还包括受到伤害、被禁止攻击、被禁止施法和强制移动。不能把它改写为“受伤仍可无阻读条”。</li>
+<li>升旗过程中有显形处理；成功才改变旗归属并推动土地目标位置。土地边界更新有自己的速度参数，不能把旗的归属变化等同于整个大圆范围瞬间涂色。</li>
+</ol>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/RaiseFlagAbility.ABLT.xdb">Data/GameLogic/RaiseFlagAbility.ABLT.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/Flagstaff/_.STCN.xdb">Data/Buildings/Flagstaff/_.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFFlagpole.cpp">Src/PF_GameLogic/PFFlagpole.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplChannelling.cpp">Src/PF_GameLogic/PFApplChannelling.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/DBAbility.h">Src/PF_GameLogic/DBAbility.h</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFWorldNatureMap.cpp">Src/PF_GameLogic/PFWorldNatureMap.cpp</a>。经典地形的土地推进速度参数为 3、覆盖速度参数为 15、土地网格步长为 2.5；这里保留原量纲，不把它们擅自解释成占旗每秒增加的百分比。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.TERN.xdb">Data/Maps/Multiplayer/MOBA/_.TERN.xdb</a>。</p>
+<p>这套设计让拆塔、打人和占土地产生先后关系：先获得安全互动窗口，再完成引导；先打开受保护的前线，再继续向前夺旗。英雄技能也能临时改变土地，具体范围和持续时间属于英雄／天赋规则，不以本章另立一个未经原版证明的覆盖优先级。</p>
+<h2 id="6-昼夜后方设施与资源节奏">6. 昼夜、后方设施与资源节奏</h2>
+<p>经典地图从白昼开始，白昼参数 300 秒、夜晚 180 秒；黄昏时段参数 60 秒，视觉转换时长 4 秒，转换阈值 0.7，显示昼夜控件。夜间有视野调整程序，并不只是颜色变暗：视野修正资源分段执行缩减与恢复，对免疫夜间影响的单位保留例外。不要把隐藏控件的旧地图解释成完全没有昼夜系统。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb">Data/Maps/Multiplayer/MOBA/_.ADMP.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mains/VisionDelta.APLR.xdb">Data/Maps/Multiplayer/MOBA/Mains/VisionDelta.APLR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mains/_A.MBLD.xdb">Data/Maps/Multiplayer/MOBA/Mains/_A.MBLD.xdb</a>。</p>
+<p>双方后方合计有 2 个恢复设施、4 个商店、2 个小游戏建筑；场景还有 2 个符文刷新点。小游戏、补给和符文不是装饰物，而是玩家离开正面兵线后仍能接触的系统。这里只确认它们在地图中的角色和数量，小游戏自身的规则需与对应系统章节一起读。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb">Data/Maps/Multiplayer/MOBA/_.ADMP.xdb</a>。</p>
+<p>经典模式的队伍起始 Prime 字段为 2000；被动发放在开场等待后启动，配置量为每次 4、循环间隔约 1 秒，允许阵亡英雄获得该被动收入。旁观／附近收益范围等字段不能简写成所有收入自动全队平分。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp">Src/PF_GameLogic/PFHero.cpp</a>。兵线、击杀、塔奖励和个人分配以数值章节的公式为准。</p>
+<h2 id="7-把规则翻译成一局中的决策">7. 把规则翻译成一局中的决策</h2>
+<table>
+<thead>
+<tr>
+<th>局势阶段</th>
+<th>玩家面临的主要问题</th>
+<th>可采取的目标</th>
+<th>代价与风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开局与首轮成长</td>
+<td>如何让本队各线获得资源和基础天赋</td>
+<td>分线、维持兵线、利用安全营地</td>
+<td>过早多人离线会损失成长与塔保护</td>
+</tr>
+<tr>
+<td>外塔仍完整</td>
+<td>如何创造击杀或安全拆塔窗口</td>
+<td>支援、逼退守方、跟随兵线推进</td>
+<td>追得太深可能失去退路与支援</td>
+</tr>
+<tr>
+<td>第一座塔倒下后</td>
+<td>如何把局部胜利变成持续控制</td>
+<td>处理该路旗链、压制邻近野区、转线</td>
+<td>只追人而不处理旗与兵线，收益难以持续</td>
+</tr>
+<tr>
+<td>首领可争夺时</td>
+<td>打首领是否会让线路或基地暴露</td>
+<td>集结、争夺击杀，利用行进龙推进</td>
+<td>团队集中意味着别处暂时空缺</td>
+</tr>
+<tr>
+<td>兵营失守后</td>
+<td>如何分配清兵和核心防守</td>
+<td>集火关键来敌、恢复可守地带、抓敌分散</td>
+<td>强化兵线会持续占用守方人员</td>
+</tr>
+<tr>
+<td>核心攻防</td>
+<td>当前机会能否结束比赛</td>
+<td>用兵线和目标压力攻击核心</td>
+<td>团灭后可能反被推进，个人击杀数不能替代胜利目标</td>
+</tr>
+</tbody>
+</table>
+<p>这张表是基于已核规则的策划解释，不给原版强塞固定“第几分钟必须做什么”。资源包没有给出“20—30 分钟必定结束”的规则，也没有证明双方核心同一逻辑时刻被毁一定判平局。原版核心死亡进入通用结算流程；要规定重制版的同时胜负边界，应另立设计决定，不能冒充已核原版事实。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFMainBuilding.cpp">Src/PF_GameLogic/PFMainBuilding.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFWorld.cpp">Src/PF_GameLogic/PFWorld.cpp</a>。</p><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

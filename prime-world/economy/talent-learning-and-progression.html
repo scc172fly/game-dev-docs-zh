@@ -1,0 +1,367 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>04 原版天赋学习与成长｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="economy/talent-learning-and-progression.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link is-active" href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class=""><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class=""><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class="active"><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 04 原版天赋学习与成长</div><div class="article-layout"><article class="article-body"><h1 id="04-原版天赋学习与成长">04 原版天赋学习与成长</h1>
+<blockquote>
+<p><strong>资料版本</strong>：Prime World 开源仓库固定提交 <code>8de5df31fa122b6f51cd099883de74bf4a21228d</code>。本章说明该提交里的原版规则，不是重制方案，也不是新拟的平衡数值。已对照配置表达式与实际调用位置；没有运行原版 Windows 对局来验证所有特殊状态。地图覆盖、玩家配装、运营活动及特殊英雄须按文中条件另算。所有数例均标明输入，不能把算例输入当成所有英雄的默认属性。</p>
+</blockquote>
+<h2 id="1-先把四种等级分开">1. 先把四种“等级”分开</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>玩家在做什么</th>
+<th>原版数据怎样决定</th>
+<th>是否每局重置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天赋盘层数</td>
+<td>决定哪些位置现在可以买</td>
+<td>6 层，每层 6 格；发展点门槛为 0/4/8/12/16/20</td>
+<td>是</td>
+</tr>
+<tr>
+<td>英雄局内等级</td>
+<td>随本局成长增加属性、影响复活等</td>
+<td>发展点阈值表 0—36</td>
+<td>是</td>
+</tr>
+<tr>
+<td>天赋星级</td>
+<td>让拥有的那张天赋更强</td>
+<td>局外强化点及特殊升级道具，传入 refineRate</td>
+<td>否</td>
+</tr>
+<tr>
+<td>英雄局外等级</td>
+<td>长期练英雄，取得属性点等奖励</td>
+<td>累计经验表；与局内发展点不同</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<p>所谓“点亮天赋”，是在这一局用 Prime 激活已装到天赋盘里的一个项目。它可能是主动招式、被动属性、已有招式强化，也可能带来新操作。天赋盘不是一排互相替代的按钮；6×6 是位置结构，不表示每英雄都有 36 个主动招式。成套效果、条件被动、额外操作的实际内容由每个天赋资源决定。T01、T02 和英雄专属页共同说明这件事。</p>
+<h2 id="2-从开局到逐层解锁实际操作规则是什么">2. 从开局到逐层解锁，实际操作规则是什么</h2>
+<p>以原版岩石巨人默认天赋套为例：开局被动“坚如磐石”对应 <code>Rockman_A0</code>，被标为自动取得，费用 0，发展点 1。它经过正常激活链，所以开局不是简单地“面板有一个图标但没有成长”。假设随后购买三项各给 1 发展点的第一层天赋，累计发展点达到 4，即开放第二层；不要求把第一层 6 个槽全部点满。以后同理，在 8、12、16、20 点时开放后续层。</p>
+<p>实际候选项还须存在、没有点亮、满足激活条件、并且有足够 Prime。该提交全局 <code>talentsBuyRange=0</code>，购买范围检查直接放行，所以普通设置下不需要回某个商店才能学；死亡时还会跳过商店距离检查。死亡时买到的被动效果，有些会排队等复活后应用；不能把“能点亮”与“马上在死去的单位上产生所有效果”混为一谈。</p>
+<p>学习费先读每张天赋自己的值。岩石巨人的第一招 <code>Rockman_A1</code> 明确写 300 Prime；即使第一层的兜底费是 350，也不能因此把它改写为 350。只有某天赋的显式费用为负数，才按它自己的 minLevel（从0开始的最低配置层）索引使用 350、500、675、825、1160、1600；天赋盘实际所在行另外负责行解锁与成长分配。专属天赋页和全量清单中的费用应保留资源实际值。</p>
+<p>激活条件字段也有具体语义：<code>activationConditions</code> 为空时直接允许；非空时，当前 <code>CanBeActivated</code> 对成就门槛按“有任一项达到”放行。另一字段 <code>prerequisiteTalents</code> 不能因此被自动解释为同一个判定，本轮在局内学习入口没有找到直接读取它的代码。读取了字段、配装要求、技能效果检查前置、局内学习按钮检查前置是四件不同的事；证据没有闭合的地方不应写成肯定规则。</p>
+<h2 id="3-点亮天赋为什么同时会涨属性">3. 点亮天赋为什么同时会涨属性</h2>
+<p>学习一项天赋不仅得到它自己写明的效果，还会沿着发展点触发英雄局内成长。当前发展点到等级的表从 0 到 36 逐一列出，所以通常每增加 1 点就跨一个局内等级；但应以实际新增发展点和当前等级计算。发展点用于开层的除数是 4；局内等级表的间隔是 1；二者服务不同规则。</p>
+<p>六层分摊的基础成长权重是 <strong>6%、9%、13%、16%、23%、33%</strong>，总和 100%。同一层每单位发展点分到的比例，是这一层权重除以该层装入的所有天赋发展点总和。岩石巨人默认每层 6 项，每项 1 点，因此第一层每个发展点分到 1%，第二层每点 1.5%，第六层每点 5.5%。这使后排天赋不仅效果更强，也承载更多英雄本体成长。</p>
+<p>这里的“1%”乘的是该属性按配置累计到全 36 级的基础增量，不是当前生命的 1%，也不是简单给“基础增量”加一次。因此，不能把英雄文件里的 <code>increment=36</code> 写成“岩石巨人每升级固定加 36 生命”。成长还叠加战力相关预算，具体式子见 T05。</p>
+<h2 id="4-稀有度星级预算和-force-怎样连起来">4. 稀有度、星级、预算和 Force 怎样连起来</h2>
+<p>原版从职业、普通、良好、优秀、华丽、专属稀有和更高稀有等枚举区分天赋；翻译名称之外，判断必须依原始枚举值。预算同时受天赋层、稀有度、星级影响。职业天赋和通用天赋的层权重、每星增幅不同：职业每星 25%，其他每星 7.5%。显式预算非负时优先采用它；没有显式值才套预算公式。</p>
+<p>计算英雄 Force 时，又把天赋预算中的对应层修正除掉，再累加全套天赋。也就是说，<strong>预算不是伤害，Force 也不是把所有技能直接乘上的倍率</strong>。原版用它进一步计算额外属性成长预算：基础 252，Force 超过 100 的部分每点再加 3。玩家带入不同稀有度、不同星级、不同组合，局内成长的总盘子会随之变化。</p>
+<p>该提交 <code>masteryPointForce=0</code>，使持久属性点不增加这里的 Force 评分；持久属性点本身仍进入属性成长路径，所以“战力评分不变”不等于“战斗属性不变”。城堡增益、局外配点和天赋星级都说明原版竞技对局与局外养成存在实际联系。是否在重制里继续保留这种联系，是未来的设计决策，不应在原版拆解中悄悄改成公平归一化。</p>
+<h2 id="5-一个可以复核的完整起步算例">5. 一个可以复核的完整起步算例</h2>
+<p>本例限定：岩石巨人默认的第一套 36 格天赋、每项原始 1 星、无额外玩家配点和活动增益，属性增长倍率 1，只算成长核心，不加每个已学天赋另写的被动属性。逐格数据和预算已附在 <code>data/rockman_default_growth_example.json</code>。</p>
+<p>这套默认配装算得 Force <strong>160.896</strong>；额外总成长预算为 <code>252+(160.896−100)×3=434.688</code>。岩石巨人生命表达式的基础值为 <strong>984</strong>、基础增量 <strong>36</strong>；其增量预算分母为 <strong>4.8</strong>。第一层一个发展点分到 1%，全 36 级累计基础生命增量为 <code>36×36=1296</code>。本次基础成长 <code>1296×1%=12.96</code>；本次额外预算 <code>434.688×1%=4.34688</code>；对应生命额外成长 <code>36×4.34688÷4.8=32.6016</code>。合计本次核心生命增加 <strong>45.5616</strong>，从 984 到 <strong>1029.5616</strong>。自动取得 A0 也走此激活过程。</p>
+<p>这不是对游戏最终面板生命的保证：玩家实际天赋套、持久属性、天赋被动、进入地图时的状态都可能改变结果。它的用途是让策划看见原版成长链的各个环节，并能用同一组输入反算。</p>
+<p>英雄文件里还保存 <code>calcValue=820</code>、<code>calcIncrement=30</code> 这样的编辑器计算缓存，而同字段实际可执行表达式写着 984、36。运行路径调用 <code>value</code> 和 <code>increment</code> 的公式对象，不能拿缓存字段覆盖它们。若为了逐英雄制作表格而抓错字段，会造成全册系统性的基础属性错误。</p>
+<h2 id="6-额外的资源消耗和地图强度修正">6. 额外的资源消耗和地图强度修正</h2>
+<p>高 Force 会增大生命和能量成长，因此原版还计算能量/生命费用补偿倍率。它根据超过基准的 Force、已取得成长预算比例、资源基础增量与当前核心资源求值。技能面板的固定消耗表达式仍可能经过这层倍率和能力修改器。T06 给出可独立计算的输入，不把它误写成所有等级恒定费用。</p>
+<p>地图单位也有基于队伍战力与地图基准的补偿系数。默认方法对选定英雄求平均，超过地图基准的部分按 0.55 缩放。该系数只对实际调用对应修改接口的单位和属性生效，不能直接乘全体英雄的每个伤害。地图或 PvE 模式的具体覆盖见地图章节。</p>
+<h2 id="7-当前明确留下的核验边界">7. 当前明确留下的核验边界</h2>
+<p>本章的 36 格、门槛、默认费用回退、实际学习调用、预算、Force 和分层成长已经连接到代码与资源。尚不能凭静态资源断言每个 <code>prerequisiteTalents</code> 字段在所有客户端入口的强制方式，也不能把仓库默认天赋套当成任何真实账号的当前装备。以下核验卡把这些边界留在规则旁边；不会用新拟的门槛或统一成长替代原版。</p>
+<h2 id="公式核验卡">公式核验卡</h2>
+<h3 id="t01-六层天赋开放门槛">T01 · 六层天赋开放门槛</h3>
+<p><strong>实际规则</strong>：开放层索引=floor(devPoints/4)；候选层索引&lt;=此值；点亮后devPoints+=该天赋devPoints。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devPoints</td>
+<td>本局已点亮天赋累计发展点</td>
+</tr>
+<tr>
+<td>层索引</td>
+<td>0至5，展示为第1至第6层</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>门槛为0/4/8/12/16/20；并非每层必须买满6格。</li>
+<li>还检查槽存在、未点亮、激活条件和Prime。talentsBuyRange=0时不限购买地点；死时跳过商店距离检查。</li>
+<li>自动点亮天赋也累积发展点，Rockman_A0为1点。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"devPoints_before": 3, "talent_devPoints": 1}。</p>
+<ol>
+<li>floor(3/4)=0，只能第一层。</li>
+<li>点亮后4点，floor(4/4)=1，第二层开放。</li>
+</ol>
+<p>结果：<strong>{"devPoints_after": 4, "highest_row": 2}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/DBTalent.h#L90-L96">Src/PF_GameLogic/DBTalent.h · L90—96</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.h#L190-L190">Src/PF_GameLogic/PFTalent.h · L190</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L505-L550">Src/PF_GameLogic/PFTalent.cpp · L505—550</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L575-L600">Src/PF_GameLogic/PFTalent.cpp · L575—600</a></li>
+</ul>
+<h3 id="t02-学习费用与激活条件">T02 · 学习费用与激活条件</h3>
+<p><strong>实际规则</strong>：若talent.naftaCost&gt;=0，费用=它；否则按天赋minLevel使用默认[350,500,675,825,1160,1600]。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>naftaCost</td>
+<td>天赋显式Prime学习费</td>
+</tr>
+<tr>
+<td>minLevel</td>
+<td>默认学习层索引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>Rockman_A1显式300，因此不取第一层兜底350。</li>
+<li>activationConditions为空即允许；非空成就列表在CanBeActivated中按任一达标返回true。</li>
+<li>prerequisiteTalents是单独资源字段，不能当成上述成就条件；该字段的实际配装/运行约束需要另追调用。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"Rockman_A1_naftaCost": 300, "currentPrime": 400}。</p>
+<ol>
+<li>显式300&gt;=0。</li>
+<li>400-300=100。</li>
+</ol>
+<p>结果：<strong>{"cost": 300, "remaining_prime": 100}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L78-L118">Src/PF_GameLogic/PFTalent.cpp · L78—118</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L188-L200">Src/PF_GameLogic/PFTalent.cpp · L188—200</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L3669-L3677">Data/GameLogic/AILogic.AILP.xdb · L3669—3677</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Rockman/Ability1.TALENT.xdb#L702-L702">Data/Items/Talents/Class/Rockman/Ability1.TALENT.xdb · L702</a></li>
+</ul>
+<h3 id="t03-天赋预算">T03 · 天赋预算</h3>
+<p><strong>实际规则</strong>：预算=480*(1+层修正/100)*(稀有度修正/100)*(1+(refineRate-1)*星增量)/220*1.1。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>层修正</td>
+<td>普通天赋[6,57.5,119.6,179.3,305.2,479.1]；职业天赋均400</td>
+</tr>
+<tr>
+<td>稀有度修正</td>
+<td>[188,120,132,150,180,196,221]，Class到Outstanding</td>
+</tr>
+<tr>
+<td>星增量</td>
+<td>普通0.075，Class0.25</td>
+</tr>
+<tr>
+<td>refineRate</td>
+<td>星级，从1起</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>仅当显式budget&lt;0时使用。</li>
+<li>预算不是技能伤害；英雄战力还要移除对应层修正。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"rarity": "Class", "row": 1, "refineRate": 1}。</p>
+<ol>
+<li>480×5×1.88×1/220×1.1。</li>
+</ol>
+<p>结果：<strong>22.56</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L162-L186">Src/PF_GameLogic/PFTalent.cpp · L162—186</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L1778-L1843">Data/GameLogic/AILogic.AILP.xdb · L1778—1843</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L3285-L3285">Data/GameLogic/AILogic.AILP.xdb · L3285</a></li>
+</ul>
+<h3 id="t04-装备战力与额外成长预算">T04 · 装备战力与额外成长预算</h3>
+<p><strong>实际规则</strong>：单天赋Force=预算/(1+对应层修正/100)+稀有度附加值；英雄Force=sum(装备天赋Force)+baseHeroForce；额外总属性预算=252+max(Force-100,0)*3。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Force</td>
+<td>由整套装备天赋决定的战力，不只看本局已点亮项</td>
+</tr>
+<tr>
+<td>稀有度附加值</td>
+<td>当前配置全0</td>
+</tr>
+<tr>
+<td>baseHeroForce</td>
+<td>当前0</td>
+</tr>
+<tr>
+<td>masteryPointForce</td>
+<td>持久属性点战力系数，当前0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>用玩家传入配装时，应重新按玩家实际天赋、星级和预算求值。</li>
+<li>masteryPointForce=0不表示局外属性点没有战斗属性作用。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"default_Rockman_set_force": 160.896}。</p>
+<ol>
+<li>252+(160.896-100)*3。</li>
+</ol>
+<p>结果：<strong>434.688</strong>。</p>
+<p><strong>批注/待解点</strong>：运行对局的玩家持久属性、额外buff和选择的配装必须作为输入；仓库默认配装不能冒充所有玩家。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L87-L98">Src/PF_GameLogic/ForceCalc.cpp · L87—98</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L143-L159">Src/PF_GameLogic/ForceCalc.cpp · L143—159</a></li>
+</ul>
+<h3 id="t05-点亮天赋后的局内属性成长">T05 · 点亮天赋后的局内属性成长</h3>
+<p><strong>实际规则</strong>：f=本层成长百分比/(本层所有天赋devPoints总和)/100；n=本次实际增加的局内等级；Δ属性=全36级基础累计增量*f*n*incrementForceModifier + 当前n级基础增量*(总额外属性预算*f)/总增量预算。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>层成长百分比</td>
+<td>[6,9,13,16,23,33]</td>
+</tr>
+<tr>
+<td>总增量预算</td>
+<td>sum(可随Force成长的基础增量/该属性预算单位)</td>
+</tr>
+<tr>
+<td>n</td>
+<td>按Heroes/_.HLVL发展点阈值求得；并非一律1</td>
+</tr>
+<tr>
+<td>incrementForceModifier</td>
+<td>默认1；地图单位等可另改</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>最后一项仅对upgradesWithForce为true的属性。</li>
+<li>还应加持久属性分配及天赋自己的被动属性效果；本算例只算成长核心。</li>
+<li>StatsContainer运行读取value和increment函数，不读取calcValue/calcIncrement缓存。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"hero": "Rockman默认一星套", "baseLife": 984, "LifeIncrement": 36, "level_count": 36, "f": 0.01, "n": 1, "Force": 160.896, "totalIncrementBudget": 4.8}。</p>
+<ol>
+<li>36×36×.01=12.96。</li>
+<li>额外总预算434.688；本次预算4.34688。</li>
+<li>36*4.34688/4.8=32.6016。</li>
+<li>成长45.5616，核心生命1029.5616。</li>
+</ol>
+<p>结果：<strong>{"core_life_growth": 45.5616, "core_life_after": 1029.5616}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/Stat.cpp#L203-L264">Src/PF_GameLogic/Stat.cpp · L203—264</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/Stat.cpp#L349-L384">Src/PF_GameLogic/Stat.cpp · L349—384</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L575-L600">Src/PF_GameLogic/PFTalent.cpp · L575—600</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFMaleHero.cpp#L208-L245">Src/PF_GameLogic/PFMaleHero.cpp · L208—245</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFMaleHero.cpp#L343-L359">Src/PF_GameLogic/PFMaleHero.cpp · L343—359</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/_.HLVL.xdb#L1-L45">Data/Heroes/_.HLVL.xdb · L1—45</a></li>
+</ul>
+<h3 id="t06-战力提升后的资源消耗补偿">T06 · 战力提升后的资源消耗补偿</h3>
+<p><strong>实际规则</strong>：shiftFactor=max(Force-100,0)*3*已取得成长预算比例/总增量预算；资源Shift=资源基础增量*shiftFactor；消耗倍率=资源核心值/(资源核心值-资源Shift)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>资源</td>
+<td>Energy或Life</td>
+</tr>
+<tr>
+<td>已取得成长预算比例</td>
+<td>每次f*该天赋devPoints累积</td>
+</tr>
+<tr>
+<td>资源核心值</td>
+<td>当前核心能量/生命</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>Force&lt;=100时倍率1；分母过小或无效时回退1。</li>
+<li>这解释了高战力附带更多生命/能量时，消耗也可能按补偿倍率改变。</li>
+<li>最终技能费用还叠加对应能力修改器；生命替代消耗和能量消耗分支不同。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"Force": 200, "acquired": 0.1, "budget": 10, "energyIncrement": 5, "coreEnergy": 1000}。</p>
+<ol>
+<li>shiftFactor=100×3×.1/10=3。</li>
+<li>EnergyShift=15。</li>
+<li>倍率1000/(1000-15)。</li>
+</ol>
+<p>结果：<strong>1.015228426395939</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L101-L135">Src/PF_GameLogic/ForceCalc.cpp · L101—135</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L426-L450">Src/PF_GameLogic/PFAbilityData.cpp · L426—450</a></li>
+</ul>
+<h3 id="t07-地图单位的战力补偿系数">T07 · 地图单位的战力补偿系数</h3>
+<p><strong>实际规则</strong>：队伍统计Force&lt;地图Force时系数1；否则1+(队伍统计Force/地图Force-1)*0.55。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>队伍统计Force</td>
+<td>当前配置Average，具体遍历是否只计真人依调用参数</td>
+</tr>
+<tr>
+<td>地图Force</td>
+<td>地图设定战力</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>只影响调用ModifyStatsByForce且被选中的属性/单位；不能把它直接乘到所有英雄伤害。</li>
+<li>地图可改分队系数，PvE/训练另有修正。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"teamForce": 200, "mapForce": 100}。</p>
+<ol>
+<li>1+(200/100-1)*.55。</li>
+</ol>
+<p>结果：<strong>1.55</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L166-L211">Src/PF_GameLogic/ForceCalc.cpp · L166—211</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L542-L576">Src/PF_GameLogic/PFBaseUnit.cpp · L542—576</a></li>
+</ul><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

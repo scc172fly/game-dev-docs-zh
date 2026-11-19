@@ -1,0 +1,880 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>03 原版属性与战斗公式｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="rules/attributes-and-combat-formulas.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link is-active" href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class=""><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class="active"><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class=""><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 03 原版属性与战斗公式</div><div class="article-layout"><article class="article-body"><h1 id="03-原版属性与战斗公式">03 原版属性与战斗公式</h1>
+<blockquote>
+<p><strong>资料版本</strong>：Prime World 开源仓库固定提交 <code>8de5df31fa122b6f51cd099883de74bf4a21228d</code>。本章说明该提交里的原版规则，不是重制方案，也不是新拟的平衡数值。已对照配置表达式与实际调用位置；没有运行原版 Windows 对局来验证所有特殊状态。地图覆盖、玩家配装、运营活动及特殊英雄须按文中条件另算。所有数例均标明输入，不能把算例输入当成所有英雄的默认属性。</p>
+</blockquote>
+<h2 id="1-玩家实际在经营哪些战斗能力">1. 玩家实际在经营哪些战斗能力</h2>
+<p>原版并不是“力量只管普攻、智力只管技能、坚韧只管物理护甲”这样完全分离的体系。力量和智力决定不同英雄、不同招式的输出；攻击速度和灵巧既改变普攻节奏或暴击，也参与穿透计算；坚韧和意志各自主导一种防御，同时以 30% 的权重参与另一种防御。某个天赋看似只加攻速，也可能让单次伤害穿得更深。因此，重做数值时若只抄面板属性名，忽略派生公式，会改变英雄之间的克制关系。依据见本章 C04—C10。</p>
+<table>
+<thead>
+<tr>
+<th>玩家要理解的能力</th>
+<th>原版主要输入</th>
+<th>需要同时核对的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一次普攻有多痛</td>
+<td>基础攻击系数、力量或智力、伤害加数、暴击</td>
+<td>英雄究竟引用哪一种普攻伤害资源</td>
+</tr>
+<tr>
+<td>普攻有多快</td>
+<td>攻击速度、显式攻频覆盖</td>
+<td>前摇、弹道与最大攻频分别处理</td>
+</tr>
+<tr>
+<td>暴击和穿透</td>
+<td>灵巧、攻击速度、额外暴击、技能穿透变量</td>
+<td>额外暴击不直接进入灵巧穿透的基础暴击项</td>
+</tr>
+<tr>
+<td>承受多少伤害</td>
+<td>坚韧、意志、类型减伤、护盾和事件修正</td>
+<td>物理、法术、纯粹、烧能量分支不同</td>
+</tr>
+<tr>
+<td>回复能力</td>
+<td>绝对再生、百分比再生、最大资源、治疗修正</td>
+<td>独立资源英雄、禁疗和溢出另算</td>
+</tr>
+<tr>
+<td>机动与抗控</td>
+<td>移动属性、移动倍率、减速抵抗、控制时间状态</td>
+<td>移动属性与实际位移速度并非一比一</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-一次攻击从发出到扣血发生了什么">2. 一次攻击从发出到扣血发生了什么</h2>
+<p>先有合法的攻击或技能投递，再可能检查可闪避普攻的未命中和闪避。真正造成伤害的应用器取出本次原始伤害；只有被标记为“可暴击”的伤害才掷暴击。接着进入攻击方修正与受击方处理，普通物理或法术伤害按对应防御公式计算，然后让受击事件监听器继续处理，包括吸收盾等。最终伤害不小于零，并且最多扣掉目标当前生命；满足标记的吸血、吸能按这次实际伤害结算，最后扣血并处理死亡。特殊英雄还可能有免疫、伤害转移、延迟死亡、保留 1 点生命等分支。C06、C10—C14 给出实际调用依据。</p>
+<p>这套顺序有三个策划含义。第一，护盾挡住的部分通常不会成为底层生命吸取的伤害基数。第二，“纯粹伤害”在这里跳过常规双防公式，但标准护盾并没有因为它是纯粹类型就自动放行。第三，<code>ignoreDefences</code> 是更强的特殊标记：标准盾也显式跳过这种伤害。描述中的“无视护甲”“真实伤害”“无视护盾”不能仅凭习惯互相替换。</p>
+<p>同类型护盾之间也有监听优先级；代码用剩余持续时间作同类优先级。不同触发器还可能继续改写伤害。因此，本章的“一个盾抵扣一次伤害”算例只对应指定的单盾场景，不冒充所有叠盾、反伤、伤害转移的统一结算。</p>
+<h2 id="3-防御与穿透应怎样读">3. 防御与穿透应怎样读</h2>
+<p>先把坚韧和意志换成两个防御比例，再减去攻击者的穿透。若防御仍有余量，伤害被压低；若穿透超过防御，伤害会被放大。差值钳制在 −0.75 到 +0.75。防御占优时，普通防御通道最多把伤害压到 25%；穿透占优时，普攻通道最多放大到 175%，技能通道最多放大到 156.25%。这还没有计入另一项物理/法术百分比减伤，也没有计入护盾和特殊事件。C07—C10 分开列式，便于看见每一环。</p>
+<p><strong>逐步算例</strong>：目标坚韧 50、意志 50，攻击者总穿透 0，无技能防御/技能穿透变量。本次原始物理伤害 100，目标额外物理减伤 10%，另有 30 点标准盾。双防中本次用到的物理防御为 <code>0.00536×(50+0.3×50)−0.2=0.1484</code>。防御通道伤害倍率为 <code>1−0.1484=0.8516</code>；再经过 10% 类型减伤，伤害为 <code>100×0.9×0.8516=76.644</code>；盾抵掉 30，生命最终扣 46.644。这里没有使用其他 MOBA 常见的“护甲÷(护甲+100)”公式。</p>
+<p>攻速和灵巧超过 500 后，穿透相关的属性有效增量会被压缩；不是完全失效。灵巧暴击也按同样的压缩属性求值。两个属性既有输出节奏收益，又有穿透收益，调其中任何一项都可能同时改变普攻持续输出和技能伤害，不能只看每秒攻击次数。</p>
+<h2 id="4-普攻攻速和暴击的几个容易误读处">4. 普攻、攻速和暴击的几个容易误读处</h2>
+<p>公共 <code>BaseAttackDmg_Hero</code> 资源读取伤害下限和上限，再抽取整数伤害。该派生上下限是主攻击属性乘 0.9 和 1.1；岩石巨人的资源明确引用这条公共分支。另有名叫“英雄攻击伤害离散”的全局常量，值为 5，但它不自动替换公共资源的 0.9/1.1。分析其他英雄，须看它实际引用哪条公式；不能见到一个全局常量就说全英雄统一在 ±5% 波动。</p>
+<p>普通攻速公式是 <code>攻击速度×0.00365+0.49</code> 次/秒，正常上限 2 次/秒，下限 0.01。显式攻频变量大于 0 时走覆盖分支，可以不受普通 2 次上限约束。攻击前摇和命中时间由另一套时序处理；攻击周期 0.82 秒不等于从抬手到造成伤害只需 0.82 秒。</p>
+<p>暴击概率按灵巧的非线性公式计算，额外暴击加的是百分点，最后夹在 0%—100%。默认英雄暴击倍率是 2，但攻击或技能必须带可暴击标记才使用它。不能给每个技能都套上期望暴击倍率。若只是评估一条可暴击、可命中的普通伤害，其期望原始倍率才可写成 <code>1+暴击概率×(暴击倍率−1)</code>；实际单次依然是暴击或未暴击，不能把期望值当每次跳字。</p>
+<h2 id="5-技能描述里两段数字通常是什么">5. 技能描述里“两段数字”通常是什么</h2>
+<p><code>damageScale(智力,40,300)</code> 的意思不是“随机造成 40—300 点伤害”。该提交的伤害属性标尺是智力 50 时输出 40，智力 258 时输出 300；中间线性插值，通常取整；低端对输出设下限，高端并不封顶。<code>abilityScale</code> 使用另一组 50/182 标尺。生命和能量缩放各有对应端点。<code>refineScale(A,d)</code> 则是 1 星值 A，每升 1 星增加 d；第二个参数不是 6 星结果。所有变体的中文说明、成立条件与固定源码链接见 <a href="formulas/c15-formula.html">C15 缩放公式</a>。</p>
+<p>默认取整调用的是 <code>System/MathTools.h</code> 中的 <code>Round</code>：非负值先加0.5再转整数，负值先减0.5再转整数，因此102.5变103，−2.5变−3；显式关闭取整才保留小数。邻近的 <code>Float2Int</code> 是另一函数，其平台与FPU差异不属于这里的Round规则。<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/System/MathTools.h#L329-L335">取整函数依据</a></p>
+<p>公式的输入也要读清：当前生命与最大生命有不同宏，土地判断默认看施法者脚下所属，天赋条件可以判断另一项天赋本局是否已点亮。英雄页出现升级后追加伤害、土地上的恢复、或某形态专属控制时，应先明确分支，再把这一分支的参数代入公式。</p>
+<h2 id="6-回复减速控制和死亡">6. 回复、减速、控制和死亡</h2>
+<p>底层生命吸取是<strong>固定量封顶</strong>：假设 LifeDrain 为 15，本次实际伤害 80，通常先获得 15 点基础治疗；不是吸取 15% 的 80。伤害只有 8 时，基础治疗最多 8。底层还排除了建筑；技能自己的吸血模拟器可能另写比例规则，应由该技能逐项说明。治疗先接受治疗比例与固定修正，再受生命上限限制；普通正向治疗的溢出丢弃。</p>
+<p>移动属性经过 <code>属性÷(属性+172)×30</code> 换算。把移动属性降低 30%，不会让实际位移速度恰好降低 30%。标准抗控状态对显式名单里的有限控制时间乘缩短比例；减速另通过强度抵抗处理。不是所有地图物件、位移、持续压制和特殊英雄状态都自动受到同一“韧性”规则影响。</p>
+<p>死亡计时默认含“5 秒基础＋局内等级×2 秒”；25 分钟后每个已开始的额外分钟再加 1.5 秒，然后才处理复活时间变量、提前阶段与死亡动画下限。地图可覆盖这套参数。代码还保留赎回价格计算，但本轮没有找到完整的正常买活交互和扣款链，所以本章只记录该公式，不将其列为玩家确认可用的玩法。</p>
+<h2 id="7-原版核验后的设计观察">7. 原版核验后的设计观察</h2>
+<p>如果未来重制，应把“属性到派生值”“原始技能参数”“命中与防御”“状态事件”“最终扣血与恢复”分别写成规则，再逐个英雄接入。当前原版的复杂性来自这些环节相互作用，而不只是英雄技能数量多。下面的核验卡逐条给出公式、中文变量、前提、算例和来源，供数值策划直接核对；这些卡是对原版的说明，并未提出要保留或删改哪些机制。</p>
+<h2 id="公式核验卡">公式核验卡</h2>
+<h3 id="c01-属性修饰顺序">C01 · 属性修饰顺序</h3>
+<p><strong>实际规则</strong>：clamp((base*PRODUCT(normalMul)+SUM(normalAdd))*PRODUCT(topMul)+SUM(topAdd), lower, upper)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base</td>
+<td>核心属性</td>
+</tr>
+<tr>
+<td>normalMul</td>
+<td>普通乘数</td>
+</tr>
+<tr>
+<td>normalAdd</td>
+<td>普通加数</td>
+</tr>
+<tr>
+<td>topMul</td>
+<td>顶层乘数</td>
+</tr>
+<tr>
+<td>topAdd</td>
+<td>顶层加数</td>
+</tr>
+<tr>
+<td>lower/upper</td>
+<td>约束模式形成的上下界</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>只说明属性容器，不等于一切伤害事件的乘法顺序。</li>
+<li>相同状态是否允许叠加，由状态互斥、层数和来源规则另行决定。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"base": 100, "normalMul": [1.2, 1.1], "normalAdd": [20], "topMul": [0.8], "topAdd": [5]}。</p>
+<ol>
+<li>100×1.2×1.1=132。</li>
+<li>(132+20)*0.8+5=126.6。</li>
+</ol>
+<p>结果：<strong>126.6</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ValueWithModifiers.hpp#L36-L96">Src/PF_GameLogic/ValueWithModifiers.hpp · L36—96</a></li>
+</ul>
+<h3 id="c02-移动属性换算实际移动速率">C02 · 移动属性换算实际移动速率</h3>
+<p><strong>实际规则</strong>：sMoveSpeed/(sMoveSpeed + 172) * 30 * (sender.vMoveSpeedMult == 0 ? 1.0f : sender.vMoveSpeedMult)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>MoveSpeed移动属性</td>
+</tr>
+<tr>
+<td>v</td>
+<td>MoveSpeedMult变量，0按1处理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>普通派生移动速度；另受禁止移动、特殊移动和寻路等限制。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"M": 41, "v": 1}。</p>
+<ol>
+<li>41/(41+172)×30×1。</li>
+</ol>
+<p>结果：<strong>5.774647887323944</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L34">Data/GameLogic/DerivateStats.DSTCN.xdb · L34</a>；字段 derivativeStats/Item[5]</li>
+</ul>
+<h3 id="c03-生命与能量再生">C03 · 生命与能量再生</h3>
+<p><strong>实际规则</strong>：生命每秒再生=绝对生命再生+百分比生命再生*最大生命/100；能量同构。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>absolute</td>
+<td>绝对再生量</td>
+</tr>
+<tr>
+<td>percent</td>
+<td>百分比数值，如0.15表示0.15%</td>
+</tr>
+<tr>
+<td>maximum</td>
+<td>最大生命或最大能量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>实际恢复受恢复禁止和上限约束。</li>
+<li>具有uniqueResource的英雄可禁用通常能量属性，改走独立资源变量。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"absolute": 3.3, "percent": 0.15, "maximum": 1000}。</p>
+<ol>
+<li>3.3+0.15*1000/100。</li>
+</ol>
+<p>结果：<strong>4.8</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L8">Data/GameLogic/DerivateStats.DSTCN.xdb · L8</a>；字段 derivativeStats/Item[0]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L13">Data/GameLogic/DerivateStats.DSTCN.xdb · L13</a>；字段 derivativeStats/Item[1]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L525-L565">Src/PF_GameLogic/PFHero.cpp · L525—565</a></li>
+</ul>
+<h3 id="c04-公共英雄普攻原始伤害">C04 · 公共英雄普攻原始伤害</h3>
+<p><strong>实际规则</strong>：Dmin=BaseAttack*(NativeAttackIndex ? Intellect : Strength)*0.9+DamageSummand；Dmax同式将0.9换1.1；公共APLR取random(f2l(Dmin),f2l(Dmax))。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BaseAttack</td>
+<td>基础攻击系数</td>
+</tr>
+<tr>
+<td>NativeAttackIndex</td>
+<td>原生攻击选择标记</td>
+</tr>
+<tr>
+<td>Strength/Intellect</td>
+<td>力量/智力</td>
+</tr>
+<tr>
+<td>DamageSummand</td>
+<td>额外伤害加数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>只适用实际引用BaseAttackDmg_Hero或BaseAttackDmg_Hero_material的攻击。</li>
+<li>全局另有±5%的AttackDamageDispersion_Hero，不能覆盖这条已引用的±10%分支。</li>
+<li>f2l及随机整数端点遵循引擎实现；本算例选整数端点。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"BaseAttack": 1, "Strength": 100, "NativeAttackIndex": 0, "DamageSummand": 0}。</p>
+<ol>
+<li>Dmin=1×100×0.9=90。</li>
+<li>Dmax=1×100×1.1=110。</li>
+<li>从转换后的整数端点间抽取本次原始伤害。</li>
+</ol>
+<p>结果：<strong>{"min_endpoint": 90, "max_endpoint": 110}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L18">Data/GameLogic/DerivateStats.DSTCN.xdb · L18</a>；字段 derivativeStats/Item[2]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L23">Data/GameLogic/DerivateStats.DSTCN.xdb · L23</a>；字段 derivativeStats/Item[3]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/GeneralApplicators/BaseAttackDmg_Hero.APLR.xdb#L5-L11">Data/GameLogic/GeneralApplicators/BaseAttackDmg_Hero.APLR.xdb · L5—11</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L688-L697">Data/Heroes/Rockman/_.HROB.xdb · L688—697</a></li>
+</ul>
+<h3 id="c05-攻击速度与攻击周期">C05 · 攻击速度与攻击周期</h3>
+<p><strong>实际规则</strong>：max( sender.vExplicitAttacksPerSecond &gt; 0 ? sender.vExplicitAttacksPerSecond : min( sAttackSpeed * 0.00365f + 0.49f, 2.0f ), 0.01f )。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AS</td>
+<td>AttackSpeed属性</td>
+</tr>
+<tr>
+<td>Explicit</td>
+<td>ExplicitAttacksPerSecond显式覆盖</td>
+</tr>
+<tr>
+<td>APS</td>
+<td>每秒攻击次数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>普通路径上限2次/秒；显式覆盖路径不使用此2次上限。</li>
+<li>周期=1/APS；前摇和弹道飞行不等于周期。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"AS": 200, "Explicit": 0}。</p>
+<ol>
+<li>200*0.00365+0.49=1.22。</li>
+<li>周期=1/1.22。</li>
+</ol>
+<p>结果：<strong>{"APS": 1.22, "period_seconds": 0.819672131147541}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L44">Data/GameLogic/DerivateStats.DSTCN.xdb · L44</a>；字段 derivativeStats/Item[7]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseAttackData.cpp#L125-L143">Src/PF_GameLogic/PFBaseAttackData.cpp · L125—143</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseAttackData.cpp#L192-L199">Src/PF_GameLogic/PFBaseAttackData.cpp · L192—199</a></li>
+</ul>
+<h3 id="c06-暴击概率与倍率">C06 · 暴击概率与倍率</h3>
+<p><strong>实际规则</strong>：d'=Dexterity-max(0,Dexterity-500)*0.25；C=clamp(90.9*d'/(d'+128)-28+CritChanceBonus,0,100)；可暴击伤害在成功时乘CriticalMultiplier。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dexterity</td>
+<td>灵巧属性</td>
+</tr>
+<tr>
+<td>CritChanceBonus</td>
+<td>额外暴击百分点</td>
+</tr>
+<tr>
+<td>CriticalMultiplier</td>
+<td>暴击倍率，英雄默认2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>DamageApplicator.damageMode必须包含8才执行暴击。</li>
+<li>暴击在目标防御结算前乘入原始伤害。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"Dexterity": 200, "CritChanceBonus": 0, "raw_damage": 100, "CriticalMultiplier": 2}。</p>
+<ol>
+<li>d'=200。</li>
+<li>90.9*200/328-28=27.426829%。</li>
+<li>本次若暴击成功：100*2=200。</li>
+</ol>
+<p>结果：<strong>{"chance_percent": 27.426829268292686, "critical_raw_damage": 200}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L39">Data/GameLogic/DerivateStats.DSTCN.xdb · L39</a>；字段 derivativeStats/Item[6]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplInstant.cpp#L110-L151">Src/PF_GameLogic/PFApplInstant.cpp · L110—151</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Hero.UNLP.xdb#L160-L165">Data/GameLogic/Hero.UNLP.xdb · L160—165</a></li>
+</ul>
+<h3 id="c07-坚韧与意志形成双防御">C07 · 坚韧与意志形成双防御</h3>
+<p><strong>实际规则</strong>：Body=0.00536*(Stamina+0.3*Will)-0.2；Spirit=0.00536*(Will+0.3*Stamina)-0.2。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stamina</td>
+<td>坚韧</td>
+</tr>
+<tr>
+<td>Will</td>
+<td>意志</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>物理防御派生值</td>
+</tr>
+<tr>
+<td>Spirit</td>
+<td>法术防御派生值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>派生值是后续穿透公式使用的比例量；不是K=100式护甲。</li>
+<li>最终还要扣除攻击者穿透、应用钳制和伤害类型。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"Stamina": 50, "Will": 50}。</p>
+<ol>
+<li>0.00536×(50+0.3×50)-0.2。</li>
+</ol>
+<p>结果：<strong>{"Body": 0.1484, "Spirit": 0.1484}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L49">Data/GameLogic/DerivateStats.DSTCN.xdb · L49</a>；字段 derivativeStats/Item[8]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L54">Data/GameLogic/DerivateStats.DSTCN.xdb · L54</a>；字段 derivativeStats/Item[9]</li>
+</ul>
+<h3 id="c08-攻速与灵巧形成穿透">C08 · 攻速与灵巧形成穿透</h3>
+<p><strong>实际规则</strong>：a'=AS-max(0,AS-500)*0.25；d'=Dex-max(0,Dex-500)*0.25；P_AS=.00536*a'-.2-(1-.6667/clamp(AS*.00365+.49,.702,2))；Cbase=clamp(90.9*d'/(d'+128)-28,0,100)；P_Dex=.00536*d'-.2-Cbase/(100+Cbase)；P=max(P_AS+P_Dex,0)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AS</td>
+<td>攻击速度属性</td>
+</tr>
+<tr>
+<td>Dex</td>
+<td>灵巧属性</td>
+</tr>
+<tr>
+<td>Cbase</td>
+<td>不含 CritChanceBonus 并限制在 0–100 的基础暴击百分比</td>
+</tr>
+<tr>
+<td>P</td>
+<td>总穿透派生比例</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>攻速穿透中使用AS原始线性公式作补偿，不使用ExplicitAttacksPerSecond。</li>
+<li>不要将P误读为直接给最终伤害增加P倍。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"AS": 200, "Dex": 200}。</p>
+<ol>
+<li>压缩后的AS和Dex仍为200。</li>
+<li>Cbase=27.426829。</li>
+<li>分别计算两项，再相加并取不小于0。</li>
+</ol>
+<p>结果：<strong>{"attack_speed_part": 0.4184754098360657, "dexterity_part": 0.6567640922576324, "total": 1.075239502093698}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L59">Data/GameLogic/DerivateStats.DSTCN.xdb · L59</a>；字段 derivativeStats/Item[10]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L64">Data/GameLogic/DerivateStats.DSTCN.xdb · L64</a>；字段 derivativeStats/Item[11]</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L69">Data/GameLogic/DerivateStats.DSTCN.xdb · L69</a>；字段 derivativeStats/Item[12]</li>
+</ul>
+<h3 id="c09-防御与穿透共同决定伤害乘数">C09 · 防御与穿透共同决定伤害乘数</h3>
+<p><strong>实际规则</strong>：x=(Defence+SpellDef)-(PenetrationTotal+SpellPierce)；q=(x&gt;0或本次为普攻)?1:0.75；M=1-q*clamp(x,-0.75,0.75)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Defence</td>
+<td>对应物理或法术防御</td>
+</tr>
+<tr>
+<td>SpellDef/SpellPierce</td>
+<td>技能防御/技能穿透变量，普攻时强制为0</td>
+</tr>
+<tr>
+<td>x</td>
+<td>防御减穿透余量</td>
+</tr>
+<tr>
+<td>M</td>
+<td>伤害乘数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>普通伤害类型，未设置ignoreDefences。</li>
+<li>正余量最多减伤75%；负余量普攻最大乘1.75，技能最大乘1.5625。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"Defence": 0.1484, "PenetrationTotal": 0, "SpellDef": 0, "SpellPierce": 0}。</p>
+<ol>
+<li>x=.1484&gt;0。</li>
+<li>M=1-.1484。</li>
+</ol>
+<p>结果：<strong>0.8516</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2736">Data/GameLogic/AILogic.AILP.xdb · L2736</a>；字段 globalConstants/DamagePenetrationMultiplier_Body</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2746">Data/GameLogic/AILogic.AILP.xdb · L2746</a>；字段 globalConstants/DamagePenetrationMultiplier_Spirit</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2836">Data/GameLogic/AILogic.AILP.xdb · L2836</a>；字段 globalConstants/SpellPierce</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2846">Data/GameLogic/AILogic.AILP.xdb · L2846</a>；字段 globalConstants/SpellDef</li>
+</ul>
+<h3 id="c10-普通伤害减免">C10 · 普通伤害减免</h3>
+<p><strong>实际规则</strong>：普通伤害=max(damageDealed,0)*(1-对应DamageDecrease/100)*对应DamagePenetrationMultiplier。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>damageDealed</td>
+<td>伤害应用器提供的当前伤害值，已含此前相关修正</td>
+</tr>
+<tr>
+<td>DamageDecrease</td>
+<td>受击者对应类型减伤百分比</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>Energy走法术通道；Pure和Mana跳过此函数；ignoreDefences也跳过。</li>
+<li>跳过防御不等于忽略所有事件；标准吸收护盾也显式检查ignoreDefences。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"damageDealed": 100, "DamageDecrease": 10, "penetration_multiplier": 0.8516}。</p>
+<ol>
+<li>100×(1-10/100)×.8516。</li>
+</ol>
+<p>结果：<strong>76.644</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L1688-L1693">Data/GameLogic/AILogic.AILP.xdb · L1688—1693</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L3237-L3242">Data/GameLogic/AILogic.AILP.xdb · L3237—3242</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2143-L2153">Src/PF_GameLogic/PFBaseUnit.cpp · L2143—2153</a></li>
+</ul>
+<h3 id="c11-可闪避普攻的命中检查">C11 · 可闪避普攻的命中检查</h3>
+<p><strong>实际规则</strong>：命中概率=(1-clamp(int(MissChance),0,100)/100)*(1-clamp(int(Evasion),0,100)/100)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MissChance</td>
+<td>攻击者未命中百分比</td>
+</tr>
+<tr>
+<td>Evasion</td>
+<td>目标闪避百分比</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>攻击者有效、敌对、IsBaseAttack且dispatch带EVADABLE时，两次独立Next(100)检查。</li>
+<li>友方投递、非普攻或不带可闪避标志，不走这个分支。</li>
+<li>本式为该代码独立抽样的概率推导，条件成立时才适用。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"MissChance": 20, "Evasion": 25}。</p>
+<ol>
+<li>(1-.2)*(1-.25)。</li>
+</ol>
+<p>结果：<strong>0.6</strong>。</p>
+<p><strong>核验状态</strong>：源码判定已核验；命中概率为两次随机检查的数学推导。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2020-L2050">Src/PF_GameLogic/PFBaseUnit.cpp · L2020—2050</a></li>
+</ul>
+<h3 id="c12-护盾与实际扣血">C12 · 护盾与实际扣血</h3>
+<p><strong>实际规则</strong>：单个正吸收盾：剩余伤害=max(进入盾的伤害-盾量,0)，剩余盾=max(盾量-进入盾的伤害,0)；最后扣血=min(max(事件后伤害,0),当前生命)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shield</td>
+<td>护盾剩余容量</td>
+</tr>
+<tr>
+<td>incoming</td>
+<td>进入该护盾监听器的伤害</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>当前生命</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>标准护盾遇到ignoreDefences直接不吸收。</li>
+<li>普通Pure伤害并未被此盾代码按类型排除。</li>
+<li>事件监听顺序按类型与优先级；多个盾和触发器不能凭空合并为单一统一公式。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"incoming": 76.644, "shield": 30, "HP": 200}。</p>
+<ol>
+<li>76.644-30=46.644。</li>
+<li>min(46.644,200)=46.644。</li>
+</ol>
+<p>结果：<strong>{"hp_loss": 46.644, "shield_left": 0}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTriggerApplicator.cpp#L277-L305">Src/PF_GameLogic/PFTriggerApplicator.cpp · L277—305</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2183-L2310">Src/PF_GameLogic/PFBaseUnit.cpp · L2183—2310</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnitAppl.cpp#L328-L368">Src/PF_GameLogic/PFBaseUnitAppl.cpp · L328—368</a></li>
+</ul>
+<h3 id="c13-治疗量及溢出">C13 · 治疗量及溢出</h3>
+<p><strong>实际规则</strong>：生命变化=min(最大生命-当前生命, amount*(1+HealingScale)+HealingBias)；禁止治疗时为0；忽略修正时直接使用 amount；负值可降低生命。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amount</td>
+<td>具体技能计算的原始治疗量</td>
+</tr>
+<tr>
+<td>HealingScale</td>
+<td>受治疗者比例修正变量</td>
+</tr>
+<tr>
+<td>HealingBias</td>
+<td>受治疗者固定修正变量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>FORBIDLIFERESTORE时为0；ignoreHealingMods时忽略Scale和Bias。</li>
+<li>底层仅钳制生命上限，不存在通用正数下限；负量或特殊修正应按原实现单列。</li>
+<li>不能把治疗写成所有英雄通用的智力系数。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"HP": 700, "maxHP": 1000, "amount": 250, "HealingScale": 0.2, "HealingBias": 10}。</p>
+<ol>
+<li>250*1.2+10=310。</li>
+<li>缺失生命300，实际只恢复300。</li>
+</ol>
+<p>结果：<strong>300</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2314-L2346">Src/PF_GameLogic/PFBaseUnit.cpp · L2314—2346</a></li>
+</ul>
+<h3 id="c14-生命吸取与能量吸取">C14 · 生命吸取与能量吸取</h3>
+<p><strong>实际规则</strong>：LifeDrainAmount=min(目标扣血前生命,攻击者LifeDrain,本次实际伤害)；EnergyDrainAmount=min(攻击者EnergyDrain,本次实际伤害,目标当前能量)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LifeDrain</td>
+<td>每次伤害可吸取的固定生命上限</td>
+</tr>
+<tr>
+<td>EnergyDrain</td>
+<td>每次伤害可吸取的固定能量上限</td>
+</tr>
+<tr>
+<td>actualDamage</td>
+<td>盾后且按目标生命封顶的实际伤害</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>damageMode分别需带1或2；建筑排除。</li>
+<li>LifeDrain不是百分比吸血。实际恢复再经过OnHeal或OnHealEnergy。</li>
+<li>生命吸取要求攻击者未被禁止恢复；能量先烧目标再按实际烧掉量恢复。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"actualDamage": 80, "LifeDrain": 15, "targetHP": 100, "EnergyDrain": 12, "targetEnergy": 5}。</p>
+<ol>
+<li>生命吸取=min(100,15,80)=15。</li>
+<li>能量吸取=min(12,80,5)=5。</li>
+</ol>
+<p>结果：<strong>{"life_base_heal": 15, "energy_transfer": 5}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2156-L2179">Src/PF_GameLogic/PFBaseUnit.cpp · L2156—2179</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/DBAbility.h#L752-L760">Src/PF_GameLogic/DBAbility.h · L752—760</a></li>
+</ul>
+<h3 id="c15-技能与强化缩放">C15 · 技能与强化缩放</h3>
+<p><strong>实际规则</strong>：ability/damage=max(A+(x-L)*(B-A)/(R-L),A)，默认Round；refine=A+d*(星级-1)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A/B</td>
+<td>左右属性锚点处的输出参数</td>
+</tr>
+<tr>
+<td>L/R</td>
+<td>配置标尺</td>
+</tr>
+<tr>
+<td>d</td>
+<td>每星增量</td>
+</tr>
+<tr>
+<td>x</td>
+<td>当前输入属性或生命/能量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>A/B不是随机区间；refine第二参数不是6星端点。</li>
+<li>默认Round按最近整数处理，恰好半整数时远离0；显式关闭取整则保留小数。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"ability_x": 116, "L": 50, "R": 182, "A": 100, "B": 300, "refine_A": 100, "refine_d": 12, "star": 4}。</p>
+<ol>
+<li>100+(116-50)*(300-100)/(182-50)=200。</li>
+<li>refine=100+12*3=136。</li>
+</ol>
+<p>结果：<strong>{"ability": 200, "refine": 136}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L1052-L1085">Src/PF_GameLogic/PFAbilityData.cpp · L1052—1085</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L755-L758">Src/PF_GameLogic/PFAbilityData.cpp · L755—758</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L6-L19">Data/GameLogic/AILogic.AILP.xdb · L6—19</a></li>
+</ul>
+<h3 id="c16-标准控制时间缩短与减速抵抗">C16 · 标准控制时间缩短与减速抵抗</h3>
+<p><strong>实际规则</strong>：名单内有限控制的新时长=旧时长*(1-cDecrease_TimeControl/100)；无限时长-1保持-1；DecSlowPower增加cDecrease_TimeControl/100。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cDecrease_TimeControl</td>
+<td>施加此抗控状态的具体天赋常量，百分数</td>
+</tr>
+<tr>
+<td>名单</td>
+<td>List_AllControlStatusesWithoutSlow的显式资源集合</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>不是每个控制无条件共享；必须先有此状态，且命中该显式控制名单/过滤条件。</li>
+<li>减速通过强度变量另外抵抗，不在该不含减速的时间名单中。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"old_duration": 3, "reduction_percent": 25}。</p>
+<ol>
+<li>3*(1-.25)。</li>
+</ol>
+<p>结果：<strong>2.25</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/status_ControlTimeDecrease.APLR.xdb#L96-L98">Data/Heroes/DefaultStatus/status_ControlTimeDecrease.APLR.xdb · L96—98</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/List_AllControlStatusesWithoutSlow.APLS.xdb#L12-L32">Data/Heroes/DefaultStatus/List_AllControlStatusesWithoutSlow.APLS.xdb · L12—32</a></li>
+</ul>
+<h3 id="c17-标准减速的强度">C17 · 标准减速的强度</h3>
+<p><strong>实际规则</strong>：有效减速百分比=cDec_MoveSpeed*(1-DecSlowPower)；普通移动属性乘(1-有效减速百分比/100)；TOP版本另见源配置。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cDec_MoveSpeed</td>
+<td>技能原始减速百分比</td>
+</tr>
+<tr>
+<td>DecSlowPower</td>
+<td>减速抵抗比例</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>普通_SLOW_MOVE与_SLOW_MOVE_TOP不是同一运算。</li>
+<li>减速后的MoveSpeed还需经C02非线性速度换算，属性减30%不等于米/秒恰减30%。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"original_slow_percent": 40, "DecSlowPower": 0.25, "M_before": 100}。</p>
+<ol>
+<li>有效减速40*(1-.25)=30%。</li>
+<li>M_after=100*.7=70。</li>
+<li>速度前后分别为100/272×30与70/242×30。</li>
+</ol>
+<p>结果：<strong>{"M_after": 70, "speed_before": 11.029411764705884, "speed_after": 8.677685950413222}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2856">Data/GameLogic/AILogic.AILP.xdb · L2856</a>；字段 globalConstants/DecMoveSpeed_WithReduction</li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/_SLOW_MOVE.APLR.xdb#L122-L122">Data/Heroes/DefaultStatus/_SLOW_MOVE.APLR.xdb · L122</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/_SLOW_MOVE_TOP.APLR.xdb#L35-L35">Data/Heroes/DefaultStatus/_SLOW_MOVE_TOP.APLR.xdb · L35</a></li>
+</ul>
+<h3 id="c18-死亡后的复活计时">C18 · 死亡后的复活计时</h3>
+<p><strong>实际规则</strong>：t0=base+局内等级*multiplier；若对局分钟m&gt;overtime，则加overtimeDelay*ceil(m-overtime)；t1=max(minimum,t0)*(1+ReviveTimeScale)+ReviveTimeShift；最终max(t1,advanceTime,deathTime)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base</td>
+<td>默认5秒</td>
+</tr>
+<tr>
+<td>multiplier</td>
+<td>默认2秒/局内等级</td>
+</tr>
+<tr>
+<td>minimum</td>
+<td>默认5秒</td>
+</tr>
+<tr>
+<td>overtime</td>
+<td>默认25分钟</td>
+</tr>
+<tr>
+<td>overtimeDelay</td>
+<td>默认每个开始的超时分钟1.5秒</td>
+</tr>
+<tr>
+<td>advanceTime</td>
+<td>默认1秒提前复活阶段</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>地图可替换HeroRespawnParams；还受单位死亡动画时间和复活变量影响。</li>
+<li>advanceRespawnDelay是提前阶段，实际复活与界面显示不能直接等同。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"level": 10, "m": 26.2, "base": 5, "multiplier": 2, "minimum": 5, "overtime": 25, "overtimeDelay": 1.5, "ReviveTimeScale": 0, "ReviveTimeShift": 0, "deathTime": 1}。</p>
+<ol>
+<li>5+10*2=25。</li>
+<li>ceil(26.2-25)=2；加3秒。</li>
+<li>最终28秒；提前阶段约27秒。</li>
+</ol>
+<p>结果：<strong>28</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L1023-L1053">Src/PF_GameLogic/PFHero.cpp · L1023—1053</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L3196-L3206">Data/GameLogic/AILogic.AILP.xdb · L3196—3206</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1929-L1942">Src/PF_GameLogic/PFAIWorld.cpp · L1929—1942</a></li>
+</ul>
+<h3 id="c19-源码残留的赎回费用计算">C19 · 源码残留的赎回费用计算</h3>
+<p><strong>实际规则</strong>：redeem=200+(局内等级*50)*剩余复活时间/(局内等级*复活倍率)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>level</td>
+<td>局内等级</td>
+</tr>
+<tr>
+<td>remaining</td>
+<td>剩余复活秒数；未启动时用level*multiplier</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>仅死亡时计算；分母必须非0。</li>
+<li>在本次PF_GameLogic检索中只找到计算和getter，未找到正常购买扣款/按钮调用链，故不确认当前模式开放买活。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"level": 10, "remaining": 10, "multiplier": 2}。</p>
+<ol>
+<li>200+500*10/20。</li>
+</ol>
+<p>结果：<strong>450</strong>。</p>
+<p><strong>批注/待解点</strong>：是否有UI/外部命令仍使用此费用；不能据此宣称原版正常模式支持买活。</p>
+<p><strong>核验状态</strong>：公式已核验；功能可达性未确认。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L988-L1008">Src/PF_GameLogic/PFHero.cpp · L988—1008</a></li>
+</ul><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

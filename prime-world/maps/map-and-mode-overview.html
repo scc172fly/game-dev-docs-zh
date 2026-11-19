@@ -1,0 +1,266 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>地图 01｜地图、模式与入口：先把数量说清楚｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="maps/map-and-mode-overview.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link is-active" href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class="active"><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class=""><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class=""><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 地图 01｜地图、模式与入口：先把数量说清楚</div><div class="article-layout"><article class="article-body"><h1 id="地图-01地图模式与入口先把数量说清楚">地图 01｜地图、模式与入口：先把数量说清楚</h1>
+<p>本篇拆解固定源码版本 <code>8de5df31fa122b6f51cd099883de74bf4a21228d</code>。结论是：本分支有 <strong>25 个地图场景、83 个地图／模式描述配置</strong>；主地图列表登记 <strong>50 个入口配置</strong>，其中 <strong>21 个配置允许生产环境使用</strong>，这些 21 项只指向 <strong>8 个不同场景</strong>。这五个数字分别回答不同问题，不能挑一个称作“游戏一共有多少张正式地图”。</p>
+<p>本套地图章节描述原版资源与规则，不使用上一版重制提案中的测试数值。中文模式名是工作译名；原俄文名在完整目录保留。确切的线上开放年份、轮换时段与停用时间没有由地图资源自动证明，本稿不会把开关写成运营史。</p>
+<h2 id="1-五种数量口径">1. 五种数量口径</h2>
+<table>
+<thead>
+<tr>
+<th>口径</th>
+<th style="text-align: right;">数量</th>
+<th>策划上代表什么</th>
+<th>不代表什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景文件</td>
+<td style="text-align: right;">25</td>
+<td>地形、放置物、道路、刷怪点、昼夜等空间内容</td>
+<td>25 种公开玩法</td>
+</tr>
+<tr>
+<td>描述配置</td>
+<td style="text-align: right;">83</td>
+<td>给场景配上人数、模式、匹配、奖励、难度或脚本</td>
+<td>83 张互不重复地图</td>
+</tr>
+<tr>
+<td>主列表入口</td>
+<td style="text-align: right;">50</td>
+<td>主地图列表引用的描述项</td>
+<td>50 项均对玩家开放</td>
+</tr>
+<tr>
+<td>主列表且生产允许</td>
+<td style="text-align: right;">21</td>
+<td>同时满足主列表引用与 production 允许的配置</td>
+<td>已经查证 21 个运营期正式模式</td>
+</tr>
+<tr>
+<td>上述 21 项的不同场景</td>
+<td style="text-align: right;">8</td>
+<td>生产允许配置实际使用的空间资源</td>
+<td>8 种完全不同胜负规则</td>
+</tr>
+</tbody>
+</table>
+<p>统计依据是主列表与全部描述、场景文件，而非目录数量。默认开发列表另有 35 项，它与主列表服务的用途不同。仓库还含一份发布目录镜像；对 83 个描述与 25 个场景逐项比较 Git 内容标识，108 对均相同。因此整仓检索得到的 166 个描述、50 个场景，必须去除镜像重复。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Tech/Default/_.MAPLST.xdb">Data/Tech/Default/_.MAPLST.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social.ROOT.xdb">Data/Social.ROOT.xdb</a>。逐项比较结果附于 <code>map_mirror_audit.json</code>。</p>
+<h2 id="2-主列表中生产允许的-21-项">2. 主列表中生产允许的 21 项</h2>
+<p>下面人数按玩法解释。单人教学中可能有多名 AI，合作关卡也会借用对方英雄槽来放脚本敌军，这些都不能算作真人对抗人数。</p>
+<table>
+<thead>
+<tr>
+<th>配置名称</th>
+<th>人数与类别</th>
+<th>核心目标</th>
+<th>场景关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>边境之地</td>
+<td>5 对 5，经典对战</td>
+<td>三路推进，摧毁敌方核心</td>
+<td>经典 MOBA 场景</td>
+</tr>
+<tr>
+<td>故土</td>
+<td>5 对 5，规则变体</td>
+<td>同经典目标；己方土地提供额外增益</td>
+<td>共用经典场景</td>
+</tr>
+<tr>
+<td>末日</td>
+<td>5 对 5，规则变体</td>
+<td>同经典目标；击杀可转化出丧尸或野兽</td>
+<td>独立末日摆放场景</td>
+</tr>
+<tr>
+<td>英雄互换</td>
+<td>5 对 5，规则变体</td>
+<td>本队英雄归属被打乱后进行对战</td>
+<td>共用经典场景</td>
+</tr>
+<tr>
+<td>青铜联赛</td>
+<td>5 对 5，整队配置</td>
+<td>锦标赛式对战</td>
+<td>共用经典场景与联赛设置</td>
+</tr>
+<tr>
+<td>白银联赛</td>
+<td>5 对 5，整队配置</td>
+<td>锦标赛式对战</td>
+<td>共用经典场景与联赛设置</td>
+</tr>
+<tr>
+<td>黄金联赛</td>
+<td>5 对 5，整队配置</td>
+<td>锦标赛式对战</td>
+<td>共用经典场景与联赛设置</td>
+</tr>
+<tr>
+<td>愚人节</td>
+<td>5 对 5，节日变体</td>
+<td>满级／天赋脚本变体，胜负仍围绕基地</td>
+<td>共用经典场景；存在描述冲突批注</td>
+</tr>
+<tr>
+<td>演习</td>
+<td>5 对 5，规则变体</td>
+<td>描述标明不计算评级的经典战斗</td>
+<td>共用经典场景</td>
+</tr>
+<tr>
+<td>新年</td>
+<td>5 对 5，季节版本</td>
+<td>三路推进，季节美术与部分单位替换</td>
+<td>独立新年摆放场景</td>
+</tr>
+<tr>
+<td>前哨</td>
+<td>3 对 3，单线对战</td>
+<td>单线拆塔、兵营、基地</td>
+<td>单线场景</td>
+</tr>
+<tr>
+<td>滴答</td>
+<td>3 对 3，加速变体</td>
+<td>加速的单线战斗</td>
+<td>与前哨同场景</td>
+</tr>
+<tr>
+<td>龙林</td>
+<td>4 对 4，夺蛋护送</td>
+<td>屠龙夺蛋、护送载蛋单位，耗尽敌方祭坛生命</td>
+<td>龙林迷宫场景</td>
+</tr>
+<tr>
+<td>练习</td>
+<td>5 对 5 战斗编制，人机</td>
+<td>在经典地图上对抗 AI</td>
+<td>共用经典场景</td>
+</tr>
+<tr>
+<td>初次进攻：MOBA 教学</td>
+<td>1 名玩家及 AI</td>
+<td>从离开基地到摧毁核心的完整引导</td>
+<td>共用经典场景</td>
+</tr>
+<tr>
+<td>初次进攻：第一章教学</td>
+<td>1 名玩家及 AI</td>
+<td>认识移动、战斗、天赋、建筑目标</td>
+<td>专用教学场景</td>
+</tr>
+<tr>
+<td>推进攻势：第二章教学</td>
+<td>1 名玩家及 AI</td>
+<td>传送、商店、旗杆、推进与团队战斗</td>
+<td>与第一章同教学场景</td>
+</tr>
+<tr>
+<td>试炼：单人剧情</td>
+<td>1 名玩家及剧情伙伴</td>
+<td>救援据点、补强防御、守城并充能神器</td>
+<td>Episode1 场景</td>
+</tr>
+<tr>
+<td>试炼：紫色难度</td>
+<td>5 人合作</td>
+<td>守护伊娃，三次神器爆发后击败三头龙</td>
+<td>共用 Coop1 场景</td>
+</tr>
+<tr>
+<td>试炼：橙色难度</td>
+<td>5 人合作</td>
+<td>同一目标链，较高敌军与防御参数</td>
+<td>共用 Coop1 场景</td>
+</tr>
+<tr>
+<td>试炼：红色难度</td>
+<td>5 人合作</td>
+<td>同一目标链，更强敌军与英雄进攻</td>
+<td>共用 Coop1 场景</td>
+</tr>
+</tbody>
+</table>
+<p>以上每项的直接配置链接、生产开关与继承结果均列在《地图附录：83 项配置与 25 个场景》。合作难度组实际引用紫、橙、红三项；绿、蓝虽有配置并出现在主列表中，却禁止生产环境。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/_.ADMPDSCRGR.xdb">Data/Maps/PvE/Series/Coop1/_.ADMPDSCRGR.xdb</a>。</p>
+<h2 id="3-8-个核心空间资源如何区分">3. 8 个核心空间资源如何区分</h2>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th style="text-align: right;">地形块网格</th>
+<th style="text-align: right;">寻路格网格</th>
+<th>路线／玩法形态</th>
+<th>静态核心物件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经典边境之地</td>
+<td style="text-align: right;">41×41</td>
+<td style="text-align: right;">820×820</td>
+<td>三条主推进路，河流与野区分支</td>
+<td>24 塔、6 兵营、2 核心、15 旗、18 中立刷怪点</td>
+</tr>
+<tr>
+<td>末日边境</td>
+<td style="text-align: right;">41×41</td>
+<td style="text-align: right;">820×820</td>
+<td>经典三路骨架，转换敌军规则</td>
+<td>24 塔、6 兵营、2 核心、15 旗、16 中立刷怪点</td>
+</tr>
+<tr>
+<td>新年边境</td>
+<td style="text-align: right;">41×41</td>
+<td style="text-align: right;">820×820</td>
+<td>经典三路骨架，季节场景与单位替换</td>
+<td>24 塔、6 兵营、2 核心、15 旗、18 中立刷怪点</td>
+</tr>
+<tr>
+<td>前哨</td>
+<td style="text-align: right;">26×26</td>
+<td style="text-align: right;">520×520</td>
+<td>单条主要推进线</td>
+<td>4 塔、2 兵营、2 核心、3 旗；无中立刷怪点</td>
+</tr>
+<tr>
+<td>龙林</td>
+<td style="text-align: right;">60×60</td>
+<td style="text-align: right;">1200×1200</td>
+<td>迷宫成长路、中央龙场、祭坛护送线</td>
+<td>8 塔、12 旗、105 中立刷怪点、2 祭坛、2 运输单位刷出点</td>
+</tr>
+<tr>
+<td>合作试炼</td>
+<td style="text-align: right;">28×28</td>
+<td style="text-align: right;">560×560</td>
+<td>四向围攻与中央防守</td>
+<td>20 旗、55 刷怪点；10 座预置塔按阵营只保留 5 座</td>
+</tr>
+<tr>
+<td>单人试炼</td>
+<td style="text-align: right;">28×28</td>
+<td style="text-align: right;">560×560</td>
+<td>行进探索、据点准备、分段守城</td>
+<td>41 中立刷怪点；6 座预置塔按阵营选择 3 座</td>
+</tr>
+<tr>
+<td>专用教学</td>
+<td style="text-align: right;">26×26</td>
+<td style="text-align: right;">520×520</td>
+<td>脚本推进的教学走廊</td>
+<td>6 塔、6 兵营、2 核心、3 旗，按阶段启用</td>
+</tr>
+</tbody>
+</table>
+<p>尺寸使用原资源的地形块与寻路格，不换算成现实米数，也不把整个方形网格当作可行走面积。寻路格数量按地形块数乘以每块格数得到；地图边界、障碍和树林会进一步限制路线。来源：各场景的 <code>.TERN</code> 与 <code>.ADMP</code>，完整链接见地图附录 B；格网读取口径见 <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFWorld.cpp">Src/PF_GameLogic/PFWorld.cpp</a>。</p>
+<p>“刷怪点”不是“同时活着的怪物”，更不是“每个点一种独特野怪”。一个点可生成一组怪，也可能由剧情手动触发。新年地图有一个内嵌刷怪器；若只统计外部 <code>.NCSPN</code> 引用，会漏掉它而错误写成 17。龙林的 12 根旗杆也以场景内嵌对象存在。</p>
+<h2 id="4-真实小地图的使用方式">4. 真实小地图的使用方式</h2>
+<p>本稿附 7 类原版小地图，各有 A、B、N 三张纹理，总计 21 张。图像由仓库原 DDS 转为 PNG，保留原画面；没有用示意图替代原图。正文显示中性底图，中文区域解释紧随其后，避免把图上的原始地貌涂改。经典、末日与新年等变体复用同一小地图资源时，不额外制造不存在的“专用底图”。旧边境另附 PvP 类原图。</p>
+<p>小地图是方位参考，塔和英雄等动态图标通常由游戏叠加；底图没画出一个物件，不代表场景没有放置它。研究建筑、野怪点与任务触发时，应把底图与摆放表、流程规则一起阅读。</p>
+<h2 id="5-策划阅读顺序">5. 策划阅读顺序</h2>
+<p>先读经典边境之地，理解资源、天赋成长、三路线权、建筑目标链和土地扩张；再读龙林、前哨与规则变体，观察原版如何改变目标和节奏；之后读合作／剧情关卡与教学，理解任务驱动的另外一条设计线。完整目录用于逐项追溯历史变体和测试入口，不要求玩家阅读源代码。</p>
+<p>本次已经明确区分“资源存在”和“正式运营”：夜间地图有生产允许标记却不在主列表；烈焰地图未入主列表且禁止生产；万圣节在主列表里的描述只找到 1 对 1 测试项。它们作为历史／测试资源保留，均不被补写成已核实的线上模式。</p><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

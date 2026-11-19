@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="开局、被动、补刀、邻近与全队奖"><title>局内 Prime 经济与击杀分配｜Prime World 游戏策划与数值百科</title><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/atlas.css"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link is-active" href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><main class="a5-container"><nav class="a5-crumbs" aria-label="页面层级"><a href="../index.html" >首页</a><span>›</span><a href="../match-rules.html" >规则</a><span>›</span><span>局内 Prime 经济与击杀分配</span></nav><section class="a5-hero"><div class="a5-hero-copy"><span class="a5-overline">BATTLE SYSTEM / PRIME</span><h1>局内 Prime 经济与击杀分配</h1><p>开局、被动、补刀、邻近与全队奖</p><div class="a5-hero-underline"></div></div><div class="a5-hero-visual"><img src="../assets/maps/borderlands-n.png" alt="原版地图"/></div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">BATTLE MECHANIC</span><h2>玩家先读：这条规则解决什么问题？</h2></div><p class="a5-lead">开局、被动、补刀、邻近与全队奖</p><section class="a5-formula"><div class="a5-formula-top"><span class="a5-kicker">MATHEMATICAL MODEL / 数学公式</span><h3>小兵击杀及队伍到场奖励（实例）</h3></div><div class="a5-equation">P<sub>killer</sub> = P<sub>lastHit</sub> + P<sub>presence</sub>/N<sub>active</sub></div><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>符号</th><th>中文含义</th></tr></thead><tbody><tr><td><code>P_lastHit</code></td><td>对应小兵的最后击杀基础奖</td></tr><tr><td><code>P_presence</code></td><td>触发了队伍到场条件的奖励值</td></tr><tr><td><code>N_active</code></td><td>符合条件的活跃队员数</td></tr></tbody></table></div><div class="a5-calc-steps"><strong>代入计算</strong><ol><li>普通近战兵：最后击杀36，到场队伍奖励33，5人活跃且至少一名队友到场：击杀者36+33/5=42.6。</li><li>其他4名合格队员各33/5=6.6。</li></ol></div><p class="a5-note">这是近战普通兵、五人均活跃且队伍到场成立的情形；还可能另有邻近奖、加成等。</p><p class="a5-source"><a class="a5-proof" href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp" target="_blank" rel="noopener">↗ 原版源码依据</a></p></section></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">SOURCE RULES</span><h2>实际原版条件、数值与边界</h2></div><div class='a5-prose'><h2>3. 杀一个单位可能同时触发哪些奖</h2>
+<table>
+<thead>
+<tr>
+  <th>奖励类别</th>
+  <th>领取者如何界定</th>
+  <th>关键区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>击杀奖</td>
+  <td>归属判定后的英雄击杀者</td>
+  <td>可能追溯召唤物主人或最近英雄攻击历史</td>
+</tr>
+<tr>
+  <td>助攻奖</td>
+  <td>符合历史应用器条件的支援者</td>
+  <td>不是只看造成过伤害的人</td>
+</tr>
+<tr>
+  <td>邻近奖</td>
+  <td>受害者附近、满足阵营/单位条件的英雄</td>
+  <td>经典邻近距离 25；小兵与英雄的分法不同</td>
+</tr>
+<tr>
+  <td>击杀方全队奖</td>
+  <td>击杀阵营的队伍成员</td>
+  <td>单独逐人发，不一定是先除人数的池</td>
+</tr>
+<tr>
+  <td>队伍到场奖</td>
+  <td>有队友在目标附近时，符合活跃条件的队员</td>
+  <td>经典到场检测距离 25，分配条件另算</td>
+</tr>
+</tbody>
+</table>
+<p>同一名玩家可以符合多个身份。击杀英雄时，真正的英雄击杀者会从助攻和邻近集合移除，但赏金公式给他的额外项里已计算自身那一份；助攻者仍可能同时领取邻近奖励。击杀非英雄时，不会从邻近集合移除英雄击杀者，所以他可能既拿最后击杀奖，也拿附近分成。</p>
+<p>经典实际引用的小兵统计资源已进一步核到：普通近战兵最后击杀 <strong>36</strong>、队伍到场 <strong>33</strong>；远程兵 <strong>32／30</strong>；攻城兵 <strong>43／50</strong>。三种奖励前项给击杀英雄，后项在有队友到场时分给活跃全队成员。五人全活跃且附近有队友时，一只普通近战兵让击杀者得到 <code>36+33÷5=42.6</code>，其他每人各得 6.6。远处的活跃队友也在这个“全队到场奖”的分配范围；它与只有附近人才分的“邻近奖”不同。P06列出实际单位路径和继承条件。</p>
+<p>三层塔的最后击杀基础奖均为0；第一、二、三层塔分别有 <strong>200／250／150</strong> 的邻近奖，同时给击杀方<strong>每一位队员</strong> <strong>200／250／150</strong> 的全队击杀奖。在第一层塔死亡处有2名英雄、队伍共5人、无额外修正时，邻近每人 <code>200÷2×1.5=150</code>，全队每人另200，总发放 <code>5×200+2×150=1300</code>。因此，不能拿全局Tower类型默认最后击杀100替代经典防御塔的真实奖励。</p>
+<p>全局 Creep 的最后击杀默认60、Tower默认100、NeutralCreep默认50，仍是其它没有覆盖对象的类型默认资料，保留在原始配置里；它们与上面的经典实际单位数值必须明确区分。</p>
+</div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>和地图、模式的关系</h2></div><div class='a5-action-links'><a href="../game-modes.html" >按模式看规则覆盖 →</a><a href="../battle-maps.html" >按地图看对象位置 →</a><a href="../balance.html" >按公式看数值与例题 →</a></div></section><footer class="a5-foot">基于 Nival / Prime World 固定源码版本 <code>8de5df31fa12</code> 整理 · 数据与历史运营情况分开标注 · <a href="../sources.html" >资料来源与审校</a><br/>本资料站为非官方研究与教学重构，不代表历史全部版本或实机验证结论。</footer></main><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

@@ -1,0 +1,387 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>05 原版局内 Prime 经济｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="economy/match-prime-economy.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link is-active" href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class=""><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class=""><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class="active"><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 05 原版局内 Prime 经济</div><div class="article-layout"><article class="article-body"><h1 id="05-原版局内-prime-经济">05 原版局内 Prime 经济</h1>
+<blockquote>
+<p><strong>资料版本</strong>：Prime World 开源仓库固定提交 <code>8de5df31fa122b6f51cd099883de74bf4a21228d</code>。本章说明该提交里的原版规则，不是重制方案，也不是新拟的平衡数值。已对照配置表达式与实际调用位置；没有运行原版 Windows 对局来验证所有特殊状态。地图覆盖、玩家配装、运营活动及特殊英雄须按文中条件另算。所有数例均标明输入，不能把算例输入当成所有英雄的默认属性。</p>
+</blockquote>
+<h2 id="1-prime-在一局里做什么">1. Prime 在一局里做什么</h2>
+<p>Prime 是本局学习天赋的重要资源。获得 Prime，决定何时能买到下一项效果；点亮后再增加发展点、开放后层并触发成长。<strong>钱包余额</strong>、<strong>累计赚到的 Prime</strong>、<strong>发展点</strong>因此是不同数值：花掉 Prime 会减少钱包，却不把累计获得量减回去；累计获得量又会进入英雄击杀赏金的计算。经济优势会影响你自己的成长时机，也会影响别人击杀你时的奖励。</p>
+<p>本章优先展开经典 MOBA 配置。其它玩法可能改变队伍人数、开局资源、被动收入、固定奖和赏金函数。地图目录已有 83 份配置的继承展开资料，不能拿其中一张图的 5 人队经济解释所有模式。</p>
+<h2 id="2-开局和自然收入">2. 开局和自然收入</h2>
+<p>经典地图声明每队起始 Prime 2000，队伍大小 5，初始化时按整数除法分配给每位英雄，因此每位起始 <strong>400</strong>。它除的是地图声明人数，不是临时统计实际入场人数；少人不自动把剩余份额均摊给队友。</p>
+<p>经典被动发薪每次为 <strong>4＋额外时间收入变量</strong>。计时器初值来自 <code>battleStartDelay</code>，经典为 <strong>60 秒</strong>；计时低于 0 时发一次，然后重新设为 1 秒。死亡时经典允许继续得到自然收入，复活延迟参数为 0。由此可以说“常规阶段按约每秒一次发薪”，但精确到整局总收入时应按实际触发次数计算：严格小于 0 的判断和每次重设计时会受 tick 离散影响，不能毫无条件地把 20 分钟乘 60 再乘 4。</p>
+<p>例如明确观察到 60 次发薪、没有额外变量时，就是 240 Prime。若希望计算某一场真实对局的自然收入，应拿战斗开始时刻、服务器 tick、死亡规则和收入天赋一起计算。P01、P02 给出来源。</p>
+<h2 id="3-杀一个单位可能同时触发哪些奖">3. 杀一个单位可能同时触发哪些奖</h2>
+<table>
+<thead>
+<tr>
+<th>奖励类别</th>
+<th>领取者如何界定</th>
+<th>关键区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>击杀奖</td>
+<td>归属判定后的英雄击杀者</td>
+<td>可能追溯召唤物主人或最近英雄攻击历史</td>
+</tr>
+<tr>
+<td>助攻奖</td>
+<td>符合历史应用器条件的支援者</td>
+<td>不是只看造成过伤害的人</td>
+</tr>
+<tr>
+<td>邻近奖</td>
+<td>受害者附近、满足阵营/单位条件的英雄</td>
+<td>经典邻近距离 25；小兵与英雄的分法不同</td>
+</tr>
+<tr>
+<td>击杀方全队奖</td>
+<td>击杀阵营的队伍成员</td>
+<td>单独逐人发，不一定是先除人数的池</td>
+</tr>
+<tr>
+<td>队伍到场奖</td>
+<td>有队友在目标附近时，符合活跃条件的队员</td>
+<td>经典到场检测距离 25，分配条件另算</td>
+</tr>
+</tbody>
+</table>
+<p>同一名玩家可以符合多个身份。击杀英雄时，真正的英雄击杀者会从助攻和邻近集合移除，但赏金公式给他的额外项里已计算自身那一份；助攻者仍可能同时领取邻近奖励。击杀非英雄时，不会从邻近集合移除英雄击杀者，所以他可能既拿最后击杀奖，也拿附近分成。</p>
+<p>经典实际引用的小兵统计资源已进一步核到：普通近战兵最后击杀 <strong>36</strong>、队伍到场 <strong>33</strong>；远程兵 <strong>32／30</strong>；攻城兵 <strong>43／50</strong>。三种奖励前项给击杀英雄，后项在有队友到场时分给活跃全队成员。五人全活跃且附近有队友时，一只普通近战兵让击杀者得到 <code>36+33÷5=42.6</code>，其他每人各得 6.6。远处的活跃队友也在这个“全队到场奖”的分配范围；它与只有附近人才分的“邻近奖”不同。P06列出实际单位路径和继承条件。</p>
+<p>三层塔的最后击杀基础奖均为0；第一、二、三层塔分别有 <strong>200／250／150</strong> 的邻近奖，同时给击杀方<strong>每一位队员</strong> <strong>200／250／150</strong> 的全队击杀奖。在第一层塔死亡处有2名英雄、队伍共5人、无额外修正时，邻近每人 <code>200÷2×1.5=150</code>，全队每人另200，总发放 <code>5×200+2×150=1300</code>。因此，不能拿全局Tower类型默认最后击杀100替代经典防御塔的真实奖励。</p>
+<p>全局 Creep 的最后击杀默认60、Tower默认100、NeutralCreep默认50，仍是其它没有覆盖对象的类型默认资料，保留在原始配置里；它们与上面的经典实际单位数值必须明确区分。</p>
+<h2 id="4-经典英雄赏金怎样算">4. 经典英雄赏金怎样算</h2>
+<p>理解公式时先问四个问题：被击杀的人这局总共赚了多少？领取者自己总共赚了多少？有多少助攻者、多少邻近者？受害者是否连续死亡？这些量都会改变奖励。</p>
+<p>设被击杀者累计获得量为 V，当前正在计算奖励的领取者累计获得量为 S。被击杀者经济越高，基础附加赏金越多，但这一部分有上限；领取者比受害者穷，会按双方累计获得差值得到系数补偿，差值也有上下界；连续死亡的受害者会按 0.7 的幂降低贡献，同时击杀、助攻、邻近分别保留 50、20、25 的最低奖励。这里的最低值是在这些主公式里取下限，后续领取者修正仍要照实际调用处理。</p>
+<h3 id="一次三人参与击杀的算例">一次三人参与击杀的算例</h3>
+<p>明确输入：受害者累计获得 3000 Prime；击杀者及本例领取者各累计获得 3000；1 名助攻者、2 名邻近者；受害者死亡连串不超过 1；受害者击杀奖与邻近奖属性都为英雄默认 200；没有额外奖励天赋。助攻者和另一位邻近者共构成 2 人邻近集合，击杀者已经从中移除。</p>
+<p>受害者经济附加为 <code>(3000−300)×0.019=51.3</code>；双方经济差为 0，差值系数 1；死亡串系数 1。击杀者额外项为 <code>251.3÷3+100+(3000−300)×0.013=218.866667</code>。击杀奖为 <code>2×251.3÷3+218.866667=386.4</code>；助攻奖为 <code>251.3÷3=83.766667</code>；每个邻近奖也为 <code>251.3÷3=83.766667</code>。如果助攻者也在邻近集合里，该玩家两项相加为 <strong>167.533333</strong>。另一位仅邻近者获得 <strong>83.766667</strong>。展示时取整如何呈现，不应反向改变底层奖励浮点计算。</p>
+<p>如果某名领取者自己累计只赚 2000，不能沿用上面按 S=3000 算出的系数；必须对他单独以差值 1000 计算 <code>0.016×1²+0.2×1+1=1.216</code>。这正是“同一个人被击杀，不同参与者奖励也会不同”的来源之一。完整主式与所有中文变量见 P03。</p>
+<h2 id="5-小兵奖励为什么不能照英雄赏金套">5. 小兵奖励为什么不能照英雄赏金套</h2>
+<p>非英雄的邻近奖先按附近英雄人数分，再乘地图的人数系数。经典系数依人数为 <strong>1、1.5、1.15、1.1、1</strong>；更多人数取最后一项。例如某单位明确有 20 邻近奖、附近有 2 位英雄，在没有其它修正时，每人先分 10，再乘 1.5 得到 15，总邻近收入是 30。原版确实通过这个人数系数改变总发放量，不能用“资源必须固定守恒”的新设计原则把它修正成总共 20。</p>
+<p>这个 20 是为了展示分配算法而指定的输入，不是宣称某种经典小兵的真实奖励。该单位实际最后击杀奖、全队奖、到场奖，仍然可另外发放；中立怪还可能因“特殊奖励”标记和等级差进入修正分支。做经济分析时应逐种单位分别列奖励属性，再代入共同分配函数。</p>
+<h2 id="6-助攻与击杀归属并不只看最后一刀">6. 助攻与击杀归属并不只看最后一刀</h2>
+<p>召唤物可能沿主人关系把击杀归给英雄。英雄被非英雄单位击杀时，还会查看近期英雄攻击历史，并在部分分支比较英雄伤害与中立伤害。对于非英雄受害者，又使用小兵 0.5 秒、建筑 2 秒的历史窗口等条件。这里有多个分支，不能简单概括成“英雄任何时候碰过目标就有最后击杀权”。</p>
+<p>助攻窗口默认 10 秒。代码检查受害者收到的应用器，也检查攻击者在相应时间内得到的应用器；排除光环等不应计入的情况，并去重英雄。因而治疗、增益类支援有机会参与助攻，但“所有治疗无论对象、时机都给助攻”同样不是已证实的规则。以实际历史记录和过滤条件为准。</p>
+<h2 id="7-天赋成就小游戏和脚本也是独立来源">7. 天赋、成就、小游戏和脚本也是独立来源</h2>
+<p>英雄自身或通用天赋可以直接增减Prime，或按实际可扣数量转移资源。例如吟游诗人的音符机制触发时给10 Prime；治疗师、隐身相关机制、鼠王等也各有自己的资源行为，必须读取触发和目标条件，不能把它们平均加到每个英雄的自然收入。被动赚钱类通用天赋还可能有发放上限和达到上限后的另一数值。</p>
+<p>成就授予入口会检查并发放正的naftaAward：当前统计目录明确有首杀75、首次强攻200这两个正值定义；实际仍需该地图启用对应成就并达成它。英雄在小游戏中、地图脚本发奖、消耗品出售等入口也可能改变Prime。调试作弊入口同样存在，但不应列为玩家正常收益。<code>data/prime_extra_income_sources.json</code>保存已检出的天赋直接收入/转移节点，便于和全量天赋页对读。</p>
+<h2 id="8-从策划角度得到的原版经济结构">8. 从策划角度得到的原版经济结构</h2>
+<p>经济激励并非单纯“谁补刀谁成长”：附近分享鼓励共同活动，助攻记录让支援有收益，双方累计经济差与死亡连串控制追击强者和重复击杀弱者的回报，时间收入给未能补刀的英雄基本成长能力。与此同时，天赋学习费与后层成长权重把经济差转换成战斗差；高经济受害者又会回馈更高赏金，形成一条可检验的反馈链。</p>
+<p>这些是从当前计算规则得出的设计解释。它们并不证明历史版本已达到理想平衡；要判断是否过度滚雪球，仍须使用真实地图单位奖励、玩家分路、击杀频率、发薪 tick 与购买顺序模拟。下方保留可核验公式，避免拿假设收益曲线冒充原版。</p>
+<h2 id="公式核验卡">公式核验卡</h2>
+<h3 id="p01-开局prime">P01 · 开局Prime</h3>
+<p><strong>实际规则</strong>：每名英雄开局Prime=int(startPrimePerTeam/地图声明teamSize)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>startPrimePerTeam</td>
+<td>地图设置的每队总起始Prime</td>
+</tr>
+<tr>
+<td>teamSize</td>
+<td>地图描述声明队伍人数，不是当场实际在线人数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>经典MOBA为2000/5=400；其它模式不能照抄。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"startPrimePerTeam": 2000, "teamSize": 5}。</p>
+<ol>
+<li>int(2000/5)。</li>
+</ol>
+<p>结果：<strong>400</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFWorld.cpp#L539-L549">Src/PF_GameLogic/PFWorld.cpp · L539—549</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb#L78-L78">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb · L78</a></li>
+</ul>
+<h3 id="p02-被动prime收入">P02 · 被动Prime收入</h3>
+<p><strong>实际规则</strong>：一次发薪=giveWorldPrimeAmount+NaftaForTimeBonus；倒计时&lt;0时发放一次并重设为1秒。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>giveWorldPrimeAmount</td>
+<td>经典4</td>
+</tr>
+<tr>
+<td>NaftaForTimeBonus</td>
+<td>天赋/状态额外每次收入</td>
+</tr>
+<tr>
+<td>giveWorldPrimeToDead</td>
+<td>经典true</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>非克隆；需存活或地图允许死时收入。</li>
+<li>首个计时由battleStartDelay初始化；重设为1不保留越界余量，精确每分钟收入受tick影响。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"triggers": 60, "giveWorldPrimeAmount": 4, "NaftaForTimeBonus": 0}。</p>
+<ol>
+<li>60次实际发薪*4。</li>
+</ol>
+<p>结果：<strong>240</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L663-L680">Src/PF_GameLogic/PFHero.cpp · L663—680</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L130-L136">Src/PF_GameLogic/PFHero.cpp · L130—136</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb#L63-L66">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb · L63—66</a></li>
+</ul>
+<h3 id="p03-经典英雄击杀助攻和邻近奖励">P03 · 经典英雄击杀、助攻和邻近奖励</h3>
+<p><strong>实际规则</strong>：B=clamp((V-300)*.019,0,240)；x=clamp(V-S,-4000,4000)/1000；F=.016*x²+.2*x+1；D=deathStreak&lt;=1?1:.7^(deathStreak-1)；E=(Spec+B)/(N+1)+100+clamp((V-300)*.013,0,156)；击杀=max((2*(Kill+B)/(A+2)+E)*F*D,50)；助攻=max((Kill+B)/(A+2)*F*D,20)；邻近=max((Spec+B)/(N+1)*F*D,25)。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V</td>
+<td>被击杀英雄累计获得Prime</td>
+</tr>
+<tr>
+<td>S</td>
+<td>正在计算奖励的领取者累计获得Prime</td>
+</tr>
+<tr>
+<td>A</td>
+<td>移除真正英雄击杀者后的助攻人数</td>
+</tr>
+<tr>
+<td>N</td>
+<td>移除真正英雄击杀者后的邻近人数</td>
+</tr>
+<tr>
+<td>Kill/Spec</td>
+<td>受害者对应奖励属性，Hero默认均200</td>
+</tr>
+<tr>
+<td>deathStreak</td>
+<td>受害者死亡连串长度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>使用MOBA/PrimeForVictimKill.HNP且地图各固定覆盖值为-1。</li>
+<li>每个领取者单独计算F；当前钱包余额不是累计获得Prime。</li>
+<li>击杀者的E已含自身邻近份额；助攻者若同时属于邻近集合可以取得两项。</li>
+<li>Kill/assist后还应用领取者PrimeForKillMultiplier；kill加LastHitPrimeBonus。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"V": 3000, "S": 3000, "A": 1, "N": 2, "deathStreak": 1}。</p>
+<ol>
+<li>B=(3000-300)*.019=51.3。</li>
+<li>F=1，D=1。</li>
+<li>E=251.3/3+100+35.1=218.866667。</li>
+<li>击杀=(2*251.3/3+218.866667)=386.4。</li>
+<li>助攻=251.3/3=83.766667；邻近同值。</li>
+</ol>
+<p>结果：<strong>{"victim_bonus": 51.3, "relative_factor": 1.0, "deathstreak_factor": 1, "kill": 386.4, "assist": 83.76666666666667, "presence": 83.76666666666667}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/PrimeForVictimKill.HNP.xdb#L1-L52">Data/Maps/Multiplayer/MOBA/PrimeForVictimKill.HNP.xdb · L1—52</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1214-L1340">Src/PF_GameLogic/PFAIWorld.cpp · L1214—1340</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1413-L1483">Src/PF_GameLogic/PFAIWorld.cpp · L1413—1483</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L724-L732">Src/PF_GameLogic/PFHero.cpp · L724—732</a></li>
+</ul>
+<h3 id="p04-小兵建筑邻近奖励与队伍奖励">P04 · 小兵/建筑邻近奖励与队伍奖励</h3>
+<p><strong>实际规则</strong>：非英雄邻近单人基础奖励=(VictimNaftaSpecForKill/N)*地图multipliers[min(N-1,last)]；再乘领取者修正；队伍presence奖按活跃成员数分；TeamNaftaForKill另逐人发。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>邻近英雄人数，击杀者对非英雄不会从邻近集合删除</td>
+</tr>
+<tr>
+<td>multipliers</td>
+<td>经典[1,1.5,1.15,1.1,1]</td>
+</tr>
+<tr>
+<td>活跃成员</td>
+<td>玩家活跃或机器人，按原枚举判定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>基础奖励从具体小兵/建筑属性或地图覆盖读；不同单位不统一。</li>
+<li>N&gt;1才在准备阶段除N；N=1自然等同。</li>
+<li>邻近奖励总额会因multipliers不同而改变，不是固定池严格守恒。</li>
+<li>中立野怪特殊奖和等级差还会带额外条件。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"victimSpec": 20, "N": 2, "multiplier": 1.5, "recipient_bonus": 0}。</p>
+<ol>
+<li>20/2=10。</li>
+<li>10*1.5=15每人。</li>
+<li>两人邻近合计30，不是20。</li>
+</ol>
+<p>结果：<strong>{"each": 15, "sum": 30}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1104-L1209">Src/PF_GameLogic/PFAIWorld.cpp · L1104—1209</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1413-L1483">Src/PF_GameLogic/PFAIWorld.cpp · L1413—1483</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb#L67-L74">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb · L67—74</a></li>
+</ul>
+<h3 id="p05-击杀和助攻归属">P05 · 击杀和助攻归属</h3>
+<p><strong>实际规则</strong>：按伤害/应用器历史、召唤物主人及时间窗归属，不是单靠最后视觉命中者。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>assistAccountTime</td>
+<td>默认10秒</td>
+</tr>
+<tr>
+<td>heroKillerDeadtime</td>
+<td>英雄替代击杀归属部分分支5秒</td>
+</tr>
+<tr>
+<td>nonheroWindows</td>
+<td>非英雄受害者的英雄归属窗口，小兵0.5秒/建筑2秒</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>英雄/中立击杀者、友军伤害和召唤物主人分别有分支。</li>
+<li>助攻检查受害者收到的应用器与攻击者近期得到的非光环应用器；有条件地包含支援，不能简化为只看伤害。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"summon_master": "某英雄", "last_hitter": "该英雄的召唤物"}。</p>
+<ol>
+<li>追溯召唤物主人。</li>
+<li>满足有效英雄条件则将击杀归给主人。</li>
+</ol>
+<p>结果：<strong>主人可取得击杀归属</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L477-L525">Src/PF_GameLogic/PFAIWorld.cpp · L477—525</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L698-L800">Src/PF_GameLogic/PFAIWorld.cpp · L698—800</a></li>
+</ul>
+<h3 id="p06-经典小兵与塔的真实赏金字段">P06 · 经典小兵与塔的真实赏金字段</h3>
+<p><strong>实际规则</strong>：普通近战兵：最后击杀36、队伍到场33；远程兵：32与30；攻城兵：43与50。塔1/2/3：最后击杀0、邻近奖200/250/150、每位队员击杀方全队奖200/250/150。。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>队伍到场</td>
+<td>至少有符合条件的队友在范围内时，分给活跃全队成员</td>
+</tr>
+<tr>
+<td>塔层级</td>
+<td>按DefaultStats/Tower1/2/3资源区分；同一层可能不止一座塔</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>上述字段来自经典地图实际引用的单位统计资源，优先于Creep/Tower类型默认值。</li>
+<li>本例没有额外Prime天赋，队伍5人全部活跃，受害者附近有队友；不把旁观者人数当全队活跃人数。</li>
+<li>强化近战兵统计资源按数组继承，相关奖励项沿用父资源；不能用普通字典替换整个数组丢掉skip项。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"victim": "普通近战兵", "kill_reward": 36, "team_presence_reward": 33, "active_members": 5}。</p>
+<ol>
+<li>每名活跃队员得33/5=6.6。</li>
+<li>英雄击杀者另得36，因此42.6。</li>
+<li>全队合计36+33=69。</li>
+</ol>
+<p>结果：<strong>{"killer": 42.6, "each_other_active_teammate": 6.6, "team_total": 69}</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Creeps/DefaultStats/PvP/Faction_Melee.STCN.xdb#L83-L105">Data/Creeps/DefaultStats/PvP/Faction_Melee.STCN.xdb · L83—105</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Creeps/DefaultStats/PvP/Faction_Range.STCN.xdb#L81-L103">Data/Creeps/DefaultStats/PvP/Faction_Range.STCN.xdb · L81—103</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Creeps/DefaultStats/PvP/Faction_Siege.STCN.xdb#L96-L118">Data/Creeps/DefaultStats/PvP/Faction_Siege.STCN.xdb · L96—118</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower1.STCN.xdb#L71-L93">Data/Buildings/DefaultStats/Tower1.STCN.xdb · L71—93</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1104-L1209">Src/PF_GameLogic/PFAIWorld.cpp · L1104—1209</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1413-L1483">Src/PF_GameLogic/PFAIWorld.cpp · L1413—1483</a></li>
+</ul>
+<h3 id="p07-额外prime来源与转移">P07 · 额外Prime来源与转移</h3>
+<p><strong>实际规则</strong>：天赋AddNafta直接增减对应英雄余额；转移取得量=实际扣除量*multiplier+addition；成就满足并授予时，naftaAward&gt;0则额外发放。。</p>
+<table>
+<thead>
+<tr>
+<th>变量/配置</th>
+<th>中文含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>实际扣除量</td>
+<td>min(持有Prime,请求扣除量)</td>
+</tr>
+<tr>
+<td>Bard_A0</td>
+<td>按音符触发的奖励常量10</td>
+</tr>
+<tr>
+<td>FirstBlood</td>
+<td>配置奖励75</td>
+</tr>
+<tr>
+<td>FirstAssault</td>
+<td>配置奖励200</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成立条件</strong>：</p>
+<ul>
+<li>每个天赋的触发、冷却、目标及上限另见对应天赋页；不能并入人人都有的被动收入。</li>
+<li>固定奖励必须对应当前地图启用的成就且实际完成授予；文件存在本身不证明任何时刻可得。</li>
+<li>data/prime_extra_income_sources.json列出20个显式应用器节点和2个正成就奖励定义，范围是Items/Talents与GameLogic/Statistic。</li>
+</ul>
+<p><strong>逐步算例</strong>：输入 {"victim_current_prime": 8, "requested_transfer": 10, "multiplier": 1, "addition": 0}。</p>
+<ol>
+<li>实际最多扣8。</li>
+<li>转入8*1+0=8。</li>
+</ol>
+<p>结果：<strong>8</strong>。</p>
+<p><strong>核验状态</strong>：配置表达式与调用链已核验；算例独立复算。</p>
+<p><strong>来源</strong>：</p>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplInstant.cpp#L789-L807">Src/PF_GameLogic/PFApplInstant.cpp · L789—807</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplSpecial.cpp#L412-L441">Src/PF_GameLogic/PFApplSpecial.cpp · L412—441</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAchievement.cpp#L426-L437">Src/PF_GameLogic/PFAchievement.cpp · L426—437</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2413-L2427">Src/PF_GameLogic/PFBaseUnit.cpp · L2413—2427</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Statistic/FirstBlood.ACHIEV.xdb#L12-L15">Data/GameLogic/Statistic/FirstBlood.ACHIEV.xdb · L12—15</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Statistic/FirstAssault.ACHIEV.xdb#L13-L16">Data/GameLogic/Statistic/FirstAssault.ACHIEV.xdb · L13—16</a></li>
+</ul><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

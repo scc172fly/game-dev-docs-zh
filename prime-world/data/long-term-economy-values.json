@@ -1,0 +1,2716 @@
+{
+  "commit": "8de5df31fa122b6f51cd099883de74bf4a21228d",
+  "scope": "Repository static defaults; event overrides not resolved",
+  "social_root_tables": {
+    "TalentLevelToPointsAndRarity": {
+      "value": {
+        "items": [
+          {
+            "levelToPoints": {
+              "items": [
+                7,
+                22,
+                52,
+                111,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 111
+          },
+          {
+            "levelToPoints": {
+              "items": [
+                7,
+                22,
+                52,
+                111,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 111
+          },
+          {
+            "levelToPoints": {
+              "items": [
+                30,
+                89,
+                208,
+                445,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 445
+          },
+          {
+            "levelToPoints": {
+              "items": [
+                52,
+                156,
+                363,
+                778,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 778
+          },
+          {
+            "levelToPoints": {
+              "items": [
+                74,
+                222,
+                519,
+                1112,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 1112
+          },
+          {
+            "levelToPoints": {
+              "items": [
+                111,
+                334,
+                778,
+                1668,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 1668
+          },
+          {
+            "levelToPoints": {
+              "items": [
+                111,
+                334,
+                778,
+                1668,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+              ]
+            },
+            "refinePointsCap": 1668
+          }
+        ]
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 4499
+    },
+    "TalentMergePriceToLevelAndRarity": {
+      "value": {
+        "items": [
+          {
+            "levelToPrice": {
+              "items": [
+                1,
+                3,
+                6,
+                10,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "levelToPrice": {
+              "items": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "levelToPrice": {
+              "items": [
+                0,
+                1,
+                1,
+                3,
+                5,
+                10
+              ]
+            }
+          },
+          {
+            "levelToPrice": {
+              "items": [
+                1,
+                1,
+                1,
+                2,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "levelToPrice": {
+              "items": [
+                1,
+                1,
+                1,
+                2,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "levelToPrice": {
+              "items": [
+                1,
+                2,
+                3,
+                4,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "levelToPrice": {
+              "items": [
+                2,
+                5,
+                8,
+                15,
+                0,
+                0
+              ]
+            }
+          }
+        ]
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 4599
+    },
+    "TalentConsumptionPointsToRarity": {
+      "value": {
+        "items": [
+          0,
+          1,
+          2,
+          5,
+          18,
+          20,
+          30
+        ]
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 4490
+    },
+    "TalentsSellPrice": {
+      "value": {
+        "items": [
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 0,
+            "Silver": 0
+          },
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 0,
+            "Silver": 1
+          },
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 0,
+            "Silver": 1
+          },
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 0,
+            "Silver": 100
+          },
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 0,
+            "Silver": 500
+          },
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 1,
+            "Silver": 0
+          },
+          {
+            "Currencies": "",
+            "CWPoints_Clan": 0,
+            "CWPoints_Player": 0,
+            "Gold": 0,
+            "Perl": 0,
+            "Population": 0,
+            "RedPerl": 0,
+            "Resource1": 0,
+            "Resource1_Rare": 0,
+            "Resource2": 0,
+            "Resource2_Rare": 0,
+            "Resource3": 0,
+            "Resource3_Rare": 0,
+            "Shard": 3,
+            "Silver": 0
+          }
+        ]
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 6206
+    },
+    "RollTalentForTransmutationBuilding": {
+      "value": {
+        "DBRollTalentPercents": {
+          "percents": {
+            "items": [
+              0,
+              0,
+              0,
+              0,
+              94,
+              6,
+              0
+            ]
+          }
+        },
+        "_attributes": {
+          "href": "/Social.ROOT",
+          "id": "E6F1C483-D979-466F-845B-1C2175634641"
+        }
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 3306
+    },
+    "RollTalentPremiumForTransmutationBuilding": {
+      "value": {
+        "DBRollTalentPercents": {
+          "percents": {
+            "items": [
+              0,
+              0,
+              0,
+              0,
+              88,
+              12,
+              0
+            ]
+          }
+        },
+        "_attributes": {
+          "href": "/Social.ROOT",
+          "id": "5E3B9DC2-1D74-4E62-991E-4E889FCFB9B2"
+        }
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 3319
+    },
+    "resourcesToGoldPrice": {
+      "value": {
+        "Perl": {
+          "goldPrice": 1,
+          "isPack": true,
+          "resourceCount": 2
+        },
+        "Resource1": {
+          "goldPrice": 1,
+          "isPack": true,
+          "resourceCount": 100000
+        },
+        "Resource2": {
+          "goldPrice": 1,
+          "isPack": true,
+          "resourceCount": 100000
+        },
+        "Resource3": {
+          "goldPrice": 1,
+          "isPack": true,
+          "resourceCount": 100000
+        },
+        "Silver": {
+          "goldPrice": 1,
+          "isPack": true,
+          "resourceCount": 20000
+        }
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 3279
+    },
+    "ReforgeTalentPrices": {
+      "value": {
+        "items": [
+          {
+            "rarity": "magnificent",
+            "rerollPrices": {
+              "items": [
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 1,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 1,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 1
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 2,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 2,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 2
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 2,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 2,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 3
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 3,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 3,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 4
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 3,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 3,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 5
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 5,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 5,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 6
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 5,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 5,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 7
+                }
+              ]
+            },
+            "talentsToUpgrade": 1,
+            "upgradePrice": {
+              "Currencies": "",
+              "CWPoints_Clan": 0,
+              "CWPoints_Player": 0,
+              "Gold": 0,
+              "Perl": 8,
+              "Population": 0,
+              "RedPerl": 0,
+              "Resource1": 0,
+              "Resource1_Rare": 0,
+              "Resource2": 0,
+              "Resource2_Rare": 0,
+              "Resource3": 0,
+              "Resource3_Rare": 0,
+              "Shard": 0,
+              "Silver": 0
+            }
+          },
+          {
+            "rarity": "exclusive",
+            "rerollPrices": {
+              "items": [
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 3,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 3,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 1
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 4,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 4,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 2
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 5,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 5,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 3
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 6,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 6,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 4
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 7,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 7,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 5
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 15,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 15,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 6
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 25,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 25,
+                    "Population": 0,
+                    "RedPerl": 0,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 7
+                }
+              ]
+            },
+            "talentsToUpgrade": 5,
+            "upgradePrice": {
+              "Currencies": "",
+              "CWPoints_Clan": 0,
+              "CWPoints_Player": 0,
+              "Gold": 0,
+              "Perl": 0,
+              "Population": 0,
+              "RedPerl": 8,
+              "Resource1": 0,
+              "Resource1_Rare": 0,
+              "Resource2": 0,
+              "Resource2_Rare": 0,
+              "Resource3": 0,
+              "Resource3_Rare": 0,
+              "Shard": 0,
+              "Silver": 0
+            }
+          },
+          {
+            "rarity": "outstanding",
+            "rerollPrices": {
+              "items": [
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 6,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 6,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 1
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 7,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 7,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 2
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 9,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 9,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 3
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 12,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 12,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 4
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 15,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 15,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 5
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 30,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 30,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 6
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 50,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 50,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 7
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 75,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 75,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 8
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 105,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 105,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 9
+                },
+                {
+                  "priceWithoutSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 140,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "priceWithSetFilter": {
+                    "Currencies": "",
+                    "CWPoints_Clan": 0,
+                    "CWPoints_Player": 0,
+                    "Gold": 0,
+                    "Perl": 0,
+                    "Population": 0,
+                    "RedPerl": 140,
+                    "Resource1": 0,
+                    "Resource1_Rare": 0,
+                    "Resource2": 0,
+                    "Resource2_Rare": 0,
+                    "Resource3": 0,
+                    "Resource3_Rare": 0,
+                    "Shard": 0,
+                    "Silver": 0
+                  },
+                  "stars": 10
+                }
+              ]
+            },
+            "talentsToUpgrade": 0,
+            "upgradePrice": {
+              "Currencies": "",
+              "CWPoints_Clan": 0,
+              "CWPoints_Player": 0,
+              "Gold": 0,
+              "Perl": 0,
+              "Population": 0,
+              "RedPerl": 0,
+              "Resource1": 0,
+              "Resource1_Rare": 0,
+              "Resource2": 0,
+              "Resource2_Rare": 0,
+              "Resource3": 0,
+              "Resource3_Rare": 0,
+              "Shard": 0,
+              "Silver": 0
+            }
+          }
+        ]
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 2124
+    },
+    "LevelToResources": {
+      "value": {
+        "resourcesPerLevel": {
+          "items": [
+            {
+              "currentLevel": 0,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 0,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 0,
+                "Resource1_Rare": 0,
+                "Resource2": 0,
+                "Resource2_Rare": 0,
+                "Resource3": 0,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 0
+              }
+            },
+            {
+              "currentLevel": 2,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 1,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 50,
+                "Resource1_Rare": 0,
+                "Resource2": 50,
+                "Resource2_Rare": 0,
+                "Resource3": 50,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 100
+              }
+            },
+            {
+              "currentLevel": 3,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 1,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 125,
+                "Resource1_Rare": 0,
+                "Resource2": 125,
+                "Resource2_Rare": 0,
+                "Resource3": 125,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 175
+              }
+            },
+            {
+              "currentLevel": 4,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 2,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 225,
+                "Resource1_Rare": 0,
+                "Resource2": 225,
+                "Resource2_Rare": 0,
+                "Resource3": 225,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 255
+              }
+            },
+            {
+              "currentLevel": 5,
+              "PremiumAccountHours": 168,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 2,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 500,
+                "Resource1_Rare": 0,
+                "Resource2": 500,
+                "Resource2_Rare": 0,
+                "Resource3": 500,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 335
+              }
+            },
+            {
+              "currentLevel": 6,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 2,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 1510,
+                "Resource1_Rare": 0,
+                "Resource2": 1510,
+                "Resource2_Rare": 0,
+                "Resource3": 1510,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 410
+              }
+            },
+            {
+              "currentLevel": 7,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 3,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 1865,
+                "Resource1_Rare": 0,
+                "Resource2": 1865,
+                "Resource2_Rare": 0,
+                "Resource3": 1865,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 490
+              }
+            },
+            {
+              "currentLevel": 8,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 3,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 2215,
+                "Resource1_Rare": 0,
+                "Resource2": 2215,
+                "Resource2_Rare": 0,
+                "Resource3": 2215,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 565
+              }
+            },
+            {
+              "currentLevel": 9,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 3,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 2570,
+                "Resource1_Rare": 0,
+                "Resource2": 2570,
+                "Resource2_Rare": 0,
+                "Resource3": 2570,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 645
+              }
+            },
+            {
+              "currentLevel": 10,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 4,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 2925,
+                "Resource1_Rare": 0,
+                "Resource2": 2925,
+                "Resource2_Rare": 0,
+                "Resource3": 2925,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 725
+              }
+            },
+            {
+              "currentLevel": 11,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 4,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 3275,
+                "Resource1_Rare": 0,
+                "Resource2": 3275,
+                "Resource2_Rare": 0,
+                "Resource3": 3275,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 800
+              }
+            },
+            {
+              "currentLevel": 12,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 4,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 3630,
+                "Resource1_Rare": 0,
+                "Resource2": 3630,
+                "Resource2_Rare": 0,
+                "Resource3": 3630,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 880
+              }
+            },
+            {
+              "currentLevel": 13,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 5,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 3980,
+                "Resource1_Rare": 0,
+                "Resource2": 3980,
+                "Resource2_Rare": 0,
+                "Resource3": 3980,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 955
+              }
+            },
+            {
+              "currentLevel": 14,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 5,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 4335,
+                "Resource1_Rare": 0,
+                "Resource2": 4335,
+                "Resource2_Rare": 0,
+                "Resource3": 4335,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1035
+              }
+            },
+            {
+              "currentLevel": 15,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 5,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 4690,
+                "Resource1_Rare": 0,
+                "Resource2": 4690,
+                "Resource2_Rare": 0,
+                "Resource3": 4690,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1115
+              }
+            },
+            {
+              "currentLevel": 16,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 5,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 5040,
+                "Resource1_Rare": 0,
+                "Resource2": 5040,
+                "Resource2_Rare": 0,
+                "Resource3": 5040,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1190
+              }
+            },
+            {
+              "currentLevel": 17,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 6,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 5395,
+                "Resource1_Rare": 0,
+                "Resource2": 5395,
+                "Resource2_Rare": 0,
+                "Resource3": 5395,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1270
+              }
+            },
+            {
+              "currentLevel": 18,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 6,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 5745,
+                "Resource1_Rare": 0,
+                "Resource2": 5745,
+                "Resource2_Rare": 0,
+                "Resource3": 5745,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1345
+              }
+            },
+            {
+              "currentLevel": 19,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 6,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 6100,
+                "Resource1_Rare": 0,
+                "Resource2": 6100,
+                "Resource2_Rare": 0,
+                "Resource3": 6100,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1425
+              }
+            },
+            {
+              "currentLevel": 20,
+              "PremiumAccountHours": 120,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 7,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 6455,
+                "Resource1_Rare": 0,
+                "Resource2": 6455,
+                "Resource2_Rare": 0,
+                "Resource3": 6455,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1505
+              }
+            },
+            {
+              "currentLevel": 21,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 7,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 6805,
+                "Resource1_Rare": 0,
+                "Resource2": 6805,
+                "Resource2_Rare": 0,
+                "Resource3": 6805,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1580
+              }
+            },
+            {
+              "currentLevel": 22,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 7,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 7160,
+                "Resource1_Rare": 0,
+                "Resource2": 7160,
+                "Resource2_Rare": 0,
+                "Resource3": 7160,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1660
+              }
+            },
+            {
+              "currentLevel": 23,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 8,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 7510,
+                "Resource1_Rare": 0,
+                "Resource2": 7510,
+                "Resource2_Rare": 0,
+                "Resource3": 7510,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1735
+              }
+            },
+            {
+              "currentLevel": 24,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 8,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 7865,
+                "Resource1_Rare": 0,
+                "Resource2": 7865,
+                "Resource2_Rare": 0,
+                "Resource3": 7865,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1815
+              }
+            },
+            {
+              "currentLevel": 25,
+              "PremiumAccountHours": 168,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 8,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 8220,
+                "Resource1_Rare": 0,
+                "Resource2": 8220,
+                "Resource2_Rare": 0,
+                "Resource3": 8220,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1895
+              }
+            },
+            {
+              "currentLevel": 26,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 9,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 8570,
+                "Resource1_Rare": 0,
+                "Resource2": 8570,
+                "Resource2_Rare": 0,
+                "Resource3": 8570,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 1970
+              }
+            },
+            {
+              "currentLevel": 27,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 9,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 8925,
+                "Resource1_Rare": 0,
+                "Resource2": 8925,
+                "Resource2_Rare": 0,
+                "Resource3": 8925,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2050
+              }
+            },
+            {
+              "currentLevel": 28,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 9,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 9275,
+                "Resource1_Rare": 0,
+                "Resource2": 9275,
+                "Resource2_Rare": 0,
+                "Resource3": 9275,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2125
+              }
+            },
+            {
+              "currentLevel": 29,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 10,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 9630,
+                "Resource1_Rare": 0,
+                "Resource2": 9630,
+                "Resource2_Rare": 0,
+                "Resource3": 9630,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2205
+              }
+            },
+            {
+              "currentLevel": 30,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 10,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 9985,
+                "Resource1_Rare": 0,
+                "Resource2": 9985,
+                "Resource2_Rare": 0,
+                "Resource3": 9985,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2285
+              }
+            },
+            {
+              "currentLevel": 31,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 10,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 10335,
+                "Resource1_Rare": 0,
+                "Resource2": 10335,
+                "Resource2_Rare": 0,
+                "Resource3": 10335,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2360
+              }
+            },
+            {
+              "currentLevel": 32,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 11,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 10690,
+                "Resource1_Rare": 0,
+                "Resource2": 10690,
+                "Resource2_Rare": 0,
+                "Resource3": 10690,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2440
+              }
+            },
+            {
+              "currentLevel": 33,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 11,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 11000,
+                "Resource1_Rare": 0,
+                "Resource2": 11000,
+                "Resource2_Rare": 0,
+                "Resource3": 11000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2500
+              }
+            },
+            {
+              "currentLevel": 34,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 11,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 11500,
+                "Resource1_Rare": 0,
+                "Resource2": 11500,
+                "Resource2_Rare": 0,
+                "Resource3": 11500,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2600
+              }
+            },
+            {
+              "currentLevel": 35,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 12,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 12000,
+                "Resource1_Rare": 0,
+                "Resource2": 12000,
+                "Resource2_Rare": 0,
+                "Resource3": 12000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2700
+              }
+            },
+            {
+              "currentLevel": 36,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 12,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 12000,
+                "Resource1_Rare": 0,
+                "Resource2": 12000,
+                "Resource2_Rare": 0,
+                "Resource3": 12000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2800
+              }
+            },
+            {
+              "currentLevel": 37,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 12,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 12000,
+                "Resource1_Rare": 0,
+                "Resource2": 12000,
+                "Resource2_Rare": 0,
+                "Resource3": 12000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2800
+              }
+            },
+            {
+              "currentLevel": 38,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 13,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 13000,
+                "Resource1_Rare": 0,
+                "Resource2": 13000,
+                "Resource2_Rare": 0,
+                "Resource3": 13000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 2900
+              }
+            },
+            {
+              "currentLevel": 39,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 13,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 13000,
+                "Resource1_Rare": 0,
+                "Resource2": 13000,
+                "Resource2_Rare": 0,
+                "Resource3": 13000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 3000
+              }
+            },
+            {
+              "currentLevel": 40,
+              "PremiumAccountHours": 0,
+              "resourcesPerLevel": {
+                "Currencies": "",
+                "CWPoints_Clan": 0,
+                "CWPoints_Player": 0,
+                "Gold": 0,
+                "Perl": 13,
+                "Population": 0,
+                "RedPerl": 0,
+                "Resource1": 13000,
+                "Resource1_Rare": 0,
+                "Resource2": 13000,
+                "Resource2_Rare": 0,
+                "Resource3": 13000,
+                "Resource3_Rare": 0,
+                "Shard": 0,
+                "Silver": 3000
+              }
+            }
+          ]
+        }
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 718
+    },
+    "HonorLevelTable": {
+      "value": {
+        "rewardPerLevel": ""
+      },
+      "source": "Data/Social.ROOT.xdb",
+      "line": 695
+    }
+  },
+  "external_tables": {
+    "Social/Lvl2Exp.xdb": {
+      "Levels": {
+        "items": [
+          0,
+          300,
+          720,
+          1360,
+          2260,
+          3260,
+          4360,
+          5560,
+          6860,
+          8260,
+          9760,
+          11360,
+          13060,
+          14860,
+          16760,
+          18760,
+          20860,
+          23060,
+          25360,
+          27760,
+          31010,
+          34300,
+          37700,
+          41200,
+          44900,
+          48700
+        ]
+      }
+    },
+    "Social/Lvl2Fame.xdb": {
+      "Levels": {
+        "items": [
+          0,
+          120,
+          360,
+          660,
+          960,
+          1320,
+          1800,
+          2400,
+          3180,
+          4060,
+          5000,
+          6100,
+          7400,
+          8950,
+          10700,
+          12700,
+          14950,
+          17500,
+          20300,
+          23400,
+          26850,
+          30650,
+          34800,
+          39300,
+          44200,
+          49450,
+          55150,
+          61250,
+          67800,
+          74800,
+          82300,
+          92300,
+          102900,
+          122950,
+          144200,
+          166650,
+          190400,
+          215450,
+          241800,
+          265800
+        ]
+      }
+    },
+    "Social/Statpnts2Lvl.xdb": {
+      "StatPoints": {
+        "items": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "Social/ResourceAndInventoryLimits.xdb": {
+      "inventoryLimits": 32,
+      "resourceLimits": {
+        "CWPoints_Clan": 0,
+        "CWPoints_Player": 0,
+        "Gold": 0,
+        "Perl": 0,
+        "Population": 30,
+        "RedPerl": 0,
+        "Resource1": 500,
+        "Resource1_Rare": 0,
+        "Resource2": 500,
+        "Resource2_Rare": 0,
+        "Resource3": 500,
+        "Resource3_Rare": 0,
+        "Silver": 0
+      }
+    },
+    "Social/GuestResourceAndInventoryLimits.xdb": {
+      "inventoryLimits": 32,
+      "resourceLimits": {
+        "CWPoints_Clan": 0,
+        "CWPoints_Player": 0,
+        "Gold": 0,
+        "Perl": 0,
+        "Population": 10000,
+        "RedPerl": 0,
+        "Resource1": 0,
+        "Resource1_Rare": 0,
+        "Resource2": 0,
+        "Resource2_Rare": 0,
+        "Resource3": 0,
+        "Resource3_Rare": 0,
+        "Silver": 0
+      }
+    },
+    "Social/MDPlayerInitParams.xdb": {
+      "fame": 0,
+      "resourceTable": {
+        "CWPoints_Clan": 0,
+        "CWPoints_Player": 0,
+        "Gold": 0,
+        "Perl": 0,
+        "Population": 0,
+        "RedPerl": 0,
+        "Resource1": 100,
+        "Resource1_Rare": 0,
+        "Resource2": 100,
+        "Resource2_Rare": 0,
+        "Resource3": 100,
+        "Resource3_Rare": 0,
+        "Silver": 100
+      }
+    },
+    "Social/HeroEndurance.xdb": {
+      "EnduranceRegen": {
+        "items": [
+          {
+            "enduranceRegenTime": 45243,
+            "level": 0
+          },
+          {
+            "enduranceRegenTime": 50767,
+            "level": 1
+          },
+          {
+            "enduranceRegenTime": 56966,
+            "level": 2
+          },
+          {
+            "enduranceRegenTime": 63921,
+            "level": 3
+          },
+          {
+            "enduranceRegenTime": 71726,
+            "level": 4
+          },
+          {
+            "enduranceRegenTime": 80483,
+            "level": 5
+          },
+          {
+            "enduranceRegenTime": 90310,
+            "level": 6
+          },
+          {
+            "enduranceRegenTime": 101337,
+            "level": 7
+          },
+          {
+            "enduranceRegenTime": 113710,
+            "level": 8
+          },
+          {
+            "enduranceRegenTime": 127593,
+            "level": 9
+          },
+          {
+            "enduranceRegenTime": 143172,
+            "level": 10
+          },
+          {
+            "enduranceRegenTime": 160653,
+            "level": 11
+          },
+          {
+            "enduranceRegenTime": 180269,
+            "level": 12
+          },
+          {
+            "enduranceRegenTime": 202279,
+            "level": 13
+          },
+          {
+            "enduranceRegenTime": 226977,
+            "level": 14
+          },
+          {
+            "enduranceRegenTime": 254690,
+            "level": 15
+          },
+          {
+            "enduranceRegenTime": 285787,
+            "level": 16
+          },
+          {
+            "enduranceRegenTime": 320681,
+            "level": 17
+          },
+          {
+            "enduranceRegenTime": 359836,
+            "level": 18
+          },
+          {
+            "enduranceRegenTime": 403771,
+            "level": 19
+          },
+          {
+            "enduranceRegenTime": 426240,
+            "level": 20
+          },
+          {
+            "enduranceRegenTime": 449280,
+            "level": 21
+          },
+          {
+            "enduranceRegenTime": 472320,
+            "level": 22
+          },
+          {
+            "enduranceRegenTime": 495360,
+            "level": 23
+          },
+          {
+            "enduranceRegenTime": 518400,
+            "level": 24
+          },
+          {
+            "enduranceRegenTime": 541440,
+            "level": 25
+          },
+          {
+            "enduranceRegenTime": 564480,
+            "level": 26
+          },
+          {
+            "enduranceRegenTime": 587520,
+            "level": 27
+          },
+          {
+            "enduranceRegenTime": 610560,
+            "level": 28
+          },
+          {
+            "enduranceRegenTime": 633600,
+            "level": 29
+          }
+        ]
+      },
+      "MaxEndurance": 100
+    }
+  },
+  "upgrade_entities": [
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Abrasive6.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive6.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Abrasive6.ITEX"
+        },
+        "persistentId": "TalUpg_Abrasive6",
+        "probability": 90,
+        "talentLevelLimit": 5,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive6.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Rune"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Abrasive7.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive7.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Abrasive7.ITEX"
+        },
+        "persistentId": "TalUpg_Abrasive7",
+        "probability": 70,
+        "talentLevelLimit": 6,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive7.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Rune"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Abrasive8.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive8.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Abrasive8.ITEX"
+        },
+        "persistentId": "TalUpg_Abrasive8",
+        "probability": 40,
+        "talentLevelLimit": 7,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive8.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Rune"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Abrasive9.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive9.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Abrasive9.ITEX"
+        },
+        "persistentId": "TalUpg_Abrasive9",
+        "probability": 20,
+        "talentLevelLimit": 8,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive9.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Rune"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Abrasive10.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive10.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Abrasive10.ITEX"
+        },
+        "persistentId": "TalUpg_Abrasive10",
+        "probability": 10,
+        "talentLevelLimit": 9,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Abrasive10.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Rune"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Catalyst1.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst1.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Catalyst1.ITEX"
+        },
+        "persistentId": "TalUpg_Catalyst1",
+        "probability": 5,
+        "talentLevelLimit": 6,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst1.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Catalyst"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Catalyst2.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst2.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Catalyst2.ITEX"
+        },
+        "persistentId": "TalUpg_Catalyst2",
+        "probability": 10,
+        "talentLevelLimit": 6,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst2.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Catalyst"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Catalyst3.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst3.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Catalyst3.ITEX"
+        },
+        "persistentId": "TalUpg_Catalyst3",
+        "probability": 15,
+        "talentLevelLimit": 6,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst3.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Catalyst"
+      }
+    },
+    {
+      "source": "Data/Social/TalentUpgrade/TalUpg_Catalyst4.TALUGRDENT.xdb",
+      "value": {
+        "description": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst4.TALUGRDENT_description.txt"
+        },
+        "icon": {
+          "href": "/UI/Styles/Icons/Talents/TUE_Catalyst4.ITEX"
+        },
+        "persistentId": "TalUpg_Catalyst4",
+        "probability": 20,
+        "talentLevelLimit": 6,
+        "tooltip": {
+          "textref": "/Social/TalentUpgrade/TalUpg_Catalyst4.TALUGRDENT_tooltip.txt"
+        },
+        "type": "Catalyst"
+      }
+    }
+  ]
+}

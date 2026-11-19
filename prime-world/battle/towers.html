@@ -1,0 +1,92 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="塔链保护、索敌、基础属性与推进顺序"><title>防御塔、兵营与基地核心｜Prime World 游戏策划与数值百科</title><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/atlas.css"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link is-active" href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><main class="a5-container"><nav class="a5-crumbs" aria-label="页面层级"><a href="../index.html" >首页</a><span>›</span><a href="../match-rules.html" >规则</a><span>›</span><span>防御塔、兵营与基地核心</span></nav><section class="a5-hero"><div class="a5-hero-copy"><span class="a5-overline">BATTLE SYSTEM / TOWERS</span><h1>防御塔、兵营与基地核心</h1><p>塔链保护、索敌、基础属性与推进顺序</p><div class="a5-hero-underline"></div></div><div class="a5-hero-visual"><img src="../assets/maps/borderlands-n.png" alt="原版地图"/></div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">BATTLE MECHANIC</span><h2>玩家先读：这条规则解决什么问题？</h2></div><p class="a5-lead">塔链保护、索敌、基础属性与推进顺序</p><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>建筑</th><th>每方数量</th><th>基础生命</th><th>基础力量</th><th>坚韧／意志</th></tr></thead><tbody><tr><td>外塔</td><td>3</td><td>4400</td><td>82</td><td>46／46</td></tr><tr><td>中塔</td><td>3</td><td>5500</td><td>123</td><td>57／57</td></tr><tr><td>基地阶段塔</td><td>6</td><td>4200／座</td><td>92</td><td>71／71</td></tr><tr><td>兵营</td><td>3</td><td>4000</td><td>—</td><td>来源资源另查</td></tr><tr><td>核心</td><td>1</td><td>10450</td><td>275</td><td>70／70</td></tr></tbody></table></div><section class="a5-formula"><div class="a5-formula-top"><span class="a5-kicker">MATHEMATICAL MODEL / 数学公式</span><h3>每方防御塔数量</h3></div><div class="a5-equation">N<sub>tower,team</sub> = 3 × (1 + 1 + 2) = 12</div><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>符号</th><th>中文含义</th></tr></thead><tbody><tr><td><code>3</code></td><td>上、中、下三条路</td></tr><tr><td><code>1+1+2</code></td><td>每路外塔＋中塔＋双基地塔</td></tr></tbody></table></div><div class="a5-calc-steps"><strong>代入计算</strong><ol><li>两队共 12×2 = 24 座塔。</li></ol></div><p class="a5-note">仅经典场景；前哨每方 2 座，不按此式推导。</p></section></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">SOURCE RULES</span><h2>实际原版条件、数值与边界</h2></div><div class='a5-prose'><h2>2. 建筑目标链：每方 12 塔、3 兵营、1 核心</h2>
+<p>经典场景实际摆放 24 座塔，即每方 12 座。每条路的一方有外塔 1 座、中塔 1 座、基地阶段并列塔 2 座，随后是该路兵营。三路各一座兵营，另有一座核心。不能把地图简写为“每方三路各两座塔”，那会漏掉一半防御塔。</p>
+<table>
+<thead>
+<tr>
+  <th>一条路从外到内的目标</th>
+  <th style="text-align:right">每方每路数量</th>
+  <th>解锁关系与后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>外塔</td>
+  <td style="text-align:right">1</td>
+  <td>这条路最外侧的建筑阶段</td>
+</tr>
+<tr>
+  <td>中塔</td>
+  <td style="text-align:right">1</td>
+  <td>前一阶段的塔清除后，下阶段可受伤</td>
+</tr>
+<tr>
+  <td>基地阶段塔</td>
+  <td style="text-align:right">2</td>
+  <td>同一阶段放两座；需要清除该阶段的塔，下一阶段才解锁</td>
+</tr>
+<tr>
+  <td>兵营／军械库</td>
+  <td style="text-align:right">1</td>
+  <td>被拆后，对方对应兵线转为更强编制</td>
+</tr>
+<tr>
+  <td>核心／阵营主建筑</td>
+  <td style="text-align:right">全队共 1</td>
+  <td>至少一路兵营被拆后，核心所在目标链解锁；核心被毁判定该方失败</td>
+</tr>
+</tbody>
+</table>
+<p>原版通用建筑逻辑按“阵营、路线、阶段”管理保护，而非仅看物理距离。阶段内还有塔时，不能把下一个阶段当作已经完成。三路敌方兵营全部被拆，友方三条兵线提升到进一步强化状态。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp">Src/PF_GameLogic/PFAIWorld.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFMainBuilding.cpp">Src/PF_GameLogic/PFMainBuilding.cpp</a>；摆放与路线阶段见 <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Towers/TopA1.TOWR.xdb">Data/Maps/Multiplayer/MOBA/Towers/TopA1.TOWR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Towers/TopA2.TOWR.xdb">Data/Maps/Multiplayer/MOBA/Towers/TopA2.TOWR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Towers/TopA3.TOWR.xdb">Data/Maps/Multiplayer/MOBA/Towers/TopA3.TOWR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Barracks/TopA.QRTR.xdb">Data/Maps/Multiplayer/MOBA/Barracks/TopA.QRTR.xdb</a>。</p>
+<p>这使“拆塔”“拆兵营”“打核心”具有不同意义。拆塔削减安全屏障，并影响旗杆保护；拆兵营会持续改变对应兵线，让守方反复处理压力；攻击核心才是直接结束比赛的动作。领先方不必把三路所有物件全部清空才能取得最终胜利，但需要突破至少一条完整的建筑链。落后方仍可通过清兵和集中防守拖住推进，然而丢失兵营会增加长期防守成本。</p>
+<h3>建筑原始基础参数</h3>
+<p>下面是资源中的基础值，用于确认数量级与不同阶段职责。实战显示及最终承伤还会经过地图强度、等级、单位能力和伤害公式，不能把“力量”直接当作一次普攻伤害。</p>
+<table>
+<thead>
+<tr>
+  <th>建筑</th>
+  <th style="text-align:right">基础生命</th>
+  <th style="text-align:right">基础力量</th>
+  <th style="text-align:right">坚韧 / 意志</th>
+  <th>策划读法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>外塔</td>
+  <td style="text-align:right">4400</td>
+  <td style="text-align:right">82</td>
+  <td style="text-align:right">46 / 46</td>
+  <td>边线最早需要突破的屏障</td>
+</tr>
+<tr>
+  <td>中塔</td>
+  <td style="text-align:right">5500</td>
+  <td style="text-align:right">123</td>
+  <td style="text-align:right">57 / 57</td>
+  <td>单座生命和力量均提高</td>
+</tr>
+<tr>
+  <td>基地阶段塔，每座</td>
+  <td style="text-align:right">4200</td>
+  <td style="text-align:right">92</td>
+  <td style="text-align:right">71 / 71</td>
+  <td>单座生命低于中塔，但同阶段有两座，不能按单座比较整段强度</td>
+</tr>
+<tr>
+  <td>兵营</td>
+  <td style="text-align:right">4000</td>
+  <td style="text-align:right">非主要攻击建筑</td>
+  <td style="text-align:right">按兵营资源</td>
+  <td>被毁触发对应兵线强化</td>
+</tr>
+<tr>
+  <td>核心</td>
+  <td style="text-align:right">10450</td>
+  <td style="text-align:right">275</td>
+  <td style="text-align:right">70 / 70</td>
+  <td>最终目标，具备自身战斗参数</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower1.STCN.xdb">Data/Buildings/DefaultStats/Tower1.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower2.STCN.xdb">Data/Buildings/DefaultStats/Tower2.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower3.STCN.xdb">Data/Buildings/DefaultStats/Tower3.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Barrack.STCN.xdb">Data/Buildings/DefaultStats/Barrack.STCN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Main_MOBA.STCN.xdb">Data/Buildings/DefaultStats/Main_MOBA.STCN.xdb</a>。经济奖励分配和伤害换算见本套资料的数值章节。</p>
+</div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>和地图、模式的关系</h2></div><div class='a5-action-links'><a href="../game-modes.html" >按模式看规则覆盖 →</a><a href="../battle-maps.html" >按地图看对象位置 →</a><a href="../balance.html" >按公式看数值与例题 →</a></div></section><footer class="a5-foot">基于 Nival / Prime World 固定源码版本 <code>8de5df31fa12</code> 整理 · 数据与历史运营情况分开标注 · <a href="../sources.html" >资料来源与审校</a><br/>本资料站为非官方研究与教学重构，不代表历史全部版本或实机验证结论。</footer></main><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

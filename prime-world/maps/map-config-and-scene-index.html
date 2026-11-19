@@ -1,0 +1,1044 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>地图附录｜83 项配置与 25 个场景逐项核对｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="maps/map-config-and-scene-index.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link is-active" href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class="active"><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class=""><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class=""><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 地图附录｜83 项配置与 25 个场景逐项核对</div><div class="article-layout"><article class="article-body"><h1 id="地图附录83-项配置与-25-个场景逐项核对">地图附录｜83 项配置与 25 个场景逐项核对</h1>
+<p>固定版本：<code>8de5df31fa122b6f51cd099883de74bf4a21228d</code>。中文名称是本次资料的工作译名；俄文原名保留用于对照。每项均给出用途、人数、入口状态和地形引用。</p>
+<h2 id="a-83-项模式配置">A. 83 项模式配置</h2>
+<p>“允许生产环境”只说明资源中的许可开关；“主列表登记”只说明主 MAPLST 引用了它。两个标记都不能替代历史上线记录。“起始 Prime”是整个队伍字段，个人如何分配见数值章节。“被动”是启用后的配置速率，并非保证从第 0 秒开始发放。</p>
+<h3 id="a01-龙林德拉贡瓦尔德">A01. 龙林（德拉贡瓦尔德）</h3>
+<p><strong>原名：</strong> Драгонвальд。<strong>用途：</strong> 对战主模式。<strong>人数：</strong> 4对4配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/CTE/PVP.ADMPDSCR</code>。</p>
+<p>4 对 4：迷宫成长、屠龙、抢蛋、护送载蛋单位削弱敌方祭坛。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/CTE/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/CTEScripts.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/PVP.ADMPDSCR.xdb">Data/Maps/Multiplayer/CTE/PVP.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/CTE/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/CTEScripts.lua">Data/GameLogic/Scripts/CTEScripts.lua</a>。</p>
+<h3 id="a02-龙林德拉贡瓦尔德-11">A02. 龙林（德拉贡瓦尔德） (1×1)</h3>
+<p><strong>原名：</strong> Драгонвальд (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/CTE/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/CTE/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/CTEScripts.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/CTE/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/CTE/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/CTEScripts.lua">Data/GameLogic/Scripts/CTEScripts.lua</a>。</p>
+<h3 id="a03-龙林德拉贡瓦尔德-22">A03. 龙林（德拉贡瓦尔德） (2×2)</h3>
+<p><strong>原名：</strong> Драгонвальд (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/CTE/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/CTE/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/CTEScripts.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/CTE/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/CTE/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/CTEScripts.lua">Data/GameLogic/Scripts/CTEScripts.lua</a>。</p>
+<h3 id="a04-边境之地烈焰">A04. 边境之地·烈焰</h3>
+<p><strong>原名：</strong> Пограничье Огонь。<strong>用途：</strong> 未纳入主列表的变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Map2/_.ADMPDSCR</code>。</p>
+<p>场景和配置存在，主列表未引用；不能据资源存在断言正式开放。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Map2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 1200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Map2/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Map2/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a05-故土-11">A05. 故土 (1×1)</h3>
+<p><strong>原名：</strong> Родная земля (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod1/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod1/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod1.lua">Data/GameLogic/Scripts/PvPMod1.lua</a>。</p>
+<h3 id="a06-故土-22">A06. 故土 (2×2)</h3>
+<p><strong>原名：</strong> Родная земля (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod1/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod1/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod1.lua">Data/GameLogic/Scripts/PvPMod1.lua</a>。</p>
+<h3 id="a07-故土">A07. 故土</h3>
+<p><strong>原名：</strong> Родная земля。<strong>用途：</strong> 对战规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod1/_.ADMPDSCR</code>。</p>
+<p>5 对 5 故土：己方土地激活属性与冷却增益，沿线争旗更关键。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod1.lua">Data/GameLogic/Scripts/PvPMod1.lua</a>。</p>
+<h3 id="a08-演习">A08. 演习</h3>
+<p><strong>原名：</strong> Маневры。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod10/Test_PvP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod10/Test_PvP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod10/Test_PvP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a09-演习">A09. 演习</h3>
+<p><strong>原名：</strong> Маневры。<strong>用途：</strong> 对战规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod10/_.ADMPDSCR</code>。</p>
+<p>演习：经典边境之地规则，描述标明不计算评级。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod10/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod10/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a10-丧尸末日-11">A10. 丧尸末日 (1×1)</h3>
+<p><strong>原名：</strong> Зомби-апокалипсис (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod2/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod2.lua">Data/GameLogic/Scripts/PvPMod2.lua</a>。</p>
+<h3 id="a11-丧尸末日-22">A11. 丧尸末日 (2×2)</h3>
+<p><strong>原名：</strong> Зомби-апокалипсис (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod2/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod2.lua">Data/GameLogic/Scripts/PvPMod2.lua</a>。</p>
+<h3 id="a12-末日">A12. 末日</h3>
+<p><strong>原名：</strong> Конец света。<strong>用途：</strong> 对战规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMPDSCR</code>。</p>
+<p>5 对 5 末日：英雄击杀特定敌方单位可生成己方丧尸或野兽。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod2/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod2.lua">Data/GameLogic/Scripts/PvPMod2.lua</a>。</p>
+<h3 id="a13-英雄互换-11">A13. 英雄互换 (1×1)</h3>
+<p><strong>原名：</strong> Чехарда (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod3/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod3/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod3/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a14-英雄互换-22">A14. 英雄互换 (2×2)</h3>
+<p><strong>原名：</strong> Чехарда (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod3/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod3/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod3/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a15-英雄互换">A15. 英雄互换</h3>
+<p><strong>原名：</strong> Чехарда。<strong>用途：</strong> 对战规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod3/_.ADMPDSCR</code>。</p>
+<p>5 对 5 英雄互换：开局打乱本队英雄归属。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod3/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a16-队伍测试">A16. 队伍测试</h3>
+<p><strong>原名：</strong> Тест команд。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod4/_.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 45000／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod4.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod4/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod4/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod4/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod4/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod4.lua">Data/GameLogic/Scripts/PvPMod4.lua</a>。</p>
+<h3 id="a17-锦标赛-11">A17. 锦标赛 (1×1)</h3>
+<p><strong>原名：</strong> Турнир (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod5/Test_PvP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod5/Test_PvP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod5/Test_PvP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a18-青铜联赛">A18. 青铜联赛</h3>
+<p><strong>原名：</strong> Бронзовая лига。<strong>用途：</strong> 联赛配置。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod5/_.ADMPDSCR</code>。</p>
+<p>同一边境地形的组队锦标赛配置；三档名称不等于三张地图。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a19-愚人节-11">A19. 愚人节 (1×1)</h3>
+<p><strong>原名：</strong> 1 апреля (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod6/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod6.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod6/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod6/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod6.lua">Data/GameLogic/Scripts/PvPMod6.lua</a>。</p>
+<h3 id="a20-愚人节-22">A20. 愚人节 (2×2)</h3>
+<p><strong>原名：</strong> 1 апреля (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod6/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod6.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod6/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod6/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod6.lua">Data/GameLogic/Scripts/PvPMod6.lua</a>。</p>
+<h3 id="a21-愚人节">A21. 愚人节</h3>
+<p><strong>原名：</strong> 1 апреля。<strong>用途：</strong> 节日规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod6/_.ADMPDSCR</code>。</p>
+<p>愚人节脚本将英雄设为 36 级并尝试激活天赋；英雄互换说明与正式开关冲突。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod6.lua</code>。</p>
+<blockquote>
+<p>复核批注：显示说明称随机交换英雄，但正式配置 shuffleHeroesInTeam=false；测试子项为 true，未擅自统一。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod6/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod6.lua">Data/GameLogic/Scripts/PvPMod6.lua</a>。</p>
+<h3 id="a22-锦标赛-11">A22. 锦标赛 (1×1)</h3>
+<p><strong>原名：</strong> Турнир (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod7/Test_PvP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod7/Test_PvP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod7/Test_PvP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a23-白银联赛">A23. 白银联赛</h3>
+<p><strong>原名：</strong> Серебряная лига。<strong>用途：</strong> 联赛配置。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod7/_.ADMPDSCR</code>。</p>
+<p>同一边境地形的组队锦标赛配置；三档名称不等于三张地图。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod7/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod7/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a24-锦标赛-11">A24. 锦标赛 (1×1)</h3>
+<p><strong>原名：</strong> Турнир (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod8/Test_PvP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod8/Test_PvP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod8/Test_PvP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod5/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a25-黄金联赛">A25. 黄金联赛</h3>
+<p><strong>原名：</strong> Золотая лига。<strong>用途：</strong> 联赛配置。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod8/_.ADMPDSCR</code>。</p>
+<p>同一边境地形的组队锦标赛配置；三档名称不等于三张地图。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod8/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod8/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a26-万圣节-11">A26. 万圣节 (1×1)</h3>
+<p><strong>原名：</strong> Хэллоуин (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Mod9/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod9/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod9/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Mod9/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a27-新年-11">A27. 新年 (1×1)</h3>
+<p><strong>原名：</strong> New Year (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/NewYear/Test_NY_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/NewYear/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/Test_NY_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/NewYear/Test_NY_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a28-新年-33">A28. 新年 (3×3)</h3>
+<p><strong>原名：</strong> New Year (3x3)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 3对3配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/NewYear/Test_NY_3x3.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/NewYear/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/Test_NY_3x3.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/NewYear/Test_NY_3x3.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a29-新年">A29. 新年</h3>
+<p><strong>原名：</strong> New Year。<strong>用途：</strong> 季节场景变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/NewYear/_.ADMPDSCR</code>。</p>
+<p>新年版本边境之地，保留三线目标链并替换部分场景与龙单位。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/NewYear/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/NewYear/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a30-夜间地图">A30. 夜间地图</h3>
+<p><strong>原名：</strong> Ночная карта。<strong>用途：</strong> 未纳入主列表的变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/NightMap/_.ADMPDSCR</code>。</p>
+<p>场景和配置存在，主列表未引用；不能据资源存在断言正式开放。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/NightMap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始夜晚，白昼 30 秒、夜晚 120 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NightMap/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/NightMap/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a31-战斗测试-11">A31. 战斗测试 (1×1)</h3>
+<p><strong>原名：</strong> Битва (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a32-战斗测试-22">A32. 战斗测试 (2×2)</h3>
+<p><strong>原名：</strong> Битва (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a33-战斗测试-33">A33. 战斗测试 (3×3)</h3>
+<p><strong>原名：</strong> Битва (3x3)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 3对3配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Test_PVP_3x3.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Test_PVP_3x3.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Test_PVP_3x3.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a34-练习">A34. 练习</h3>
+<p><strong>原名：</strong> Практика。<strong>用途：</strong> 人机练习。<strong>人数：</strong> 5对5人机战斗编制。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Training.ADMPDSCR</code>。</p>
+<p>边境之地人机练习，使用对应场景；不是另一套地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Training.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Training.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Training.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Training.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a35-初次进攻">A35. 初次进攻</h3>
+<p><strong>原名：</strong> Первая атака。<strong>用途：</strong> 教学关卡。<strong>人数：</strong> 单人玩家＋脚本/AI角色。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/Tutorial/_.ADMPDSCR</code>。</p>
+<p>脚本控制的单人教学，流程和敌我 AI 不按多人匹配人数解释。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 0 秒。<strong>起始 Prime：</strong> 300／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>GameLogic/Scripts/TutorialMOBA.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/TutorialMOBA.lua">Data/GameLogic/Scripts/TutorialMOBA.lua</a>。</p>
+<h3 id="a36-边境之地">A36. 边境之地</h3>
+<p><strong>原名：</strong> Пограничье。<strong>用途：</strong> 对战主模式。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMPDSCR</code>。</p>
+<p>5 对 5 经典边境之地：三路推进，拆塔、兵营、核心。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 2000／队。<strong>被动 Prime：</strong> 4／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 300 秒、夜晚 180 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a37-加速时间-11">A37. 加速时间 (1×1)</h3>
+<p><strong>原名：</strong> Ускоренное время (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MidOnly/Mod1/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMP</code>。<strong>起始延迟：</strong> 30 秒。<strong>起始 Prime：</strong> 2100／队。<strong>被动 Prime：</strong> 15／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Mod1/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MidOnly/Mod1/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a38-加速时间-22">A38. 加速时间 (2×2)</h3>
+<p><strong>原名：</strong> Ускоренное время (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MidOnly/Mod1/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMP</code>。<strong>起始延迟：</strong> 30 秒。<strong>起始 Prime：</strong> 2100／队。<strong>被动 Prime：</strong> 15／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Mod1/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MidOnly/Mod1/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a39-滴答">A39. 滴答</h3>
+<p><strong>原名：</strong> Тик-так。<strong>用途：</strong> 对战规则变体。<strong>人数：</strong> 3对3配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MidOnly/Mod1/_.ADMPDSCR</code>。</p>
+<p>3 对 3 单线战的两倍游戏速度配置。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMP</code>。<strong>起始延迟：</strong> 30 秒。<strong>起始 Prime：</strong> 2100／队。<strong>被动 Prime：</strong> 15／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MidOnly/Mod1/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a40-前哨-11">A40. 前哨 (1×1)</h3>
+<p><strong>原名：</strong> Форпост (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MidOnly/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMP</code>。<strong>起始延迟：</strong> 30 秒。<strong>起始 Prime：</strong> 2100／队。<strong>被动 Prime：</strong> 15／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/MidOnly/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MidOnly/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a41-前哨-22">A41. 前哨 (2×2)</h3>
+<p><strong>原名：</strong> Форпост (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MidOnly/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMP</code>。<strong>起始延迟：</strong> 30 秒。<strong>起始 Prime：</strong> 2100／队。<strong>被动 Prime：</strong> 15／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/MidOnly/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MidOnly/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a42-前哨">A42. 前哨</h3>
+<p><strong>原名：</strong> Форпост。<strong>用途：</strong> 对战主模式。<strong>人数：</strong> 3对3配置。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMPDSCR</code>。</p>
+<p>3 对 3 单线推进，摧毁对方基地。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MidOnly/_.ADMP</code>。<strong>起始延迟：</strong> 30 秒。<strong>起始 Prime：</strong> 2100／队。<strong>被动 Prime：</strong> 15／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/Moba.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MidOnly/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MidOnly/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>。</p>
+<h3 id="a43-故土-11">A43. 故土 (1×1)</h3>
+<p><strong>原名：</strong> Родная земля (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod1/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod1/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod1/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod1.lua">Data/GameLogic/Scripts/PvPMod1.lua</a>。</p>
+<h3 id="a44-故土-22">A44. 故土 (2×2)</h3>
+<p><strong>原名：</strong> Родная земля (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod1/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod1/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod1/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod1.lua">Data/GameLogic/Scripts/PvPMod1.lua</a>。</p>
+<h3 id="a45-故土">A45. 故土</h3>
+<p><strong>原名：</strong> Родная земля。<strong>用途：</strong> 旧版地图/历史变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod1/_.ADMPDSCR</code>。</p>
+<p>旧边境之地规则族；未进入本版本主地图列表，保留作历史资源。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod1/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Mod1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod1.lua">Data/GameLogic/Scripts/PvPMod1.lua</a>。</p>
+<h3 id="a46-丧尸末日-11">A46. 丧尸末日 (1×1)</h3>
+<p><strong>原名：</strong> Зомби-апокалипсис (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod2/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod2/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod2.lua">Data/GameLogic/Scripts/PvPMod2.lua</a>。</p>
+<h3 id="a47-丧尸末日-22">A47. 丧尸末日 (2×2)</h3>
+<p><strong>原名：</strong> Зомби-апокалипсис (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod2/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod2/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod2.lua">Data/GameLogic/Scripts/PvPMod2.lua</a>。</p>
+<h3 id="a48-末日">A48. 末日</h3>
+<p><strong>原名：</strong> Конец света。<strong>用途：</strong> 旧版地图/历史变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod2/_.ADMPDSCR</code>。</p>
+<p>旧边境之地规则族；未进入本版本主地图列表，保留作历史资源。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/MOBA/Mod2/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod2/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod2.lua">Data/GameLogic/Scripts/PvPMod2.lua</a>。</p>
+<h3 id="a49-英雄互换-11">A49. 英雄互换 (1×1)</h3>
+<p><strong>原名：</strong> Чехарда (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod3/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod3/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod3/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a50-英雄互换-22">A50. 英雄互换 (2×2)</h3>
+<p><strong>原名：</strong> Чехарда (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod3/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod3/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod3/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a51-英雄互换">A51. 英雄互换</h3>
+<p><strong>原名：</strong> Чехарда。<strong>用途：</strong> 旧版地图/历史变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod3/_.ADMPDSCR</code>。</p>
+<p>旧边境之地规则族；未进入本版本主地图列表，保留作历史资源。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod3/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a52-队伍测试">A52. 队伍测试</h3>
+<p><strong>原名：</strong> Тест команд。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod4/_.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 45000／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/GameLogic/Scripts/PvPMod4.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod4/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod4/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod4/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod4/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/PvPMod4.lua">Data/GameLogic/Scripts/PvPMod4.lua</a>。</p>
+<h3 id="a53-锦标赛-11">A53. 锦标赛 (1×1)</h3>
+<p><strong>原名：</strong> Турнир (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod5/Test_PvP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod5/Test_PvP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod5/Test_PvP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod5/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod5/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a54-锦标赛">A54. 锦标赛</h3>
+<p><strong>原名：</strong> Турнир。<strong>用途：</strong> 旧版地图/历史变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Mod5/_.ADMPDSCR</code>。</p>
+<p>旧边境之地规则族；未进入本版本主地图列表，保留作历史资源。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod5/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Mod5/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod5/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Mod5/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a55-旧边境之地">A55. 旧边境之地</h3>
+<p><strong>原名：</strong> Старое Пограничье。<strong>用途：</strong> 旧版地图/历史变体。<strong>人数：</strong> 5对5配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/PVP.ADMPDSCR</code>。</p>
+<p>旧边境之地规则族；未进入本版本主地图列表，保留作历史资源。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/PVP.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/PVP.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a56-战斗测试-11">A56. 战斗测试 (1×1)</h3>
+<p><strong>原名：</strong> Битва (1x1)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 1对1配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a57-战斗测试-22">A57. 战斗测试 (2×2)</h3>
+<p><strong>原名：</strong> Битва (2x2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2对2配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a58-战斗测试-33">A58. 战斗测试 (3×3)</h3>
+<p><strong>原名：</strong> Битва (3x3)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 3对3配置。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Test_PVP_3x3.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Test_PVP_3x3.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Test_PVP_3x3.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a59-练习">A59. 练习</h3>
+<p><strong>原名：</strong> Практика。<strong>用途：</strong> 旧版地图/历史变体。<strong>人数：</strong> 5对5人机战斗编制。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/Multiplayer/PFmap/Training.ADMPDSCR</code>。</p>
+<p>旧边境之地规则族；未进入本版本主地图列表，保留作历史资源。</p>
+<p><strong>场景：</strong> <code>/Maps/Multiplayer/PFmap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Training.ADMPDSCR.xdb">Data/Maps/Multiplayer/PFmap/Training.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Training.ADMPSTTN.xdb">Data/Maps/Multiplayer/PFmap/Training.ADMPSTTN.xdb</a>。</p>
+<h3 id="a60-pve-地图-1">A60. PvE 地图 1</h3>
+<p><strong>原名：</strong> PvE Map 1。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Dungeon/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Dungeon/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Dungeon/_.ADMPDSCR.xdb">Data/Maps/PvE/Dungeon/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Dungeon/_.ADMPSTTN.xdb">Data/Maps/PvE/Dungeon/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a61-五人-pve-原型">A61. 五人 PvE 原型</h3>
+<p><strong>原名：</strong> PvE 5 man。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Dungeon2/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Dungeon2/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Dungeon2/_.ADMPDSCR.xdb">Data/Maps/PvE/Dungeon2/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Dungeon2/_.ADMPSTTN.xdb">Data/Maps/PvE/Dungeon2/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a62-小兵测试地图">A62. 小兵测试地图</h3>
+<p><strong>原名：</strong> Creep Test Map。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Map1/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Map1/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Map1/_.ADMPDSCR.xdb">Data/Maps/PvE/Map1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Map1/_.ADMPSTTN.xdb">Data/Maps/PvE/Map1/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a63-试炼">A63. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 合作难度父项/非生产难度。<strong>人数：</strong> 5人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/Blue.ADMPDSCR</code>。</p>
+<p>同一合作场景的难度或父配置；保护伊娃，三次神器爆发后击败三头龙。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</code>。</p>
+<blockquote>
+<p>复核批注：对应 settings 实际指向 Bootstrap_Red.lua，不能把同名 Blue/Green bootstrap 直接当作有效难度参数。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Blue.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/Blue.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Blue.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/Blue.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua">Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</a>。</p>
+<h3 id="a64-试炼">A64. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 合作难度父项/非生产难度。<strong>人数：</strong> 5人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/Green.ADMPDSCR</code>。</p>
+<p>同一合作场景的难度或父配置；保护伊娃，三次神器爆发后击败三头龙。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</code>。</p>
+<blockquote>
+<p>复核批注：对应 settings 实际指向 Bootstrap_Red.lua，不能把同名 Blue/Green bootstrap 直接当作有效难度参数。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Green.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/Green.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Green.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/Green.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua">Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</a>。</p>
+<h3 id="a65-试炼">A65. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 合作试炼。<strong>人数：</strong> 5人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/Orange.ADMPDSCR</code>。</p>
+<p>同一合作场景的难度或父配置；保护伊娃，三次神器爆发后击败三头龙。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/Bootstrap_Orange.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Orange.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/Orange.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Orange.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/Orange.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Bootstrap_Orange.lua">Data/Maps/PvE/Series/Coop1/Bootstrap_Orange.lua</a>。</p>
+<h3 id="a66-试炼">A66. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 合作试炼。<strong>人数：</strong> 5人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/Red.ADMPDSCR</code>。</p>
+<p>同一合作场景的难度或父配置；保护伊娃，三次神器爆发后击败三头龙。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Red.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/Red.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Red.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/Red.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua">Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</a>。</p>
+<h3 id="a67-试炼-22">A67. 试炼 (2×2)</h3>
+<p><strong>原名：</strong> Испытания (2х2)。<strong>用途：</strong> 测试人数/规则变体。<strong>人数：</strong> 2人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/Test_2x2_Blue.ADMPDSCR</code>。</p>
+<p>供对应规则的小规模或队伍测试使用，不增加一张独立地形。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Test_2x2_Blue.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/Test_2x2_Blue.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Blue.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/Blue.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua">Data/Maps/PvE/Series/Coop1/Bootstrap_Red.lua</a>。</p>
+<h3 id="a68-试炼">A68. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 合作试炼。<strong>人数：</strong> 5人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/Violet.ADMPDSCR</code>。</p>
+<p>同一合作场景的难度或父配置；保护伊娃，三次神器爆发后击败三头龙。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/Bootstrap_Violet.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Violet.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/Violet.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Violet.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/Violet.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/Bootstrap_Violet.lua">Data/Maps/PvE/Series/Coop1/Bootstrap_Violet.lua</a>。</p>
+<h3 id="a69-试炼">A69. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 合作难度父项/非生产难度。<strong>人数：</strong> 5人合作对抗脚本敌军。</p>
+<p><strong>入口状态：</strong> 未列主列表；允许生产环境标记。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMPDSCR</code>。</p>
+<p>同一合作场景的难度或父配置；保护伊娃，三次神器爆发后击败三头龙。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Coop1/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Coop1/script.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/_.ADMPDSCR.xdb">Data/Maps/PvE/Series/Coop1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/_.ADMPSTTN.xdb">Data/Maps/PvE/Series/Coop1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/script.lua">Data/Maps/PvE/Series/Coop1/script.lua</a>。</p>
+<h3 id="a70-试炼">A70. 试炼</h3>
+<p><strong>原名：</strong> Испытания。<strong>用途：</strong> 单人剧情。<strong>人数：</strong> 单人玩家＋脚本/AI角色。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Series/Episode1/_.ADMPDSCR</code>。</p>
+<p>单人试炼：抵达据点、补强防御、抵御进攻并完成神器充能。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Series/Episode1/pilot.ADMP</code>。<strong>起始延迟：</strong> 0 秒。<strong>起始 Prime：</strong> 375／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/PvE/Series/Episode1/script.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Episode1/_.ADMPDSCR.xdb">Data/Maps/PvE/Series/Episode1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Episode1/_.ADMPSTTN.xdb">Data/Maps/PvE/Series/Episode1/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Episode1/script.lua">Data/Maps/PvE/Series/Episode1/script.lua</a>。</p>
+<h3 id="a71-测试-1">A71. 测试 1</h3>
+<p><strong>原名：</strong> Test1。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/PvE/Test1/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/PvE/Test1/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Test1/_.ADMPDSCR.xdb">Data/Maps/PvE/Test1/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Test1/_.ADMPSTTN.xdb">Data/Maps/PvE/Test1/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a72-平衡测试">A72. 平衡测试</h3>
+<p><strong>原名：</strong> BalanseTest。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/BalanseTest/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/BalanseTest/_.ADMP</code>。<strong>起始延迟：</strong> 1 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>GameLogic/Scripts/DPStest_ForDesigners.lua</code>。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/BalanseTest/_.ADMPDSCR.xdb">Data/Maps/Test/BalanseTest/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/BalanseTest/_.ADMPSTTN.xdb">Data/Maps/Test/BalanseTest/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/DPStest_ForDesigners.lua">Data/GameLogic/Scripts/DPStest_ForDesigners.lua</a>。</p>
+<h3 id="a73-合作生物测试">A73. 合作生物测试</h3>
+<p><strong>原名：</strong> CooperativeCreaturesTest。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/CoopCreaturesTest/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/CoopCreaturesTest/_.ADMP</code>。<strong>起始延迟：</strong> 0 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>/Maps/Test/CoopCreaturesTest/test_script.lua</code>。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/CoopCreaturesTest/_.ADMPDSCR.xdb">Data/Maps/Test/CoopCreaturesTest/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/CoopCreaturesTest/_.ADMPSTTN.xdb">Data/Maps/Test/CoopCreaturesTest/_.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/CoopCreaturesTest/test_script.lua">Data/Maps/Test/CoopCreaturesTest/test_script.lua</a>。</p>
+<h3 id="a74-设计与美术测试">A74. 设计与美术测试</h3>
+<p><strong>原名：</strong> DesignArtTest。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/DesignArtTest/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/DesignArtTest/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/DesignArtTest/_.ADMPDSCR.xdb">Data/Maps/Test/DesignArtTest/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/DesignArtTest/_.ADMPSTTN.xdb">Data/Maps/Test/DesignArtTest/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a75-决斗测试">A75. 决斗测试</h3>
+<p><strong>原名：</strong> Duel Map。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/Duel/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/Duel/_.ADMP</code>。<strong>起始延迟：</strong> 120 秒。<strong>起始 Prime：</strong> 35000／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Duel/_.ADMPDSCR.xdb">Data/Maps/Test/Duel/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Duel/_.ADMPSTTN.xdb">Data/Maps/Test/Duel/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a76-平面测试-11">A76. 平面测试 (1×1)</h3>
+<p><strong>原名：</strong> PlaneMap (1x1)。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 1对1配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/PlaneMap/Test_PVP_1x1.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/PlaneMap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/Test_PVP_1x1.ADMPDSCR.xdb">Data/Maps/Test/PlaneMap/Test_PVP_1x1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/_.ADMPSTTN.xdb">Data/Maps/Test/PlaneMap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a77-平面测试-22">A77. 平面测试 (2×2)</h3>
+<p><strong>原名：</strong> PlaneMap (2x2)。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 2对2配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/PlaneMap/Test_PVP_2x2.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/PlaneMap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/Test_PVP_2x2.ADMPDSCR.xdb">Data/Maps/Test/PlaneMap/Test_PVP_2x2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/_.ADMPSTTN.xdb">Data/Maps/Test/PlaneMap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a78-平面测试-训练">A78. 平面测试 (训练)</h3>
+<p><strong>原名：</strong> PlaneMap (Training)。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 2对2人机战斗编制。</p>
+<p><strong>入口状态：</strong> 主列表登记；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/PlaneMap/Test_Training.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/PlaneMap/_.ADMP</code>。<strong>起始延迟：</strong> 60 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/Test_Training.ADMPDSCR.xdb">Data/Maps/Test/PlaneMap/Test_Training.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/_.ADMPSTTN.xdb">Data/Maps/Test/PlaneMap/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a79-样条测试">A79. 样条测试</h3>
+<p><strong>原名：</strong> Splines。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/Splines/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/Splines/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Splines/_.ADMPDSCR.xdb">Data/Maps/Test/Splines/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Splines/_.ADMPSTTN.xdb">Data/Maps/Test/Splines/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a80-地形测试">A80. 地形测试</h3>
+<p><strong>原名：</strong> Terrain。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/Terrain/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/Terrain/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Terrain/_.ADMPDSCR.xdb">Data/Maps/Test/Terrain/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Terrain/_.ADMPSTTN.xdb">Data/Maps/Test/Terrain/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a81-5-对-5-测试">A81. 5 对 5 测试</h3>
+<p><strong>原名：</strong> Test5x5。<strong>用途：</strong> 开发测试/原型。<strong>人数：</strong> 5对5配置；默认值，不能视作已验证可玩人数。</p>
+<p><strong>入口状态：</strong> 未列主列表；禁止生产环境。<strong>配置标识：</strong> <code>/Maps/Test/Test5x5/_.ADMPDSCR</code>。</p>
+<p>未列为生产可用模式；地图目录名称与默认 PvP 类型不能证明存在完整公开玩法。</p>
+<p><strong>场景：</strong> <code>/Maps/Test/Test5x5/_.ADMP</code>。<strong>起始延迟：</strong> 10 秒。<strong>起始 Prime：</strong> 1500／队。<strong>被动 Prime：</strong> 2／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 600 秒、夜晚 600 秒；昼夜控件显示。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> 未单独指定地图 Lua；使用场景、通用规则或开发测试设置。</p>
+<blockquote>
+<p>复核批注：开发用途按目录、配置和摆放判断，不补造未找到的完整胜负规则。</p>
+</blockquote>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Test5x5/_.ADMPDSCR.xdb">Data/Maps/Test/Test5x5/_.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Test5x5/_.ADMPSTTN.xdb">Data/Maps/Test/Test5x5/_.ADMPSTTN.xdb</a>。</p>
+<h3 id="a82-初次进攻">A82. 初次进攻</h3>
+<p><strong>原名：</strong> Первая атака。<strong>用途：</strong> 教学关卡。<strong>人数：</strong> 单人玩家＋脚本/AI角色。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Tutorial/_1.ADMPDSCR</code>。</p>
+<p>脚本控制的单人教学，流程和敌我 AI 不按多人匹配人数解释。</p>
+<p><strong>场景：</strong> <code>/Maps/Tutorial/_.ADMP</code>。<strong>起始延迟：</strong> 0 秒。<strong>起始 Prime：</strong> 700／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>GameLogic/Scripts/Tutorial1.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Tutorial/_1.ADMPDSCR.xdb">Data/Maps/Tutorial/_1.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Tutorial/_1.ADMPSTTN.xdb">Data/Maps/Tutorial/_1.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Tutorial1.lua">Data/GameLogic/Scripts/Tutorial1.lua</a>。</p>
+<h3 id="a83-推进攻势">A83. 推进攻势</h3>
+<p><strong>原名：</strong> Наступление。<strong>用途：</strong> 教学关卡。<strong>人数：</strong> 单人玩家＋脚本/AI角色。</p>
+<p><strong>入口状态：</strong> 主列表登记；允许生产环境。<strong>配置标识：</strong> <code>/Maps/Tutorial/_2.ADMPDSCR</code>。</p>
+<p>脚本控制的单人教学，流程和敌我 AI 不按多人匹配人数解释。</p>
+<p><strong>场景：</strong> <code>/Maps/Tutorial/_.ADMP</code>。<strong>起始延迟：</strong> 0 秒。<strong>起始 Prime：</strong> 400／队。<strong>被动 Prime：</strong> 0／秒。</p>
+<p><strong>昼夜：</strong> 初始白昼，白昼 7200 秒、夜晚 600 秒；昼夜控件隐藏。这些是场景参数，脚本任务另有节奏。</p>
+<p><strong>流程资源：</strong> <code>GameLogic/Scripts/Tutorial2.lua</code>。</p>
+<p>来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Tutorial/_2.ADMPDSCR.xdb">Data/Maps/Tutorial/_2.ADMPDSCR.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/_.MAPLST.xdb">Data/Maps/_.MAPLST.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Tutorial/_2.ADMPSTTN.xdb">Data/Maps/Tutorial/_2.ADMPSTTN.xdb</a>；<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Tutorial2.lua">Data/GameLogic/Scripts/Tutorial2.lua</a>。</p>
+<h2 id="b-25-个场景的完整摆放清单">B. 25 个场景的完整摆放清单</h2>
+<p>以下计数含内嵌对象。塔、兵营、核心、旗杆、刷怪点均以静态摆放统计；合作、剧情和教学会按阵营或阶段隐藏对象。尤其不能把“20 个英雄占位”解释为“20 人模式”。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>场景</th>
+<th>地形块 / 寻路格</th>
+<th style="text-align: right;">塔</th>
+<th style="text-align: right;">兵营</th>
+<th style="text-align: right;">核心</th>
+<th style="text-align: right;">旗杆</th>
+<th style="text-align: right;">中立刷怪点</th>
+<th style="text-align: right;">阵营刷兵点</th>
+<th>用途解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B01</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/CTE/_.ADMP.xdb">/Maps/Multiplayer/CTE/_.ADMP</a></td>
+<td>60×60 / 1200×1200</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">2</td>
+<td>龙林迷宫；105 是刷怪点，屠龙后脚本清退怪物并进入夺蛋阶段。</td>
+</tr>
+<tr>
+<td>B02</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Map2/_.ADMP.xdb">/Maps/Multiplayer/MOBA/Map2/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td>烈焰变体；未入主列表。</td>
+</tr>
+<tr>
+<td>B03</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod2/_.ADMP.xdb">/Maps/Multiplayer/MOBA/Mod2/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td>末日场景；丧尸转换脚本。</td>
+</tr>
+<tr>
+<td>B04</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Mod9/_.ADMP.xdb">/Maps/Multiplayer/MOBA/Mod9/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td>万圣节场景；主列表仅引用 1 对 1 测试配置。</td>
+</tr>
+<tr>
+<td>B05</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NewYear/_.ADMP.xdb">/Maps/Multiplayer/MOBA/NewYear/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td>新年场景；17 外部刷怪点＋1 内嵌刷怪点。</td>
+</tr>
+<tr>
+<td>B06</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/NightMap/_.ADMP.xdb">/Maps/Multiplayer/MOBA/NightMap/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td>夜间变体；30 秒昼、120 秒夜，初始夜。</td>
+</tr>
+<tr>
+<td>B07</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb">/Maps/Multiplayer/MOBA/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td>经典边境之地及多个规则变体共用。</td>
+</tr>
+<tr>
+<td>B08</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MidOnly/_.ADMP.xdb">/Maps/Multiplayer/MidOnly/_.ADMP</a></td>
+<td>26×26 / 520×520</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td>前哨与滴答共用的单线场景。</td>
+</tr>
+<tr>
+<td>B09</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/Mod2/_.ADMP.xdb">/Maps/Multiplayer/PFmap/Mod2/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">6</td>
+<td>旧版末日场景，未入主列表。</td>
+</tr>
+<tr>
+<td>B10</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/PFmap/_.ADMP.xdb">/Maps/Multiplayer/PFmap/_.ADMP</a></td>
+<td>41×41 / 820×820</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">6</td>
+<td>旧边境之地场景，15 个中立刷怪点。</td>
+</tr>
+<tr>
+<td>B11</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Dungeon/_.ADMP.xdb">/Maps/PvE/Dungeon/_.ADMP</a></td>
+<td>40×40 / 800×800</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
+<td>PvE 地牢原型；无标准核心与塔，不补造胜负条件。</td>
+</tr>
+<tr>
+<td>B12</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Dungeon2/_.ADMP.xdb">/Maps/PvE/Dungeon2/_.ADMP</a></td>
+<td>40×40 / 800×800</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+<td>五人 PvE 地牢原型；无标准核心与塔。</td>
+</tr>
+<tr>
+<td>B13</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Map1/_.ADMP.xdb">/Maps/PvE/Map1/_.ADMP</a></td>
+<td>30×30 / 600×600</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>小兵测试原型；本场景无静态中立刷怪点。</td>
+</tr>
+<tr>
+<td>B14</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Coop1/_.ADMP.xdb">/Maps/PvE/Series/Coop1/_.ADMP</a></td>
+<td>28×28 / 560×560</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">0</td>
+<td>五人合作；10 塔为双方各 5 的备用阵营版本，本局保留本方 5 塔。</td>
+</tr>
+<tr>
+<td>B15</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Series/Episode1/pilot.ADMP.xdb">/Maps/PvE/Series/Episode1/pilot.ADMP</a></td>
+<td>28×28 / 560×560</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">16</td>
+<td>单人剧情；6 塔为双方各 3 的版本，剧情运行选择本方。</td>
+</tr>
+<tr>
+<td>B16</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/PvE/Test1/_.ADMP.xdb">/Maps/PvE/Test1/_.ADMP</a></td>
+<td>20×20 / 400×400</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td>PvE 测试 1，46 个中立刷怪点。</td>
+</tr>
+<tr>
+<td>B17</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/BalanseTest/_.ADMP.xdb">/Maps/Test/BalanseTest/_.ADMP</a></td>
+<td>16×16 / 320×320</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">2</td>
+<td>数值平衡试验场。</td>
+</tr>
+<tr>
+<td>B18</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/CoopCreaturesTest/_.ADMP.xdb">/Maps/Test/CoopCreaturesTest/_.ADMP</a></td>
+<td>30×30 / 600×600</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">0</td>
+<td>合作敌军与刷怪配置试验场。</td>
+</tr>
+<tr>
+<td>B19</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/DesignArtTest/_.ADMP.xdb">/Maps/Test/DesignArtTest/_.ADMP</a></td>
+<td>20×20 / 400×400</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td>设计与美术小型验证场。</td>
+</tr>
+<tr>
+<td>B20</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Duel/_.ADMP.xdb">/Maps/Test/Duel/_.ADMP</a></td>
+<td>16×16 / 320×320</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td>决斗试验场；名称不能覆盖默认每队 5 人字段。</td>
+</tr>
+<tr>
+<td>B21</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/PlaneMap/_.ADMP.xdb">/Maps/Test/PlaneMap/_.ADMP</a></td>
+<td>8×8 / 128×128</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td>平面测试：1 对 1、2 对 2 与训练入口。</td>
+</tr>
+<tr>
+<td>B22</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Splines/_.ADMP.xdb">/Maps/Test/Splines/_.ADMP</a></td>
+<td>16×16 / 64×64</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>样条/地形验证场。</td>
+</tr>
+<tr>
+<td>B23</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Terrain/_.ADMP.xdb">/Maps/Test/Terrain/_.ADMP</a></td>
+<td>8×8 / 32×32</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>纯地形验证场；未组成标准战斗目标。</td>
+</tr>
+<tr>
+<td>B24</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Test/Test5x5/_.ADMP.xdb">/Maps/Test/Test5x5/_.ADMP</a></td>
+<td>8×8 / 160×160</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td>5 对 5 测试场；2 个内嵌阵营刷兵点。</td>
+</tr>
+<tr>
+<td>B25</td>
+<td><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Tutorial/_.ADMP.xdb">/Maps/Tutorial/_.ADMP</a></td>
+<td>26×26 / 520×520</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td>两章旧教学共用，脚本控制可用区域和对象。</td>
+</tr>
+</tbody>
+</table>
+<p>尺寸依据各场景引用的 <code>.TERN</code>：地形块数乘以每块寻路格数得到完整格网。它不是道路长度、可行走面积或现实米数。所有逐对象坐标、资源、分组、昼夜及土地参数保存在配套 <code>maps_catalog.json</code>。</p>
+<h2 id="c-开发地图与失效资源的策划处理">C. 开发地图与失效资源的策划处理</h2>
+<p>开发测试不是“缺失的正式模式”。例如 Duel 的名称暗示决斗用途，但描述保留默认每队 5 的字段；Dungeon2 的标题写五人 PvE，类型仍为默认 PvP。将这些字段照抄成玩家规则，会让重制需求互相冲突。这里保留原值并明确用途证据级别：可证明场景及摆放存在，不能证明完整公开模式已成立。</p>
+<p>旧 PFmap 族也不能只删除重复名字：它仍能解释旧版刷怪位置、不同昼夜以及旧的中立点数量。但是重现本版本主模式时，应以 MOBA 族及主列表有效引用为主，历史族单独归档。</p>
+<p>本目录共核对 83 项配置、25 个场景；未把发布目录的镜像文件重复算入。生产标识、主列表和默认开发列表分别记录，未推断线上开放时间。</p><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

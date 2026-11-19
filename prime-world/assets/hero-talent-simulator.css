@@ -1,0 +1,30 @@
+.hero-talent-simulator{scroll-margin-top:90px}
+.hero-talent-simulator .hero-sim-content{padding:4px 16px 16px}
+.hero-sim-controls,.hero-sim-actions,.hero-sim-totals{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.hero-sim-controls label{display:flex;flex-wrap:wrap;align-items:center;gap:6px;color:var(--soft)}
+.hero-sim-controls input,.hero-sim-controls select,#hero-sim-link{padding:6px 8px;background:var(--panel2);color:var(--text);border:1px solid var(--line);font:inherit}
+#hero-sim-budget{width:8em}
+.hero-sim-totals{margin:12px 0;font-size:13px;color:var(--soft)}
+.hero-sim-totals output{margin-inline-start:4px;color:var(--gold2);font-variant-numeric:tabular-nums}
+.hero-sim-grid{display:grid;grid-template-columns:minmax(30px,3em) repeat(6,minmax(0,54px));gap:5px;align-items:center}
+.hero-sim-layer{font-size:12px;color:var(--soft)}
+.hero-sim-slot,.hero-sim-empty{aspect-ratio:1;min-width:0;display:grid;place-items:center;border:1px solid var(--line);background:var(--panel2);border-radius:2px;overflow:hidden}
+.hero-sim-slot{padding:3px;color:var(--gold);cursor:pointer;user-select:none;-webkit-touch-callout:none}
+.hero-sim-slot img{width:100%;height:100%;object-fit:contain}
+.hero-sim-slot[data-state=locked] img{filter:saturate(.55);opacity:.55}
+.hero-sim-slot[data-state=learned]{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.hero-sim-slot[data-state=auto]{border-color:#69a78b}
+.hero-sim-slot:hover,.hero-sim-slot:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.hero-sim-actions{margin-top:12px}
+.hero-sim-actions button:disabled{opacity:.45;cursor:default}
+.hero-talent-simulator .hero-sim-notice{min-height:1.5em;margin:8px 0 0;color:var(--soft);font-size:13px}
+.hero-sim-detail a{font-size:13px;color:var(--gold2)}
+#hero-sim-link{width:min(100%,32em);margin-top:8px}
+@media(max-width:480px){.hero-talent-simulator .hero-sim-content{padding:4px 8px 12px}.hero-sim-grid{gap:4px}}
+
+.hero-sim-route{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.hero-sim-route label{display:inline-flex;align-items:center;gap:8px;color:var(--text)}
+.hero-sim-route select{padding:5px 8px;background:var(--panel2);color:var(--text);border:1px solid var(--line);font:inherit}
+.hero-sim-route-list{padding-inline-start:24px;margin:8px 0;color:var(--soft);font-size:13px;line-height:1.7}
+.hero-sim-route-list li{padding-block:2px}
+.hero-sim-route-list button{font-size:12px;margin-inline-start:4px}

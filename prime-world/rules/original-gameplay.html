@@ -1,0 +1,169 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><script>try{var p=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=p==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):p;document.documentElement.dataset.themePref=p}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="Prime World 原版英雄、天赋、地图、战斗公式与经济的中文资料"><title>从零理解 Prime World：一局怎样玩，成长怎样发生｜Prime World 原版资料站</title><link rel="stylesheet" href="../assets/atlas.css"><link rel="icon" type="image/png" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body data-root="../" data-page="rules/original-gameplay.html"><div class="scroll-progress"></div><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link is-active" href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><div class="subnav"><div class="wrap subnav-inner"><div class="section-title">原版资料</div><nav class="tabs"><a href="../hero-roster.html" class=""><svg class="ico ico-shield" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/></svg> 英雄</a><a href="../talent-catalog.html" class=""><svg class="ico ico-grid" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> 天赋</a><a href="../talent-sets.html" class=""><svg class="ico ico-puzzle" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13v7h-7v-3a2 2 0 0 0-4 0v3H2v-7h3a2 2 0 0 0 0-4H2V2h7v3a2 2 0 0 0 4 0V2h7v7h-3a2 2 0 0 0 0 4h3Z"/></svg> 套装</a><a href="../maps-and-modes.html" class=""><svg class="ico ico-map" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg> 地图</a><a href="../combat-formulas.html" class="active"><svg class="ico ico-coins" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12m4-9c-3-2-8-1-8 2s8 1 8 4-5 4-8 2"/></svg> 数值</a><a href="../economy-and-progression.html" class=""><svg class="ico ico-home" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-7h6v7"/></svg> 经济</a><a href="../effect-glossary.html">效果词典</a></nav><span class="book-status">固定源码版本 · 中文详解 V0.2</span></div></div><main class="wrap"><div class="breadcrumbs"><a href="../hero-roster.html">资料首页</a> / 从零理解 Prime World：一局怎样玩，成长怎样发生</div><div class="article-layout"><article class="article-body"><h1 id="从零理解-prime-world一局怎样玩成长怎样发生">从零理解 Prime World：一局怎样玩，成长怎样发生</h1>
+<p>这是一套原版玩法资料。英雄、天赋、地图和公式均以开源仓库提交 <code>8de5df31fa122b6f51cd099883de74bf4a21228d</code> 为研究对象。阅读时可以从英雄卡片进入，也可以沿着“玩法 → 天赋成长 → 战斗公式 → 地图 → 经济”的顺序理解整套游戏。中文英雄名及技能名采用本套资料的统一译名；原始标识和来源保留在条目底部，便于核对。</p>
+<h2 id="1-先理解两个相连的游戏阶段">1. 先理解两个相连的游戏阶段</h2>
+<p><strong>对局阶段</strong>是操纵一个英雄，与队友合作争夺资源、完成地图目标。经典地图的主要目标是摧毁敌方核心。你需要移动、普攻、施放技能、选择交战位置，利用兵线、建筑、野区和领土为团队取得优势。其他模式会改变人数与胜负目标：龙林强调夺蛋护送，合作试炼强调守护目标、神器充能与最终首领。</p>
+<p><strong>城堡阶段</strong>负责长期积累和下一局的准备。你会接触英雄雇佣、天赋获取与强化、建筑生产、资源兑换、英雄精力等系统。局外资源不会与战场 Prime 混成一个钱包：城堡的银币、金币、晶石与建设资源各有用途，进入对局后还要依本局规则赚取和支出 Prime。</p>
+<p>这两个阶段相连的关键是“带什么进入战场”。英雄不是只带一组固定按钮；天赋配置既决定专属技能的强化，也决定属性、额外主动能力与套装联动。因此同一个英雄的不同配置，可能改变输出方式、控制手段和资源周转。对应原版依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/_.HRDB.xdb">英雄数据库</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social.ROOT.xdb">城堡总配置</a>。</p>
+<h2 id="2-一名英雄到底拥有多少招式">2. 一名英雄到底拥有多少招式</h2>
+<p>本版整理了 <strong>64 种英雄</strong>。原英雄数据库有 65 条登记，其中十字军的两份阵营记录归为同一种英雄。每名英雄页面会分别给出原版专属天赋数量、默认配置中的主动能力，以及基础和替代方案。</p>
+<p>不能把“一个天赋”一律当作“一个需要按键的招式”。天赋至少包含四类不同内容：</p>
+<table>
+<thead>
+<tr>
+<th>内容</th>
+<th>你在游戏里怎样感受到它</th>
+<th>图鉴怎样展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心主动招式</td>
+<td>主动选择目标、方向或地点，消耗资源并进入冷却</td>
+<td>技能作用、目标、消耗、冷却、距离和公式</td>
+</tr>
+<tr>
+<td>核心被动机制</td>
+<td>自动积累特殊资源、反击、提供光环或改变普攻</td>
+<td>触发条件、叠层、上限、失效条件</td>
+</tr>
+<tr>
+<td>专属强化</td>
+<td>改变某一原有技能，增加控制、伤害、治疗或其他分支</td>
+<td>单独列出强化效果，并说明它增强哪一招</td>
+</tr>
+<tr>
+<td>通用属性／功能天赋</td>
+<td>增加属性、提供额外功能或参与套装组合</td>
+<td>独立属性条目、主动／触发效果、强化成长和套装关联</td>
+</tr>
+</tbody>
+</table>
+<p>六行六列的天赋盘是 <strong>36 个配置位置</strong>，不是 36 个主动按钮。英雄页附了原仓库的两套配置，共 <strong>128 套配置盘</strong>。它们是该版本提供的默认与替代资源，不代表实战唯一正确配装，也不是经过胜率统计得出的“最强推荐”。</p>
+<h2 id="3-坦克战士刺客辅助法师射手怎样区分">3. 坦克、战士、刺客、辅助、法师、射手怎样区分</h2>
+<p>本资料按你提出的六类建立主定位，再补副定位和打法标签。主定位回答“这个英雄最主要用什么方式为团队创造收益”，副定位补充混合玩法。归类根据原版能力作出，不冒充官方新增的职业系统。</p>
+<table>
+<thead>
+<tr>
+<th>主定位</th>
+<th>核心任务</th>
+<th>与相近职责的区别</th>
+<th style="text-align: right;">本资料归入数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>坦克</td>
+<td>承接威胁、制造控制窗口、保护或阻挡</td>
+<td>生存与控制是主要价值；并非所有高生命近战都优先归坦克</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>战士</td>
+<td>持续近身交战，在输出与生存之间转换</td>
+<td>通常更需要接触目标并持续兑现伤害；不能把所有战士都当纯抗伤单位</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>刺客</td>
+<td>找切入时机，快速处理关键目标</td>
+<td>侧重进入、集中伤害与脱离，常有明显失误代价</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>辅助</td>
+<td>保护、治疗、增益、控制和团队资源服务</td>
+<td>不仅是治疗者；能稳定帮助队友完成战斗也属于辅助价值</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>法师</td>
+<td>以技能、召唤、区域或状态组合制造主要威胁</td>
+<td>“智力较高”本身并不能单独决定职业，须看实际输出结构</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>射手</td>
+<td>在合适距离持续输出，通常高度依赖普攻</td>
+<td>需要队友或自身工具保持攻击空间，不能只看模型是否拿弓或枪</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+<p><strong>前排是一项战场职责。</strong> 坦克通常承担前排，部分战士也能承担；有些英雄通过召唤物、地形、护盾或控制争取空间，实际站位还会随配装和敌方阵容变化。图鉴的“为何这样归类”“强势场景”“如何反制”会具体解释每个英雄。</p>
+<h2 id="4-天赋怎样点亮准备门槛付款获得效果">4. 天赋怎样点亮：准备、门槛、付款、获得效果</h2>
+<p>先在局外把天赋放进配置盘；进入对局后，尚未点亮的天赋需要通过学习规则逐步启用。默认六行的开放门槛由累计成长点决定，依次为 <strong>0、4、8、12、16、20</strong>。学会一个天赋会增加它配置的成长点，常见为 1，但应以条目为准。已经花掉的 Prime 与已经累计的成长点是两个概念：钱用于支付，成长点用于推进开放层级与成长。</p>
+<p>以第一行开始为例：当你已有 0 个成长点时，只能在允许的第一行里选择；累计达到 4 个成长点后，第二行的行门槛才开放。第二行开放不代表该行所有天赋自动点亮；每项还须满足状态和费用要求。自动点亮、免费天赋与地图专门设置另行处理。岩石巨人默认盘开局自动点亮的基础天赋也会贡献成长，不能把“开局”一律视为零成长点。</p>
+<p>费用也不是每行所有条目绝对相同。只有天赋没有自定义费用、以负数要求回退时，才采用其最低层配置对应的 <strong>350、500、675、825、1160、1600 Prime</strong>。例如岩石巨人的“岩石之力”相关主动条目具有自己的价格。每个天赋页都列实际配置费用及回退依据。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp">PFTalent.cpp</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.h">PFTalent.h</a>。</p>
+<p>在策划上，这创造了一个真实选择：手里有钱时，是立刻补一个较便宜的天赋推动行开放，还是保留 Prime 等待关键能力；是买属性强化眼前交战，还是为套装联动准备组件。要判断哪种选择合适，须看实际成本、成长权重、英雄机制和当前目标。</p>
+<h2 id="5-经典-5-对-5-对局的完整目标链">5. 经典 5 对 5 对局的完整目标链</h2>
+<p>开始时先确认自己的角色任务、可用天赋与队伍分工。经典配置的首波出兵延迟为 60 秒。随后双方士兵沿三路推进，英雄在兵线、野区和队友之间寻找资源与交战机会。兵线既是资源来源，也会影响敌人必须防守的位置。</p>
+<p>拿到资源后逐步点亮天赋，使属性、技能与联动成熟。观察敌人关键控制和位移是否已经使用，决定继续消耗、发起集火还是撤退。一个技能有伤害，并不意味着在任何时间都应该施放；留住位移或保护技能，有时比多打一次低收益伤害更能保持团队阵型。</p>
+<p>推进需要处理建筑，而不是只追逐击杀。经典场景的静态摆放包含每方 12 座塔、3 座兵营和 1 个核心；塔的排列和阶段保护规则见地图章节。破坏建筑、改变兵线压力和拓展领土，可以让下一轮资源争夺更有利。击杀是实现目标的一种手段，基地目标才决定经典玩法的胜负。</p>
+<p>当己方获得优势时，评估是继续推进、控制野区、处理旗杆，还是回补后再组织攻势；劣势时则寻找兵线、建筑保护和对方技能空窗来争取资源。原版有多项击杀、助攻、附近参与和团队分配公式，所以“最后一下是谁打的”并不是唯一经济来源。原始依据：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb">经典场景</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">经典模式配置</a>。</p>
+<h2 id="6-己方领土为什么会改变操作选择">6. 己方领土为什么会改变操作选择</h2>
+<p>许多英雄的技能在己方领土上具有额外条件或效果：可能降低资源消耗、增加伤害或恢复、附加控制、改变施放目标，或者自行制造短时间的己方领土。需要看清“施法者站在己方领土上”和“目标站在己方领土上”的区别，两个条件不能互换。</p>
+<p>旗杆是扩张土地的重要手段。升旗采用引导，并受旗杆连接和敌方建筑保护等限制；敌人的旗也需要按实际旗杆受击规则处理。原版升旗引导会被受伤及相应行动／控制状态打断。因此队友的掩护、兵线位置和敌人能否接近，都影响是否能够完成占领。具体 4 秒引导、3 单位使用距离、5 次正伤害事件拆旗等数值与成立条件，见经典地图完整拆解。</p>
+<p>土地机制的设计价值在于改变战斗空间：同样的英雄、同样的属性，站位不同就可能得到不同的技能分支。重制时若完全移除土地条件，却保留这些技能其他数值，将改变一批英雄原本的收益与代价关系。</p>
+<h2 id="7-不同地图各自用来做什么">7. 不同地图各自用来做什么</h2>
+<p>地图页区分了空间场景、玩法配置和选择入口。该分支有 25 个场景、83 个描述配置，主列表中的 21 个生产允许配置引用 8 个不同场景。它们不能混称为同一个“地图总数”。</p>
+<table>
+<thead>
+<tr>
+<th>想体验的内容</th>
+<th>原版对应的代表玩法</th>
+<th>主要学习或竞争内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完整经典对战</td>
+<td>边境之地，5 对 5</td>
+<td>三路推进、野区与领土、英雄成长与团队目标</td>
+</tr>
+<tr>
+<td>较集中的单线战斗</td>
+<td>前哨，3 对 3；滴答为加速变体</td>
+<td>单线压制、集中交战、较少空间分散</td>
+</tr>
+<tr>
+<td>特殊团队目标</td>
+<td>龙林，4 对 4</td>
+<td>迷宫成长、屠龙抢蛋、运输护送与祭坛目标</td>
+</tr>
+<tr>
+<td>合作 PvE</td>
+<td>试炼的紫、橙、红难度</td>
+<td>守护伊娃、神器充能、分阶段防守和最终三头龙</td>
+</tr>
+<tr>
+<td>单人剧情 PvE</td>
+<td>单人试炼</td>
+<td>救援、据点准备、剧情伙伴和守城任务链</td>
+</tr>
+<tr>
+<td>从头学习操作</td>
+<td>第一章、第二章以及 MOBA 教学</td>
+<td>脚本分步教授移动、技能、商店、旗杆与推进</td>
+</tr>
+<tr>
+<td>熟悉英雄与地图</td>
+<td>人机练习</td>
+<td>经典战斗编制下对抗 AI，不等同于专用教学场景</td>
+</tr>
+<tr>
+<td>开发／历史资料</td>
+<td>其余测试、旧图、人数变体</td>
+<td>保存原版配置证据，不据此推断线上实际开放史</td>
+</tr>
+</tbody>
+</table>
+<p>地图章节会告诉你去哪里、做什么、怎样赢或失败、关键物件怎样生成，以及人数、奖励和时间设置有什么差别。</p>
+<h2 id="8-读数值时先区分这五件事">8. 读数值时先区分这五件事</h2>
+<p>第一，<strong>属性值与实际结果</strong>不同。攻速属性需要换算成每秒攻击次数；移动速度属性需要换算成实际位移速率；坚韧、意志需要换算成物理、法术防御比例。</p>
+<p>第二，<strong>基础值与最终值</strong>不同。英雄定义里的生命、力量等，会受已点亮天赋、行成长权重、Force 补偿和局外加成等影响。英雄页把“定义基础值”单独列出，不把它伪装成任意玩家进场后的唯一面板。</p>
+<p>第三，<strong>技能原始参数与最终扣血</strong>不同。伤害公式先求出技能参数，再经历防御、穿透、类型减伤、护盾与特殊状态。图鉴中的原始伤害算例并不承诺敌人最终一定掉这么多血。</p>
+<p>第四，<strong>公式两端的数不是随机伤害区间</strong>。例如伤害标尺以属性 50 和 258 为两个锚点；属性标尺则使用 50 和 182。低端有规则约束，高端并非自动封顶。天赋强化公式的第二参数是每升一级的增量。</p>
+<p>第五，<strong>配置存在不等于所有玩家都能使用</strong>。天赋注册表、默认配置引用、测试资源、活动动态价格与生产开关，各自回答不同问题。本套资料保留这些区别，并在存在原文／实际效果差异时记录到条目批注。</p>
+<h2 id="9-怎样把这些资料用于重新制作">9. 怎样把这些资料用于重新制作</h2>
+<p>先用本图鉴确定原版实际提供了哪些决策：英雄靠什么创造优势，技能的收益和代价在哪里，天赋怎样改变路线，地图如何让队伍产生不同目标，经济怎样推动成长。然后才能在下一阶段明确哪些机制保留、哪些改写。</p>
+<p>本版中的职业判断、技能配合、克制思路与平衡讨论属于有依据的设计分析；伤害、费用、时间、公式和原版配置属于来源事实。没有实战统计支持的内容不编造胜率、梯度榜或精确最优解。你可以直接读中文效果与计算过程，源码链接只用于需要时追溯证据。</p><div class="read-actions"><button class="button read-toggle" aria-pressed="false">标记本页已读</button><a href="../sources.html">来源与审校说明</a></div></article><aside class="toc"><b>本页导航</b><div id="toc-list"></div></aside></div></main><footer class="site-footer"><div class="wrap"><span>PRIME WORLD · 游戏策划与数值百科 V0.8.3<br>角色立绘、技能图标及地图来自原仓库；中文解释与分析按固定版本整理。</span><span>版本依据：8de5df31fa12<br><a href="../sources.html">查看覆盖范围、计算口径与审校批注</a> · <a href="../offline-guide.txt">离线阅读说明</a></span></div></footer><button class="back-top" aria-label="返回页首">回到顶部 ↑</button><script src="../assets/atlas-interactions.js"></script><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

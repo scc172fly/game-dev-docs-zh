@@ -1,0 +1,91 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="18个点位、清空重刷、上方猫和下方龙"><title>野区、野怪、首领｜Prime World 游戏策划与数值百科</title><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/atlas.css"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link is-active" href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><main class="a5-container"><nav class="a5-crumbs" aria-label="页面层级"><a href="../index.html" >首页</a><span>›</span><a href="../match-rules.html" >规则</a><span>›</span><span>野区、野怪、首领</span></nav><section class="a5-hero"><div class="a5-hero-copy"><span class="a5-overline">BATTLE SYSTEM / JUNGLE</span><h1>野区、野怪、首领</h1><p>18个点位、清空重刷、上方猫和下方龙</p><div class="a5-hero-underline"></div></div><div class="a5-hero-visual"><img src="../assets/maps/borderlands-n.png" alt="原版地图"/></div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">BATTLE MECHANIC</span><h2>玩家先读：这条规则解决什么问题？</h2></div><p class="a5-lead">18个点位、清空重刷、上方猫和下方龙</p><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>营地类型</th><th>点位</th><th>首次理论时刻</th><th>清空后刷新</th></tr></thead><tbody><tr><td>普通营地</td><td>10</td><td>约 1:33</td><td>120 秒</td></tr><tr><td>精英营地</td><td>4</td><td>约 1:33</td><td>300 秒</td></tr><tr><td>猫首领</td><td>1</td><td>约 6:30</td><td>300 秒</td></tr><tr><td>龙首领</td><td>1</td><td>约 11:00</td><td>300 秒</td></tr><tr><td>边缘营地</td><td>2</td><td>约 1:43</td><td>90 秒</td></tr></tbody></table></div><section class="a5-formula"><div class="a5-formula-top"><span class="a5-kicker">MATHEMATICAL MODEL / 数学公式</span><h3>某个野怪点的理论首次刷新</h3></div><div class="a5-equation">T<sub>first</sub> ≈ D<sub>battle</sub> + O<sub>spawn</sub></div><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>符号</th><th>中文含义</th></tr></thead><tbody><tr><td><code>D_battle</code></td><td>地图战斗初始延迟</td></tr><tr><td><code>O_spawn</code></td><td>该刷新器附加的首次偏移</td></tr></tbody></table></div><div class="a5-calc-steps"><strong>代入计算</strong><ol><li>猫首领：60+330=390秒=6:30。</li><li>龙首领：60+600=660秒=11:00。</li></ol></div><p class="a5-note">重刷从营地清空后按配置计时；不要把一只怪死亡当成每个营地重刷起点。</p></section></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">SOURCE RULES</span><h2>实际原版条件、数值与边界</h2></div><div class='a5-prose'><h2>4. 野区：18 个点位的实际构成</h2>
+<p>经典场景有 18 个中立刷怪点：双方镜像的普通点共 10 个、精英点共 4 个、首领点 2 个、最外缘额外点 2 个。一个点可有多个怪物实体，点位数和怪物数不能混用。</p>
+<table>
+<thead>
+<tr>
+  <th>点位资源／类型</th>
+  <th style="text-align:right">全图点数</th>
+  <th style="text-align:right">每组配置实体数</th>
+  <th style="text-align:right">首次偏移</th>
+  <th style="text-align:right">加上开场延迟后的首次时刻</th>
+  <th style="text-align:right">清空后重刷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>普通 Neutral_2</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">33 秒</td>
+  <td style="text-align:right">约 1:33</td>
+  <td style="text-align:right">120 秒</td>
+</tr>
+<tr>
+  <td>普通 Neutral_3</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">33 秒</td>
+  <td style="text-align:right">约 1:33</td>
+  <td style="text-align:right">120 秒</td>
+</tr>
+<tr>
+  <td>普通 Neutral_4</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">33 秒</td>
+  <td style="text-align:right">约 1:33</td>
+  <td style="text-align:right">120 秒</td>
+</tr>
+<tr>
+  <td>普通 Neutral_5</td>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">33 秒</td>
+  <td style="text-align:right">约 1:33</td>
+  <td style="text-align:right">120 秒</td>
+</tr>
+<tr>
+  <td>精英 Neutral_Elite_1</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right">33 秒</td>
+  <td style="text-align:right">约 1:33</td>
+  <td style="text-align:right">300 秒</td>
+</tr>
+<tr>
+  <td>精英 Neutral_Elite_2</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">33 秒</td>
+  <td style="text-align:right">约 1:33</td>
+  <td style="text-align:right">300 秒</td>
+</tr>
+<tr>
+  <td>上方首领 Boss_Cat</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">330 秒</td>
+  <td style="text-align:right">约 6:30</td>
+  <td style="text-align:right">300 秒</td>
+</tr>
+<tr>
+  <td>下方首领 Boss_Dragon</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">2 个配置实体</td>
+  <td style="text-align:right">600 秒</td>
+  <td style="text-align:right">约 11:00</td>
+  <td style="text-align:right">300 秒</td>
+</tr>
+<tr>
+  <td>最上／最下额外营地</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">43 秒</td>
+  <td style="text-align:right">约 1:43</td>
+  <td style="text-align:right">90 秒</td>
+</tr>
+</tbody>
+</table>
+<p>龙点的两个配置实体包含机制所用的辅助实体，不能翻译成“两只首领龙”。首次出现时间要把地图 60 秒起始延迟加进去；直接把资源偏移 330 秒说成开局 5:30 出首领会少算一分钟。重刷倒计时由营地清空条件驱动，也不是从第一只怪死时一律起算。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_2.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_2.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_3.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_3.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_4.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_4.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_5.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_5.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_1.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_1.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_2.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_Elite_2.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss3.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss3.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/NeutralBoss.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Spawners/Neutral_TopBot.NCSPN.xdb">Data/Maps/Multiplayer/MOBA/Spawners/Neutral_TopBot.NCSPN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFNeutralCreep.cpp">Src/PF_GameLogic/PFNeutralCreep.cpp</a>。</p>
+<p>大龙的价值也不只是一笔钱。经典地图脚本在龙被击杀后，根据击杀方阵营转化出己方的行进龙单位，让它参与后续推进。这是“打中立目标”向“攻城压力”转换的直接连接。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/Moba.lua">Data/GameLogic/Scripts/Moba.lua</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Creeps/Bosses/Boss1/PVP_Walked.CREEP.xdb">Data/Creeps/Bosses/Boss1/PVP_Walked.CREEP.xdb</a>。</p>
+</div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>和地图、模式的关系</h2></div><div class='a5-action-links'><a href="../game-modes.html" >按模式看规则覆盖 →</a><a href="../battle-maps.html" >按地图看对象位置 →</a><a href="../balance.html" >按公式看数值与例题 →</a></div></section><footer class="a5-foot">基于 Nival / Prime World 固定源码版本 <code>8de5df31fa12</code> 整理 · 数据与历史运营情况分开标注 · <a href="../sources.html" >资料来源与审校</a><br/>本资料站为非官方研究与教学重构，不代表历史全部版本或实机验证结论。</footer></main><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

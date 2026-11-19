@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="英雄等级、发展点、Prime 费用和 Force 预算是不同数值；按真实层级门槛与费用计算。"><title>天赋成长与学习费用｜Prime World 游戏策划与数值百科</title><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/atlas.css"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link " href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link is-active" href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><main class="a5-container"><nav class="a5-crumbs" aria-label="页面层级"><a href="../index.html" >首页</a><span>›</span><a href="../balance.html" >数值</a><span>›</span><span>天赋成长</span></nav><section class="a5-hero"><div class="a5-hero-copy"><span class="a5-overline">ORIGINAL SYSTEM REFERENCE</span><h1>天赋成长与学习费用</h1><p>英雄等级、发展点、Prime 费用和 Force 预算是不同数值；按真实层级门槛与费用计算。</p><div class="a5-hero-underline"></div></div><div class="a5-sigil">PW<span>ATLAS</span></div></section><section class="a5-formula"><div class="a5-formula-top"><span class="a5-kicker">MATHEMATICAL MODEL / 数学公式</span><h3>六层天赋何时开放</h3></div><div class="a5-equation">L<sub>max</sub> = min(6, 1 + ⌊DevPoints / 4⌋)</div><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>符号</th><th>中文含义</th></tr></thead><tbody><tr><td><code>DevPoints</code></td><td>本局已点亮天赋累计发展点</td></tr><tr><td><code>L_max</code></td><td>当前可访问的最高层；从1开始</td></tr></tbody></table></div><div class="a5-calc-steps"><strong>代入计算</strong><ol><li>发展点0、3：仅第1层。</li><li>发展点4：第2层开放。</li><li>发展点8/12/16/20：第3/4/5/6层相继开放。</li></ol></div><p class="a5-note">不表示必须买满前层6格；额外激活条件和费用仍须检查。</p></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>六层默认费用兜底表</h2></div><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>层级</th><th>最低发展点</th><th>天赋没有显式学习费时的默认Prime费用</th></tr></thead><tbody><tr><td>1</td><td>0</td><td>350</td></tr><tr><td>2</td><td>4</td><td>500</td></tr><tr><td>3</td><td>8</td><td>675</td></tr><tr><td>4</td><td>12</td><td>825</td></tr><tr><td>5</td><td>16</td><td>1160</td></tr><tr><td>6</td><td>20</td><td>1600</td></tr></tbody></table></div></section><section class="a5-formula"><div class="a5-formula-top"><span class="a5-kicker">MATHEMATICAL MODEL / 数学公式</span><h3>一次天赋学习的余额计算</h3></div><div class="a5-equation">Prime<sub>after</sub> = Prime<sub>before</sub> − Cost(Talent)</div><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>符号</th><th>中文含义</th></tr></thead><tbody><tr><td><code>Cost(Talent)</code></td><td>该天赋显式费用；若未指定则按minLevel的默认费用</td></tr></tbody></table></div><div class="a5-calc-steps"><strong>代入计算</strong><ol><li>岩石巨人 Ability1 显式费用300：当前Prime400，则剩余100。</li></ol></div><p class="a5-note">有显式价格的天赋绝不能强行套第一层默认350。</p></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>局内等级与发展点别混淆</h2></div><div class="a5-prose"><h2>1. 先把四种“等级”分开</h2>
+<table>
+<thead>
+<tr>
+  <th>名称</th>
+  <th>玩家在做什么</th>
+  <th>原版数据怎样决定</th>
+  <th>是否每局重置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>天赋盘层数</td>
+  <td>决定哪些位置现在可以买</td>
+  <td>6 层，每层 6 格；发展点门槛为 0/4/8/12/16/20</td>
+  <td>是</td>
+</tr>
+<tr>
+  <td>英雄局内等级</td>
+  <td>随本局成长增加属性、影响复活等</td>
+  <td>发展点阈值表 0—36</td>
+  <td>是</td>
+</tr>
+<tr>
+  <td>天赋星级</td>
+  <td>让拥有的那张天赋更强</td>
+  <td>局外强化点及特殊升级道具，传入 refineRate</td>
+  <td>否</td>
+</tr>
+<tr>
+  <td>英雄局外等级</td>
+  <td>长期练英雄，取得属性点等奖励</td>
+  <td>累计经验表；与局内发展点不同</td>
+  <td>否</td>
+</tr>
+</tbody>
+</table>
+<p>所谓“点亮天赋”，是在这一局用 Prime 激活已装到天赋盘里的一个项目。它可能是主动招式、被动属性、已有招式强化，也可能带来新操作。天赋盘不是一排互相替代的按钮；6×6 是位置结构，不表示每英雄都有 36 个主动招式。成套效果、条件被动、额外操作的实际内容由每个天赋资源决定。T01、T02 和英雄专属页共同说明这件事。</p>
+</div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>原版完整成长与费用公式</h2></div><div class="a5-action-links"><a href="../economy/talent-learning-and-progression.html" >学习条件、预算、Force、属性成长 →</a><a href="../guide/talent-grid-and-leveling.html" >互动 6×6 模拟器 →</a></div></section><footer class="a5-foot">基于 Nival / Prime World 固定源码版本 <code>8de5df31fa12</code> 整理 · 数据与历史运营情况分开标注 · <a href="../sources.html" >资料来源与审校</a><br/>本资料站为非官方研究与教学重构，不代表历史全部版本或实机验证结论。</footer></main><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>

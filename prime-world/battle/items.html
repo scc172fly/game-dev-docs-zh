@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="商店、符文、基地回复与教学例外"><title>基地商店、符文与战场道具｜Prime World 游戏策划与数值百科</title><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../assets/atlas.css"><link rel="stylesheet" href="../assets/site-v04.css"><link rel="stylesheet" href="../assets/site-v05.css"><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link rel="stylesheet" href="../assets/site-v06.css"><link rel="stylesheet" href="../assets/site-v08.css" data-version="V0.8.3"></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a class="pw-brand" href="../index.html" aria-label="Prime World 首页"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS · V0.8.3</small></span></a><nav class="pw-primary-nav" id="pw-primary-nav" aria-label="主导航"><a class="pw-nav-link " href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link " href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link " href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link " href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link " href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link is-active" href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link " href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link " href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input id="pw-search-input" type="search" placeholder="英雄 / 玩法 / 数值" autocomplete="off" aria-label="搜索全站"><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select class="pw-theme-select" aria-label="选择显示主题"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button class="pw-mobile-toggle" type="button" aria-label="展开主菜单" aria-expanded="false"><span>☰</span></button></div></div></header><main class="a5-container"><nav class="a5-crumbs" aria-label="页面层级"><a href="../index.html" >首页</a><span>›</span><a href="../match-rules.html" >规则</a><span>›</span><span>基地商店、符文与战场道具</span></nav><section class="a5-hero"><div class="a5-hero-copy"><span class="a5-overline">BATTLE SYSTEM / ITEMS</span><h1>基地商店、符文与战场道具</h1><p>商店、符文、基地回复与教学例外</p><div class="a5-hero-underline"></div></div><div class="a5-hero-visual"><img src="../assets/maps/borderlands-n.png" alt="原版地图"/></div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">BATTLE MECHANIC</span><h2>玩家先读：这条规则解决什么问题？</h2></div><p class="a5-lead">商店、符文、基地回复与教学例外</p><div class="a5-table-wrap"><table class="a5-table"><thead><tr><th>对象</th><th>经典地图计数</th><th>为什么重要</th></tr></thead><tbody><tr><td>商店</td><td>双方合计4处</td><td>补给与消耗品</td></tr><tr><td>恢复设施</td><td>双方合计2处</td><td>生存与再次进入战场</td></tr><tr><td>小游戏建筑</td><td>双方合计2处</td><td>部分战斗卷轴来源</td></tr><tr><td>符文点</td><td>全图2处</td><td>地图离线探索与资源争夺</td></tr></tbody></table></div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">SOURCE RULES</span><h2>实际原版条件、数值与边界</h2></div><div class='a5-prose'><h2>1. 经典地图教学：带玩家完成真实目标链</h2>
+<p>这一版教学直接使用经典三路 MOBA 场景，单人控制英雄，其他英雄由配置与 AI 提供。地图保留经典塔、兵营、旗杆、野区、首领、商店与小游戏建筑，但脚本会调整敌方建筑、英雄和提示条件，不能用该教学的承伤体验反推普通对战数值。</p>
+<p>其主线顺序明确：离开基地 → 摧毁敌方第一座塔 → 清除一条线上的全部塔 → 摧毁该路兵营／军械库 → 摧毁敌方主建筑。原始任务文本对双方主建筑分别使用“艺术神殿”和“科学神殿”；这是阵营表现名称，终局设计功能均为对方核心。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Tutorial/questListTutorial.QUESTS.xdb">Data/Maps/Multiplayer/MOBA/Tutorial/questListTutorial.QUESTS.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/TutorialMOBA.lua">Data/GameLogic/Scripts/TutorialMOBA.lua</a>。</p>
+<table>
+<thead>
+<tr>
+  <th>教学层</th>
+  <th>要教会玩家什么</th>
+  <th>触发方式／完成动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>主目标</td>
+  <td>一局究竟如何获胜</td>
+  <td>按建筑目标链推进，而不是刷到某个击杀数</td>
+</tr>
+<tr>
+  <td>初次成长</td>
+  <td>Prime 如何转成已激活天赋</td>
+  <td>激活天赋、使用天赋、检测玩家有资源却未购买的情况</td>
+</tr>
+<tr>
+  <td>兵线资源</td>
+  <td>士兵是持续成长来源</td>
+  <td>击杀指定数量敌兵；任务计数为 5</td>
+</tr>
+<tr>
+  <td>生存与回场</td>
+  <td>残血时如何处理</td>
+  <td>低生命提示、使用传送、第一次阵亡提示</td>
+</tr>
+<tr>
+  <td>地图控制</td>
+  <td>土地和旗杆为何重要</td>
+  <td>接近／升旗相关提示，解释前线改变</td>
+</tr>
+<tr>
+  <td>野区系统</td>
+  <td>普通怪、首领和符文分别是什么</td>
+  <td>接近野怪、猫首领、龙首领或符文时给提示</td>
+</tr>
+<tr>
+  <td>后方功能</td>
+  <td>商店与小游戏有什么作用</td>
+  <td>接近商店；进入小游戏并创建卷轴</td>
+</tr>
+<tr>
+  <td>团队战斗</td>
+  <td>击杀、助攻、敌方威胁</td>
+  <td>监听敌英雄击杀／助攻、塔攻击和队友防御塔受袭</td>
+</tr>
+</tbody>
+</table>
+<p>提示是条件驱动，不是进入地图就一次弹出整页说明。例如玩家离开基地、靠近野怪、首次购买天赋、残血且未受攻击时分别触发不同反馈。主线保持清楚，支线教学随玩家实际行为插入，使“学一个操作”直接连接“用这个操作解决当前问题”。这是从脚本结构得到的策划分析。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Scripts/TutorialMOBA.lua">Data/GameLogic/Scripts/TutorialMOBA.lua</a>。</p>
+<p>该配置开战等待为 0、塔脆弱性延迟为 10 秒、起始 Prime 每队 300、被动配置 2／秒，地图强度字段 125、训练强度系数 0.75。英雄覆盖中指定了玩家及两边 AI 的英雄资源；因此人数字段 1 表示单人教程，并不意味着场上只有两个英雄。来源：<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPDSCR.xdb">Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPDSCR.xdb</a>、<a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPSTTN.xdb">Data/Maps/Multiplayer/MOBA/Tutorial/_.ADMPSTTN.xdb</a>。</p>
+</div></section><section class="a5-section"><div class="a5-section-head"><span class="a5-kicker">RULE / 规则</span><h2>和地图、模式的关系</h2></div><div class='a5-action-links'><a href="../game-modes.html" >按模式看规则覆盖 →</a><a href="../battle-maps.html" >按地图看对象位置 →</a><a href="../balance.html" >按公式看数值与例题 →</a></div></section><footer class="a5-foot">基于 Nival / Prime World 固定源码版本 <code>8de5df31fa12</code> 整理 · 数据与历史运营情况分开标注 · <a href="../sources.html" >资料来源与审校</a><br/>本资料站为非官方研究与教学重构，不代表历史全部版本或实机验证结论。</footer></main><script>window.PW_V04_ROOT='../';</script><script src="../assets/site-v04.js" defer></script><script src="../assets/site-v05.js" defer></script><script src="../assets/site-v06.js" defer></script></body></html>
