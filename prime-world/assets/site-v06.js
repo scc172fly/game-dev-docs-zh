@@ -111,7 +111,8 @@ function init(){
    if(cell.querySelector('.pw-math-detail'))return;
    const row=cell.closest('tr');if(!row)return;
    const label=(row.cells[0]?.childNodes[0]?.textContent||'此参数').trim();
-   const result=row.querySelector('td.values-cell')?.textContent?.trim()||'';
+   const values=row.querySelector('td.values-cell');
+   const result=(values?.querySelector('.state-facts dd:last-child')||values)?.textContent?.trim()||'';
    const value=cell.textContent.trim();
    if(!value)return;
    const d=document.createElement('details');d.className='pw-math-detail';

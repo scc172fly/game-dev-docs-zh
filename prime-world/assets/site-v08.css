@@ -180,3 +180,22 @@ html[data-theme="light"] #talent-results .rarity-exclusive{--talent-color:#96391
 .hero-recruitment-heading-icon,.hero-recruitment-row-icon{display:block;flex:none;aspect-ratio:1;object-fit:cover;border:1px solid var(--line);border-radius:50%}
 .hero-recruitment-heading-icon{width:42px;height:42px}
 .hero-recruitment-row-icon{width:26px;height:26px}
+
+/* Audited state formulas on hero and talent pages */
+.state-facts {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: baseline;
+  gap: .25rem .65rem;
+  margin: 0;
+}
+.state-facts dt { font-size: .9em; font-weight: 600; }
+.state-facts dd { margin: 0; overflow-wrap: anywhere; }
+.state-facts dd:last-child { font-weight: 600; }
+.state-evidence { margin-top: .65rem; }
+.state-evidence > summary { cursor: pointer; text-decoration: underline; text-underline-offset: .18em; }
+.state-evidence > p { margin: .55rem 0; }
+@media (max-width: 640px) {
+  .state-facts { grid-template-columns: 1fr; gap: .1rem; max-width: calc(100vw - 3rem); }
+  .state-facts dt:not(:first-child) { margin-top: .35rem; }
+}
