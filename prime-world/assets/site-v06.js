@@ -126,5 +126,34 @@ function init(){
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
 
-/* The current atlas release label; this does not touch navigation dimensions. */
-(function(){function set(){document.querySelectorAll('.pw-brand-copy small').forEach(e=>{e.textContent=e.textContent.replace(/V0\.7(?:\.1)?/, 'V0.7.2');});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',set,{once:true});else set();})();
+
+/* Public labels describe the content without site release numbers. */
+(function () {
+  const release = /\bv0\.\d+(?:\.\d+)?\b/gi;
+  function clean(value) {
+    return value
+      .replace(/NEW IN V0\.\d+(?:\.\d+)?\s*\/\s*/gi, '')
+      .replace(/\bV0\.\d+(?:\.\d+)?\s*\/\s*/gi, '')
+      .replace(/本页结束\s*·\s*可以继续阅读下一章/g, '延伸阅读')
+      .replace(/\s*·\s*V0\.\d+(?:\.\d+)?\b/gi, '')
+      .replace(release, '')
+      .replace(/ {2,}/g, ' ');
+  }
+  function normalizeLabels() {
+    const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (!node.parentElement.closest('script,style,code,pre,textarea') && /\bv0\.\d|可以继续阅读下一章/i.test(node.data)) {
+        node.data = clean(node.data);
+      }
+    }
+    document.querySelectorAll('[title],[aria-label],[alt],[placeholder],meta[name="description"]').forEach(element => {
+      for (const attr of ['title','aria-label','alt','placeholder','content']) {
+        const value = element.getAttribute(attr);
+        if (value && /\bv0\.\d/i.test(value)) element.setAttribute(attr, clean(value));
+      }
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', normalizeLabels, { once: true });
+  else normalizeLabels();
+})();
