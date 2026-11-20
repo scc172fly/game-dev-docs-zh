@@ -259,7 +259,10 @@ html[data-theme=light] .a5-hero{background:#1c2b38!important}
    labels remain on an independent foreground panel. */
 .v6-role-card{min-height:164px;}
 .v6-role-card>img{
-  top:0;right:0;bottom:auto;left:auto;
+  top:-9%;right:-5%;bottom:auto;left:auto;
+  /* Crop the frame printed into the poster and blend the art into the card. */
+  clip-path:inset(7% 6% 6% 7%);
+  mask-image:linear-gradient(to right,transparent 7%,#000 30%);
   width:50%;height:100%;object-fit:cover;object-position:50% 0%;
   transform:scale(1.22);transform-origin:50% 0%;
   opacity:.92;filter:saturate(.94) contrast(1.04);
