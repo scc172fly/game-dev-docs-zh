@@ -147,6 +147,11 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
         node.data = clean(node.data);
       }
     }
+    document.querySelectorAll('.v08-actions a').forEach(link => {
+      if (/^打开\s+交互式公式实验室/.test(link.textContent)) {
+        link.textContent = link.textContent.replace(/^打开\s+/, '打开');
+      }
+    });
     document.querySelectorAll('[title],[aria-label],[alt],[placeholder],meta[name="description"]').forEach(element => {
       for (const attr of ['title','aria-label','alt','placeholder','content']) {
         const value = element.getAttribute(attr);
