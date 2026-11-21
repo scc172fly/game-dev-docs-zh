@@ -100,7 +100,7 @@
    'C07 双防：Body = .00536 × (Stamina + .3 × Will) − .2 = '+fixed(body,5)+'；Spirit = .00536 × (Will + .3 × Stamina) − .2 = '+fixed(spirit,5)+'。',
    'C09 本次 '+(attack==='basic'?'普攻':'技能')+'：Defence = '+fixed(defence,5)+'，SpellDef = '+fixed(spellDef,5)+'，SpellPierce = '+fixed(spellPierce,5)+'；x = Defence + SpellDef − (P + SpellPierce) = '+fixed(x,5)+'。',
    'C09 q = '+fixed(q,2)+'；clamp(x, −.75, .75) = '+fixed(bounded,5)+'；M = 1 − q × clamp(x) = '+fixed(M,5)+'。'+(normal&&!ignore?'本次应用该乘数。':'本次伤害通道不应用该乘数。'),
-   'C11 可闪避概率：'+(rollHit?'命中率 = (1 − int(MissChance)/100) × (1 − int(Evasion)/100) = '+fixed(hit*100,3)+'%。':'本次不满足普通可闪避攻击前提，跳过两次独立闪避检定。')+'后续数值均假设命中。',
+   'C11 可闪避概率：'+(rollHit?'命中率 = (1 − clamp(int(MissChance), 0, 100)/100) × (1 − clamp(int(Evasion), 0, 100)/100) = '+fixed(hit*100,3)+'%。':'本次不满足普通可闪避攻击前提，跳过两次独立闪避检定。')+'后续数值均假设命中。',
    !validTarget?'目标已死亡，伤害施加器跳过结算。':mana?'C10 Mana：DamageApplicator 直接调用 OnBurnEnergy，跳过生命伤害与护盾事件。':'C10 伤害类型：'+route+'  类型减免 = '+fixed(reduction,2)+'%；进入护盾前 = '+fixed(beforeShield,5)+'。',
    !validTarget?'生命、护盾与能量变化均为 0。':mana?'实际灼烧 = min(当前能量 '+fixed(energy,3)+'，暴击判定后的灼烧量 '+fixed(modifiedRaw,3)+') = '+fixed(burned,3)+'；剩余能量 '+fixed(energy-burned,3)+'，护盾和生命均保持原值。':'C12 单盾：护盾消耗（负值为容量增加） = '+fixed(absorbed,5)+'；护盾后剩余伤害 = '+fixed(afterShield,5)+'；本次扣血 min(剩余伤害, 当前生命 '+fixed(hp,3)+') = '+fixed(hpLoss,5)+'。'
   ]);

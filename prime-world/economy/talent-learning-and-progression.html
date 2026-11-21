@@ -65,7 +65,7 @@
 <p>本页的 36 格、门槛、默认费用回退、实际学习调用、预算、Force 和分层成长已经连接到代码与资源。尚不能凭静态资源断言每个 <code>prerequisiteTalents</code> 字段在所有客户端入口的强制方式，也不能把仓库默认天赋套当成任何真实账号的当前装备。以下核验卡把这些边界留在规则旁边；不会用新拟的门槛或统一成长替代原版。</p>
 <h2 id="公式核验卡">公式核验卡</h2>
 <h3 id="t01-六层天赋开放门槛">T01 · 六层天赋开放门槛</h3>
-<p><strong>实际规则</strong>：开放层索引=floor(devPoints/4)；候选层索引&lt;=此值；点亮后devPoints+=该天赋devPoints。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>开放层索引 = 累计成长点 ÷ 4 后向下取整<br>候选格层索引不超过开放索引<br>点亮后累计成长点增加该天赋配置的成长点</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>开放层索引=floor(devPoints/4)；<br>候选层索引&lt;=此值；<br>点亮后devPoints+=该天赋devPoints。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>开放层索引 = 累计成长点 ÷ 4 后向下取整<br>候选格层索引不超过开放索引<br>点亮后累计成长点增加该天赋配置的成长点</p>
 <table>
 <thead>
 <tr>
@@ -105,7 +105,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTalent.cpp#L575-L600">Src/PF_GameLogic/PFTalent.cpp · L575—600</a></li>
 </ul>
 <h3 id="t02-学习费用与激活条件">T02 · 学习费用与激活条件</h3>
-<p><strong>实际规则</strong>：若talent.naftaCost&gt;=0，费用=它；否则按天赋minLevel使用默认[350,500,675,825,1160,1600]。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>点亮费用 = 明确配置的非负费用<br>配置为负时，按天赋最低配置层查默认费用 350／500／675／825／1160／1600</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>若talent.naftaCost&gt;=0，费用=它；<br>否则按天赋minLevel使用默认[350,500,675,825,1160,1600]。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>点亮费用 = 明确配置的非负费用<br>配置为负时，按天赋最低配置层查默认费用 350／500／675／825／1160／1600</p>
 <table>
 <thead>
 <tr>
@@ -145,7 +145,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Rockman/Ability1.TALENT.xdb#L702-L702">Data/Items/Talents/Class/Rockman/Ability1.TALENT.xdb · L702</a></li>
 </ul>
 <h3 id="t03-天赋预算">T03 · 天赋预算</h3>
-<p><strong>实际规则</strong>：预算=480*(1+层修正/100)*(稀有度修正/100)*(1+(refineRate-1)*星增量)/220*1.1。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>天赋预算 = 480 ×（1 + 层修正 ÷ 100）×（稀有度修正 ÷ 100）×〔1 +（强化等级 − 1）× 每星增量〕÷ 220 × 1.1</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>预算=480*(1+层修正/100)*(稀有度修正/100)*(1+(refineRate-1)*星增量)/220*1.1。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>天赋预算 = 480 ×（1 + 层修正 ÷ 100）×（稀有度修正 ÷ 100）×〔1 +（强化等级 − 1）× 每星增量〕÷ 220 × 1.1</p>
 <table>
 <thead>
 <tr>
@@ -190,7 +190,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L3285-L3285">Data/GameLogic/AILogic.AILP.xdb · L3285</a></li>
 </ul>
 <h3 id="t04-装备战力与额外成长预算">T04 · 装备战力与额外成长预算</h3>
-<p><strong>实际规则</strong>：单天赋Force=预算/(1+对应层修正/100)+稀有度附加值；英雄Force=sum(装备天赋Force)+baseHeroForce；额外总属性预算=252+max(Force-100,0)*3。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>单天赋战力 = 天赋预算 ÷（1 + 对应层修正 ÷ 100）+ 稀有度附加值<br>英雄战力 = 装备天赋的战力之和 + 英雄基础战力<br>额外总属性预算 = 252 + 取较大值（英雄战力 − 100，0）× 3</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>单天赋Force=预算/(1+对应层修正/100)+稀有度附加值；<br>英雄Force=sum(装备天赋Force)+baseHeroForce；<br>额外总属性预算=252+max(Force-100,0)*3。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>单天赋战力 = 天赋预算 ÷（1 + 对应层修正 ÷ 100）+ 稀有度附加值<br>英雄战力 = 装备天赋的战力之和 + 英雄基础战力<br>额外总属性预算 = 252 + 取较大值（英雄战力 − 100，0）× 3</p>
 <table>
 <thead>
 <tr>
@@ -235,7 +235,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ForceCalc.cpp#L143-L159">Src/PF_GameLogic/ForceCalc.cpp · L143—159</a></li>
 </ul>
 <h3 id="t05-点亮天赋后的局内属性成长">T05 · 点亮天赋后的局内属性成长</h3>
-<p><strong>实际规则</strong>：f=本层成长百分比/(本层所有天赋devPoints总和)/100；n=本次实际增加的局内等级；Δ属性=全36级基础累计增量*f*n*incrementForceModifier + 当前n级基础增量*(总额外属性预算*f)/总增量预算。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>本次成长份额 = 本层成长百分比 ÷ 本层所有已配置天赋的成长点总和 ÷ 100<br>属性增加量 = 全 36 级基础累计增量 × 本次成长份额 × 实际升级数 × 成长战力倍率 + 本次跨越等级的基础增量 ×（总额外属性预算 × 本次成长份额）÷ 总增量预算</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>f=本层成长百分比/(本层所有天赋devPoints总和)/100；<br>n=本次实际增加的局内等级；<br>Δ属性=全36级基础累计增量*f*n*incrementForceModifier + 当前n级基础增量*(总额外属性预算*f)/总增量预算。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>本次成长份额 = 本层成长百分比 ÷ 本层所有已配置天赋的成长点总和 ÷ 100<br>属性增加量 = 全 36 级基础累计增量 × 本次成长份额 × 实际升级数 × 成长战力倍率 + 本次跨越等级的基础增量 ×（总额外属性预算 × 本次成长份额）÷ 总增量预算</p>
 <table>
 <thead>
 <tr>
@@ -287,7 +287,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/_.HLVL.xdb#L1-L45">Data/Heroes/_.HLVL.xdb · L1—45</a></li>
 </ul>
 <h3 id="t06-战力提升后的资源消耗补偿">T06 · 战力提升后的资源消耗补偿</h3>
-<p><strong>实际规则</strong>：shiftFactor=max(Force-100,0)*3*已取得成长预算比例/总增量预算；资源Shift=资源基础增量*shiftFactor；消耗倍率=资源核心值/(资源核心值-资源Shift)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>偏移系数 = 取较大值（英雄战力 − 100，0）× 3 × 已取得成长预算比例 ÷ 总增量预算<br>资源偏移量 = 资源基础增量 × 偏移系数<br>消耗倍率 = 资源核心值 ÷（资源核心值 − 资源偏移量）</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>shiftFactor=max(Force-100,0)*3*已取得成长预算比例/总增量预算；<br>资源Shift=资源基础增量*shiftFactor；<br>消耗倍率=资源核心值/(资源核心值-资源Shift)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>偏移系数 = 取较大值（英雄战力 − 100，0）× 3 × 已取得成长预算比例 ÷ 总增量预算<br>资源偏移量 = 资源基础增量 × 偏移系数<br>消耗倍率 = 资源核心值 ÷（资源核心值 − 资源偏移量）</p>
 <table>
 <thead>
 <tr>
@@ -330,7 +330,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L426-L450">Src/PF_GameLogic/PFAbilityData.cpp · L426—450</a></li>
 </ul>
 <h3 id="t07-地图单位的战力补偿系数">T07 · 地图单位的战力补偿系数</h3>
-<p><strong>实际规则</strong>：队伍统计Force&lt;地图Force时系数1；否则1+(队伍统计Force/地图Force-1)*0.55。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>队伍统计战力低于地图战力时，系数为 1<br>否则系数 = 1 +（队伍统计战力 ÷ 地图战力 − 1）× 0.55</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>队伍统计Force&lt;地图Force时系数1；<br>否则1+(队伍统计Force/地图Force-1)*0.55。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>队伍统计战力低于地图战力时，系数为 1<br>否则系数 = 1 +（队伍统计战力 ÷ 地图战力 − 1）× 0.55</p>
 <table>
 <thead>
 <tr>

@@ -131,7 +131,7 @@
 <p>还没有将全商城轮换、会员所有权益、任务奖励、公会捐献、战后掉落、活动礼包和充值计费合成一个“每日应得收益”结论。这些需要把相关配置、部署开关和账号状态同时纳入；本页没有把它们假设成零或任意给一个值。重制策划后续可以选择精简经济，但应先区分原版已有机制、静态默认值与实际运营覆盖，然后再作取舍。</p>
 <h2 id="公式核验卡">公式核验卡</h2>
 <h3 id="o01-局外英雄等级和领主等级">O01 · 局外英雄等级和领主等级</h3>
-<p><strong>实际规则</strong>：英雄内部等级=达到的累计经验阈值数量-1；展示等级=内部+1。领主等级=达到的声望阈值数量。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>英雄内部等级 = 已达到累计经验门槛的个数 − 1<br>显示等级 = 内部等级 + 1<br>领主等级 = 已达到声望门槛的个数</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>英雄内部等级=达到的累计经验阈值数量-1；<br>展示等级=内部+1。领主等级=达到的声望阈值数量。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>英雄内部等级 = 已达到累计经验门槛的个数 − 1<br>显示等级 = 内部等级 + 1<br>领主等级 = 已达到声望门槛的个数</p>
 <table>
 <thead>
 <tr>
@@ -176,7 +176,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social/Statpnts2Lvl.xdb#L1-L26">Data/Social/Statpnts2Lvl.xdb · L1—26</a></li>
 </ul>
 <h3 id="o02-持久天赋星级">O02 · 持久天赋星级</h3>
-<p><strong>实际规则</strong>：内部强化等级=达到的该稀有度Points阈值数量；星级=内部+1。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>天赋内部强化等级 = 已达到该稀有度强化点门槛的个数<br>显示星级 = 内部强化等级 + 1</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>内部强化等级=达到的该稀有度Points阈值数量；<br>星级=内部+1。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>天赋内部强化等级 = 已达到该稀有度强化点门槛的个数<br>显示星级 = 内部强化等级 + 1</p>
 <table>
 <thead>
 <tr>
@@ -213,7 +213,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social.ROOT.xdb#L4499-L4609">Data/Social.ROOT.xdb · L4499—4609</a></li>
 </ul>
 <h3 id="o03-同名天赋合并继承进度">O03 · 同名天赋合并继承进度</h3>
-<p><strong>实际规则</strong>：若目标当前处于[p0,p1)，下一阶段上界p2存在，则新点数=p1+(p2-p1)*(P-p0)/(p1-p0)；按素材(内部等级+1)重复，再加素材自身未跨星余点。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>新强化点 = 下一星门槛 +（再下一星门槛 − 下一星门槛）×（当前强化点 − 当前星门槛）÷（下一星门槛 − 当前星门槛）<br>有再下一星门槛时，按素材显示星级重复，最后加素材未跨星的剩余点数</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>若目标当前处于[p0,p1)，下一阶段上界p2存在，则新点数=p1+(p2-p1)*(P-p0)/(p1-p0)；<br>按素材(内部等级+1)重复，再加素材自身未跨星余点。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>新强化点 = 下一星门槛 +（再下一星门槛 − 下一星门槛）×（当前强化点 − 当前星门槛）÷（下一星门槛 − 当前星门槛）<br>有再下一星门槛时，按素材显示星级重复，最后加素材未跨星的剩余点数</p>
 <table>
 <thead>
 <tr>
@@ -250,7 +250,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw_publish/branch/Server/Social/logic/merge_talents.py#L29-L158">pw_publish/branch/Server/Social/logic/merge_talents.py · L29—158</a></li>
 </ul>
 <h3 id="o04-异名吞噬和跨星晶体费用">O04 · 异名吞噬和跨星晶体费用</h3>
-<p><strong>实际规则</strong>：素材强化点=(稀有度基础点+consumptionBonus.constant+round(目标常规cap*bonus.percent/100-1e-5))*素材星级；费用=sum(每个跨越星级的该稀有度价格)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>素材强化点 =（稀有度基础点 + 素材固定奖励 + 四舍五入〔目标常规强化点上限 × 奖励百分比 ÷ 100 − 0.00001〕）× 素材星级<br>费用 = 各跨越星级对应稀有度价格之和</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>素材强化点=(稀有度基础点+consumptionBonus.constant+round(目标常规cap*bonus.percent/100-1e-5))*素材星级；<br>费用=sum(每个跨越星级的该稀有度价格)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>素材强化点 =（稀有度基础点 + 素材固定奖励 + 四舍五入〔目标常规强化点上限 × 奖励百分比 ÷ 100 − 0.00001〕）× 素材星级<br>费用 = 各跨越星级对应稀有度价格之和</p>
 <table>
 <thead>
 <tr>
@@ -289,7 +289,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social.ROOT.xdb#L4490-L4499">Data/Social.ROOT.xdb · L4490—4499</a></li>
 </ul>
 <h3 id="o05-符文和催化剂升级概率">O05 · 符文和催化剂升级概率</h3>
-<p><strong>实际规则</strong>：成功概率阈值=所用符文probability+最多2个催化剂probability；随机1..100&lt;=阈值即升级到下一累计阈值。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>成功门槛 = 符文概率点数 + 至多两个催化剂的概率点数之和<br>1 到 100 的随机整数不大于门槛时，升级到下一累计强化点门槛</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>成功概率阈值=所用符文probability+最多2个催化剂probability；<br>随机1..100&lt;=阈值即升级到下一累计阈值。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>成功门槛 = 符文概率点数 + 至多两个催化剂的概率点数之和<br>1 到 100 的随机整数不大于门槛时，升级到下一累计强化点门槛</p>
 <table>
 <thead>
 <tr>
@@ -328,7 +328,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social/TalentUpgrade/TalUpg_Abrasive8.TALUGRDENT.xdb#L1-L12">Data/Social/TalentUpgrade/TalUpg_Abrasive8.TALUGRDENT.xdb · L1—12</a></li>
 </ul>
 <h3 id="o06-城堡连续生产与收取">O06 · 城堡连续生产与收取</h3>
-<p><strong>实际规则</strong>：无加成且等级固定：库存=min(建筑容量,旧暂存+时间秒/productionTimePeriod*每周期产量)；可收取量=min(floor(库存),仓库剩余空间)，无限仓库不取空间上限；残留=库存-收取；声望=fameToProduce*收取/建筑容量。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>库存 = 取较小值（建筑容量，旧暂存 + 经过秒数 ÷ 生产周期秒数 × 每周期产量）<br>可收取量 = 取较小值（库存向下取整，仓库剩余空间），无限仓库不受剩余空间限制<br>残留 = 库存 − 收取量<br>声望 = 建筑满额声望 × 收取量 ÷ 建筑容量</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>无加成且等级固定：库存=min(建筑容量,旧暂存+时间秒/productionTimePeriod*每周期产量)；<br>可收取量=min(floor(库存),仓库剩余空间)，无限仓库不取空间上限；<br>残留=库存-收取；<br>声望=fameToProduce*收取/建筑容量。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>库存 = 取较小值（建筑容量，旧暂存 + 经过秒数 ÷ 生产周期秒数 × 每周期产量）<br>可收取量 = 取较小值（库存向下取整，仓库剩余空间），无限仓库不受剩余空间限制<br>残留 = 库存 − 收取量<br>声望 = 建筑满额声望 × 收取量 ÷ 建筑容量</p>
 <table>
 <thead>
 <tr>
@@ -373,7 +373,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social/Constructions/Buildings/Production_Resource1.xdb#L3651-L3696">Data/Social/Constructions/Buildings/Production_Resource1.xdb · L3651—3696</a></li>
 </ul>
 <h3 id="o07-资源仓库与天赋库容量">O07 · 资源仓库与天赋库容量</h3>
-<p><strong>实际规则</strong>：有上限资源容量=基础限制+有效仓库建筑插值容量之和；天赋库=32+图书馆插值槽数之和；基础资源上限0表示无限。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>有限资源容量 = 基础容量 + 有效仓库建筑插值容量之和<br>天赋库容量 = 32 + 图书馆插值槽数之和<br>基础资源容量为 0 时表示无限</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>有上限资源容量=基础限制+有效仓库建筑插值容量之和；<br>天赋库=32+图书馆插值槽数之和；<br>基础资源上限0表示无限。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>有限资源容量 = 基础容量 + 有效仓库建筑插值容量之和<br>天赋库容量 = 32 + 图书馆插值槽数之和<br>基础资源容量为 0 时表示无限</p>
 <table>
 <thead>
 <tr>
@@ -424,7 +424,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social/Constructions/Buildings/Library.xdb#L4525-L4533">Data/Social/Constructions/Buildings/Library.xdb · L4525—4533</a></li>
 </ul>
 <h3 id="o08-英雄招募价格和门槛">O08 · 英雄招募价格和门槛</h3>
-<p><strong>实际规则</strong>：Silver=活动配置英雄银币价-floor(活动价*建筑折扣百分比/100+1e-5)；领主等级&gt;=对应性别LevelRequire-建筑门槛降低值。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>所需银币 = 活动配置银币价 − 向下取整（活动配置银币价 × 建筑折扣百分比 ÷ 100 + 0.00001）<br>招募门槛 = 该性别所需领主等级 − 建筑降低的等级数</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>Silver=活动配置英雄银币价-floor(活动价*建筑折扣百分比/100+1e-5)；<br>领主等级&gt;=对应性别LevelRequire-建筑门槛降低值。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>所需银币 = 活动配置银币价 − 向下取整（活动配置银币价 × 建筑折扣百分比 ÷ 100 + 0.00001）<br>招募门槛 = 该性别所需领主等级 − 建筑降低的等级数</p>
 <table>
 <thead>
 <tr>
@@ -467,7 +467,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw_publish/branch/Server/Social/modeldata/StaticData.py#L20-L26">pw_publish/branch/Server/Social/modeldata/StaticData.py · L20—26</a></li>
 </ul>
 <h3 id="o09-炼制天赋的晶体费用">O09 · 炼制天赋的晶体费用</h3>
-<p><strong>实际规则</strong>：批次数=ceil(请求天赋数/动态每晶体天赋数)；费用=每批价格*批次数（每批Perl强制1）。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>批次数 = 向上取整（请求天赋数 ÷ 每批天赋数）<br>费用 = 每批价格 × 批次数<br>每批珍珠设为 1</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>批次数=ceil(请求天赋数/动态每晶体天赋数)；<br>费用=每批价格*批次数（每批Perl强制1）。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>批次数 = 向上取整（请求天赋数 ÷ 每批天赋数）<br>费用 = 每批价格 × 批次数<br>每批珍珠设为 1</p>
 <table>
 <thead>
 <tr>
@@ -504,7 +504,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Social/Constructions/Buildings/Talent_Production.xdb#L77-L79">Data/Social/Constructions/Buildings/Talent_Production.xdb · L77—79</a></li>
 </ul>
 <h3 id="o10-建筑升级的逐级费用">O10 · 建筑升级的逐级费用</h3>
-<p><strong>实际规则</strong>：下一等级=当前内部等级+1；价格=Levels[下一等级].price；声望=同项fame。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>下一建筑内部等级 = 当前建筑内部等级 + 1<br>升级价格和声望分别读取下一等级条目的价格和声望</p>
+<p class="pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>下一等级=当前内部等级+1；<br>价格=Levels[下一等级].price；<br>声望=同项fame。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>下一建筑内部等级 = 当前建筑内部等级 + 1<br>升级价格和声望分别读取下一等级条目的价格和声望</p>
 <table>
 <thead>
 <tr>
