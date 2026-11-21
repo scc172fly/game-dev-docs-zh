@@ -550,3 +550,5 @@ body[data-page="rules/attributes-and-combat-formulas.html"] .article-body li {
 .pw-formula-number-tools select:focus-visible{outline:2px solid var(--gold,#e6bd74);outline-offset:-2px}
 .pw-formula-number-tools [role=status]{padding:0 8px;text-align:center;border-inline-start:1px solid var(--line,#435462);color:var(--muted,#aebfcc);font-variant-numeric:tabular-nums;white-space:nowrap}
 .pw-formula-use li[hidden],.pw-formula-use[hidden]{display:none}
+
+.formula-cell a.pw-scale-link,.pw-formula-entry a.pw-scale-link{color:var(--gold,#dbb879);text-decoration:underline;text-underline-offset:.18em}

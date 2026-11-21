@@ -92,6 +92,22 @@ ready(function(){
 });
 })();
 
+/* The same scale guide is linked from detail tables and index results. */
+window.PWAppendScaleLinks = function (container, text) {
+  const root = document.body.dataset.root || window.PW_V04_ROOT || '';
+  let end = 0;
+  for (const match of text.matchAll(/(?:属性|伤害|强化)标尺(?=\s*〔)/g)) {
+    container.append(text.slice(end, match.index));
+    const link = document.createElement('a');
+    link.className = 'pw-scale-link';
+    link.href = root + 'rules/formulas/c15-formula.html#equation';
+    link.textContent = match[0];
+    container.append(link);
+    end = match.index + match[0].length;
+  }
+  container.append(text.slice(end));
+};
+
 /* V0.7.2 - progressive on-page explanation of every existing formula parameter.
    This does not recompute game logic, alter formulas or alter numeric source data. */
 (function(){
@@ -125,8 +141,16 @@ function init(){
      if(anchors && t.includes('标尺〔')){
        const x1=+anchors[1],y1=+anchors[2],x2=+anchors[3],y2=+anchors[4];
        list.push('「标尺」是属性到效果数值的换算，不表示在两端数值之间随机取值。横向的两个锚点为：输入 '+num(x1)+' → 输出 '+num(y1)+'；输入 '+num(x2)+' → 输出 '+num(y2)+'。');
-       list.push('两锚点之间线性插值：输出 = '+num(y1)+' + (属性−'+num(x1)+') × ('+num(y2)+'−'+num(y1)+') / ('+num(x2)+'−'+num(x1)+')。');
-       if(x2!==x1){const sample=(x1<=100 && x2>=100)?100:(x1+x2)/2;const value=y1+(sample-x1)*(y2-y1)/(x2-x1);list.push('例如属性取 '+num(sample)+'，直接代入得到约 '+num(value)+'；是否取整、越过端点后怎样处理，要按此技能引用的原版缩放规则确定。');}
+       const input=t.match(/(?:属性|伤害)标尺〔([^；;〔〕]+)[；;]/)?.[1]||'当前属性';
+       const scale=(x)=>'max('+num(y1)+' + ('+x+' − '+num(x1)+') × ('+num(y2)+' − '+num(y1)+') ÷ ('+num(x2)+' − '+num(x1)+'), '+num(y1)+')';
+       list.push('代入参考点：标尺值 = '+scale(input)+'。max 表示取两项中的较大值。');
+       if(x2!==x1){
+         const sample=(x1<=100 && x2>=100)?100:(x1+x2)/2;
+         const value=Math.max(y1+(sample-x1)*(y2-y1)/(x2-x1),y1);
+         const direct=/^(?:属性|伤害)标尺〔[^〔〕]+〕(?:[，,]\s*不取整)?$/.test(t);
+         const rounding=direct&&t.endsWith('不取整')?'。保留小数。':direct?'；默认取整后为 '+num(Math.sign(value)*Math.round(Math.abs(value)))+'。':'。这是标尺子式的值，后续取整和其他条件按原式计算。';
+         list.push('代入算例：'+input+'取 '+num(sample)+'，'+scale(num(sample))+' ≈ '+num(value)+rounding);
+       }
      } else if(linear){
        const a=+linear[1],b=+linear[2];
        list.push('这是按天赋强化等级逐级增长的线性式：「基础数值 + 每级增量 × (强化等级−1)」。强化等级从 1 开始，因此 1 级没有额外增量。');
@@ -152,6 +176,18 @@ function init(){
    return list;
  }
  cells.forEach(function(cell){
+   const chinese=cell.querySelector('.pw-formula-chinese');
+   if(chinese){
+     const walker=document.createTreeWalker(chinese,NodeFilter.SHOW_TEXT);
+     const nodes=[];
+     while(walker.nextNode())nodes.push(walker.currentNode);
+     nodes.forEach(node=>{
+       if(node.parentElement.closest('a')||!/(?:属性|伤害|强化)标尺\s*〔/.test(node.data))return;
+       const content=document.createDocumentFragment();
+       window.PWAppendScaleLinks(content,node.data);
+       node.replaceWith(content);
+     });
+   }
    if(cell.querySelector('.pw-math-detail'))return;
    const row=cell.closest('tr');if(!row)return;
    const label=(row.cells[0]?.childNodes[0]?.textContent||'此参数').trim();

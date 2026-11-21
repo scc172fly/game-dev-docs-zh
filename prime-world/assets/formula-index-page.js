@@ -61,7 +61,8 @@
       meta.textContent = ['Nival 原版', entry.useLabel, names[entry.type], entry.count + ' 处引用'].join(' · ');
       header.append(link, meta);
       const equation = document.createElement('code');
-      equation.textContent = entry.f;
+      if (window.PWAppendScaleLinks) window.PWAppendScaleLinks(equation, entry.f);
+      else equation.textContent = entry.f;
       const result = document.createElement('p');
       result.textContent = entry.result
         ? '该页面已有结果／演算：' + entry.result

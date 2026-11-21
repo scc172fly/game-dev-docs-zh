@@ -67,13 +67,23 @@
   });
   var namedTerms=Array.from(effectTerms.keys()).sort(function(a,b){return b.length-a.length;});
   var referencedSkills=new Set(["一切为了前线","一步不退","不倦猎手","不公平决斗","不可阻挡的野兽","不屈存在","不屈意志","不羁狂怒","义人奖赏","乌鸦邪眼","亡兽饥渴","仁慈之举","以太幽灵","以太形态","以太护盾","以太领主","以眼还眼","仪式打击","仪式灭绝","优势","传承护符","传送门","伤口愈合","似曾相识","信仰跃步","停滞","催眠挑衅","先祖之力","先祖之怒","先祖庇护","免疫削弱","共振","兽化体质","内在支柱","冥界寒意","冲击波","冲锋尖端","决心冲动","冷静算计","冻伤","凛冽寒霜","凶猛擒拿","击溃","切割飞盘","创伤灾厄","利刃浪潮","刽子手判决","刽子手的不屈","刽子手的无情","前线战友","剧毒之握","剧毒冲刺","剧毒孢子","力量平衡","势不可挡","勇猛冲击","厄运","压倒性存在","压制猛攻","原始狂怒","双手投掷","变形术","召唤恶魔","可靠护甲","合一","同一信仰","同一身躯","同血之盟","同袍战友","吞噬","命运呐喊","喂养黑豹","噩梦时刻","团队协作","地震打击","坚守秘法","坚定凯旋","坚定步伐","坚硬岩躯","处决","复仇","复仇再战","复仇渴望","夜行猛兽","大地震颤","大胆无畏","天然能量","天穹之怒","天穹裁决","头狼","奥术之网","女巫披风","奶昔","宁静","守护者誓言","安全着陆","安宁","密集射击","寒冰碎片","寒冰锁链","寒冷之力","寒颤","尖锐骨刺","尸毒","山崩","岩块形态","巨人步伐","平衡偏移","并发症","并肩作战","幻象庇护","幽灵拥抱","弩箭射击","弱者之殇","弹射","彩虹庇护","彩虹跃迁","彩虹飞行","心智游戏","心脏骤停","忍痛","快速翻滚","怒意","怒意散发","思维扭曲","怪物饥渴","恐怖印象","恐怖死亡","恐惧尾迹","恐惧诅咒","恶根","恶魔之力","恶魔形态","恶魔烈焰","惊喜盒中的猫","惊骇嚎叫","惩戒打击","惩戒者之路","愤怒之拳","战争碎片","战备","战意","战斗号令","战斗恍惚","战斗热忱","战斗热血","战斗狂怒","战斗狂热","战斗问候","战斗阵型","战斗陶醉","战术机动","打破宁静","执念","抗命","折服","抵抗无用","挑战","挑衅灾厄","振翼","捕猎者","捕食天性","捕食者","摄魂乐章","放肆无忌","放血","新弹簧","无尽储备","无尽噩梦","无尽好奇","无形之躯","无形追猎者","无情","无情之毒","无情射击","无瑕之盾","无畏旅者","无阻冲锋","昏厥","易位","星界扩张","星门","暗夜护甲","暗黑邪眼","暴走","暴雪风暴","暴风雪","最后一滴","最后堡垒","最终凯旋","有力论据","有恃无恐","机会边缘","机关剑刃","束缚之源","束缚气场","果决突袭","果断突刺","枯竭","树木滋养","森林象征","武器大师","死灵秘术","殉道者奖赏","毁灭威能","毒性束缚","毒性释放","毒素补充","毒蘑菇","永不满足的渴望","永冻","永恒冻土","永恒服役","沉默誓言","沙皇炸弹","沸腾之血","洞穿凝视","活力十足","活埋","活性护皮","活石","浓缩以太","深切伤口","深呼吸","清算时刻","游击射程路线","火焰波浪","火箭打击","火舌","灵魂一体","灵魂图腾","灵魂陷阱","灼烧","灾厄聚集","炼狱","烈焰守卫","烈焰打击","燃烧","爆心","爆炸幻象","爆烈混合物","爆破狂热","特制配方","狂乱","狂怒投矛","狂暴","狂暴旋风","狂热","狂野之火","狼之呼唤","狼兄弟","狼群守护","猎手警觉","猛烈喷涌","猛烈火力","猫捉老鼠","环形防御","瓦尔普吉斯之夜","生命之环","生命之路","生命光辉","电击","电能释放","疫风","疯狂火花","疾风连击","痉挛","痛苦试炼","瘟疫脓包","瘴气","白骨陷阱","盛大狩猎","目光接触","眩晕投球","瞄准射击","瞬间感知","瞬间起飞","碎骨声","碎骨爆裂","神圣复仇","神圣战旗","穿刺冰片","穿甲弹","突破","突袭","窒息","第二口气","粉碎重击","粒子加速","精巧心智","精疲力竭","纯洁之盾","统领重击","缠绕闪现","缴械技巧","群体催眠","群狼之力","翻腾","耀目之言","聚焦烈焰","聚能弹","肾上腺爆发","胜利之星","能量共振","能量团","能量屏障","能量释放","脆弱诅咒","致命冲刺","致命山崩","致命撕咬","致命毒药","致命触碰","良机","茧","蔓生","蔽身黑雾","蛇之坚忍","蛇之柔韧","蛇毒","血色玫瑰","血迹","袖中王牌","解放者","誓约","诅咒恐惧","诡异呼唤","诡诈打击","诡诈火焰","谦卑","贯穿之矛","贯穿长矛","贴身护卫","超新星","超机动性","超空间","越界","轰炸","输血","边境守卫","迅猛连击","过剩能量","过载","进攻姿态","连续重拳","连锁闪电","迷醉之歌","迷魅","追猎","速度马蹄铁","速效毒药","遁移","遏制打击","遗忘棒","邪树","酸液喷发","重复发射","重弩","野兽召唤师","野兽嗅觉","野兽扑击","野兽皮毛","野兽诅咒","金字塔之谜","金字塔谜题","钢铁之拳","钢铁之握","钢铁皮毛","钢铁纪律","钢铁统御","钻地突袭","铁腿","锋利矛尖","锯齿弩矢","长寿秘诀","长矛诅咒","闪电反应","闪电速度","防御伪装","防御甲片","防护力场","防护长袍","附魔战甲","隐秘魔法","难耐酷热","雷霆一击","震慑打击","震耳轰鸣","霜寒触碰","静电充能","预兆","预言之焰","风暴狂怒","飞吻送别","飞掷重物","飞行狂喜","飞身重击","饥渴之钢","饥饿诅咒","饥饿鼠群","骚乱","魅惑丰饶","魅惑旋律","魔宠","魔法加速","魔法陷阱","魔笛之力","魔笛之召","魔笛大师","鲜奶油","鲜血仪式","鲜血斩痕","鸦群","鹰眼","鹰隼目光","黑色旋风","鼓舞颂歌","鼠疫","鼠群侵袭"]);
-  var effectTokens=new RegExp(/〔[^〕]+〕|激活\s*\d+\s*[项件]|《[^》]+》|“[^”]+”|[+−-]?\d+(?:\.\d+)?(?:\s*(?:个百分点|秒|%|％|Prime|个|份|次|层))?/.source+'|'+namedTerms.join('|'),'g');
-  function appendHighlightedText(result,text){
+  var effectTokens=new RegExp(/〔[^〕]+〕|激活\s*\d+\s*[项件]|《[^》]+》|“[^”]+”|「[^」]+」|『[^』]+』|[+−-]?\d+(?:\.\d+)?(?:\s*(?:个百分点|秒|%|％|Prime|个|份|次|层))?/.source+'|'+namedTerms.join('|'),'g');
+  function appendHighlightedText(result,text,skillRefs){
     var end=0;
     for(var match of text.matchAll(effectTokens)){
       result.append(text.slice(end,match.index));
       var value=match[0];
-      var quotedName=/^[“《]/.test(value)?value.slice(1,-1):'';
+      var quotedName=/^[“《「『]/.test(value)?value.slice(1,-1):'';
+      var skill=skillRefs&&skillRefs[quotedName];
+      if(skill){
+        var link=el('a','pw-inline-talent');
+        link.href=ROOT+skill[0];
+        var icon=el('img');icon.src=ROOT+skill[1];icon.alt='';icon.width=22;icon.height=22;
+        link.append(icon,'【'+quotedName+'】');
+        result.append(link);
+        end=match.index+value.length;
+        continue;
+      }
       if(referencedSkills.has(quotedName)){
         result.append(el('span','pw-tooltip-skill-ref','【'+quotedName+'】'));
         end=match.index+value.length;
@@ -85,9 +95,9 @@
     }
     result.append(text.slice(end));
   }
-  function effectText(text){
+  function effectText(text,skillRefs){
     var result=el('p','pw-tooltip-effect');
-    appendHighlightedText(result,text);
+    appendHighlightedText(result,text,skillRefs);
     return result;
   }
   document.querySelectorAll('.skill-effect').forEach(function(effect){
@@ -121,7 +131,7 @@
     if(localNo||record.resourceType){var meta=[];if(localNo)meta.push('本站目录号：'+localNo[1]);if(record.resourceType)meta.push('XDB 类型：'+record.resourceType);title.appendChild(el('div','pw-tooltip-catalog',meta.join(' · ')));}
     head.appendChild(title);tip.appendChild(head);
     var body=el('div','pw-tooltip-body');
-    if(record.effect||record.summary){var sec=el('div','pw-tooltip-section');sec.appendChild(el('span','pw-tooltip-label',record.kind==='hero'?'英雄机制':'技能效果'));sec.appendChild(effectText(record.effect||record.summary));body.appendChild(sec);}
+    if(record.effect||record.summary){var sec=el('div','pw-tooltip-section');sec.appendChild(el('span','pw-tooltip-label',record.kind==='hero'?'英雄机制':'技能效果'));sec.appendChild(effectText(record.effect||record.summary,record.skillRefs));body.appendChild(sec);}
     if(record.tags&&record.tags.length){var tags=el('div','pw-tooltip-tags');record.tags.slice(0,8).forEach(function(t){addTag(tags,t);});body.appendChild(tags);}
     if(record.metrics&&record.metrics.length){var grid=el('div','pw-tooltip-metrics');record.metrics.slice(0,6).forEach(function(m){var box=el('div','pw-tooltip-metric');var parts=m.match(/^(.+?)\s+((?:\d|\u89c1|\u65e0|\u2014)[\s\S]*)$/);box.appendChild(el('span','',parts?parts[1]:'参数'));box.appendChild(el('b','',parts?parts[2]:m));grid.appendChild(box);});body.appendChild(grid);}
     if(record.components&&record.components.length){var sec2=el('div','pw-tooltip-section');sec2.appendChild(el('span','pw-tooltip-label','套装部件'));var list=el('ul','pw-tooltip-components');record.components.slice(0,6).forEach(function(c){list.appendChild(el('li','',c));});sec2.appendChild(list);body.appendChild(sec2);}

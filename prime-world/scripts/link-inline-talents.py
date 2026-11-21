@@ -3,6 +3,7 @@
 Run from the site root: python scripts/link-inline-talents.py
 """
 import csv
+import json
 import re
 from collections import Counter, defaultdict
 from html import escape, unescape
@@ -44,7 +45,7 @@ def linked(talent_id, text, href=None):
     return (
         f'<a class="pw-inline-talent" href="{destination}" '
         f'data-pw-tooltip="talents/{talent_id}-talent.html">'
-        f'<img src="{icons[talent_id]}" width="22" height="22" alt="" loading="lazy">{text}</a>'
+        f'<img src="{icons[talent_id]}" width="22" height="22" alt="" loading="lazy">【{text.removeprefix("【").removesuffix("】")}】</a>'
     )
 
 def decorate(page, current, owners):
@@ -104,7 +105,12 @@ def decorate(page, current, owners):
         return match[0].replace(body, updated, 1) if body else match[0]
 
     original = article[0]
-    updated = prose.sub(replace_prose, original)
+    bracketed = re.sub(
+        r'(<a class="pw-inline-talent"[^>]+><img[^>]+>)([^<]+)(</a>)',
+        lambda m: m[1] + "【" + m[2].removeprefix("【").removesuffix("】") + "】" + m[3],
+        original,
+    )
+    updated = prose.sub(replace_prose, bracketed)
     if updated != original:
         page.write_bytes((source[:article.start()] + updated + source[article.end():]).encode("utf-8"))
         count["pages"] += 1
@@ -115,5 +121,50 @@ for page in sorted(Path("heroes").glob("*.html")):
     decorate(page, None, owners)
 for i in sorted(catalog):
     decorate(Path(f"talents/{i}-talent.html"), i, {owner(i)} - {""})
+
+# Tooltip renderers use the same catalog and first prefer the owning hero.
+shards = {}
+for shard in Path("assets/tooltip").glob("*.js"):
+    raw = read(shard)
+    wrapper = re.fullmatch(r"Object\.assign\(window\.PW_TOOLTIP_ITEMS,(\{.*\})\);\s*", raw, re.S)
+    if wrapper:
+        shards[shard] = (raw, json.loads(wrapper[1]))
+
+for shard, (raw, records) in shards.items():
+    if not shard.name.startswith(("heroes-", "talents-")):
+        continue
+    changed = False
+    for key, record in records.items():
+        path = Path(key)
+        if key.startswith("talents/") and path.name[:4] in catalog:
+            owners = {owner(path.name[:4])} - {""}
+        elif key.startswith("heroes/") and path.is_file():
+            owners = {
+                owner(i) for i in re.findall(r'<section class="skill-card".*?data-pw-tooltip="talents/(\d{4})-talent\.html"', read(path), re.S)
+                if i in catalog and owner(i)
+            }
+        else:
+            continue
+        refs = {}
+        for match in re.finditer(quoted, record.get("effect") or record.get("summary") or ""):
+            title = next(g for g in match.groups() if g is not None)
+            candidates = by_name.get(title, ())
+            matching = [i for i in candidates if owner(i) in owners] or candidates
+            if len(matching) == 1 and matching[0] in icons:
+                i = matching[0]
+                href = f"talents/{i}-talent.html"
+                if href != key:
+                    refs[title] = [href, icons[i].removeprefix("../")]
+        if record.get("skillRefs", {}) != refs:
+            changed = True
+            if refs:
+                record["skillRefs"] = refs
+            else:
+                record.pop("skillRefs", None)
+    if changed:
+        ending = "\r\n" if raw.endswith("\r\n") else "\n" if raw.endswith("\n") else ""
+        data = json.dumps(records, ensure_ascii=False, separators=(",", ":"))
+        shard.write_bytes(f"Object.assign(window.PW_TOOLTIP_ITEMS,{data});{ending}".encode("utf-8"))
+        count["shards"] += 1
 
 print(dict(count))

@@ -88,8 +88,11 @@ html[data-theme="light"] .pw-tooltip-utility,html[data-theme="light"] .pw-toolti
 
 .skill-effect .parameter-ref,.skill-metrics b,.skill-card .values-cell b{font-weight:400;font-variant-numeric:tabular-nums}
 
-.pw-tooltip-skill-ref{color:#8cddd8;font-weight:400}
-html[data-theme="light"] .pw-tooltip-skill-ref{color:#126868}
+:is(.pw-tooltip-skill-ref,a.pw-inline-talent){color:#8cddd8;font-weight:400}
+html[data-theme="light"] :is(.pw-tooltip-skill-ref,.pw-inline-talent){color:#126868}
 
-.pw-inline-talent{display:inline-flex;align-items:center;gap:.35rem;vertical-align:middle;white-space:nowrap;color:var(--gold,#e5ba74)}
+.pw-inline-talent{display:inline-flex;align-items:center;gap:.35rem;vertical-align:middle;white-space:nowrap}
 .pw-inline-talent img{width:22px;height:22px;margin:0;flex:none;object-fit:cover;border:1px solid var(--line,#40505c);border-radius:3px}
+
+a.pw-inline-talent:is(:hover,:focus-visible){text-decoration:underline;color:#8cddd8}
+html[data-theme="light"] a.pw-inline-talent:is(:hover,:focus-visible){color:#126868}
