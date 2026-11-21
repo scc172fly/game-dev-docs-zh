@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="dark light" name="color-scheme"/><meta content="经典边境之地的共用 PvP 战场公式、算例、实时演示与源码覆盖清单。" name="description"/><title>PvP 战场公式｜Prime World</title><link href="../assets/favicon.png" rel="icon"/><link href="../assets/atlas.css" rel="stylesheet"/><link href="../assets/site-v04.css" rel="stylesheet"/><link href="../assets/site-v05.css" rel="stylesheet"/><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link href="../assets/site-v06.css" rel="stylesheet"/><link data-version="V0.8.3" href="../assets/site-v08.css" rel="stylesheet"/><link rel="stylesheet" href="../assets/pvp-formulas.css"></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a aria-label="Prime World 首页" class="pw-brand" href="../index.html"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS</small></span></a><nav aria-label="主导航" class="pw-primary-nav" id="pw-primary-nav"><a class="pw-nav-link" href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link" href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link" href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link" href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link" href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link" href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link is-active" href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link" href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input aria-label="搜索全站" autocomplete="off" id="pw-search-input" placeholder="英雄 / 玩法 / 数值" type="search"/><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select aria-label="选择显示主题" class="pw-theme-select"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button aria-expanded="false" aria-label="展开主菜单" class="pw-mobile-toggle" type="button"><span>☰</span></button></div></div></header>
+<main class="a5-container pw-pvp-formulas">
+<nav class="a5-crumbs" aria-label="页面层级"><a href="../index.html">首页</a><span>›</span><a href="../match-rules.html#classic-pvp">PvP 实战规则</a><span>›</span><span>PvP 战场公式</span></nav>
+<section class="a5-hero"><div class="a5-hero-copy"><span class="a5-overline">经典边境之地 · Nival 原版</span><h1>PvP 战场公式</h1><p>按结算用途查原式、中文公式和算例。能改参数的条目可直接进入公式实验室。</p></div></section>
+<nav class="v08-actions" aria-label="战场公式分类">
+<a href="#growth">英雄属性与局内成长</a>
+<a href="#combat">攻击与伤害结算</a>
+<a href="#units">防御塔、兵线与野区</a>
+<a href="#map">地图、道具与时序</a>
+<a href="#economy">Prime、复活与胜负</a>
+<a href="#hero-formulas">英雄与天赋</a><a href="#coverage">覆盖清单</a></nav>
+<section class="a5-section" id="growth"><div class="a5-section-head"><h2>英雄属性与局内成长</h2></div><div class="pw-pvp-formula-grid">
+<article class="pw-pvp-formula" id="formula-stat">
+<h3>属性修饰与钳制</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>clamp((B × ∏M + ΣA) × ∏Mtop + ΣAtop, L, U)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>先乘普通倍率并加普通修正，再算顶层倍率和增量，最后限制上下界。</p>
+<p class="pw-pvp-example"><strong>算例</strong> (100 × 1.2 × 1.1 + 20) × 0.8 + 5 = 126.6。</p>
+<div class="v08-actions"><a href="../rules/formulas/c01-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-regen">
+<h3>生命与能量再生</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>G = A + P × Max ÷ 100</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>每秒再生等于固定再生加上对应资源上限乘百分比。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 3.3 + 0.15% × 1,000 = 每秒 4.8。</p>
+<div class="v08-actions"><a href="../rules/formulas/c03-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-limits">
+<h3>资源上限变化</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>V′ = max(0, clamp(MaxOld &gt; ε ? V ÷ MaxOld : 1, 0, 1) × MaxNew)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>旧上限大于容差时按旧比例换算，再按新上限算本步再生。旧上限接近零时以满值比例换算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 600／1,000 先换为 900／1,500，再回 3，结果 903／1,500。</p>
+<div class="v08-actions"><a href="../rules/formulas/c03-formula.html#resource-limit-change">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-tiers">
+<h3>成长点与天赋层</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>rowIndex = floor(devPoints ÷ 4)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>天赋层索引从 0 开始，最高为第六层。成长点与局内英雄等级是独立字段。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 成长点从 3 到 4，开放第 2 层。</p>
+<div class="v08-actions"><a href="../rules/formulas/t01-formula.html">完整算例与源码依据</a><a href="../heroes/01-alchemist.html#talent-simulator">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-talent-cost">
+<h3>天赋点亮费用</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>cost = naftaCost ≥ 0 ? naftaCost : defaultCost[minLevel]</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>有显式费用时使用配置值，否则按最低天赋层读取默认费用。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 显式费用 300，余额 400，点亮后余 100。</p>
+<div class="v08-actions"><a href="../rules/formulas/t02-formula.html">完整算例与源码依据</a><a href="../heroes/01-alchemist.html#talent-simulator">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-force">
+<h3>装备战力与成长预算</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Extra = 252 + max(Force − 100, 0) × 3</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>先按已装备天赋预算计算战力，再换算全套额外成长预算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 战力 160.896 时，额外预算为 434.688。</p>
+<div class="v08-actions"><a href="../rules/formulas/t04-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-growth-step">
+<h3>点亮后的属性成长</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>f = rowGrowthPct ÷ ΣrowDevPoints ÷ 100</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>每行成长预算先折到单成长点，再按实际增加的局内等级、属性和战力条件结算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 原版算例计入额外预算后，核心生命增 45.5616。</p>
+<div class="v08-actions"><a href="../rules/formulas/t05-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-scale">
+<h3>技能标尺与天赋强化</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>max(A + (x − L) × (B − A) ÷ (R − L), A); refine = A + d × (star − 1)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>按技能配置读属性标尺，默认取整。强化按每级增量累计。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 标尺端点 100／300、输入在中点时为 200。初值 100 且每星加 12，四星为 136。</p>
+<div class="v08-actions"><a href="../rules/formulas/c15-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-talent-budget">
+<h3>天赋预算</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Budget = 480 × (1 + rowPct ÷ 100) × rarityPct ÷ 100 × (1 + (refineRate − 1) × Δstar) ÷ 220 × 1.1</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>显式预算为负时，用层级、稀有度和强化折算预算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 核验卡的首层一星职业天赋算例得到 22.56。</p>
+<div class="v08-actions"><a href="../rules/formulas/t03-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-cost-force">
+<h3>高战力资源消耗补偿</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>M = Core ÷ (Core − Shift)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>从战力和已取得的成长预算计算资源补偿，再修正技能资源消耗。分母无效时回退为 1。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 核心能量 1,000、补偿量 15，费用倍率约为 1.0152。</p>
+<div class="v08-actions"><a href="../rules/formulas/t06-formula.html">完整算例与源码依据</a></div>
+</article>
+</div></section>
+<section class="a5-section" id="combat"><div class="a5-section-head"><h2>攻击与伤害结算</h2></div><div class="pw-pvp-formula-grid">
+<article class="pw-pvp-formula" id="formula-raw">
+<h3>英雄普攻原始伤害</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Dmin/max = BaseAttack × (Intellect or Strength) × (0.9 or 1.1) + DamageSummand</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>适用引用公共普攻伤害施加器的英雄，读取原生攻击属性，再在整数端点间抽样。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 基础系数 1、力量 100、无额外加值，区间为 90～110。</p>
+<div class="v08-actions"><a href="../rules/formulas/c04-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-speed">
+<h3>攻速与普攻间隔</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>APS = max(Explicit &gt; 0 ? Explicit : min(AS × .00365 + .49, 2), .01); T = 1 ÷ APS</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>常规攻速最多 2 次／秒。正的显式攻速可越过 2 次上限。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 攻速 200，频率 1.22 次／秒，间隔约 0.820 秒。</p>
+<div class="v08-actions"><a href="../rules/formulas/c05-formula.html">完整算例与源码依据</a><a href="formula-lab.html#attack-speed">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-windup">
+<h3>普攻前摇与真正出手</h3>
+<div class="pw-formula-source"><strong>原式</strong><br>
+<code>t_raw = doFire.virtPar ÷ attackNode.GetSpeed()</code><br>
+<code>t_logic = int(t_raw ÷ step + 0.5) × step</code><br>
+<code>attackDelay ← attackDelay − dt; dispatch.Start() when attackDelay &lt; EPS_VALUE</code><br>
+<code>Cooldown = 1 ÷ APS</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+原始前摇 = 普攻动画出手标记位置 ÷ 动画节点速度。逻辑前摇 = 把原始前摇取到最近的模拟步。每次更新扣除本步用时，剩余小于浮点容差时检查目标并启动投递。相邻两次起手的基础冷却另算，为每秒攻击次数的倒数。</p>
+<p>同一动画节点与速度下，提高攻速点数会缩短普攻冷却，<strong>该路径没有再用攻速去除前摇</strong>。引擎起手时保存这发的逻辑前摇，倒计时期间不重读标记或攻速。普攻找 <code>attack</code> 节点的 <code>doFire</code> 标记，切换节点会找带该标记的子节点。缺少可用标记等情况返回 0，零前摇在起手时尝试直接出手。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 取原始前摇 0.34 秒、固定步长 0.10 秒。向最近模拟步取整得到 0.30 秒，第 3 次倒计时更新尝试出手。攻速点数从 100 提到 200 时，无显式覆盖的频率从 0.855 升到 1.22 次／秒，冷却约从 1.170 缩到 0.820 秒。同一个动画标记下，两次的逻辑前摇仍是 0.30 秒。</p>
+<p>真正出手是 <code>dispatch.Start()</code>。若到时目标已失效，或已同阵营且该次攻击不允许打友军，这发不会启动。前摇内若普攻实例被取消，未启动的投递随之取消。启动后投递已脱离该实例，飞行与命中再按各自规则处理。</p>
+<details><summary>原版配置与结算源码</summary><p><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L44">攻速派生公式</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.ANGR.xdb#L882-L892">原始动画标记示例</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L889-L988">读取动画节点与标记</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityData.cpp#L673-L683">逻辑步长取整</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseAttackData.cpp#L20-L85">建立投递、更新与出手</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseAttackData.cpp#L121-L139">起手时启动冷却</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAbilityInstance.cpp#L352-L370">启动后脱离实例</a></p></details>
+</article>
+<article class="pw-pvp-formula" id="formula-hit">
+<h3>命中与闪避</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>P(hit) = (1 − m) × (1 − e)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>敌对可闪避普攻先分别把未命中与闪避阈值取整，再各抽一次。两次都通过才命中。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 未命中 20%、闪避 25%，最终命中 60%。</p>
+<div class="v08-actions"><a href="../rules/formulas/c11-formula.html">完整算例与源码依据</a><a href="formula-lab.html#hit-evasion">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-crit">
+<h3>暴击</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>C = clamp(90.9 × Dex′ ÷ (Dex′ + 128) − 28 + Bonus, 0, 100)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>灵巧大于 500 的部分按 75% 计。允许暴击且抽中时，先乘暴击倍率再进入防御。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 灵巧 100、额外暴击 10 个百分点时约 21.87%。100 伤害二倍暴击为 200。</p>
+<div class="v08-actions"><a href="../rules/formulas/c06-formula.html">完整算例与源码依据</a><a href="formula-lab.html#critical">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-defence">
+<h3>坚韧与意志双防</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>B = .00536 × (S + .3W) − .2; M = .00536 × (W + .3S) − .2</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>物理以坚韧为主，能量以意志为主。再按对应通道处理穿透和限幅。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 坚韧 100、意志 50，物理与能量基础防御分别为 41.64%、22.88%。</p>
+<div class="v08-actions"><a href="../rules/formulas/c07-formula.html">完整算例与源码依据</a><a href="formula-lab.html#damage-reduction">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-penetration">
+<h3>攻速和灵巧穿透</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>P = max(P_AS + P_Dex, 0)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>分别按攻速和灵巧换算穿透，相加后最低为 0。总穿透先从防御中扣除。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 攻速、灵巧各 100 时，总穿透约为 34.57 个百分点。</p>
+<div class="v08-actions"><a href="../rules/formulas/c08-formula.html">完整算例与源码依据</a><a href="formula-lab.html#penetration">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-multiplier">
+<h3>伤害乘数与普通减免</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>M = 1 − q × clamp(x, −.75, .75); D′ = max(D, 0) × (1 − Red ÷ 100) × M</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>防御扣穿透后先限幅。普攻的 q 为 1，技能负防御分支的 q 为 0.75。再算对应类型减伤。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 100 原始伤害、10% 类型减伤、伤害乘数 0.8516，护盾前是 76.644。</p>
+<div class="v08-actions"><a href="../rules/formulas/c09-formula.html">伤害乘数与源码</a><a href="../rules/formulas/c10-formula.html">类型减免与算例</a><a href="formula-lab.html#nival">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-shield">
+<h3>护盾、纯粹伤害与扣血</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>A = min(D, S); HP_loss = min(max(D − A, 0), HP)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>对当前有容量的单个标准护盾，先处理护盾再扣血。纯粹伤害仍可能入盾，忽略防御时标准护盾跳过。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 76.644 伤害遇到容量 30 的盾，生命足够时扣 46.644。</p>
+<div class="v08-actions"><a href="../rules/formulas/c12-formula.html">完整算例与源码依据</a><a href="formula-lab.html#shield-absorb">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-damage-listeners">
+<h3>多护盾与伤害改写的结算顺序</h3>
+<div class="pw-formula-source"><strong>原式</strong><br>
+<code>S′ = max(S − D, 0); D′ = max(D − S, 0)</code>（有正容量且未忽略防御的标准护盾）<br>
+<code>D′ = max(0, add + D × mul)</code>（通过触发条件的伤害改写）<br>
+<code>HP_loss = min(max(damage2Deal, 0), HP)</code>（常规战场）
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+每层护盾用当前事件伤害抵扣容量，把剩下的伤害写回同一事件。每次伤害改写以当时的事件伤害乘倍率再加固定修正，结果至少为 0。所有监听跑完后，把最终伤害限制到非负且不超过目标当前生命。</p>
+<p>原版先算普通减伤，再发出 <code>PFBaseUnitDamageEvent</code>。标准吸收盾属于 <code>LISTENER_SHIELD</code>，排在默认类型的 <code>TriggerApplicator</code> 前。新盾登记时按当时的剩余时长比较，较长者优先，同值时新盾排在已登记的同值盾之后。每次伤害沿已登记顺序遍历，时长变化本身不会在本次伤害前重排。多个默认类型的改写监听按登记顺序执行，且要各自通过来源、类型等过滤。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 用教学参数演算原版机制。减免后进入事件的伤害为 100，两个可并存的标准盾容量分别为 35 和 25，登记时的剩余时长分别为 6 秒和 3 秒。另有两个符合条件的默认监听，先登记的乘 0.5，后登记的加 10。</p>
+<ol>
+<li>长时盾先吸收 35，事件剩 65。短时盾再吸收 25，事件剩 40，两盾容量归零。</li>
+<li>第一个改写把 40 变成 20，第二个把 20 变成 30。</li>
+<li>目标有 25 生命时，实际扣 <strong>25</strong>。生命足够时扣 <strong>30</strong>。若改写登记顺序交换，先加 10 再乘 0.5，最后事件伤害是 <strong>25</strong>。</li>
+</ol>
+<p>忽略防御时，标准盾跳过。两个盾能否同时存在，还要先看效果自己的叠加规则。反伤、转移或另外发出的投递按各自事件继续结算。</p>
+<details><summary>原版配置与结算源码</summary><p><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Bard/status_A3_Shield.APLR.xdb">标准护盾配置示例</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Items/Talents/Class/Angel/status_A2_ExpBuff.APLR.xdb#L127-L159">伤害改写配置示例</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnitEvent.h#L178-L198">监听类型与默认优先级</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTriggerApplicator.h#L82-L104">护盾时长优先级</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnitAppl.cpp#L330-L412">监听登记与遍历</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTriggerApplicator.cpp#L277-L305">单盾读写伤害</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFTriggerApplicator.cpp#L512-L587">伤害改写与过滤</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2215-L2244">防御、事件与最终扣血上限</a></p></details>
+</article>
+<article class="pw-pvp-formula" id="formula-mana">
+<h3>Mana 灼烧</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>E_burn = min(E, D_mana); HP_loss = 0</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>灼烧量在暴击判定后进入扣能量分支，最多扣完当前能量。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 100 灼烧命中剩余 40 能量的目标，实际灼烧 40。</p>
+<div class="v08-actions"><a href="../rules/formulas/c10-formula.html#mana-burn-formula">完整算例与源码依据</a><a href="formula-lab.html#mana-burn">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-heal">
+<h3>治疗、溢出与吸取</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>H = D × (1 + Scale) + Bias; ΔHP = min(MaxHP − HP, H)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>先做治疗修正，再受缺血量限制。吸取先按实际伤害和资源计算，之后再调用恢复。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 基础治疗 250、倍率修正 20%、固定加成 10，缺血 300 时实际回 300。</p>
+<div class="v08-actions"><a href="../rules/formulas/c13-formula.html">完整算例与源码依据</a><a href="formula-lab.html#heal">实时演示</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-drain">
+<h3>生命与能量吸取</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>L = min(D_actual, LifeDrain, HP); E = min(D_actual, EnergyDrain, targetEnergy)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>吸取标志分别控制两条分支，建筑排除，攻击者的实际恢复另走恢复流程。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 实际伤害 80、能量吸取值 12、目标只剩 5 能量，实际烧 5。</p>
+<div class="v08-actions"><a href="../rules/formulas/c14-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-move">
+<h3>移动与减速</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Speed = 30 × M ÷ (M + 172) × v</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>普通减速先改移动属性，再做非线性速度换算。v 为零时回退为 1。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 移动属性 41、倍率 1，速度约 5.775 单位／秒。</p>
+<div class="v08-actions"><a href="../rules/formulas/c02-formula.html">速度换算与源码</a><a href="../rules/formulas/c17-formula.html">减速强度与算例</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-control">
+<h3>控制时间与减速抵抗</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T′ = T × (1 − R ÷ 100); Slow′ = Slow × (1 − DecSlowPower)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>名单内有限控制按时长修正。减速走强度修正，再参与移动属性换算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 3 秒控制减 25% 后为 2.25 秒。40% 减速遇 25% 强度抵抗后为 30%。</p>
+<div class="v08-actions"><a href="../rules/formulas/c16-formula.html">完整算例与源码依据</a></div>
+</article>
+</div></section>
+<section class="a5-section" id="units"><div class="a5-section-head"><h2>防御塔、兵线与野区</h2></div><div class="pw-pvp-formula-grid">
+<article class="pw-pvp-formula" id="formula-tower">
+<h3>外塔叠伤与双通道扣血</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>B = min(10 × TowerTarget, 50); D_half = .5 × BaseAttack × Attr × (1 + B ÷ 100) × k</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>每发物理、能量两段先读计数，再增加计数。普通小兵和攻城兵的 k 为 0.65。换目标的清零投递生效后才归零。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 经典中路外塔首发原始合计 82，第二发 90.2，第六发达到 123。</p>
+<div class="v08-actions"><a href="../battle/towers.html#tower-shot-damage">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-tower-regen">
+<h3>外塔再生光环的范围与重叠</h3>
+<div class="pw-formula-source"><strong>原式</strong><br>
+<code>R = cRange_Medium + 2 = 11 + 2</code><br>
+<code>d² ≤ (R + target.GetObjectSize() ÷ 2)²</code><br>
+<code>cMapForceMul = sMaxLife ÷ 4400; ΔLifeRegenerationAbsolute = 1.8 × sender.vMapForceMul</code><br>
+<code>ΔRegen<sub>two auras</sub> = max(ΔRegen<sub>A</sub>, ΔRegen<sub>B</sub>)</code>（两份正增益）
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+光环配置半径 = 中距离常量 11 ＋ 2。塔到目标中心的平面距离不超过 13 加目标体积一半时，通过距离筛选。单塔每秒固定生命再生增量 = 1.8 ×（该塔最大生命 ÷ 4,400）。两份同名正增益重叠时只生效较大的一份。</p>
+<p>经典外塔的攻击资源挂有此被动。选区以塔为中心，选择友方英雄和召唤物类型，额外筛掉 <code>IgnorableTarget ≠ 0</code> 或无效的技能目标。光环更新时新增合格目标，保留仍合格的目标，并移除本轮落选目标身上由该光环发出的子状态。每步回血仍走 <a href="../rules/formulas/c03-formula.html#resource-limit-change">C03 自然再生</a>，光环不直接发放一跳治疗。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 用经典外塔基础最大生命 4,400 代入，单塔每秒加 1.8 固定生命再生。假设英雄的判定体积为 1，中心距塔 13.5 恰好在边界内，13.6 则在界外。假设两个外塔的选区重叠，且两塔当前最大生命分别为 4,400 和 5,500，则两份增量是 1.8 和 2.25，重叠处每秒只加 <strong>2.25</strong>。离开较强光环但仍在较弱光环内时，移除完成后回到 <strong>1.8</strong>。</p>
+<p>重叠由同一状态的跨施法者互斥和属性修正合并处理。上式描述两份正增益的比较，多来源情况由源码的合并遍历决定。</p>
+<details><summary>原版配置与结算源码</summary><p><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/ability_ATier1_AttackAbility.ATCK.xdb#L11">外塔被动</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/Tower1.STCN.xdb#L23-L40">外塔基础生命</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2002-L2006">中距离常量</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/status_Basic_Tower_RegenAura.APLR.xdb#L78-L112">范围与筛选配置</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/MapForceMul.xdb#L4-L8">最大生命换算</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/const_RegBuff_Amount.xdb#L4-L8">再生增量</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Buildings/DefaultStats/status_Basic_Tower_RegenOnHero.APLR.xdb#L28-L94">状态互斥和再生属性</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplAura.cpp#L46-L80">选区更新</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFLogicObject.cpp#L210-L217">包含体积的距离检查</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplMod.cpp#L721-L845">数值合并</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplMod.cpp#L1081-L1098">移除后重算</a></p></details>
+</article>
+<article class="pw-pvp-formula" id="formula-tower-bolt">
+<h3>塔弹飞行与命中</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>t ≈ d ÷ 20; travel ≤ 50</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>在途弹道继续追原目标。是否仍能命中取决于累计飞行距离、目标有效性和命中检查。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 飞行剩余直线距离 10、目标静止时，约 0.5 秒抵达。</p>
+<div class="v08-actions"><a href="../battle/towers.html#tower-projectile">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-waves">
+<h3>兵线波次与出生等级</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T ≈ 60 + 30 × (n − 1); Lv = min(30, 1 + U)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>只计出生所在模拟步前已完成的升级。同一步先刷兵，再升刷兵器。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 第 4 波约 150 秒，先出 2 级兵，刷兵器随后升到 3 级。</p>
+<div class="v08-actions"><a href="../battle/minions.html#lane-creep-levels">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-barracks">
+<h3>兵营变化与出生等级覆盖</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Lv_new = 30（敌方三路兵营全部被拆后）</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>在营地状态改变后按新配置刷下一波，已出门的小兵沿用出生配置。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 在第 8 波前拆完三路，第 8 波各路新兵按 30 级初始化。</p>
+<div class="v08-actions"><a href="../battle/minions.html#barracks-wave-change">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-creep-force">
+<h3>地图单位战力补偿</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>M = 1 + max(ForceTeam ÷ ForceMap − 1, 0) × .55</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>通用配置只作用于进入战力补偿流程的单位和属性，按地图实际覆盖值核算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 地图战力 100、队伍战力 200，系数 1.55。</p>
+<div class="v08-actions"><a href="../rules/formulas/t07-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-camp">
+<h3>营地首次刷新与清营再刷</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T_first ≈ T_start + Δcamp</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>开局延迟加点位初始偏移。清营后的再刷间隔按营地自身配置读取。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 普通野点偏移 33 秒，加开局 60 秒，首次约 1:33。</p>
+<div class="v08-actions"><a href="../battle/jungle.html#camp">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-boss">
+<h3>首领击杀与清营奖励</h3>
+<div class="pw-formula-source"><strong>结算关系</strong><br><code>Prime_received = KillAward + CampAward（分别满足各自资格时）</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>击杀本体与清空营地各自触发发奖。按补刀者、附近队友和远处队友分别判断。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 经典龙的队伍奖每名英雄 850，五名英雄合计 4,250，清营额外奖为 0。</p>
+<div class="v08-actions"><a href="../battle/jungle.html#boss-rewards">完整算例与源码依据</a></div>
+</article>
+</div></section>
+<section class="a5-section" id="map"><div class="a5-section-head"><h2>地图、道具与时序</h2></div><div class="pw-pvp-formula-grid">
+<article class="pw-pvp-formula" id="formula-fog">
+<h3>普通视野与真视</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>F_step = ceil(int(int(R) ÷ .5) ÷ 4); true sight: d² &lt; R²</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>常驻视野先截半径、再换基础格，最后向上取迷雾格数。真视使用未取整半径，还须满足候选与迷雾条件。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 魔法提灯从 15.2 变 15.8，仍是 8 格，对距灯 15.5 的隐身敌人则从未揭示变为揭示。</p>
+<div class="v08-actions"><a href="../battle/vision.html#fog-vision-radius">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-fog-obstacles">
+<h3>迷雾格的障碍与高差</h3>
+<div class="pw-formula-source"><strong>原式</strong><br>
+<code>H(cell) = min(sample heights in its 4 × 4 base tiles)</code><br>
+<code>heightLimit = useHeightsDelta &amp;&amp; (H(cell) − H(center) &gt; 3)</code><br>
+<code>Depth = ceil(floor(6 ÷ 0.5) ÷ 4) = 3</code><br>
+<code>obstacle exception: isObstacle &amp;&amp; !tile.isVisible &amp;&amp; (ring − fromRadius &lt; Depth)</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+每个迷雾格的高度取该格覆盖的基础格采样最小值。候选格比视野源所在格高出严格超过 3 时，形成高差遮挡扇区。障碍视深按 6 个世界单位换算成 3 个迷雾格。障碍补亮分支只处理障碍格，当前环与遮挡起始环之差严格小于 3 才能补亮。</p>
+<p>常驻视野先标记中心，再由内及外扫描视野半径内的圆环。每个候选格先用已有障碍扇区和高差扇区判定是否点亮，再登记这个格产生的遮挡。挡住的方向按格子的角度范围计算。一个高差格若已通过当前检查，可以先被照亮，再挡住其后的格。敌方普通可见状态还看该阵营的合成迷雾图，另一处友方视野可能补上缺口。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 沿同一方向看第 2～5 环，假设都在半径内、无其他来源，且该方向最早的障碍从第 2 环开始。若 2～5 环都是障碍格，则第 2 环可见，第 3、4 环因差值 1、2 小于 3 仍能点亮，第 5 环差值等于 3，保持遮挡。若第 3 环是障碍背后的空地，该格不走障碍补亮分支。</p>
+<p>另取无实体障碍的一条方向。视野源所在格高度为 0，第 2 环格高 4，则 4 − 0 &gt; 3。第 2 环格若此前无遮挡，本格可见，但该格产生的高差扇区会挡住后续同方向格。若它的高度恰好为 3，则不由该格新增高差遮挡。两组都是按经典参数演算的格网例子。</p>
+<details><summary>原版配置与结算源码</summary><p><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMP.xdb#L53">经典地图光照资源引用</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.LTEN.xdb#L89-L93">障碍视深 6 与高差阈值 3</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFWorld.cpp#L438-L453">基础格及迷雾初始化</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFWorld.cpp#L529-L533">高差初始化</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/WarFog.cpp#L388-L426">迷雾格取最小高度</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/WarFog.cpp#L658-L680">障碍登记与迷雾格换算</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/WarFog.cpp#L207-L237">按角度找遮挡</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/WarFog.cpp#L861-L927">常驻对象环扫描及遮挡特例</a> · <a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/WarFog.test.cpp#L392-L424">障碍视深的原版测试</a></p></details>
+</article>
+<article class="pw-pvp-formula" id="formula-lantern">
+<h3>提灯寿命与临时普通视野</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T_expire ≈ T_place + 360; T_fog_end ≈ T_expire + 5</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>灯自然到期后真视随灯结束，普通视野还会留下 5 秒临时观察。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 4:00 放灯，约 10:00 到期，约 10:05 结束临时普通视野。</p>
+<div class="v08-actions"><a href="../battle/vision.html#river-lanterns">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-glyph">
+<h3>符文生成和重试</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T_first ≈ T_init + 60; T_after ≈ T_reset + 300; T_retry ≈ T_fail + 60</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>分别从初始化、发现符文失效并重设计时、尝试失败三个时点起算。这里算下一次尝试。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 第一次约在 1:00，若那次创建失败，约 1 分钟后重试。</p>
+<div class="v08-actions"><a href="../battle/items.html#borderlands-glyphs">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-base">
+<h3>基地补给与防守伤害</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>H = .08 × Max + 50; D = min(MaxHP ÷ 6, 2000)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>友方生命与能量各按原上限计算补给。敌方入圈后，每发按最大生命计算纯粹伤害。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 最大生命 2,000 的友军每跳基础回血 210。最大生命 6,000 的敌人中一发，基础伤害 1,000。</p>
+<div class="v08-actions"><a href="../battle/items.html#base-recovery">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-potion">
+<h3>药水每跳与黑豹分配</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>H_pet = min(H, PetMissing); H_hero = max(0, H − PetMissing)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>有存活黑豹时先记录它的缺血，两条应用器分别按同一快照计算，再走各自恢复。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 整跳 40、黑豹缺 50，本跳黑豹回 40，英雄回 0。</p>
+<div class="v08-actions"><a href="../battle/items.html#healing-potion-ticks">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-teleport">
+<h3>传送引导与落点</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Finish = Start + channelTime; CD_afterCancel = CD_remaining − (CD_total − 20)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>均在起手固定落点并启动冷却。自带传送主动取消时，从剩余冷却减去整段冷却与 20 秒的差；商店卷轴主动取消则清掉当次冷却。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 引导均为 6 秒。假设冷却 210 秒，第 3 秒主动取消，自带传送约剩 207 − 190 = 17 秒，商店卷轴保留且当次冷却清零。</p>
+<div class="v08-actions"><a href="../battle/items.html#hero-portal">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-flag">
+<h3>拿旗、丢旗与土地推进</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Step = min(distanceToTarget, floor(Speed × dt × 10 + remainder))</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>读条成功才换旗。边界更新时，按推进速度和时间累积小步，最多移动到当前目标段。丢旗会立即改变目标段。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 经典地图每秒推进 3 段、每段 10 小步。0.1 秒更新且没有小数余量时，最多回退 3 小步。</p>
+<div class="v08-actions"><a href="../battle/flags.html#middle-road-flags">完整算例与源码依据</a></div>
+</article>
+</div></section>
+<section class="a5-section" id="economy"><div class="a5-section-head"><h2>Prime、复活与胜负</h2></div><div class="pw-pvp-formula-grid">
+<article class="pw-pvp-formula" id="formula-opening">
+<h3>开局与被动发薪</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Prime_start = int(TeamPrime ÷ TeamSize); Prime_tick = Base + Bonus</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>开局取地图声明队伍人数。被动发薪按实际触发次数累计。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 经典每人 2,000 ÷ 5 = 400，基础发薪 4，60 次共 240。</p>
+<div class="v08-actions"><a href="../rules/formulas/p01-formula.html">开局 Prime 与源码</a><a href="../rules/formulas/p02-formula.html">被动发薪与算例</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-attribution">
+<h3>击杀归属与助攻</h3>
+<div class="pw-formula-source"><strong>结算关系</strong><br><code>qualifiedKiller = resolve(lastHit, master, damageHistory)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>按主人、伤害记录和时间窗确定归属，助攻和邻近另行判定。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 符合条件的英雄召唤物补刀，击杀可记给它的主人。</p>
+<div class="v08-actions"><a href="../battle/prime.html#hero-kill-credit">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-hero-prime">
+<h3>英雄击杀、助攻与邻近奖</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Kill = max((2 × (K+B) ÷ (A+2) + E) × F × D, 50)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>按累计收入差和连死倍率等修正，各领取人分别计算。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 累计收入同为 3,000、1 人助攻、2 人邻近的卡片算例，击杀者获 386.4。</p>
+<div class="v08-actions"><a href="../rules/formulas/p03-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-unit-prime">
+<h3>小兵、建筑与邻近奖</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Nearby = VictimSpec ÷ N × Mult[N − 1]</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>按附近名单分邻近奖，再另外发到场队伍奖或固定全队奖。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 五人队拆经典外塔，两人邻近各拿 350，另三人各 200，总计 1,300。</p>
+<div class="v08-actions"><a href="../battle/prime.html#outer-tower-prime">拆塔算例</a><a href="../rules/formulas/p04-formula.html">分配公式与源码</a><a href="../rules/formulas/p06-formula.html">小兵与塔的赏金</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-other-prime">
+<h3>额外 Prime 与转移</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>In = ActualDeduction × Multiplier + Addition</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>额外奖励先满足天赋、成就或符文的触发条件。转移以实际扣除额代入。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 请求扣 10，而目标只剩 8；一倍转移且无附加时实得 8。</p>
+<div class="v08-actions"><a href="../rules/formulas/p07-formula.html">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-shop">
+<h3>购买费用与背包</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>Balance_after = Balance_before − resolvedCost（购买成功时）</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>先判断位置和余额，再检查同类合格格子或空格。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 满包时仍可叠到同类未满格。没有空格、同类也已满时，购买失败。</p>
+<div class="v08-actions"><a href="../battle/items.html#shop">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-respawn">
+<h3>死亡后的复活计时</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T = max(max(Min, Base + Level × Mult + Overtime) × (1 + Scale) + Shift, Advance, Death)</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>使用对局等级与地图配置，加上超时、复活修正和阶段约束。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 等级 10、26.2 分钟且无复活修正，核验卡算例为 28 秒。</p>
+<div class="v08-actions"><a href="../rules/formulas/c18-formula.html">完整算例与源码依据</a><a href="../battle/outcome.html#hero-respawn">经典地图复活算例</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-surrender">
+<h3>投降门槛与超时</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>votesYes ≥ size − 1; votesNo &gt; 1</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>经典五人队至少四票同意后进入确认。超过一张反对票即否决，断线票另按时间处理。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 第 4 张同意票启动 5 秒确认。普通投票限时 30 秒。</p>
+<div class="v08-actions"><a href="../battle/outcome.html#surrender">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-reconnect">
+<h3>断线与 AI 接管计时</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>T_AI ≈ T_disconnect + StepCount × StepTime</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>仅启用离场 AI 并满足会话条件时才开始接管计时，恢复 Active 会撤销等待或移除已接管的 AI。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 每步 100 毫秒、等待 50 步，约 5 秒接管。第 3 秒已恢复 Active 时取消等待。</p>
+<div class="v08-actions"><a href="../battle/outcome.html#disconnect-reconnect">完整算例与源码依据</a></div>
+</article>
+<article class="pw-pvp-formula" id="formula-scroll">
+<h3>卷轴小游戏奖励</h3>
+<div class="pw-formula-source"><strong>原式</strong><br><code>FailedPrime = round(PicturePrime × FillRatio × .3)（经典配置）</code></div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>失败按填画比例折算。胜利则按完图、奖章和提前完成分项发奖。</p>
+<p class="pw-pvp-example"><strong>算例</strong> 首关完图配置奖为 0，填到一半失败，补偿仍是 0。</p>
+<div class="v08-actions"><a href="../battle/scroll-minigame.html#rewards">完整算例与源码依据</a></div>
+</article>
+</div></section>
+<section class="a5-section" id="hero-formulas">
+<div class="a5-section-head"><h2>英雄专属公式查哪里？</h2></div>
+<p>在英雄页查看技能对应的天赋格、基础属性和成长；在天赋详情查专属标尺、状态、效果与实际取值时点。例如「震荡投斧」先用力量标尺算技能原始伤害，再按伤害类型走上面的防御、护盾和扣血流程。</p>
+<div class="v08-actions"><a href="../hero-roster.html">英雄图鉴</a><a href="../heroes/31-iron-knight.html">示例英雄页</a><a href="../talent-catalog.html">天赋图鉴</a><a href="../talents/0395-talent.html#p-423685f5ba9d">示例：震荡投斧的伤害公式</a><a href="../guide/core-concepts.html#state-timing">提示、施放和命中的取值时点</a></div>
+</section>
+<section class="a5-section" id="coverage"><div class="a5-section-head"><h2>源码覆盖清单</h2></div>
+<p>以经典边境之地原版配置及其公共运行逻辑为范围。已收录条目有本页算例和来源入口。其他地图覆盖、Nova 与英雄专属表达式各走对应页面。当前共收录 51 个专题，覆盖清单随来源核实更新。</p>
+<div class="pw-pvp-checklist">
+<details><summary>已收录 · 英雄属性与局内成长（10 项）</summary><ul>
+<li><a href="#formula-stat">属性修饰与钳制</a></li>
+<li><a href="#formula-regen">生命与能量再生</a></li>
+<li><a href="#formula-limits">资源上限变化</a></li>
+<li><a href="#formula-tiers">成长点与天赋层</a></li>
+<li><a href="#formula-talent-cost">天赋点亮费用</a></li>
+<li><a href="#formula-force">装备战力与成长预算</a></li>
+<li><a href="#formula-growth-step">点亮后的属性成长</a></li>
+<li><a href="#formula-scale">技能标尺与天赋强化</a></li>
+<li><a href="#formula-talent-budget">天赋预算</a></li>
+<li><a href="#formula-cost-force">高战力资源消耗补偿</a></li>
+</ul></details>
+<details><summary>已收录 · 攻击与伤害结算（15 项）</summary><ul>
+<li><a href="#formula-raw">英雄普攻原始伤害</a></li>
+<li><a href="#formula-speed">攻速与普攻间隔</a></li>
+<li><a href="#formula-windup">普攻前摇与真正出手</a></li>
+<li><a href="#formula-hit">命中与闪避</a></li>
+<li><a href="#formula-crit">暴击</a></li>
+<li><a href="#formula-defence">坚韧与意志双防</a></li>
+<li><a href="#formula-penetration">攻速和灵巧穿透</a></li>
+<li><a href="#formula-multiplier">伤害乘数与普通减免</a></li>
+<li><a href="#formula-shield">护盾、纯粹伤害与扣血</a></li>
+<li><a href="#formula-damage-listeners">多护盾与伤害改写的结算顺序</a></li>
+<li><a href="#formula-mana">Mana 灼烧</a></li>
+<li><a href="#formula-heal">治疗、溢出与吸取</a></li>
+<li><a href="#formula-drain">生命与能量吸取</a></li>
+<li><a href="#formula-move">移动与减速</a></li>
+<li><a href="#formula-control">控制时间与减速抵抗</a></li>
+</ul></details>
+<details><summary>已收录 · 防御塔、兵线与野区（8 项）</summary><ul>
+<li><a href="#formula-tower">外塔叠伤与双通道扣血</a></li>
+<li><a href="#formula-tower-regen">外塔再生光环的范围与重叠</a></li>
+<li><a href="#formula-tower-bolt">塔弹飞行与命中</a></li>
+<li><a href="#formula-waves">兵线波次与出生等级</a></li>
+<li><a href="#formula-barracks">兵营变化与出生等级覆盖</a></li>
+<li><a href="#formula-creep-force">地图单位战力补偿</a></li>
+<li><a href="#formula-camp">营地首次刷新与清营再刷</a></li>
+<li><a href="#formula-boss">首领击杀与清营奖励</a></li>
+</ul></details>
+<details><summary>已收录 · 地图、道具与时序（8 项）</summary><ul>
+<li><a href="#formula-fog">普通视野与真视</a></li>
+<li><a href="#formula-fog-obstacles">迷雾格的障碍与高差</a></li>
+<li><a href="#formula-lantern">提灯寿命与临时普通视野</a></li>
+<li><a href="#formula-glyph">符文生成和重试</a></li>
+<li><a href="#formula-base">基地补给与防守伤害</a></li>
+<li><a href="#formula-potion">药水每跳与黑豹分配</a></li>
+<li><a href="#formula-teleport">传送引导与落点</a></li>
+<li><a href="#formula-flag">拿旗、丢旗与土地推进</a></li>
+</ul></details>
+<details><summary>已收录 · Prime、复活与胜负（10 项）</summary><ul>
+<li><a href="#formula-opening">开局与被动发薪</a></li>
+<li><a href="#formula-attribution">击杀归属与助攻</a></li>
+<li><a href="#formula-hero-prime">英雄击杀、助攻与邻近奖</a></li>
+<li><a href="#formula-unit-prime">小兵、建筑与邻近奖</a></li>
+<li><a href="#formula-other-prime">额外 Prime 与转移</a></li>
+<li><a href="#formula-shop">购买费用与背包</a></li>
+<li><a href="#formula-respawn">死亡后的复活计时</a></li>
+<li><a href="#formula-surrender">投降门槛与超时</a></li>
+<li><a href="#formula-reconnect">断线与 AI 接管计时</a></li>
+<li><a href="#formula-scroll">卷轴小游戏奖励</a></li>
+</ul></details>
+</div><p>本轮列出的待补项目已核完。覆盖清单记录当前已核过的专题。</p></section>
+<footer class="a5-foot"><a href="../formula-library.html">全站公式索引</a> · <a href="formula-lab.html">公式实验室</a> · <a href="../sources.html">资料来源与审校</a></footer>
+</main><script>window.PW_V04_ROOT='../';</script><script defer src="../assets/site-v04.js"></script><script defer src="../assets/site-v05.js"></script><script defer src="../assets/site-v06.js"></script></body></html>

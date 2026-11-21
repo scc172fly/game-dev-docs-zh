@@ -1,0 +1,15 @@
+.pw-pvp-formulas section[id],.pw-pvp-formula{scroll-margin-top:108px}
+.pw-pvp-formula-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,24rem),1fr));gap:14px}
+.pw-pvp-formula{display:flex;flex-direction:column;min-width:0;padding:clamp(15px,2vw,24px);border:1px solid var(--line,#40505c);background:var(--panel2,#172532)}
+.pw-pvp-formula h3{margin:0 0 .75rem;color:var(--gold,#e5ba74)}
+.pw-pvp-formula .pw-formula-source{padding:.65rem .75rem;border-left:2px solid var(--gold,#e5ba74);background:var(--panel,#12202b)}
+.pw-pvp-formula .pw-formula-source code{white-space:normal;overflow-wrap:anywhere;line-height:1.65}
+.pw-pvp-formula p{margin:.7rem 0;line-height:1.65}
+.pw-pvp-example strong,.pw-pvp-checklist summary{color:var(--gold,#e5ba74)}
+.pw-pvp-formula .v08-actions{margin-top:auto;padding-top:.4rem}
+.pw-pvp-checklist{display:grid;gap:8px}
+.pw-pvp-checklist details{padding:.65rem .9rem;border:1px solid var(--line,#40505c)}
+.pw-pvp-checklist summary{cursor:pointer}
+.pw-pvp-checklist ul{padding-inline-start:1.2rem}
+.pw-pvp-checklist li{margin:.4rem 0}
+@media(max-width:700px){.pw-pvp-formulas section[id],.pw-pvp-formula{scroll-margin-top:74px}}
