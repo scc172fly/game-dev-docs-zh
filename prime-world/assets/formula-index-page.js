@@ -9,7 +9,31 @@
     ['growth', '属性、强化与成长', /成长|属性|强化|星级|坚韧|意志|力量|灵巧|智力|攻速|战力/],
   ];
 
+  function setupSeriesFilter() {
+    const select = document.getElementById('pw-formula-series');
+    const status = document.getElementById('pw-formula-series-status');
+    if (!select || !status) return;
+
+    const cards = [...document.querySelectorAll('[data-formula-code]')];
+    const groups = [...document.querySelectorAll('.pw-formula-use')];
+
+    function update() {
+      const series = select.value;
+      let shown = 0;
+      for (const card of cards) {
+        card.hidden = series !== 'all' && !card.dataset.formulaCode.startsWith(series);
+        if (!card.hidden) shown += 1;
+      }
+      for (const group of groups) group.hidden = !group.querySelector('li:not([hidden])');
+      status.textContent = series === 'all' ? cards.length + ' 张核验卡' : shown + ' / ' + cards.length + ' 张';
+    }
+
+    select.addEventListener('change', update);
+    update();
+  }
+
   function start() {
+    setupSeriesFilter();
     const query = document.getElementById('pw-formula-query');
     const type = document.getElementById('pw-formula-type');
     const use = document.getElementById('pw-formula-use');

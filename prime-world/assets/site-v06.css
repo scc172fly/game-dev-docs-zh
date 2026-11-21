@@ -543,3 +543,10 @@ body[data-page="rules/attributes-and-combat-formulas.html"] .article-body li {
 .pw-formula-id,.pw-formula-source-tag,.pw-formula-live{white-space:nowrap}
 .pw-formula-live{padding:2px 7px;border:1px solid currentColor;font-size:.8rem}
 .pw-formula-search select{max-width:100%}
+
+.pw-formula-number-tools{display:inline-grid;grid-template-columns:minmax(0,1fr) clamp(6.75rem,36%,9rem);align-items:center;width:min(100%,23rem);margin:6px 0 2px;border:1px solid var(--line,#435462);border-radius:5px;background:var(--panel2,#172533);font-size:.875rem}
+.pw-formula-number-tools select{width:100%;min-width:0;min-height:44px;padding:6px 10px 6px 12px;color:inherit;background:transparent;border:0;font:inherit;cursor:pointer}
+.pw-formula-number-tools select option{background:var(--panel2,#172533);color:inherit}
+.pw-formula-number-tools select:focus-visible{outline:2px solid var(--gold,#e6bd74);outline-offset:-2px}
+.pw-formula-number-tools [role=status]{padding:0 8px;text-align:center;border-inline-start:1px solid var(--line,#435462);color:var(--muted,#aebfcc);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pw-formula-use li[hidden],.pw-formula-use[hidden]{display:none}

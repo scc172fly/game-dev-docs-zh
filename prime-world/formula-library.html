@@ -11,31 +11,41 @@
 <a href="#formula-economy">战场经济</a>
 <a href="#formula-timing">地图与时序</a>
 </nav>
+<div class="pw-formula-number-tools">
+  <select id="pw-formula-series" aria-label="筛选核验卡编号系列">
+    <option value="all">全部核验卡系列</option>
+    <option value="C">C · 战斗与属性</option>
+    <option value="P">P · 局内 Prime</option>
+    <option value="O">O · 局外经济与养成</option>
+    <option value="T">T · 天赋与局内成长</option>
+  </select>
+  <span id="pw-formula-series-status" role="status">43 张核验卡</span>
+</div>
 <section class="pw-formula-system" id="formula-combat"><h3>基础战斗</h3><div class="pw-formula-uses">
 <div class="pw-formula-use"><h4>出手、命中与暴击</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c05-formula.html"><span class="pw-formula-id">C05</span> 攻击速度与攻击周期</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#attack-speed" aria-label="实时演示：攻速演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c11-formula.html"><span class="pw-formula-id">C11</span> 可闪避普攻的命中检查</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#hit-evasion" aria-label="实时演示：命中与闪避演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c06-formula.html"><span class="pw-formula-id">C06</span> 暴击概率与倍率</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#critical" aria-label="实时演示：暴击演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c04-formula.html"><span class="pw-formula-id">C04</span> 公共英雄普攻原始伤害</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C05"><a class="pw-formula-topic-link" href="rules/formulas/c05-formula.html"><span class="pw-formula-id">C05</span> 攻击速度与攻击周期</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#attack-speed" aria-label="实时演示：攻速演示">实时演示</a></li>
+<li data-formula-code="C11"><a class="pw-formula-topic-link" href="rules/formulas/c11-formula.html"><span class="pw-formula-id">C11</span> 可闪避普攻的命中检查</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#hit-evasion" aria-label="实时演示：命中与闪避演示">实时演示</a></li>
+<li data-formula-code="C06"><a class="pw-formula-topic-link" href="rules/formulas/c06-formula.html"><span class="pw-formula-id">C06</span> 暴击概率与倍率</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#critical" aria-label="实时演示：暴击演示">实时演示</a></li>
+<li data-formula-code="C04"><a class="pw-formula-topic-link" href="rules/formulas/c04-formula.html"><span class="pw-formula-id">C04</span> 公共英雄普攻原始伤害</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>防御、穿透与扣血</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c07-formula.html"><span class="pw-formula-id">C07</span> 坚韧与意志形成双防御</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#damage-reduction" aria-label="实时演示：减伤演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c08-formula.html"><span class="pw-formula-id">C08</span> 攻速与灵巧形成穿透</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#penetration" aria-label="实时演示：穿透演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c09-formula.html"><span class="pw-formula-id">C09</span> 防御与穿透共同决定伤害乘数</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#penetration" aria-label="实时演示：穿透与扣血演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c10-formula.html"><span class="pw-formula-id">C10</span> 普通伤害减免</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#nival" aria-label="实时演示：完整减免演算">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c12-formula.html"><span class="pw-formula-id">C12</span> 护盾与实际扣血</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#shield-absorb" aria-label="实时演示：护盾演示">实时演示</a></li>
+<li data-formula-code="C07"><a class="pw-formula-topic-link" href="rules/formulas/c07-formula.html"><span class="pw-formula-id">C07</span> 坚韧与意志形成双防御</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#damage-reduction" aria-label="实时演示：减伤演示">实时演示</a></li>
+<li data-formula-code="C08"><a class="pw-formula-topic-link" href="rules/formulas/c08-formula.html"><span class="pw-formula-id">C08</span> 攻速与灵巧形成穿透</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#penetration" aria-label="实时演示：穿透演示">实时演示</a></li>
+<li data-formula-code="C09"><a class="pw-formula-topic-link" href="rules/formulas/c09-formula.html"><span class="pw-formula-id">C09</span> 防御与穿透共同决定伤害乘数</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#penetration" aria-label="实时演示：穿透与扣血演示">实时演示</a></li>
+<li data-formula-code="C10"><a class="pw-formula-topic-link" href="rules/formulas/c10-formula.html"><span class="pw-formula-id">C10</span> 普通伤害减免</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#nival" aria-label="实时演示：完整减免演算">实时演示</a></li>
+<li data-formula-code="C12"><a class="pw-formula-topic-link" href="rules/formulas/c12-formula.html"><span class="pw-formula-id">C12</span> 护盾与实际扣血</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#shield-absorb" aria-label="实时演示：护盾演示">实时演示</a></li>
 <li><a class="pw-formula-topic-link" href="rules/formulas/c10-formula.html#mana-burn-formula">Mana 灼烧与剩余能量</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#mana-burn" aria-label="实时演示：Mana 灼烧演示">实时演示</a></li>
 </ul></div>
 <div class="pw-formula-use"><h4>恢复与吸取</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c03-formula.html"><span class="pw-formula-id">C03</span> 生命与能量再生</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c13-formula.html"><span class="pw-formula-id">C13</span> 治疗量及溢出</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#heal" aria-label="实时演示：治疗演示">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c14-formula.html"><span class="pw-formula-id">C14</span> 生命吸取与能量吸取</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C03"><a class="pw-formula-topic-link" href="rules/formulas/c03-formula.html"><span class="pw-formula-id">C03</span> 生命与能量再生</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C13"><a class="pw-formula-topic-link" href="rules/formulas/c13-formula.html"><span class="pw-formula-id">C13</span> 治疗量及溢出</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="numerics/formula-lab.html#heal" aria-label="实时演示：治疗演示">实时演示</a></li>
+<li data-formula-code="C14"><a class="pw-formula-topic-link" href="rules/formulas/c14-formula.html"><span class="pw-formula-id">C14</span> 生命吸取与能量吸取</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 <li><a class="pw-formula-topic-link" href="battle/items.html#healing-potion-ticks">治疗药水每跳与黑豹分配</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>移动与控制</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c02-formula.html"><span class="pw-formula-id">C02</span> 移动属性换算实际移动速率</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c16-formula.html"><span class="pw-formula-id">C16</span> 标准控制时间缩短与减速抵抗</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c17-formula.html"><span class="pw-formula-id">C17</span> 标准减速的强度</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C02"><a class="pw-formula-topic-link" href="rules/formulas/c02-formula.html"><span class="pw-formula-id">C02</span> 移动属性换算实际移动速率</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C16"><a class="pw-formula-topic-link" href="rules/formulas/c16-formula.html"><span class="pw-formula-id">C16</span> 标准控制时间缩短与减速抵抗</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C17"><a class="pw-formula-topic-link" href="rules/formulas/c17-formula.html"><span class="pw-formula-id">C17</span> 标准减速的强度</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>版本对照</h4><ul>
 <li><a class="pw-formula-topic-link" href="compare/formula-glossary.html">Nova 穿透系数 0.09 与 0.06</a><span class="pw-formula-source-tag">Nova 公告</span><a class="pw-formula-live" href="numerics/formula-lab.html#nova" aria-label="实时演示：Nova 系数演示">实时演示</a></li>
@@ -43,24 +53,24 @@
 </div></section>
 <section class="pw-formula-system" id="formula-growth"><h3>英雄与天赋成长</h3><div class="pw-formula-uses">
 <div class="pw-formula-use"><h4>属性、等级与技能缩放</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c01-formula.html"><span class="pw-formula-id">C01</span> 属性修饰顺序</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o01-formula.html"><span class="pw-formula-id">O01</span> 局外英雄等级和领主等级</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t05-formula.html"><span class="pw-formula-id">T05</span> 点亮天赋后的局内属性成长</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c15-formula.html"><span class="pw-formula-id">C15</span> 技能与强化缩放</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C01"><a class="pw-formula-topic-link" href="rules/formulas/c01-formula.html"><span class="pw-formula-id">C01</span> 属性修饰顺序</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O01"><a class="pw-formula-topic-link" href="rules/formulas/o01-formula.html"><span class="pw-formula-id">O01</span> 局外英雄等级和领主等级</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="T05"><a class="pw-formula-topic-link" href="rules/formulas/t05-formula.html"><span class="pw-formula-id">T05</span> 点亮天赋后的局内属性成长</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C15"><a class="pw-formula-topic-link" href="rules/formulas/c15-formula.html"><span class="pw-formula-id">C15</span> 技能与强化缩放</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>天赋点亮、预算与战力</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t01-formula.html"><span class="pw-formula-id">T01</span> 六层天赋开放门槛</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="heroes/01-alchemist.html#talent-simulator" aria-label="实时演示：天赋层解锁">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t02-formula.html"><span class="pw-formula-id">T02</span> 学习费用与激活条件</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="heroes/01-alchemist.html#talent-simulator" aria-label="实时演示：天赋点亮费用">实时演示</a></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t03-formula.html"><span class="pw-formula-id">T03</span> 天赋预算</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t04-formula.html"><span class="pw-formula-id">T04</span> 装备战力与额外成长预算</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t06-formula.html"><span class="pw-formula-id">T06</span> 战力提升后的资源消耗补偿</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="T01"><a class="pw-formula-topic-link" href="rules/formulas/t01-formula.html"><span class="pw-formula-id">T01</span> 六层天赋开放门槛</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="heroes/01-alchemist.html#talent-simulator" aria-label="实时演示：天赋层解锁">实时演示</a></li>
+<li data-formula-code="T02"><a class="pw-formula-topic-link" href="rules/formulas/t02-formula.html"><span class="pw-formula-id">T02</span> 学习费用与激活条件</a><span class="pw-formula-source-tag">Nival 原版</span><a class="pw-formula-live" href="heroes/01-alchemist.html#talent-simulator" aria-label="实时演示：天赋点亮费用">实时演示</a></li>
+<li data-formula-code="T03"><a class="pw-formula-topic-link" href="rules/formulas/t03-formula.html"><span class="pw-formula-id">T03</span> 天赋预算</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="T04"><a class="pw-formula-topic-link" href="rules/formulas/t04-formula.html"><span class="pw-formula-id">T04</span> 装备战力与额外成长预算</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="T06"><a class="pw-formula-topic-link" href="rules/formulas/t06-formula.html"><span class="pw-formula-id">T06</span> 战力提升后的资源消耗补偿</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>强化、合并与制作</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o02-formula.html"><span class="pw-formula-id">O02</span> 持久天赋星级</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o03-formula.html"><span class="pw-formula-id">O03</span> 同名天赋合并继承进度</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o04-formula.html"><span class="pw-formula-id">O04</span> 异名吞噬和跨星晶体费用</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o05-formula.html"><span class="pw-formula-id">O05</span> 符文和催化剂升级概率</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o09-formula.html"><span class="pw-formula-id">O09</span> 炼制天赋的晶体费用</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O02"><a class="pw-formula-topic-link" href="rules/formulas/o02-formula.html"><span class="pw-formula-id">O02</span> 持久天赋星级</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O03"><a class="pw-formula-topic-link" href="rules/formulas/o03-formula.html"><span class="pw-formula-id">O03</span> 同名天赋合并继承进度</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O04"><a class="pw-formula-topic-link" href="rules/formulas/o04-formula.html"><span class="pw-formula-id">O04</span> 异名吞噬和跨星晶体费用</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O05"><a class="pw-formula-topic-link" href="rules/formulas/o05-formula.html"><span class="pw-formula-id">O05</span> 符文和催化剂升级概率</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O09"><a class="pw-formula-topic-link" href="rules/formulas/o09-formula.html"><span class="pw-formula-id">O09</span> 炼制天赋的晶体费用</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>技能、天赋与套装的详细参数</h4><ul>
 <li><a class="pw-formula-topic-link" href="#catalog">技能与套装参数检索</a><span class="pw-formula-source-tag">Nival 原版</span></li>
@@ -68,34 +78,34 @@
 </div></section>
 <section class="pw-formula-system" id="formula-economy"><h3>战场经济</h3><div class="pw-formula-uses">
 <div class="pw-formula-use"><h4>开局与被动收入</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p01-formula.html"><span class="pw-formula-id">P01</span> 开局Prime</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p02-formula.html"><span class="pw-formula-id">P02</span> 被动Prime收入</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P01"><a class="pw-formula-topic-link" href="rules/formulas/p01-formula.html"><span class="pw-formula-id">P01</span> 开局Prime</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P02"><a class="pw-formula-topic-link" href="rules/formulas/p02-formula.html"><span class="pw-formula-id">P02</span> 被动Prime收入</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>击杀归属与个人、邻近、队伍奖励</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p05-formula.html"><span class="pw-formula-id">P05</span> 击杀和助攻归属</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p03-formula.html"><span class="pw-formula-id">P03</span> 经典英雄击杀、助攻和邻近奖励</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p04-formula.html"><span class="pw-formula-id">P04</span> 小兵/建筑邻近奖励与队伍奖励</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p06-formula.html"><span class="pw-formula-id">P06</span> 经典小兵与塔的真实赏金字段</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/p07-formula.html"><span class="pw-formula-id">P07</span> 额外Prime来源与转移</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P05"><a class="pw-formula-topic-link" href="rules/formulas/p05-formula.html"><span class="pw-formula-id">P05</span> 击杀和助攻归属</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P03"><a class="pw-formula-topic-link" href="rules/formulas/p03-formula.html"><span class="pw-formula-id">P03</span> 经典英雄击杀、助攻和邻近奖励</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P04"><a class="pw-formula-topic-link" href="rules/formulas/p04-formula.html"><span class="pw-formula-id">P04</span> 小兵/建筑邻近奖励与队伍奖励</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P06"><a class="pw-formula-topic-link" href="rules/formulas/p06-formula.html"><span class="pw-formula-id">P06</span> 经典小兵与塔的真实赏金字段</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="P07"><a class="pw-formula-topic-link" href="rules/formulas/p07-formula.html"><span class="pw-formula-id">P07</span> 额外Prime来源与转移</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 <li><a class="pw-formula-topic-link" href="battle/prime.html#outer-tower-prime">拆外塔的 Prime 分配</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 <li><a class="pw-formula-topic-link" href="battle/jungle.html#boss-rewards">首领击杀与清营奖励</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>消费与赎回</h4><ul>
 <li><a class="pw-formula-topic-link" href="battle/items.html#shop">战场道具购买与背包上限</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c19-formula.html"><span class="pw-formula-id">C19</span> 源码残留的赎回费用计算</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C19"><a class="pw-formula-topic-link" href="rules/formulas/c19-formula.html"><span class="pw-formula-id">C19</span> 源码残留的赎回费用计算</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>局外资源与城堡</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o06-formula.html"><span class="pw-formula-id">O06</span> 城堡连续生产与收取</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o07-formula.html"><span class="pw-formula-id">O07</span> 资源仓库与天赋库容量</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o08-formula.html"><span class="pw-formula-id">O08</span> 英雄招募价格和门槛</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/o10-formula.html"><span class="pw-formula-id">O10</span> 建筑升级的逐级费用</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O06"><a class="pw-formula-topic-link" href="rules/formulas/o06-formula.html"><span class="pw-formula-id">O06</span> 城堡连续生产与收取</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O07"><a class="pw-formula-topic-link" href="rules/formulas/o07-formula.html"><span class="pw-formula-id">O07</span> 资源仓库与天赋库容量</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O08"><a class="pw-formula-topic-link" href="rules/formulas/o08-formula.html"><span class="pw-formula-id">O08</span> 英雄招募价格和门槛</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="O10"><a class="pw-formula-topic-link" href="rules/formulas/o10-formula.html"><span class="pw-formula-id">O10</span> 建筑升级的逐级费用</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 </div></section>
 <section class="pw-formula-system" id="formula-timing"><h3>地图与时序</h3><div class="pw-formula-uses">
 <div class="pw-formula-use"><h4>兵线刷新、出生等级与战力补偿</h4><ul>
 <li><a class="pw-formula-topic-link" href="battle/minions.html#lane-creep-levels">按波次计算小兵出生等级</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 <li><a class="pw-formula-topic-link" href="battle/minions.html#barracks-wave-change">拆兵营后的出兵变化</a><span class="pw-formula-source-tag">Nival 原版</span></li>
-<li><a class="pw-formula-topic-link" href="rules/formulas/t07-formula.html"><span class="pw-formula-id">T07</span> 地图单位的战力补偿系数</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="T07"><a class="pw-formula-topic-link" href="rules/formulas/t07-formula.html"><span class="pw-formula-id">T07</span> 地图单位的战力补偿系数</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>地图刷新与时间窗口</h4><ul>
 <li><a class="pw-formula-topic-link" href="battle/items.html#borderlands-glyphs">符文首次生成、再刷与重试</a><span class="pw-formula-source-tag">Nival 原版</span></li>
@@ -103,7 +113,7 @@
 <li><a class="pw-formula-topic-link" href="battle/towers.html#tower-projectile">塔弹飞行时间和累计距离上限</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 <div class="pw-formula-use"><h4>阵亡、复活与结算顺序</h4><ul>
-<li><a class="pw-formula-topic-link" href="rules/formulas/c18-formula.html"><span class="pw-formula-id">C18</span> 死亡后的复活计时</a><span class="pw-formula-source-tag">Nival 原版</span></li>
+<li data-formula-code="C18"><a class="pw-formula-topic-link" href="rules/formulas/c18-formula.html"><span class="pw-formula-id">C18</span> 死亡后的复活计时</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 <li><a class="pw-formula-topic-link" href="guide/core-concepts.html#state-timing">提示、施放与命中的取值时点</a><span class="pw-formula-source-tag">Nival 原版</span></li>
 </ul></div>
 </div></section>
