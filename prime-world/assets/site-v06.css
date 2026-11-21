@@ -530,3 +530,16 @@ table .pw-table-unbroken{white-space:nowrap;overflow-wrap:normal;word-break:norm
 body[data-page="rules/attributes-and-combat-formulas.html"] .article-body li {
   overflow-wrap: anywhere;
 }
+
+.pw-formula-system{margin-top:26px;scroll-margin-top:110px}
+.pw-formula-system>h3{margin-bottom:12px}
+.pw-formula-uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,21rem),1fr));gap:12px}
+.pw-formula-use{min-width:0;padding:16px;border:1px solid var(--line,#435462);background:var(--panel2,#172533)}
+.pw-formula-use h4{margin:0 0 9px;color:var(--gold,#e6bd74)}
+.pw-formula-use ul{padding:0;margin:0;list-style:none}
+.pw-formula-use li{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px 8px;padding:9px 0;border-top:1px solid var(--line,#435462)}
+.pw-formula-topic-link{flex:1 1 12rem;min-width:0;overflow-wrap:anywhere}
+.pw-formula-id,.pw-formula-source-tag{font-size:.78rem;color:var(--muted,#aebfcc)}
+.pw-formula-id,.pw-formula-source-tag,.pw-formula-live{white-space:nowrap}
+.pw-formula-live{padding:2px 7px;border:1px solid currentColor;font-size:.8rem}
+.pw-formula-search select{max-width:100%}
