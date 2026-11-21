@@ -19,7 +19,7 @@
     "DispellPotion": "<b>压制卷轴</b>立即驱散指定地点半径 <strong>5</strong> 内敌人身上的<strong>可驱散增益</strong>，驱散数量上限为 <strong>99</strong>。",
     "CleansingAllPotion": "<b>净化护符</b>立即移除自身的<strong>可驱散负面效果</strong>，数量上限为 <strong>100</strong>。",
     "InvulnerabilityAmulet": "<b>护身符</b>自身获得 <strong>3 秒无敌</strong>，期间<strong>无法攻击</strong>。",
-    "StealthCloak": "<b>伪装卷轴</b>使用 <strong>1.5 秒</strong>后，自身进入<strong>伪装</strong>，持续 <strong>10 秒</strong>。",
+    "StealthCloak": "<b>伪装卷轴</b>实际淡入约 <strong>1 秒</strong>，伪装总时限 <strong>11.5 秒</strong>。近期受到伤害会中止，普攻起手会破隐。",
     "PrimeRune": "<b>Prime 符文</b>拾取生效时，<strong>同阵营每名符合条件的英雄</strong>立即获得 Prime。基础奖励为 <strong>70</strong>，己方主建筑记录的对局时间每满 <strong>300 秒</strong>，每人再加 70。"
 };
 
