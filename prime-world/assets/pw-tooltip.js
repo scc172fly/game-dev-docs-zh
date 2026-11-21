@@ -31,7 +31,7 @@
   function normalizeKey(value){var s=String(value||'').replace(/\\/g,'/');while(s.indexOf('../')===0)s=s.slice(3);while(s.indexOf('./')===0)s=s.slice(2);return s.replace(/^\/+/, '');}
   function triggerFrom(node){
     if(!node||!node.closest)return null;
-    var img=node.closest('button.hero-sim-slot[data-pw-tooltip]')||node.closest('img[data-pw-tooltip],img.skill-icon,img.pw-hero-poster');
+    var img=node.closest('button.hero-sim-slot[data-pw-tooltip],a.pw-inline-talent[data-pw-tooltip]')||node.closest('img[data-pw-tooltip],img.skill-icon,img.pw-hero-poster');
     if(!img)return null;
     var key=img.getAttribute('data-pw-tooltip');
     if(!key){var owner=img.closest('[data-pw-tooltip]');if(owner)key=owner.getAttribute('data-pw-tooltip');}
