@@ -171,6 +171,42 @@ function init(){
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
 
+
+/* Public labels describe the content without site release numbers. */
+(function () {
+  const release = /\bv0\.\d+(?:\.\d+)?\b/gi;
+  function clean(value) {
+    return value
+      .replace(/NEW IN V0\.\d+(?:\.\d+)?\s*\/\s*/gi, '')
+      .replace(/\bV0\.\d+(?:\.\d+)?\s*\/\s*/gi, '')
+      .replace(/本页结束\s*·\s*可以继续阅读下一章/g, '延伸阅读')
+      .replace(/\s*·\s*V0\.\d+(?:\.\d+)?\b/gi, '')
+      .replace(release, '')
+      .replace(/ {2,}/g, ' ');
+  }
+  function normalizeLabels() {
+    const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (!node.parentElement.closest('script,style,code,pre,textarea') && /\bv0\.\d|可以继续阅读下一章/i.test(node.data)) {
+        node.data = clean(node.data);
+      }
+    }
+    document.querySelectorAll('.v08-actions a').forEach(link => {
+      if (/^打开\s+交互式公式实验室/.test(link.textContent)) {
+        link.textContent = link.textContent.replace(/^打开\s+/, '打开');
+      }
+    });
+    document.querySelectorAll('[title],[aria-label],[alt],[placeholder],meta[name="description"]').forEach(element => {
+      for (const attr of ['title','aria-label','alt','placeholder','content']) {
+        const value = element.getAttribute(attr);
+        if (value && /\bv0\.\d/i.test(value)) element.setAttribute(attr, clean(value));
+      }
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', normalizeLabels, { once: true });
+  else normalizeLabels();
+})();
 /* Keep the shared masthead subtitle independent of release numbers. */
 (function () {
   function normalizeSubtitle() {
