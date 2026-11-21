@@ -355,3 +355,11 @@ html{scrollbar-gutter:stable}
 .pw-formula-more{margin:15px auto;display:block;padding:10px 25px;color:var(--gold,#ddb66f);background:var(--panel,#121b25);border:1px solid rgba(179,149,94,.5);cursor:pointer}.pw-formula-more:hover{background:rgba(179,149,94,.18)}
 .pw-lab-tip{padding:15px 18px;border:1px solid rgba(179,149,94,.38);border-left:3px solid #d5aa63;background:rgba(179,149,94,.08);margin:15px 0;color:var(--text,#edf2f7)}.pw-lab-tip h3{margin:0 0 7px;font-size:15px}.pw-lab-tip p{margin:0 0 8px;font-size:13px;line-height:1.75}.pw-lab-tip code{color:var(--gold,#d8b277);overflow-wrap:anywhere}.pw-example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.pw-example-grid .pw-lab-tip{margin:0}
 @media(max-width:750px){.pw-example-grid{grid-template-columns:1fr}.pw-formula-summary{grid-template-columns:repeat(2,1fr)}.pw-formula-search input{min-width:100%}}
+
+/* Keep the talent and kit links independent within a single grid cell. */
+.kit-tagged-slot{display:flex;flex-direction:column;min-width:0;background:var(--panel2)}
+.kit-tagged-slot>.talent-slot{flex:1}
+.slot-kit-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;padding:.25rem}
+.slot-kit-links a{padding:.1rem .28rem;border:1px solid var(--gold-br);border-radius:2px;color:var(--gold);font-size:.72rem;text-align:center;overflow-wrap:anywhere}
+#kit-presets{scroll-margin-top:calc(var(--head, 80px) + 1rem)}
+.kit-tagged-slot{scroll-margin-top:calc(var(--head, 80px) + 1rem)}
