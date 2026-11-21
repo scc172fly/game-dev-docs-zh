@@ -158,7 +158,7 @@ function init(){
    const values=row.querySelector('td.values-cell');
    const examples=Array.from(values?.querySelectorAll('.formula-example')||[], example=>example.textContent.trim());
    const result=examples.length>1 ? [values.querySelector('small')?.textContent,...examples].filter(Boolean).join(' / ') : (values?.querySelector('.state-facts dd:last-child')||values)?.textContent?.trim()||'';
-   const value=cell.textContent.trim();
+   const value=(cell.querySelector('.pw-formula-chinese')||cell).textContent.trim();
    if(!value)return;
    const d=document.createElement('details');d.className='pw-math-detail';
    const summary=document.createElement('summary');summary.textContent=/^[-+]?\d+(?:\.\d+)?$/.test(value)?'常量说明':'中文解读';d.append(summary);

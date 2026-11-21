@@ -438,3 +438,8 @@ html{scrollbar-gutter:stable}
 table .pw-table-unbroken{white-space:nowrap;overflow-wrap:normal;word-break:normal}
 
 .pw-formula-zh {margin:.55em 0 1em;padding:.45em .8em;border-inline-start:2px solid var(--gold);line-height:1.7;overflow-wrap:anywhere}
+
+.pw-formula-original{margin-bottom:.65em}
+.pw-formula-original a,.pw-formula-original small,.pw-formula-translation small{display:block;font-size:.86em;margin-bottom:.15em}
+.pw-formula-original code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;padding:.35em .55em;line-height:1.55}
+.pw-formula-translation{padding-inline-start:.55em;border-inline-start:2px solid var(--gold)}
