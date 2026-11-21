@@ -1,7 +1,238 @@
 <!DOCTYPE html>
 <html data-theme="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="dark light" name="color-scheme"/><meta content="Prime World 原版数值和 Nova 系数交互演算：攻击周期、暴击、穿透、防御、伤害、护盾、治疗和命中概率。" name="description"/><title>交互式公式实验室｜Prime World</title><link href="../assets/favicon.png" rel="icon"/><link href="../assets/atlas.css" rel="stylesheet"/><link href="../assets/site-v04.css" rel="stylesheet"/><link href="../assets/site-v05.css" rel="stylesheet"/><script>try{var z=localStorage.getItem('pw-theme-v04')||'system';document.documentElement.dataset.theme=z==='system'?(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):z;document.documentElement.dataset.themePref=z}catch(e){}</script><link href="../assets/site-v06.css" rel="stylesheet"/><link data-version="V0.8.3" href="../assets/site-v08.css" rel="stylesheet"/></head><body class="a5-body" data-root="../"><header class="pw-site-header"><div class="pw-top-glow"></div><div class="pw-nav-shell"><a aria-label="Prime World 首页" class="pw-brand" href="../index.html"><span class="pw-emblem"><span>PW</span></span><span class="pw-brand-copy"><strong>PRIME WORLD</strong><small>TACTICAL ATLAS</small></span></a><nav aria-label="主导航" class="pw-primary-nav" id="pw-primary-nav"><a class="pw-nav-link" href="../hero-roster.html"><span class="a5-nav-icon">⚔</span><span>英雄</span></a><a class="pw-nav-link" href="../talent-catalog.html"><span class="a5-nav-icon">✦</span><span>天赋</span></a><a class="pw-nav-link" href="../talent-sets.html"><span class="a5-nav-icon">◈</span><span>套装</span></a><a class="pw-nav-link" href="../game-modes.html"><span class="a5-nav-icon">◆</span><span>玩法</span></a><a class="pw-nav-link" href="../battle-maps.html"><span class="a5-nav-icon">⬡</span><span>地图</span></a><a class="pw-nav-link" href="../match-rules.html"><span class="a5-nav-icon">⚑</span><span>规则</span></a><a class="pw-nav-link is-active" href="../balance.html"><span class="a5-nav-icon">∑</span><span>数值</span></a><a class="pw-nav-link" href="../economy-and-progression.html"><span class="a5-nav-icon">◇</span><span>经济</span></a><a class="pw-nav-link" href="../version-research.html"><span class="a5-nav-icon">⧉</span><span>对照</span></a></nav><div class="pw-nav-tools"><div class="pw-search-wrap"><span class="a5-search-icon">⌕</span><input aria-label="搜索全站" autocomplete="off" id="pw-search-input" placeholder="英雄 / 玩法 / 数值" type="search"/><kbd>⌘K</kbd><div class="pw-search-results" id="pw-search-results"></div></div><div class="pw-theme-wrap"><span class="a5-theme-icon">◐</span><select aria-label="选择显示主题" class="pw-theme-select"><option value="system">跟随系统</option><option value="dark">深色</option><option value="light">浅色</option></select><span class="pw-caret">⌄</span></div><button aria-expanded="false" aria-label="展开主菜单" class="pw-mobile-toggle" type="button"><span>☰</span></button></div></div></header><main class="a5-container v08-lab-page">
 <nav aria-label="页面层级" class="a5-crumbs"><a href="../index.html">资料首页</a><span>›</span><a href="../formula-library.html">公式学习中心</a><span>›</span>交互式公式实验室</nav>
-<section class="a5-hero"><div class="a5-hero-copy"><span class="a5-eyebrow">INTERACTIVE FORMULA LAB</span><h1>交互式公式实验室</h1><p>真正修改数值并观察输出。上半部分是 Nova 公告中的系数对照，下半部分是 Nival 原版源码整理的战斗链；二者独立计算，不混用来源。</p><div class="v08-intro-links"><a href="../formula-library.html">43 张公式卡和全站参数解释 →</a><a href="../compare/formula-glossary.html">中文公式与变量词典 →</a><a href="../version-research.html">原版 / Nova / 重制决策 →</a></div></div></section>
+<section class="a5-hero"><div class="a5-hero-copy"><span class="a5-eyebrow">INTERACTIVE FORMULA LAB</span><h1>交互式公式实验室</h1><p>调整输入，实时查看代入过程和结算结果。Nival 原版战斗与 Nova 系数对照各自独立计算。</p><div class="v08-intro-links"><a href="../formula-library.html">43 张公式卡和全站参数解释 →</a><a href="../compare/formula-glossary.html">中文公式与变量词典 →</a><a href="../version-research.html">原版 / Nova / 重制决策 →</a></div></div></section>
+<nav class="v08-lab-index" aria-label="按结算用途浏览公式">
+<div><strong>出手与命中</strong><div class="v08-actions"><a href="#attack-speed">攻速与间隔</a><a href="#hit-evasion">命中与闪避</a><a href="#critical">暴击</a></div></div>
+<div><strong>伤害与防御</strong><div class="v08-actions"><a href="#damage-reduction">伤害减免</a><a href="#penetration">穿透</a><a href="#shield-absorb">护盾吸收</a></div></div>
+<div><strong>生命与能量</strong><div class="v08-actions"><a href="#heal">治疗</a><a href="#mana-burn">Mana 灼烧</a></div></div>
+<div><strong>组合与版本对照</strong><div class="v08-actions"><a href="#nival">原版完整战斗演算</a><a href="#nova">Nova 穿透系数</a></div></div>
+</nav>
+<section class="a5-section" id="damage-reduction">
+<div class="a5-section-head"><h2>原版伤害减免 · 动态演示</h2><p>同一笔已命中的普攻，分别按物理和能量伤害结算。改动任一输入，下方即时对照两种结果。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>B = 0.00536 × (S + 0.3 × W) − 0.2</code><br>
+<code>M = 0.00536 × (W + 0.3 × S) − 0.2</code><br>
+<code>R = clamp(B or M, −0.75, 0.75)</code><br>
+<code>D<sub>after</sub> = max(D, 0) × (1 − R)</code><br>
+<code>HP<sub>loss</sub> = min(D<sub>after</sub>, HP)</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+物理防御 = 0.00536 ×（坚韧 + 0.3 × 意志）− 0.2<br>
+能量防御 = 0.00536 ×（意志 + 0.3 × 坚韧）− 0.2<br>
+减伤比例 = 将对应防御限制在 −75% 到 75%<br>
+减免后伤害 = 取较大值（原始伤害，0）×（1 − 减伤比例）<br>
+实际扣血 = 取较小值（减免后伤害，目标当前生命）
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>原始攻击伤害</span><input id="v08-reduce-raw" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>目标坚韧</span><input id="v08-reduce-stamina" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>目标意志</span><input id="v08-reduce-will" type="number" min="0" step="any" value="50"></label>
+<label class="v08-field"><span>目标当前生命</span><input id="v08-reduce-hp" type="number" min="0" step="any" value="200"></label>
+</div>
+<div class="v08-results" id="v08-reduce-results" aria-live="polite">
+<div class="v08-result highlight"><span>物理 · 实际扣血</span><strong id="v08-reduce-body-loss">—</strong><code id="v08-reduce-body-rate">—</code></div>
+<div class="v08-result highlight"><span>能量 · 实际扣血</span><strong id="v08-reduce-spirit-loss">—</strong><code id="v08-reduce-spirit-rate">—</code></div>
+</div>
+<div class="v08-steps"><strong>物理伤害 · 实时代入</strong><ol id="v08-reduce-body-steps"></ol></div>
+<div class="v08-steps"><strong>能量伤害 · 实时代入</strong><ol id="v08-reduce-spirit-steps"></ol></div>
+<p>减伤为负时，本次伤害会放大。演示固定穿透、额外减伤和护盾为 0，按未暴击的普攻计算这些防御属性的影响。含穿透、暴击和护盾的算例见<a href="#nival">原版完整战斗演算</a>。</p>
+<details class="v08-explain"><summary>原版配置与结算源码</summary>
+<ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L45-L54">基础双防公式</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2732-L2748">穿透差值、普攻分支和上下限</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2220-L2245">伤害下限与当前生命截断</a></li>
+</ul></details>
+</section>
+<section class="a5-section" id="penetration">
+<div class="a5-section-head"><h2>原版穿透 · 动态演示</h2><p>调整攻速和灵巧，看两项穿透如何合计。物理、能量各自对比无穿透和有穿透时的减伤与扣血。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>AS′ = AS − max(0, AS − 500) × 0.25</code><br>
+<code>Dex′ = Dex − max(0, Dex − 500) × 0.25</code><br>
+<code>A = clamp(AS × 0.00365 + 0.49, 0.702, 2)</code><br>
+<code>C = clamp(90.9 × Dex′ ÷ (Dex′ + 128) − 28, 0, 100)</code><br>
+<code>P<sub>AS</sub> = 0.00536 × AS′ − 0.2 − (1 − 0.6667 ÷ A)</code><br>
+<code>P<sub>Dex</sub> = 0.00536 × Dex′ − 0.2 − C ÷ (100 + C)</code><br>
+<code>P = max(0, P<sub>AS</sub> + P<sub>Dex</sub>)</code><br>
+<code>B = 0.00536 × (S + 0.3 × W) − 0.2</code><br>
+<code>M = 0.00536 × (W + 0.3 × S) − 0.2</code><br>
+<code>R = clamp((B or M) − P, −0.75, 0.75)</code><br>
+<code>HP<sub>loss</sub> = min(max(D, 0) × (1 − R), HP)</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+有效攻速 = 攻速 − 取较大值（0，攻速 − 500）× 0.25<br>
+有效灵巧 = 灵巧 − 取较大值（0，灵巧 − 500）× 0.25<br>
+攻速换算值 = 将（攻速 × 0.00365 + 0.49）限制在 0.702 到 2<br>
+基础暴击率百分点 = 将〔90.9 × 有效灵巧 ÷（有效灵巧 + 128）− 28〕限制在 0 到 100<br>
+攻速穿透 = 0.00536 × 有效攻速 − 0.2 −（1 − 0.6667 ÷ 攻速换算值）<br>
+灵巧穿透 = 0.00536 × 有效灵巧 − 0.2 − 基础暴击率百分点 ÷（100 + 基础暴击率百分点）<br>
+总穿透 = 取较大值（0，攻速穿透 + 灵巧穿透）<br>
+物理防御 = 0.00536 ×（坚韧 + 0.3 × 意志）− 0.2<br>
+能量防御 = 0.00536 ×（意志 + 0.3 × 坚韧）− 0.2<br>
+减伤比例 = 将（对应防御 − 总穿透）限制在 −75% 到 75%<br>
+实际扣血 = 取较小值〔取较大值（原始伤害，0）×（1 − 减伤比例），当前生命〕
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>攻击者攻速</span><input id="v08-pierce-as" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>攻击者灵巧</span><input id="v08-pierce-dex" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>目标坚韧</span><input id="v08-pierce-stamina" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>目标意志</span><input id="v08-pierce-will" type="number" min="0" step="any" value="50"></label>
+<label class="v08-field"><span>原始攻击伤害</span><input id="v08-pierce-raw" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>目标当前生命</span><input id="v08-pierce-hp" type="number" min="0" step="any" value="200"></label>
+</div>
+<div class="v08-results" aria-live="polite">
+<div class="v08-result"><span>总穿透 · 限幅前抵掉的防御</span><strong id="v08-pierce-total">—</strong><code id="v08-pierce-parts">—</code></div>
+<div class="v08-result highlight"><span>物理 · 实际扣血</span><strong id="v08-pierce-body-loss">—</strong><code id="v08-pierce-body-rate">—</code></div>
+<div class="v08-result highlight"><span>能量 · 实际扣血</span><strong id="v08-pierce-spirit-loss">—</strong><code id="v08-pierce-spirit-rate">—</code></div>
+</div>
+<div class="v08-steps"><strong>攻速与灵巧 · 实时代入</strong><ol id="v08-pierce-steps"></ol></div>
+<div class="v08-steps"><strong>物理伤害 · 实时代入</strong><ol id="v08-pierce-body-steps"></ol></div>
+<div class="v08-steps"><strong>能量伤害 · 实时代入</strong><ol id="v08-pierce-spirit-steps"></ol></div>
+<p>演示按已命中、未暴击的普攻结算，额外减伤和护盾设为 0。总穿透先从防御中扣除，减伤再限幅。扣成负数时会增伤，超过限幅的穿透不会继续提高伤害。</p>
+<details class="v08-explain"><summary>原版配置与结算源码</summary><ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L45-L70">双防、攻速穿透、灵巧穿透和合计</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2732-L2748">先扣穿透、再限幅的伤害乘数</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2220-L2245">实际扣血受当前生命限制</a></li>
+</ul></details>
+</section>
+<section class="a5-section" id="critical">
+<div class="a5-section-head"><h2>原版暴击 · 动态演示</h2><p>调整攻击者灵巧、额外暴击率和倍率，对照同一笔命中在普通与暴击两种情况下的伤害。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>Dex′ = Dex − max(0, Dex − 500) × 0.25</code><br>
+<code>C = clamp(90.9 × Dex′ ÷ (Dex′ + 128) − 28 + CritChanceBonus, 0, 100)</code><br>
+<code>D<sub>normal</sub> = D</code><br>
+<code>D<sub>crit</sub> = D × CriticalMultiplier</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+有效灵巧 = 灵巧 − 取较大值（0，灵巧 − 500）× 0.25<br>
+最终暴击率百分点 = 将〔90.9 × 有效灵巧 ÷（有效灵巧 + 128）− 28 + 额外暴击率百分点〕限制在 0 到 100<br>
+未暴击伤害 = 原始攻击伤害<br>
+暴击伤害 = 原始攻击伤害 × 暴击倍率
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>攻击者灵巧</span><input id="v08-demo-crit-dex" type="number" min="0" step="any" value="100"></label>
+<label class="v08-field"><span>额外暴击率（百分点）</span><input id="v08-demo-crit-bonus" type="number" step="any" value="10"></label>
+<label class="v08-field"><span>暴击倍率（原版英雄默认 2）</span><input id="v08-demo-crit-mult" type="number" min="0" step="any" value="2"></label>
+<label class="v08-field"><span>原始攻击伤害</span><input id="v08-demo-crit-raw" type="number" min="0" step="any" value="100"></label>
+</div>
+<div class="v08-results" aria-live="polite">
+<div class="v08-result highlight"><span>最终暴击率</span><strong id="v08-demo-crit-chance">—</strong><meter id="v08-demo-crit-meter" min="0" max="100" value="0" aria-label="最终暴击率"></meter></div>
+<div class="v08-result"><span>未暴击伤害</span><strong id="v08-demo-crit-normal">—</strong><code id="v08-demo-crit-normal-note">—</code></div>
+<div class="v08-result"><span>暴击伤害</span><strong id="v08-demo-crit-hit">—</strong><code id="v08-demo-crit-hit-note">—</code></div>
+</div>
+<div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-demo-crit-steps"></ol></div>
+<p>演示假设攻击已命中且允许暴击。原版在伤害施加器带有暴击标记时抽样，抽中后先乘暴击倍率，再进入防御和护盾结算。这里显示两个分支各自的伤害，含防御与护盾的实际扣血见<a href="#nival">原版完整战斗演算</a>。</p>
+<details class="v08-explain"><summary>原版配置与结算源码</summary><ul>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L39">灵巧、额外暴击率与概率限幅</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Hero.UNLP.xdb#L160-L165">英雄默认暴击倍率</a></li>
+<li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFApplInstant.cpp#L110-L151">暴击抽样与伤害结算顺序</a></li>
+</ul></details>
+</section>
+<section class="a5-section" id="hit-evasion">
+<div class="a5-section-head"><h2>原版命中与闪避 · 动态演示</h2><p>同一发敌对、可闪避的普攻，分别看未命中、被闪避和命中三种结果。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>m = clamp(int(MissChance), 0, 100) ÷ 100</code><br>
+<code>e = clamp(int(Evasion), 0, 100) ÷ 100</code><br>
+<code>P_miss = m</code><br>
+<code>P_evaded = (1 − m) × e</code><br>
+<code>P_hit = (1 − m) × (1 − e)</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+未命中比例 = 将未命中率向零取整，限制在 0 到 100，再除以 100<br>
+闪避比例 = 将闪避率向零取整，限制在 0 到 100，再除以 100<br>
+最终未命中概率 = 未命中比例<br>
+最终被闪避概率 =（1 − 未命中比例）× 闪避比例<br>
+最终命中概率 =（1 − 未命中比例）×（1 − 闪避比例）
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>攻击者未命中率（%）</span><input id="v08-hit-evasion-miss" type="number" step="any" value="20" min="0" max="100"></label>
+<label class="v08-field"><span>目标闪避率（%）</span><input id="v08-hit-evasion-evasion" type="number" step="any" value="25" min="0" max="100"></label>
+</div>
+<div class="v08-results" aria-live="polite">
+<div class="v08-result highlight"><span>最终命中</span><strong id="v08-hit-evasion-hit">—</strong></div>
+<div class="v08-result"><span>未命中</span><strong id="v08-hit-evasion-miss-result">—</strong></div>
+<div class="v08-result"><span>被闪避</span><strong id="v08-hit-evasion-evaded">—</strong></div>
+</div>
+<div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-hit-evasion-steps"></ol></div>
+<p>源码先后抽取两个 0～99 的整数，即使第一项判定未命中，第二项也已经抽样。两项都触发时记录为「未命中」，所以「被闪避」只统计第一项通过的情况。</p>
+<div class="v08-actions"><a href="../rules/formulas/c11-formula.html">查看原版配置与结算源码 ↗</a></div>
+</section>
+<section class="a5-section" id="attack-speed">
+<div class="a5-section-head"><h2>原版攻速与攻击间隔 · 动态演示</h2><p>调整攻速点数，观察每秒攻击次数和相邻两次普攻之间的冷却。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>A = min(AS × 0.00365 + 0.49, 2)</code><br>
+<code>APS = max(ExplicitAPS &gt; 0 ? ExplicitAPS : A, 0.01)</code><br>
+<code>T = 1 ÷ APS</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+常规攻击频率 = 取较小值（攻速 × 0.00365 + 0.49，2）<br>
+实际攻击频率 = 取较大值（显式频率为正则用显式频率，否则用常规频率，0.01）<br>
+普攻冷却 = 1 ÷ 实际攻击频率
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>攻速点数</span><input id="v08-attack-speed-stat" type="number" step="any" value="100" min="0"></label>
+<label class="v08-field"><span>显式频率（0 表示未覆盖）</span><input id="v08-attack-speed-explicit" type="number" step="any" value="0" min="0"></label>
+</div>
+<div class="v08-results" aria-live="polite">
+<div class="v08-result highlight"><span>每秒攻击次数</span><strong id="v08-attack-speed-aps">—</strong></div>
+<div class="v08-result"><span>普攻冷却</span><strong id="v08-attack-speed-period">—</strong></div>
+</div>
+<div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-attack-speed-steps"></ol></div>
+<p>上限 2 只作用于常规换算。显式攻击频率为正时可以超过 2。这是普攻冷却，命中时间还受出手和弹道影响。</p>
+<div class="v08-actions"><a href="../rules/formulas/c05-formula.html">查看原版配置与结算源码 ↗</a></div>
+</section>
+<section class="a5-section" id="shield-absorb">
+<div class="a5-section-head"><h2>原版护盾吸收 · 动态演示</h2><p>把减免后的伤害送进一个标准护盾，观察护盾余额和实际扣血。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>A = (alive &amp;&amp; S &gt; 0 &amp;&amp; !ignoreDefences) ? min(D, S) : 0</code><br>
+<code>S_after = S − A</code><br>
+<code>HP_loss = min(max(D − A, 0), HP)</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+护盾消耗量 = 目标存活、有盾且未忽略防御时，取较小值（事件伤害，护盾余额），否则为 0<br>
+剩余护盾 = 护盾余额 − 护盾消耗量<br>
+实际扣血 = 取较小值（护盾后非负伤害，当前生命）
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>进入护盾的事件伤害</span><input id="v08-shield-absorb-damage" type="number" step="any" value="80"></label>
+<label class="v08-field"><span>当前护盾余额</span><input id="v08-shield-absorb-shield" type="number" step="any" value="30" min="0"></label>
+<label class="v08-field"><span>目标当前生命</span><input id="v08-shield-absorb-hp" type="number" step="any" value="200" min="0"></label>
+<label class="v08-field v08-check"><input id="v08-shield-absorb-ignore" type="checkbox"><span>忽略防御（跳过标准护盾）</span></label>
+</div>
+<div class="v08-results" aria-live="polite">
+<div class="v08-result highlight"><span>实际扣血</span><strong id="v08-shield-absorb-loss">—</strong></div>
+<div class="v08-result"><span>护盾消耗量</span><strong id="v08-shield-absorb-spent">—</strong></div>
+<div class="v08-result"><span>剩余护盾</span><strong id="v08-shield-absorb-remaining">—</strong></div>
+</div>
+<div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-shield-absorb-steps"></ol></div>
+<p>已存活目标的负伤害事件可能增加有效护盾余额，生命扣减仍以 0 为下限。目标死亡时跳过结算。本例使用单个标准护盾。</p>
+<div class="v08-actions"><a href="../rules/formulas/c12-formula.html">查看原版配置与结算源码 ↗</a></div>
+</section>
+<section class="a5-section" id="mana-burn">
+<div class="a5-section-head"><h2>原版 Mana 灼烧 · 动态演示</h2><p>输入送入 Mana 分支的最终灼烧量，观察目标能量如何变化。</p></div>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br>
+<code>E_burn = min(E, D_mana)</code><br>
+<code>E_after = E − E_burn</code><br>
+<code>HP_loss = 0</code>
+</div>
+<p class="pw-formula-zh"><strong>中文公式</strong><br>
+实际灼烧量 = 取较小值（当前能量，最终灼烧量）<br>
+剩余能量 = 当前能量 − 实际灼烧量<br>
+实际扣血 = 0
+</p>
+<div class="v08-lab-grid">
+<label class="v08-field"><span>目标当前能量</span><input id="v08-mana-burn-energy" type="number" step="any" value="40" min="0"></label>
+<label class="v08-field"><span>最终灼烧量（暴击后）</span><input id="v08-mana-burn-damage" type="number" step="any" value="100" min="0"></label>
+</div>
+<div class="v08-results" aria-live="polite">
+<div class="v08-result highlight"><span>实际灼烧能量</span><strong id="v08-mana-burn-burned">—</strong></div>
+<div class="v08-result"><span>剩余能量</span><strong id="v08-mana-burn-remaining">—</strong></div>
+<div class="v08-result"><span>实际扣血</span><strong id="v08-mana-burn-loss">—</strong></div>
+</div>
+<div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-mana-burn-steps"></ol></div>
+<p>假设目标存活。Mana 伤害施加器调用 OnBurnEnergy 扣能量，护盾与生命保持原值。</p>
+<div class="v08-actions"><a href="../rules/formulas/c10-formula.html#mana-burn-formula">查看原版配置与结算源码 ↗</a></div>
+</section>
 <section class="a5-section" id="nova"><div class="a5-section-head"><span class="a5-kicker">01 / NOVA PATCH</span><h2>Nova 穿透系数：旧版 0.09 与新版 0.06</h2><p>2026 年 9 月 14 日的 Nova 更新公告给出两条具体公式。改变 x 和基准穿透，实时计算新旧差值。</p></div>
 <div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br><code>旧值 = Pbase × [1 + 0.09 × (1 − x)]</code><br/><code>新值 = Pbase × [1 + 0.06 × (1 − x)]</code></div><p class="pw-formula-zh"><strong>中文公式</strong><br>旧版穿透 = 基准穿透 ×〔1 + 0.09 ×（1 − 系数影响参数）〕<br>新版穿透 = 基准穿透 ×〔1 + 0.06 ×（1 − 系数影响参数）〕</p>
 <div class="v08-lab-grid"><label class="v08-field"><span>基准穿透 Pbase（输入值）</span><input id="v08-nova-base" min="0" step="0.01" type="number" value="100"/></label><label class="v08-field"><span>系数影响参数 x（0.333～2.7）</span><input id="v08-nova-x" max="2.7" min="0.333" step="0.001" type="number" value="1.163"/></label><label class="v08-field"><span>拖动滑块调整 x</span><input id="v08-nova-range" max="2.7" min="0.333" step="0.001" type="range" value="1.163"/><small>x 是公告中未公开求值式的独立输入，不等于攻速或灵巧。</small></label></div>
@@ -39,7 +270,7 @@
 <div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-nival-steps"></ol></div>
 <div class="v08-explain"><strong>为什么不是所有情况下都能得出完整实战结果？</strong>假设攻击者有效、目标可受伤，派发与伤害施加器的普攻标记一致。敌对且带 EVADABLE 标记的普攻进行未命中和闪避两次抽样，本工具仅显示概率，并假设本次成功命中后继续演算。暴击用勾选框明确选择成功或失败；只有 DamageApplicator.damageMode 包含暴击位的技能才走暴击路径。Pure 跳过普通防御，仍可被标准护盾吸收。Mana 在暴击判定后直接灼烧目标当前能量，护盾和生命均保持原值。ignoreDefences 还会让标准护盾不吸收。零生命目标跳过结算。类型减伤超过 100% 时，负的伤害事件可增加有效护盾容量，事件处理后扣血下限为 0。多个盾的监听顺序、其他事件触发、伤害转移、吸血和英雄特殊资源不在本简化演算范围。</div><div class="v08-actions"><a href="../rules/formulas/c05-formula.html">C05 攻速周期 ↗</a><a href="../rules/formulas/c06-formula.html">C06 暴击 ↗</a><a href="../rules/formulas/c07-formula.html">C07 双防 ↗</a><a href="../rules/formulas/c08-formula.html">C08 穿透 ↗</a><a href="../rules/formulas/c09-formula.html">C09 伤害乘数 ↗</a><a href="../rules/formulas/c10-formula.html">C10 减免 ↗</a><a href="../rules/formulas/c11-formula.html">C11 闪避 ↗</a><a href="../rules/formulas/c12-formula.html">C12 护盾 ↗</a></div></section>
 <section class="a5-section" id="heal"><div class="a5-section-head"><span class="a5-kicker">03 / HEALING</span><h2>治疗修正与溢出治疗</h2><p>区分治疗技能给出的原始治疗量、比例修正、固定修正、禁止治疗和最大生命上限。</p></div>
-<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br><code>理论治疗 = amount × (1 + HealingScale) + HealingBias</code><br/><code>生命变化 = min(最大生命 − 当前生命, 理论治疗)</code></div><p class="pw-formula-zh"><strong>中文公式</strong><br>理论治疗 = 原始治疗量 ×（1 + 治疗倍率修正）+ 治疗固定修正<br>生命变化 = 取较小值（最大生命 − 当前生命，理论治疗）</p>
+<div class="a5-formula pw-formula-source"><strong class="pw-formula-source-label">原式</strong><br><code>H = ignoreHealingMods ? amount : amount × (1 + HealingScale) + HealingBias</code><br/><code>ΔHP = (!alive || FORBIDLIFERESTORE) ? 0 : min(MaxHP − HP, H)</code></div><p class="pw-formula-zh"><strong>中文公式</strong><br>理论治疗 = 忽略治疗修正时取原始治疗量，否则取原始治疗量 ×（1 + 治疗倍率修正）+ 治疗固定修正<br>生命变化 = 目标死亡或禁止治疗时为 0，否则取较小值（最大生命 − 当前生命，理论治疗）</p>
 <div class="v08-lab-grid"><label class="v08-field"><span>技能原始治疗量 amount</span><input id="v08-heal-raw" step="1" type="number" value="250"/></label><label class="v08-field"><span>当前生命 HP</span><input id="v08-heal-hp" min="0" step="1" type="number" value="700"/></label><label class="v08-field"><span>最大生命 MaxHP</span><input id="v08-heal-max" min="1" step="1" type="number" value="1000"/></label><label class="v08-field"><span>治疗比例修正 HealingScale</span><input id="v08-heal-scale" step="0.01" type="number" value="0.2"/></label><label class="v08-field"><span>固定治疗修正 HealingBias</span><input id="v08-heal-bias" step="1" type="number" value="10"/></label><label class="v08-field v08-check"><input id="v08-heal-ignore" type="checkbox"/><span>ignoreHealingMods：跳过比例与固定修正</span></label><label class="v08-field v08-check"><input id="v08-heal-forbid" type="checkbox"/><span>FORBIDLIFERESTORE：禁止生命恢复</span></label></div><div class="v08-results"><div class="v08-result"><span>理论治疗量</span><strong id="v08-heal-theory">—</strong><code>进入治疗流程前的估算</code></div><div class="v08-result"><span>实际生命变化</span><strong id="v08-heal-actual">—</strong><code>负值表示生命下降</code></div><div class="v08-result highlight"><span>超过上限的治疗</span><strong id="v08-heal-over">—</strong><code>不等于额外护盾</code></div></div><div class="v08-steps"><strong>实时计算步骤</strong><ol id="v08-heal-steps"></ol></div><div class="v08-explain">死亡目标跳过治疗。存活目标可因负修正而损失生命；若达到死亡阈值，原版还会触发死亡流程。溢出量表示因生命上限截去的部分。</div><div class="v08-actions"><a href="../rules/formulas/c13-formula.html">C13 治疗与溢出原版公式 ↗</a><a href="../formula-library.html">完整公式学习中心 ↗</a></div></section>
 <footer class="a5-foot">教学演算实验室 · Nival 固定代码基准 <code>8de5df31fa12</code> · Nova 系数基于 2026-09-14 公开更新。<br/>本资料是离线研究工具，不等于官方实时战斗模拟器或未经验证的运营版本参数。</footer>
 </main><script>window.PW_V04_ROOT='../';</script><script defer="" src="../assets/site-v04.js"></script><script defer="" src="../assets/site-v05.js"></script><script defer="" src="../assets/site-v06.js"></script><script defer="" src="../assets/site-v08-lab.js"></script></body></html>

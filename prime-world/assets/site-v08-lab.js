@@ -3,6 +3,8 @@
  const get=id=>document.getElementById(id), num=id=>{const el=get(id);if(!el)return 0;const v=Number(el.value);return Number.isFinite(v)?v:0};
  const tick=id=>Boolean(get(id)&&get(id).checked);
  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+ const defenceFromStats=(main, secondary)=>.00536*(main+.3*secondary)-.2;
+ const clampDefence=value=>clamp(value,-.75,.75);
  const fixed=(v,k=4)=>Number.isFinite(v)?v.toFixed(k):'—';
  const put=(id,text)=>{let e=get(id);if(e)e.textContent=text};
  const formulaTerms = {
@@ -44,6 +46,160 @@
    '变化 Δ = 新值 − 旧值 = '+fixed(now,3)+' − '+fixed(old,3)+' = '+fixed(diff,3)+'。'
   ]);
  }
+ function calculateReduction(){
+  const attack=Math.max(0,num('v08-reduce-raw'));
+  const stamina=Math.max(0,num('v08-reduce-stamina')),will=Math.max(0,num('v08-reduce-will'));
+  const hp=Math.max(0,num('v08-reduce-hp'));
+  for (const [kind, primary, secondary] of [['body',stamina,will],['spirit',will,stamina]]) {
+   const defence=defenceFromStats(primary,secondary);
+   const reduction=clampDefence(defence);
+   const damage=attack*(1-reduction);
+   const loss=isAlive(hp)?Math.min(damage,hp):0;
+   const prefix='v08-reduce-'+kind;
+   put(prefix+'-loss',fixed(loss,2));
+   put(prefix+'-rate',(reduction<0?'伤害放大 '+fixed(-100*reduction,2):'减伤 '+fixed(100*reduction,2))+'%');
+   steps(prefix+'-steps',[
+    '对应防御 = 0.00536 × ('+primary+' + 0.3 × '+secondary+') − 0.2 = '+fixed(defence,5),
+    '减伤比例 = 限制在 −75% 到 75%（'+fixed(defence*100,3)+'%） = '+fixed(reduction*100,3)+'%',
+    '减免后伤害 = '+attack+' × (1 − '+fixed(reduction,5)+') ≈ '+fixed(damage,3),
+    isAlive(hp)?'实际扣血 = 取较小值（'+fixed(damage,3)+'，'+hp+'）≈ '+fixed(loss,3):'目标当前生命为零或已低于存活阈值，实际扣血 = 0'
+   ]);
+  }
+ }
+ function critFromDex(dex){
+  const dprime=dex-Math.max(0,dex-500)*.25;
+  return { dprime,rawCrit:90.9*dprime/(dprime+128)-28 };
+ }
+ function calculateCritical(){
+  const prefix='v08-demo-crit-';
+  const dex=Math.max(0,num(prefix+'dex')),bonus=num(prefix+'bonus');
+  const mult=Math.max(0,num(prefix+'mult')),raw=Math.max(0,num(prefix+'raw'));
+  const { dprime,rawCrit }=critFromDex(dex);
+  const unbounded=rawCrit+bonus,chance=clamp(unbounded,0,100);
+  const critical=raw*mult;
+  put(prefix+'chance',fixed(chance,2)+'%');
+  get(prefix+'meter').value=chance;
+  put(prefix+'normal',fixed(raw,2));
+  put(prefix+'hit',fixed(critical,2));
+  put(prefix+'normal-note',chance===100?'暴击率为 100%，本次不会走未暴击分支':'未暴击概率 '+fixed(100-chance,2)+'%');
+  put(prefix+'hit-note',chance===0?'暴击率为 0%，仅显示该分支的理论值':'暴击概率 '+fixed(chance,2)+'%');
+  steps(prefix+'steps',[
+   '有效灵巧 = '+dex+' − 取较大值（0，'+dex+' − 500）× 0.25 = '+fixed(dprime,4),
+   '加成前未限幅的暴击率百分点 = 90.9 × '+fixed(dprime,4)+' ÷（'+fixed(dprime,4)+' + 128）− 28 ≈ '+fixed(rawCrit,4),
+   '先加额外暴击率 = '+fixed(rawCrit,4)+' +（'+bonus+'）≈ '+fixed(unbounded,4)+' 个百分点',
+   '最终暴击率 = 将 '+fixed(unbounded,4)+'% 限制在 0% 到 100% ≈ '+fixed(chance,4)+'%',
+   '未暴击伤害 = '+fixed(raw,4)+'；暴击伤害 = '+raw+' × '+mult+' ≈ '+fixed(critical,4)
+  ]);
+ }
+ function penetrationFromStats(AS,dex){
+  const aprime=AS-Math.max(0,AS-500)*.25;
+  const speed=clamp(AS*.00365+.49,.702,2);
+  const { dprime,rawCrit }=critFromDex(dex);
+  const cbase=clamp(rawCrit,0,100);
+  // DerivateStats uses base crit without the added crit bonus and ignores Explicit APS.
+  const pas=.00536*aprime-.2-(1-.6667/speed);
+  const pdex=.00536*dprime-.2-cbase/(100+cbase);
+  return { aprime,dprime,speed,rawCrit,cbase,pas,pdex,P:Math.max(pas+pdex,0) };
+ }
+ function calculatePenetration(){
+  const value=name=>Math.max(0,num('v08-pierce-'+name));
+  const as=value('as'),dex=value('dex'),stamina=value('stamina'),will=value('will');
+  const raw=value('raw'),hp=value('hp');
+  const { aprime,dprime,speed,cbase,pas,pdex,P }=penetrationFromStats(as,dex);
+  const points=n=>fixed(100*n,2);
+  const ratio=n=>fixed(n,5);
+  const healthLoss=damage=>isAlive(hp)?Math.min(damage,hp):0;
+  put('v08-pierce-total',points(P)+' 个百分点');
+  put('v08-pierce-parts','攻速 '+points(pas)+' · 灵巧 '+points(pdex)+' 个百分点，合计最低为 0');
+  steps('v08-pierce-steps',[
+   '有效攻速 = '+as+' − 取较大值（0，'+as+' − 500）× 0.25 = '+ratio(aprime),
+   '有效灵巧 = '+dex+' − 取较大值（0，'+dex+' − 500）× 0.25 = '+ratio(dprime),
+   '攻速换算值 = 将（'+as+' × 0.00365 + 0.49）限制在 0.702 到 2 ≈ '+ratio(speed),
+   '基础暴击率百分点 = 将〔90.9 × '+ratio(dprime)+' ÷（'+ratio(dprime)+' + 128）− 28〕限制在 0 到 100 ≈ '+ratio(cbase),
+   '攻速穿透 = 0.00536 × '+ratio(aprime)+' − 0.2 −（1 − 0.6667 ÷ '+ratio(speed)+'）≈ '+ratio(pas),
+   '灵巧穿透 = 0.00536 × '+ratio(dprime)+' − 0.2 − '+ratio(cbase)+' ÷（100 + '+ratio(cbase)+'）≈ '+ratio(pdex),
+   '总穿透 = 取较大值（0，'+ratio(pas)+' + '+ratio(pdex)+'）≈ '+ratio(P)
+  ]);
+  for (const [kind,main,secondary] of [['body',stamina,will],['spirit',will,stamina]]) {
+   const defence=defenceFromStats(main,secondary);
+   const before=clampDefence(defence),after=clampDefence(defence-P);
+   const damage=raw*(1-after),loss=healthLoss(damage);
+   const prefix='v08-pierce-'+kind;
+   put(prefix+'-loss',fixed(loss,2));
+   put(prefix+'-rate','减伤 '+points(before)+'% → '+points(after)+'% · 实际少减 '+points(before-after)+' 个百分点');
+   steps(prefix+'-steps',[
+    '基础防御 = 0.00536 ×（'+main+' + 0.3 × '+secondary+'）− 0.2 ≈ '+ratio(defence),
+    '扣穿透后的防御 = '+ratio(defence)+' − '+ratio(P)+' ≈ '+ratio(defence-P),
+    '将防御限制在 −75% 到 75%：无穿透 '+points(before)+'%，有穿透 '+points(after)+'%，相差 '+points(before-after)+' 个百分点。',
+    '减免后伤害 = '+raw+' ×（1 − '+ratio(after)+'）≈ '+fixed(damage,3),
+    isAlive(hp)?'实际扣血 = 取较小值（'+fixed(damage,3)+'，'+hp+'）≈ '+fixed(loss,3)+'；无穿透时扣 '+fixed(healthLoss(raw*(1-before)),3):'目标已死亡，实际扣血 = 0'
+   ]);
+  }
+ }
+ const nonnegative=id=>Math.max(0,num(id));
+ const procRate=value=>clamp(Math.trunc(value),0,100)/100;
+ const hitChance=(miss,evade)=>(1-miss)*(1-evade);
+ const baseAttackRate=as=>Math.min(as*.00365+.49,2);
+ const attackRate=(as,explicit)=>Math.max(explicit>0?explicit:baseAttackRate(as),.01);
+ const shieldSpend=(damage,shield,ignore)=>ignore||shield===0?0:Math.min(damage,shield);
+ const burnEnergy=(energy,amount)=>Math.min(energy,amount);
+ const percent=ratio=>fixed(100*ratio,2)+'%';
+ function calculateHitEvasion(){
+  const id='v08-hit-evasion-';
+  const missInput=num(id+'miss'),evadeInput=num(id+'evasion');
+  const miss=procRate(missInput),evade=procRate(evadeInput);
+  const evaded=(1-miss)*evade,hit=hitChance(miss,evade);
+  put(id+'hit',percent(hit));
+  put(id+'miss-result',percent(miss));
+  put(id+'evaded',percent(evaded));
+  steps(id+'steps',[
+   '第一抽 · 未命中阈值 = 将 '+missInput+' 向零取整后限制在 0 到 100 = '+fixed(miss*100,0)+'；第一抽通过的概率 '+percent(1-miss)+'。',
+   '第二抽 · 闪避阈值 = 将 '+evadeInput+' 向零取整后限制在 0 到 100 = '+fixed(evade*100,0)+'。',
+   '最终被闪避 = '+percent(1-miss)+' × '+percent(evade)+' = '+percent(evaded)+'。',
+   '最终命中 = '+percent(1-miss)+' × '+percent(1-evade)+' = '+percent(hit)+'。'
+  ]);
+ }
+ function calculateAttackSpeed(){
+  const id='v08-attack-speed-';
+  const as=nonnegative(id+'stat'),explicit=nonnegative(id+'explicit');
+  const base=baseAttackRate(as),aps=attackRate(as,explicit),period=1/aps;
+  put(id+'aps',fixed(aps,3)+' 次/秒');
+  put(id+'period',fixed(period,3)+' 秒');
+  steps(id+'steps',[
+   '常规攻击频率 = 取较小值（'+as+' × 0.00365 + 0.49，2）≈ '+fixed(base,5),
+   '采用'+(explicit>0?'显式频率':'常规频率')+'，与 0.01 取较大值 ≈ '+fixed(aps,5),
+   '普攻冷却 = 1 ÷ '+fixed(aps,5)+' ≈ '+fixed(period,5)+' 秒'
+  ]);
+ }
+ function calculateShield(){
+  const id='v08-shield-absorb-';
+  const damage=num(id+'damage'),shield=nonnegative(id+'shield'),hp=nonnegative(id+'hp');
+  const ignore=tick(id+'ignore'),alive=isAlive(hp);
+  const spent=alive?shieldSpend(damage,shield,ignore):0;
+  const remaining=shield-spent,after=Math.max(damage-spent,0);
+  const loss=alive?Math.min(after,hp):0;
+  put(id+'loss',fixed(loss,2));
+  put(id+'spent',fixed(spent,2));
+  put(id+'remaining',fixed(remaining,2));
+  steps(id+'steps',[
+   !alive?'目标已死亡，跳过结算。':ignore?'本次忽略防御，标准护盾跳过。':shield===0?'护盾已经耗尽，直接进入生命结算。':'护盾消耗量 = 取较小值（'+damage+'，'+shield+'）= '+fixed(spent,3),
+   '剩余护盾 = '+shield+' −（'+fixed(spent,3)+'）≈ '+fixed(remaining,3),
+   alive?'实际扣血 = 取较小值〔取较大值（'+damage+' −（'+fixed(spent,3)+'），0），'+hp+'〕≈ '+fixed(loss,3):'实际扣血 = 0'
+  ]);
+ }
+ function calculateManaBurn(){
+  const id='v08-mana-burn-';
+  const energy=nonnegative(id+'energy'),damage=nonnegative(id+'damage');
+  const burned=burnEnergy(energy,damage);
+  put(id+'burned',fixed(burned,2));
+  put(id+'remaining',fixed(energy-burned,2));
+  put(id+'loss','0.00');
+  steps(id+'steps',[
+   '实际灼烧量 = 取较小值（'+energy+'，'+damage+'）≈ '+fixed(burned,3),
+   '剩余能量 = '+energy+' − '+fixed(burned,3)+' ≈ '+fixed(energy-burned,3),
+   '实际扣血 = 0，护盾保持原值。'
+  ]);
+ }
  function calculateNival(){
   const AS=Math.max(0,num('v08-as')),dex=Math.max(0,num('v08-dex'));
   const stamina=Math.max(0,num('v08-stamina')),will=Math.max(0,num('v08-will'));
@@ -52,22 +208,16 @@
   const ignore=tick('v08-ignore'),crit=tick('v08-crit'),evadable=tick('v08-evadable');
   const explicit=Math.max(0,num('v08-explicit-aps'));
   // C05: explicit override bypasses the normal 2 attacks/sec upper limit.
-  const aps=Math.max(explicit>0?explicit:Math.min(AS*.00365+.49,2),.01);
-  const aprime=AS-Math.max(0,AS-500)*.25,dprime=dex-Math.max(0,dex-500)*.25;
-  const rawCrit=90.9*dprime/(dprime+128)-28;
-  const cbase=clamp(rawCrit,0,100);
+  const aps=attackRate(AS,explicit);
+  const { aprime,dprime,rawCrit,cbase,pas,pdex,P }=penetrationFromStats(AS,dex);
   const critChance=clamp(rawCrit+num('v08-crit-bonus'),0,100);
-  // C08: unmodified Cbase, not added bonus; original AS rather than Explicit APS.
-  const pas=.00536*aprime-.2-(1-.6667/clamp(AS*.00365+.49,.702,2));
-  const pdex=.00536*dprime-.2-cbase/(100+cbase);
-  const P=Math.max(pas+pdex,0);
-  const body=.00536*(stamina+.3*will)-.2,spirit=.00536*(will+.3*stamina)-.2;
+  const body=defenceFromStats(stamina,will),spirit=defenceFromStats(will,stamina);
   const defence=type==='energy'?spirit:body;
   const spellDef=attack==='skill'?num('v08-spell-def'):0,spellPierce=attack==='skill'?num('v08-spell-pierce'):0;
   const x=defence+spellDef-(P+spellPierce),q=(x>0||attack==='basic')?1:.75;
-  const bounded=clamp(x,-.75,.75),M=1-q*bounded;
+  const bounded=clampDefence(x),M=1-q*bounded;
   const rollHit=attack==='basic'&&evadable&&!tick('v08-friendly');
-  const hit=rollHit?(1-clamp(Math.trunc(num('v08-miss')),0,100)/100)*(1-clamp(Math.trunc(num('v08-evasion')),0,100)/100):1;
+  const hit=rollHit?hitChance(procRate(num('v08-miss')),procRate(num('v08-evasion'))):1;
   const critmult=Math.max(0,num('v08-crit-mult'));
   const critical=crit&&critChance>0;
   const modifiedRaw=critical?raw*critmult:raw;
@@ -76,9 +226,9 @@
   const mana=type==='mana';
   const energy=Math.max(0,num('v08-current-energy'));
   const validTarget=isAlive(hp);
-  const burned=mana&&validTarget?Math.min(energy,modifiedRaw):0;
+  const burned=mana&&validTarget?burnEnergy(energy,modifiedRaw):0;
   const beforeShield=mana||!validTarget?0:normal&&!ignore?Math.max(modifiedRaw,0)*(1-reduction/100)*M:modifiedRaw;
-  const absorbed=ignore||shield===0?0:Math.min(beforeShield,shield);
+  const absorbed=shieldSpend(beforeShield,shield,ignore);
   const afterShield=Math.max(beforeShield-absorbed,0);
   const hpLoss=Math.min(afterShield,hp);
   put('v08-aps',fixed(aps,3)+' 次/秒');put('v08-period',fixed(1/aps,3)+' 秒/次'+(explicit>0?' · 已按显式频率覆盖':''));
@@ -123,9 +273,24 @@
    !isAlive(hp)?'目标已死亡，治疗施加器跳过结算。':forbidden?'FORBIDLIFERESTORE：本次实际恢复为 0，治疗流程被禁止。':'生命变化 = min(最大生命 − 当前生命, 理论治疗) = '+fixed(actual,3)+'；溢出 '+fixed(overflow,3)+'。'+(actual<0?'负值表示生命下降。':'')
   ]);
  }
- function refresh(){calculateNova();calculateNival();calculateHeal()}
+ const sectionCalculators={
+  'damage-reduction':calculateReduction,penetration:calculatePenetration,critical:calculateCritical,
+  'hit-evasion':calculateHitEvasion,'attack-speed':calculateAttackSpeed,'shield-absorb':calculateShield,
+  'mana-burn':calculateManaBurn,nova:calculateNova,nival:calculateNival,heal:calculateHeal
+ };
  const lab=document.querySelector('.v08-lab-page');if(!lab)return;
- lab.addEventListener('input',e=>{if(!e.target.matches('input,select'))return; if(e.target.id==='v08-nova-range'){get('v08-nova-x').value=e.target.value}else if(e.target.id==='v08-nova-x'){const v=Number(e.target.value);if(Number.isFinite(v))get('v08-nova-range').value=clamp(v,.333,2.7)}refresh()});
- lab.addEventListener('change',e=>{if(!e.target.matches('input,select'))return;if(e.target.id==='v08-nova-x'){const e0=e.target;e0.value=String(clamp(num('v08-nova-x'),.333,2.7));get('v08-nova-range').value=e0.value}refresh()});
- refresh();
+ function updateSection(event){
+  const input=event.target;
+  if(!input.matches('input,select'))return;
+  if(input.id==='v08-nova-range')get('v08-nova-x').value=input.value;
+  if(input.id==='v08-nova-x'){
+   const value=clamp(num(input.id),.333,2.7);
+   if(event.type==='change')input.value=String(value);
+   get('v08-nova-range').value=value;
+  }
+  sectionCalculators[input.closest('section[id]')?.id]?.();
+ }
+ lab.addEventListener('input',updateSection);
+ lab.addEventListener('change',updateSection);
+ Object.values(sectionCalculators).forEach(calculate=>calculate());
 })();

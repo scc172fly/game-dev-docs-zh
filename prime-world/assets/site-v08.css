@@ -199,3 +199,12 @@ html[data-theme="light"] #talent-results .rarity-exclusive{--talent-color:#96391
   .state-facts { grid-template-columns: 1fr; gap: .1rem; max-width: calc(100vw - 3rem); }
   .state-facts dt:not(:first-child) { margin-top: .35rem; }
 }
+
+@media (min-width: 761px){#damage-reduction .v08-lab-grid,#critical .v08-lab-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+#v08-reduce-results{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+#v08-demo-crit-meter{width:100%;max-width:15rem;height:1rem}
+
+.v08-lab-index{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:12px;margin:20px 0}
+.v08-lab-index>div{min-width:0;border:1px solid var(--line,#4f5b67);background:var(--panel2,#182637);padding:14px}
+.v08-lab-index .v08-actions{margin:8px 0 0}
