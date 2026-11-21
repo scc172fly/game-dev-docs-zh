@@ -10,3 +10,8 @@
 .camp-portraits .camp-portrait { display: inline-flex; align-items: center; gap: .2rem; white-space: nowrap; }
 .camp-portraits .shop-help { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 2px; }
 .camp-portraits .shop-help img { margin: 0; }
+
+.battle-item-icon{display:inline-block;width:32px;height:32px;object-fit:contain;vertical-align:middle;margin-inline-end:.5em}
+.scroll-uses{list-style:none;padding:0;display:grid;gap:1rem}
+.scroll-uses li{display:flex;align-items:flex-start;gap:.8rem}
+.scroll-uses li p{margin:.25rem 0 0}

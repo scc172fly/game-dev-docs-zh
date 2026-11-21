@@ -1,8 +1,8 @@
 {
   "counts": {
-    "version": "0.2",
+    "version": "0.8.3",
     "commit": "8de5df31fa122b6f51cd099883de74bf4a21228d",
-    "pages": 1978,
+    "pages": 2041,
     "heroes": 64,
     "talents": 1605,
     "class_talents": 831,
@@ -69,8 +69,8 @@
     },
     {
       "path": "index.html",
-      "title": "英雄图鉴",
-      "section": "heroes"
+      "title": "从零读懂 Prime World",
+      "section": "guide"
     },
     {
       "path": "heroes/01-alchemist.html",
@@ -9304,7 +9304,7 @@
     },
     {
       "path": "rules/formulas/c07-formula.html",
-      "title": "体质与意志形成双防御",
+      "title": "坚韧与意志形成双防御",
       "section": "rules"
     },
     {
@@ -9494,57 +9494,57 @@
     },
     {
       "path": "rules/attributes-and-combat-formulas.html",
-      "title": "03 原版属性与战斗公式",
+      "title": "原版属性与战斗公式",
       "section": "rules"
     },
     {
       "path": "economy/talent-learning-and-progression.html",
-      "title": "04 原版天赋学习与成长",
+      "title": "原版天赋学习与成长",
       "section": "economy"
     },
     {
       "path": "economy/match-prime-economy.html",
-      "title": "05 原版局内 Prime 经济",
+      "title": "原版局内 Prime 经济",
       "section": "economy"
     },
     {
       "path": "economy/castle-economy.html",
-      "title": "06 原版城堡与长期经济",
+      "title": "原版城堡与长期经济",
       "section": "economy"
     },
     {
       "path": "rules/balance-and-builds.html",
-      "title": "07 原版平衡与配装分析",
+      "title": "原版平衡与配装分析",
       "section": "rules"
     },
     {
       "path": "maps/map-and-mode-overview.html",
-      "title": "地图 01｜地图、模式与入口：先把数量说清楚",
+      "title": "地图 01",
       "section": "maps"
     },
     {
       "path": "maps/borderlands-analysis.html",
-      "title": "地图 02｜经典边境之地：一局如何从成长走到攻破核心",
+      "title": "地图 02",
       "section": "maps"
     },
     {
       "path": "maps/outpost-and-pvp-variants.html",
-      "title": "地图 03｜龙林、前哨与全部对战变体",
+      "title": "地图 03",
       "section": "maps"
     },
     {
       "path": "maps/coop-and-story.html",
-      "title": "地图 04｜试炼：五人合作与单人剧情的完整目标链",
+      "title": "地图 04",
       "section": "maps"
     },
     {
       "path": "maps/tutorials-and-test-maps.html",
-      "title": "地图 05｜教学、人机练习与开发测试如何区分",
+      "title": "地图 05",
       "section": "maps"
     },
     {
       "path": "maps/map-config-and-scene-index.html",
-      "title": "地图附录｜83 项配置与 25 个场景逐项核对",
+      "title": "地图附录",
       "section": "maps"
     },
     {
@@ -9950,6 +9950,321 @@
     {
       "path": "sources.html",
       "title": "来源与审校",
+      "section": "audit"
+    },
+    {
+      "path": "art-sources.html",
+      "title": "原版美术与立绘核对",
+      "section": "audit"
+    },
+    {
+      "path": "balance.html",
+      "title": "数值与平衡",
+      "section": "numerics"
+    },
+    {
+      "path": "battle/flags.html",
+      "title": "旗杆、土地与占点",
+      "section": "battle"
+    },
+    {
+      "path": "battle/items.html",
+      "title": "基地商店、符文与战场道具",
+      "section": "battle"
+    },
+    {
+      "path": "battle/jungle.html",
+      "title": "野区、野怪、首领",
+      "section": "battle"
+    },
+    {
+      "path": "battle/minions.html",
+      "title": "小兵、波次与超级兵",
+      "section": "battle"
+    },
+    {
+      "path": "battle/outcome.html",
+      "title": "对局流程与胜负判定",
+      "section": "battle"
+    },
+    {
+      "path": "battle/prime.html",
+      "title": "局内 Prime 经济与击杀分配",
+      "section": "battle"
+    },
+    {
+      "path": "battle/pve.html",
+      "title": "PvE 波次、守护与任务",
+      "section": "battle"
+    },
+    {
+      "path": "battle/roles.html",
+      "title": "分路、阵容与战术职责",
+      "section": "battle"
+    },
+    {
+      "path": "battle/talent.html",
+      "title": "局内等级、天赋盘与学习",
+      "section": "battle"
+    },
+    {
+      "path": "battle/team.html",
+      "title": "支援、野区争夺与推进时机",
+      "section": "battle"
+    },
+    {
+      "path": "battle/towers.html",
+      "title": "防御塔、兵营与基地核心",
+      "section": "battle"
+    },
+    {
+      "path": "battle/vision.html",
+      "title": "昼夜、视野与地形",
+      "section": "battle"
+    },
+    {
+      "path": "battle-maps.html",
+      "title": "战场地图",
+      "section": "maps"
+    },
+    {
+      "path": "compare/castle-and-economy.html",
+      "title": "城堡、养成与 竞技公平",
+      "section": "compare"
+    },
+    {
+      "path": "compare/evidence-and-open-questions.html",
+      "title": "证据、来源与 待核问题",
+      "section": "compare"
+    },
+    {
+      "path": "compare/formula-glossary.html",
+      "title": "公式与变量中文词典",
+      "section": "compare"
+    },
+    {
+      "path": "compare/maps-and-modes.html",
+      "title": "地图、模式与 对局闭环",
+      "section": "compare"
+    },
+    {
+      "path": "compare/matches-and-talents.html",
+      "title": "战斗与 天赋重制",
+      "section": "compare"
+    },
+    {
+      "path": "compare/remake-decisions.html",
+      "title": "重制计划与 决策规范",
+      "section": "compare"
+    },
+    {
+      "path": "compare/stat-changes.html",
+      "title": "Nova 补丁的 数值与公式",
+      "section": "compare"
+    },
+    {
+      "path": "effect-glossary.html",
+      "title": "术语与效果词典",
+      "section": "rules"
+    },
+    {
+      "path": "formula-library.html",
+      "title": "全站公式学习中心",
+      "section": "rules"
+    },
+    {
+      "path": "game-modes.html",
+      "title": "玩法模式",
+      "section": "modes"
+    },
+    {
+      "path": "guide/glossary.html",
+      "title": "专业术语：中英文对照与精准解释",
+      "section": "guide"
+    },
+    {
+      "path": "guide/healer-example.html",
+      "title": "用治疗师从头看懂一个英雄",
+      "section": "guide"
+    },
+    {
+      "path": "guide/overview.html",
+      "title": "先建立一张正确的概念地图",
+      "section": "guide"
+    },
+    {
+      "path": "guide/skills-and-talents.html",
+      "title": "英雄的 1 技能、2 技能、大招都在哪？",
+      "section": "guide"
+    },
+    {
+      "path": "guide/talent-grid-and-leveling.html",
+      "title": "6×6 天赋盘与点亮规则",
+      "section": "guide"
+    },
+    {
+      "path": "guide/talent-sets.html",
+      "title": "套装究竟是装备，还是天赋？",
+      "section": "guide"
+    },
+    {
+      "path": "map-guide/apoc.html",
+      "title": "末日边境 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/classic.html",
+      "title": "经典边境之地 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/coop.html",
+      "title": "合作试炼 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/dragon.html",
+      "title": "龙林 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/newyear.html",
+      "title": "新年边境 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/outpost.html",
+      "title": "前哨 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/solo.html",
+      "title": "单人试炼 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "map-guide/tutorial.html",
+      "title": "专用教学 · 地图拆解",
+      "section": "map-guide"
+    },
+    {
+      "path": "match-rules.html",
+      "title": "对战规则",
+      "section": "rules"
+    },
+    {
+      "path": "modes/apocalypse.html",
+      "title": "末日",
+      "section": "modes"
+    },
+    {
+      "path": "modes/april.html",
+      "title": "愚人节",
+      "section": "modes"
+    },
+    {
+      "path": "modes/classic.html",
+      "title": "经典边境之地",
+      "section": "modes"
+    },
+    {
+      "path": "modes/coop.html",
+      "title": "合作试炼",
+      "section": "modes"
+    },
+    {
+      "path": "modes/dragon.html",
+      "title": "龙林",
+      "section": "modes"
+    },
+    {
+      "path": "modes/homeland.html",
+      "title": "故土",
+      "section": "modes"
+    },
+    {
+      "path": "modes/leagues.html",
+      "title": "联赛与演习",
+      "section": "modes"
+    },
+    {
+      "path": "modes/newyear.html",
+      "title": "新年边境",
+      "section": "modes"
+    },
+    {
+      "path": "modes/outpost.html",
+      "title": "前哨",
+      "section": "modes"
+    },
+    {
+      "path": "modes/solo.html",
+      "title": "单人试炼",
+      "section": "modes"
+    },
+    {
+      "path": "modes/switch.html",
+      "title": "英雄互换",
+      "section": "modes"
+    },
+    {
+      "path": "modes/tick.html",
+      "title": "滴答",
+      "section": "modes"
+    },
+    {
+      "path": "modes/training.html",
+      "title": "人机练习",
+      "section": "modes"
+    },
+    {
+      "path": "modes/tutorial.html",
+      "title": "初次进攻与推进攻势",
+      "section": "modes"
+    },
+    {
+      "path": "numerics/audit.html",
+      "title": "完整公式索引",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/combat.html",
+      "title": "战斗数学公式",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/compare.html",
+      "title": "模式数值横向对照",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/economy.html",
+      "title": "Prime 收益与奖励分配",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/formula-lab.html",
+      "title": "交互式公式实验室",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/pve.html",
+      "title": "PvE 波次与任务数值",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/talent.html",
+      "title": "天赋成长与学习费用",
+      "section": "numerics"
+    },
+    {
+      "path": "numerics/tempo.html",
+      "title": "时间与刷新模型",
+      "section": "numerics"
+    },
+    {
+      "path": "version-research.html",
+      "title": "原版与 Nova 对照 · 重制设计决策",
       "section": "audit"
     }
   ]

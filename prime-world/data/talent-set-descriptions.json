@@ -189,7 +189,7 @@
       "notes": []
     },
     "TTKitRedSet64CommonDescription": {
-      "effect_zh": "激活2项：攻速属性与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“毁灭者之力”的主动使用。",
+      "effect_zh": "激活2项：攻速与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“毁灭者之力”的主动使用。",
       "parameter_labels": {
         "Add_Stat_RedSet": "两项套装较高进攻副属性增益"
       },
@@ -288,7 +288,7 @@
       ]
     },
     "TTKitHaloween": {
-      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_Set}。激活3项：攻速属性与灵巧中较高者也提高同样数值。",
+      "effect_zh": "激活2项：力量与智力中较高者提高{Add_Stat_Set}。激活3项：攻速与灵巧中较高者也提高同样数值。",
       "parameter_labels": {
         "Add_Stat_Set": "套装每组较高属性增益"
       },
@@ -306,7 +306,7 @@
       ]
     },
     "TTKitRedSet81CommonDescription": {
-      "effect_zh": "激活2项：位于己方或中立土地时，攻速属性与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“占星者之怒”的主动使用。",
+      "effect_zh": "激活2项：位于己方或中立土地时，攻速与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“占星者之怒”的主动使用。",
       "parameter_labels": {
         "Add_Stat_RedSet": "两项套装条件性较高进攻副属性增益"
       },
@@ -348,7 +348,7 @@
       ]
     },
     "TTKitRedSet86CommonDescription": {
-      "effect_zh": "激活2项：夜晚攻速属性与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“乌鸦帷幕”的主动使用。",
+      "effect_zh": "激活2项：夜晚攻速与灵巧中较高者提高{Add_Stat_RedSet}。激活3项：解锁“乌鸦帷幕”的主动使用。",
       "parameter_labels": {
         "Add_Stat_RedSet": "夜间较高进攻副属性增益"
       },

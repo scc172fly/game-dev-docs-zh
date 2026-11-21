@@ -4,7 +4,7 @@
 .a62-art-note a{color:var(--gold)}
 .a62-avatar-flag{position:absolute;z-index:4;left:8px;bottom:76px;display:block;padding:3px 7px;font-size:10px;font-weight:600;color:#dbd8cc;background:#101b25e8;border:1px solid #a08a6666;pointer-events:none}
 .a62-art-entry{border:1px solid var(--v6-frame);background:var(--panel);display:flex;min-height:200px;gap:18px;padding:12px}
-.a62-art-entry img{width:124px;height:167px;object-fit:cover;border:1px solid var(--gold-br);flex:none}
+.a62-art-entry img{width:124px;height:167px;object-fit:cover;flex:none}
 .a62-art-entry .details{flex:1;min-width:0}
 .a62-art-entry h2{color:var(--gold);font-size:18px;margin:2px 0 5px;border:0!important;padding:0!important}
 .a62-art-entry p{font-size:12px;color:var(--muted);margin:3px 0 12px}

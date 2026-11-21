@@ -3,6 +3,10 @@
   if (!simulator) return;
 
   const number = new Intl.NumberFormat('zh-CN');
+  // Original Heroes/_.HLVL and DBTalent::TALENTS_POINTS_PER_LEVEL.
+  const heroLevelThresholds = Array.from({ length: 37 }, (_, level) => level);
+  const tierThresholds = [0, 4, 8, 12, 16, 20];
+  const highestUnlocked = (thresholds, devPoints) => thresholds.findLastIndex(threshold => threshold <= devPoints);
   const boards = [...document.querySelectorAll('.talent-board')].map(board =>
     [...board.querySelectorAll('.talent-slot')].map((slot, index) => slot.dataset.simCost === undefined ? null : {
       index,
@@ -13,6 +17,7 @@
       tooltip: slot.dataset.pwTooltip || slot.getAttribute('href'),
       cost: Number(slot.dataset.simCost),
       points: Number(slot.dataset.simPoints),
+      priority: Number(slot.dataset.simPriority),
       signature: slot.dataset.simClass === 'true',
       auto: slot.classList.contains('start') && Number(slot.dataset.simCost) === 0,
     })
@@ -38,21 +43,22 @@
   function metrics(board, state) {
     const learned = new Set(state.order);
     let spent = 0;
-    let points = 0;
+    let devPoints = 0;
     for (const talent of board) {
       if (!talent) continue;
       if (talent.auto) learned.add(talent.index);
       if (learned.has(talent.index)) {
         spent += talent.cost;
-        points += talent.points;
+        devPoints += talent.points;
       }
     }
-    return { learned, spent, points, balance: state.budget - spent };
+    return { learned, spent, devPoints, balance: state.budget - spent };
   }
 
   function restriction(talent, current) {
     if (current.learned.has(talent.index)) return talent.auto ? '开局自动取得' : '已点亮';
-    if (current.points < talent.tier * 4) return `需要 ${talent.tier * 4} 成长点`;
+    const threshold = tierThresholds[talent.tier];
+    if (current.devPoints < threshold) return `累计成长点达到 ${threshold} 才解锁第 ${talent.tier + 1} 层`;
     if (current.balance < talent.cost) return `还差 ${number.format(talent.cost - current.balance)} Prime`;
     return '';
   }
@@ -80,13 +86,24 @@
     routeList.replaceChildren();
     for (let step = 0; step < 6; step++) {
       const current = metrics(board, future);
-      const tier = Math.min(5, Math.floor(current.points / 4));
-      const candidates = board.filter(t => t && t.tier <= tier && !current.learned.has(t.index));
-      if (!candidates.length) break;
-      candidates.sort((a, b) => a.cost - b.cost || a.index - b.index);
-      const talent = (routeSelect.value === 'signature' && candidates.find(t => t.signature))
-        || (tier < 5 && cheapestUnlock(candidates, (tier + 1) * 4 - current.points))
-        || candidates[0];
+      const tier = highestUnlocked(tierThresholds, current.devPoints);
+      let talent;
+      if (routeSelect.value === 'original') {
+        // TalentWrapper::IsValid ends the original AI scan at the first empty slot.
+        for (const slot of board) {
+          if (!slot) break;
+          if (restriction(slot, current)) continue;
+          if (!talent || slot.priority > talent.priority ||
+              (slot.priority === talent.priority && slot.cost > talent.cost)) talent = slot;
+        }
+      } else {
+        const candidates = board.filter(t => t && t.tier <= tier && !current.learned.has(t.index));
+        candidates.sort((a, b) => a.cost - b.cost || a.index - b.index);
+        talent = (routeSelect.value === 'signature' && candidates.find(t => t.signature))
+          || (tier < 5 && cheapestUnlock(candidates, tierThresholds[tier + 1] - current.devPoints))
+          || candidates[0];
+      }
+      if (!talent) break;
       future.order.push(talent.index);
       const item = document.createElement('li');
       const cost = metrics(board, future).spent - initial.spent;
@@ -114,8 +131,9 @@
     const current = metrics(boards[selected], states[selected]);
     get('#hero-sim-balance').textContent = number.format(current.balance);
     get('#hero-sim-spent').textContent = number.format(current.spent);
-    get('#hero-sim-points').textContent = number.format(current.points);
-    get('#hero-sim-tier').textContent = Math.min(6, Math.floor(current.points / 4) + 1);
+    get('#hero-sim-points').textContent = number.format(current.devPoints);
+    get('#hero-sim-level').textContent = highestUnlocked(heroLevelThresholds, current.devPoints);
+    get('#hero-sim-tier').textContent = highestUnlocked(tierThresholds, current.devPoints) + 1;
     for (const { button, talent } of tiles) {
       if (!talent) continue;
       const blocked = restriction(talent, current);
@@ -155,7 +173,7 @@
       const label = document.createElement('span');
       label.className = 'hero-sim-layer';
       label.textContent = `${tier + 1} 层`;
-      label.title = `需要 ${tier * 4} 成长点`;
+      label.title = `第 ${tier + 1} 层解锁门槛：累计 ${tierThresholds[tier]} 成长点`;
       grid.append(label);
       for (const talent of board.slice(tier * 6, tier * 6 + 6)) {
         if (!talent) {

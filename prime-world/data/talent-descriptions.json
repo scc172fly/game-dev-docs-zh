@@ -17,7 +17,7 @@
   },
   "Items/Talents/Class/Alchemist/Ability_A1.TALENT.xdb": {
     "name_zh": "腐蚀物质",
-    "effect_zh": "创建持续{A1_CloudDuration}秒的区域。进入者受到持续{A1_Poison_Duration}秒的腐蚀，每{A1_Poison_Tick}秒承受{A1_Poison_DamagePerTick}伤害；目标移动时，该伤害变为{A1_Poison_MoveMultiplier}倍。学会特殊酵素后区域逐渐扩大；学会分解后，额外减速{A1_SUP_SlowAmount}%，并将其坚韧和意志中较高的一项降低{A1_SUP_DefCut}，削减量随施法者力量和智力中的较高者成长。",
+    "effect_zh": "创建持续{A1_CloudDuration}秒的区域。进入者受到持续{A1_Poison_Duration}秒的腐蚀，每{A1_Poison_Tick}秒承受{A1_Poison_DamagePerTick}物理伤害；目标移动时，该伤害变为{A1_Poison_MoveMultiplier}倍。学会特殊酵素后区域逐渐扩大；学会分解后，额外减速{A1_SUP_SlowAmount}%，并将其坚韧和意志中较高的一项降低{A1_SUP_DefCut}，削减量随施法者力量和智力中的较高者成长。",
     "parameter_labels": {
       "A1_CloudDuration": "腐蚀区域存在时间",
       "A1_Poison_Duration": "中毒持续时间",
@@ -48,7 +48,7 @@
   },
   "Items/Talents/Class/Alchemist/Ability_A2.TALENT.xdb": {
     "name_zh": "胶液喷洒",
-    "effect_zh": "伤害指定扇形内所有敌人，造成{A2_Damage}伤害，并在{Slow_Duration}秒内先减速{A2_SlowStart_Percent}%；减速每秒增加{A2_TT_SlowTick}个百分点，直到{A2_SlowFinal_Percent}%。从己方土地施放时，初始减速改为{A2_TT_TerrainSlowStart_Percent}%，最终达到{A2_TT_TerrainSlowFinal_Percent}%。学会活性化合物后，扇形起始部分的敌人还在{Silence_Duration}秒内不能使用天赋。",
+    "effect_zh": "伤害指定扇形内所有敌人，造成{A2_Damage}魔法伤害，并在{Slow_Duration}秒内先减速{A2_SlowStart_Percent}%；减速每秒增加{A2_TT_SlowTick}个百分点，直到{A2_SlowFinal_Percent}%。从己方土地施放时，初始减速改为{A2_TT_TerrainSlowStart_Percent}%，最终达到{A2_TT_TerrainSlowFinal_Percent}%。学会活性化合物后，扇形起始部分的敌人还在{Silence_Duration}秒内不能使用天赋。",
     "parameter_labels": {
       "A2_Damage": "扇形伤害",
       "Slow_Duration": "减速持续时间",
@@ -71,7 +71,7 @@
   },
   "Items/Talents/Class/Alchemist/Ability_A3.TALENT.xdb": {
     "name_zh": "炼金法阵",
-    "effect_zh": "在指定地点创建法阵，或传送到已有法阵。传送准备随距离为{A3_ChannelingDurationMin}—{A3_ChannelingDurationMax}秒，冷却为{TT_CD_Min}—{TT_CD_Max}秒。最多同时维持{CircleMax}个。在己方土地使用时恢复{A3_TerrainHeal}生命，随力量与智力中较高者成长。学会副作用后，站在法阵中每秒恢复最大能量的{A3u_ManaRegPercent}%，并按较高基础攻击属性取得{A3u_DexOrAtkSpdInCircle}点增益：基础智力高于基础力量时增加攻速属性，否则增加灵巧。独立学会守护法阵后，法阵内提高意志{A3_SUP_DefInCircle}，每秒恢复缺失生命的{LifeEnergyRegen}%，法阵另提供视野并侦测隐身；若同时学会副作用，才再按这一比例恢复缺失能量。",
+    "effect_zh": "在指定地点创建法阵，或传送到已有法阵。传送准备随距离为{A3_ChannelingDurationMin}—{A3_ChannelingDurationMax}秒，冷却为{TT_CD_Min}—{TT_CD_Max}秒。最多同时维持{CircleMax}个。在己方土地使用时恢复{A3_TerrainHeal}生命，随力量与智力中较高者成长。学会副作用后，站在法阵中每秒恢复最大能量的{A3u_ManaRegPercent}%，并按较高基础攻击属性取得{A3u_DexOrAtkSpdInCircle}点增益：基础智力高于基础力量时增加攻速，否则增加灵巧。独立学会守护法阵后，法阵内提高意志{A3_SUP_DefInCircle}，每秒恢复缺失生命的{LifeEnergyRegen}%，法阵另提供视野并侦测隐身；若同时学会副作用，才再按这一比例恢复缺失能量。",
     "parameter_labels": {
       "A3_ChannelingDurationMin": "最短传送准备时间",
       "A3_ChannelingDurationMax": "最长传送准备时间",
@@ -80,7 +80,7 @@
       "CircleMax": "当前配置法阵上限",
       "A3_TerrainHeal": "己方土地使用后的治疗量",
       "A3u_ManaRegPercent": "副作用每秒最大能量恢复百分比",
-      "A3u_DexOrAtkSpdInCircle": "法阵内攻速属性或灵巧增益",
+      "A3u_DexOrAtkSpdInCircle": "法阵内攻速或灵巧增益",
       "LifeEnergyRegen": "每秒缺失生命和能量恢复百分比",
       "A3_SUP_DefInCircle": "守护法阵意志增益"
     },
@@ -102,17 +102,17 @@
   },
   "Items/Talents/Class/Alchemist/Ability_A3u.TALENT.xdb": {
     "name_zh": "副作用",
-    "effect_zh": "站在炼金法阵内时，每秒恢复最大能量的{A3u_ManaRegPercent}%。按较高基础攻击属性取得{A3u_DexOrAtkSpdInCircle}点增益：基础智力高于基础力量时增加攻速属性，否则增加灵巧。可同时维持的法阵增加到{A3u_MaxCircle}个。",
+    "effect_zh": "站在炼金法阵内时，每秒恢复最大能量的{A3u_ManaRegPercent}%。按较高基础攻击属性取得{A3u_DexOrAtkSpdInCircle}点增益：基础智力高于基础力量时增加攻速，否则增加灵巧。可同时维持的法阵增加到{A3u_MaxCircle}个。",
     "parameter_labels": {
       "A3u_ManaRegPercent": "每秒最大能量恢复百分比",
-      "A3u_DexOrAtkSpdInCircle": "法阵内攻速属性或灵巧增益",
+      "A3u_DexOrAtkSpdInCircle": "法阵内攻速或灵巧增益",
       "A3u_MaxCircle": "强化后的法阵上限"
     },
     "notes": []
   },
   "Items/Talents/Class/Alchemist/Ability_A4.TALENT.xdb": {
     "name_zh": "水银之力",
-    "effect_zh": "命令已召出的分身攻击敌人，使其不能行动；当目标生命比例不高于{A4_Stun_MinLifePercent}%时，持续{A4_StunDurationMin}秒，达到或超过{A4_Stun_MaxLifePercent}%时，持续{A4_StunDurationMax}秒。自身攻击随后在{Buff_Duration}秒内附加{A4_BonusDamage}伤害。分身攻击后消失。",
+    "effect_zh": "命令已召出的分身攻击敌人，使其不能行动；当目标生命比例不高于{A4_Stun_MinLifePercent}%时，持续{A4_StunDurationMin}秒，达到或超过{A4_Stun_MaxLifePercent}%时，持续{A4_StunDurationMax}秒。自身攻击随后在{Buff_Duration}秒内附加{A4_BonusDamage}魔法伤害。分身攻击后消失。",
     "parameter_labels": {
       "A4_Stun_MinLifePercent": "最短控制对应目标生命百分比",
       "A4_StunDurationMin": "最短控制持续时间",
@@ -127,7 +127,7 @@
   },
   "Items/Talents/Class/Alchemist/Ability_A4_2.TALENT.xdb": {
     "name_zh": "硫磺之力",
-    "effect_zh": "命令已召出的分身攻击敌人，造成{A4_Damage}伤害，随后分身消失。",
+    "effect_zh": "命令已召出的分身攻击敌人，造成{A4_Damage}物理伤害，随后分身消失。",
     "parameter_labels": {
       "A4_Damage": "分身爆发伤害"
     },
@@ -161,7 +161,7 @@
   },
   "Items/Talents/Class/Angel/Ability_A1.TALENT.xdb": {
     "name_zh": "天使之光",
-    "effect_zh": "沿路径发出光束，为所有命中的友军恢复{A1_Heal}生命，随智力成长；敌人在{A1_Duration}秒内共受到{A1_DamageTT}伤害。学会信仰试炼后，友军另加速{Haste_Percent}%，持续{Haste_Duration}秒；敌军另减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。",
+    "effect_zh": "沿路径发出光束，为所有命中的友军恢复{A1_Heal}生命，随智力成长；敌人在{A1_Duration}秒内共受到{A1_DamageTT}物理伤害。学会信仰试炼后，友军另加速{Haste_Percent}%，持续{Haste_Duration}秒；敌军另减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。",
     "parameter_labels": {
       "A1_Heal": "路径友军治疗量",
       "A1_Duration": "伤害持续时间",
@@ -194,7 +194,7 @@
   },
   "Items/Talents/Class/Angel/Ability_A2.TALENT.xdb": {
     "name_zh": "灵光信标",
-    "effect_zh": "在指定地点创建持续{A2_SummonLifeTime}秒的信标，提高附近友军攻速属性和灵巧中较高者{A2_AuraBuffAspd}，数值随智力成长。从己方土地施放时，另减少附近友军受到的普通攻击伤害{A2_Terr_BuffDef}，随力量和智力中较高者成长。学会充盈后，可再次使用引爆信标，将增益增强到{A2u_ExplosionModBuff}倍并扩散，持续{A2u_ExpBuffDuration}秒。",
+    "effect_zh": "在指定地点创建持续{A2_SummonLifeTime}秒的信标，提高附近友军攻速和灵巧中较高者{A2_AuraBuffAspd}，数值随智力成长。从己方土地施放时，另减少附近友军受到的普通攻击伤害{A2_Terr_BuffDef}，随力量和智力中较高者成长。学会充盈后，可再次使用引爆信标，将增益增强到{A2u_ExplosionModBuff}倍并扩散，持续{A2u_ExpBuffDuration}秒。",
     "parameter_labels": {
       "A2_SummonLifeTime": "信标存在时间",
       "A2_AuraBuffAspd": "信标攻击相关属性增益",
@@ -217,7 +217,7 @@
   },
   "Items/Talents/Class/Angel/Ability_A3.TALENT.xdb": {
     "name_zh": "复仇之矛",
-    "effect_zh": "向指定区域投矛，对敌人造成{A3_Damage}伤害并眩晕{Stun_Duration}秒。如果在接下来{A3_SpearLifeTime}秒内拾回长矛，该天赋恢复得更快，说明所列改善幅度为{A3_ReductionCD}%。",
+    "effect_zh": "向指定区域投矛，对敌人造成{A3_Damage}物理伤害并眩晕{Stun_Duration}秒。如果在接下来{A3_SpearLifeTime}秒内拾回长矛，该天赋恢复得更快，说明所列改善幅度为{A3_ReductionCD}%。",
     "parameter_labels": {
       "A3_Damage": "投矛区域伤害",
       "Stun_Duration": "眩晕持续时间",
@@ -334,12 +334,12 @@
   },
   "Items/Talents/Class/Archeress/Ability_A2.TALENT.xdb": {
     "name_zh": "重新部署",
-    "effect_zh": "移动到指定地点。从己方土地使用时，冷却减少{TTCooldownReduce}秒。学会主动防御后获得持续{A2_ShieldDuration}秒、最多吸收{A2_ShieldCapacity}伤害的护盾；学会有利位置后，技能就绪时获得{Inc_AttackSpeed}攻速属性，均随力量与智力成长。学会领先一步后，位移距离增加{DistanceIncrease}%。",
+    "effect_zh": "移动到指定地点。从己方土地使用时，冷却减少{TTCooldownReduce}秒。学会主动防御后获得持续{A2_ShieldDuration}秒、最多吸收{A2_ShieldCapacity}伤害的护盾；学会有利位置后，技能就绪时获得{Inc_AttackSpeed}攻速，均随力量与智力成长。学会领先一步后，位移距离增加{DistanceIncrease}%。",
     "parameter_labels": {
       "TTCooldownReduce": "己方土地减少的冷却秒数",
       "A2_ShieldDuration": "位移护盾持续时间",
       "A2_ShieldCapacity": "位移护盾容量",
-      "Inc_AttackSpeed": "就绪时攻速属性增益",
+      "Inc_AttackSpeed": "就绪时攻速增益",
       "DistanceIncrease": "位移距离增加百分比"
     },
     "notes": []
@@ -357,10 +357,10 @@
   },
   "Items/Talents/Class/Archeress/Ability_A2u1.TALENT.xdb": {
     "name_zh": "有利位置",
-    "effect_zh": "重新部署就绪、尚未使用时，提高攻速属性{Inc_AttackSpeed}，随力量与智力成长。",
+    "effect_zh": "重新部署就绪、尚未使用时，提高攻速{Inc_AttackSpeed}，随力量与智力成长。",
     "parameter_labels": {
-      "Inc_AttackSpeed": "技能就绪时攻速属性增益",
-      "TT_Castle_Inc_AttackSpeed": "城堡界面就绪攻速属性增益预览"
+      "Inc_AttackSpeed": "技能就绪时攻速增益",
+      "TT_Castle_Inc_AttackSpeed": "城堡界面就绪攻速增益预览"
     },
     "notes": [
       "TT_Castle_Inc_AttackSpeed是城堡预览值，使用了显示用属性上限；不能与战场增益叠加。"
@@ -442,10 +442,10 @@
   },
   "Items/Talents/Class/Artist/Ability_A0.TALENT.xdb": {
     "name_zh": "调色盘",
-    "effect_zh": "每{A0_PeriodTime}秒获得一份颜料。每份提高攻速属性{A0_AddAtttackSpeedPerStack}，随力量与智力中较高者成长，并使专属技能冷却减少{A0_ReducCdPercent}%；最多叠三份。使用专属技能消耗一份。学会对比后，每累计取得{A0u_PaintAmount}份颜料，依次绘制占卜印记、星落印记、群鸟印记、光辉印记、分身印记，并增强这些卷轴。",
+    "effect_zh": "每{A0_PeriodTime}秒获得一份颜料。每份提高攻速{A0_AddAtttackSpeedPerStack}，随力量与智力中较高者成长，并使专属技能冷却减少{A0_ReducCdPercent}%；最多叠三份。使用专属技能消耗一份。学会对比后，每累计取得{A0u_PaintAmount}份颜料，依次绘制占卜印记、星落印记、群鸟印记、光辉印记、分身印记，并增强这些卷轴。",
     "parameter_labels": {
       "A0_PeriodTime": "取得一份颜料的间隔",
-      "A0_AddAtttackSpeedPerStack": "每份颜料的攻速属性增益",
+      "A0_AddAtttackSpeedPerStack": "每份颜料的攻速增益",
       "A0_ReducCdPercent": "每份颜料的冷却减少百分比",
       "A0u_PaintAmount": "绘制一张卷轴所需颜料数"
     },
@@ -455,7 +455,7 @@
   },
   "Items/Talents/Class/Artist/Ability_A1.TALENT.xdb": {
     "name_zh": "绘兽",
-    "effect_zh": "画出野兽，在{TotalCastTime}秒后攻击指定敌人，造成{A1_Damage}伤害。学会毁灭之色后，还使目标坚韧与意志各降低{ArmorCut_Amount}，持续{ArmorCut_Duration}秒，数值随智力成长。",
+    "effect_zh": "画出野兽，在{TotalCastTime}秒后攻击指定敌人，造成{A1_Damage}物理伤害。学会毁灭之色后，还使目标坚韧与意志各降低{ArmorCut_Amount}，持续{ArmorCut_Duration}秒，数值随智力成长。",
     "parameter_labels": {
       "TotalCastTime": "野兽攻击前等待时间",
       "A1_Damage": "绘兽伤害",
@@ -484,7 +484,7 @@
   },
   "Items/Talents/Class/Artist/Ability_A2.TALENT.xdb": {
     "name_zh": "生命之色",
-    "effect_zh": "在{A2_Duration}秒内，对指定敌人共造成{A2_TotalDamage}伤害，或为指定友军共恢复{A2_TotalHeal}生命，治疗随智力成长。有益效果始终也作用于自己。从己方土地施放时，使敌人致盲{Blind_Duration}秒。学会色彩之速后，敌人减速或友军加速{A2u_SlowHastePercent}%，持续{A2u_SlowHasteDuration}秒。",
+    "effect_zh": "在{A2_Duration}秒内，对指定敌人共造成{A2_TotalDamage}魔法伤害，或为指定友军共恢复{A2_TotalHeal}生命，治疗随智力成长。有益效果始终也作用于自己。从己方土地施放时，使敌人致盲{Blind_Duration}秒。学会色彩之速后，敌人减速或友军加速{A2u_SlowHastePercent}%，持续{A2u_SlowHasteDuration}秒。",
     "parameter_labels": {
       "A2_Duration": "持续伤害或治疗时间",
       "A2_TotalDamage": "对敌总伤害",
@@ -514,7 +514,7 @@
   },
   "Items/Talents/Class/Artist/Ability_A3.TALENT.xdb": {
     "name_zh": "大师颜料",
-    "effect_zh": "普通攻击附加{A3u_BonusDamage}伤害；另在{A3_Duration}秒内造成基于基础普攻伤害的纯粹伤害，比例为{A3_DamageMultiplier_Base}%加上每份颜料{A3_DamageMultiplier_BonusPerKraska}个百分点。",
+    "effect_zh": "普通攻击附加{A3u_BonusDamage}物理伤害；另在{A3_Duration}秒内造成基于基础普攻伤害的纯粹伤害，比例为{A3_DamageMultiplier_Base}%加上每份颜料{A3_DamageMultiplier_BonusPerKraska}个百分点。",
     "parameter_labels": {
       "A3u_BonusDamage": "普攻直接附加伤害",
       "A3_Duration": "纯粹持续伤害时间",
@@ -615,7 +615,7 @@
   },
   "Items/Talents/Class/Assassin/Ability_A1.TALENT.xdb": {
     "name_zh": "暗袭投掷",
-    "effect_zh": "伤害路径上的第一个敌人；基础伤害为{A1_Damage}。学会无情钢刃后，总伤害使用{A1u_Damage}，并使目标减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。",
+    "effect_zh": "伤害路径上的第一个敌人；基础物理伤害为{A1_Damage}。学会无情钢刃后，总物理伤害使用{A1u_Damage}，并使目标减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。",
     "parameter_labels": {
       "A1_Damage": "投掷当前伤害",
       "A1u_Damage": "强化投掷总伤害",
@@ -719,7 +719,7 @@
   },
   "Items/Talents/Class/Assassin/Ability_A4.TALENT.xdb": {
     "name_zh": "决胜突袭",
-    "effect_zh": "移到目标身边并造成{A4_Damage}伤害。若目标不是英雄，返还已耗能量的{TT_Compensation}%，且恢复速度按说明提高为{CompensationDivisor}倍。从己方土地使用时可接近更远目标。",
+    "effect_zh": "移到目标身边并造成{A4_Damage}魔法伤害。若目标不是英雄，返还已耗能量的{TT_Compensation}%，且恢复速度按说明提高为{CompensationDivisor}倍。从己方土地使用时可接近更远目标。",
     "parameter_labels": {
       "A4_Damage": "突袭伤害",
       "TT_Compensation": "非英雄目标能量返还百分比",
@@ -775,7 +775,7 @@
   },
   "Items/Talents/Class/Banshee/Ability_A2.TALENT.xdb": {
     "name_zh": "催眠低语",
-    "effect_zh": "持续引导{A2_Duration}秒，期间指定敌方英雄不能移动、攻击或使用能力。目标累计承受超过其最大生命{A2_DamageThreshold}%的伤害时，提前解除。学会恐怖尖叫后，引导结束或被中断都会使目标及周围敌人受到{A2u_Damage}伤害；其中处于施法者己方土地的敌人还在{Silence_Duration}秒内不能使用天赋。",
+    "effect_zh": "持续引导{A2_Duration}秒，期间指定敌方英雄不能移动、攻击或使用能力。目标累计承受超过其最大生命{A2_DamageThreshold}%的伤害时，提前解除。学会恐怖尖叫后，引导结束或被中断都会使目标及周围敌人受到{A2u_Damage}魔法伤害；其中处于施法者己方土地的敌人还在{Silence_Duration}秒内不能使用天赋。",
     "parameter_labels": {
       "A2_Duration": "最长催眠引导时间",
       "A2_DamageThreshold": "提前解除催眠的最大生命伤害百分比",
@@ -797,9 +797,9 @@
   },
   "Items/Talents/Class/Banshee/Ability_A3.TALENT.xdb": {
     "name_zh": "迷雾步",
-    "effect_zh": "向指定方向移动。技能就绪时，提高攻速属性{A3_Add_AttackSpeed}，随智力成长。学会无形之躯后，使用技能后的{A3sup_Duration}秒，每名枯萎敌人使所受伤害降低{A3sup_DefencePerA0}%；技能就绪时另提高闪避{A3sup_Add_Evasion}个百分点。",
+    "effect_zh": "向指定方向移动。技能就绪时，提高攻速{A3_Add_AttackSpeed}，随智力成长。学会无形之躯后，使用技能后的{A3sup_Duration}秒，每名枯萎敌人使所受伤害降低{A3sup_DefencePerA0}%；技能就绪时另提高闪避{A3sup_Add_Evasion}个百分点。",
     "parameter_labels": {
-      "A3_Add_AttackSpeed": "技能就绪时攻速属性增益",
+      "A3_Add_AttackSpeed": "技能就绪时攻速增益",
       "A3sup_Duration": "位移后减伤持续时间",
       "A3sup_DefencePerA0": "每名枯萎敌人的减伤百分比",
       "A3sup_Add_Evasion": "就绪时闪避增加百分点"
@@ -820,7 +820,7 @@
   },
   "Items/Talents/Class/Banshee/Ability_A4.TALENT.xdb": {
     "name_zh": "暮光爆发",
-    "effect_zh": "对周围所有敌人造成{A4_Damage}伤害。学会生命饱足后，{A4u_Delay}秒后，为周围所有友方英雄恢复生命；每命中一名敌方英雄，提供{A4u_Heal}治疗，随智力与灵巧中较高者成长。",
+    "effect_zh": "对周围所有敌人造成{A4_Damage}魔法伤害。学会生命饱足后，{A4u_Delay}秒后，为周围所有友方英雄恢复生命；每命中一名敌方英雄，提供{A4u_Heal}治疗，随智力与灵巧中较高者成长。",
     "parameter_labels": {
       "A4_Damage": "周围范围伤害",
       "A4u_Delay": "延迟群疗等待时间",
@@ -832,7 +832,7 @@
   },
   "Items/Talents/Class/Banshee/Ability_A4_2.TALENT.xdb": {
     "name_zh": "致命凋零",
-    "effect_zh": "使指定敌方英雄的生命再生降低{A4_2_Deregen}，持续{A4_2_Duration}秒，数值随智力与灵巧中较高者成长。学会空壳后，受害者死亡时生成复制体：其力量和智力不超过女妖的智力，攻速属性和灵巧不超过女妖的灵巧，存在到原目标复活。",
+    "effect_zh": "使指定敌方英雄的生命再生降低{A4_2_Deregen}，持续{A4_2_Duration}秒，数值随智力与灵巧中较高者成长。学会空壳后，受害者死亡时生成复制体：其力量和智力不超过女妖的智力，攻速和灵巧不超过女妖的灵巧，存在到原目标复活。",
     "parameter_labels": {
       "A4_2_Deregen": "生命再生降低量",
       "A4_2_Duration": "再生压制持续时间"
@@ -843,7 +843,7 @@
   },
   "Items/Talents/Class/Banshee/Ability_A4_2u.TALENT.xdb": {
     "name_zh": "空壳",
-    "effect_zh": "致命凋零的受害者死亡时，在原地生成复制体。复制体力量、智力不超过女妖的智力，攻速属性、灵巧不超过女妖的灵巧；直到受害者复活才消失。",
+    "effect_zh": "致命凋零的受害者死亡时，在原地生成复制体。复制体力量、智力不超过女妖的智力，攻速、灵巧不超过女妖的灵巧；直到受害者复活才消失。",
     "parameter_labels": {},
     "notes": []
   },
@@ -888,7 +888,7 @@
   },
   "Items/Talents/Class/Bard/Ability_A1.TALENT.xdb": {
     "name_zh": "战斗旋律",
-    "effect_zh": "对最近的{A1_TargetsNumber}名敌人，在{A1_Duration}秒内共造成{A1_DamageTT}伤害；从己方土地使用时可影响{A1_NTTargetsNumber}名。学会压制之音后，使目标在{Silence_Duration_TT}秒内不能使用天赋。",
+    "effect_zh": "对最近的{A1_TargetsNumber}名敌人，在{A1_Duration}秒内共造成{A1_DamageTT}魔法伤害；从己方土地使用时可影响{A1_NTTargetsNumber}名。学会压制之音后，使目标在{Silence_Duration_TT}秒内不能使用天赋。",
     "parameter_labels": {
       "A1_TargetsNumber": "通常命中目标数量",
       "A1_Duration": "持续伤害时间",
@@ -1053,7 +1053,7 @@
   },
   "Items/Talents/Class/BladeDancer/Ability_A1.TALENT.xdb": {
     "name_zh": "迅猛突击",
-    "effect_zh": "在此姿态下，攻击距离自己较近的目标时，会自动移到其背后，并附加{A1_BaseDamage}伤害。学会粉碎打击后，使用当前强化伤害{A1_Damage}，并减速{Dec_MoveSpeed}%，持续{A1u_Slow_Duration}秒；对同一目标每{A1_DebuffDuration}秒最多转移一次。",
+    "effect_zh": "在此姿态下，攻击距离自己较近的目标时，会自动移到其背后，并附加{A1_BaseDamage}魔法伤害。学会粉碎打击后，使用当前强化伤害{A1_Damage}，并减速{Dec_MoveSpeed}%，持续{A1u_Slow_Duration}秒；对同一目标每{A1_DebuffDuration}秒最多转移一次。",
     "parameter_labels": {
       "A1_BaseDamage": "背后转移基础附加伤害",
       "A1_Damage": "计入当前强化的背后攻击伤害",
@@ -1067,17 +1067,17 @@
   },
   "Items/Talents/Class/BladeDancer/Ability_A1u.TALENT.xdb": {
     "name_zh": "粉碎打击",
-    "effect_zh": "迅猛突击自动转移到目标背后后，使其减速{A1u_Dec_MoveSpeed}%，持续{A1u_Slow_Duration}秒；另提高攻速属性{A1u_AddAttackSpeed}，随智力成长。",
+    "effect_zh": "迅猛突击自动转移到目标背后后，使其减速{A1u_Dec_MoveSpeed}%，持续{A1u_Slow_Duration}秒；另提高攻速{A1u_AddAttackSpeed}，随智力成长。",
     "parameter_labels": {
       "A1u_Dec_MoveSpeed": "背后攻击减速百分比",
       "A1u_Slow_Duration": "减速时间",
-      "A1u_AddAttackSpeed": "攻速属性属性增益"
+      "A1u_AddAttackSpeed": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Class/BladeDancer/Ability_A2.TALENT.xdb": {
     "name_zh": "战斗之刃",
-    "effect_zh": "在此姿态下，普通攻击附加{A2_DamageTooltip}伤害。位于己方土地时，生命汲取提高{A2_LifeDrain}，随力量成长。",
+    "effect_zh": "在此姿态下，普通攻击附加{A2_DamageTooltip}魔法伤害。位于己方土地时，生命汲取提高{A2_LifeDrain}，随力量成长。",
     "parameter_labels": {
       "A2_DamageTooltip": "战场普攻附加伤害",
       "A2_LifeDrain": "己方土地生命汲取增益",
@@ -1129,7 +1129,7 @@
   },
   "Items/Talents/Class/BladeDancer/Ability_A4_2.TALENT.xdb": {
     "name_zh": "恶魔标记",
-    "effect_zh": "对敌方英雄施加持续{A4_2_Duration}秒的标记，标记有效期间自己免疫控制。攻击任意目标都会对被标记者额外造成{A4_2_DamageHeal}伤害，且被标记者不能对敌方隐藏。学会恶魔疗愈后，每次触发还为自己恢复同量生命。",
+    "effect_zh": "对敌方英雄施加持续{A4_2_Duration}秒的标记，标记有效期间自己免疫控制。攻击任意目标都会对被标记者额外造成{A4_2_DamageHeal}魔法伤害，且被标记者不能对敌方隐藏。学会恶魔疗愈后，每次触发还为自己恢复同量生命。",
     "parameter_labels": {
       "A4_2_Duration": "恶魔标记持续时间",
       "A4_2_DamageHeal": "每次攻击对标记目标的伤害及强化后自疗量"
@@ -1190,7 +1190,7 @@
   },
   "Items/Talents/Class/Bomber/Ability_A1u.TALENT.xdb": {
     "name_zh": "抛射炸弹",
-    "effect_zh": "消耗一枚已储存炸弹，对指定区域所有敌人造成{A1u_DamageTotal}伤害。",
+    "effect_zh": "消耗一枚已储存炸弹，对指定区域所有敌人造成{A1u_DamageTotal}魔法伤害。",
     "parameter_labels": {
       "A1u_DamageTotal": "投弹当前总伤害"
     },
@@ -1200,7 +1200,7 @@
   },
   "Items/Talents/Class/Bomber/Ability_A2.TALENT.xdb": {
     "name_zh": "追踪火箭",
-    "effect_zh": "向指定敌方英雄发射火箭，造成{A2_Damage}伤害；可以通过英雄头像选取目标。学会震荡装药后，根据火箭飞行时间，追加{A2u_StunDuration_Min}—{A2u_StunDuration_Max}秒眩晕。",
+    "effect_zh": "向指定敌方英雄发射火箭，造成{A2_Damage}魔法伤害；可以通过英雄头像选取目标。学会震荡装药后，根据火箭飞行时间，追加{A2u_StunDuration_Min}—{A2u_StunDuration_Max}秒眩晕。",
     "parameter_labels": {
       "A2_Damage": "火箭伤害",
       "A2u_StunDuration_Min": "火箭最短眩晕时间",
@@ -1221,7 +1221,7 @@
   },
   "Items/Talents/Class/Bomber/Ability_A3.TALENT.xdb": {
     "name_zh": "易燃体质",
-    "effect_zh": "对周围所有敌人造成{A3_Damage}伤害，并在{Haste_Duration}秒内加速{Haste_Percent}%。学会烈火狂热后，启动时另恢复{A3_SUP_HealAmount}生命，随力量与智力中较高者成长；学会凝固汽油罐后，移动留下火焰轨迹，敌人减速{Dec_MoveSpeed}%，并每秒受到{A3u_DmgPerSecond}伤害。",
+    "effect_zh": "对周围所有敌人造成{A3_Damage}物理伤害，并在{Haste_Duration}秒内加速{Haste_Percent}%。学会烈火狂热后，启动时另恢复{A3_SUP_HealAmount}生命，随力量与智力中较高者成长；学会凝固汽油罐后，移动留下火焰轨迹，敌人减速{Dec_MoveSpeed}%，并每秒受到{A3u_DmgPerSecond}物理伤害。",
     "parameter_labels": {
       "A3_Damage": "启动时周围伤害",
       "Haste_Duration": "加速持续时间",
@@ -1261,7 +1261,7 @@
   },
   "Items/Talents/Class/Bomber/Ability_A4_2.TALENT.xdb": {
     "name_zh": "集束爆雷",
-    "effect_zh": "给指定区域内所有敌人附上持续{A4_2_Duration}秒的爆雷。时间结束或目标死亡时，对目标及周围敌人造成{A4_2_Damage}伤害，随力量与智力中较高者成长。学会重型装药后，附雷期间减速{Dec_MoveSpeed}%，爆炸额外眩晕{Stun_Duration}秒。",
+    "effect_zh": "给指定区域内所有敌人附上持续{A4_2_Duration}秒的爆雷。时间结束或目标死亡时，对目标及周围敌人造成{A4_2_Damage}物理伤害，随力量与智力中较高者成长。学会重型装药后，附雷期间减速{Dec_MoveSpeed}%，爆炸额外眩晕{Stun_Duration}秒。",
     "parameter_labels": {
       "A4_2_Duration": "延时爆雷持续时间",
       "A4_2_Damage": "每枚爆雷的范围爆炸伤害",
@@ -1317,7 +1317,7 @@
   },
   "Items/Talents/Class/Brewer/Ability_A1.TALENT.xdb": {
     "name_zh": "酿酒师步法",
-    "effect_zh": "沿指定方向移动，对路径敌人造成{A1_Damage}伤害，接触敌方英雄时泼洒蜜酒；在{A1_ReuseDuration}秒内可以再次使用。学会酿酒师身手后，从己方土地发动也会洒酒；学会酿酒师的慷慨后，碰到友方英雄也会洒酒，对敌方英雄则施加两次，并在己方土地发动时洒酒。",
+    "effect_zh": "沿指定方向移动，对路径敌人造成{A1_Damage}物理伤害，接触敌方英雄时泼洒蜜酒；在{A1_ReuseDuration}秒内可以再次使用。学会酿酒师身手后，从己方土地发动也会洒酒；学会酿酒师的慷慨后，碰到友方英雄也会洒酒，对敌方英雄则施加两次，并在己方土地发动时洒酒。",
     "parameter_labels": {
       "A1_Damage": "步法路径伤害",
       "A1_ReuseDuration": "第二段允许使用时间"
@@ -1375,7 +1375,7 @@
   },
   "Items/Talents/Class/Brewer/Ability_A4.TALENT.xdb": {
     "name_zh": "橡木酒桶",
-    "effect_zh": "向周围所有英雄泼洒蜜酒，同时对周围所有敌人造成{A4_Damage}伤害。",
+    "effect_zh": "向周围所有英雄泼洒蜜酒，同时对周围所有敌人造成{A4_Damage}物理伤害。",
     "parameter_labels": {
       "A4_Damage": "酒桶周围伤害"
     },
@@ -1422,7 +1422,7 @@
   },
   "Items/Talents/Class/Chronicle/Ability_A1.TALENT.xdb": {
     "name_zh": "无情时光",
-    "effect_zh": "创建持续{A1_TotalDuration}秒的区域，每{A1_Period}秒对其中敌人造成{A1_PeriodicDamage}伤害。结束时区域爆发，使仍在其中的敌人眩晕{A1u_StunDuration}秒；学会决胜瞬间后，爆发另造成{A1_ExplosionDamage}伤害。",
+    "effect_zh": "创建持续{A1_TotalDuration}秒的区域，每{A1_Period}秒对其中敌人造成{A1_PeriodicDamage}魔法伤害。结束时区域爆发，使仍在其中的敌人眩晕{A1u_StunDuration}秒；学会决胜瞬间后，爆发另造成{A1_ExplosionDamage}魔法伤害。",
     "parameter_labels": {
       "A1_TotalDuration": "区域存在时间",
       "A1_Period": "持续伤害间隔",
@@ -1452,11 +1452,11 @@
   },
   "Items/Talents/Class/Chronicle/Ability_A3.TALENT.xdb": {
     "name_zh": "时刻回溯",
-    "effect_zh": "记录自己或指定敌方英雄的位置，{A3_Delay}秒后将其送回记录点。从己方土地使用时，自己获得{A3_AttSpd}攻速属性，持续{A3_BuffTime}秒，数值随力量与智力中较高者成长。学会时间停止后，敌人在返回后另眩晕{A3_SUP_StunTime}秒；学会时间已尽后，生命和能量向施放时数值回溯，但对自己只提高、对敌人只降低。",
+    "effect_zh": "记录自己或指定敌方英雄的位置，{A3_Delay}秒后将其送回记录点。从己方土地使用时，自己获得{A3_AttSpd}攻速，持续{A3_BuffTime}秒，数值随力量与智力中较高者成长。学会时间停止后，敌人在返回后另眩晕{A3_SUP_StunTime}秒；学会时间已尽后，生命和能量向施放时数值回溯，但对自己只提高、对敌人只降低。",
     "parameter_labels": {
       "A3_Delay": "位置回溯延迟",
-      "A3_AttSpd": "土地施法攻速属性增益",
-      "A3_BuffTime": "攻速属性增益时间",
+      "A3_AttSpd": "土地施法攻速增益",
+      "A3_BuffTime": "攻速增益时间",
       "A3_SUP_StunTime": "敌人返回后眩晕时间"
     },
     "notes": [
@@ -1552,7 +1552,7 @@
   },
   "Items/Talents/Class/Crusader/Ability_A1_A.TALENT.xdb": {
     "name_zh": "破片手雷",
-    "effect_zh": "达卡向指定区域投手雷，投出{TT_A1_DelayTime}秒后爆炸，对周围敌人造成{A1_Damage}伤害，并在{DoT_Duration}秒内追加{DoT_TotalDamage}伤害。至少命中一名敌人则取得信仰。满额信仰使命中目标减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。学会决心后，施放时自己加速{Haste_Percent}%，持续{Haste_Duration}秒。",
+    "effect_zh": "达卡向指定区域投手雷，投出{TT_A1_DelayTime}秒后爆炸，对周围敌人造成{A1_Damage}物理伤害，并在{DoT_Duration}秒内追加{DoT_TotalDamage}物理伤害。至少命中一名敌人则取得信仰。满额信仰使命中目标减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。学会决心后，施放时自己加速{Haste_Percent}%，持续{Haste_Duration}秒。",
     "parameter_labels": {
       "TT_A1_DelayTime": "手雷爆炸延迟",
       "A1_Damage": "手雷即时爆炸伤害",
@@ -1569,7 +1569,7 @@
   },
   "Items/Talents/Class/Crusader/Ability_A1_B.TALENT.xdb": {
     "name_zh": "引燃",
-    "effect_zh": "哈卡点燃周围敌人，在{DoT_Duration}秒内共造成{DoT_TotalDamage}伤害。至少点燃一人则获得信仰。满额信仰使目标减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。学会决心后，自己加速{Haste_Percent}%，持续{Haste_Duration}秒。",
+    "effect_zh": "哈卡点燃周围敌人，在{DoT_Duration}秒内共造成{DoT_TotalDamage}物理伤害。至少点燃一人则获得信仰。满额信仰使目标减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒。学会决心后，自己加速{Haste_Percent}%，持续{Haste_Duration}秒。",
     "parameter_labels": {
       "DoT_Duration": "引燃持续时间",
       "DoT_TotalDamage": "引燃总伤害",
@@ -1602,7 +1602,7 @@
   },
   "Items/Talents/Class/Crusader/Ability_A2.TALENT.xdb": {
     "name_zh": "无畏冲锋",
-    "effect_zh": "沿指定方向移动，对路径敌人造成{A2_Damage}伤害，自己获得持续{A2_Duration}秒、吸收{A2_DamageCapacity}伤害的护盾，容量随智力成长。至少接触一名敌人即积累信仰。学会狂猛冲势后追加击飞；学会瞬间无力后，额外眩晕{Stun_Duration}秒，并使自己攻速属性、灵巧中较高者提高{A2_SUP_AddStat}，持续{A2_SUP_AddStat_Duration}秒。满额信仰另使受影响敌人减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒，有眩晕强化时减速在其后衔接。",
+    "effect_zh": "沿指定方向移动，对路径敌人造成{A2_Damage}魔法伤害，自己获得持续{A2_Duration}秒、吸收{A2_DamageCapacity}伤害的护盾，容量随智力成长。至少接触一名敌人即积累信仰。学会狂猛冲势后追加击飞；学会瞬间无力后，额外眩晕{Stun_Duration}秒，并使自己攻速、灵巧中较高者提高{A2_SUP_AddStat}，持续{A2_SUP_AddStat_Duration}秒。满额信仰另使受影响敌人减速{Dec_MoveSpeed}%，持续{Slow_Duration}秒，有眩晕强化时减速在其后衔接。",
     "parameter_labels": {
       "A2_Damage": "冲锋路径伤害",
       "A2_Duration": "冲锋护盾持续时间",
@@ -1617,7 +1617,7 @@
   },
   "Items/Talents/Class/Crusader/Ability_A2_SUP.TALENT.xdb": {
     "name_zh": "瞬间无力",
-    "effect_zh": "无畏冲锋额外眩晕敌人{Stun_Duration}秒，并提高自己攻速属性和灵巧中较高者{A2_SUP_AddStat}，持续{A2_SUP_AddStat_Duration}秒；增益随力量与智力中较高者成长。",
+    "effect_zh": "无畏冲锋额外眩晕敌人{Stun_Duration}秒，并提高自己攻速和灵巧中较高者{A2_SUP_AddStat}，持续{A2_SUP_AddStat_Duration}秒；增益随力量与智力中较高者成长。",
     "parameter_labels": {
       "Stun_Duration": "追加眩晕时间",
       "A2_SUP_AddStat": "较高攻击相关属性增益",
@@ -1662,7 +1662,7 @@
   },
   "Items/Talents/Class/Crusader/Ability_A4.TALENT.xdb": {
     "name_zh": "横扫盾击",
-    "effect_zh": "先眩晕指定方向的所有敌人{Stun_Duration}秒，再投盾对路径敌人造成{A4_Damage}伤害并击退最近一人。学会狂怒突进后，改为击退最近两人，并降低沿途敌人较高防御{ArmorCut_Amount}，持续{ArmorCut_Duration}秒，削减随力量成长。至少命中一人则取得信仰；满额信仰使盾牌命中者致盲{TT_Blind_Duration}秒。",
+    "effect_zh": "先眩晕指定方向的所有敌人{Stun_Duration}秒，再投盾对路径敌人造成{A4_Damage}魔法伤害并击退最近一人。学会狂怒突进后，改为击退最近两人，并降低沿途敌人较高防御{ArmorCut_Amount}，持续{ArmorCut_Duration}秒，削减随力量成长。至少命中一人则取得信仰；满额信仰使盾牌命中者致盲{TT_Blind_Duration}秒。",
     "parameter_labels": {
       "Stun_Duration": "方向眩晕时间",
       "A4_Damage": "盾牌路径伤害",
@@ -1674,7 +1674,7 @@
   },
   "Items/Talents/Class/Crusader/Ability_A4_2.TALENT.xdb": {
     "name_zh": "正义之盾",
-    "effect_zh": "向指定敌方英雄投盾，造成{A4_2_Damage}伤害并眩晕{Stun_Duration}秒。满额信仰另致盲{TT_Blind_Duration}秒。学会弹射后，可额外影响附近两名英雄，并降低命中目标较高防御{ArmorCut_Amount}，持续{ArmorCut_Duration}秒，削减随力量成长。",
+    "effect_zh": "向指定敌方英雄投盾，造成{A4_2_Damage}魔法伤害并眩晕{Stun_Duration}秒。满额信仰另致盲{TT_Blind_Duration}秒。学会弹射后，可额外影响附近两名英雄，并降低命中目标较高防御{ArmorCut_Amount}，持续{ArmorCut_Duration}秒，削减随力量成长。",
     "parameter_labels": {
       "A4_2_Damage": "指定投盾伤害",
       "Stun_Duration": "指定投盾眩晕时间",
@@ -1719,7 +1719,7 @@
   },
   "Items/Talents/Class/Demonolog/Ability1.TALENT.xdb": {
     "name_zh": "精神鞭笞",
-    "effect_zh": "沿指定方向挥鞭，对命中的敌人造成{A1_Damage}伤害。学会内在火焰后，击中捕魔陷阱的网可召出新魔仆，击中已有魔仆则提高其最大生命{A1u1_MaxHealth}，随力量与智力中较高者成长。学会升华后，命中魔仆还提高攻击距离和力量{A1u2_AddStrength}，力量增益随智力成长。",
+    "effect_zh": "沿指定方向挥鞭，对命中的敌人造成{A1_Damage}魔法伤害。学会内在火焰后，击中捕魔陷阱的网可召出新魔仆，击中已有魔仆则提高其最大生命{A1u1_MaxHealth}，随力量与智力中较高者成长。学会升华后，命中魔仆还提高攻击距离和力量{A1u2_AddStrength}，力量增益随智力成长。",
     "parameter_labels": {
       "A1_Damage": "鞭击伤害",
       "A1u1_MaxHealth": "魔仆最大生命增益",
@@ -1777,7 +1777,7 @@
   },
   "Items/Talents/Class/Demonolog/Ability4.TALENT.xdb": {
     "name_zh": "魔仆冲击",
-    "effect_zh": "现有魔仆化为攻击指定敌方英雄的投射物并消失。每个投射物造成{TT_BaseDamage}伤害；该魔仆此前受内在火焰强化时，额外造成{TT_BurnDamage}伤害。能量费用随魔仆数量变化。学会永恒侍从后，使用后立即由魔仆主宰补出一个魔仆，并维持已经开启的恶魔护盾。",
+    "effect_zh": "现有魔仆化为攻击指定敌方英雄的投射物并消失。每个投射物造成{TT_BaseDamage}物理伤害；该魔仆此前受内在火焰强化时，额外造成{TT_BurnDamage}物理伤害。能量费用随魔仆数量变化。学会永恒侍从后，使用后立即由魔仆主宰补出一个魔仆，并维持已经开启的恶魔护盾。",
     "parameter_labels": {
       "TT_BaseDamage": "每个魔仆投射物基础伤害",
       "TT_BurnDamage": "强化魔仆每枚附加伤害"
@@ -1810,7 +1810,7 @@
   },
   "Items/Talents/Class/Demonolog/Ability_A4_2.TALENT.xdb": {
     "name_zh": "魔仆罗网",
-    "effect_zh": "现有魔仆化为攻击周围敌方英雄的投射物并消失，每枚造成{BaseDamage}伤害；受内在火焰强化的魔仆额外造成{BurnDamage}伤害。命中敌人在{Root_Duration}秒内不能移动或使用天赋。费用随魔仆数变化；学会永恒仆从后，立即补召一个魔仆并维持已开的恶魔护盾。",
+    "effect_zh": "现有魔仆化为攻击周围敌方英雄的投射物并消失，每枚造成{BaseDamage}魔法伤害；受内在火焰强化的魔仆额外造成{BurnDamage}魔法伤害。命中敌人在{Root_Duration}秒内不能移动或使用天赋。费用随魔仆数变化；学会永恒仆从后，立即补召一个魔仆并维持已开的恶魔护盾。",
     "parameter_labels": {
       "BaseDamage": "罗网投射物基础伤害",
       "BurnDamage": "强化魔仆附加伤害",
@@ -1830,7 +1830,7 @@
   },
   "Items/Talents/Class/Dryad/Ability_A0.TALENT.xdb": {
     "name_zh": "孢子",
-    "effect_zh": "专属天赋给敌人附加持续{A0_Duration}秒的孢子，每层使自己的普通攻击对其多造成{A0_BaseDamageInc}伤害，最多{A0_Count}层。敌人处于施法者己方土地时，孢子另降低其灵巧{A0_DexDec}，随力量与智力中较高者成长。附近带孢子的敌人死亡时，自己恢复{A0_HealAmount}生命，同样随较高攻击属性成长。",
+    "effect_zh": "专属天赋给敌人附加持续{A0_Duration}秒的孢子，每层使自己的普通攻击对其多造成{A0_BaseDamageInc}魔法伤害，最多{A0_Count}层。敌人处于施法者己方土地时，孢子另降低其灵巧{A0_DexDec}，随力量与智力中较高者成长。附近带孢子的敌人死亡时，自己恢复{A0_HealAmount}生命，同样随较高攻击属性成长。",
     "parameter_labels": {
       "A0_Duration": "孢子持续时间",
       "A0_BaseDamageInc": "每层孢子的普攻附加伤害",
@@ -1842,7 +1842,7 @@
   },
   "Items/Talents/Class/Dryad/Ability_A1.TALENT.xdb": {
     "name_zh": "危险果实",
-    "effect_zh": "沿指定方向投果实，碰到敌人时爆开，对该目标及其后方敌人造成{A1_Damage}伤害并施加孢子。学会爆裂果实后，未命中而到达最远处也会爆开；学会腐蚀汁液后，按每个目标已有孢子层数，每层追加{A1_BlindBase_Duration}秒致盲。",
+    "effect_zh": "沿指定方向投果实，碰到敌人时爆开，对该目标及其后方敌人造成{A1_Damage}物理伤害并施加孢子。学会爆裂果实后，未命中而到达最远处也会爆开；学会腐蚀汁液后，按每个目标已有孢子层数，每层追加{A1_BlindBase_Duration}秒致盲。",
     "parameter_labels": {
       "A1_Damage": "果实爆炸伤害",
       "A1_BlindBase_Duration": "每层孢子的致盲秒数"
@@ -1916,7 +1916,7 @@
   },
   "Items/Talents/Class/Dryad/Ability_A4.TALENT.xdb": {
     "name_zh": "萌发",
-    "effect_zh": "令指定敌方英雄身上的孢子萌发，每层造成{A4_DamageBase}伤害。冷却与能量费用随目标孢子数量变化。学会狂野新芽后，每层还为自己恢复{A4_HealBase}生命，随力量与智力中较高者成长。",
+    "effect_zh": "令指定敌方英雄身上的孢子萌发，每层造成{A4_DamageBase}物理伤害。冷却与能量费用随目标孢子数量变化。学会狂野新芽后，每层还为自己恢复{A4_HealBase}生命，随力量与智力中较高者成长。",
     "parameter_labels": {
       "A4_DamageBase": "每层孢子萌发伤害",
       "A4_HealBase": "每层孢子的自疗量"
@@ -1925,12 +1925,12 @@
   },
   "Items/Talents/Class/Dryad/Ability_A4_2.TALENT.xdb": {
     "name_zh": "毁灭藤蔓",
-    "effect_zh": "使自身周围所有敌人不能移动{Root_Duration}秒，期间每秒传播孢子；结束时按每层孢子造成{A4_2_BaseDamage}伤害。自己获得{A4_2_AspdValue}攻速属性，持续{A4_2_BuffDuration}秒，随智力成长。学会荆棘丛后，目标再被减速{A4_2_SpeedReduce}%，减速在{A4_2_Duration}秒内逐渐消退。",
+    "effect_zh": "使自身周围所有敌人不能移动{Root_Duration}秒，期间每秒传播孢子；结束时按每层孢子造成{A4_2_BaseDamage}魔法伤害。自己获得{A4_2_AspdValue}攻速，持续{A4_2_BuffDuration}秒，随智力成长。学会荆棘丛后，目标再被减速{A4_2_SpeedReduce}%，减速在{A4_2_Duration}秒内逐渐消退。",
     "parameter_labels": {
       "Root_Duration": "范围定身持续时间",
       "A4_2_BaseDamage": "结束时每层孢子伤害",
-      "A4_2_AspdValue": "自身攻速属性增益",
-      "A4_2_BuffDuration": "攻速属性增益持续时间",
+      "A4_2_AspdValue": "自身攻速增益",
+      "A4_2_BuffDuration": "攻速增益持续时间",
       "A4_2_SpeedReduce": "后续初始减速百分比",
       "A4_2_Duration": "减速衰减时间"
     },
@@ -1969,7 +1969,7 @@
   },
   "Items/Talents/Class/Ent/Ability_A1.TALENT.xdb": {
     "name_zh": "巨人重击",
-    "effect_zh": "每第二次普通攻击额外造成{A1_BaseDamage}伤害。学会紧缚重击后，额外伤害改为{A1_SUP_BaseDamage_TT}，并定身{Root_Duration}秒；学会重掌后，另减速{A1_Dec_MoveSpeed}%，持续{A1_Slow_Duration}秒，并对士兵和野怪额外造成{A1u_CreepBaseDamage}伤害，随智力成长。在己方土地上，每第二击的伤害提高{A1_TerrainAdditionalDamage}%。",
+    "effect_zh": "每第二次普通攻击额外造成{A1_BaseDamage}物理伤害。学会紧缚重击后，额外伤害改为{A1_SUP_BaseDamage_TT}，并定身{Root_Duration}秒；学会重掌后，另减速{A1_Dec_MoveSpeed}%，持续{A1_Slow_Duration}秒，并对士兵和野怪额外造成{A1u_CreepBaseDamage}物理伤害，随智力成长。在己方土地上，每第二击的伤害提高{A1_TerrainAdditionalDamage}%。",
     "parameter_labels": {
       "A1_BaseDamage": "第二次攻击基础额外伤害",
       "A1_SUP_BaseDamage_TT": "强化后的第二击额外伤害",
@@ -2004,7 +2004,7 @@
   },
   "Items/Talents/Class/Ent/Ability_A2.TALENT.xdb": {
     "name_zh": "呼啸之风",
-    "effect_zh": "加速{Haste_Percent}%，并在{Haste_Duration}秒内免疫控制。期间第一次普通攻击会把目标抛出去；学会舒展枝条后，该次攻击额外造成{A2_Damage}伤害，并眩晕{Stun_Duration}秒。",
+    "effect_zh": "加速{Haste_Percent}%，并在{Haste_Duration}秒内免疫控制。期间第一次普通攻击会把目标抛出去；学会舒展枝条后，该次攻击额外造成{A2_Damage}魔法伤害，并眩晕{Stun_Duration}秒。",
     "parameter_labels": {
       "Haste_Percent": "加速百分比",
       "Haste_Duration": "加速与免控持续时间",
@@ -2024,7 +2024,7 @@
   },
   "Items/Talents/Class/Ent/Ability_A3.TALENT.xdb": {
     "name_zh": "浓密荆棘",
-    "effect_zh": "在指定区域形成持续{A3_WallLifeTime}秒的灌木墙，其中敌人减速{Dec_MoveSpeed}%，其加速效果受到压制。学会荆棘束缚后，区域还造成{A3_SUP_Damage}伤害，并定身{Root_Duration}秒。",
+    "effect_zh": "在指定区域形成持续{A3_WallLifeTime}秒的灌木墙，其中敌人减速{Dec_MoveSpeed}%，其加速效果受到压制。学会荆棘束缚后，区域还造成{A3_SUP_Damage}魔法伤害，并定身{Root_Duration}秒。",
     "parameter_labels": {
       "A3_WallLifeTime": "灌木墙存在时间",
       "Dec_MoveSpeed": "灌木区域减速百分比",
@@ -2044,7 +2044,7 @@
   },
   "Items/Talents/Class/Ent/Ability_A4.TALENT.xdb": {
     "name_zh": "强力震荡",
-    "effect_zh": "击飞周围敌方英雄。伤害池以{A4_Damage}为基础，每个目标使总量增加{A4_BonusDamage}%，之后在目标间平均分配。在周围生成己方土地。学会橡木坚韧后，提高自己的坚韧与意志各{A4_Add_Stamina}，持续{A4_Duration}秒，数值随力量与智力中较高者成长。",
+    "effect_zh": "击飞周围敌方英雄。魔法伤害池以{A4_Damage}为基础，每个目标使总量增加{A4_BonusDamage}%，之后在目标间平均分配。在周围生成己方土地。学会橡木坚韧后，提高自己的坚韧与意志各{A4_Add_Stamina}，持续{A4_Duration}秒，数值随力量与智力中较高者成长。",
     "parameter_labels": {
       "A4_Damage": "震荡基础总伤害",
       "A4_BonusDamage": "每目标总伤害提高百分比",
@@ -2057,7 +2057,7 @@
   },
   "Items/Talents/Class/Ent/Ability_A4_2.TALENT.xdb": {
     "name_zh": "震耳断击",
-    "effect_zh": "冲向指定敌人，造成{A4_2_Damage}伤害并眩晕{Stun_Duration}秒。学会橡木护盾后，获得持续{A4_2_Duration}秒、吸收{A4_2_DamageCapacity}伤害的护盾，容量随力量成长。",
+    "effect_zh": "冲向指定敌人，造成{A4_2_Damage}物理伤害并眩晕{Stun_Duration}秒。学会橡木护盾后，获得持续{A4_2_Duration}秒、吸收{A4_2_DamageCapacity}伤害的护盾，容量随力量成长。",
     "parameter_labels": {
       "A4_2_Damage": "指定突进伤害",
       "Stun_Duration": "指定眩晕时间",
@@ -2112,7 +2112,7 @@
   },
   "Items/Talents/Class/Faceless/Ability1.TALENT.xdb": {
     "name_zh": "暗影刃",
-    "effect_zh": "先命中指定目标，再弹向该目标附近、距离自己最近的另一名敌人，对两者各造成{A1Damage}伤害。若第一目标被暗影刃击杀，第二次伤害提高{A1DamageIncPercentage}%。学会无须旁观者后，自己击杀敌人会立即恢复暗影刃；学会断筋投掷后，受伤者减速{Dec_MoveSpeed}%，通常持续{Slow_Duration1_TT}秒，暴击时持续{Slow_Duration2_TT}秒。",
+    "effect_zh": "先命中指定目标，再弹向该目标附近、距离自己最近的另一名敌人，对两者各造成{A1Damage}魔法伤害。若第一目标被暗影刃击杀，第二次伤害提高{A1DamageIncPercentage}%。学会无须旁观者后，自己击杀敌人会立即恢复暗影刃；学会断筋投掷后，受伤者减速{Dec_MoveSpeed}%，通常持续{Slow_Duration1_TT}秒，暴击时持续{Slow_Duration2_TT}秒。",
     "parameter_labels": {
       "A1Damage": "暗影刃每次命中伤害",
       "A1DamageIncPercentage": "击杀首目标后的弹射增伤百分比",
@@ -2163,7 +2163,7 @@
   },
   "Items/Talents/Class/Faceless/Ability3.TALENT.xdb": {
     "name_zh": "闪烁",
-    "effect_zh": "移到指定地点。学会暗影闪光后，落点周围敌人额外受到{A3Damage}伤害，并致盲{Blind_Duration}秒。学会暗影之舞后，未因受伤触发惩罚前，冷却按说明缩短{A3CdMcMul_TT}%。",
+    "effect_zh": "移到指定地点。学会暗影闪光后，落点周围敌人额外受到{A3Damage}魔法伤害，并致盲{Blind_Duration}秒。学会暗影之舞后，未因受伤触发惩罚前，冷却按说明缩短{A3CdMcMul_TT}%。",
     "parameter_labels": {
       "A3Damage": "落点周围伤害",
       "Blind_Duration": "落点致盲时间",
@@ -2205,7 +2205,7 @@
   },
   "Items/Talents/Class/Faceless/Ability4_2.TALENT.xdb": {
     "name_zh": "死亡之触",
-    "effect_zh": "普通攻击额外造成{A4_2_AttackBuff}伤害。学会虚无铠甲后，使用天赋会获得持续{A4_2_ShieldDuration}秒、每次增加{A4_2_ShieldCapacityStep}吸收量的护盾，累计容量最多{A4_2_ShieldCapacityMax}，均随力量成长。",
+    "effect_zh": "普通攻击额外造成{A4_2_AttackBuff}物理伤害。学会虚无铠甲后，使用天赋会获得持续{A4_2_ShieldDuration}秒、每次增加{A4_2_ShieldCapacityStep}吸收量的护盾，累计容量最多{A4_2_ShieldCapacityMax}，均随力量成长。",
     "parameter_labels": {
       "A4_2_AttackBuff": "被动普攻附加伤害",
       "A4_2_ShieldDuration": "每次施法护盾持续时间",
@@ -2245,22 +2245,22 @@
   },
   "Items/Talents/Class/Fairy/Ability_A1.TALENT.xdb": {
     "name_zh": "战斗仙灵",
-    "effect_zh": "向指定位置放出战斗仙灵，仙灵在 {A1_Duration} 秒内跟随鼠标指针移动。附近敌人受到每秒 {A1_Damage} 伤害，伤害效果持续 {A1_DoTDuration_TT} 秒。激活「战斗花粉」后，使用本招还会使自身灵巧与攻速属性中较高的一项增加 {A1u_AddDexterity}，持续 {A1u_Duration} 秒；加成随力量与智力中较高者变化。从己方土地施放时，持续伤害时间延长 {A1_TerrDotDuration} 秒。",
+    "effect_zh": "向指定位置放出战斗仙灵，仙灵在 {A1_Duration} 秒内跟随鼠标指针移动。附近敌人受到每秒 {A1_Damage} 魔法伤害，伤害效果持续 {A1_DoTDuration_TT} 秒。激活「战斗花粉」后，使用本招还会使自身灵巧与攻速中较高的一项增加 {A1u_AddDexterity}，持续 {A1u_Duration} 秒；加成随力量与智力中较高者变化。从己方土地施放时，持续伤害时间延长 {A1_TerrDotDuration} 秒。",
     "parameter_labels": {
       "A1_Damage": "第一招伤害",
       "A1_DoTDuration_TT": "持续伤害的维持时间",
       "A1_Duration": "第一招效果持续时间",
       "A1_TerrDotDuration": "己方土地延长的持续伤害时间",
-      "A1u_AddDexterity": "灵巧或攻速属性加成",
+      "A1u_AddDexterity": "灵巧或攻速加成",
       "A1u_Duration": "第一招强化效果持续时间"
     },
     "notes": []
   },
   "Items/Talents/Class/Fairy/Ability_A1u.TALENT.xdb": {
     "name_zh": "战斗花粉",
-    "effect_zh": "使用「战斗仙灵」后，自身灵巧与攻速属性中较高的一项增加 {A1u_AddDexterity}，持续 {A1u_Duration} 秒；加成随力量与智力中较高者变化。这是「战斗仙灵」的强化天赋。",
+    "effect_zh": "使用「战斗仙灵」后，自身灵巧与攻速中较高的一项增加 {A1u_AddDexterity}，持续 {A1u_Duration} 秒；加成随力量与智力中较高者变化。这是「战斗仙灵」的强化天赋。",
     "parameter_labels": {
-      "A1u_AddDexterity": "灵巧或攻速属性加成",
+      "A1u_AddDexterity": "灵巧或攻速加成",
       "A1u_Duration": "第一招强化效果持续时间"
     },
     "notes": []
@@ -2354,7 +2354,7 @@
   },
   "Items/Talents/Class/Fairy/Ability_A4.TALENT.xdb": {
     "name_zh": "仙灵之怒",
-    "effect_zh": "已放出的战斗仙灵造成 {A4_PhysDamage} 伤害，守护仙灵造成 {A4_MagDamage} 伤害；基础对照值分别为 {A4_PhysDamage_TT} 和 {A4_MagDamage_TT}。激活「仙灵狂潮」后，还使敌人移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
+    "effect_zh": "已放出的战斗仙灵造成 {A4_PhysDamage} 物理伤害，守护仙灵造成 {A4_MagDamage} 魔法伤害；基础对照值分别为 {A4_PhysDamage_TT} 和 {A4_MagDamage_TT}。激活「仙灵狂潮」后，还使敌人移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "A4_MagDamage": "守护仙灵引爆伤害",
       "A4_MagDamage_TT": "守护仙灵引爆基础伤害对照",
@@ -2674,7 +2674,7 @@
   },
   "Items/Talents/Class/Fluffy/Ability_A1.TALENT.xdb": {
     "name_zh": "跳！",
-    "effect_zh": "普通形态：跳到指定位置；激活「抓不到我！」后，还隐身 {Invisibility_Duration} 秒。怒兽形态：跳到指定位置，对周围敌人造成 {A1_Damage} 伤害；激活强化后，还使这些敌人移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
+    "effect_zh": "普通形态：跳到指定位置；激活「抓不到我！」后，还隐身 {Invisibility_Duration} 秒。怒兽形态：跳到指定位置，对周围敌人造成 {A1_Damage} 魔法伤害；激活强化后，还使这些敌人移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "A1_Damage": "第一招伤害",
       "Dec_MoveSpeed": "移动速度降低幅度",
@@ -2695,7 +2695,7 @@
   },
   "Items/Talents/Class/Fluffy/Ability_A2.TALENT.xdb": {
     "name_zh": "怕了吧！",
-    "effect_zh": "普通形态：持续 {A2_Duration} 秒，不能成为敌方攻击与天赋的指定目标，可穿过生物，但自身不能攻击；首次接触敌人时造成 {A2Damage} 伤害。激活「追上你！」后，期间移动速度还提高 {Haste_Percent}%。怒兽形态：使周围敌人的攻击伤害降低 {Fear_Penalty}，持续 {Fear_Duration} 秒，削减随力量变化；激活强化后，还使其沉默 {Silence_Duration} 秒，不能使用天赋。",
+    "effect_zh": "普通形态：持续 {A2_Duration} 秒，不能成为敌方攻击与天赋的指定目标，可穿过生物，但自身不能攻击；首次接触敌人时造成 {A2Damage} 魔法伤害。激活「追上你！」后，期间移动速度还提高 {Haste_Percent}%。怒兽形态：使周围敌人的攻击伤害降低 {Fear_Penalty}，持续 {Fear_Duration} 秒，削减随力量变化；激活强化后，还使其沉默 {Silence_Duration} 秒，不能使用天赋。",
     "parameter_labels": {
       "A2Damage": "第二招伤害",
       "A2_Duration": "第二招效果持续时间",
@@ -2717,7 +2717,7 @@
   },
   "Items/Talents/Class/Fluffy/Ability_A3.TALENT.xdb": {
     "name_zh": "轻松猎物！",
-    "effect_zh": "普通形态：持续 {A3_Duration} 秒，每隔 {A3_Period} 秒对周围敌人造成 {A3_FluffyDamage} 伤害，并降低其坚韧 {A3_Stamina_Decrease}，削减随力量变化。激活「站住别动！」后，敌人首次穿过作用区域边界时眩晕 {Stun_Duration} 秒。怒兽形态：对周围敌人造成 {A3_MosterDamage} 伤害；激活强化后，同时将其击飞。",
+    "effect_zh": "普通形态：持续 {A3_Duration} 秒，每隔 {A3_Period} 秒对周围敌人造成 {A3_FluffyDamage} 魔法伤害，并降低其坚韧 {A3_Stamina_Decrease}，削减随力量变化。激活「站住别动！」后，敌人首次穿过作用区域边界时眩晕 {Stun_Duration} 秒。怒兽形态：对周围敌人造成 {A3_MosterDamage} 魔法伤害；激活强化后，同时将其击飞。",
     "parameter_labels": {
       "A3_Duration": "第三招效果持续时间",
       "A3_FluffyDamage": "普通形态的伤害",
@@ -2752,7 +2752,7 @@
     "name_zh": "我要进攻！",
     "effect_zh": "怒气高于 {Need_Rage} 时，可主动进入怒兽形态。怒兽形态下，自身灵巧增加 {A0_IncreaseDexterity}，加成随力量与智力中较高者变化。激活「当心！」后，变身时使周围敌人的坚韧和意志各降低 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减同样随两项攻击属性中较高者变化。",
     "parameter_labels": {
-      "A0_IncreaseDexterity": "灵巧或攻速属性增量",
+      "A0_IncreaseDexterity": "灵巧或攻速增量",
       "ArmorCut_Amount": "坚韧削减量",
       "ArmorCut_Duration": "坚韧削减持续时间",
       "Need_Rage": "变身所需怒气"
@@ -2812,7 +2812,7 @@
   },
   "Items/Talents/Class/Freeze/Ability_A1.TALENT.xdb": {
     "name_zh": "冰霜突袭",
-    "effect_zh": "向指定方向移动，对路径中命中的敌人造成 {A1_Damage} 伤害，随力量与智力中较高者变化。激活「冻僵」后，还使目标眩晕 {Stun_Duration} 秒。可在 {A1_WaitDuration} 秒内再次使用本招。",
+    "effect_zh": "向指定方向移动，对路径中命中的敌人造成 {A1_Damage} 魔法伤害，随力量与智力中较高者变化。激活「冻僵」后，还使目标眩晕 {Stun_Duration} 秒。可在 {A1_WaitDuration} 秒内再次使用本招。",
     "parameter_labels": {
       "A1_Damage": "第一招伤害",
       "A1_WaitDuration": "再次使用招式的时间窗口",
@@ -2858,7 +2858,7 @@
   },
   "Items/Talents/Class/Freeze/Ability_A3.TALENT.xdb": {
     "name_zh": "寒冰打击",
-    "effect_zh": "使用专属天赋后的 {A3_Duration} 秒内，攻击额外造成 {A3_Damage} 伤害。激活「御冰」后，每次攻击还使所有专属天赋的当前剩余恢复时间缩短 {A3_ReductionAmount} 秒。",
+    "effect_zh": "使用专属天赋后的 {A3_Duration} 秒内，攻击额外造成 {A3_Damage} 物理伤害。激活「御冰」后，每次攻击还使所有专属天赋的当前剩余恢复时间缩短 {A3_ReductionAmount} 秒。",
     "parameter_labels": {
       "A3_Damage": "第三招伤害",
       "A3_Duration": "第三招效果持续时间",
@@ -2876,7 +2876,7 @@
   },
   "Items/Talents/Class/Freeze/Ability_A4.TALENT.xdb": {
     "name_zh": "冰拳",
-    "effect_zh": "在指定区域制造持续 {A4_SummonLifeTime} 秒的冰拳，对敌人造成 {A4_Damage} 伤害。冰拳周围敌人的移动速度降低 {Dec_MoveSpeed}%。激活「冻土领域」后，最靠近冰拳中心的敌方英雄被抛回施法起点，并眩晕 {Stun_Duration} 秒。",
+    "effect_zh": "在指定区域制造持续 {A4_SummonLifeTime} 秒的冰拳，对敌人造成 {A4_Damage} 物理伤害。冰拳周围敌人的移动速度降低 {Dec_MoveSpeed}%。激活「冻土领域」后，最靠近冰拳中心的敌方英雄被抛回施法起点，并眩晕 {Stun_Duration} 秒。",
     "parameter_labels": {
       "A4_Damage": "终极天赋伤害",
       "A4_SummonLifeTime": "终极召唤物或区域存在时间",
@@ -2887,7 +2887,7 @@
   },
   "Items/Talents/Class/Freeze/Ability_A4_2.TALENT.xdb": {
     "name_zh": "冰墙",
-    "effect_zh": "在指定区域制造持续 {A4_2_SummonLifeTime} 秒的冰墙，对敌人造成 {A4_2_Damage} 伤害。激活「冰垒」后，还使施放位置的敌人眩晕 {Stun_Duration} 秒。",
+    "effect_zh": "在指定区域制造持续 {A4_2_SummonLifeTime} 秒的冰墙，对敌人造成 {A4_2_Damage} 物理伤害。激活「冰垒」后，还使施放位置的敌人眩晕 {Stun_Duration} 秒。",
     "parameter_labels": {
       "A4_2_Damage": "替代终极伤害",
       "A4_2_SummonLifeTime": "替代终极召唤物或区域持续时间",
@@ -2923,7 +2923,7 @@
   },
   "Items/Talents/Class/Frogenglut/Ability1.TALENT.xdb": {
     "name_zh": "接招！",
-    "effect_zh": "对目标造成 {A1_Damage} 伤害，并打断其天赋施放。激活「逮到了？」后，还降低目标坚韧 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减随力量变化。从己方土地施放时，恢复时间缩短 {A1_CdReduction} 秒。",
+    "effect_zh": "对目标造成 {A1_Damage} 物理伤害，并打断其天赋施放。激活「逮到了？」后，还降低目标坚韧 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减随力量变化。从己方土地施放时，恢复时间缩短 {A1_CdReduction} 秒。",
     "parameter_labels": {
       "A1_CdReduction": "第一招冷却缩减",
       "A1_Damage": "第一招伤害",
@@ -2976,7 +2976,7 @@
   },
   "Items/Talents/Class/Frogenglut/Ability4.TALENT.xdb": {
     "name_zh": "压碎！",
-    "effect_zh": "跳到指定位置，对周围敌人造成 {A4_Damage} 伤害，伤害随最大生命变化。从己方土地使用时，影响范围扩大。激活「连跳！」后，首次跳跃后可在 {A4_WaitDuration} 秒内再跳 {JumpNumber} 次；追加跳跃的伤害和能量消耗均为首次的 1/{A4u_Damage}。",
+    "effect_zh": "跳到指定位置，对周围敌人造成 {A4_Damage} 魔法伤害，伤害随最大生命变化。从己方土地使用时，影响范围扩大。激活「连跳！」后，首次跳跃后可在 {A4_WaitDuration} 秒内再跳 {JumpNumber} 次；追加跳跃的伤害和能量消耗均为首次的 1/{A4u_Damage}。",
     "parameter_labels": {
       "A4_Damage": "终极天赋伤害",
       "A4_WaitDuration": "追加跳跃的时间窗口",
@@ -2987,7 +2987,7 @@
   },
   "Items/Talents/Class/Frogenglut/Ability4_2.TALENT.xdb": {
     "name_zh": "吞下！",
-    "effect_zh": "吞下指定敌方英雄，持续 {A4_2_Duration} 秒。激活「吐掉脏东西！」后，效果结束时，目标受到 {A4_2_Damage} 伤害并眩晕 {Stun_Duration} 秒；伤害随自身最大生命变化。",
+    "effect_zh": "吞下指定敌方英雄，持续 {A4_2_Duration} 秒。激活「吐掉脏东西！」后，效果结束时，目标受到 {A4_2_Damage} 魔法伤害并眩晕 {Stun_Duration} 秒；伤害随自身最大生命变化。",
     "parameter_labels": {
       "A4_2_Damage": "替代终极伤害",
       "A4_2_Duration": "替代终极持续时间",
@@ -3049,7 +3049,7 @@
   },
   "Items/Talents/Class/GhostLord/Ability_A1.TALENT.xdb": {
     "name_zh": "幽灵之鞭",
-    "effect_zh": "连接有效范围内的指定目标，最长持续 {A1_Duration} 秒；自身处于幽灵形态时，不因该时间到期而结束。目标为敌人时，其每秒受到 {A1_DamagePerTick} 伤害，自身每秒恢复 {A1_HeailngPerTick_TT} 生命，治疗量随智力变化；目标为友军时，改为自身承受伤害、友军恢复生命。从己方土地施放时，使用范围扩大。",
+    "effect_zh": "连接有效范围内的指定目标，最长持续 {A1_Duration} 秒；自身处于幽灵形态时，不因该时间到期而结束。目标为敌人时，其每秒受到 {A1_DamagePerTick} 魔法伤害，自身每秒恢复 {A1_HeailngPerTick_TT} 生命，治疗量随智力变化；目标为友军时，改为自身承受伤害、友军恢复生命。从己方土地施放时，使用范围扩大。",
     "parameter_labels": {
       "A1_DamagePerTick": "每次连接跳伤伤害",
       "A1_Duration": "第一招效果持续时间",
@@ -3096,7 +3096,7 @@
   },
   "Items/Talents/Class/GhostLord/Ability_A3.TALENT.xdb": {
     "name_zh": "收割",
-    "effect_zh": "对周围所有敌人造成 {A3_Damage} 伤害。处于幽灵形态时，恢复时间缩短至 {A3_CD} 秒。本招伤害可触发生命偷取与能量偷取，最多计 {LifeDrainTargetsCap} 个目标。",
+    "effect_zh": "对周围所有敌人造成 {A3_Damage} 物理伤害。处于幽灵形态时，恢复时间缩短至 {A3_CD} 秒。本招伤害可触发生命偷取与能量偷取，最多计 {LifeDrainTargetsCap} 个目标。",
     "parameter_labels": {
       "A3_CD": "幽灵形态下的恢复时间",
       "A3_Damage": "第三招伤害",
@@ -3108,7 +3108,7 @@
   },
   "Items/Talents/Class/GhostLord/Ability_A4.TALENT.xdb": {
     "name_zh": "死亡幽影",
-    "effect_zh": "变为幽灵形态 {A4u_Duration} 秒，移动速度提高 {Haste_Percent}%，免疫变形效果；「收割」额外造成 {A4_AddDamage} 伤害。激活「亡者之怒」后，逝者之魂及相关法术目标的位置发生爆炸，每次对附近敌人造成 {A4_Damage} 伤害，同一目标最多承受 {A4_MaxDamage}；自身与友军的伤害额外增加 {AddDamage}。",
+    "effect_zh": "变为幽灵形态 {A4u_Duration} 秒，移动速度提高 {Haste_Percent}%，免疫变形效果；「收割」额外造成 {A4_AddDamage} 物理伤害。激活「亡者之怒」后，逝者之魂及相关法术目标的位置发生爆炸，每次对附近敌人造成 {A4_Damage} 魔法伤害，同一目标最多承受 {A4_MaxDamage}；自身与友军的伤害额外增加 {AddDamage}。",
     "parameter_labels": {
       "A4_AddDamage": "终极对普通招式的附加伤害",
       "A4_Damage": "终极天赋伤害",
@@ -3160,13 +3160,13 @@
   },
   "Items/Talents/Class/Gunner/Ability_A0.TALENT.xdb": {
     "name_zh": "少射而精准",
-    "effect_zh": "中程武器有 {Max_Shoots} 发弹匣。射击阶段每秒攻击 {Max_AttacksPerSecond} 次，不受攻速属性影响；弹匣打空后需要装填，装填时间受攻速属性影响。普通攻击不能暴击。",
+    "effect_zh": "中程武器有 {Max_Shoots} 发弹匣。射击阶段每秒攻击 {Max_AttacksPerSecond} 次，不受攻速影响；弹匣打空后需要装填，装填时间受攻速影响。普通攻击不能暴击。",
     "parameter_labels": {
       "Max_AttacksPerSecond": "射击阶段每秒攻击次数",
       "Max_Shoots": "弹匣容量"
     },
     "notes": [
-      "固定射击频率与受攻速影响的换弹时间共同决定持续输出，不能据前一句判断攻速属性对该英雄无用。"
+      "固定射击频率与受攻速影响的换弹时间共同决定持续输出，不能据前一句判断攻速对该英雄无用。"
     ]
   },
   "Items/Talents/Class/Gunner/Ability_A0_SUP.TALENT.xdb": {
@@ -3177,7 +3177,7 @@
   },
   "Items/Talents/Class/Gunner/Ability_A1.TALENT.xdb": {
     "name_zh": "爆炸轰击",
-    "effect_zh": "对面前敌人造成 {Damage} 伤害。激活「毁灭论据」后，对士兵伤害额外提高 {A1u_Damage}%，对怪物额外提高 {A1u_Damage2}%。激活「爆破起飞」后，命中敌方英雄会立即重置「紧急起飞」。",
+    "effect_zh": "对面前敌人造成 {Damage} 魔法伤害。激活「毁灭论据」后，对士兵伤害额外提高 {A1u_Damage}%，对怪物额外提高 {A1u_Damage2}%。激活「爆破起飞」后，命中敌方英雄会立即重置「紧急起飞」。",
     "parameter_labels": {
       "A1u_Damage": "第一招强化伤害或增幅",
       "A1u_Damage2": "对怪物的额外伤害增幅",
@@ -3204,7 +3204,7 @@
   },
   "Items/Talents/Class/Gunner/Ability_A2.TALENT.xdb": {
     "name_zh": "紧急起飞",
-    "effect_zh": "引爆脚下地面，对周围敌人造成 {A2_Damage} 伤害，并飞往指定位置。激活「空中包扎」后，还恢复自身 {A2u_HealAmount} 生命，治疗量随力量与智力中较高者变化。",
+    "effect_zh": "引爆脚下地面，对周围敌人造成 {A2_Damage} 魔法伤害，并飞往指定位置。激活「空中包扎」后，还恢复自身 {A2u_HealAmount} 生命，治疗量随力量与智力中较高者变化。",
     "parameter_labels": {
       "A2_Damage": "第二招伤害",
       "A2u_HealAmount": "第二招强化治疗量"
@@ -3240,7 +3240,7 @@
   },
   "Items/Talents/Class/Gunner/Ability_A4.TALENT.xdb": {
     "name_zh": "空中威胁",
-    "effect_zh": "向周围随机敌人发射 {A4_MaxTargets} 枚炮弹，每枚造成 {A4_Damage} 伤害。激活「大面积投送」后，炮弹改为造成范围伤害。",
+    "effect_zh": "向周围随机敌人发射 {A4_MaxTargets} 枚炮弹，每枚造成 {A4_Damage} 魔法伤害。激活「大面积投送」后，炮弹改为造成范围伤害。",
     "parameter_labels": {
       "A4_Damage": "终极天赋伤害",
       "A4_MaxTargets": "终极弹丸数量"
@@ -3275,7 +3275,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A0.TALENT.xdb": {
     "name_zh": "斗志高涨",
-    "effect_zh": "每次成功攻击或受到伤害，积累 {Rage_Per_Damage} 点怒气，上限 {Max_Rage}。连续 {NonCombatTime} 秒未造成或受到伤害时，每隔 {Rage_Reduce_CD} 秒消耗 {A0_Rage_Reduce} 点；每消耗 1 点恢复 {A0_Heal} 生命，治疗量随智力变化。怒气高于 {Enrage} 时进入斗志高涨状态。站在己方土地时，每点怒气使攻击额外造成 {A0_TerrainDamage} 伤害。",
+    "effect_zh": "每次成功攻击或受到伤害，积累 {Rage_Per_Damage} 点怒气，上限 {Max_Rage}。连续 {NonCombatTime} 秒未造成或受到伤害时，每隔 {Rage_Reduce_CD} 秒消耗 {A0_Rage_Reduce} 点；每消耗 1 点恢复 {A0_Heal} 生命，治疗量随智力变化。怒气高于 {Enrage} 时进入斗志高涨状态。站在己方土地时，每点怒气使攻击额外造成 {A0_TerrainDamage} 魔法伤害。",
     "parameter_labels": {
       "A0_Heal": "每点资源对应的生命恢复",
       "A0_Rage_Reduce": "每次脱战流失的怒气",
@@ -3292,7 +3292,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A1.TALENT.xdb": {
     "name_zh": "求生本能",
-    "effect_zh": "对弹道上第一个敌方英雄及命中的所有非英雄生物造成 {TT_A1_Damage} 伤害；自身向相反方向后跳，移动速度提高 {Haste_Percent}%，持续 {Haste_Duration} 秒。激活「震慑射击」后，命中的敌方英雄致盲 {Blind_Duration} 秒；若该英雄距离较近，还眩晕 {Stun_Duration} 秒。斗志高涨：消耗 {Talent_RageCost} 点怒气，使本招伤害提高 {A0_DmgUp}%。",
+    "effect_zh": "对弹道上第一个敌方英雄及命中的所有非英雄生物造成 {TT_A1_Damage} 魔法伤害；自身向相反方向后跳，移动速度提高 {Haste_Percent}%，持续 {Haste_Duration} 秒。激活「震慑射击」后，命中的敌方英雄致盲 {Blind_Duration} 秒；若该英雄距离较近，还眩晕 {Stun_Duration} 秒。斗志高涨：消耗 {Talent_RageCost} 点怒气，使本招伤害提高 {A0_DmgUp}%。",
     "parameter_labels": {
       "A0_DmgUp": "斗志高涨时的伤害增幅",
       "Blind_Duration": "致盲持续时间",
@@ -3317,7 +3317,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A2.TALENT.xdb": {
     "name_zh": "灼热枪管",
-    "effect_zh": "每次攻击额外造成 {TT_A2_Damage} 伤害，并消耗 {Rage_Per_AA} 点怒气。激活「弹雨」后，每秒攻击次数提高 {TT_A2_SpeedBurst}%。激活「爆裂装药」后，开启期间的攻击会在敌人身上积累层数；达到第三层时，造成 {A2_SUP_Damage} 伤害并清空层数，伤害随力量与智力中较高者变化。斗志高涨：本招附加伤害提高 {A0_DmgUp}%。",
+    "effect_zh": "每次攻击额外造成 {TT_A2_Damage} 魔法伤害，并消耗 {Rage_Per_AA} 点怒气。激活「弹雨」后，每秒攻击次数提高 {TT_A2_SpeedBurst}%。激活「爆裂装药」后，开启期间的攻击会在敌人身上积累层数；达到第三层时，造成 {A2_SUP_Damage} 魔法伤害并清空层数，伤害随力量与智力中较高者变化。斗志高涨：本招附加伤害提高 {A0_DmgUp}%。",
     "parameter_labels": {
       "A0_DmgUp": "斗志高涨时的伤害增幅",
       "A2_SUP_Damage": "第二招进一步强化伤害",
@@ -3329,7 +3329,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A2_SUP.TALENT.xdb": {
     "name_zh": "爆裂装药",
-    "effect_zh": "「灼热枪管」开启期间，攻击在敌人身上积累层数；达到第三层时，造成 {A2_SUP_Damage} 伤害并清空层数，伤害随力量与智力中较高者变化。",
+    "effect_zh": "「灼热枪管」开启期间，攻击在敌人身上积累层数；达到第三层时，造成 {A2_SUP_Damage} 魔法伤害并清空层数，伤害随力量与智力中较高者变化。",
     "parameter_labels": {
       "A2_SUP_Damage": "第二招进一步强化伤害"
     },
@@ -3349,7 +3349,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A3.TALENT.xdb": {
     "name_zh": "猎手标记",
-    "effect_zh": "标记敌人 {A3_Duration} 秒，使其移动速度降低 {Dec_MoveSpeed}%。攻击标记目标时，额外获得 {A3_Mark_Bonus_Rage} 点怒气；标记结束或目标离开视野时，目标受到 {TT_A3_Damage} 伤害。激活「最后通牒」后，自身受到该目标的伤害降低 {DamageDecrease}%；若再激活「防护标记」，该减伤变为 {DamageDecreaseTotal}%，并使其他来源伤害降低 {DamageDecreaseSUP_All}%。斗志高涨：消耗 {Talent_RageCost} 点怒气，使本招伤害提高 {A0_DmgUp}%。",
+    "effect_zh": "标记敌人 {A3_Duration} 秒，使其移动速度降低 {Dec_MoveSpeed}%。攻击标记目标时，额外获得 {A3_Mark_Bonus_Rage} 点怒气；标记结束或目标离开视野时，目标受到 {TT_A3_Damage} 魔法伤害。激活「最后通牒」后，自身受到该目标的伤害降低 {DamageDecrease}%；若再激活「防护标记」，该减伤变为 {DamageDecreaseTotal}%，并使其他来源伤害降低 {DamageDecreaseSUP_All}%。斗志高涨：消耗 {Talent_RageCost} 点怒气，使本招伤害提高 {A0_DmgUp}%。",
     "parameter_labels": {
       "A0_DmgUp": "斗志高涨时的伤害增幅",
       "A3_Duration": "第三招效果持续时间",
@@ -3384,7 +3384,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A4.TALENT.xdb": {
     "name_zh": "狩猎激情",
-    "effect_zh": "施放时消耗全部怒气。在 {TT_Tech_A4_Duration} 秒内，每秒失去 {Rage_Per_Second} 点怒气，攻击额外造成 {A4_Bonus_Damage} 伤害。激活「怒气掌控」后，期间灵巧增加 {A4_AddDex}，加成随智力变化；并进入斗志高涨状态，专属天赋不再消耗怒气。施放时已处于斗志高涨：每有 {TT_Tech_A4_Rage_Per_Sec} 点怒气，持续时间额外增加 {TT_Tech_A4_Duration_Up} 秒。",
+    "effect_zh": "施放时消耗全部怒气。在 {TT_Tech_A4_Duration} 秒内，每秒失去 {Rage_Per_Second} 点怒气，攻击额外造成 {A4_Bonus_Damage} 魔法伤害。激活「怒气掌控」后，期间灵巧增加 {A4_AddDex}，加成随智力变化；并进入斗志高涨状态，专属天赋不再消耗怒气。施放时已处于斗志高涨：每有 {TT_Tech_A4_Rage_Per_Sec} 点怒气，持续时间额外增加 {TT_Tech_A4_Duration_Up} 秒。",
     "parameter_labels": {
       "A4_AddDex": "终极期间灵巧加成",
       "A4_Bonus_Damage": "终极期间每次攻击附加伤害",
@@ -3399,7 +3399,7 @@
   },
   "Items/Talents/Class/Gunslinger/Ability_A4_2.TALENT.xdb": {
     "name_zh": "激烈枪战",
-    "effect_zh": "施放时消耗全部怒气，移动到指定位置，并在 {A4_2Duration} 秒内向被「猎手标记」标记的敌方英雄、或最近的敌方英雄射击 {TT_ShootCount} 次，每次造成 {A4_2Damage} 伤害。没有找到可攻击目标时，恢复时间改为 {A4_2_NoTargetCooldownReduction} 秒。激活「极度危险」后，击杀敌方英雄也触发这一恢复时间。斗志高涨：施放时每有 10 点怒气，额外射击 2 次。",
+    "effect_zh": "施放时消耗全部怒气，移动到指定位置，并在 {A4_2Duration} 秒内向被「猎手标记」标记的敌方英雄、或最近的敌方英雄射击 {TT_ShootCount} 次，每次造成 {A4_2Damage} 物理伤害。没有找到可攻击目标时，恢复时间改为 {A4_2_NoTargetCooldownReduction} 秒。激活「极度危险」后，击杀敌方英雄也触发这一恢复时间。斗志高涨：施放时每有 10 点怒气，额外射击 2 次。",
     "parameter_labels": {
       "A4_2Damage": "替代终极单次伤害",
       "A4_2Duration": "替代终极持续时间",
@@ -3558,7 +3558,7 @@
   },
   "Items/Talents/Class/Highlander/Ability1.TALENT.xdb": {
     "name_zh": "英雄打击",
-    "effect_zh": "自身进入无敌状态，攻击最多 {A1TargetsNumber} 名敌人，每人受到 {A1Damage} 伤害，伤害同时随力量与攻速属性变化。激活「劲敌」后，最近的敌方英雄眩晕 {Stun_Duration} 秒；「震慑连击」的独立说明进一步将眩晕扩展至所有命中的敌方英雄。激活「钢铁旋风」后，命中目标移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
+    "effect_zh": "自身进入无敌状态，攻击最多 {A1TargetsNumber} 名敌人，每人受到 {A1Damage} 物理伤害，伤害同时随力量与攻速变化。激活「劲敌」后，最近的敌方英雄眩晕 {Stun_Duration} 秒；「震慑连击」的独立说明进一步将眩晕扩展至所有命中的敌方英雄。激活「钢铁旋风」后，命中目标移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "A1Damage": "第一招伤害",
       "A1TargetsNumber": "最多攻击目标数量",
@@ -3589,9 +3589,9 @@
   },
   "Items/Talents/Class/Highlander/Ability2.TALENT.xdb": {
     "name_zh": "战斗渴望",
-    "effect_zh": "每次攻击增加 {A2_AddDrainLife} 点生命偷取，持续 {A2Duration} 秒，最多叠加 {A2MaxStacks} 层；加成随力量变化。站在己方土地时，攻速属性额外增加 {A2AddAtkSpeed}，加成随力量变化。激活「狂烈渴望」后，攻速加成不再受土地限制，数值随该强化变化。激活「怒气凝聚」后，层数达到 {A2MaxStacks} 时，移动速度提高 {A2_10Stack_SpeedBuff_Percent}%。",
+    "effect_zh": "每次攻击增加 {A2_AddDrainLife} 点生命偷取，持续 {A2Duration} 秒，最多叠加 {A2MaxStacks} 层；加成随力量变化。站在己方土地时，攻速额外增加 {A2AddAtkSpeed}，加成随力量变化。激活「狂烈渴望」后，攻速加成不再受土地限制，数值随该强化变化。激活「怒气凝聚」后，层数达到 {A2MaxStacks} 时，移动速度提高 {A2_10Stack_SpeedBuff_Percent}%。",
     "parameter_labels": {
-      "A2AddAtkSpeed": "攻速属性加成",
+      "A2AddAtkSpeed": "攻速加成",
       "A2Duration": "第二招效果持续时间",
       "A2MaxStacks": "第二招效果叠层上限",
       "A2_10Stack_SpeedBuff_Percent": "满层移动速度增幅",
@@ -3634,7 +3634,7 @@
   },
   "Items/Talents/Class/Highlander/Ability4.TALENT.xdb": {
     "name_zh": "不朽之魂",
-    "effect_zh": "死亡时自动触发：自身进入无敌灵体状态，每秒失去 {A4EnergyDegen} 能量。能量耗尽，或再次使用「不朽之魂」时，在当前位置复生。复生时恢复 {A4HealReviveNonNative}% 生命，对周围敌人造成 {A4Damage} 伤害并使其眩晕 {Stun_Duration} 秒，伤害随最大生命变化；若在己方土地上复生，恢复量改为 {A4HealReviveNative}% 生命。",
+    "effect_zh": "死亡时自动触发：自身进入无敌灵体状态，每秒失去 {A4EnergyDegen} 能量。能量耗尽，或再次使用「不朽之魂」时，在当前位置复生。复生时恢复 {A4HealReviveNonNative}% 生命，对周围敌人造成 {A4Damage} 魔法伤害并使其眩晕 {Stun_Duration} 秒，伤害随最大生命变化；若在己方土地上复生，恢复量改为 {A4HealReviveNative}% 生命。",
     "parameter_labels": {
       "A4Damage": "终极天赋伤害",
       "A4EnergyDegen": "灵体每秒能量消耗",
@@ -3646,7 +3646,7 @@
   },
   "Items/Talents/Class/Highlander/Ability4_2.TALENT.xdb": {
     "name_zh": "天降之剑",
-    "effect_zh": "召来一把剑，对敌人造成 {A4a_Damage} 伤害并使其眩晕 {Stun_Duration} 秒。自身受到的伤害降低 {A4a_AddDef}%。",
+    "effect_zh": "召来一把剑，对敌人造成 {A4a_Damage} 物理伤害并使其眩晕 {Stun_Duration} 秒。自身受到的伤害降低 {A4a_AddDef}%。",
     "parameter_labels": {
       "A4a_AddDef": "受到伤害的削减幅度",
       "A4a_Damage": "天降之剑伤害",
@@ -3664,12 +3664,12 @@
   },
   "Items/Talents/Class/Highlander/Ability_A2_SUP.TALENT.xdb": {
     "name_zh": "狂烈渴望",
-    "effect_zh": "「战斗渴望」的攻速属性加成提高至 {A2_SUP_AddAtkSpd}，随力量变化，并且不再受己方土地限制。",
+    "effect_zh": "「战斗渴望」的攻速加成提高至 {A2_SUP_AddAtkSpd}，随力量变化，并且不再受己方土地限制。",
     "parameter_labels": {
-      "A2_SUP_AddAtkSpd": "强化后的攻速属性加成"
+      "A2_SUP_AddAtkSpd": "强化后的攻速加成"
     },
     "notes": [
-      "这里是“加成量提高至”，不是把英雄总攻速属性设置为该值。"
+      "这里是“加成量提高至”，不是把英雄总攻速设置为该值。"
     ]
   },
   "Items/Talents/Class/Hunter/Ability0.TALENT.xdb": {
@@ -3683,7 +3683,7 @@
   },
   "Items/Talents/Class/Hunter/Ability1.TALENT.xdb": {
     "name_zh": "附魔箭",
-    "effect_zh": "箭矢命中弹道上的第一个敌人，造成 {A1_Damage} 伤害，并使其生命恢复效果降低 {MortalStrike_Amount}%，持续 {MortalStrike_Duration} 秒。激活「爆裂箭」后，命中敌人或飞至最远距离时，额外对周围敌人造成 {A1_SUP_Damage} 伤害。激活「精准射击」后，在生命恢复受抑制期间，目标的流血效果可叠加至 {A1u_MaxStacks} 层。",
+    "effect_zh": "箭矢命中弹道上的第一个敌人，造成 {A1_Damage} 魔法伤害，并使其生命恢复效果降低 {MortalStrike_Amount}%，持续 {MortalStrike_Duration} 秒。激活「爆裂箭」后，命中敌人或飞至最远距离时，额外对周围敌人造成 {A1_SUP_Damage} 魔法伤害。激活「精准射击」后，在生命恢复受抑制期间，目标的流血效果可叠加至 {A1u_MaxStacks} 层。",
     "parameter_labels": {
       "A1_Damage": "第一招伤害",
       "A1_SUP_Damage": "进一步强化的伤害或增幅",
@@ -3716,9 +3716,9 @@
   },
   "Items/Talents/Class/Hunter/Ability3.TALENT.xdb": {
     "name_zh": "狩猎热情",
-    "effect_zh": "使指定友军移动速度提高 {Haste_MoveAmountBase}%，持续 {Haste_Duration} 秒。从己方土地施放时，移动速度加成额外增加 {Haste_MoveAmountTerrInc} 个百分点。激活「猎手身法」后，目标攻速属性还增加 {Haste_AtkSpdAmountBase}，随智力变化；从己方土地施放时，此攻速加成额外提高 {Haste_AtkSpdAmountTerrInc_TT}%。激活「猎兴同享」后，增益同时作用于自身与指定友军。",
+    "effect_zh": "使指定友军移动速度提高 {Haste_MoveAmountBase}%，持续 {Haste_Duration} 秒。从己方土地施放时，移动速度加成额外增加 {Haste_MoveAmountTerrInc} 个百分点。激活「猎手身法」后，目标攻速还增加 {Haste_AtkSpdAmountBase}，随智力变化；从己方土地施放时，此攻速加成额外提高 {Haste_AtkSpdAmountTerrInc_TT}%。激活「猎兴同享」后，增益同时作用于自身与指定友军。",
     "parameter_labels": {
-      "Haste_AtkSpdAmountBase": "攻速属性基础加成",
+      "Haste_AtkSpdAmountBase": "攻速基础加成",
       "Haste_AtkSpdAmountTerrInc_TT": "己方土地对攻速加成的增幅",
       "Haste_Duration": "加速或相关增益持续时间",
       "Haste_MoveAmountBase": "基础移动速度增幅",
@@ -3728,9 +3728,9 @@
   },
   "Items/Talents/Class/Hunter/Ability3_Upg1.TALENT.xdb": {
     "name_zh": "猎手身法",
-    "effect_zh": "「狩猎热情」额外使指定友军攻速属性增加 {Haste_AtkSpdAmountBase}，随智力变化。从己方土地施放时，此攻速加成额外提高 {Haste_AtkSpdAmountTerrInc_TT}%。",
+    "effect_zh": "「狩猎热情」额外使指定友军攻速增加 {Haste_AtkSpdAmountBase}，随智力变化。从己方土地施放时，此攻速加成额外提高 {Haste_AtkSpdAmountTerrInc_TT}%。",
     "parameter_labels": {
-      "Haste_AtkSpdAmountBase": "攻速属性基础加成",
+      "Haste_AtkSpdAmountBase": "攻速基础加成",
       "Haste_AtkSpdAmountTerrInc_TT": "己方土地对攻速加成的增幅"
     },
     "notes": []
@@ -3745,7 +3745,7 @@
   },
   "Items/Talents/Class/Hunter/Ability4.TALENT.xdb": {
     "name_zh": "摧毁射击",
-    "effect_zh": "最多拉弓蓄力 {ChannelTime} 秒，随后向指定方向射出贯穿箭，对路径上的所有敌人造成最高 {Damage} 伤害；准备时间越长，伤害越高。",
+    "effect_zh": "最多拉弓蓄力 {ChannelTime} 秒，随后向指定方向射出贯穿箭，对路径上的所有敌人造成最高 {Damage} 魔法伤害；准备时间越长，伤害越高。",
     "parameter_labels": {
       "ChannelTime": "最长蓄力时间",
       "Damage": "本次伤害"
@@ -3754,7 +3754,7 @@
   },
   "Items/Talents/Class/Hunter/Ability4_2.TALENT.xdb": {
     "name_zh": "震慑射击",
-    "effect_zh": "命中弹道上的第一个英雄，造成 {A4_2_Damage_TT} 伤害。激活「钢铁箭镞」后，伤害变为 {A4_2_OverallDamage_TT}，并使目标眩晕 {Stun_Duration} 秒。目标身上每层流血，使本招伤害提高 {TT_A4_2_HunterBleed_Multiplier}%。",
+    "effect_zh": "命中弹道上的第一个英雄，造成 {A4_2_Damage_TT} 物理伤害。激活「钢铁箭镞」后，伤害变为 {A4_2_OverallDamage_TT}，并使目标眩晕 {Stun_Duration} 秒。目标身上每层流血，使本招伤害提高 {TT_A4_2_HunterBleed_Multiplier}%。",
     "parameter_labels": {
       "A4_2_Damage_TT": "替代终极基础伤害对照",
       "A4_2_OverallDamage_TT": "强化后的替代终极总伤害",
@@ -3817,7 +3817,7 @@
   },
   "Items/Talents/Class/Inventor/Ability_A1.TALENT.xdb": {
     "name_zh": "炮塔",
-    "effect_zh": "施放消耗 {DetailsCost} 个零件。\n部署防御炮塔，拥有 {MasterStatConnected_Life_TT} 生命，生命随力量与智力中较高者变化；每次造成 {Turret_Damage} 伤害。激活「炮塔伪装」后，炮塔连续 {A1u_CamoDealy} 秒不攻击即隐身。同时最多保有 {Inventor_MaxSummons} 个机关；激活「批量采购」后，单一类型仍最多 {MaxTurret} 个。在己方土地上，炮塔攻击使目标移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
+    "effect_zh": "施放消耗 {DetailsCost} 个零件。\n部署防御炮塔，拥有 {MasterStatConnected_Life_TT} 生命，生命随力量与智力中较高者变化；每次造成 {Turret_Damage} 魔法伤害。激活「炮塔伪装」后，炮塔连续 {A1u_CamoDealy} 秒不攻击即隐身。同时最多保有 {Inventor_MaxSummons} 个机关；激活「批量采购」后，单一类型仍最多 {MaxTurret} 个。在己方土地上，炮塔攻击使目标移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "A1u_CamoDealy": "炮塔停止攻击后的隐身等待时间",
       "Dec_MoveSpeed": "移动速度降低幅度",
@@ -3864,7 +3864,7 @@
   },
   "Items/Talents/Class/Inventor/Ability_A3.TALENT.xdb": {
     "name_zh": "发条炸弹",
-    "effect_zh": "施放消耗 {DetailsCost} 个零件。\n向指定位置发出炸弹，接触敌人时爆炸，对周围敌人造成 {A3_Damage} 伤害。激活「强化装药」后，爆炸还会击飞受伤敌人。如果没有命中目标，炸弹停在指定位置，{Invisibility_Duration} 秒后自动爆炸。",
+    "effect_zh": "施放消耗 {DetailsCost} 个零件。\n向指定位置发出炸弹，接触敌人时爆炸，对周围敌人造成 {A3_Damage} 物理伤害。激活「强化装药」后，爆炸还会击飞受伤敌人。如果没有命中目标，炸弹停在指定位置，{Invisibility_Duration} 秒后自动爆炸。",
     "parameter_labels": {
       "A3_Damage": "第三招伤害",
       "Invisibility_Duration": "对应隐身或停留等待时间",
@@ -3894,7 +3894,7 @@
   },
   "Items/Talents/Class/Inventor/Ability_A4_2.TALENT.xdb": {
     "name_zh": "自行火炮",
-    "effect_zh": "施放消耗 {DetailsCost} 个零件。\n在己方土地上召出自行火炮，持续 {A4_Lifetime} 秒。火炮拥有 {A4_Health_TT} 生命，自动进入兵线攻击敌方建筑，每次造成 {A4_DamageTower_TT} 伤害；生命和建筑伤害随力量与智力中较高者变化。对士兵的攻击伤害额外提高 {A4_DamageAOE_TT}%，并同时命中目标周围的敌人。",
+    "effect_zh": "施放消耗 {DetailsCost} 个零件。\n在己方土地上召出自行火炮，持续 {A4_Lifetime} 秒。火炮拥有 {A4_Health_TT} 生命，自动进入兵线攻击敌方建筑，每次造成 {A4_DamageTower_TT} 物理伤害；生命和建筑伤害随力量与智力中较高者变化。对士兵的攻击伤害额外提高 {A4_DamageAOE_TT}%，并同时命中目标周围的敌人。",
     "parameter_labels": {
       "A4_DamageAOE_TT": "自行火炮对士兵伤害增幅",
       "A4_DamageTower_TT": "自行火炮对建筑伤害",
@@ -3949,7 +3949,7 @@
   },
   "Items/Talents/Class/Invisible/Ability_A1.TALENT.xdb": {
     "name_zh": "魔法扇",
-    "effect_zh": "对指定敌人造成 {A1_Damage} 伤害，并使其坚韧降低 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减随力量变化。激活「横扫之扇」后，还会将目标推离自身，额外造成 {A1u_PushMaxDamage} 伤害；目标越近，击退越远。再激活「震慑之扇」后，击退结束时眩晕目标 {Stun_Duration} 秒。",
+    "effect_zh": "对指定敌人造成 {A1_Damage} 魔法伤害，并使其坚韧降低 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减随力量变化。激活「横扫之扇」后，还会将目标推离自身，额外造成 {A1u_PushMaxDamage} 物理伤害；目标越近，击退越远。再激活「震慑之扇」后，击退结束时眩晕目标 {Stun_Duration} 秒。",
     "parameter_labels": {
       "A1_Damage": "第一招伤害",
       "A1u_PushMaxDamage": "扇子击退附加伤害",
@@ -3969,7 +3969,7 @@
   },
   "Items/Talents/Class/Invisible/Ability_A1u.TALENT.xdb": {
     "name_zh": "横扫之扇",
-    "effect_zh": "扇子将目标推离自身，并造成 {A1u_PushMaxDamage} 伤害。目标越近，击退越远；可作用于「魔法扇」及「群扇之舞」的扇子。",
+    "effect_zh": "扇子将目标推离自身，并造成 {A1u_PushMaxDamage} 物理伤害。目标越近，击退越远；可作用于「魔法扇」及「群扇之舞」的扇子。",
     "parameter_labels": {
       "A1u_PushMaxDamage": "扇子击退附加伤害"
     },
@@ -4020,7 +4020,7 @@
   },
   "Items/Talents/Class/Invisible/Ability_A4.TALENT.xdb": {
     "name_zh": "群扇之舞",
-    "effect_zh": "向最近的敌方英雄投出 {A4_FansCount} 把魔法扇，单个目标最多被 {A4_MaxFansToTarget} 把命中。每把造成 {A1_Damage} 伤害，并使目标坚韧降低 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减随力量变化。激活「横扫之扇」后，每把扇子还将目标推离自身并造成 {A1u_PushMaxDamage} 伤害；目标越近，击退越远。",
+    "effect_zh": "向最近的敌方英雄投出 {A4_FansCount} 把魔法扇，单个目标最多被 {A4_MaxFansToTarget} 把命中。每把造成 {A1_Damage} 魔法伤害，并使目标坚韧降低 {ArmorCut_Amount}，持续 {ArmorCut_Duration} 秒，削减随力量变化。激活「横扫之扇」后，每把扇子还将目标推离自身并造成 {A1u_PushMaxDamage} 物理伤害；目标越近，击退越远。",
     "parameter_labels": {
       "A1_Damage": "第一招伤害",
       "A1u_PushMaxDamage": "扇子击退附加伤害",
@@ -4035,7 +4035,7 @@
   },
   "Items/Talents/Class/Invisible/Ability_A4_2.TALENT.xdb": {
     "name_zh": "锁链牵引",
-    "effect_zh": "向前方甩出锁链，拉来路径上的第一个敌人，并强制其跟随自身 {A4_Duration} 秒。激活「锐利苦无」后，命中时还造成 {A4_2_Damage} 伤害。",
+    "effect_zh": "向前方甩出锁链，拉来路径上的第一个敌人，并强制其跟随自身 {A4_Duration} 秒。激活「锐利苦无」后，命中时还造成 {A4_2_Damage} 物理伤害。",
     "parameter_labels": {
       "A4_2_Damage": "替代终极伤害",
       "A4_Duration": "终极效果持续时间"
@@ -4044,7 +4044,7 @@
   },
   "Items/Talents/Class/Invisible/Ability_A4_2u.TALENT.xdb": {
     "name_zh": "锐利苦无",
-    "effect_zh": "「锁链牵引」命中时造成 {A4_2_Damage} 伤害。",
+    "effect_zh": "「锁链牵引」命中时造成 {A4_2_Damage} 物理伤害。",
     "parameter_labels": {
       "A4_2_Damage": "替代终极伤害"
     },
@@ -4194,7 +4194,7 @@
   },
   "Items/Talents/Class/Katana/Ability_A0.TALENT.xdb": {
     "name_zh": "毁灭烈焰",
-    "effect_zh": "攻击伤害提高 {A0_BonusDamagePercent}%。激活「不灭之炎」后，攻击还会点燃敌人，在 {A0_SUP_Burn_Duration} 秒内造成共 {A0_SUP_Burn_TotalDamage} 伤害，随力量与智力中较高者变化；燃烧最多叠加 3 层。",
+    "effect_zh": "攻击伤害提高 {A0_BonusDamagePercent}%。激活「不灭之炎」后，攻击还会点燃敌人，在 {A0_SUP_Burn_Duration} 秒内造成共 {A0_SUP_Burn_TotalDamage} 魔法伤害，随力量与智力中较高者变化；燃烧最多叠加 3 层。",
     "parameter_labels": {
       "A0_BonusDamagePercent": "普通攻击伤害增幅",
       "A0_SUP_Burn_Duration": "燃烧持续时间",
@@ -4215,7 +4215,7 @@
   },
   "Items/Talents/Class/Katana/Ability_A1.TALENT.xdb": {
     "name_zh": "裂空斩",
-    "effect_zh": "对附近所有敌人造成 {A1_Damage} 伤害，并使其移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。激活「双重斩击」后，在 {A1_Cooldown} 秒内积累充能；按充能完成程度，可用于再施放一次，或缩短本招恢复时间。",
+    "effect_zh": "对附近所有敌人造成 {A1_Damage} 魔法伤害，并使其移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。激活「双重斩击」后，在 {A1_Cooldown} 秒内积累充能；按充能完成程度，可用于再施放一次，或缩短本招恢复时间。",
     "parameter_labels": {
       "A1_Cooldown": "充能所需时间",
       "A1_Damage": "第一招伤害",
@@ -4234,7 +4234,7 @@
   },
   "Items/Talents/Class/Katana/Ability_A2.TALENT.xdb": {
     "name_zh": "虎跃",
-    "effect_zh": "移动到指定位置，对附近所有敌人造成 {A2_Damage} 伤害，并使其眩晕 {Stun_Duration} 秒，伤害随力量与智力中较高者变化。激活「战术移动」后，「虎跃」处于冷却时，使用「裂空斩」可立即将其重置，但随后 5 秒内的「虎跃」不造成伤害，也不眩晕。",
+    "effect_zh": "移动到指定位置，对附近所有敌人造成 {A2_Damage} 魔法伤害，并使其眩晕 {Stun_Duration} 秒，伤害随力量与智力中较高者变化。激活「战术移动」后，「虎跃」处于冷却时，使用「裂空斩」可立即将其重置，但随后 5 秒内的「虎跃」不造成伤害，也不眩晕。",
     "parameter_labels": {
       "A2_Damage": "第二招伤害",
       "A2_DebuffTime": "原说明的禁伤与禁眩晕时间（6秒；已核实际施加5秒）",
@@ -4275,7 +4275,7 @@
   },
   "Items/Talents/Class/Katana/Ability_A4.TALENT.xdb": {
     "name_zh": "千刃之路",
-    "effect_zh": "自身消失 {A4_Duration} 秒，留下一个区域；其中的敌人每秒受到 {A4_Damage} 伤害，移动速度降低 {Dec_MoveSpeed}%。激活「威吓」后，区域内敌人的输出伤害还降低 {A4u_DamageDecrease}%。",
+    "effect_zh": "自身消失 {A4_Duration} 秒，留下一个区域；其中的敌人每秒受到 {A4_Damage} 魔法伤害，移动速度降低 {Dec_MoveSpeed}%。激活「威吓」后，区域内敌人的输出伤害还降低 {A4u_DamageDecrease}%。",
     "parameter_labels": {
       "A4_Damage": "终极天赋伤害",
       "A4_Duration": "终极效果持续时间",
@@ -4286,7 +4286,7 @@
   },
   "Items/Talents/Class/Katana/Ability_A4_2.TALENT.xdb": {
     "name_zh": "孤刃之路",
-    "effect_zh": "自身消失 {A4_2_Duration} 秒，每隔 {A4_2_Period} 秒对指定敌方英雄造成 {A4_2_Damage} 伤害。激活「处决」后，还使目标移动速度降低 {Dec_MoveSpeed}%。",
+    "effect_zh": "自身消失 {A4_2_Duration} 秒，每隔 {A4_2_Period} 秒对指定敌方英雄造成 {A4_2_Damage} 物理伤害。激活「处决」后，还使目标移动速度降低 {Dec_MoveSpeed}%。",
     "parameter_labels": {
       "A4_2_Damage": "替代终极伤害",
       "A4_2_Duration": "替代终极持续时间",
@@ -4322,7 +4322,7 @@
   },
   "Items/Talents/Class/Mage/Ability0.TALENT.xdb": {
     "name_zh": "附魔魔典",
-    "effect_zh": "专属天赋的施放不会因移动或与目标距离过远而中断。单次受到的伤害超过当前生命的 {A0_DamageTaken_Percent}% 时，在 {A0_DamageTaken_Duration} 秒内使专属天赋施法时间缩短 {A0_ChannelTimeReduce}%；最多叠加 {A0_ChannelTimeReduce_MaxCount} 层。",
+    "effect_zh": "专属天赋的施放不会因移动或与目标距离过远而中断。单次受到的原始伤害达到或超过当前生命的 {A0_DamageTaken_Percent}% 时，在 {A0_DamageTaken_Duration} 秒内使专属天赋施法时间缩短 {A0_ChannelTimeReduce}%；最多叠加 {A0_ChannelTimeReduce_MaxCount} 层。",
     "parameter_labels": {
       "A0_DamageTaken_Percent": "单次受伤触发门槛，占当前生命",
       "A0_DamageTaken_Duration": "施法加速持续时间",
@@ -4333,7 +4333,7 @@
   },
   "Items/Talents/Class/Mage/Ability1.TALENT.xdb": {
     "name_zh": "烈焰打击",
-    "effect_zh": "施法 {ChannelTime} 秒后轰击指定区域，造成 {A1_Damage} 点伤害，爆心额外造成 {A1_SmallDamage} 点伤害，二者按智力缩放；未计施法加速的基础施法时间为 {ChannelTimeBase} 秒。学会“爆心”后，中心再增加 {DamageMiddle} 点按力量缩放的伤害。学会“燃烧”后，受影响区域还会燃烧，在 {Burn_Duration} 秒内造成总计 {Burn_TotalDamage} 点按智力缩放的伤害。",
+    "effect_zh": "施法 {ChannelTime} 秒后轰击指定区域，造成 {A1_Damage} 点魔法伤害，爆心额外造成 {A1_SmallDamage} 点魔法伤害，二者按智力缩放；未计施法加速的基础施法时间为 {ChannelTimeBase} 秒。学会“爆心”后，中心再增加 {DamageMiddle} 点按力量缩放的伤害。学会“燃烧”后，受影响区域还会燃烧，在 {Burn_Duration} 秒内造成总计 {Burn_TotalDamage} 点按智力缩放的伤害。",
     "parameter_labels": {
       "ChannelTime": "当前施法时间",
       "ChannelTimeBase": "基础施法时间",
@@ -4366,7 +4366,7 @@
   },
   "Items/Talents/Class/Mage/Ability2.TALENT.xdb": {
     "name_zh": "变形术",
-    "effect_zh": "施法 {ChannelTime} 秒（基础 {ChannelTimeBase} 秒）后，使目标在 {A2_Duration} 秒内无法行动，移动速度降为原来的 {A2_MovePercent}%，并在期间受到总计 {A2_DamageTotal_TT} 点伤害。学会“骚乱”后，还会变形目标附近的敌人，但这项范围变形的持续时间缩短 {Percentage}%。",
+    "effect_zh": "施法 {ChannelTime} 秒（基础 {ChannelTimeBase} 秒）后，使目标在 {A2_Duration} 秒内无法行动，移动速度降为原来的 {A2_MovePercent}%，并在期间受到总计 {A2_DamageTotal_TT} 点物理伤害。学会“骚乱”后，还会变形目标附近的敌人，但这项范围变形的持续时间缩短 {Percentage}%。",
     "parameter_labels": {
       "ChannelTime": "当前施法时间",
       "ChannelTimeBase": "基础施法时间",
@@ -4397,7 +4397,7 @@
   },
   "Items/Talents/Class/Mage/Ability3.TALENT.xdb": {
     "name_zh": "能量屏障",
-    "effect_zh": "施法 {ChannelTime} 秒（基础 {ChannelTimeBase} 秒）后，建立持续 {A3_Duration} 秒的屏障。敌人第一次穿过边界时，眩晕 {Stun_Duration} 秒。学会“大地震颤”后，屏障内敌人每秒受到 {A3_Damage} 点按力量缩放的伤害。屏障在己方土地上时，其中敌人的生命恢复效果降低 {MortalStrike_Amount}%。",
+    "effect_zh": "施法 {ChannelTime} 秒（基础 {ChannelTimeBase} 秒）后，建立持续 {A3_Duration} 秒的屏障。敌人第一次穿过边界时，眩晕 {Stun_Duration} 秒。学会“大地震颤”后，屏障内敌人每秒受到 {A3_Damage} 点按力量缩放的物理伤害。屏障在己方土地上时，其中敌人的生命恢复效果降低 {MortalStrike_Amount}%。",
     "parameter_labels": {
       "ChannelTime": "当前施法时间",
       "ChannelTimeBase": "基础施法时间",
@@ -4420,7 +4420,7 @@
   },
   "Items/Talents/Class/Mage/Ability4.TALENT.xdb": {
     "name_zh": "召唤恶魔",
-    "effect_zh": "施法 {ChannelTime} 秒（基础 {ChannelTimeBase} 秒）后召唤恶魔，持续 {A4_Duration} 秒。恶魔攻击造成 {SummonAddStats} 点按力量缩放的伤害，出现时对附近敌人造成 {Summon_Damage} 点按智力缩放的伤害，其生命为 {SummonAddLife_TT}。学会“恶魔烈焰”后，恶魔还使附近敌人每秒受到 {Burn_Damage} 点伤害。从己方土地施放时，恶魔出现还会使敌人眩晕 {Stun_Duration} 秒。",
+    "effect_zh": "施法 {ChannelTime} 秒（基础 {ChannelTimeBase} 秒）后召唤恶魔，持续 {A4_Duration} 秒。恶魔攻击造成 {SummonAddStats} 点按力量缩放的伤害，出现时对附近敌人造成 {Summon_Damage} 点按智力缩放的伤害，其生命为 {SummonAddLife_TT}。学会“恶魔烈焰”后，恶魔还使附近敌人每秒受到 {Burn_Damage} 点魔法伤害。从己方土地施放时，恶魔出现还会使敌人眩晕 {Stun_Duration} 秒。",
     "parameter_labels": {
       "ChannelTime": "当前施法时间",
       "ChannelTimeBase": "基础施法时间",
@@ -4435,12 +4435,12 @@
   },
   "Items/Talents/Class/Mage/Ability4_2.TALENT.xdb": {
     "name_zh": "恶魔形态",
-    "effect_zh": "恢复 {A4_2_HealAmount} 点生命，并变成恶魔，持续 {A4_2_Duration} 秒。形态期间无法使用天赋、攻击距离缩短，攻击伤害取决于力量与智力中的较高者，意志增加 {A4_2_AddWill}。学会“恶魔之力”后，攻速属性再增加 {A4_2u_AddAtckSpeed}，移动速度提高 {Haste_Percent}%，并每秒对附近敌人造成 {Burn_Damage_Demon} 点伤害。",
+    "effect_zh": "恢复 {A4_2_HealAmount} 点生命，并变成恶魔，持续 {A4_2_Duration} 秒。形态期间无法使用天赋、攻击距离缩短，攻击伤害取决于力量与智力中的较高者，意志增加 {A4_2_AddWill}。学会“恶魔之力”后，攻速再增加 {A4_2u_AddAtckSpeed}，移动速度提高 {Haste_Percent}%，并每秒对附近敌人造成 {Burn_Damage_Demon} 点魔法伤害。",
     "parameter_labels": {
       "A4_2_HealAmount": "变形时恢复生命",
       "A4_2_Duration": "恶魔形态持续时间",
       "A4_2_AddWill": "形态增加的意志",
-      "A4_2u_AddAtckSpeed": "强化增加的攻速属性",
+      "A4_2u_AddAtckSpeed": "强化增加的攻速",
       "Haste_Percent": "强化移动速度增幅",
       "Burn_Damage_Demon": "强化后的每秒灼烧伤害"
     },
@@ -4448,9 +4448,9 @@
   },
   "Items/Talents/Class/Mage/Ability4_2u.TALENT.xdb": {
     "name_zh": "恶魔之力",
-    "effect_zh": "强化“恶魔形态”：形态期间攻速属性增加 {A4_2u_AddAtckSpeed}，移动速度提高 {Haste_Percent}%，附近敌人每秒受到 {Burn_Damage} 点伤害。",
+    "effect_zh": "强化“恶魔形态”：形态期间攻速增加 {A4_2u_AddAtckSpeed}，移动速度提高 {Haste_Percent}%，附近敌人每秒受到 {Burn_Damage} 点伤害。",
     "parameter_labels": {
-      "A4_2u_AddAtckSpeed": "攻速属性增量",
+      "A4_2u_AddAtckSpeed": "攻速增量",
       "Haste_Percent": "移动速度增幅",
       "Burn_Damage": "每秒灼烧伤害"
     },
@@ -4472,7 +4472,7 @@
   },
   "Items/Talents/Class/MagicGirl/Ability_A1.TALENT.xdb": {
     "name_zh": "能量团",
-    "effect_zh": "向指定方向发射能量团，触碰敌人或到达最大距离时爆炸，对范围内敌人造成 {A1_Damage} 点伤害，并使移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。学会“粒子加速”后，每命中一名敌方英雄，终极天赋的当前冷却缩短 {A1u_CDR} 秒。夜间爆炸后 {TECH_ThrowDelay} 秒，将爆炸范围内的敌人拉向中心。",
+    "effect_zh": "向指定方向发射能量团，触碰敌人或到达最大距离时爆炸，对范围内敌人造成 {A1_Damage} 点魔法伤害，并使移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。学会“粒子加速”后，每命中一名敌方英雄，终极天赋的当前冷却缩短 {A1u_CDR} 秒。夜间爆炸后 {TECH_ThrowDelay} 秒，将爆炸范围内的敌人拉向中心。",
     "parameter_labels": {
       "A1_Damage": "爆炸伤害",
       "Dec_MoveSpeed": "移动速度降低比例",
@@ -4503,7 +4503,7 @@
   },
   "Items/Talents/Class/MagicGirl/Ability_A2.TALENT.xdb": {
     "name_zh": "星门",
-    "effect_zh": "在指定位置创建星门，或引爆已有星门。爆炸对附近敌人造成 {A2_Damage} 点伤害；学会“超空间”后还使其眩晕 {Stun_Duration} 秒。白天引爆使本天赋当前冷却变为 {A2_CD_Increase} 倍，夜间没有这项惩罚。盟友可与星门互动来位移，随后 {A2_DebuffDuration} 秒内不能再次互动；学会“超空间”后，互动还在这段时间内提高移动速度 {A2_BonusMS}%。学会“星界扩张”后，星门附近友方英雄受到的天赋伤害降低 {A2_SUP_DmgReduction}%。最多同时存在 {A2_MaxCount} 座星门。",
+    "effect_zh": "在指定位置创建星门，或引爆已有星门。爆炸对附近敌人造成 {A2_Damage} 点物理伤害；学会“超空间”后还使其眩晕 {Stun_Duration} 秒。白天引爆使本天赋当前冷却变为 {A2_CD_Increase} 倍，夜间没有这项惩罚。盟友可与星门互动来位移，随后 {A2_DebuffDuration} 秒内不能再次互动；学会“超空间”后，互动还在这段时间内提高移动速度 {A2_BonusMS}%。学会“星界扩张”后，星门附近友方英雄受到的天赋伤害降低 {A2_SUP_DmgReduction}%。最多同时存在 {A2_MaxCount} 座星门。",
     "parameter_labels": {
       "A2_Damage": "星门引爆伤害",
       "Stun_Duration": "强化后的爆炸眩晕时间",
@@ -4552,7 +4552,7 @@
   },
   "Items/Talents/Class/MagicGirl/Ability_A4.TALENT.xdb": {
     "name_zh": "停滞",
-    "effect_zh": "建立持续 {A4_BaseDuration} 秒的停滞区域，进入其中的敌人暂时脱离战斗。区域效果结束时，对受其影响的敌方生物与英雄造成 {A4_Damage} 点伤害。",
+    "effect_zh": "建立持续 {A4_BaseDuration} 秒的停滞区域，进入其中的敌人暂时脱离战斗。区域效果结束时，对受其影响的敌方生物与英雄造成 {A4_Damage} 点魔法伤害。",
     "parameter_labels": {
       "A4_BaseDuration": "停滞区域持续时间",
       "A4_Damage": "停滞结束伤害"
@@ -4563,7 +4563,7 @@
   },
   "Items/Talents/Class/MagicGirl/Ability_A4_2.TALENT.xdb": {
     "name_zh": "超新星",
-    "effect_zh": "准备 {ChannelTime} 秒后，沿指定方向发射能量束。对路径上的敌人生物造成 {A4_2_CreepDamage} 点伤害；遇到第一名敌方英雄时爆发，对其造成 {A4_2_HeroDamage} 点伤害。学会“过剩能量”后，该英雄附近敌人也受到这次英雄命中伤害除以 {AoEDamageCoeff} 的伤害。",
+    "effect_zh": "准备 {ChannelTime} 秒后，沿指定方向发射能量束。对路径上的敌人生物造成 {A4_2_CreepDamage} 点物理伤害；遇到第一名敌方英雄时爆发，对其造成 {A4_2_HeroDamage} 点物理伤害。学会“过剩能量”后，该英雄附近敌人也受到这次英雄命中伤害除以 {AoEDamageCoeff} 的伤害。",
     "parameter_labels": {
       "ChannelTime": "施放准备时间",
       "A4_2_CreepDamage": "沿途生物伤害",
@@ -4603,7 +4603,7 @@
   },
   "Items/Talents/Class/ManaWyrm/Ability1.TALENT.xdb": {
     "name_zh": "奥术之网",
-    "effect_zh": "对目标造成 {A1Damage} 点魔法伤害。若该伤害击杀目标，返还本次消耗能量的 {TT_Compensation}%，并立即刷新冷却。学会“魔法陷阱”后，目标在接下来的 {A1Delay} 秒内，每次使用能力都会再受到 {A1_StatusDamage} 点伤害，并在 {SlowAll_Duration} 秒内降低移动速度 {Dec_MoveSpeed_Percent}%、降低攻速属性 {Dec_AttackSpeed}。",
+    "effect_zh": "对目标造成 {A1Damage} 点魔法伤害。若该伤害击杀目标，返还本次消耗能量的 {TT_Compensation}%，并立即刷新冷却。学会“魔法陷阱”后，目标在接下来的 {A1Delay} 秒内，每次使用能力都会再受到 {A1_StatusDamage} 点魔法伤害，并在 {SlowAll_Duration} 秒内降低移动速度 {Dec_MoveSpeed_Percent}%、降低攻速 {Dec_AttackSpeed}。",
     "parameter_labels": {
       "A1Damage": "直接伤害",
       "TT_Compensation": "击杀返还能量比例",
@@ -4611,17 +4611,17 @@
       "A1_StatusDamage": "每次能力使用的惩罚伤害",
       "SlowAll_Duration": "双重减速持续时间",
       "Dec_MoveSpeed_Percent": "移动速度降低比例",
-      "Dec_AttackSpeed": "攻速属性降低量"
+      "Dec_AttackSpeed": "攻速降低量"
     },
     "notes": []
   },
   "Items/Talents/Class/ManaWyrm/Ability1Upg.TALENT.xdb": {
     "name_zh": "魔法陷阱",
-    "effect_zh": "强化“奥术之网”：目标在 {A1Delay} 秒内每次使用能力，都会受到 {A1_StatusDamage} 点伤害，并降低攻速属性 {Dec_AttackSpeed}、降低移动速度 {Dec_MoveSpeed_Percent}%，持续 {SlowAll_Duration} 秒。",
+    "effect_zh": "强化“奥术之网”：目标在 {A1Delay} 秒内每次使用能力，都会受到 {A1_StatusDamage} 点伤害，并降低攻速 {Dec_AttackSpeed}、降低移动速度 {Dec_MoveSpeed_Percent}%，持续 {SlowAll_Duration} 秒。",
     "parameter_labels": {
       "A1Delay": "惩罚监视持续时间",
       "A1_StatusDamage": "每次触发伤害",
-      "Dec_AttackSpeed": "攻速属性降低量",
+      "Dec_AttackSpeed": "攻速降低量",
       "Dec_MoveSpeed_Percent": "移动速度降低比例",
       "SlowAll_Duration": "减速持续时间"
     },
@@ -4629,7 +4629,7 @@
   },
   "Items/Talents/Class/ManaWyrm/Ability2.TALENT.xdb": {
     "name_zh": "以太形态",
-    "effect_zh": "进入持续 {A2Duration} 秒的以太形态，可以穿过树木与生物。第一次接触一个生物时，燃烧其 {A2EnergyBurn}% 能量，并为自身恢复 {A2EnergyPerObject}% 能量。学会“痉挛”后，对经过的敌人造成 {A2Damage} 点伤害；学会“以太幽灵”后，形态期间移动速度提高 {Haste_Percent}%。形态在己方土地结束时，再恢复 {A2EnergyWhenEnd}% 能量。",
+    "effect_zh": "进入持续 {A2Duration} 秒的以太形态，可以穿过树木与生物。第一次接触一个生物时，燃烧其 {A2EnergyBurn}% 能量，并为自身恢复 {A2EnergyPerObject}% 能量。学会“痉挛”后，对经过的敌人造成 {A2Damage} 点魔法伤害；学会“以太幽灵”后，形态期间移动速度提高 {Haste_Percent}%。形态在己方土地结束时，再恢复 {A2EnergyWhenEnd}% 能量。",
     "parameter_labels": {
       "A2Duration": "以太形态持续时间",
       "A2EnergyBurn": "首次接触燃烧能量比例",
@@ -4693,12 +4693,12 @@
   },
   "Items/Talents/Class/ManaWyrm/Ability4_2.TALENT.xdb": {
     "name_zh": "浓缩以太",
-    "effect_zh": "开关型天赋。开启后，普攻消耗 {A4_2TimeManaCost}% 能量，附加 {A4_2U_BaseDamage} 点伤害，每层“以太领主”再附加 {A4_2U_BonusDamage} 点。学会“精疲力竭”后，攻击还使目标攻速属性降低 {Dec_AttackSpeed}、移动速度降低 {Dec_MoveSpeed_Percent}%，持续 {SlowAll_Duration} 秒。",
+    "effect_zh": "开关型天赋。开启后，普攻消耗 {A4_2TimeManaCost}% 能量，附加 {A4_2U_BaseDamage} 点魔法伤害，每层“以太领主”再附加 {A4_2U_BonusDamage} 点。学会“精疲力竭”后，攻击还使目标攻速降低 {Dec_AttackSpeed}、移动速度降低 {Dec_MoveSpeed_Percent}%，持续 {SlowAll_Duration} 秒。",
     "parameter_labels": {
       "A4_2TimeManaCost": "每次强化普攻能量消耗比例",
       "A4_2U_BaseDamage": "普攻附加基础伤害",
       "A4_2U_BonusDamage": "每层成长追加的普攻伤害",
-      "Dec_AttackSpeed": "目标攻速属性降低量",
+      "Dec_AttackSpeed": "目标攻速降低量",
       "Dec_MoveSpeed_Percent": "目标移动速度降低比例",
       "SlowAll_Duration": "减速持续时间"
     },
@@ -4706,9 +4706,9 @@
   },
   "Items/Talents/Class/ManaWyrm/Ability4_2U.TALENT.xdb": {
     "name_zh": "精疲力竭",
-    "effect_zh": "“浓缩以太”开启时，普攻使目标攻速属性降低 {Dec_AttackSpeed}，移动速度降低 {Dec_MoveSpeed_Percent}%，持续 {SlowAll_Duration} 秒。",
+    "effect_zh": "“浓缩以太”开启时，普攻使目标攻速降低 {Dec_AttackSpeed}，移动速度降低 {Dec_MoveSpeed_Percent}%，持续 {SlowAll_Duration} 秒。",
     "parameter_labels": {
-      "Dec_AttackSpeed": "攻速属性降低量",
+      "Dec_AttackSpeed": "攻速降低量",
       "Dec_MoveSpeed_Percent": "移动速度降低比例",
       "SlowAll_Duration": "减速持续时间"
     },
@@ -4747,7 +4747,7 @@
   },
   "Items/Talents/Class/Marine/Ability_A1.TALENT.xdb": {
     "name_zh": "愤怒之拳",
-    "effect_zh": "重击当前目标，造成 {A1_baseDamage} 点伤害并击飞。学会“钢铁之拳”后，再眩晕 {A1_Stun_Duration} 秒。从己方土地施放时，额外造成 {A1_BonusDamage} 点伤害。",
+    "effect_zh": "重击当前目标，造成 {A1_baseDamage} 点物理伤害并击飞。学会“钢铁之拳”后，再眩晕 {A1_Stun_Duration} 秒。从己方土地施放时，额外造成 {A1_BonusDamage} 点物理伤害。",
     "parameter_labels": {
       "A1_baseDamage": "基础重击伤害",
       "A1_Stun_Duration": "强化附加眩晕时间",
@@ -4765,7 +4765,7 @@
   },
   "Items/Talents/Class/Marine/Ability_A2.TALENT.xdb": {
     "name_zh": "飞身重击",
-    "effect_zh": "跃向指定敌人并造成 {A2_Damage} 点伤害。学会“抵抗无用”后，使目标眩晕 {Stun_Duration} 秒；在尚未学会“铁腿”时，如果目标已经眩晕，则改为造成 {A2u_DamageMul} 倍伤害而不再追加眩晕。未学习“铁腿”时，从己方土地施放可使冷却减少 {A2_CdReduction} 秒。学会“铁腿”后，伤害始终按强化后的双倍值计算，并在所有土地上享受这项冷却减少。",
+    "effect_zh": "跃向指定敌人并造成 {A2_Damage} 点物理伤害。学会“抵抗无用”后，使目标眩晕 {Stun_Duration} 秒；在尚未学会“铁腿”时，如果目标已经眩晕，则改为造成 {A2u_DamageMul} 倍伤害而不再追加眩晕。未学习“铁腿”时，从己方土地施放可使冷却减少 {A2_CdReduction} 秒。学会“铁腿”后，伤害始终按强化后的双倍值计算，并在所有土地上享受这项冷却减少。",
     "parameter_labels": {
       "A2_Damage": "按当前强化状态计算的伤害",
       "Stun_Duration": "抵抗无用的眩晕时间",
@@ -4827,7 +4827,7 @@
   },
   "Items/Talents/Class/Marine/Ability_A4.TALENT.xdb": {
     "name_zh": "黑色旋风",
-    "effect_zh": "旋转持续 {A4_Duration} 秒，每隔 {A4_Period} 秒对附近敌人造成 {A4_Damage} 点伤害，期间免疫控制效果。学会“狂暴旋风”后，持续期间最大生命增加 {A4_HealthIncrease}，移动速度提高 {A4u_AddMoveSpeed}%。",
+    "effect_zh": "旋转持续 {A4_Duration} 秒，每隔 {A4_Period} 秒对附近敌人造成 {A4_Damage} 点物理伤害，期间免疫控制效果。学会“狂暴旋风”后，持续期间最大生命增加 {A4_HealthIncrease}，移动速度提高 {A4u_AddMoveSpeed}%。",
     "parameter_labels": {
       "A4_Duration": "旋风持续时间",
       "A4_Period": "伤害触发间隔",
@@ -4839,7 +4839,7 @@
   },
   "Items/Talents/Class/Marine/Ability_A4_2.TALENT.xdb": {
     "name_zh": "连续重拳",
-    "effect_zh": "对一名敌方英雄持续重拳，使其眩晕 {A4_Duration} 秒，并每秒造成 {A4_DamagePerSecond_TT} 点伤害。若目标在期间受到的伤害达到 {A4_DamageCap}，效果提前结束。学会“有恃无恐”后，施放会解除自身负面效果，并在重拳持续期间免疫控制。",
+    "effect_zh": "对一名敌方英雄持续重拳，使其眩晕 {A4_Duration} 秒，并每秒造成 {A4_DamagePerSecond_TT} 点物理伤害。若目标在期间受到的伤害达到 {A4_DamageCap}，效果提前结束。学会“有恃无恐”后，施放会解除自身负面效果，并在重拳持续期间免疫控制。",
     "parameter_labels": {
       "A4_Duration": "重拳与控制持续时间",
       "A4_DamagePerSecond_TT": "重拳每秒伤害",
@@ -4864,7 +4864,7 @@
   },
   "Items/Talents/Class/Monster/Ability_A0.TALENT.xdb": {
     "name_zh": "爆炸诱变剂",
-    "effect_zh": "由自己的普攻或专属天赋完成击杀的敌人会爆炸，对周围敌人造成 {A0_Damage} 点伤害，并恢复自身 {A0_NT_Heal} 点生命；治疗按力量与智力中的较高者缩放。从己方土地完成击杀时，治疗量变为 {NTMult} 倍。",
+    "effect_zh": "由自己的普攻或专属天赋完成击杀的敌人会爆炸，对周围敌人造成 {A0_Damage} 点魔法伤害，并恢复自身 {A0_NT_Heal} 点生命；治疗按力量与智力中的较高者缩放。从己方土地完成击杀时，治疗量变为 {NTMult} 倍。",
     "parameter_labels": {
       "A0_Damage": "击杀爆炸伤害",
       "A0_NT_Heal": "每次击杀基础治疗",
@@ -4874,7 +4874,7 @@
   },
   "Items/Talents/Class/Monster/Ability_A1.TALENT.xdb": {
     "name_zh": "钻地突袭",
-    "effect_zh": "钻到指定地点，将范围内敌人击飞，并造成 {A1_Damage} 点伤害。学会“地震打击”后，击飞结束还会眩晕 {Stun_Duration} 秒。学会“茧”后，在出发处留下持续 {A1u_CocoonLifeTime} 秒的茧，期间再次施放可返回尚未被摧毁的茧；距离过远时不能返回。",
+    "effect_zh": "钻到指定地点，将范围内敌人击飞，并造成 {A1_Damage} 点魔法伤害。学会“地震打击”后，击飞结束还会眩晕 {Stun_Duration} 秒。学会“茧”后，在出发处留下持续 {A1u_CocoonLifeTime} 秒的茧，期间再次施放可返回尚未被摧毁的茧；距离过远时不能返回。",
     "parameter_labels": {
       "A1_Damage": "按当前强化状态计算的钻地伤害",
       "Stun_Duration": "强化后的眩晕时间",
@@ -4905,14 +4905,14 @@
   },
   "Items/Talents/Class/Monster/Ability_A2.TALENT.xdb": {
     "name_zh": "防御甲片",
-    "effect_zh": "连续 {A2_ShieldTimer} 秒没有受到伤害后获得防护，吸收受到伤害的 {A2_ShieldPercent}%，累计吸收不超过 {A2_ShieldAmount} 点，容量按力量缩放。防护不生效时，自身移动速度提高 {Haste_Percent}%。学会“束缚气场”后，有防护时降低附近敌人移动速度 {Dec_MoveSpeed}%；无防护时自身攻速属性增加 {A2_Add_AtkSpd}。学会“防御伪装”后，防护被击破 {Invisibility_FadeIn} 秒后进入隐身，持续 {Invisibility_Duration} 秒。",
+    "effect_zh": "连续 {A2_ShieldTimer} 秒没有受到伤害后获得防护，吸收受到伤害的 {A2_ShieldPercent}%，累计吸收不超过 {A2_ShieldAmount} 点，容量按力量缩放。防护不生效时，自身移动速度提高 {Haste_Percent}%。学会“束缚气场”后，有防护时降低附近敌人移动速度 {Dec_MoveSpeed}%；无防护时自身攻速增加 {A2_Add_AtkSpd}。学会“防御伪装”后，防护被击破 {Invisibility_FadeIn} 秒后进入隐身，持续 {Invisibility_Duration} 秒。",
     "parameter_labels": {
       "A2_ShieldTimer": "脱离受伤后重新生成的时间",
       "A2_ShieldPercent": "每次受伤被吸收比例",
       "A2_ShieldAmount": "总吸收容量",
       "Haste_Percent": "无防护时移动速度增幅",
       "Dec_MoveSpeed": "有防护时对附近敌人的减速比例",
-      "A2_Add_AtkSpd": "无防护时强化的攻速属性",
+      "A2_Add_AtkSpd": "无防护时强化的攻速",
       "Invisibility_FadeIn": "破盾至隐身的延迟",
       "Invisibility_Duration": "破盾隐身持续时间"
     },
@@ -4932,10 +4932,10 @@
   },
   "Items/Talents/Class/Monster/Ability_A2u.TALENT.xdb": {
     "name_zh": "束缚气场",
-    "effect_zh": "“防御甲片”存在时，使附近敌人移动速度降低 {Dec_MoveSpeed}%；防护不生效时，自身攻速属性增加 {A2_Add_AtkSpd}，按基础力量缩放。",
+    "effect_zh": "“防御甲片”存在时，使附近敌人移动速度降低 {Dec_MoveSpeed}%；防护不生效时，自身攻速增加 {A2_Add_AtkSpd}，按基础力量缩放。",
     "parameter_labels": {
       "Dec_MoveSpeed": "附近敌人移动速度降低比例",
-      "A2_Add_AtkSpd": "无防护时攻速属性增量"
+      "A2_Add_AtkSpd": "无防护时攻速增量"
     },
     "notes": []
   },
@@ -4967,7 +4967,7 @@
   },
   "Items/Talents/Class/Monster/Ability_A4.TALENT.xdb": {
     "name_zh": "毒性释放",
-    "effect_zh": "消耗 {A4_DecToxinStacksPerUse} 层毒素充能，移动到目标身边并造成 {A4_Damage} 点伤害。每 {A4_StackCooldown} 秒补充 {A4_AddToxinStacksPerCooldown} 层充能，上限 {A4_MaxToxinStacks} 层；充能不足时不能使用。学会“毒素补充”后，此招还眩晕目标 {Stun_Duration} 秒；击杀或助攻敌方英雄也能补充充能，但两次此类补充至少间隔 {A4u_StackCooldown} 秒。",
+    "effect_zh": "消耗 {A4_DecToxinStacksPerUse} 层毒素充能，移动到目标身边并造成 {A4_Damage} 点魔法伤害。每 {A4_StackCooldown} 秒补充 {A4_AddToxinStacksPerCooldown} 层充能，上限 {A4_MaxToxinStacks} 层；充能不足时不能使用。学会“毒素补充”后，此招还眩晕目标 {Stun_Duration} 秒；击杀或助攻敌方英雄也能补充充能，但两次此类补充至少间隔 {A4u_StackCooldown} 秒。",
     "parameter_labels": {
       "A4_DecToxinStacksPerUse": "每次施放消耗充能",
       "A4_Damage": "突袭伤害",
@@ -4981,7 +4981,7 @@
   },
   "Items/Talents/Class/Monster/Ability_A4_2.TALENT.xdb": {
     "name_zh": "酸液喷发",
-    "effect_zh": "对前方最多 {A4_2_TargetCount} 个敌人造成 {A4_2_Damage} 点伤害，致盲 {Blind_Duration} 秒，并定身 {Root_Duration} 秒。基础目标数为 {A4_2_BaseTargetCount}，学习“猛烈喷涌”后提高。",
+    "effect_zh": "对前方最多 {A4_2_TargetCount} 个敌人造成 {A4_2_Damage} 点魔法伤害，致盲 {Blind_Duration} 秒，并定身 {Root_Duration} 秒。基础目标数为 {A4_2_BaseTargetCount}，学习“猛烈喷涌”后提高。",
     "parameter_labels": {
       "A4_2_TargetCount": "当前最大命中目标数",
       "A4_2_Damage": "酸液伤害",
@@ -5029,7 +5029,7 @@
   },
   "Items/Talents/Class/Mowgli/Ability1.TALENT.xdb": {
     "name_zh": "狼之呼唤",
-    "effect_zh": "召唤一只狼协助战斗，每次攻击造成 {WolfAttack_TT} 点伤害。学会“狼兄弟”后改为召唤两只狼。学会“致命撕咬”后，狼的每次攻击使敌人移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。从己方土地施放会召唤更强壮的成年狼。",
+    "effect_zh": "召唤一只狼协助战斗，每次攻击造成 {WolfAttack_TT} 点物理伤害。学会“狼兄弟”后改为召唤两只狼。学会“致命撕咬”后，狼的每次攻击使敌人移动速度降低 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。从己方土地施放会召唤更强壮的成年狼。",
     "parameter_labels": {
       "WolfAttack_TT": "狼攻击伤害",
       "Dec_MoveSpeed": "强化后的移动速度降低比例",
@@ -5079,7 +5079,7 @@
   },
   "Items/Talents/Class/Mowgli/Ability3.TALENT.xdb": {
     "name_zh": "贯穿长矛",
-    "effect_zh": "对目标造成 {A3initialdamage} 点伤害，并打断其正在施放的天赋。狼群追击目标 {TauntTime} 秒，追击移动速度变为 {Haste_Percent_TT} 倍。学会“长矛诅咒”后，在 {A3_Amplify_Time} 秒内，每次攻击该目标都为攻击者恢复 {A3_Amplify_Heal} 点生命，治疗量按英雄力量与智力中的较高者缩放；狼的攻击还会额外为英雄本人恢复生命。",
+    "effect_zh": "对目标造成 {A3initialdamage} 点魔法伤害，并打断其正在施放的天赋。狼群追击目标 {TauntTime} 秒，追击移动速度变为 {Haste_Percent_TT} 倍。学会“长矛诅咒”后，在 {A3_Amplify_Time} 秒内，每次攻击该目标都为攻击者恢复 {A3_Amplify_Heal} 点生命，治疗量按英雄力量与智力中的较高者缩放；狼的攻击还会额外为英雄本人恢复生命。",
     "parameter_labels": {
       "A3initialdamage": "长矛初始伤害",
       "TauntTime": "狼群强制追击时间",
@@ -5100,11 +5100,11 @@
   },
   "Items/Talents/Class/Mowgli/Ability4.TALENT.xdb": {
     "name_zh": "盛大狩猎",
-    "effect_zh": "自身及所有盟友的移动速度提高 {A4speedinc}%，持续 {A4timer} 秒；每次英雄击杀会刷新持续时间。学会“追猎”后，期间自身攻速属性增加 {BaseAttInc}，按力量与智力中的较高者缩放；每有一只狼，这项攻速增量再提高 {AddAttInc}%。",
+    "effect_zh": "自身及所有盟友的移动速度提高 {A4speedinc}%，持续 {A4timer} 秒；每次英雄击杀会刷新持续时间。学会“追猎”后，期间自身攻速增加 {BaseAttInc}，按力量与智力中的较高者缩放；每有一只狼，这项攻速增量再提高 {AddAttInc}%。",
     "parameter_labels": {
       "A4speedinc": "全体移动速度增幅",
       "A4timer": "基础持续时间",
-      "BaseAttInc": "强化的基础攻速属性增量",
+      "BaseAttInc": "强化的基础攻速增量",
       "AddAttInc": "每只狼对攻速增量的提高比例"
     },
     "notes": [
@@ -5113,9 +5113,9 @@
   },
   "Items/Talents/Class/Mowgli/Ability4Upg.TALENT.xdb": {
     "name_zh": "追猎",
-    "effect_zh": "“盛大狩猎”期间，自身攻速属性增加 {BaseAttInc}，按力量与智力中的较高者缩放；每只狼使这项攻速增量提高 {AddAttInc}%。",
+    "effect_zh": "“盛大狩猎”期间，自身攻速增加 {BaseAttInc}，按力量与智力中的较高者缩放；每只狼使这项攻速增量提高 {AddAttInc}%。",
     "parameter_labels": {
-      "BaseAttInc": "基础攻速属性增量",
+      "BaseAttInc": "基础攻速增量",
       "AddAttInc": "每只狼提高的增量比例"
     },
     "notes": []
@@ -5158,7 +5158,7 @@
   },
   "Items/Talents/Class/Naga/Ability2.TALENT.xdb": {
     "name_zh": "蛇毒",
-    "effect_zh": "普攻使敌人中毒 {A2_StatusTime} 秒，每 {A2_DoT_Period} 秒造成 {A2_DoT_Damage} 点伤害，按意志缩放；最多叠加 {A2_StackCount} 层。叠满时，目标移动速度降低 {Dec_MoveSpeed}%。学会“诡诈打击”后，每层毒还使目标灵巧降低 {A2_DexChange}，削减量也按意志缩放。",
+    "effect_zh": "普攻使敌人中毒 {A2_StatusTime} 秒，每 {A2_DoT_Period} 秒造成 {A2_DoT_Damage} 点物理伤害，按意志缩放；最多叠加 {A2_StackCount} 层。叠满时，目标移动速度降低 {Dec_MoveSpeed}%。学会“诡诈打击”后，每层毒还使目标灵巧降低 {A2_DexChange}，削减量也按意志缩放。",
     "parameter_labels": {
       "A2_StatusTime": "每层毒的持续时间",
       "A2_DoT_Period": "毒伤结算间隔",
@@ -5293,7 +5293,7 @@
   },
   "Items/Talents/Class/Night/Ability1.TALENT.xdb": {
     "name_zh": "喂养黑豹",
-    "effect_zh": "召回黑豹到英雄身边，并为它恢复 {A1_HealTotal} 点生命，按智力缩放。学会“捕食者”后，施放“切割飞盘”还会使黑豹在 {A1u_DefDuration} 秒内受到的伤害降低 {A1u_DefAmount}%。进入“同一身躯”形态时，本技能改为对前方敌人造成 {A1_Damage} 点伤害；若已学“捕食者”，还为自身恢复 {A1_2_Heal} 点按力量缩放的生命。",
+    "effect_zh": "召回黑豹到英雄身边，并为它恢复 {A1_HealTotal} 点生命，按智力缩放。学会“捕食者”后，施放“切割飞盘”还会使黑豹在 {A1u_DefDuration} 秒内受到的伤害降低 {A1u_DefAmount}%。进入“同一身躯”形态时，本技能改为对前方敌人造成 {A1_Damage} 点物理伤害；若已学“捕食者”，还为自身恢复 {A1_2_Heal} 点按力量缩放的生命。",
     "parameter_labels": {
       "A1_HealTotal": "当前召回治疗总量",
       "A1u_DefDuration": "飞盘后黑豹减伤持续时间",
@@ -5320,7 +5320,7 @@
   },
   "Items/Talents/Class/Night/Ability2.TALENT.xdb": {
     "name_zh": "切割飞盘",
-    "effect_zh": "对目标造成 {A2_Damage} 点伤害、眩晕 {Stun_Duration} 秒，并命令黑豹攻击它。学会“夜行猛兽”后，黑豹对该目标的第一击额外造成 {A3_Damage_TT} 点伤害，按力量与智力中的较高者缩放。学会“弹射”后，首个目标再受到 {A2u_Damage} 点伤害，飞盘随后弹向最近的 {A2u_BounceTimes} 个敌人，各造成 {A2u_Damage} 点伤害。“同一身躯”形态中，此招改为移动到指定敌人身边并眩晕同样时间；已学“弹射”时，再造成 {A2_2_Damage} 点伤害。",
+    "effect_zh": "对目标造成 {A2_Damage} 点魔法伤害、眩晕 {Stun_Duration} 秒，并命令黑豹攻击它。学会“夜行猛兽”后，黑豹对该目标的第一击额外造成 {A3_Damage_TT} 点物理伤害，按力量与智力中的较高者缩放。学会“弹射”后，首个目标再受到 {A2u_Damage} 点魔法伤害，飞盘随后弹向最近的 {A2u_BounceTimes} 个敌人，各造成 {A2u_Damage} 点魔法伤害。“同一身躯”形态中，此招改为移动到指定敌人身边并眩晕同样时间；已学“弹射”时，再造成 {A2_2_Damage} 点物理伤害。",
     "parameter_labels": {
       "A2_Damage": "飞盘基础伤害",
       "Stun_Duration": "眩晕时间",
@@ -5335,7 +5335,7 @@
   },
   "Items/Talents/Class/Night/Ability2_Upg.TALENT.xdb": {
     "name_zh": "弹射",
-    "effect_zh": "“切割飞盘”首个目标额外受到 {A2u_Damage} 点伤害，随后飞盘弹向最近的 {A2u_BounceTimes} 个敌人，每个造成 {A2u_Damage} 点伤害。“同一身躯”形态中，对应的突进技能额外造成 {A2_2_Damage} 点伤害。",
+    "effect_zh": "“切割飞盘”首个目标额外受到 {A2u_Damage} 点魔法伤害，随后飞盘弹向最近的 {A2u_BounceTimes} 个敌人，每个造成 {A2u_Damage} 点魔法伤害。“同一身躯”形态中，对应的突进技能额外造成 {A2_2_Damage} 点物理伤害。",
     "parameter_labels": {
       "A2u_Damage": "额外首击及每次弹射伤害",
       "A2u_BounceTimes": "额外弹射目标数",
@@ -5347,11 +5347,11 @@
   },
   "Items/Talents/Class/Night/Ability3.TALENT.xdb": {
     "name_zh": "夜行猛兽",
-    "effect_zh": "黑豹力量增加 {A3_AddPantherStrength}，按英雄智力缩放。黑豹对“切割飞盘”目标的第一击额外造成 {A3_Damage_TT} 点伤害，按英雄力量与智力中的较高者缩放。处于己方土地时，英雄与黑豹的攻速属性增加 {A3_AddAtkSpd}。学会“不倦猎手”后，英雄天赋与黑豹能力的冷却时间缩短 {A3u_CdReducPercent}%；双方连续 {A3u_Time} 秒既未造成伤害也未受到伤害时，黑豹进入隐身。",
+    "effect_zh": "黑豹力量增加 {A3_AddPantherStrength}，按英雄智力缩放。黑豹对“切割飞盘”目标的第一击额外造成 {A3_Damage_TT} 点伤害，按英雄力量与智力中的较高者缩放。处于己方土地时，英雄与黑豹的攻速增加 {A3_AddAtkSpd}。学会“不倦猎手”后，英雄天赋与黑豹能力的冷却时间缩短 {A3u_CdReducPercent}%；双方连续 {A3u_Time} 秒既未造成伤害也未受到伤害时，黑豹进入隐身。",
     "parameter_labels": {
       "A3_AddPantherStrength": "黑豹力量增量",
       "A3_Damage_TT": "黑豹对飞盘目标首击附加伤害",
-      "A3_AddAtkSpd": "己方土地双方攻速属性增量",
+      "A3_AddAtkSpd": "己方土地双方攻速增量",
       "A3u_CdReducPercent": "英雄与黑豹能力冷却缩短比例",
       "A3u_Time": "黑豹隐身的脱战等待时间"
     },
@@ -5381,7 +5381,7 @@
   },
   "Items/Talents/Class/Night/Ability4.TALENT.xdb": {
     "name_zh": "合一",
-    "effect_zh": "使用时，若黑豹已经死亡则将其复活，并恢复其 {PantherResMaxLife}% 生命，随后与英雄合体 {A4Duration} 秒。期间双方无敌，可以穿过其他生物，移动速度属性提高到 {A4Add_MoveSpeed}；对生物的攻击在黑豹通常攻击之外，额外造成 {A4Damage} 点伤害，按力量与智力中的较高者缩放。",
+    "effect_zh": "使用时，若黑豹已经死亡则将其复活，并恢复其 {PantherResMaxLife}% 生命，随后与英雄合体 {A4Duration} 秒。期间双方无敌，可以穿过其他生物，移动速度属性提高到 {A4Add_MoveSpeed}；对生物的攻击在黑豹通常攻击之外，额外造成 {A4Damage} 点物理伤害，按力量与智力中的较高者缩放。",
     "parameter_labels": {
       "PantherResMaxLife": "复活或合体时黑豹生命恢复比例",
       "A4Duration": "当前合体持续时间",
@@ -5441,7 +5441,7 @@
   },
   "Items/Talents/Class/PinkGirl/Ability_A1.TALENT.xdb": {
     "name_zh": "翻腾",
-    "effect_zh": "沿指定方向位移，对路径上所有敌人造成 {A1_Damage} 点伤害。施放后 {A1_WaitDuration} 秒内，还可以再施放 {DashCount} 次；“快速翻滚”提高这项追加次数。",
+    "effect_zh": "沿指定方向位移，对路径上所有敌人造成 {A1_Damage} 点魔法伤害。施放后 {A1_WaitDuration} 秒内，还可以再施放 {DashCount} 次；“快速翻滚”提高这项追加次数。",
     "parameter_labels": {
       "A1_Damage": "每段翻腾伤害",
       "A1_WaitDuration": "追加施放窗口",
@@ -5459,7 +5459,7 @@
   },
   "Items/Talents/Class/PinkGirl/Ability_A2.TALENT.xdb": {
     "name_zh": "眩晕投球",
-    "effect_zh": "沿指定方向投球，命中首名敌方英雄后停止，使其眩晕 {Stun_Duration} 秒，并对沿途敌人造成 {A2_AoEDamageBase} 点伤害。从己方土地施放时，球的伤害提高 {A2_TerrainDmgMod}%。学会“猫捉老鼠”后，被命中的英雄留下 {A2u_RepeatTime} 秒标记；期间再次施放可移动到其背后，造成 {A2_SingleDamageBase} 点伤害，并降低其移动速度 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
+    "effect_zh": "沿指定方向投球，命中首名敌方英雄后停止，使其眩晕 {Stun_Duration} 秒，并对沿途敌人造成 {A2_AoEDamageBase} 点魔法伤害。从己方土地施放时，球的伤害提高 {A2_TerrainDmgMod}%。学会“猫捉老鼠”后，被命中的英雄留下 {A2u_RepeatTime} 秒标记；期间再次施放可移动到其背后，造成 {A2_SingleDamageBase} 点魔法伤害，并降低其移动速度 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "Stun_Duration": "首次英雄命中的眩晕时间",
       "A2_AoEDamageBase": "投球沿途基础伤害",
@@ -5517,7 +5517,7 @@
   },
   "Items/Talents/Class/PinkGirl/Ability_A4.TALENT.xdb": {
     "name_zh": "飞吻送别",
-    "effect_zh": "对一名敌方英雄造成 {A4_Damage} 点伤害，将其击退，落地后眩晕 {Stun_Duration} 秒。被击退者沿飞行路径对其他敌人造成 {A4_AoEDamage} 点伤害。学会“遗忘棒”后，可在 {A4u_RepeatTime} 秒内再次施放，移动到该目标身旁，再造成 {A4u_Damage} 点伤害。",
+    "effect_zh": "对一名敌方英雄造成 {A4_Damage} 点物理伤害，将其击退，落地后眩晕 {Stun_Duration} 秒。被击退者沿飞行路径对其他敌人造成 {A4_AoEDamage} 点物理伤害。学会“遗忘棒”后，可在 {A4u_RepeatTime} 秒内再次施放，移动到该目标身旁，再造成 {A4u_Damage} 点物理伤害。",
     "parameter_labels": {
       "A4_Damage": "首段伤害",
       "Stun_Duration": "落地后的眩晕时间",
@@ -5529,7 +5529,7 @@
   },
   "Items/Talents/Class/PinkGirl/Ability_A4_2.TALENT.xdb": {
     "name_zh": "惊喜盒中的猫",
-    "effect_zh": "在指定位置召唤猫，持续 {Taunt_Duration} 秒。猫嘲弄周围敌方英雄，强迫他们攻击自己，最多承受 {Cat_HitPoints} 次攻击。学会“新弹簧”后，猫被打满次数后爆炸，对周围所有敌人造成 {A4_2_Damage} 点伤害。",
+    "effect_zh": "在指定位置召唤猫，持续 {Taunt_Duration} 秒。猫嘲弄周围敌方英雄，强迫他们攻击自己，最多承受 {Cat_HitPoints} 次攻击。学会“新弹簧”后，猫被打满次数后爆炸，对周围所有敌人造成 {A4_2_Damage} 点魔法伤害。",
     "parameter_labels": {
       "Taunt_Duration": "召唤猫与嘲讽持续时间",
       "Cat_HitPoints": "可承受的攻击次数",
@@ -5559,7 +5559,7 @@
   },
   "Items/Talents/Class/PlagueDoctor/Ability_A0.TALENT.xdb": {
     "name_zh": "尸毒",
-    "effect_zh": "专属天赋使敌人中毒，持续 {A0_Duration} 秒，每秒造成 {A0_Damage} 点伤害，按力量与智力中的较高者缩放。",
+    "effect_zh": "专属天赋使敌人中毒，持续 {A0_Duration} 秒，每秒造成 {A0_Damage} 点魔法伤害，按力量与智力中的较高者缩放。",
     "parameter_labels": {
       "A0_Duration": "尸毒持续时间",
       "A0_Damage": "尸毒每秒伤害"
@@ -5568,7 +5568,7 @@
   },
   "Items/Talents/Class/PlagueDoctor/Ability_A1.TALENT.xdb": {
     "name_zh": "瘟疫脓包",
-    "effect_zh": "在指定地点生成脓包，{A1_Duration} 秒后爆炸，对附近所有敌人造成 {A1_Damage} 点伤害。学会“疫风”后，“尸毒”的感染范围扩大 {A1_SUP_RadiusInc}%。学会“并发症”后，首次施放后 {A1_Wait} 秒内可以再使用一次。",
+    "effect_zh": "在指定地点生成脓包，{A1_Duration} 秒后爆炸，对附近所有敌人造成 {A1_Damage} 点魔法伤害。学会“疫风”后，“尸毒”的感染范围扩大 {A1_SUP_RadiusInc}%。学会“并发症”后，首次施放后 {A1_Wait} 秒内可以再使用一次。",
     "parameter_labels": {
       "A1_Duration": "脓包爆炸延迟",
       "A1_Damage": "爆炸伤害",
@@ -5595,7 +5595,7 @@
   },
   "Items/Talents/Class/PlagueDoctor/Ability_A2.TALENT.xdb": {
     "name_zh": "心脏骤停",
-    "effect_zh": "对受到“尸毒”影响的敌人造成 {A2_Damage} 点伤害，按力量与智力中的较高者缩放。学会“昏厥”后，还使这些目标眩晕 {Stun_Duration} 秒。",
+    "effect_zh": "对受到“尸毒”影响的敌人造成 {A2_Damage} 点魔法伤害，按力量与智力中的较高者缩放。学会“昏厥”后，还使这些目标眩晕 {Stun_Duration} 秒。",
     "parameter_labels": {
       "A2_Damage": "尸毒目标的追加伤害",
       "Stun_Duration": "强化眩晕时间"
@@ -5630,20 +5630,20 @@
   },
   "Items/Talents/Class/PlagueDoctor/Ability_A4_2.TALENT.xdb": {
     "name_zh": "致命毒药",
-    "effect_zh": "在 {A4_2_Duration} 秒内，普攻使敌人感染“尸毒”，额外造成 {A4_2_AddDamage} 点伤害，并使“心脏骤停”的当前冷却缩短 {A4_2_CDReduction} 秒。学会“防护长袍”后，期间自身攻速属性增加 {A4_2u_AddAttSpd}，按力量缩放。",
+    "effect_zh": "在 {A4_2_Duration} 秒内，普攻使敌人感染“尸毒”，额外造成 {A4_2_AddDamage} 点物理伤害，并使“心脏骤停”的当前冷却缩短 {A4_2_CDReduction} 秒。学会“防护长袍”后，期间自身攻速增加 {A4_2u_AddAttSpd}，按力量缩放。",
     "parameter_labels": {
       "A4_2_Duration": "强化普攻持续时间",
       "A4_2_AddDamage": "每次普攻附加伤害",
       "A4_2_CDReduction": "每次普攻减少的心脏骤停冷却",
-      "A4_2u_AddAttSpd": "强化攻速属性增量"
+      "A4_2u_AddAttSpd": "强化攻速增量"
     },
     "notes": []
   },
   "Items/Talents/Class/PlagueDoctor/Ability_A4_2u.TALENT.xdb": {
     "name_zh": "防护长袍",
-    "effect_zh": "“致命毒药”期间，攻速属性增加 {A4_2u_AddAttSpd}；此外，本天赋被动增加 {A4_2u_AddHealth} 点生命。两项增量均按力量缩放。",
+    "effect_zh": "“致命毒药”期间，攻速增加 {A4_2u_AddAttSpd}；此外，本天赋被动增加 {A4_2u_AddHealth} 点生命。两项增量均按力量缩放。",
     "parameter_labels": {
-      "A4_2u_AddAttSpd": "致命毒药期间攻速属性增量",
+      "A4_2u_AddAttSpd": "致命毒药期间攻速增量",
       "A4_2u_AddHealth": "被动生命增量"
     },
     "notes": [
@@ -5699,7 +5699,7 @@
   },
   "Items/Talents/Class/Plane/Ability_A1.TALENT.xdb": {
     "name_zh": "火箭打击",
-    "effect_zh": "对指定区域造成 {A1_Damage} 点伤害，留下持续 {A1_VoidZoneDuration} 秒的火焰区域，使其中敌人每秒受到 {A1_VoidZoneDoT} 点伤害。学会“重复发射”后，首次使用后 {A1_WaitDuration} 秒内可以再施放一次。",
+    "effect_zh": "对指定区域造成 {A1_Damage} 点魔法伤害，留下持续 {A1_VoidZoneDuration} 秒的火焰区域，使其中敌人每秒受到 {A1_VoidZoneDoT} 点魔法伤害。学会“重复发射”后，首次使用后 {A1_WaitDuration} 秒内可以再施放一次。",
     "parameter_labels": {
       "A1_Damage": "火箭爆炸伤害",
       "A1_VoidZoneDuration": "燃烧区域持续时间",
@@ -5718,7 +5718,7 @@
   },
   "Items/Talents/Class/Plane/Ability_A2.TALENT.xdb": {
     "name_zh": "猛烈火力",
-    "effect_zh": "在 {A2_StatusDuration} 秒内，普攻额外造成 {A2_Damage} 点伤害。从己方土地施放时，期间每秒恢复 {A2_Heal} 点生命，按力量与智力中的较高者缩放。学会“密集射击”后，基础力量不低于基础智力时增加攻速属性，否则增加灵巧；增量为 {A2_AddStat}，按较高的基础主属性缩放。",
+    "effect_zh": "在 {A2_StatusDuration} 秒内，普攻额外造成 {A2_Damage} 点物理伤害。从己方土地施放时，期间每秒恢复 {A2_Heal} 点生命，按力量与智力中的较高者缩放。学会“密集射击”后，基础力量不低于基础智力时增加攻速，否则增加灵巧；增量为 {A2_AddStat}，按较高的基础主属性缩放。",
     "parameter_labels": {
       "A2_StatusDuration": "强化普攻持续时间",
       "A2_Damage": "每次普攻附加伤害",
@@ -5729,9 +5729,9 @@
   },
   "Items/Talents/Class/Plane/Ability_A2u.TALENT.xdb": {
     "name_zh": "密集射击",
-    "effect_zh": "“猛烈火力”期间，若基础力量不低于基础智力，则增加攻速属性；否则增加灵巧。所选属性增加 {A2_AddStat}，按较高的基础力量或智力缩放。",
+    "effect_zh": "“猛烈火力”期间，若基础力量不低于基础智力，则增加攻速；否则增加灵巧。所选属性增加 {A2_AddStat}，按较高的基础力量或智力缩放。",
     "parameter_labels": {
-      "A2_AddStat": "所选攻速属性或灵巧增量"
+      "A2_AddStat": "所选攻速或灵巧增量"
     },
     "notes": [
       "只提高分支选中的一项属性，不是两项同时增加。"
@@ -5776,7 +5776,7 @@
   },
   "Items/Talents/Class/Plane/Ability_A4.TALENT.xdb": {
     "name_zh": "轰炸",
-    "effect_zh": "升空后无敌、免疫控制且可以越过障碍，但不能攻击或施放其他天赋。经过 {DurationBomb} 秒，在自身下方投弹，对范围内敌人造成 {DamageCenter} 点伤害；也可提前再次施放，立即投弹并结束飞行。学会“沙皇炸弹”后，爆心伤害变为 {TT_DamageSummCenter}，外圈造成 {DamageNotCenter} 点伤害。",
+    "effect_zh": "升空后无敌、免疫控制且可以越过障碍，但不能攻击或施放其他天赋。经过 {DurationBomb} 秒，在自身下方投弹，对范围内敌人造成 {DamageCenter} 点魔法伤害；也可提前再次施放，立即投弹并结束飞行。学会“沙皇炸弹”后，爆心伤害变为 {TT_DamageSummCenter}，外圈造成 {DamageNotCenter} 点魔法伤害。",
     "parameter_labels": {
       "DurationBomb": "自动投弹前的飞行时间",
       "DamageCenter": "未强化的投弹伤害",
@@ -5830,7 +5830,7 @@
   },
   "Items/Talents/Class/Prince/Ability1.TALENT.xdb": {
     "name_zh": "不公平决斗",
-    "effect_zh": "对选定目标及其周围敌人造成 {A1_Damage} 点伤害，按力量与智力中的较高者缩放。从己方土地施放时，还使所有命中敌人致盲 {Blind_Duration} 秒。学会“爆烈混合物”后，主目标眩晕 {Stun_Duration} 秒；同时学会“特制配方”后，眩晕扩展到所有命中敌人。",
+    "effect_zh": "对选定目标及其周围敌人造成 {A1_Damage} 点魔法伤害，按力量与智力中的较高者缩放。从己方土地施放时，还使所有命中敌人致盲 {Blind_Duration} 秒。学会“爆烈混合物”后，主目标眩晕 {Stun_Duration} 秒；同时学会“特制配方”后，眩晕扩展到所有命中敌人。",
     "parameter_labels": {
       "A1_Damage": "范围伤害",
       "Blind_Duration": "己方土地致盲时间",
@@ -5860,10 +5860,10 @@
   },
   "Items/Talents/Class/Prince/Ability2.TALENT.xdb": {
     "name_zh": "疾风连击",
-    "effect_zh": "在 {Haste_Duration} 秒内，攻速属性增加 {Haste_AtkSpdAmount}，并每秒恢复 {A2_Heal} 点生命，两项均按力量与智力中的较高者缩放。从己方土地施放时，治疗量变为 {A2_HealTerranMod} 倍。学会“勇猛冲击”后，期间移动速度提高 {Haste_Percent}%；学会“坚定步伐”后，意志增加 {A2_SUP_Add_Will}。",
+    "effect_zh": "在 {Haste_Duration} 秒内，攻速增加 {Haste_AtkSpdAmount}，并每秒恢复 {A2_Heal} 点生命，两项均按力量与智力中的较高者缩放。从己方土地施放时，治疗量变为 {A2_HealTerranMod} 倍。学会“勇猛冲击”后，期间移动速度提高 {Haste_Percent}%；学会“坚定步伐”后，意志增加 {A2_SUP_Add_Will}。",
     "parameter_labels": {
       "Haste_Duration": "增益持续时间",
-      "Haste_AtkSpdAmount": "攻速属性增量",
+      "Haste_AtkSpdAmount": "攻速增量",
       "A2_Heal": "基础每秒治疗量",
       "A2_HealTerranMod": "己方土地治疗倍率",
       "Haste_Percent": "强化移动速度增幅",
@@ -5913,7 +5913,7 @@
   },
   "Items/Talents/Class/Prince/Ability4.TALENT.xdb": {
     "name_zh": "无情射击",
-    "effect_zh": "对指定敌人造成 {A4_Damage} 点伤害，眩晕 {Stun_Duration} 秒；随后降低其移动速度 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
+    "effect_zh": "对指定敌人造成 {A4_Damage} 点魔法伤害，眩晕 {Stun_Duration} 秒；随后降低其移动速度 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "A4_Damage": "当前射击伤害",
       "Stun_Duration": "当前眩晕时间",
@@ -5955,7 +5955,7 @@
   },
   "Items/Talents/Class/Ratcatcher/Ability1.TALENT.xdb": {
     "name_zh": "鼠群侵袭",
-    "effect_zh": "创造持续 {A1_Duration} 秒的鼠群区域，使其中敌人每秒受到 {A1_Damage} 点伤害，并将敌方土地变为中立土地。学会“饥饿鼠群”后，每秒伤害改为 {A1_TotalDamage}，同时降低敌人移动速度 {Dec_MoveSpeed}%。学会“鼠疫”后，还在 {RatDisease_Duration} 秒内降低目标力量与智力中的较高者 {RatDisease_Power_Penalty}，削减量按自身力量缩放。",
+    "effect_zh": "创造持续 {A1_Duration} 秒的鼠群区域，使其中敌人每秒受到 {A1_Damage} 点魔法伤害，并将敌方土地变为中立土地。学会“饥饿鼠群”后，每秒伤害改为 {A1_TotalDamage}，同时降低敌人移动速度 {Dec_MoveSpeed}%。学会“鼠疫”后，还在 {RatDisease_Duration} 秒内降低目标力量与智力中的较高者 {RatDisease_Power_Penalty}，削减量按自身力量缩放。",
     "parameter_labels": {
       "A1_Duration": "鼠群区域持续时间",
       "A1_Damage": "未计饥饿鼠群的当前每秒伤害",
@@ -5992,7 +5992,7 @@
   },
   "Items/Talents/Class/Ratcatcher/Ability2.TALENT.xdb": {
     "name_zh": "魔笛之召",
-    "effect_zh": "使敌方英雄跟随自己 {A2_Duration} 秒，或直至其承受 {A2_StopDamage} 点伤害；伤害门槛按智力缩放。对可控制的敌方生物，则使其成为随从，同时最多控制 {A2_MaxSlaves} 个。学会“迷醉之歌”后，英雄控制结束时受到 {A2_Damage} 点伤害；学会“魔笛大师”后，结束时再眩晕 {Stun_Duration} 秒。学会“魔笛之力”后，随从获得与英雄相同的生命恢复，并获得英雄最大生命 {TT_A2_CreepBuff_Life}% 的额外生命。",
+    "effect_zh": "使敌方英雄跟随自己 {A2_Duration} 秒，或直至其承受 {A2_StopDamage} 点伤害；伤害门槛按智力缩放。对可控制的敌方生物，则使其成为随从，同时最多控制 {A2_MaxSlaves} 个。学会“迷醉之歌”后，英雄控制结束时受到 {A2_Damage} 点魔法伤害；学会“魔笛大师”后，结束时再眩晕 {Stun_Duration} 秒。学会“魔笛之力”后，随从获得与英雄相同的生命恢复，并获得英雄最大生命 {TT_A2_CreepBuff_Life}% 的额外生命。",
     "parameter_labels": {
       "A2_Duration": "敌方英雄跟随的最长时间",
       "A2_StopDamage": "提前脱离控制的受伤门槛",
@@ -6034,7 +6034,7 @@
   },
   "Items/Talents/Class/Ratcatcher/Ability3.TALENT.xdb": {
     "name_zh": "鼠群盗匪",
-    "effect_zh": "老鼠奔向敌方英雄，造成 {A3_Damage} 点伤害，偷取至多 {StealAmount_Text} 点 Prime，并降低其移动速度 {RatDisease_Movement_Penalty}%，持续 {RatDisease_Duration} 秒。",
+    "effect_zh": "老鼠奔向敌方英雄，造成 {A3_Damage} 点魔法伤害，偷取至多 {StealAmount_Text} 点 Prime，并降低其移动速度 {RatDisease_Movement_Penalty}%，持续 {RatDisease_Duration} 秒。",
     "parameter_labels": {
       "A3_Damage": "鼠群命中伤害",
       "StealAmount_Text": "请求偷取的Prime数量",
@@ -6100,7 +6100,7 @@
   },
   "Items/Talents/Class/Reaper/Ability_A1.TALENT.xdb": {
     "name_zh": "凶猛擒拿",
-    "effect_zh": "消耗当前生命的 {Health_Cost}%，向指定方向冲锋，对沿途敌人造成 {A1_PushDamage} 点伤害，遇到首名敌方英雄停止；将其抛起后摔下，再造成 {A1_Damage} 点伤害。学会“无阻冲锋”后，每缺失 {A1u_HealthPercentLeft}% 生命，冷却缩短 {A1u_CDReduction}%。学会“无形之躯”后，本天赋尚未冷却完成时，英雄可以无视障碍。",
+    "effect_zh": "消耗当前生命的 {Health_Cost}%，向指定方向冲锋，对沿途敌人造成 {A1_PushDamage} 点魔法伤害，遇到首名敌方英雄停止；将其抛起后摔下，再造成 {A1_Damage} 点魔法伤害。学会“无阻冲锋”后，每缺失 {A1u_HealthPercentLeft}% 生命，冷却缩短 {A1u_CDReduction}%。学会“无形之躯”后，本天赋尚未冷却完成时，英雄可以无视障碍。",
     "parameter_labels": {
       "Health_Cost": "当前生命消耗比例",
       "A1_PushDamage": "冲锋沿途伤害",
@@ -6131,7 +6131,7 @@
   },
   "Items/Talents/Class/Reaper/Ability_A2.TALENT.xdb": {
     "name_zh": "粉碎重击",
-    "effect_zh": "消耗当前生命的 {Health_Cost}%，获得持续 {Duration} 秒的强化，每次普攻额外造成 {A2_Damage} 点伤害；最多叠加 {MaxStacks} 层。学会“无情”后，每层还使移动速度提高 {A2_Haste}%。",
+    "effect_zh": "消耗当前生命的 {Health_Cost}%，获得持续 {Duration} 秒的强化，每次普攻额外造成 {A2_Damage} 点物理伤害；最多叠加 {MaxStacks} 层。学会“无情”后，每层还使移动速度提高 {A2_Haste}%。",
     "parameter_labels": {
       "Health_Cost": "当前生命消耗比例",
       "Duration": "每层强化持续时间",
@@ -6164,10 +6164,10 @@
   },
   "Items/Talents/Class/Reaper/Ability_A3.TALENT.xdb": {
     "name_zh": "战斗狂怒",
-    "effect_zh": "每缺失 {A3_LifePercentLost}% 生命，获得 {A3_AttackSpeed} 点攻速属性，按力量与智力中的较高者缩放。学会“大胆无畏”后，每档还提高坚韧与意志中的较高者 {A3u_AddDef}，按智力缩放。",
+    "effect_zh": "每缺失 {A3_LifePercentLost}% 生命，获得 {A3_AttackSpeed} 点攻速，按力量与智力中的较高者缩放。学会“大胆无畏”后，每档还提高坚韧与意志中的较高者 {A3u_AddDef}，按智力缩放。",
     "parameter_labels": {
       "A3_LifePercentLost": "每档缺失生命比例",
-      "A3_AttackSpeed": "每档攻速属性增量",
+      "A3_AttackSpeed": "每档攻速增量",
       "A3u_AddDef": "每档较高防御属性增量"
     },
     "notes": []
@@ -6196,7 +6196,7 @@
   },
   "Items/Talents/Class/Reaper/Ability_A4_2.TALENT.xdb": {
     "name_zh": "以眼还眼",
-    "effect_zh": "死亡时，对附近生命最低的敌方英雄造成 {A4_2_Damage} 点伤害，按力量与智力中的较高者缩放。自身受到的伤害降低 {A4_2_AddDef}%。学会“复仇再战”后，如果这次死亡反击没有杀死目标，自己在 {A4_2u_RessurectTime} 秒后复活。",
+    "effect_zh": "死亡时，对附近生命最低的敌方英雄造成 {A4_2_Damage} 点魔法伤害，按力量与智力中的较高者缩放。自身受到的伤害降低 {A4_2_AddDef}%。学会“复仇再战”后，如果这次死亡反击没有杀死目标，自己在 {A4_2u_RessurectTime} 秒后复活。",
     "parameter_labels": {
       "A4_2_Damage": "死亡反击伤害",
       "A4_2_AddDef": "常驻受到伤害减免比例",
@@ -6235,7 +6235,7 @@
   },
   "Items/Talents/Class/Rifleman/Ability_A1.TALENT.xdb": {
     "name_zh": "前线战友",
-    "effect_zh": "由一只熊陪伴，攻击伤害为 {TT_BearPower}，生命为 {TT_BearLife}；其生命随英雄力量与智力中的较高者缩放。熊死亡 {Bear_ResurrectTime} 秒后在英雄身旁复活。施放本天赋可命令熊攻击指定敌人、前往并守卫指定地点，或跟随英雄。学会“有力论据”后，熊对敌方英雄的强化攻击额外造成 {TT_BearAbility_Damage} 点伤害，眩晕 {Stun_Duration} 秒，并留下 {A0_Mark_Duration} 秒标记。",
+    "effect_zh": "由一只熊陪伴，攻击伤害为 {TT_BearPower}，生命为 {TT_BearLife}；其生命随英雄力量与智力中的较高者缩放。熊死亡 {Bear_ResurrectTime} 秒后在英雄身旁复活。施放本天赋可命令熊攻击指定敌人、前往并守卫指定地点，或跟随英雄。学会“有力论据”后，熊对敌方英雄的强化攻击额外造成 {TT_BearAbility_Damage} 点魔法伤害，眩晕 {Stun_Duration} 秒，并留下 {A0_Mark_Duration} 秒标记。",
     "parameter_labels": {
       "TT_BearPower": "熊当前攻击伤害",
       "TT_BearLife": "熊当前生命",
@@ -6261,7 +6261,7 @@
   },
   "Items/Talents/Class/Rifleman/Ability_A1u.TALENT.xdb": {
     "name_zh": "有力论据",
-    "effect_zh": "熊对敌方英雄的强化攻击额外造成 {TT_BearAbility_Damage} 点伤害，眩晕 {Stun_Duration} 秒，并标记目标 {A0_Mark_Duration} 秒。",
+    "effect_zh": "熊对敌方英雄的强化攻击额外造成 {TT_BearAbility_Damage} 点魔法伤害，眩晕 {Stun_Duration} 秒，并标记目标 {A0_Mark_Duration} 秒。",
     "parameter_labels": {
       "TT_BearAbility_Damage": "强化攻击的附加伤害",
       "Stun_Duration": "眩晕时间",
@@ -6273,7 +6273,7 @@
   },
   "Items/Talents/Class/Rifleman/Ability_A2.TALENT.xdb": {
     "name_zh": "战斗问候",
-    "effect_zh": "对射击路径上的所有敌人造成 {A2_Damage} 点伤害。从己方土地施放时，冷却时间缩短 {A2_CdReduction} 秒。学会“一切为了前线”后，命中的敌方英雄还在 {A2y_Debuff_Duration} 秒内降低 {A2_Sta_Will_Cut} 点防御属性：力量路线削减坚韧，智力路线削减意志，按英雄力量与智力中的较高者选择和缩放。",
+    "effect_zh": "对射击路径上的所有敌人造成 {A2_Damage} 点魔法伤害。从己方土地施放时，冷却时间缩短 {A2_CdReduction} 秒。学会“一切为了前线”后，命中的敌方英雄还在 {A2y_Debuff_Duration} 秒内降低 {A2_Sta_Will_Cut} 点防御属性：力量路线削减坚韧，智力路线削减意志，按英雄力量与智力中的较高者选择和缩放。",
     "parameter_labels": {
       "A2_Damage": "沿途伤害",
       "A2_CdReduction": "己方土地冷却减少量",
@@ -6293,7 +6293,7 @@
   },
   "Items/Talents/Class/Rifleman/Ability_A3.TALENT.xdb": {
     "name_zh": "边境守卫",
-    "effect_zh": "在指定地点放置隐形捕兽夹，最多存在 {SummonLifeTime} 秒。首名踩中的敌方英雄受到 {A3_Damage} 点伤害，并在 {Slow_Duration} 秒内减速；减速由 {SlowStart_Percent}% 开始，每秒减弱 {TT_SlowTick} 个百分点，直至 {SlowFinal_Percent}%。学会“钢铁之握”后，目标还损失 {A3_SUP_BonusCutDefence} 点防御属性：英雄力量较高时削减坚韧，智力较高时削减意志。学会“钢铁统御”后，减速中的目标不能隐身；陷阱触发还提高自身移动速度 {Haste_Percent}%，持续 {Haste_Duration} 秒。",
+    "effect_zh": "在指定地点放置隐形捕兽夹，最多存在 {SummonLifeTime} 秒。首名踩中的敌方英雄受到 {A3_Damage} 点魔法伤害，并在 {Slow_Duration} 秒内减速；减速由 {SlowStart_Percent}% 开始，每秒减弱 {TT_SlowTick} 个百分点，直至 {SlowFinal_Percent}%。学会“钢铁之握”后，目标还损失 {A3_SUP_BonusCutDefence} 点防御属性：英雄力量较高时削减坚韧，智力较高时削减意志。学会“钢铁统御”后，减速中的目标不能隐身；陷阱触发还提高自身移动速度 {Haste_Percent}%，持续 {Haste_Duration} 秒。",
     "parameter_labels": {
       "SummonLifeTime": "陷阱最长存在时间",
       "A3_Damage": "陷阱伤害",
@@ -6413,7 +6413,7 @@
   },
   "Items/Talents/Class/Rockman/Ability3.TALENT.xdb": {
     "name_zh": "冲击波",
-    "effect_zh": "击飞附近敌人并造成 {A3damage} 点伤害，按自身最大生命缩放。学会“震耳轰鸣”后，击飞后再眩晕 {Stun_Duration} 秒。学会“共振”后，对处于减速中的敌人追加伤害；敌人移动速度越低，追加伤害越高。",
+    "effect_zh": "击飞附近敌人并造成 {A3damage} 点魔法伤害，按自身最大生命缩放。学会“震耳轰鸣”后，击飞后再眩晕 {Stun_Duration} 秒。学会“共振”后，对处于减速中的敌人追加伤害；敌人移动速度越低，追加伤害越高。",
     "parameter_labels": {
       "A3damage": "按最大生命缩放的基础范围伤害",
       "Stun_Duration": "击飞后的强化眩晕时间"
@@ -6432,7 +6432,7 @@
   },
   "Items/Talents/Class/Rockman/Ability4.TALENT.xdb": {
     "name_zh": "山崩",
-    "effect_zh": "进入无敌并投出重物，对命中敌人造成 {A4damage} 点伤害，按自身最大生命缩放。英雄随后沿同一路径冲出，撞散路径上的单位，使敌人眩晕 {Stun_Duration} 秒。学会“致命山崩”后，被重物击中的敌人还降低移动速度 {A4u_slow_Percent}%，持续 {A4u_slow_time} 秒。",
+    "effect_zh": "进入无敌并投出重物，对命中敌人造成 {A4damage} 点物理伤害，按自身最大生命缩放。英雄随后沿同一路径冲出，撞散路径上的单位，使敌人眩晕 {Stun_Duration} 秒。学会“致命山崩”后，被重物击中的敌人还降低移动速度 {A4u_slow_Percent}%，持续 {A4u_slow_time} 秒。",
     "parameter_labels": {
       "A4damage": "重物命中伤害",
       "Stun_Duration": "冲撞眩晕时间",
@@ -6452,7 +6452,7 @@
   },
   "Items/Talents/Class/Rockman/Ability4_2.TALENT.xdb": {
     "name_zh": "飞掷重物",
-    "effect_zh": "向指定敌方英雄投出重物，造成 {A4_2_Damage} 点伤害并眩晕 {Stun_Duration} 秒。学会“双手投掷”后，投出两枚重物，每枚分别造成上述伤害。",
+    "effect_zh": "向指定敌方英雄投出重物，造成 {A4_2_Damage} 点物理伤害并眩晕 {Stun_Duration} 秒。学会“双手投掷”后，投出两枚重物，每枚分别造成上述伤害。",
     "parameter_labels": {
       "A4_2_Damage": "每枚重物伤害",
       "Stun_Duration": "命中眩晕时间"
@@ -6507,7 +6507,7 @@
   },
   "Items/Talents/Class/Shadow/Ability_A1.TALENT.xdb": {
     "name_zh": "狂怒投矛",
-    "effect_zh": "准备 {ChannelTime} 秒并选择方向，随后投出长矛，对路径上的敌人造成 {Damage} 点伤害，按智力缩放。默认遇到首名敌方英雄后停止；学会“贯穿之矛”后可穿过英雄。对被命中英雄的普攻在 {A1u_Duration} 秒内多积累 {A1u_BonusHatred}% 怒意。学会“锋利矛尖”后，被命中英雄同时减速 {Dec_MoveSpeed}%，且加速效果被压制。",
+    "effect_zh": "准备 {ChannelTime} 秒并选择方向，随后投出长矛，对路径上的敌人造成 {Damage} 点魔法伤害，按智力缩放。默认遇到首名敌方英雄后停止；学会“贯穿之矛”后可穿过英雄。对被命中英雄的普攻在 {A1u_Duration} 秒内多积累 {A1u_BonusHatred}% 怒意。学会“锋利矛尖”后，被命中英雄同时减速 {Dec_MoveSpeed}%，且加速效果被压制。",
     "parameter_labels": {
       "ChannelTime": "准备时间",
       "Damage": "投矛伤害",
@@ -6534,22 +6534,22 @@
   },
   "Items/Talents/Class/Shadow/Ability_A2.TALENT.xdb": {
     "name_zh": "战斗热忱",
-    "effect_zh": "每层怒意使移动速度提高 {MoveSpd_Per_Hatred}%。学会“战斗狂热”后，每层怒意还提供 {AtSpd_Per_Hatred} 点攻速属性（按基础力量缩放）；普攻与英雄专属天赋按造成伤害的 {LifestealBase}% 恢复生命，每层怒意再增加 {Lifesteal_Per_Hatred} 个百分点。",
+    "effect_zh": "每层怒意使移动速度提高 {MoveSpd_Per_Hatred}%。学会“战斗狂热”后，每层怒意还提供 {AtSpd_Per_Hatred} 点攻速（按基础力量缩放）；普攻与英雄专属天赋按造成伤害的 {LifestealBase}% 恢复生命，每层怒意再增加 {Lifesteal_Per_Hatred} 个百分点。",
     "parameter_labels": {
       "MoveSpd_Per_Hatred": "每层怒意移速增益",
-      "AtSpd_Per_Hatred": "每层怒意攻速属性增益",
+      "AtSpd_Per_Hatred": "每层怒意攻速增益",
       "LifestealBase": "基础吸血比例",
       "Lifesteal_Per_Hatred": "每层怒意额外吸血比例"
     },
     "notes": [
-      "这里的“攻速属性”是 Проворство，仍须经攻击频率公式换算，不是直接增加同等百分比的每秒攻击次数。"
+      "这里的“攻速”是 Проворство，仍须经攻击频率公式换算，不是直接增加同等百分比的每秒攻击次数。"
     ]
   },
   "Items/Talents/Class/Shadow/Ability_A2u.TALENT.xdb": {
     "name_zh": "战斗狂热",
-    "effect_zh": "强化“战斗热忱”：每层怒意额外提供 {AtSpd_Per_Hatred} 点攻速属性，按基础力量缩放。普攻与英雄专属天赋按实际造成伤害的 {LifestealBase}% 恢复生命，每层怒意再增加 {Lifesteal_Per_Hatred} 个百分点。",
+    "effect_zh": "强化“战斗热忱”：每层怒意额外提供 {AtSpd_Per_Hatred} 点攻速，按基础力量缩放。普攻与英雄专属天赋按实际造成伤害的 {LifestealBase}% 恢复生命，每层怒意再增加 {Lifesteal_Per_Hatred} 个百分点。",
     "parameter_labels": {
-      "AtSpd_Per_Hatred": "每层怒意攻速属性增益",
+      "AtSpd_Per_Hatred": "每层怒意攻速增益",
       "LifestealBase": "基础吸血比例",
       "Lifesteal_Per_Hatred": "每层怒意额外吸血比例"
     },
@@ -6557,7 +6557,7 @@
   },
   "Items/Talents/Class/Shadow/Ability_A3.TALENT.xdb": {
     "name_zh": "复仇渴望",
-    "effect_zh": "被动记录受到的伤害，最多记录 {MaxDamage} 点，按力量、智力中的较高者缩放。主动使用时，对周围敌人造成等于已记录数值的伤害，随后清空记录。每命中一名敌方英雄，“怒意”的吸收比例增加 {BlockPerProc} 个百分点，最高 {BlockMax}%。学会“不屈意志”后，每记录 {Damage2Dex} 点伤害增加 1 点灵巧，上限 {MaxDex} 点（按基础智力缩放）；主动使用还会移除自身所有负面效果，并允许在眩晕或禁用天赋状态下施放。",
+    "effect_zh": "被动记录受到的伤害，最多记录 {MaxDamage} 点，按力量、智力中的较高者缩放。主动使用时，对周围敌人造成等于已记录数值的魔法伤害，随后清空记录。每命中一名敌方英雄，“怒意”的吸收比例增加 {BlockPerProc} 个百分点，最高 {BlockMax}%。学会“不屈意志”后，每记录 {Damage2Dex} 点伤害增加 1 点灵巧，上限 {MaxDex} 点（按基础智力缩放）；主动使用还会移除自身所有负面效果，并允许在眩晕或禁用天赋状态下施放。",
     "parameter_labels": {
       "MaxDamage": "记录伤害上限",
       "BlockPerProc": "每次命中增加的吸收百分点",
@@ -6588,7 +6588,7 @@
   },
   "Items/Talents/Class/Shadow/Ability_A4_2.TALENT.xdb": {
     "name_zh": "清算时刻",
-    "effect_zh": "进入持续 {A4_2_Duration} 秒的狂怒状态：“战斗热忱”的移动速度增益提高 {A4_2_Bonus}%；若已学会其攻速强化，攻速属性增益也同比提高。“狂怒投矛”的冷却缩短 {A4_2_CDR}%。学会“狂暴”后，开启时获得 {HatredMax} 层怒意；击杀或助攻会刷新狂怒持续时间。",
+    "effect_zh": "进入持续 {A4_2_Duration} 秒的狂怒状态：“战斗热忱”的移动速度增益提高 {A4_2_Bonus}%；若已学会其攻速强化，攻速增益也同比提高。“狂怒投矛”的冷却缩短 {A4_2_CDR}%。学会“狂暴”后，开启时获得 {HatredMax} 层怒意；击杀或助攻会刷新狂怒持续时间。",
     "parameter_labels": {
       "A4_2_Duration": "狂怒持续时间",
       "A4_2_Bonus": "增益提高比例",
@@ -6634,7 +6634,7 @@
   },
   "Items/Talents/Class/Shaman/Ability_A1.TALENT.xdb": {
     "name_zh": "灵魂图腾",
-    "effect_zh": "放置持续 {A1_Duration} 秒的图腾；附近敌人每秒受到 {A1_Damage} 点伤害，按智力缩放。学会“冥界寒意”后，图腾还使敌人减速 {DecMoveSpeed_WithReduction}%，减速效果持续 {Slow_Duration} 秒。",
+    "effect_zh": "放置持续 {A1_Duration} 秒的图腾；附近敌人每秒受到 {A1_Damage} 点魔法伤害，按智力缩放。学会“冥界寒意”后，图腾还使敌人减速 {DecMoveSpeed_WithReduction}%，减速效果持续 {Slow_Duration} 秒。",
     "parameter_labels": {
       "A1_Duration": "图腾持续时间",
       "A1_Damage": "图腾每秒伤害",
@@ -6702,7 +6702,7 @@
   },
   "Items/Talents/Class/Shaman/Ability_A4.TALENT.xdb": {
     "name_zh": "原始狂怒",
-    "effect_zh": "在 {A4_Duration} 秒内免疫控制，并连续跳跃三次；每次对周围敌人造成 {A4_Damage} 点伤害，按力量缩放。学会“碎骨声”后，每次跳跃还会使敌人眩晕 {Stun_Duration} 秒。",
+    "effect_zh": "在 {A4_Duration} 秒内免疫控制，并连续跳跃三次；每次对周围敌人造成 {A4_Damage} 点物理伤害，按力量缩放。学会“碎骨声”后，每次跳跃还会使敌人眩晕 {Stun_Duration} 秒。",
     "parameter_labels": {
       "A4_Duration": "控制免疫持续时间",
       "A4_Damage": "每次跳跃伤害",
@@ -6738,10 +6738,10 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A0.TALENT.xdb": {
     "name_zh": "寒冰锁链",
-    "effect_zh": "普攻和英雄专属天赋造成伤害后，使敌人的移动速度降低 {A0_MoveSpeedPercent}%，攻速属性降低 {A0_AttackSpeedDec} 点（按力量、智力中较高者缩放），持续 {A0_Duration} 秒，最多叠加 {A0_MaxStacks} 层。在己方领土上施放的专属技能，造成伤害时还焚烧目标 {A0_ManaBurn_TT}% 的能量。",
+    "effect_zh": "普攻和英雄专属天赋造成伤害后，使敌人的移动速度降低 {A0_MoveSpeedPercent}%，攻速降低 {A0_AttackSpeedDec} 点（按力量、智力中较高者缩放），持续 {A0_Duration} 秒，最多叠加 {A0_MaxStacks} 层。在己方领土上施放的专属技能，造成伤害时还焚烧目标 {A0_ManaBurn_TT}% 的能量。",
     "parameter_labels": {
       "A0_MoveSpeedPercent": "每层移速降低比例",
-      "A0_AttackSpeedDec": "每层攻速属性削减",
+      "A0_AttackSpeedDec": "每层攻速削减",
       "A0_Duration": "每层效果持续时间",
       "A0_MaxStacks": "叠加上限",
       "A0_ManaBurn_TT": "能量焚烧比例"
@@ -6752,7 +6752,7 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A1.TALENT.xdb": {
     "name_zh": "暴风雪",
-    "effect_zh": "制造持续 {A1_Duration} 秒的区域，区域内敌人每秒受到 {A1_Damage} 点伤害，按智力缩放。学会“暴雪风暴”后，每 {A1_SUP_Period} 秒再造成 {A1_SUP_Damage} 点伤害；其延长持续时间另见强化条目。学会“冻伤”后，对被减速敌人额外增伤，目标移动速度越低，增伤越高。",
+    "effect_zh": "制造持续 {A1_Duration} 秒的区域，区域内敌人每秒受到 {A1_Damage} 点魔法伤害，按智力缩放。学会“暴雪风暴”后，每 {A1_SUP_Period} 秒再造成 {A1_SUP_Damage} 点魔法伤害；其延长持续时间另见强化条目。学会“冻伤”后，对被减速敌人额外增伤，目标移动速度越低，增伤越高。",
     "parameter_labels": {
       "A1_Duration": "基础持续时间",
       "A1_Damage": "每秒基础伤害",
@@ -6781,7 +6781,7 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A2.TALENT.xdb": {
     "name_zh": "寒冷之力",
-    "effect_zh": "攻击本英雄的敌人受到 {A2_Damage} 点伤害，按力量、智力中较高者缩放。学会“寒颤”后，自己受到的普攻和天赋伤害降低 {DecreasingDamage_Amount}%。",
+    "effect_zh": "攻击本英雄的敌人受到 {A2_Damage} 点魔法伤害，按力量、智力中较高者缩放。学会“寒颤”后，自己受到的普攻和天赋伤害降低 {DecreasingDamage_Amount}%。",
     "parameter_labels": {
       "A2_Damage": "反击伤害",
       "DecreasingDamage_Amount": "伤害降低比例"
@@ -6798,7 +6798,7 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A3.TALENT.xdb": {
     "name_zh": "寒冰碎片",
-    "effect_zh": "在 {A3_Duration} 秒内对指定敌人合计造成 {A3_TT_Damage} 点伤害。学会“穿刺冰片”后，对被减速敌人额外增伤，目标移动速度越低，额外伤害越高。",
+    "effect_zh": "在 {A3_Duration} 秒内对指定敌人合计造成 {A3_TT_Damage} 点魔法伤害。学会“穿刺冰片”后，对被减速敌人额外增伤，目标移动速度越低，额外伤害越高。",
     "parameter_labels": {
       "A3_Duration": "持续伤害时间",
       "A3_TT_Damage": "基础总伤害"
@@ -6815,7 +6815,7 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A4.TALENT.xdb": {
     "name_zh": "永冻",
-    "effect_zh": "对目标造成 {A4_Damage} 点伤害，并冻结 {A4_Duration} 秒；若目标的同阵营英雄来到附近，冻结提前解除。学会“永恒冻土”后，总冻结时间为 {A4_CommonDuration_TT} 秒，其中最初 {A4u_BonusDuration} 秒不受上述友军靠近解冻机制影响。在己方领土施放时，额外焚烧目标 {A4_ManaBurn_TT}% 的能量。",
+    "effect_zh": "对目标造成 {A4_Damage} 点魔法伤害，并冻结 {A4_Duration} 秒；若目标的同阵营英雄来到附近，冻结提前解除。学会“永恒冻土”后，总冻结时间为 {A4_CommonDuration_TT} 秒，其中最初 {A4u_BonusDuration} 秒不受上述友军靠近解冻机制影响。在己方领土施放时，额外焚烧目标 {A4_ManaBurn_TT}% 的能量。",
     "parameter_labels": {
       "A4_Damage": "冻结伤害",
       "A4_Duration": "基础冻结时间",
@@ -6829,7 +6829,7 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A4_2.TALENT.xdb": {
     "name_zh": "霜寒触碰",
-    "effect_zh": "瞬移至指定位置，对附近所有敌人造成 {A4_2_Damage} 点伤害，按力量缩放，并直接叠满“寒冰锁链”。学会“凛冽寒霜”后，接下来 {A4_2_Duration} 秒的每次攻击都获得“冷静算计”的强化，并获得最多吸收 {A4_2_ShieldCapacity} 点伤害的护盾，按力量缩放。",
+    "effect_zh": "瞬移至指定位置，对附近所有敌人造成 {A4_2_Damage} 点物理伤害，按力量缩放，并直接叠满“寒冰锁链”。学会“凛冽寒霜”后，接下来 {A4_2_Duration} 秒的每次攻击都获得“冷静算计”的强化，并获得最多吸收 {A4_2_ShieldCapacity} 点伤害的护盾，按力量缩放。",
     "parameter_labels": {
       "A4_2_Damage": "落点范围伤害",
       "A4_2_Duration": "强化持续时间",
@@ -6858,7 +6858,7 @@
   },
   "Items/Talents/Class/SnowQueen/Ability_A5.TALENT.xdb": {
     "name_zh": "冷静算计",
-    "effect_zh": "下一次普攻额外造成 {A5_Damage} 点伤害，按力量缩放。",
+    "effect_zh": "下一次普攻额外造成 {A5_Damage} 点物理伤害，按力量缩放。",
     "parameter_labels": {
       "A5_Damage": "下一次攻击附加伤害"
     },
@@ -6884,7 +6884,7 @@
   },
   "Items/Talents/Class/Stalker/Ability_A1.TALENT.xdb": {
     "name_zh": "果断突刺",
-    "effect_zh": "朝指定方向位移，对路径上的全部敌人造成 {A1_DamageTT} 点伤害。学会“猎手警觉”后，位移结束时坚韧增加 {A1_StaminaTT} 点，持续 {A1_BuffTimeTT} 秒，增量按力量缩放。",
+    "effect_zh": "朝指定方向位移，对路径上的全部敌人造成 {A1_DamageTT} 点物理伤害。学会“猎手警觉”后，位移结束时坚韧增加 {A1_StaminaTT} 点，持续 {A1_BuffTimeTT} 秒，增量按力量缩放。",
     "parameter_labels": {
       "A1_DamageTT": "突刺伤害",
       "A1_StaminaTT": "坚韧增加值",
@@ -6903,7 +6903,7 @@
   },
   "Items/Talents/Class/Stalker/Ability_A2.TALENT.xdb": {
     "name_zh": "弩箭射击",
-    "effect_zh": "发射弩箭，默认命中路径上的首名敌人，造成 {A2_DamageTT} 点伤害，按智力缩放。若命中前已飞行至少全程的 {A2_PercentageTT}%，伤害乘以 {A2_ValueTT}。学会“重弩”后，弩箭穿过普通生物，伤害沿途敌人，在首名敌方英雄处停止。学会“锯齿弩矢”后，截停弩箭的目标还会眩晕 {A2_StunTimeTT} 秒。",
+    "effect_zh": "发射弩箭，默认命中路径上的首名敌人，造成 {A2_DamageTT} 点魔法伤害，按智力缩放。若命中前已飞行至少全程的 {A2_PercentageTT}%，伤害乘以 {A2_ValueTT}。学会“重弩”后，弩箭穿过普通生物，伤害沿途敌人，在首名敌方英雄处停止。学会“锯齿弩矢”后，截停弩箭的目标还会眩晕 {A2_StunTimeTT} 秒。",
     "parameter_labels": {
       "A2_DamageTT": "弩箭基础伤害",
       "A2_PercentageTT": "远距离增伤门槛",
@@ -6946,18 +6946,18 @@
   },
   "Items/Talents/Class/Stalker/Ability_A4.TALENT.xdb": {
     "name_zh": "缴械技巧",
-    "effect_zh": "使周围所有敌人缴械并减速 {A4_SlowTT}%，持续 {A4_SlowDurationTT} 秒。学会“肾上腺爆发”后，自身攻速属性增加 {A4_AspdValueTT} 点，持续 {A4_BuffDurationTT} 秒，增量按力量缩放。",
+    "effect_zh": "使周围所有敌人缴械并减速 {A4_SlowTT}%，持续 {A4_SlowDurationTT} 秒。学会“肾上腺爆发”后，自身攻速增加 {A4_AspdValueTT} 点，持续 {A4_BuffDurationTT} 秒，增量按力量缩放。",
     "parameter_labels": {
       "A4_SlowTT": "移速降低比例",
       "A4_SlowDurationTT": "缴械减速时间",
-      "A4_AspdValueTT": "攻速属性增加值",
+      "A4_AspdValueTT": "攻速增加值",
       "A4_BuffDurationTT": "攻速增益时间"
     },
     "notes": []
   },
   "Items/Talents/Class/Stalker/Ability_A4_2.TALENT.xdb": {
     "name_zh": "无形追猎者",
-    "effect_zh": "施放后经过 {Invisibility_FadeIn} 秒，进入持续 {A4_2_InvisDurationTT} 秒的伪装状态。学会“突袭”后，伪装结束后的 {A4_2_AddDmgDurationTT} 秒内，英雄专属天赋额外造成 {A4_2_DamageTT} 点伤害，按智力缩放。",
+    "effect_zh": "施放后经过 {Invisibility_FadeIn} 秒，进入持续 {A4_2_InvisDurationTT} 秒的伪装状态。学会“突袭”后，伪装结束后的 {A4_2_AddDmgDurationTT} 秒内，英雄专属天赋额外造成 {A4_2_DamageTT} 点魔法伤害，按智力缩放。",
     "parameter_labels": {
       "Invisibility_FadeIn": "进入伪装前延迟",
       "A4_2_InvisDurationTT": "伪装持续时间",
@@ -6977,9 +6977,9 @@
   },
   "Items/Talents/Class/Stalker/Ability_A4u.TALENT.xdb": {
     "name_zh": "肾上腺爆发",
-    "effect_zh": "强化“缴械技巧”：自身攻速属性增加 {A4_AspdValueTT} 点，持续 {A4_BuffDurationTT} 秒，增量按力量缩放。",
+    "effect_zh": "强化“缴械技巧”：自身攻速增加 {A4_AspdValueTT} 点，持续 {A4_BuffDurationTT} 秒，增量按力量缩放。",
     "parameter_labels": {
-      "A4_AspdValueTT": "攻速属性增加值",
+      "A4_AspdValueTT": "攻速增加值",
       "A4_BuffDurationTT": "增益持续时间"
     },
     "notes": []
@@ -7005,7 +7005,7 @@
   },
   "Items/Talents/Class/ThunderGod/Ability1.TALENT.xdb": {
     "name_zh": "雷霆一击",
-    "effect_zh": "造成 {A1damageM} 点伤害，按力量缩放。学会“震慑打击”后，目标减速 {Dec_MoveSpeed}% 并无法使用天赋，持续 {Slow_Duration} 秒。学会“电能释放”后，可消耗全部连锁闪电，每层额外造成 {A1_DamageMultiplier_BonusPerStack_TT} 点伤害；这次附加伤害存在额外恢复限制：基础招式冷却结束后，每消耗一层连锁闪电，还需再等待 {CoolDownPerSec} 秒才能再次触发这项附加伤害。",
+    "effect_zh": "造成 {A1damageM} 点物理伤害，按力量缩放。学会“震慑打击”后，目标减速 {Dec_MoveSpeed}% 并无法使用天赋，持续 {Slow_Duration} 秒。学会“电能释放”后，可消耗全部连锁闪电，每层额外造成 {A1_DamageMultiplier_BonusPerStack_TT} 点物理伤害；这次附加伤害存在额外恢复限制：基础招式冷却结束后，每消耗一层连锁闪电，还需再等待 {CoolDownPerSec} 秒才能再次触发这项附加伤害。",
     "parameter_labels": {
       "A1damageM": "基础伤害",
       "Dec_MoveSpeed": "减速比例",
@@ -7037,7 +7037,7 @@
   },
   "Items/Talents/Class/ThunderGod/Ability2.TALENT.xdb": {
     "name_zh": "闪电箭",
-    "effect_zh": "对目标造成 {A2damage} 点伤害，按智力缩放。在己方领土施放时，目标附近的每个敌人还受到主目标伤害的 {A2_AoEDmgTerran}%。",
+    "effect_zh": "对目标造成 {A2damage} 点魔法伤害，按智力缩放。在己方领土施放时，目标附近的每个敌人还受到主目标伤害的 {A2_AoEDmgTerran}%。",
     "parameter_labels": {
       "A2damage": "单体伤害",
       "A2_AoEDmgTerran": "领土溅射伤害比例"
@@ -7048,7 +7048,7 @@
   },
   "Items/Talents/Class/ThunderGod/Ability3.TALENT.xdb": {
     "name_zh": "过载",
-    "effect_zh": "持续 {A3_duration} 秒，每 {A3_damagePeriod} 秒对身后敌人造成 {A3_aoe_damage} 点伤害，按智力缩放；期间可穿过生物，基础移动速度增益为 {A3_Haste_Percent}%。学会“闪电速度”后，移速增益合计为 {Haste_Percent}%，命中的敌人还会减速 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。学会“防护力场”后，获得最多吸收 {A3_ShieldCapacity} 点伤害的护盾，按力量、智力中较高者缩放。",
+    "effect_zh": "持续 {A3_duration} 秒，每 {A3_damagePeriod} 秒对身后敌人造成 {A3_aoe_damage} 点魔法伤害，按智力缩放；期间可穿过生物，基础移动速度增益为 {A3_Haste_Percent}%。学会“闪电速度”后，移速增益合计为 {Haste_Percent}%，命中的敌人还会减速 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。学会“防护力场”后，获得最多吸收 {A3_ShieldCapacity} 点伤害的护盾，按力量、智力中较高者缩放。",
     "parameter_labels": {
       "A3_duration": "持续时间",
       "A3_damagePeriod": "尾迹伤害间隔",
@@ -7130,7 +7130,7 @@
   },
   "Items/Talents/Class/Trickster/Ability1.TALENT.xdb": {
     "name_zh": "狂野之火",
-    "effect_zh": "在指定区域延迟 {A1_WaitTime} 秒后，对其中敌人造成 {A1_Damage} 点伤害，按力量缩放。学会“聚焦烈焰”后，若区域内仅有一名敌人，该目标受到的技能伤害增加 {A1u_Dmg_Inc}%，并被定身 {Root_Duration} 秒。",
+    "effect_zh": "在指定区域延迟 {A1_WaitTime} 秒后，对其中敌人造成 {A1_Damage} 点物理伤害，按力量缩放。学会“聚焦烈焰”后，若区域内仅有一名敌人，该目标受到的技能伤害增加 {A1u_Dmg_Inc}%，并被定身 {Root_Duration} 秒。",
     "parameter_labels": {
       "A1_WaitTime": "爆发延迟",
       "A1_Damage": "区域伤害",
@@ -7255,7 +7255,7 @@
   },
   "Items/Talents/Class/Unicorn/Ability1.TALENT.xdb": {
     "name_zh": "力量平衡",
-    "effect_zh": "先为自身和附近友方英雄恢复 {A1TT_BaseHeal} 点生命，按智力缩放；同时对周围敌人造成 {DamageBase} 点伤害。再将造成伤害的 {A1_HeroHealPercent}% 转成治疗，由自身和附近友方英雄平分，每人额外恢复最多 {Heal_Cap} 点，按智力缩放。学会“平衡偏移”后，对敌方英雄的伤害乘以 {A1uMult}；在己方领土施放还让友方英雄加速 {Haste_Percent}%，持续 {Haste_Duration} 秒。",
+    "effect_zh": "先为自身和附近友方英雄恢复 {A1TT_BaseHeal} 点生命，按智力缩放；同时对周围敌人造成 {DamageBase} 点魔法伤害。再将造成伤害的 {A1_HeroHealPercent}% 转成治疗，由自身和附近友方英雄平分，每人额外恢复最多 {Heal_Cap} 点，按智力缩放。学会“平衡偏移”后，对敌方英雄的伤害乘以 {A1uMult}；在己方领土施放还让友方英雄加速 {Haste_Percent}%，持续 {Haste_Duration} 秒。",
     "parameter_labels": {
       "A1TT_BaseHeal": "基础治疗量",
       "DamageBase": "范围伤害",
@@ -7316,7 +7316,7 @@
   },
   "Items/Talents/Class/Unicorn/Ability4.TALENT.xdb": {
     "name_zh": "彩虹飞行",
-    "effect_zh": "飞起并进入无敌状态，持续 {Duration} 秒；飞过敌人上方时，每秒造成 {Damage} 点伤害，按智力缩放。持续时间受“飞行狂喜”强化影响。",
+    "effect_zh": "飞起并进入无敌状态，持续 {Duration} 秒；飞过敌人上方时，每秒造成 {Damage} 点魔法伤害，按智力缩放。持续时间受“飞行狂喜”强化影响。",
     "parameter_labels": {
       "Duration": "飞行持续时间",
       "Damage": "每秒飞行伤害"
@@ -7333,7 +7333,7 @@
   },
   "Items/Talents/Class/Unicorn/Ability4_2.TALENT.xdb": {
     "name_zh": "彩虹跃迁",
-    "effect_zh": "移动到指定地点，对周围所有敌人造成 {A4_2_Damage} 点伤害，按智力缩放。学会“彩虹庇护”后，坚韧和意志各增加 {A4_2u_Add_Stamina} 点，持续 {A4_2u_Duration} 秒，增量按智力缩放。",
+    "effect_zh": "移动到指定地点，对周围所有敌人造成 {A4_2_Damage} 点魔法伤害，按智力缩放。学会“彩虹庇护”后，坚韧和意志各增加 {A4_2u_Add_Stamina} 点，持续 {A4_2u_Duration} 秒，增量按智力缩放。",
     "parameter_labels": {
       "A4_2_Damage": "落点范围伤害",
       "A4_2u_Add_Stamina": "双防属性增益",
@@ -7426,7 +7426,7 @@
   },
   "Items/Talents/Class/Vampire/Ability_A2.TALENT.xdb": {
     "name_zh": "血色玫瑰",
-    "effect_zh": "投出玫瑰，对沿途所有敌人造成 {A2_Damage} 点伤害，按智力缩放。学会“缠绕闪现”后，最后命中的敌方英雄获得持续 {A2u_RepeatTime} 秒的标记；期间再次施放，可将其定身 {A2u_RootDuration} 秒，并移动至其背后。",
+    "effect_zh": "投出玫瑰，对沿途所有敌人造成 {A2_Damage} 点魔法伤害，按智力缩放。学会“缠绕闪现”后，最后命中的敌方英雄获得持续 {A2u_RepeatTime} 秒的标记；期间再次施放，可将其定身 {A2u_RootDuration} 秒，并移动至其背后。",
     "parameter_labels": {
       "A2_Damage": "玫瑰伤害",
       "A2u_RepeatTime": "再次施放窗口",
@@ -7445,7 +7445,7 @@
   },
   "Items/Talents/Class/Vampire/Ability_A3.TALENT.xdb": {
     "name_zh": "蔽身黑雾",
-    "effect_zh": "制造持续 {A3_Duration} 秒的区域；自己在其中隐身，区域内敌人每秒受到 {A3_DamagePerSecond} 点伤害，按智力缩放。攻击或使用天赋会短暂暴露自己。学会“暗夜护甲”后，在黑雾内受到的伤害降低 {A3u_DamageReductionPercent}%。",
+    "effect_zh": "制造持续 {A3_Duration} 秒的区域；自己在其中隐身，区域内敌人每秒受到 {A3_DamagePerSecond} 点魔法伤害，按智力缩放。攻击或使用天赋会短暂暴露自己。学会“暗夜护甲”后，在黑雾内受到的伤害降低 {A3u_DamageReductionPercent}%。",
     "parameter_labels": {
       "A3_Duration": "黑雾持续时间",
       "A3_DamagePerSecond": "每秒黑雾伤害",
@@ -7463,7 +7463,7 @@
   },
   "Items/Talents/Class/Vampire/Ability_A4.TALENT.xdb": {
     "name_zh": "鲜血仪式",
-    "effect_zh": "使一名敌方英雄眩晕并引导 {A4_Duration} 秒，每秒造成 {A4_DamagePerSecond_TT} 点伤害，同时为自己恢复等量生命；被护盾吸收的伤害不会转成治疗。学会“最后一滴”后，施放时清除自身所有负面效果，获得 {A4u_Immune2ControlDuration} 秒控制免疫，并减少 {A4u_DmgDecrecreasePercent}% 所受伤害，减伤幅度随昼夜变化。",
+    "effect_zh": "使一名敌方英雄眩晕并引导 {A4_Duration} 秒，每秒造成 {A4_DamagePerSecond_TT} 点魔法伤害，同时为自己恢复等量生命；被护盾吸收的伤害不会转成治疗。学会“最后一滴”后，施放时清除自身所有负面效果，获得 {A4u_Immune2ControlDuration} 秒控制免疫，并减少 {A4u_DmgDecrecreasePercent}% 所受伤害，减伤幅度随昼夜变化。",
     "parameter_labels": {
       "A4_Duration": "引导时间",
       "A4_DamagePerSecond_TT": "每秒汲取伤害",
@@ -7474,7 +7474,7 @@
   },
   "Items/Talents/Class/Vampire/Ability_A4_2.TALENT.xdb": {
     "name_zh": "活埋",
-    "effect_zh": "准备 {A4_Delay} 秒后，使指定敌方英雄脱离战斗 {A4_2_Duration} 秒，暂停其生命恢复、能量恢复及天赋冷却恢复。学会“窒息”后，效果结束时再造成 {A4_2_Damage} 点伤害，按力量缩放。",
+    "effect_zh": "准备 {A4_Delay} 秒后，使指定敌方英雄脱离战斗 {A4_2_Duration} 秒，暂停其生命恢复、能量恢复及天赋冷却恢复。学会“窒息”后，效果结束时再造成 {A4_2_Damage} 点物理伤害，按力量缩放。",
     "parameter_labels": {
       "A4_Delay": "施法准备时间",
       "A4_2_Duration": "放逐持续时间",
@@ -7484,7 +7484,7 @@
   },
   "Items/Talents/Class/Vampire/Ability_A4_2u.TALENT.xdb": {
     "name_zh": "窒息",
-    "effect_zh": "强化“活埋”：放逐效果结束时，对目标造成 {A4_2_Damage} 点伤害，按力量缩放。",
+    "effect_zh": "强化“活埋”：放逐效果结束时，对目标造成 {A4_2_Damage} 点物理伤害，按力量缩放。",
     "parameter_labels": {
       "A4_2_Damage": "结束伤害"
     },
@@ -7546,24 +7546,24 @@
   },
   "Items/Talents/Class/Warlord/Ability2.TALENT.xdb": {
     "name_zh": "突破",
-    "effect_zh": "冲向指定敌人，造成 {A2_Damage} 点伤害并使其眩晕 {Stun_Duration} 秒。学会“战意”后，附近友方士兵也会攻击该目标 {Taunt_Duration} 秒；自身及附近盟友获得 {TT_Haste_MoveAmount}% 加速和 {Haste_AtkSpdAmount} 点攻速属性，持续 {Haste_Duration} 秒，攻速属性增量按自身坚韧缩放。",
+    "effect_zh": "冲向指定敌人，造成 {A2_Damage} 点物理伤害并使其眩晕 {Stun_Duration} 秒。学会“战意”后，附近友方士兵也会攻击该目标 {Taunt_Duration} 秒；自身及附近盟友获得 {TT_Haste_MoveAmount}% 加速和 {Haste_AtkSpdAmount} 点攻速，持续 {Haste_Duration} 秒，攻速增量按自身坚韧缩放。",
     "parameter_labels": {
       "A2_Damage": "冲锋伤害",
       "Stun_Duration": "眩晕时间",
       "Taunt_Duration": "士兵集火时间",
       "TT_Haste_MoveAmount": "移动速度增益",
-      "Haste_AtkSpdAmount": "攻速属性增益",
+      "Haste_AtkSpdAmount": "攻速增益",
       "Haste_Duration": "团队增益时间"
     },
     "notes": []
   },
   "Items/Talents/Class/Warlord/Ability2_Upg.TALENT.xdb": {
     "name_zh": "战意",
-    "effect_zh": "强化“突破”：命令附近友方士兵攻击指定目标 {Taunt_Duration} 秒；自身及附近盟友获得 {TT_Haste_MoveAmount}% 加速和 {Haste_AtkSpdAmount} 点攻速属性，持续 {Haste_Duration} 秒，攻速属性增量按自身坚韧缩放。",
+    "effect_zh": "强化“突破”：命令附近友方士兵攻击指定目标 {Taunt_Duration} 秒；自身及附近盟友获得 {TT_Haste_MoveAmount}% 加速和 {Haste_AtkSpdAmount} 点攻速，持续 {Haste_Duration} 秒，攻速增量按自身坚韧缩放。",
     "parameter_labels": {
       "Taunt_Duration": "士兵集火时间",
       "TT_Haste_MoveAmount": "移速增益",
-      "Haste_AtkSpdAmount": "攻速属性增益",
+      "Haste_AtkSpdAmount": "攻速增益",
       "Haste_Duration": "团队增益时间"
     },
     "notes": []
@@ -7600,11 +7600,11 @@
   },
   "Items/Talents/Class/Warlord/Ability4.TALENT.xdb": {
     "name_zh": "神圣战旗",
-    "effect_zh": "放置持续 {A4_Duration} 秒的战旗，附近盟友最大生命增加 {A4_AddLife} 点，按自身基础坚韧缩放。战旗周围生成己方领土；己方领土上的战旗还给盟友增加 {A4_AddAtkSpeed} 点攻速属性，按基础力量缩放。学会“最后堡垒”后，每 {A4_HealPeriod} 秒为附近盟友恢复 {A4_HealAmount} 点生命，按基础坚韧缩放。",
+    "effect_zh": "放置持续 {A4_Duration} 秒的战旗，附近盟友最大生命增加 {A4_AddLife} 点，按自身基础坚韧缩放。战旗周围生成己方领土；己方领土上的战旗还给盟友增加 {A4_AddAtkSpeed} 点攻速，按基础力量缩放。学会“最后堡垒”后，每 {A4_HealPeriod} 秒为附近盟友恢复 {A4_HealAmount} 点生命，按基础坚韧缩放。",
     "parameter_labels": {
       "A4_Duration": "战旗持续时间",
       "A4_AddLife": "最大生命增益",
-      "A4_AddAtkSpeed": "攻速属性增益",
+      "A4_AddAtkSpeed": "攻速增益",
       "A4_HealPeriod": "治疗间隔",
       "A4_HealAmount": "每次治疗量"
     },
@@ -7612,7 +7612,7 @@
   },
   "Items/Talents/Class/Warlord/Ability4_2.TALENT.xdb": {
     "name_zh": "同袍战友",
-    "effect_zh": "召唤 {A4_2_SummonedUnitsCount} 名援军，持续 {A4_2_CreepLifeTime} 秒；每名援军具有 {TT_MasterStatConnected_Life} 点生命，攻击造成 {TT_MasterStatConnected_Power} 点伤害，属性由主人相关属性公式计算。“团队协作”会提高援军数量。",
+    "effect_zh": "召唤 {A4_2_SummonedUnitsCount} 名援军，持续 {A4_2_CreepLifeTime} 秒；每名援军具有 {TT_MasterStatConnected_Life} 点生命，攻击造成 {TT_MasterStatConnected_Power} 点物理伤害，属性由主人相关属性公式计算。“团队协作”会提高援军数量。",
     "parameter_labels": {
       "A4_2_SummonedUnitsCount": "援军数量",
       "A4_2_CreepLifeTime": "援军存续时间",
@@ -7694,7 +7694,7 @@
   },
   "Items/Talents/Class/Wendigo/Ability3.TALENT.xdb": {
     "name_zh": "白骨陷阱",
-    "effect_zh": "在指定地点放置陷阱，使踩中的敌方英雄定身 {Root_Duration} 秒。学会“尖锐骨刺”后，陷阱变为隐形，并额外造成 {A3_Damage} 点伤害，按力量缩放。",
+    "effect_zh": "在指定地点放置陷阱，使踩中的敌方英雄定身 {Root_Duration} 秒。学会“尖锐骨刺”后，陷阱变为隐形，并额外造成 {A3_Damage} 点物理伤害，按力量缩放。",
     "parameter_labels": {
       "Root_Duration": "定身时间",
       "A3_Damage": "陷阱伤害"
@@ -7711,7 +7711,7 @@
   },
   "Items/Talents/Class/Wendigo/Ability4.TALENT.xdb": {
     "name_zh": "怪物饥渴",
-    "effect_zh": "对指定敌方英雄造成 {A4_DamageBase} 点伤害，按智力缩放；同时一次性结算目标身上“血迹”尚未造成的剩余伤害，并移除这些流血效果。学会“恐怖死亡”后，若目标死亡，附近全部敌人恐慌 {Panic_Duration} 秒。",
+    "effect_zh": "对指定敌方英雄造成 {A4_DamageBase} 点魔法伤害，按智力缩放；同时一次性结算目标身上“血迹”尚未造成的剩余伤害，并移除这些流血效果。学会“恐怖死亡”后，若目标死亡，附近全部敌人恐慌 {Panic_Duration} 秒。",
     "parameter_labels": {
       "A4_DamageBase": "基础伤害",
       "Panic_Duration": "恐慌时间"
@@ -7746,7 +7746,7 @@
   },
   "Items/Talents/Class/Wendigo/Ability5.TALENT.xdb": {
     "name_zh": "追猎",
-    "effect_zh": "“白骨陷阱”触发后的 {TPAvailable} 秒内，可以传送到触发陷阱的敌人身边。当前准备时间为 {A5_ChannelingTime} 秒，白天需要准备、夜间瞬发。学会“碎骨爆裂”后，到达时引爆陷阱，对周围所有敌人造成 {A5_SUP_ExpDamage} 点伤害，按力量、智力中较高者缩放。",
+    "effect_zh": "“白骨陷阱”触发后的 {TPAvailable} 秒内，可以传送到触发陷阱的敌人身边。当前准备时间为 {A5_ChannelingTime} 秒，白天需要准备、夜间瞬发。学会“碎骨爆裂”后，到达时引爆陷阱，对周围所有敌人造成 {A5_SUP_ExpDamage} 点魔法伤害，按力量、智力中较高者缩放。",
     "parameter_labels": {
       "TPAvailable": "追猎可用窗口",
       "A5_ChannelingTime": "传送准备时间",
@@ -7764,7 +7764,7 @@
   },
   "Items/Talents/Class/Werewolf/Ability0.TALENT.xdb": {
     "name_zh": "鲜血魔法",
-    "effect_zh": "当目标生命低于最大生命的 {A0_LifePercent}% 时，本英雄普攻额外造成 {A0_MulDamagePercent}% 伤害。",
+    "effect_zh": "当目标生命低于最大生命的 {A0_LifePercent}% 时，本英雄普攻额外造成 {A0_MulDamagePercent}% 魔法伤害。",
     "parameter_labels": {
       "A0_LifePercent": "低血量门槛",
       "A0_MulDamagePercent": "低血量目标普攻增伤比例"
@@ -7802,7 +7802,7 @@
   },
   "Items/Talents/Class/Werewolf/Ability2.TALENT.xdb": {
     "name_zh": "野兽扑击",
-    "effect_zh": "扑向指定敌人，造成 {A2_Damage} 点伤害，并使其减速 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。伤害和减速幅度会随“不可阻挡的野兽”强化改变。",
+    "effect_zh": "扑向指定敌人，造成 {A2_Damage} 点魔法伤害，并使其减速 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。伤害和减速幅度会随“不可阻挡的野兽”强化改变。",
     "parameter_labels": {
       "A2_Damage": "扑击伤害",
       "Dec_MoveSpeed": "减速比例",
@@ -7821,20 +7821,20 @@
   },
   "Items/Talents/Class/Werewolf/Ability3.TALENT.xdb": {
     "name_zh": "野兽嗅觉",
-    "effect_zh": "在大范围内标记生命低于 {A3_LifePercent}% 的敌方英雄；处于本英雄己方领土上的目标则不受生命比例限制。夜间视野半径不会缩小。发现符合条件的敌人或自身生命低于同一门槛时，主动使用可使移速提高 {Haste_MoveAmount}%，持续 {Haste_Duration} 秒。学会“无情”后，期间攻速属性还增加 {Haste_AtkSpdAmount} 点，按智力缩放。",
+    "effect_zh": "在大范围内标记生命低于 {A3_LifePercent}% 的敌方英雄；处于本英雄己方领土上的目标则不受生命比例限制。夜间视野半径不会缩小。发现符合条件的敌人或自身生命低于同一门槛时，主动使用可使移速提高 {Haste_MoveAmount}%，持续 {Haste_Duration} 秒。学会“无情”后，期间攻速还增加 {Haste_AtkSpdAmount} 点，按智力缩放。",
     "parameter_labels": {
       "A3_LifePercent": "低血量侦测门槛",
       "Haste_MoveAmount": "主动移速增益",
       "Haste_Duration": "主动增益时间",
-      "Haste_AtkSpdAmount": "攻速属性增益"
+      "Haste_AtkSpdAmount": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Class/Werewolf/Ability3_Upg.TALENT.xdb": {
     "name_zh": "无情",
-    "effect_zh": "强化“野兽嗅觉”：主动开启后额外增加 {Haste_AtkSpdAmount} 点攻速属性，按智力缩放。",
+    "effect_zh": "强化“野兽嗅觉”：主动开启后额外增加 {Haste_AtkSpdAmount} 点攻速，按智力缩放。",
     "parameter_labels": {
-      "Haste_AtkSpdAmount": "攻速属性增益"
+      "Haste_AtkSpdAmount": "攻速增益"
     },
     "notes": []
   },
@@ -7887,7 +7887,7 @@
   },
   "Items/Talents/Class/Witch/Ability_A1.TALENT.xdb": {
     "name_zh": "魔宠",
-    "effect_zh": "派魔宠攻击指定目标，再依次转向当前目标附近最近的敌人。受到魔宠攻击的目标在 {A1_DoTDuration} 秒内合计受到 {A1_Damage_TT} 点伤害。附近无其他敌人，或对自己使用此技能时，魔宠返回。学会“恐怖印象”后，被攻击目标恐慌 {A1_SUP_Duration} 秒；学会“无尽好奇”后，魔宠提供视野，且获得独立强化条目所列增伤与更远活动距离。",
+    "effect_zh": "派魔宠攻击指定目标，再依次转向当前目标附近最近的敌人。受到魔宠攻击的目标在 {A1_DoTDuration} 秒内合计受到 {A1_Damage_TT} 点物理伤害。附近无其他敌人，或对自己使用此技能时，魔宠返回。学会“恐怖印象”后，被攻击目标恐慌 {A1_SUP_Duration} 秒；学会“无尽好奇”后，魔宠提供视野，且获得独立强化条目所列增伤与更远活动距离。",
     "parameter_labels": {
       "A1_DoTDuration": "持续伤害时间",
       "A1_Damage_TT": "每个目标总伤害",
@@ -7945,11 +7945,11 @@
   },
   "Items/Talents/Class/Witch/Ability_A3.TALENT.xdb": {
     "name_zh": "能量释放",
-    "effect_zh": "开启期间，普攻额外造成 {A3_BuffDmg} 点伤害，按力量缩放，每次消耗 {A3_ManaCostTT} 点能量。学会“越界”后，每次攻击增加 {A3u_AspdBuffPerStack} 点攻速属性，按智力缩放，持续 {A3u_AspdDuration} 秒，最多 {A3u_AspdMaxStacks} 层；该强化还使己方领土上开启技能时的攻击距离增加。",
+    "effect_zh": "开启期间，普攻额外造成 {A3_BuffDmg} 点物理伤害，按力量缩放，每次消耗 {A3_ManaCostTT} 点能量。学会“越界”后，每次攻击增加 {A3u_AspdBuffPerStack} 点攻速，按智力缩放，持续 {A3u_AspdDuration} 秒，最多 {A3u_AspdMaxStacks} 层；该强化还使己方领土上开启技能时的攻击距离增加。",
     "parameter_labels": {
       "A3_BuffDmg": "每次攻击附加伤害",
       "A3_ManaCostTT": "每次强化攻击能量消耗",
-      "A3u_AspdBuffPerStack": "每层攻速属性增益",
+      "A3u_AspdBuffPerStack": "每层攻速增益",
       "A3u_AspdDuration": "攻速叠层持续时间",
       "A3u_AspdMaxStacks": "攻速叠层上限"
     },
@@ -7959,9 +7959,9 @@
   },
   "Items/Talents/Class/Witch/Ability_A3u.TALENT.xdb": {
     "name_zh": "越界",
-    "effect_zh": "强化“能量释放”：每次攻击增加 {A3u_AspdBuffPerStack} 点攻速属性，按智力缩放，持续 {A3u_AspdDuration} 秒，最多 {A3u_AspdMaxStacks} 层；在己方领土开启能量释放还会增加攻击距离。",
+    "effect_zh": "强化“能量释放”：每次攻击增加 {A3u_AspdBuffPerStack} 点攻速，按智力缩放，持续 {A3u_AspdDuration} 秒，最多 {A3u_AspdMaxStacks} 层；在己方领土开启能量释放还会增加攻击距离。",
     "parameter_labels": {
-      "A3u_AspdBuffPerStack": "每层攻速属性增益",
+      "A3u_AspdBuffPerStack": "每层攻速增益",
       "A3u_AspdDuration": "攻速叠层持续时间",
       "A3u_AspdMaxStacks": "攻速叠层上限"
     },
@@ -7982,7 +7982,7 @@
   },
   "Items/Talents/Class/Witch/Ability_A4_2.TALENT.xdb": {
     "name_zh": "瓦尔普吉斯之夜",
-    "effect_zh": "制造持续 {A4_2_Duration} 秒的区域，区域内敌人减速 {Dec_MoveSpeed}%，每秒受到 {A4_2_Damage} 点伤害，按力量、智力中较高者缩放。区域形成瞬间，将其中敌人拉向中心。学会“厄运”后，被拉动敌人额外受到 {A4_2_ThrowDamage} 点伤害，并眩晕 {Stun_Duration} 秒。",
+    "effect_zh": "制造持续 {A4_2_Duration} 秒的区域，区域内敌人减速 {Dec_MoveSpeed}%，每秒受到 {A4_2_Damage} 点魔法伤害，按力量、智力中较高者缩放。区域形成瞬间，将其中敌人拉向中心。学会“厄运”后，被拉动敌人额外受到 {A4_2_ThrowDamage} 点魔法伤害，并眩晕 {Stun_Duration} 秒。",
     "parameter_labels": {
       "A4_2_Duration": "区域持续时间",
       "Dec_MoveSpeed": "减速比例",
@@ -8070,7 +8070,7 @@
   },
   "Items/Talents/Class/WitchDoctor/Ability3.TALENT.xdb": {
     "name_zh": "乌鸦邪眼",
-    "effect_zh": "派乌鸦攻击指定敌人，在 {A3_Duration} 秒内合计造成 {A3_SummDamage} 点伤害，并持续揭示目标位置。效果提前结束时，按比例缩短技能冷却。学会“鸦群”后，额外影响主目标附近另一名敌人，并使两者减速 {Dec_MoveSpeed}%。学会“暗黑邪眼”后，每次乌鸦攻击有 {A3_ChanceTo_Blind}% 概率致盲目标 {Blind_Duration} 秒。",
+    "effect_zh": "派乌鸦攻击指定敌人，在 {A3_Duration} 秒内合计造成 {A3_SummDamage} 点物理伤害，并持续揭示目标位置。效果提前结束时，按比例缩短技能冷却。学会“鸦群”后，额外影响主目标附近另一名敌人，并使两者减速 {Dec_MoveSpeed}%。学会“暗黑邪眼”后，每次乌鸦攻击有 {A3_ChanceTo_Blind}% 概率致盲目标 {Blind_Duration} 秒。",
     "parameter_labels": {
       "A3_Duration": "乌鸦持续时间",
       "A3_SummDamage": "完整持续期总伤害",
@@ -8099,7 +8099,7 @@
   },
   "Items/Talents/Class/WitchDoctor/Ability4.TALENT.xdb": {
     "name_zh": "邪树",
-    "effect_zh": "召唤伪装成普通树木的邪树，具有 {A4_TT_MasterStatConnected_Life} 点生命，攻击伤害为 {A4_TT_MasterStatConnected_Power}；会抓住并定身靠近的敌方英雄。最多同时维持 {Tree_MaxNumber} 棵。任一邪树死亡时，附近友方邪树停止行动 {DisableDuration} 秒。在己方领土上，邪树普攻还焚烧与其攻击伤害数值相同的能量。学会“树木滋养”后，邪树坚韧、意志各为 {A4u_DefAmount_TT} 点，含基础值与主人属性缩放增量。",
+    "effect_zh": "召唤伪装成普通树木的邪树，具有 {A4_TT_MasterStatConnected_Life} 点生命，攻击的魔法伤害为 {A4_TT_MasterStatConnected_Power}；会抓住并定身靠近的敌方英雄。最多同时维持 {Tree_MaxNumber} 棵。任一邪树死亡时，附近友方邪树停止行动 {DisableDuration} 秒。在己方领土上，邪树普攻还焚烧与其攻击伤害数值相同的能量。学会“树木滋养”后，邪树坚韧、意志各为 {A4u_DefAmount_TT} 点，含基础值与主人属性缩放增量。",
     "parameter_labels": {
       "A4_TT_MasterStatConnected_Life": "邪树生命",
       "A4_TT_MasterStatConnected_Power": "邪树攻击伤害",
@@ -8111,7 +8111,7 @@
   },
   "Items/Talents/Class/WitchDoctor/Ability4_2.TALENT.xdb": {
     "name_zh": "毒蘑菇",
-    "effect_zh": "在指定地点放置隐形蘑菇，最长存续 {DurationMinutes_TT} 秒，最多同时维持 {Shroom_MaxNumber} 个。首名踩中的敌人受到 {A4_2_Damage} 点伤害并眩晕 {Stun_Duration} 秒；伤害按力量、智力中较高者缩放。学会“剧毒孢子”后，伤害合计为 {A4_2_OverallDamage_TT} 点，并额外致盲 {Blind_Duration} 秒。",
+    "effect_zh": "在指定地点放置隐形蘑菇，最长存续 {DurationMinutes_TT} 秒，最多同时维持 {Shroom_MaxNumber} 个。首名踩中的敌人受到 {A4_2_Damage} 点魔法伤害并眩晕 {Stun_Duration} 秒；伤害按力量、智力中较高者缩放。学会“剧毒孢子”后，伤害合计为 {A4_2_OverallDamage_TT} 点，并额外致盲 {Blind_Duration} 秒。",
     "parameter_labels": {
       "DurationMinutes_TT": "蘑菇存续秒数",
       "Shroom_MaxNumber": "蘑菇数量上限",
@@ -8155,7 +8155,7 @@
   },
   "Items/Talents/Class/Witcher/Ability_A1.TALENT.xdb": {
     "name_zh": "果决突袭",
-    "effect_zh": "朝指定方向位移，对周围敌人造成 {A1_baseDamage} 点伤害，按力量缩放；每命中一个敌人获得 {Add_RageStack} 层英勇，合计最多 {MaxStackA1} 层。施放后 {A1_WaitDuration} 秒内还能再用 {DashCount} 次，次数受“战斗热血”强化影响。移动期间免疫控制。学会“挑战”后，被伤害的敌方英雄及其召唤物被迫攻击自己 {Taunt_Duration} 秒。",
+    "effect_zh": "朝指定方向位移，对周围敌人造成 {A1_baseDamage} 点物理伤害，按力量缩放；每命中一个敌人获得 {Add_RageStack} 层英勇，合计最多 {MaxStackA1} 层。施放后 {A1_WaitDuration} 秒内还能再用 {DashCount} 次，次数受“战斗热血”强化影响。移动期间免疫控制。学会“挑战”后，被伤害的敌方英雄及其召唤物被迫攻击自己 {Taunt_Duration} 秒。",
     "parameter_labels": {
       "A1_baseDamage": "每次突袭伤害",
       "Add_RageStack": "每名敌人提供英勇层数",
@@ -8233,7 +8233,7 @@
   },
   "Items/Talents/Class/Witcher/Ability_A4.TALENT.xdb": {
     "name_zh": "惩戒打击",
-    "effect_zh": "移动到指定目标处，造成 {A4_BaseDamage} 点伤害，每层英勇再增加 {A4_StackDamage} 点伤害，均按力量缩放；目标眩晕 {Stun_Duration} 秒。学会“复仇”后，在随后 {A4_DamageDuration} 秒内，目标对外造成伤害时，受到其所造成伤害的 {A4_BonusPercent}% 作为纯粹伤害反噬，反噬累计最多 {A4_MaxDamage} 点，按力量缩放。",
+    "effect_zh": "移动到指定目标处，造成 {A4_BaseDamage} 点物理伤害，每层英勇再增加 {A4_StackDamage} 点物理伤害，均按力量缩放；目标眩晕 {Stun_Duration} 秒。学会“复仇”后，在随后 {A4_DamageDuration} 秒内，目标对外造成伤害时，受到其所造成伤害的 {A4_BonusPercent}% 作为纯粹伤害反噬，反噬累计最多 {A4_MaxDamage} 点，按力量缩放。",
     "parameter_labels": {
       "A4_BaseDamage": "基础伤害",
       "A4_StackDamage": "每层英勇附加伤害",
@@ -8285,7 +8285,7 @@
   },
   "Items/Talents/Class/WraithKing/Ability_A1.TALENT.xdb": {
     "name_zh": "利刃浪潮",
-    "effect_zh": "发出刀刃波浪，对沿途所有敌人造成 {A1_Damage} 点伤害，按力量缩放，并使其减速 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。在己方领土上，还会压制被命中敌人的加速效果。学会“冲锋尖端”后，再次激活可移动到波浪前端；学会“战备”后，每次施放获得 {A1_SUP_AddArsenal} 层兵装。",
+    "effect_zh": "发出刀刃波浪，对沿途所有敌人造成 {A1_Damage} 点物理伤害，按力量缩放，并使其减速 {Dec_MoveSpeed}%，持续 {Slow_Duration} 秒。在己方领土上，还会压制被命中敌人的加速效果。学会“冲锋尖端”后，再次激活可移动到波浪前端；学会“战备”后，每次施放获得 {A1_SUP_AddArsenal} 层兵装。",
     "parameter_labels": {
       "A1_Damage": "刀刃波伤害",
       "Dec_MoveSpeed": "减速比例",
@@ -8310,7 +8310,7 @@
   },
   "Items/Talents/Class/WraithKing/Ability_A2.TALENT.xdb": {
     "name_zh": "战斗号令",
-    "effect_zh": "为指定友方英雄施加持续 {ReflectDuration} 秒的状态：每次受伤时，对周围所有敌人造成 {A2_BaseDamage} 点伤害，自身每层兵装再增加 {TT_A2_ReflectDamage} 点，伤害按力量缩放。在己方领土施放时，也可选普通友方生物。学会“环形防御”后，目标减伤 {A2_BaseDefence}%，每层兵装再增加 {TT_DefenceAmount} 个百分点。“钢铁纪律”会增加范围并延长持续时间。",
+    "effect_zh": "为指定友方英雄施加持续 {ReflectDuration} 秒的状态：每次受伤时，对周围所有敌人造成 {A2_BaseDamage} 点物理伤害，自身每层兵装再增加 {TT_A2_ReflectDamage} 点，伤害按力量缩放。在己方领土施放时，也可选普通友方生物。学会“环形防御”后，目标减伤 {A2_BaseDefence}%，每层兵装再增加 {TT_DefenceAmount} 个百分点。“钢铁纪律”会增加范围并延长持续时间。",
     "parameter_labels": {
       "ReflectDuration": "保护持续时间",
       "A2_BaseDamage": "基础范围反击伤害",
@@ -8340,7 +8340,7 @@
   },
   "Items/Talents/Class/WraithKing/Ability_A3.TALENT.xdb": {
     "name_zh": "永恒服役",
-    "effect_zh": "补刀敌方生物时获得 {TT_AddArsenalCreep} 层兵装，击杀敌方英雄时获得 {A3_ForHero} 层。学会“战争碎片”后，获得兵装会强化下一次普攻，对主目标及周围敌人造成额外伤害：基础 {A3_BaseDamage} 点，再加每层兵装 {TT_A3_Damage} 点，均按智力缩放。",
+    "effect_zh": "补刀敌方生物时获得 {TT_AddArsenalCreep} 层兵装，击杀敌方英雄时获得 {A3_ForHero} 层。学会“战争碎片”后，获得兵装会强化下一次普攻，对主目标及周围敌人造成额外魔法伤害：基础 {A3_BaseDamage} 点，再加每层兵装 {TT_A3_Damage} 点，均按智力缩放。",
     "parameter_labels": {
       "TT_AddArsenalCreep": "击杀生物兵装层数",
       "A3_ForHero": "击杀英雄兵装层数",
@@ -8409,7 +8409,7 @@
   },
   "Items/Talents/Class/Zealot/Ability_A1.TALENT.xdb": {
     "name_zh": "仪式打击",
-    "effect_zh": "对身前敌人造成总计 {A1_Damage} 点伤害，按力量、智力中较高者缩放，由命中目标平均分摊。学会“谦卑”后，目标减速 {A1_SUP_Slow_Percentage}%；学会“沉默誓言”后，目标无法使用天赋；控制效果持续 {Silence_Duration} 秒。",
+    "effect_zh": "对身前敌人造成总计 {A1_Damage} 点物理伤害，按力量、智力中较高者缩放，由命中目标平均分摊。学会“谦卑”后，目标减速 {A1_SUP_Slow_Percentage}%；学会“沉默誓言”后，目标无法使用天赋；控制效果持续 {Silence_Duration} 秒。",
     "parameter_labels": {
       "A1_Damage": "范围总伤害",
       "A1_SUP_Slow_Percentage": "减速比例",
@@ -8654,9 +8654,9 @@
   },
   "Items/Talents/Level1/G187_AttackSpeed.TALENT.xdb": {
     "name_zh": "自然迅捷",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -8753,9 +8753,9 @@
   },
   "Items/Talents/Level2/G023_AttSpd.TALENT.xdb": {
     "name_zh": "迅速",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -8899,9 +8899,9 @@
   },
   "Items/Talents/Level2/G584_AttackSpeed.TALENT.xdb": {
     "name_zh": "勇敢勋章",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9094,9 +9094,9 @@
   },
   "Items/Talents/Level3/G191_AttackSpeed.TALENT.xdb": {
     "name_zh": "非凡迅捷",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9128,9 +9128,9 @@
   },
   "Items/Talents/Level3/G228_AttackSpeed_LifeReg.TALENT.xdb": {
     "name_zh": "迅速恢复",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n每秒生命再生增加 {Add_LifeRegAbs} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n每秒生命再生增加 {Add_LifeRegAbs} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_LifeRegAbs": "每秒生命再生增益"
     },
     "notes": []
@@ -9146,18 +9146,18 @@
   },
   "Items/Talents/Level3/G252_AttackSpeed_Stamina.TALENT.xdb": {
     "name_zh": "迅捷坚韧",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n坚韧增加 {Add_Stamina} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n坚韧增加 {Add_Stamina} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_Stamina": "坚韧增益"
     },
     "notes": []
   },
   "Items/Talents/Level3/G253_AttackSpeed_Will.TALENT.xdb": {
     "name_zh": "迅捷意志",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n意志增加 {Add_Will} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n意志增加 {Add_Will} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_Will": "意志增益"
     },
     "notes": []
@@ -9207,19 +9207,19 @@
   },
   "Items/Talents/Level3/G301_Life_AttackSpeed.TALENT.xdb": {
     "name_zh": "顽强迅捷",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
   "Items/Talents/Level3/G302_Life_Dexterity.TALENT.xdb": {
     "name_zh": "顽强机巧",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
@@ -9294,9 +9294,9 @@
   },
   "Items/Talents/Level3/G605_AttackSpeed.TALENT.xdb": {
     "name_zh": "熟练准则",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9426,19 +9426,19 @@
   },
   "Items/Talents/Level4/G080_Str-AtSpd.TALENT.xdb": {
     "name_zh": "势不可挡",
-    "effect_zh": "力量增加 {Add_Strength} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "力量增加 {Add_Strength} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Strength": "力量增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Level4/G081_Int-AtSpd.TALENT.xdb": {
     "name_zh": "思维速度",
-    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Intellect": "智力增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9521,9 +9521,9 @@
   },
   "Items/Talents/Level4/G108_AtSpd.TALENT.xdb": {
     "name_zh": "精湛技艺",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9546,10 +9546,10 @@
   },
   "Items/Talents/Level4/G147_Aspd_Energy_1.TALENT.xdb": {
     "name_zh": "野兔之魂",
-    "effect_zh": "最大能量增加 {Add_Energy} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大能量增加 {Add_Energy} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Energy": "最大能量增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9573,9 +9573,9 @@
   },
   "Items/Talents/Level4/G258_AttackSpeed_LifeReg.TALENT.xdb": {
     "name_zh": "野性迅捷",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n每秒生命再生增加 {Add_LifeRegAbs} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n每秒生命再生增加 {Add_LifeRegAbs} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_LifeRegAbs": "每秒生命再生增益"
     },
     "notes": []
@@ -9615,9 +9615,9 @@
   },
   "Items/Talents/Level4/G284_AttackSpeed.TALENT.xdb": {
     "name_zh": "迅捷秘密",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9656,10 +9656,10 @@
   },
   "Items/Talents/Level4/G452_AttackSpeed_Life.TALENT.xdb": {
     "name_zh": "巨龙迅捷",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9729,9 +9729,9 @@
   },
   "Items/Talents/Level4/G622_AtSpd.TALENT.xdb": {
     "name_zh": "骇人迅捷",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9769,9 +9769,9 @@
   },
   "Items/Talents/Level4/G640_AttackSpeed.TALENT.xdb": {
     "name_zh": "毁灭迅捷",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -9793,9 +9793,9 @@
   },
   "Items/Talents/Level4/G664_AttackSpeed.TALENT.xdb": {
     "name_zh": "观星者胆识",
-    "effect_zh": "攻速属性增加 {Add_ASpd} 点。",
+    "effect_zh": "攻速增加 {Add_ASpd} 点。",
     "parameter_labels": {
-      "Add_ASpd": "攻速属性增益"
+      "Add_ASpd": "攻速增益"
     },
     "notes": []
   },
@@ -9857,9 +9857,9 @@
   },
   "Items/Talents/Level4/G683_AttackSpeed.TALENT.xdb": {
     "name_zh": "渡鸦诡计",
-    "effect_zh": "攻速属性增加 {Add_ASpd} 点。",
+    "effect_zh": "攻速增加 {Add_ASpd} 点。",
     "parameter_labels": {
-      "Add_ASpd": "攻速属性增益"
+      "Add_ASpd": "攻速增益"
     },
     "notes": []
   },
@@ -9873,9 +9873,9 @@
   },
   "Items/Talents/Level4/G688_AtSpd.TALENT.xdb": {
     "name_zh": "登舰热情",
-    "effect_zh": "攻速属性增加 {Add_AtSpd} 点。",
+    "effect_zh": "攻速增加 {Add_AtSpd} 点。",
     "parameter_labels": {
-      "Add_AtSpd": "攻速属性增益"
+      "Add_AtSpd": "攻速增益"
     },
     "notes": []
   },
@@ -9889,9 +9889,9 @@
   },
   "Items/Talents/Level4/G694_AtSpd.TALENT.xdb": {
     "name_zh": "渴求幸运",
-    "effect_zh": "攻速属性增加 {Add_AtSpd} 点。",
+    "effect_zh": "攻速增加 {Add_AtSpd} 点。",
     "parameter_labels": {
-      "Add_AtSpd": "攻速属性增益"
+      "Add_AtSpd": "攻速增益"
     },
     "notes": []
   },
@@ -9921,18 +9921,18 @@
   },
   "Items/Talents/Level4/G709_DexOrAtSpd_Life.TALENT.xdb": {
     "name_zh": "天界守护者",
-    "effect_zh": "攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。\n最大生命增加 {Add_Life} 点。",
+    "effect_zh": "攻速、灵巧中较高的一项增加 {Add_Stat} 点。\n最大生命增加 {Add_Life} 点。",
     "parameter_labels": {
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益",
+      "Add_Stat": "攻速、灵巧中较高的一项增益",
       "Add_Life": "最大生命增益"
     },
     "notes": []
   },
   "Items/Talents/Level4/G750_AtSpd.TALENT.xdb": {
     "name_zh": "先知迅捷",
-    "effect_zh": "攻速属性增加 {Add_AtSpd} 点。",
+    "effect_zh": "攻速增加 {Add_AtSpd} 点。",
     "parameter_labels": {
-      "Add_AtSpd": "攻速属性增益"
+      "Add_AtSpd": "攻速增益"
     },
     "notes": []
   },
@@ -9946,17 +9946,17 @@
   },
   "Items/Talents/Level5/G061_AtSpd.TALENT.xdb": {
     "name_zh": "巧手",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Level5/G062_Vamp-AtSpd.TALENT.xdb": {
     "name_zh": "鲜血渴望",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n生命偷取增加 {Add_LifeDrain} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n生命偷取增加 {Add_LifeDrain} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_LifeDrain": "生命偷取增益"
     },
     "notes": []
@@ -9999,10 +9999,10 @@
   },
   "Items/Talents/Level5/G114_Life_AtSpd.TALENT.xdb": {
     "name_zh": "狼之耐力",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10046,9 +10046,9 @@
   },
   "Items/Talents/Level5/G158_Dex_AtSpd.TALENT.xdb": {
     "name_zh": "机巧天性",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n灵巧增加 {Add_Dexterity} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n灵巧增加 {Add_Dexterity} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_Dexterity": "灵巧增益"
     },
     "notes": []
@@ -10247,28 +10247,28 @@
   },
   "Items/Talents/Level5/G279_Aspd_Vamp.TALENT.xdb": {
     "name_zh": "骤然疾速",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n生命偷取增加 {Add_LifeDrain} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n生命偷取增加 {Add_LifeDrain} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_LifeDrain": "生命偷取增益"
     },
     "notes": []
   },
   "Items/Talents/Level5/G309_AttackSpeed_Life.TALENT.xdb": {
     "name_zh": "生者迅捷",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Level5/G310_Dexterity_Life.TALENT.xdb": {
     "name_zh": "生者机巧",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Dexterity} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速、灵巧中较高的一项增加 {Add_Dexterity} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_Dexterity": "攻速属性、灵巧中较高的一项增益"
+      "Add_Dexterity": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
@@ -10308,10 +10308,10 @@
   },
   "Items/Talents/Level5/G591_AtSpd.TALENT.xdb": {
     "name_zh": "迅捷典籍",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10326,10 +10326,10 @@
   },
   "Items/Talents/Level5/G595_AtSpd.TALENT.xdb": {
     "name_zh": "敏捷护符",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10344,19 +10344,19 @@
   },
   "Items/Talents/Level5/G614_Int_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "智者时代",
-    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Intellect": "智力增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
   "Items/Talents/Level5/G615_Str_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "强者时代",
-    "effect_zh": "力量增加 {Add_Strength} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "力量增加 {Add_Strength} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Strength": "力量增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
@@ -10402,9 +10402,9 @@
   },
   "Items/Talents/Level5/G699_AtSpd.TALENT.xdb": {
     "name_zh": "迅捷毁灭者",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10532,9 +10532,9 @@
   },
   "Items/Talents/Level6/G180_Aspd.TALENT.xdb": {
     "name_zh": "猞猁迅捷",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10556,19 +10556,19 @@
   },
   "Items/Talents/Level6/G205_Str_AttackSpeed.TALENT.xdb": {
     "name_zh": "野兽速度",
-    "effect_zh": "力量增加 {Add_Strength} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "力量增加 {Add_Strength} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Strength": "力量增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Level6/G206_Int_AttackSpeed.TALENT.xdb": {
     "name_zh": "博学",
-    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Intellect": "智力增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10592,9 +10592,9 @@
   },
   "Items/Talents/Level6/G209_AttackSpeed_Dexterity.TALENT.xdb": {
     "name_zh": "敏锐感官",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n灵巧增加 {Add_Dexterity} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n灵巧增加 {Add_Dexterity} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_Dexterity": "灵巧增益"
     },
     "notes": []
@@ -10689,9 +10689,9 @@
   },
   "Items/Talents/Level6/G266_AttackSpeed_StaWillViaEnemy.TALENT.xdb": {
     "name_zh": "敏捷防御",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。\n坚韧、意志中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。\n坚韧、意志中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_Stat": "坚韧、意志中较高的一项增益"
     },
     "notes": []
@@ -10731,10 +10731,10 @@
   },
   "Items/Talents/Level6/G275_Aspd_Life.TALENT.xdb": {
     "name_zh": "雪豹迅捷",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -10783,10 +10783,10 @@
   },
   "Items/Talents/Level6/G454_AttackSpeed_Life.TALENT.xdb": {
     "name_zh": "巨龙冲击",
-    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速属性、灵巧中较高的一项增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "最大生命增加 {Add_Life} 点。\n攻速、灵巧中较高的一项增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_AttackSpeed": "攻速属性、灵巧中较高的一项增益"
+      "Add_AttackSpeed": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
@@ -10800,19 +10800,19 @@
   },
   "Items/Talents/Level6/G593_IntDexOrAtSpd.TALENT.xdb": {
     "name_zh": "冠军典籍",
-    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Intellect": "智力增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
   "Items/Talents/Level6/G597_StrDexOrAtSpd.TALENT.xdb": {
     "name_zh": "威能护符",
-    "effect_zh": "力量增加 {Add_Str} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "力量增加 {Add_Str} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Str": "力量增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
@@ -10861,45 +10861,45 @@
   },
   "Items/Talents/Level6/G638_Stamina_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "坚韧捍卫者",
-    "effect_zh": "坚韧增加 {Add_Sta} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "坚韧增加 {Add_Sta} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Sta": "坚韧增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
   "Items/Talents/Level6/G639_Will_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "意志捍卫者",
-    "effect_zh": "意志增加 {Add_Will} 点。\n攻速属性、灵巧中较高的一项增加 {Add_Stat} 点。",
+    "effect_zh": "意志增加 {Add_Will} 点。\n攻速、灵巧中较高的一项增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Will": "意志增益",
-      "Add_Stat": "攻速属性、灵巧中较高的一项增益"
+      "Add_Stat": "攻速、灵巧中较高的一项增益"
     },
     "notes": []
   },
   "Items/Talents/Level6/G642_Int_AtSpd.TALENT.xdb": {
     "name_zh": "毁灭知识",
-    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速属性增加 {Add_Stat} 点。",
+    "effect_zh": "智力增加 {Add_Intellect} 点。\n攻速增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Intellect": "智力增益",
-      "Add_Stat": "攻速属性增益"
+      "Add_Stat": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Level6/G643_Str_AtSpd.TALENT.xdb": {
     "name_zh": "毁灭狂怒",
-    "effect_zh": "力量增加 {Add_Str} 点。\n攻速属性增加 {Add_Stat} 点。",
+    "effect_zh": "力量增加 {Add_Str} 点。\n攻速增加 {Add_Stat} 点。",
     "parameter_labels": {
       "Add_Str": "力量增益",
-      "Add_Stat": "攻速属性增益"
+      "Add_Stat": "攻速增益"
     },
     "notes": []
   },
   "Items/Talents/Level6/G652_AtSpd.TALENT.xdb": {
     "name_zh": "荣耀摄影师",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed} 点。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed} 点。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益"
+      "Add_AttackSpeed": "攻速增益"
     },
     "notes": []
   },
@@ -11352,12 +11352,12 @@
   },
   "Items/Talents/Level2/G608_AtSpd.TALENT.xdb": {
     "name_zh": "迅捷陀螺",
-    "effect_zh": "攻速属性先提高{Add_AtSpd}，每{Period}秒再累积{Add_AtSpdPerm}，累计部分上限{MaxAtSpd}。陀螺套装激活至少两项时，每{NaftaPeriod}秒获得{PrimeAmount} Prime。",
+    "effect_zh": "攻速先提高{Add_AtSpd}，每{Period}秒再累积{Add_AtSpdPerm}，累计部分上限{MaxAtSpd}。陀螺套装激活至少两项时，每{NaftaPeriod}秒获得{PrimeAmount} Prime。",
     "parameter_labels": {
-      "Add_AtSpd": "基础攻速属性增益",
-      "Period": "攻速属性累积间隔",
-      "Add_AtSpdPerm": "每次累计攻速属性",
-      "MaxAtSpd": "累计攻速属性上限",
+      "Add_AtSpd": "基础攻速增益",
+      "Period": "攻速累积间隔",
+      "Add_AtSpdPerm": "每次累计攻速",
+      "MaxAtSpd": "累计攻速上限",
       "NaftaPeriod": "套装Prime发放间隔",
       "PrimeAmount": "套装每次发放Prime"
     },
@@ -11499,14 +11499,14 @@
   },
   "Items/Talents/Level3/G437_Aspd_inc_int.TALENT.xdb": {
     "name_zh": "致命学识",
-    "effect_zh": "智力提高{Add_Int}，攻速属性先提高{Add_AttackSpeed}。每击杀普通生物再累积{Add_AttackSpeedForCreep}攻速属性，击杀英雄则累积{Add_AttackSpeedForHero}，累计部分最多{AttackSpeedMax}。",
+    "effect_zh": "智力提高{Add_Int}，攻速先提高{Add_AttackSpeed}。每击杀普通生物再累积{Add_AttackSpeedForCreep}攻速，击杀英雄则累积{Add_AttackSpeedForHero}，累计部分最多{AttackSpeedMax}。",
     "parameter_labels": {
       "Add_Int": "智力增益",
-      "Add_AttackSpeed": "基础攻速属性增益",
-      "Add_AttackSpeedForCreep": "每次击杀普通生物累计攻速属性",
-      "Add_AttackSpeedForHero": "每次击杀英雄累计攻速属性",
-      "AttackSpeedMax": "累计攻速属性上限",
-      "TT_G437_Increment": "当前累计攻速属性增益（显示用）"
+      "Add_AttackSpeed": "基础攻速增益",
+      "Add_AttackSpeedForCreep": "每次击杀普通生物累计攻速",
+      "Add_AttackSpeedForHero": "每次击杀英雄累计攻速",
+      "AttackSpeedMax": "累计攻速上限",
+      "TT_G437_Increment": "当前累计攻速增益（显示用）"
     },
     "notes": []
   },
@@ -11571,7 +11571,7 @@
   },
   "Items/Talents/Level3/G565_AxesStr.TALENT.xdb": {
     "name_zh": "诡诈优势",
-    "effect_zh": "攻速属性与灵巧中较高者提高{Add_DexOrAtSpd}。主动对指定士兵或怪物造成{G566_Damage}纯粹伤害；若这次攻击使目标死亡，额外获得{NaftaBonus} Prime。同类产币天赋共同的额外Prime累计上限为{MaxNaftaGain}。",
+    "effect_zh": "攻速与灵巧中较高者提高{Add_DexOrAtSpd}。主动对指定士兵或怪物造成{G566_Damage}纯粹伤害；若这次攻击使目标死亡，额外获得{NaftaBonus} Prime。同类产币天赋共同的额外Prime累计上限为{MaxNaftaGain}。",
     "parameter_labels": {
       "Add_DexOrAtSpd": "较高进攻副属性增益",
       "G566_Damage": "主动对士兵怪物的纯粹伤害",
@@ -11617,7 +11617,7 @@
   },
   "Items/Talents/Level3/G758_SrtOrInt.TALENT.xdb": {
     "name_zh": "刽子手判决",
-    "effect_zh": "普通攻击为目标施加{Handicup_Function}层伤残，持续{Handicup_LifeTime}秒；未强化基础为{Handicup}层。累计至{Handicup_StartExecute}层时触发处决，造成{Execute_Damage}纯粹伤害，并移除伤残。对应部件还可使处决降低坚韧、意志或两者各{DecDefAmount}，持续{Execute_Duration}秒；拥有相关刽子手部件的附近友方英雄还可获得{Haste_AtkSpdAmount}攻速属性，持续{Haste_Duration}秒。",
+    "effect_zh": "普通攻击为目标施加{Handicup_Function}层伤残，持续{Handicup_LifeTime}秒；未强化基础为{Handicup}层。累计至{Handicup_StartExecute}层时触发处决，造成{Execute_Damage}纯粹伤害，并移除伤残。对应部件还可使处决降低坚韧、意志或两者各{DecDefAmount}，持续{Execute_Duration}秒；拥有相关刽子手部件的附近友方英雄还可获得{Haste_AtkSpdAmount}攻速，持续{Haste_Duration}秒。",
     "parameter_labels": {
       "Handicup_Function": "当前配置每次普攻施加伤残层数",
       "Handicup_LifeTime": "伤残持续时间",
@@ -11626,7 +11626,7 @@
       "Execute_Damage": "处决纯粹伤害",
       "DecDefAmount": "处决追加防御削减",
       "Execute_Duration": "防御削减持续时间",
-      "Haste_AtkSpdAmount": "处决触发友军攻速属性增益",
+      "Haste_AtkSpdAmount": "处决触发友军攻速增益",
       "Haste_Duration": "友军攻速增益持续时间"
     },
     "notes": [
@@ -11752,9 +11752,9 @@
   },
   "Items/Talents/Level4/G306_K_LifeDrain_AttackSpeed.TALENT.xdb": {
     "name_zh": "放血者",
-    "effect_zh": "攻速属性提高{Add_AttackSpeed}，生命偷取提高{Add_LifeDrain}。对应套装完整激活后，普通攻击有{AbilityChance}%概率使敌人眩晕{Stun_Duration}秒，此触发的恢复间隔为{G306_Cooldown}秒。",
+    "effect_zh": "攻速提高{Add_AttackSpeed}，生命偷取提高{Add_LifeDrain}。对应套装完整激活后，普通攻击有{AbilityChance}%概率使敌人眩晕{Stun_Duration}秒，此触发的恢复间隔为{G306_Cooldown}秒。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_LifeDrain": "固定量生命偷取增益",
       "AbilityChance": "普攻眩晕概率百分比",
       "Stun_Duration": "触发眩晕持续时间",
@@ -11824,9 +11824,9 @@
   },
   "Items/Talents/Level4/G391_LifeDrain_AttackSpeed.TALENT.xdb": {
     "name_zh": "贪食",
-    "effect_zh": "攻速属性提高{Add_AttackSpeed}，生命偷取提高{Add_LifeDrain}；在己方土地上，生命偷取再提高{Add_LifeDrain_NT}。",
+    "effect_zh": "攻速提高{Add_AttackSpeed}，生命偷取提高{Add_LifeDrain}；在己方土地上，生命偷取再提高{Add_LifeDrain_NT}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "Add_LifeDrain": "基础固定量生命偷取增益",
       "Add_LifeDrain_NT": "己方土地额外固定量生命偷取"
     },
@@ -11846,13 +11846,13 @@
   },
   "Items/Talents/Level4/G436_Aspd_inc_Life.TALENT.xdb": {
     "name_zh": "日益狂暴",
-    "effect_zh": "最大生命提高{Add_Life}，攻速属性先提高{Add_Aspd}，之后每分钟再累积{Add_AspdPerm}，累计部分上限{MaxAspd}。",
+    "effect_zh": "最大生命提高{Add_Life}，攻速先提高{Add_Aspd}，之后每分钟再累积{Add_AspdPerm}，累计部分上限{MaxAspd}。",
     "parameter_labels": {
       "Add_Life": "最大生命增益",
-      "Add_Aspd": "基础攻速属性增益",
-      "Add_AspdPerm": "每分钟累计攻速属性",
-      "MaxAspd": "累计攻速属性上限",
-      "TT_G436_Increment": "当前累计攻速属性增益（显示用）"
+      "Add_Aspd": "基础攻速增益",
+      "Add_AspdPerm": "每分钟累计攻速",
+      "MaxAspd": "累计攻速上限",
+      "TT_G436_Increment": "当前累计攻速增益（显示用）"
     },
     "notes": []
   },
@@ -12002,7 +12002,7 @@
   },
   "Items/Talents/Level4/G769_Move_AtSpdOrDex.TALENT.xdb": {
     "name_zh": "速度时刻",
-    "effect_zh": "基础移动速度提高{Add_MoveSpeed}，同类被动移动速度增益只取最高值；攻速属性与灵巧中较高者提高{AddStat}。对应组合生效时，“良机”处于冷却期间，基础移动速度再提高{G769_BonusMS}。",
+    "effect_zh": "基础移动速度提高{Add_MoveSpeed}，同类被动移动速度增益只取最高值；攻速与灵巧中较高者提高{AddStat}。对应组合生效时，“良机”处于冷却期间，基础移动速度再提高{G769_BonusMS}。",
     "parameter_labels": {
       "Add_MoveSpeed": "基础移动速度增益",
       "AddStat": "较高进攻副属性增益",
@@ -12040,9 +12040,9 @@
   },
   "Items/Talents/Level5/G064_PureDmgProc-AtSpd.TALENT.xdb": {
     "name_zh": "无端残暴",
-    "effect_zh": "攻速属性提高{Add_AttackSpeed}。普通攻击有{AbilityChance}%概率额外造成{PureDamageAmount}纯粹伤害。",
+    "effect_zh": "攻速提高{Add_AttackSpeed}。普通攻击有{AbilityChance}%概率额外造成{PureDamageAmount}纯粹伤害。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增益",
+      "Add_AttackSpeed": "攻速增益",
       "AbilityChance": "附加伤害触发概率百分比",
       "PureDamageAmount": "触发的纯粹伤害"
     },
@@ -12179,11 +12179,11 @@
   },
   "Items/Talents/Level5/G381_Str_AttackSpeed.TALENT.xdb": {
     "name_zh": "兽性不驯",
-    "effect_zh": "力量提高{Add_Strength}，攻速属性提高{Add_AttackSpeed}；在己方土地上，攻速属性再提高{Add_AttackSpeed_NT}。",
+    "effect_zh": "力量提高{Add_Strength}，攻速提高{Add_AttackSpeed}；在己方土地上，攻速再提高{Add_AttackSpeed_NT}。",
     "parameter_labels": {
       "Add_Strength": "力量增益",
-      "Add_AttackSpeed": "基础攻速属性增益",
-      "Add_AttackSpeed_NT": "己方土地额外攻速属性"
+      "Add_AttackSpeed": "基础攻速增益",
+      "Add_AttackSpeed_NT": "己方土地额外攻速"
     },
     "notes": []
   },
@@ -12212,14 +12212,14 @@
   },
   "Items/Talents/Level5/G445_Aspd_inc_DrainLife.TALENT.xdb": {
     "name_zh": "慑人迅捷",
-    "effect_zh": "攻速属性先提高{Add_AttackSpeed}，生命偷取提高{Add_DrainLife}。每击杀普通生物，攻速属性再累积{Add_AttackSpeedForCreep}；击杀英雄则累积{Add_AttackSpeedForHero}，累计部分上限{AttackSpeedMax}。",
+    "effect_zh": "攻速先提高{Add_AttackSpeed}，生命偷取提高{Add_DrainLife}。每击杀普通生物，攻速再累积{Add_AttackSpeedForCreep}；击杀英雄则累积{Add_AttackSpeedForHero}，累计部分上限{AttackSpeedMax}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "基础攻速属性增益",
+      "Add_AttackSpeed": "基础攻速增益",
       "Add_DrainLife": "固定量生命偷取增益",
-      "Add_AttackSpeedForCreep": "击杀普通生物累计攻速属性",
-      "Add_AttackSpeedForHero": "击杀英雄累计攻速属性",
-      "AttackSpeedMax": "累计攻速属性上限",
-      "TT_G445_Increment": "当前累计攻速属性增益（显示用）"
+      "Add_AttackSpeedForCreep": "击杀普通生物累计攻速",
+      "Add_AttackSpeedForHero": "击杀英雄累计攻速",
+      "AttackSpeedMax": "累计攻速上限",
+      "TT_G445_Increment": "当前累计攻速增益（显示用）"
     },
     "notes": []
   },
@@ -12295,7 +12295,7 @@
   },
   "Items/Talents/Level5/G641_StrOrInt.TALENT.xdb": {
     "name_zh": "毁灭者之力",
-    "effect_zh": "力量与智力中较高者提高{Add_Stat}。套装激活两项时，攻速属性与灵巧中较高者额外提高{Add_Stat_RedSet}；三项时解锁主动能力：在{Duration}秒内，普攻额外造成目标最大生命{DmgPercent}%的纯粹伤害，对首领改为{DmgPercentBoss}%。",
+    "effect_zh": "力量与智力中较高者提高{Add_Stat}。套装激活两项时，攻速与灵巧中较高者额外提高{Add_Stat_RedSet}；三项时解锁主动能力：在{Duration}秒内，普攻额外造成目标最大生命{DmgPercent}%的纯粹伤害，对首领改为{DmgPercentBoss}%。",
     "parameter_labels": {
       "Add_Stat": "基础较高攻击属性增益",
       "Add_Stat_RedSet": "两项套装较高进攻副属性增益",
@@ -12401,9 +12401,9 @@
   },
   "Items/Talents/Level5/G786_AtSpd.TALENT.xdb": {
     "name_zh": "机敏者之谜",
-    "effect_zh": "攻速属性提高{Add_AtSpd}。对应组合生效时，“金字塔之谜”的复活时间缩短幅度额外增加{G786_Add_Ressurect_Reduction}个百分点。",
+    "effect_zh": "攻速提高{Add_AtSpd}。对应组合生效时，“金字塔之谜”的复活时间缩短幅度额外增加{G786_Add_Ressurect_Reduction}个百分点。",
     "parameter_labels": {
-      "Add_AtSpd": "攻速属性增益",
+      "Add_AtSpd": "攻速增益",
       "G786_Add_Ressurect_Reduction": "追加复活时间缩短百分点"
     },
     "notes": []
@@ -12438,9 +12438,9 @@
   },
   "Items/Talents/Level6/G222_Aura_AttackSpeed.TALENT.xdb": {
     "name_zh": "迅猛攻势",
-    "effect_zh": "周围所有友军攻速属性提高{Add_AttackSpeed}。",
+    "effect_zh": "周围所有友军攻速提高{Add_AttackSpeed}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "光环攻速属性增益"
+      "Add_AttackSpeed": "光环攻速增益"
     },
     "notes": []
   },
@@ -12501,7 +12501,7 @@
   },
   "Items/Talents/Level6/G430_Int_inc_Aspd_Dex.TALENT.xdb": {
     "name_zh": "杀戮逻辑",
-    "effect_zh": "智力先提高{Add_Intellect}，攻速属性与灵巧中较高者提高{Add_Stat}。每击杀普通生物再累积{Add_IntellectForCreep}智力，击杀英雄则累积{Add_IntellectForHero}，累计智力部分上限{MaxIntellect}。",
+    "effect_zh": "智力先提高{Add_Intellect}，攻速与灵巧中较高者提高{Add_Stat}。每击杀普通生物再累积{Add_IntellectForCreep}智力，击杀英雄则累积{Add_IntellectForHero}，累计智力部分上限{MaxIntellect}。",
     "parameter_labels": {
       "Add_Intellect": "基础智力增益",
       "Add_Stat": "较高进攻副属性增益",
@@ -12610,7 +12610,7 @@
   },
   "Items/Talents/Level6/G741_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "机敏符文",
-    "effect_zh": "攻速属性与灵巧中较高者提高{Add_DexSpd}。",
+    "effect_zh": "攻速与灵巧中较高者提高{Add_DexSpd}。",
     "parameter_labels": {
       "Add_DexSpd": "较高进攻副属性增益"
     },
@@ -12639,7 +12639,7 @@
   },
   "Items/Talents/Level6/G781_AtSpdOrDex.TALENT.xdb": {
     "name_zh": "迅疾小跑",
-    "effect_zh": "攻速属性与灵巧中较高者提高{Add_Stat}。对应组合生效时，使用“速度马蹄铁”套装中的主动天赋，会再提高较高者{G781_BuffAmount}，持续{G780_G781_BuffDuration}秒。",
+    "effect_zh": "攻速与灵巧中较高者提高{Add_Stat}。对应组合生效时，使用“速度马蹄铁”套装中的主动天赋，会再提高较高者{G781_BuffAmount}，持续{G780_G781_BuffDuration}秒。",
     "parameter_labels": {
       "Add_Stat": "基础较高进攻副属性增益",
       "G781_BuffAmount": "使用套装主动后的副属性增益",
@@ -12722,10 +12722,10 @@
   },
   "Items/Talents/Level1/G403_AttackSpd_AttackSpd.TALENT.xdb": {
     "name_zh": "蝶之轻盈",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed}；在敌方或中立土地上，再增加 {Add_AttackSpeed_NotNT}。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed}；在敌方或中立土地上，再增加 {Add_AttackSpeed_NotNT}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
-      "Add_AttackSpeed_NotNT": "敌方或中立土地额外攻速属性"
+      "Add_AttackSpeed": "攻速加成",
+      "Add_AttackSpeed_NotNT": "敌方或中立土地额外攻速"
     },
     "notes": []
   },
@@ -13180,10 +13180,10 @@
   },
   "Items/Talents/Level3/G393_AttackSpeed.TALENT.xdb": {
     "name_zh": "原初身法",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed}；在己方土地上，再增加 {Add_AttackSpeed_NT}。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed}；在己方土地上，再增加 {Add_AttackSpeed_NT}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
-      "Add_AttackSpeed_NT": "己方土地额外攻速属性"
+      "Add_AttackSpeed": "攻速加成",
+      "Add_AttackSpeed_NT": "己方土地额外攻速"
     },
     "notes": []
   },
@@ -13199,14 +13199,14 @@
   },
   "Items/Talents/Level3/G438_Aspd_inc_str.TALENT.xdb": {
     "name_zh": "致命力量",
-    "effect_zh": "力量增加 {Add_Str}，攻速属性先增加 {Add_AttackSpeed}。每亲手击杀一个非英雄生物，攻速属性再增加 {Add_AttackSpeedForCreep}；击杀敌方英雄则增加 {Add_AttackSpeedForHero}，累计追加部分最多 {AttackSpeedMax}。已有积累时，追加值为 {TT_G438_Increment}。",
+    "effect_zh": "力量增加 {Add_Str}，攻速先增加 {Add_AttackSpeed}。每亲手击杀一个非英雄生物，攻速再增加 {Add_AttackSpeedForCreep}；击杀敌方英雄则增加 {Add_AttackSpeedForHero}，累计追加部分最多 {AttackSpeedMax}。已有积累时，追加值为 {TT_G438_Increment}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
-      "Add_AttackSpeedForCreep": "击杀普通生物累计攻速属性",
-      "Add_AttackSpeedForHero": "击杀英雄累计攻速属性",
+      "Add_AttackSpeed": "攻速加成",
+      "Add_AttackSpeedForCreep": "击杀普通生物累计攻速",
+      "Add_AttackSpeedForHero": "击杀英雄累计攻速",
       "Add_Str": "力量加成",
-      "AttackSpeedMax": "累计攻速属性上限",
-      "TT_G438_Increment": "当前击杀累计攻速属性追加值"
+      "AttackSpeedMax": "累计攻速上限",
+      "TT_G438_Increment": "当前击杀累计攻速追加值"
     },
     "notes": []
   },
@@ -13387,13 +13387,13 @@
   },
   "Items/Talents/Level4/G153_IncrAspd-perKill.TALENT.xdb": {
     "name_zh": "身法训练",
-    "effect_zh": "攻速属性先增加 {Add_AttackSpeed}。每亲手击杀一个非英雄生物，再增加 {Add_AttackSpeedForCreep}；击杀敌方英雄则增加 {Add_AttackSpeedForHero}，累计追加部分最多 {AttackSpeedMax}。已有积累时，追加值为 {TT_G153_Increment}。",
+    "effect_zh": "攻速先增加 {Add_AttackSpeed}。每亲手击杀一个非英雄生物，再增加 {Add_AttackSpeedForCreep}；击杀敌方英雄则增加 {Add_AttackSpeedForHero}，累计追加部分最多 {AttackSpeedMax}。已有积累时，追加值为 {TT_G153_Increment}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
-      "Add_AttackSpeedForCreep": "击杀普通生物累计攻速属性",
-      "Add_AttackSpeedForHero": "击杀英雄累计攻速属性",
-      "AttackSpeedMax": "累计攻速属性上限",
-      "TT_G153_Increment": "当前击杀累计攻速属性追加值"
+      "Add_AttackSpeed": "攻速加成",
+      "Add_AttackSpeedForCreep": "击杀普通生物累计攻速",
+      "Add_AttackSpeedForHero": "击杀英雄累计攻速",
+      "AttackSpeedMax": "累计攻速上限",
+      "TT_G153_Increment": "当前击杀累计攻速追加值"
     },
     "notes": []
   },
@@ -13407,9 +13407,9 @@
   },
   "Items/Talents/Level4/G196_AttackSpeed_MvSpeed.TALENT.xdb": {
     "name_zh": "轻快",
-    "effect_zh": "基础移动速度属性增加 {Add_MoveSpeed}；同类被动移动速度增益只取最高值。攻速属性增加 {Add_AttackSpeed}。",
+    "effect_zh": "基础移动速度属性增加 {Add_MoveSpeed}；同类被动移动速度增益只取最高值。攻速增加 {Add_AttackSpeed}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
+      "Add_AttackSpeed": "攻速加成",
       "Add_MoveSpeed": "基础移动速度属性增量"
     },
     "notes": []
@@ -13693,9 +13693,9 @@
   },
   "Items/Talents/Level4/G761_AA_Str.TALENT.xdb": {
     "name_zh": "刽子手的无情",
-    "effect_zh": "对应组合生效时，「处决」使附近同时拥有「刽子手判决」和「刽子手的无情」的友方英雄，攻速属性增加 {Haste_AtkSpdAmount}，持续 {Haste_Duration} 秒。不与「刽子手的不屈」提供的同类效果叠加。",
+    "effect_zh": "对应组合生效时，「处决」使附近同时拥有「刽子手判决」和「刽子手的无情」的友方英雄，攻速增加 {Haste_AtkSpdAmount}，持续 {Haste_Duration} 秒。不与「刽子手的不屈」提供的同类效果叠加。",
     "parameter_labels": {
-      "Haste_AtkSpdAmount": "处决触发友军攻速属性增益",
+      "Haste_AtkSpdAmount": "处决触发友军攻速增益",
       "Haste_Duration": "结束后速度变化持续时间"
     },
     "notes": []
@@ -13790,7 +13790,7 @@
   },
   "Items/Talents/Level5/G240_BalanceFlagpoles.TALENT.xdb": {
     "name_zh": "战术计算",
-    "effect_zh": "己方每控制 {TT_TerrainStepPercent}% 的领土，自身攻速属性与灵巧各增加 {TT_StatPerStep}；敌方每控制同样比例的领土，自身坚韧与意志各增加 {TT_StatPerStep}。",
+    "effect_zh": "己方每控制 {TT_TerrainStepPercent}% 的领土，自身攻速与灵巧各增加 {TT_StatPerStep}；敌方每控制同样比例的领土，自身坚韧与意志各增加 {TT_StatPerStep}。",
     "parameter_labels": {
       "TT_StatPerStep": "每档领土比例对应的属性加成",
       "TT_TerrainStepPercent": "属性加成对应的领土百分比档位"
@@ -13856,10 +13856,10 @@
   },
   "Items/Talents/Level5/G382_Int_AttackSpeed.TALENT.xdb": {
     "name_zh": "野兽直觉",
-    "effect_zh": "智力增加 {Add_Intellect}，攻速属性增加 {Add_AttackSpeed}；在己方土地上，攻速属性再增加 {Add_AttackSpeed_NT}。",
+    "effect_zh": "智力增加 {Add_Intellect}，攻速增加 {Add_AttackSpeed}；在己方土地上，攻速再增加 {Add_AttackSpeed_NT}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
-      "Add_AttackSpeed_NT": "己方土地额外攻速属性",
+      "Add_AttackSpeed": "攻速加成",
+      "Add_AttackSpeed_NT": "己方土地额外攻速",
       "Add_Intellect": "智力加成"
     },
     "notes": []
@@ -13974,7 +13974,7 @@
   },
   "Items/Talents/Level5/G647_SpdOrDex_Life.TALENT.xdb": {
     "name_zh": "堡垒突袭",
-    "effect_zh": "最大生命增加 {Add_Health}，攻速属性与灵巧中较高的一项增加 {Add_Stat}。套装至少一项：附近友方防御塔对英雄的伤害提高 {TowerDamagePercent}%，敌方塔则降低同样比例。至少两项：力量与智力中较高的一项增加 {Add_Stat_RedSet}。至少三项：解锁主动效果，对指定塔作用 {TowerDuration} 秒；敌方塔不能攻击，友方塔无敌。若目标塔已受敌方「堡垒突袭」影响，本次只抵消该敌方效果，不再施加新效果。",
+    "effect_zh": "最大生命增加 {Add_Health}，攻速与灵巧中较高的一项增加 {Add_Stat}。套装至少一项：附近友方防御塔对英雄的伤害提高 {TowerDamagePercent}%，敌方塔则降低同样比例。至少两项：力量与智力中较高的一项增加 {Add_Stat_RedSet}。至少三项：解锁主动效果，对指定塔作用 {TowerDuration} 秒；敌方塔不能攻击，友方塔无敌。若目标塔已受敌方「堡垒突袭」影响，本次只抵消该敌方效果，不再施加新效果。",
     "parameter_labels": {
       "Add_Health": "最大生命增益",
       "Add_Stat": "两项属性中较高一项的加成（具体属性对见正文）",
@@ -13988,7 +13988,7 @@
   },
   "Items/Talents/Level5/G666_EnemyAoeDmg_StrOrInt_Life.TALENT.xdb": {
     "name_zh": "占星者之怒",
-    "effect_zh": "力量与智力中较高的一项增加 {Add_Stat}，最大生命增加 {Add_Health}。套装激活至少两项时，在己方或中立土地上，攻速属性与灵巧中较高的一项增加 {Add_Stat_RedSet}；至少三项时解锁主动效果：等待 {DelayTimeBase} 秒后，对指定区域敌人造成其最大生命 {Percentage}% 的伤害，将敌方土地变为中立，并杀死敌方士兵及弱小怪物。使用后 {Redset8_CDTime} 秒内，友军不能使用「传奇预兆」组的天赋。",
+    "effect_zh": "力量与智力中较高的一项增加 {Add_Stat}，最大生命增加 {Add_Health}。套装激活至少两项时，在己方或中立土地上，攻速与灵巧中较高的一项增加 {Add_Stat_RedSet}；至少三项时解锁主动效果：等待 {DelayTimeBase} 秒后，对指定区域敌人造成其最大生命 {Percentage}% 的伤害，将敌方土地变为中立，并杀死敌方士兵及弱小怪物。使用后 {Redset8_CDTime} 秒内，友军不能使用「传奇预兆」组的天赋。",
     "parameter_labels": {
       "Add_Health": "最大生命增益",
       "Add_Stat": "两项属性中较高一项的加成（具体属性对见正文）",
@@ -14018,7 +14018,7 @@
   },
   "Items/Talents/Level5/G711_SpdOrDex_SummonBuff.TALENT.xdb": {
     "name_zh": "分身召唤者",
-    "effect_zh": "攻速属性与灵巧中较高的一项增加 {Add_Stat}。 共享规则：激活2项：召唤物的各项基础属性提高{Add_SummonBuff_TT}。激活3项：解锁“野兽召唤师”的主动使用，冷却为{SummonCooldown}秒。",
+    "effect_zh": "攻速与灵巧中较高的一项增加 {Add_Stat}。 共享规则：激活2项：召唤物的各项基础属性提高{Add_SummonBuff_TT}。激活3项：解锁“野兽召唤师”的主动使用，冷却为{SummonCooldown}秒。",
     "parameter_labels": {
       "Add_Stat": "两项属性中较高一项的加成（具体属性对见正文）",
       "Add_SummonBuff_TT": "召唤物各基础属性增益",
@@ -14031,7 +14031,7 @@
   },
   "Items/Talents/Level5/G727_SpdOrDex.TALENT.xdb": {
     "name_zh": "炼金师的热忱",
-    "effect_zh": "最大生命增加 {Add_Life}，攻速属性与灵巧中较高的一项增加 {Add_Stat}。激活本项时获得一瓶迅捷药剂；迅捷药剂的移动速度增幅额外增加 {G727_Haste_Percent} 个百分点。 共享规则：激活2项：商店全部物品价格降低{Discount2}%。激活3项：价格总降幅提高到{Discount3}%。",
+    "effect_zh": "最大生命增加 {Add_Life}，攻速与灵巧中较高的一项增加 {Add_Stat}。激活本项时获得一瓶迅捷药剂；迅捷药剂的移动速度增幅额外增加 {G727_Haste_Percent} 个百分点。 共享规则：激活2项：商店全部物品价格降低{Discount2}%。激活3项：价格总降幅提高到{Discount3}%。",
     "parameter_labels": {
       "Add_Life": "最大生命加成",
       "Add_Stat": "两项属性中较高一项的加成（具体属性对见正文）",
@@ -14139,7 +14139,7 @@
   },
   "Items/Talents/Level6/G317_K_Life_AttackSpeed.TALENT.xdb": {
     "name_zh": "生命尖锋",
-    "effect_zh": "最大生命增加 {Add_Life}，攻速属性与灵巧中较高的一项增加 {Add_Stat}。集齐对应套装后，死亡时自动触发：等待 {WaitTime} 秒，在死亡位置复生，恢复 {HealAmount} 生命；该复生效果的恢复时间为 {G317_Cooldown} 秒。",
+    "effect_zh": "最大生命增加 {Add_Life}，攻速与灵巧中较高的一项增加 {Add_Stat}。集齐对应套装后，死亡时自动触发：等待 {WaitTime} 秒，在死亡位置复生，恢复 {HealAmount} 生命；该复生效果的恢复时间为 {G317_Cooldown} 秒。",
     "parameter_labels": {
       "Add_Life": "最大生命加成",
       "Add_Stat": "两项属性中较高一项的加成（具体属性对见正文）",
@@ -14187,17 +14187,17 @@
   },
   "Items/Talents/Level6/G388_AttackSpeed_Life.TALENT.xdb": {
     "name_zh": "猎手身法",
-    "effect_zh": "最大生命增加 {Add_Life}，攻速属性增加 {Add_AttackSpeed}；在己方土地上，攻速属性再增加 {Add_AttackSpeed_NT}。",
+    "effect_zh": "最大生命增加 {Add_Life}，攻速增加 {Add_AttackSpeed}；在己方土地上，攻速再增加 {Add_AttackSpeed_NT}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性加成",
-      "Add_AttackSpeed_NT": "己方土地额外攻速属性",
+      "Add_AttackSpeed": "攻速加成",
+      "Add_AttackSpeed_NT": "己方土地额外攻速",
       "Add_Life": "最大生命加成"
     },
     "notes": []
   },
   "Items/Talents/Level6/G431_Str_inc_Aspd_Dex.TALENT.xdb": {
     "name_zh": "杀戮狂怒",
-    "effect_zh": "攻速属性与灵巧中较高的一项增加 {Add_Stat}，力量先增加 {Add_Str}。每亲手击杀一个非英雄生物，力量再增加 {Add_StrForCreep}；击杀敌方英雄则增加 {Add_StrForHero}，累计追加部分最多 {MaxStr}。已有积累时，追加值为 {TT_G431_Increment}。",
+    "effect_zh": "攻速与灵巧中较高的一项增加 {Add_Stat}，力量先增加 {Add_Str}。每亲手击杀一个非英雄生物，力量再增加 {Add_StrForCreep}；击杀敌方英雄则增加 {Add_StrForHero}，累计追加部分最多 {MaxStr}。已有积累时，追加值为 {TT_G431_Increment}。",
     "parameter_labels": {
       "Add_Stat": "两项属性中较高一项的加成（具体属性对见正文）",
       "Add_Str": "力量加成",
@@ -14283,7 +14283,7 @@
   },
   "Items/Talents/Level6/G712_Str_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "怪物召唤者",
-    "effect_zh": "力量增加 {Add_Strength}，攻速属性与灵巧中较高的一项增加 {Add_DexSpd}。 共享规则：激活2项：召唤物的各项基础属性提高{Add_SummonBuff_TT}。激活3项：解锁“野兽召唤师”的主动使用，冷却为{SummonCooldown}秒。",
+    "effect_zh": "力量增加 {Add_Strength}，攻速与灵巧中较高的一项增加 {Add_DexSpd}。 共享规则：激活2项：召唤物的各项基础属性提高{Add_SummonBuff_TT}。激活3项：解锁“野兽召唤师”的主动使用，冷却为{SummonCooldown}秒。",
     "parameter_labels": {
       "Add_DexSpd": "较高进攻副属性增益",
       "Add_Strength": "力量加成",
@@ -14310,7 +14310,7 @@
   },
   "Items/Talents/Level6/G748_Str_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "威能化身",
-    "effect_zh": "力量增加 {Add_Str}，攻速属性与灵巧中较高的一项增加 {Add_DexSpd}。 共享规则：激活2项：移动速度提高{Redset7_8_MoveSpeed}。激活3项：解锁“似曾相识”的主动使用。激活4项：用于记录受伤的回溯时间与护盾换算比例都提高{TTIncrease_ShieldAndPeriod}%。",
+    "effect_zh": "力量增加 {Add_Str}，攻速与灵巧中较高的一项增加 {Add_DexSpd}。 共享规则：激活2项：移动速度提高{Redset7_8_MoveSpeed}。激活3项：解锁“似曾相识”的主动使用。激活4项：用于记录受伤的回溯时间与护盾换算比例都提高{TTIncrease_ShieldAndPeriod}%。",
     "parameter_labels": {
       "Add_DexSpd": "较高进攻副属性增益",
       "Add_Str": "力量加成",
@@ -14697,9 +14697,9 @@
   },
   "Items/Talents/Level2/G457_AtSpdOrDex.TALENT.xdb": {
     "name_zh": "恐怖执着",
-    "effect_zh": "攻速属性与灵巧中的较高者增加 {Add_AtSpdOrDex}。“恐惧诅咒”额外使目标生命恢复降低 {MortalStrike_Amount}%。",
+    "effect_zh": "攻速与灵巧中的较高者增加 {Add_AtSpdOrDex}。“恐惧诅咒”额外使目标生命恢复降低 {MortalStrike_Amount}%。",
     "parameter_labels": {
-      "Add_AtSpdOrDex": "较高攻速属性或灵巧增量",
+      "Add_AtSpdOrDex": "较高攻速或灵巧增量",
       "MortalStrike_Amount": "目标生命恢复削弱比例"
     },
     "notes": []
@@ -14788,17 +14788,17 @@
   },
   "Items/Talents/Level2/G724_AtSpdOrDex.TALENT.xdb": {
     "name_zh": "炼金师的洞察",
-    "effect_zh": "灯具提供的视野可越过障碍；学习时获得一盏魔法灯。攻速属性与灵巧中的较高者增加 {Add_Stat}。",
+    "effect_zh": "灯具提供的视野可越过障碍；学习时获得一盏魔法灯。攻速与灵巧中的较高者增加 {Add_Stat}。",
     "parameter_labels": {
-      "Add_Stat": "较高攻速属性或灵巧增量"
+      "Add_Stat": "较高攻速或灵巧增量"
     },
     "notes": []
   },
   "Items/Talents/Level2/G751_AtSpdOrDex.TALENT.xdb": {
     "name_zh": "魔鬼诡计",
-    "effect_zh": "攻速属性与灵巧中的较高者增加 {AddStat}。",
+    "effect_zh": "攻速与灵巧中的较高者增加 {AddStat}。",
     "parameter_labels": {
-      "AddStat": "较高攻速属性或灵巧增量"
+      "AddStat": "较高攻速或灵巧增量"
     },
     "notes": []
   },
@@ -15362,9 +15362,9 @@
   },
   "Items/Talents/Level4/G715_AtSpd.TALENT.xdb": {
     "name_zh": "迅捷解放者",
-    "effect_zh": "攻速属性增加 {Add_AtSpd}。",
+    "effect_zh": "攻速增加 {Add_AtSpd}。",
     "parameter_labels": {
-      "Add_AtSpd": "攻速属性增量"
+      "Add_AtSpd": "攻速增量"
     },
     "notes": []
   },
@@ -15378,18 +15378,18 @@
   },
   "Items/Talents/Level4/G745_AtSpd_StrOrInt.TALENT.xdb": {
     "name_zh": "敏捷之相",
-    "effect_zh": "攻速属性增加 {Add_AtSpd}，力量与智力中的较高者增加 {Add_Stat}。",
+    "effect_zh": "攻速增加 {Add_AtSpd}，力量与智力中的较高者增加 {Add_Stat}。",
     "parameter_labels": {
-      "Add_AtSpd": "攻速属性增量",
+      "Add_AtSpd": "攻速增量",
       "Add_Stat": "较高主属性增量"
     },
     "notes": []
   },
   "Items/Talents/Level4/G762_AA_Int.TALENT.xdb": {
     "name_zh": "刽子手的不屈",
-    "effect_zh": "“处决”使附近拥有“刽子手判决”及“刽子手的不屈”的友方英雄，攻速属性增加 {Haste_AtkSpdAmount}，持续 {Haste_Duration} 秒。不与“刽子手的无情”效果叠加。",
+    "effect_zh": "“处决”使附近拥有“刽子手判决”及“刽子手的不屈”的友方英雄，攻速增加 {Haste_AtkSpdAmount}，持续 {Haste_Duration} 秒。不与“刽子手的无情”效果叠加。",
     "parameter_labels": {
-      "Haste_AtkSpdAmount": "符合配装条件友军的攻速属性增量",
+      "Haste_AtkSpdAmount": "符合配装条件友军的攻速增量",
       "Haste_Duration": "攻速增益持续时间"
     },
     "notes": []
@@ -15691,10 +15691,10 @@
   },
   "Items/Talents/Level5/G670_Life_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "密林囚笼",
-    "effect_zh": "最大生命增加 {Add_Health}，攻速属性与灵巧中的较高者增加 {Add_Stat}。套装至少三项启用后，可在自己周围创造己方土地与无法走出的区域，持续 {ForestSummonLifeTime} 秒；其中友方英雄受到的伤害降低 {DamageReductionPercent}%。使用后 {Redset8_CDTime} 秒内，盟友不能使用“传奇征兆”系列的其他相关天赋。",
+    "effect_zh": "最大生命增加 {Add_Health}，攻速与灵巧中的较高者增加 {Add_Stat}。套装至少三项启用后，可在自己周围创造己方土地与无法走出的区域，持续 {ForestSummonLifeTime} 秒；其中友方英雄受到的伤害降低 {DamageReductionPercent}%。使用后 {Redset8_CDTime} 秒内，盟友不能使用“传奇征兆”系列的其他相关天赋。",
     "parameter_labels": {
       "Add_Health": "最大生命增量",
-      "Add_Stat": "较高攻速属性或灵巧增量",
+      "Add_Stat": "较高攻速或灵巧增量",
       "ForestSummonLifeTime": "封闭区域持续时间",
       "DamageReductionPercent": "区域内友军减伤比例",
       "Redset8_CDTime": "传奇征兆系列的团队联动锁定时间"
@@ -15727,9 +15727,9 @@
   },
   "Items/Talents/Level5/G731_Dex_AtSpd.TALENT.xdb": {
     "name_zh": "宁静逻辑",
-    "effect_zh": "攻速属性与灵巧中的较高者增加 {Add_DexOrAtSpd}。",
+    "effect_zh": "攻速与灵巧中的较高者增加 {Add_DexOrAtSpd}。",
     "parameter_labels": {
-      "Add_DexOrAtSpd": "较高攻速属性或灵巧增量"
+      "Add_DexOrAtSpd": "较高攻速或灵巧增量"
     },
     "notes": []
   },
@@ -15745,10 +15745,10 @@
   },
   "Items/Talents/Level5/G753_StrOrIntAtSpd.TALENT.xdb": {
     "name_zh": "怪物威能",
-    "effect_zh": "力量与智力中的较高者增加 {AddStrOrInt}，攻速属性增加 {AddAtSpd}。",
+    "effect_zh": "力量与智力中的较高者增加 {AddStrOrInt}，攻速增加 {AddAtSpd}。",
     "parameter_labels": {
       "AddStrOrInt": "较高主属性增量",
-      "AddAtSpd": "攻速属性增量"
+      "AddAtSpd": "攻速增量"
     },
     "notes": []
   },
@@ -15864,9 +15864,9 @@
   },
   "Items/Talents/Level6/G413_AttackSpd_Vamp_Vamp.TALENT.xdb": {
     "name_zh": "嗜血执念",
-    "effect_zh": "攻速属性增加 {Add_AttackSpeed}，生命偷取增加 {Add_LifeDrain}；处于敌方或中立土地时，生命偷取再增加 {Add_LifeDrain_NotNT}。",
+    "effect_zh": "攻速增加 {Add_AttackSpeed}，生命偷取增加 {Add_LifeDrain}；处于敌方或中立土地时，生命偷取再增加 {Add_LifeDrain_NotNT}。",
     "parameter_labels": {
-      "Add_AttackSpeed": "攻速属性增量",
+      "Add_AttackSpeed": "攻速增量",
       "Add_LifeDrain": "基础固定生命偷取增量",
       "Add_LifeDrain_NotNT": "非己方土地额外固定生命偷取"
     },
@@ -15951,19 +15951,19 @@
   },
   "Items/Talents/Level6/G676_TriggerShield_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "密林护符",
-    "effect_zh": "攻速属性与灵巧中的较高者增加 {Add_Stat}，最大生命增加 {Add_Life}。",
+    "effect_zh": "攻速与灵巧中的较高者增加 {Add_Stat}，最大生命增加 {Add_Life}。",
     "parameter_labels": {
-      "Add_Stat": "较高攻速属性或灵巧增量",
+      "Add_Stat": "较高攻速或灵巧增量",
       "Add_Life": "最大生命增量"
     },
     "notes": []
   },
   "Items/Talents/Level6/G713_Int_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "灵魂召唤者",
-    "effect_zh": "智力增加 {Add_Int}，攻速属性与灵巧中的较高者增加 {Add_DexSpd}。",
+    "effect_zh": "智力增加 {Add_Int}，攻速与灵巧中的较高者增加 {Add_DexSpd}。",
     "parameter_labels": {
       "Add_Int": "智力增量",
-      "Add_DexSpd": "较高攻速属性或灵巧增量"
+      "Add_DexSpd": "较高攻速或灵巧增量"
     },
     "notes": []
   },
@@ -15977,10 +15977,10 @@
   },
   "Items/Talents/Level6/G749_Int_DexOrAtSpd.TALENT.xdb": {
     "name_zh": "理智之相",
-    "effect_zh": "智力增加 {Add_Int}，攻速属性与灵巧中的较高者增加 {Add_DexSpd}。",
+    "effect_zh": "智力增加 {Add_Int}，攻速与灵巧中的较高者增加 {Add_DexSpd}。",
     "parameter_labels": {
       "Add_Int": "智力增量",
-      "Add_DexSpd": "较高攻速属性或灵巧增量"
+      "Add_DexSpd": "较高攻速或灵巧增量"
     },
     "notes": []
   },

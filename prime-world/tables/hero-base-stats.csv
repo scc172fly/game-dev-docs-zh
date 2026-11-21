@@ -4,7 +4,7 @@
 1,多克特琳娜,Doctrine,法师,辅助,力量,57,0.8,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L982
 1,多克特琳娜,Doctrine,法师,辅助,智力,56,0.6,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L998
 1,多克特琳娜,Doctrine,法师,辅助,灵巧,54,0.5,54,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L1014
-1,多克特琳娜,Doctrine,法师,辅助,攻速属性,53,0.4,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L1030
+1,多克特琳娜,Doctrine,法师,辅助,攻速,53,0.4,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L1030
 1,多克特琳娜,Doctrine,法师,辅助,坚韧,42,0.35,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L1046
 1,多克特琳娜,Doctrine,法师,辅助,意志,45,0.65,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L1062
 1,多克特琳娜,Doctrine,法师,辅助,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Alchemist/_.HROB.xdb#L1078
@@ -17,7 +17,7 @@
 2,庇护者／守护者,Defender / Guardian,辅助,法师,力量,53,0.7,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L984
 2,庇护者／守护者,Defender / Guardian,辅助,法师,智力,58,0.8,54,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1000
 2,庇护者／守护者,Defender / Guardian,辅助,法师,灵巧,55,0.5,52,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1016
-2,庇护者／守护者,Defender / Guardian,辅助,法师,攻速属性,52,0.3,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1032
+2,庇护者／守护者,Defender / Guardian,辅助,法师,攻速,52,0.3,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1032
 2,庇护者／守护者,Defender / Guardian,辅助,法师,坚韧,42,0.25,55,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1048
 2,庇护者／守护者,Defender / Guardian,辅助,法师,意志,46,0.65,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1064
 2,庇护者／守护者,Defender / Guardian,辅助,法师,生命固定再生,0,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Angel/_.HROB.xdb#L1080
@@ -30,7 +30,7 @@
 3,弓手／亚马逊,Archer / Amazon,射手,,力量,58,0.5,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1143
 3,弓手／亚马逊,Archer / Amazon,射手,,智力,58,0.5,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1159
 3,弓手／亚马逊,Archer / Amazon,射手,,灵巧,55,0.4,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1175
-3,弓手／亚马逊,Archer / Amazon,射手,,攻速属性,55,0.4,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1191
+3,弓手／亚马逊,Archer / Amazon,射手,,攻速,55,0.4,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1191
 3,弓手／亚马逊,Archer / Amazon,射手,,坚韧,41,0.45,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1207
 3,弓手／亚马逊,Archer / Amazon,射手,,意志,43,0.75,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1223
 3,弓手／亚马逊,Archer / Amazon,射手,,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Archeress/_.HROB.xdb#L1239
@@ -44,7 +44,7 @@
 4,女画师,Artiste,法师,辅助、射手,力量,55,0.3,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1089
 4,女画师,Artiste,法师,辅助、射手,智力,57,0.7,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1105
 4,女画师,Artiste,法师,辅助、射手,灵巧,49,0.3,49,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1121
-4,女画师,Artiste,法师,辅助、射手,攻速属性,56,0.4,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1137
+4,女画师,Artiste,法师,辅助、射手,攻速,56,0.4,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1137
 4,女画师,Artiste,法师,辅助、射手,坚韧,44,0.65,56,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1153
 4,女画师,Artiste,法师,辅助、射手,意志,42,0.25,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1169
 4,女画师,Artiste,法师,辅助、射手,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Artist/_.HROB.xdb#L1185
@@ -57,7 +57,7 @@
 5,抹杀者／刺客,Eraser / Assassin,刺客,战士,力量,60,0.3,60,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L880
 5,抹杀者／刺客,Eraser / Assassin,刺客,战士,智力,60,0.7,60,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L896
 5,抹杀者／刺客,Eraser / Assassin,刺客,战士,灵巧,56,0.8,56,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L912
-5,抹杀者／刺客,Eraser / Assassin,刺客,战士,攻速属性,50,0,50,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L928
+5,抹杀者／刺客,Eraser / Assassin,刺客,战士,攻速,50,0,50,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L928
 5,抹杀者／刺客,Eraser / Assassin,刺客,战士,坚韧,63,0.65,53,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L944
 5,抹杀者／刺客,Eraser / Assassin,刺客,战士,意志,61,0.45,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L960
 5,抹杀者／刺客,Eraser / Assassin,刺客,战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Assassin/_.HROB.xdb#L976
@@ -70,7 +70,7 @@
 6,报丧女妖,Banshee,法师,辅助,力量,10,0,49.5,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1037
 6,报丧女妖,Banshee,法师,辅助,智力,58,0.8,62.5,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1053
 6,报丧女妖,Banshee,法师,辅助,灵巧,54,0.7,53.5,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1069
-6,报丧女妖,Banshee,法师,辅助,攻速属性,50,0.3,46.5,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1085
+6,报丧女妖,Banshee,法师,辅助,攻速,50,0.3,46.5,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1085
 6,报丧女妖,Banshee,法师,辅助,坚韧,42,0.3,54.5,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1101
 6,报丧女妖,Banshee,法师,辅助,意志,44,0.6,55.5,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1117
 6,报丧女妖,Banshee,法师,辅助,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Banshee/_.HROB.xdb#L1133
@@ -83,7 +83,7 @@
 7,吟游诗人／缪斯,Bard / Muse,辅助,法师,力量,30,0,30,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L983
 7,吟游诗人／缪斯,Bard / Muse,辅助,法师,智力,54,0.6,54,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L999
 7,吟游诗人／缪斯,Bard / Muse,辅助,法师,灵巧,60,0.65,60,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L1015
-7,吟游诗人／缪斯,Bard / Muse,辅助,法师,攻速属性,52,0.2,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L1031
+7,吟游诗人／缪斯,Bard / Muse,辅助,法师,攻速,52,0.2,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L1031
 7,吟游诗人／缪斯,Bard / Muse,辅助,法师,坚韧,45,0.65,54,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L1047
 7,吟游诗人／缪斯,Bard / Muse,辅助,法师,意志,42,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L1063
 7,吟游诗人／缪斯,Bard / Muse,辅助,法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bard/_.HROB.xdb#L1079
@@ -96,7 +96,7 @@
 8,狱刃,Hellblade,战士,坦克、刺客,力量,55,0.65,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1821
 8,狱刃,Hellblade,战士,坦克、刺客,智力,58,0.65,58,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1837
 8,狱刃,Hellblade,战士,坦克、刺客,灵巧,55,0.4,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1853
-8,狱刃,Hellblade,战士,坦克、刺客,攻速属性,57,0.55,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1869
+8,狱刃,Hellblade,战士,坦克、刺客,攻速,57,0.55,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1869
 8,狱刃,Hellblade,战士,坦克、刺客,坚韧,67,0.65,57,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1885
 8,狱刃,Hellblade,战士,坦克、刺客,意志,64,0.6,59,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1901
 8,狱刃,Hellblade,战士,坦克、刺客,生命固定再生,3.3,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/BladeDancer/_.HROB.xdb#L1917
@@ -109,7 +109,7 @@
 9,爆破少女,Bomber,射手,法师,力量,57,0.75,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1048
 9,爆破少女,Bomber,射手,法师,智力,56,0.65,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1064
 9,爆破少女,Bomber,射手,法师,灵巧,53,0.4,54,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1080
-9,爆破少女,Bomber,射手,法师,攻速属性,54,0.5,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1096
+9,爆破少女,Bomber,射手,法师,攻速,54,0.5,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1096
 9,爆破少女,Bomber,射手,法师,坚韧,44,0.55,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1112
 9,爆破少女,Bomber,射手,法师,意志,43,0.45,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1128
 9,爆破少女,Bomber,射手,法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Bomber/_.HROB.xdb#L1144
@@ -122,7 +122,7 @@
 10,克瓦希尔,Kvasir,辅助,坦克、战士,力量,57,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1013
 10,克瓦希尔,Kvasir,辅助,坦克、战士,智力,55,0.6,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1029
 10,克瓦希尔,Kvasir,辅助,坦克、战士,灵巧,52,0.25,54,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1045
-10,克瓦希尔,Kvasir,辅助,坦克、战士,攻速属性,54,0.55,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1061
+10,克瓦希尔,Kvasir,辅助,坦克、战士,攻速,54,0.55,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1061
 10,克瓦希尔,Kvasir,辅助,坦克、战士,坚韧,63,0.55,55,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1077
 10,克瓦希尔,Kvasir,辅助,坦克、战士,意志,65,0.65,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1093
 10,克瓦希尔,Kvasir,辅助,坦克、战士,生命固定再生,3.3,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Brewer/_.HROB.xdb#L1109
@@ -136,7 +136,7 @@
 11,克罗妮卡,Chronicle,法师,射手,力量,55,0.6,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L874
 11,克罗妮卡,Chronicle,法师,射手,智力,57,0.6,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L890
 11,克罗妮卡,Chronicle,法师,射手,灵巧,54,0.45,54,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L906
-11,克罗妮卡,Chronicle,法师,射手,攻速属性,53,0.45,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L922
+11,克罗妮卡,Chronicle,法师,射手,攻速,53,0.45,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L922
 11,克罗妮卡,Chronicle,法师,射手,坚韧,43,0.55,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L938
 11,克罗妮卡,Chronicle,法师,射手,意志,45,0.65,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L954
 11,克罗妮卡,Chronicle,法师,射手,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Chronicle/_.HROB.xdb#L970
@@ -149,7 +149,7 @@
 12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,力量,56,0.85,58,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L38
 12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,智力,56,0.65,56,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L54
 12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,灵巧,52,0.3,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L70
-12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,攻速属性,52,0.3,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L86
+12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,攻速,52,0.3,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L86
 12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,坚韧,64,0.4,56,0.75,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L102
 12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,意志,67,0.85,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L118
 12,达卡／哈卡,Da'Ka / Ha'Ka,坦克,辅助、战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Crusader/Stats.STCN.xdb#L134
@@ -162,7 +162,7 @@
 13,恶魔学者,Demonologist,法师,辅助,力量,58,0.6,58,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1091
 13,恶魔学者,Demonologist,法师,辅助,智力,58,0.8,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1107
 13,恶魔学者,Demonologist,法师,辅助,灵巧,55,0.5,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1123
-13,恶魔学者,Demonologist,法师,辅助,攻速属性,55,0.4,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1139
+13,恶魔学者,Demonologist,法师,辅助,攻速,55,0.4,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1139
 13,恶魔学者,Demonologist,法师,辅助,坚韧,43,0.45,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1155
 13,恶魔学者,Demonologist,法师,辅助,意志,45,0.65,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1171
 13,恶魔学者,Demonologist,法师,辅助,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Demonolog/_.HROB.xdb#L1187
@@ -175,7 +175,7 @@
 14,树精,Dryad,法师,射手,力量,55,0.8,20,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1055
 14,树精,Dryad,法师,射手,智力,54,0.7,58,0.74,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1071
 14,树精,Dryad,法师,射手,灵巧,54,0.5,54,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1087
-14,树精,Dryad,法师,射手,攻速属性,54,0.4,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1103
+14,树精,Dryad,法师,射手,攻速,54,0.4,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1103
 14,树精,Dryad,法师,射手,坚韧,42,0.35,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1119
 14,树精,Dryad,法师,射手,意志,44,0.55,58,0.74,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1135
 14,树精,Dryad,法师,射手,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Dryad/_.HROB.xdb#L1151
@@ -188,7 +188,7 @@
 15,树魔,Dendromonster,坦克,辅助、战士,力量,55,0.6,55,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L867
 15,树魔,Dendromonster,坦克,辅助、战士,智力,56,0.55,40,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L883
 15,树魔,Dendromonster,坦克,辅助、战士,灵巧,52,0.3,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L899
-15,树魔,Dendromonster,坦克,辅助、战士,攻速属性,53,0.5,59,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L915
+15,树魔,Dendromonster,坦克,辅助、战士,攻速,53,0.5,59,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L915
 15,树魔,Dendromonster,坦克,辅助、战士,坚韧,60,0.7,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L931
 15,树魔,Dendromonster,坦克,辅助、战士,意志,50,0.5,58,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L947
 15,树魔,Dendromonster,坦克,辅助、战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ent/_.HROB.xdb#L963
@@ -201,7 +201,7 @@
 16,无面者／幻影,Faceless / Phantom,刺客,战士,力量,57,0.4,57,0.16,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1098
 16,无面者／幻影,Faceless / Phantom,刺客,战士,智力,54,0.9,54,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1114
 16,无面者／幻影,Faceless / Phantom,刺客,战士,灵巧,58,0.5,58,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1130
-16,无面者／幻影,Faceless / Phantom,刺客,战士,攻速属性,53.8,0.2,53.8,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1146
+16,无面者／幻影,Faceless / Phantom,刺客,战士,攻速,53.8,0.2,53.8,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1146
 16,无面者／幻影,Faceless / Phantom,刺客,战士,坚韧,60,0.35,51,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1162
 16,无面者／幻影,Faceless / Phantom,刺客,战士,意志,62,0.75,53,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1178
 16,无面者／幻影,Faceless / Phantom,刺客,战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Faceless/_.HROB.xdb#L1194
@@ -214,7 +214,7 @@
 17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,力量,55,0.5,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L995
 17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,智力,58,0.75,58,0.75,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1011
 17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,灵巧,56,0.4,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1027
-17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,攻速属性,52,0.3,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1043
+17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,攻速,52,0.3,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1043
 17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,坚韧,43,0.75,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1059
 17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,意志,41,0.45,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1075
 17,仙灵／妖精女王,Fay / Fairy Queen,辅助,法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fairy/_.HROB.xdb#L1091
@@ -227,7 +227,7 @@
 18,渡鸦,Raven,法师,刺客、射手,力量,0,0,49.5,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1037
 18,渡鸦,Raven,法师,刺客、射手,智力,56,0.7,62.5,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1053
 18,渡鸦,Raven,法师,刺客、射手,灵巧,56,0.3,53.5,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1069
-18,渡鸦,Raven,法师,刺客、射手,攻速属性,60,0.6,46.5,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1085
+18,渡鸦,Raven,法师,刺客、射手,攻速,60,0.6,46.5,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1085
 18,渡鸦,Raven,法师,刺客、射手,坚韧,42,0.35,54.5,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1101
 18,渡鸦,Raven,法师,刺客、射手,意志,43,0.6,55.5,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1117
 18,渡鸦,Raven,法师,刺客、射手,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/FallenAngel/_.HROB.xdb#L1133
@@ -240,7 +240,7 @@
 19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,力量,55,0.8,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1247
 19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,智力,54,0.8,54,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1263
 19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,灵巧,54,0.5,54,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1279
-19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,攻速属性,54,0.3,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1295
+19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,攻速,54,0.3,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1295
 19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,坚韧,42,0.35,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1311
 19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,意志,44,0.55,56,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1327
 19,火狐／焰尾,Fire Fox / Flame Tail,法师,射手,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Firefox/_.HROB.xdb#L1343
@@ -253,7 +253,7 @@
 20,米米,Mimi,战士,坦克、刺客,力量,57,0.8,54,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1301
 20,米米,Mimi,战士,坦克、刺客,智力,57,0.65,57,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1317
 20,米米,Mimi,战士,坦克、刺客,灵巧,52,0.45,54.5,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1333
-20,米米,Mimi,战士,坦克、刺客,攻速属性,52,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1349
+20,米米,Mimi,战士,坦克、刺客,攻速,52,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1349
 20,米米,Mimi,战士,坦克、刺客,坚韧,64,0.4,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1365
 20,米米,Mimi,战士,坦克、刺客,意志,67,0.7,54.5,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1381
 20,米米,Mimi,战士,坦克、刺客,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Fluffy/_.HROB.xdb#L1397
@@ -266,7 +266,7 @@
 21,弗里兹,Freeze,战士,坦克,力量,57,0.5,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1000
 21,弗里兹,Freeze,战士,坦克,智力,58,0.8,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1016
 21,弗里兹,Freeze,战士,坦克,灵巧,52,0.2,54,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1032
-21,弗里兹,Freeze,战士,坦克,攻速属性,53,0.7,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1048
+21,弗里兹,Freeze,战士,坦克,攻速,53,0.7,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1048
 21,弗里兹,Freeze,战士,坦克,坚韧,61,0.35,55,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1064
 21,弗里兹,Freeze,战士,坦克,意志,65,0.75,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1080
 21,弗里兹,Freeze,战士,坦克,生命固定再生,3.3,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Freeze/_.HROB.xdb#L1096
@@ -279,7 +279,7 @@
 22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,力量,58,0.8,58,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1243
 22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,智力,30,0,30,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1259
 22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,灵巧,54,0.5,45,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1275
-22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,攻速属性,57,0.5,57,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1291
+22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,攻速,57,0.5,57,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1291
 22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,坚韧,66,0.75,56,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1307
 22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,意志,63,0.45,54,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1323
 22,蛙语者／沼泽之王,Frog Whisperer / Swamp King,坦克,战士,生命固定再生,1.65,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Frogenglut/_.HROB.xdb#L1339
@@ -292,7 +292,7 @@
 23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,力量,55,0.8,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L971
 23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,智力,58,0.91,58,0.91,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L987
 23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,灵巧,46,0.1,46,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L1003
-23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,攻速属性,47.5,0.5,47.5,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L1019
+23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,攻速,47.5,0.5,47.5,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L1019
 23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,坚韧,65,0.55,55.5,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L1035
 23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,意志,68,0.25,57,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L1051
 23,灵魂收割者／捕魂者,Soul Reaper / Soul Catcher,辅助,法师、战士,生命固定再生,1.65,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/GhostLord/_.HROB.xdb#L1067
@@ -305,7 +305,7 @@
 24,炮手,Cannoneer,射手,法师,力量,55,0.6,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2067
 24,炮手,Cannoneer,射手,法师,智力,55,0.6,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2083
 24,炮手,Cannoneer,射手,法师,灵巧,54,0.5,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2099
-24,炮手,Cannoneer,射手,法师,攻速属性,54,0.45,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2115
+24,炮手,Cannoneer,射手,法师,攻速,54,0.45,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2115
 24,炮手,Cannoneer,射手,法师,坚韧,55,0.65,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2131
 24,炮手,Cannoneer,射手,法师,意志,43,0.55,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2147
 24,炮手,Cannoneer,射手,法师,生命固定再生,2.5,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunner/_.HROB.xdb#L2163
@@ -320,7 +320,7 @@
 25,亡命枪手,Desperado,射手,刺客,力量,58,0.7,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1718
 25,亡命枪手,Desperado,射手,刺客,智力,56,0.4,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1734
 25,亡命枪手,Desperado,射手,刺客,灵巧,52,0.3,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1750
-25,亡命枪手,Desperado,射手,刺客,攻速属性,53,0.7,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1766
+25,亡命枪手,Desperado,射手,刺客,攻速,53,0.7,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1766
 25,亡命枪手,Desperado,射手,刺客,坚韧,43,0.75,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1782
 25,亡命枪手,Desperado,射手,刺客,意志,40,0.45,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1798
 25,亡命枪手,Desperado,射手,刺客,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Gunslinger/_.HROB.xdb#L1814
@@ -334,7 +334,7 @@
 26,治疗师／女祭司,Healer / Priestess,辅助,,力量,20,0,20,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1011
 26,治疗师／女祭司,Healer / Priestess,辅助,,智力,58,0.74,58,0.74,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1027
 26,治疗师／女祭司,Healer / Priestess,辅助,,灵巧,54,0.2,54,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1043
-26,治疗师／女祭司,Healer / Priestess,辅助,,攻速属性,52,0.2,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1059
+26,治疗师／女祭司,Healer / Priestess,辅助,,攻速,52,0.2,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1059
 26,治疗师／女祭司,Healer / Priestess,辅助,,坚韧,42,0.35,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1075
 26,治疗师／女祭司,Healer / Priestess,辅助,,意志,46,0.7,58,0.74,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1091
 26,治疗师／女祭司,Healer / Priestess,辅助,,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Healer/_.HROB.xdb#L1107
@@ -348,7 +348,7 @@
 27,高地人／不朽者,Highlander / Immortal,战士,坦克,力量,58,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1063
 27,高地人／不朽者,Highlander / Immortal,战士,坦克,智力,10,0,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1079
 27,高地人／不朽者,Highlander / Immortal,战士,坦克,灵巧,54,0.31,54,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1095
-27,高地人／不朽者,Highlander / Immortal,战士,坦克,攻速属性,56,0.35,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1111
+27,高地人／不朽者,Highlander / Immortal,战士,坦克,攻速,56,0.35,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1111
 27,高地人／不朽者,Highlander / Immortal,战士,坦克,坚韧,65,0.8,55,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1127
 27,高地人／不朽者,Highlander / Immortal,战士,坦克,意志,62,0.45,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1143
 27,高地人／不朽者,Highlander / Immortal,战士,坦克,生命固定再生,3.3,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Highlander/_.HROB.xdb#L1159
@@ -362,7 +362,7 @@
 28,神射手／猎人,Marksman / Hunter,射手,辅助,力量,56.7,0.8,56.7,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1098
 28,神射手／猎人,Marksman / Hunter,射手,辅助,智力,55.6,0.4,55.6,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1114
 28,神射手／猎人,Marksman / Hunter,射手,辅助,灵巧,56.6,0.4,56.6,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1130
-28,神射手／猎人,Marksman / Hunter,射手,辅助,攻速属性,55,0.5,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1146
+28,神射手／猎人,Marksman / Hunter,射手,辅助,攻速,55,0.5,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1146
 28,神射手／猎人,Marksman / Hunter,射手,辅助,坚韧,40,0.75,51.6,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1162
 28,神射手／猎人,Marksman / Hunter,射手,辅助,意志,41,0.55,52.8,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1178
 28,神射手／猎人,Marksman / Hunter,射手,辅助,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Hunter/_.HROB.xdb#L1194
@@ -375,7 +375,7 @@
 29,发明家,Inventor,法师,辅助、射手,力量,56.2,0.6,56.2,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L988
 29,发明家,Inventor,法师,辅助、射手,智力,58,0.8,58,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1004
 29,发明家,Inventor,法师,辅助、射手,灵巧,52.6,0.4,52.6,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1020
-29,发明家,Inventor,法师,辅助、射手,攻速属性,54.4,0.4,54.4,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1036
+29,发明家,Inventor,法师,辅助、射手,攻速,54.4,0.4,54.4,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1036
 29,发明家,Inventor,法师,辅助、射手,坚韧,42,0.5,54.2,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1052
 29,发明家,Inventor,法师,辅助、射手,意志,44,0.6,56,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1068
 29,发明家,Inventor,法师,辅助、射手,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Inventor/_.HROB.xdb#L1084
@@ -388,7 +388,7 @@
 30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,力量,54,0.5,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1072
 30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,智力,59,0.6,59,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1088
 30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,灵巧,53,0.5,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1104
-30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,攻速属性,51,0.3,51,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1120
+30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,攻速,51,0.3,51,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1120
 30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,坚韧,44,0.35,56,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1136
 30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,意志,46,0.65,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1152
 30,暗影／隐灵,Shadow / Whisp,辅助,刺客、法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Invisible/_.HROB.xdb#L1168
@@ -401,7 +401,7 @@
 31,狂战士,Berserker,战士,坦克,力量,60,0.75,59,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1193
 31,狂战士,Berserker,战士,坦克,智力,0,0,20,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1209
 31,狂战士,Berserker,战士,坦克,灵巧,52,0.35,49,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1225
-31,狂战士,Berserker,战士,坦克,攻速属性,52,0.4,50,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1241
+31,狂战士,Berserker,战士,坦克,攻速,52,0.4,50,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1241
 31,狂战士,Berserker,战士,坦克,坚韧,67,0.7,65,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1257
 31,狂战士,Berserker,战士,坦克,意志,64,0.6,57,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1273
 31,狂战士,Berserker,战士,坦克,生命固定再生,3.3,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/IronKnight/_.HROB.xdb#L1289
@@ -414,7 +414,7 @@
 32,卡塔娜,Katana,战士,刺客,力量,55,0.6,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L973
 32,卡塔娜,Katana,战士,刺客,智力,54,0.6,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L989
 32,卡塔娜,Katana,战士,刺客,灵巧,54,0.5,49,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L1005
-32,卡塔娜,Katana,战士,刺客,攻速属性,53,0.4,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L1021
+32,卡塔娜,Katana,战士,刺客,攻速,53,0.4,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L1021
 32,卡塔娜,Katana,战士,刺客,坚韧,63,0.55,56,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L1037
 32,卡塔娜,Katana,战士,刺客,意志,64,0.65,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L1053
 32,卡塔娜,Katana,战士,刺客,生命固定再生,3.3,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Katana/_.HROB.xdb#L1069
@@ -428,7 +428,7 @@
 33,法师／术士,Mage / Sorcerer,法师,辅助、战士,力量,56,0.6,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L986
 33,法师／术士,Mage / Sorcerer,法师,辅助、战士,智力,58,0.8,58,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1002
 33,法师／术士,Mage / Sorcerer,法师,辅助、战士,灵巧,54,0.4,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1018
-33,法师／术士,Mage / Sorcerer,法师,辅助、战士,攻速属性,51,0.3,51,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1034
+33,法师／术士,Mage / Sorcerer,法师,辅助、战士,攻速,51,0.3,51,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1034
 33,法师／术士,Mage / Sorcerer,法师,辅助、战士,坚韧,40,0.45,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1050
 33,法师／术士,Mage / Sorcerer,法师,辅助、战士,意志,43,0.65,55,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1066
 33,法师／术士,Mage / Sorcerer,法师,辅助、战士,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mage/_.HROB.xdb#L1082
@@ -441,7 +441,7 @@
 34,露娜,Luna,法师,辅助,力量,57,0.6,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L871
 34,露娜,Luna,法师,辅助,智力,57,0.5,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L887
 34,露娜,Luna,法师,辅助,灵巧,54,0.5,54,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L903
-34,露娜,Luna,法师,辅助,攻速属性,53,0.3,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L919
+34,露娜,Luna,法师,辅助,攻速,53,0.3,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L919
 34,露娜,Luna,法师,辅助,坚韧,45,0.65,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L935
 34,露娜,Luna,法师,辅助,意志,42,0.35,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L951
 34,露娜,Luna,法师,辅助,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/MagicGirl/_.HROB.xdb#L967
@@ -454,7 +454,7 @@
 35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,力量,10,0,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1132
 35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,智力,57,0.85,57,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1148
 35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,灵巧,51,0.45,51,0.45,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1164
-35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,攻速属性,51,0.15,51,0.15,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1180
+35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,攻速,51,0.15,51,0.15,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1180
 35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,坚韧,41,0.25,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1196
 35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,意志,45,0.65,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1212
 35,奥术飞龙／魔蜓,Arcane Wyrm / Dragonfly,法师,坦克、射手,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ManaWyrm/_.HROB.xdb#L1228
@@ -468,7 +468,7 @@
 36,斗士／武道宗师,Brawler / Meijin,战士,坦克,力量,56.5,0.75,56.5,0.75,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1030
 36,斗士／武道宗师,Brawler / Meijin,战士,坦克,智力,29.6,0,29.6,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1046
 36,斗士／武道宗师,Brawler / Meijin,战士,坦克,灵巧,53.5,0.25,53.5,0.25,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1062
-36,斗士／武道宗师,Brawler / Meijin,战士,坦克,攻速属性,55.5,0.65,55.5,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1078
+36,斗士／武道宗师,Brawler / Meijin,战士,坦克,攻速,55.5,0.65,55.5,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1078
 36,斗士／武道宗师,Brawler / Meijin,战士,坦克,坚韧,64,0.65,55,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1094
 36,斗士／武道宗师,Brawler / Meijin,战士,坦克,意志,64,0.4,55,0.45,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1110
 36,斗士／武道宗师,Brawler / Meijin,战士,坦克,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Marine/_.HROB.xdb#L1126
@@ -481,7 +481,7 @@
 37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,力量,57,0.6,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1076
 37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,智力,60,0.7,54,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1092
 37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,灵巧,53,0.5,52,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1108
-37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,攻速属性,52,0.3,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1124
+37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,攻速,52,0.3,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1124
 37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,坚韧,65,0.65,55,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1140
 37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,意志,63,0.45,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1156
 37,弗里尔／诺克斯,Vryl / Nox,战士,刺客、坦克,生命固定再生,3.3,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Monster/_.HROB.xdb#L1172
@@ -494,7 +494,7 @@
 38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,力量,59,0.6,59,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1062
 38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,智力,56,0.5,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1078
 38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,灵巧,55,0.3,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1094
-38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,攻速属性,55,0.4,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1110
+38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,攻速,55,0.4,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1110
 38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,坚韧,47,0.75,59,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1126
 38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,意志,43,0.35,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1142
 38,猎兵／狼舞者,Jaeger / Wolf Dancer,战士,辅助,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Mowgli/_.HROB.xdb#L1158
@@ -507,7 +507,7 @@
 39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,力量,60,0.6,55,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L878
 39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,智力,40,0,40,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L894
 39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,灵巧,53,0.35,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L910
-39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,攻速属性,59,0.4,59,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L926
+39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,攻速,59,0.4,59,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L926
 39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,坚韧,59,0.41,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L942
 39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,意志,65,0.68,58,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L958
 39,剑刃大师／舍沙,Blade Master / Sesha,坦克,战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Naga/_.HROB.xdb#L974
@@ -520,7 +520,7 @@
 40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,力量,52.8,0.5,52.8,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1061
 40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,智力,60,0.8,60,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1077
 40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,灵巧,53,0.3,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1093
-40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,攻速属性,53,0.31,53,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1109
+40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,攻速,53,0.31,53,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1109
 40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,坚韧,40,0.35,52,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1125
 40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,意志,41,0.65,52.8,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1141
 40,夜之女王／黑豹,Night Queen / Black Panther,战士,刺客,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Night/_.HROB.xdb#L1157
@@ -535,7 +535,7 @@
 41,捣蛋少女,Tearaway,战士,刺客、坦克,力量,55,0.6,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1091
 41,捣蛋少女,Tearaway,战士,刺客、坦克,智力,54,0.5,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1107
 41,捣蛋少女,Tearaway,战士,刺客、坦克,灵巧,54,0.6,49,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1123
-41,捣蛋少女,Tearaway,战士,刺客、坦克,攻速属性,53,0.48,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1139
+41,捣蛋少女,Tearaway,战士,刺客、坦克,攻速,53,0.48,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1139
 41,捣蛋少女,Tearaway,战士,刺客、坦克,坚韧,63,0.55,56,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1155
 41,捣蛋少女,Tearaway,战士,刺客、坦克,意志,64,0.65,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1171
 41,捣蛋少女,Tearaway,战士,刺客、坦克,生命固定再生,3.3,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PinkGirl/_.HROB.xdb#L1187
@@ -548,7 +548,7 @@
 42,瘟疫医生,Plague Doctor,法师,辅助,力量,55,0.65,20,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1075
 42,瘟疫医生,Plague Doctor,法师,辅助,智力,58,0.75,58,0.74,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1091
 42,瘟疫医生,Plague Doctor,法师,辅助,灵巧,54,0.4,54,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1107
-42,瘟疫医生,Plague Doctor,法师,辅助,攻速属性,52,0.3,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1123
+42,瘟疫医生,Plague Doctor,法师,辅助,攻速,52,0.3,52,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1123
 42,瘟疫医生,Plague Doctor,法师,辅助,坚韧,42,0.35,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1139
 42,瘟疫医生,Plague Doctor,法师,辅助,意志,46,0.7,58,0.74,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1155
 42,瘟疫医生,Plague Doctor,法师,辅助,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/PlagueDoctor/_.HROB.xdb#L1171
@@ -561,7 +561,7 @@
 43,飞行员,Aviator,射手,法师,力量,55,0.6,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1566
 43,飞行员,Aviator,射手,法师,智力,54,0.6,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1582
 43,飞行员,Aviator,射手,法师,灵巧,54,0.52,49,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1598
-43,飞行员,Aviator,射手,法师,攻速属性,53,0.42,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1614
+43,飞行员,Aviator,射手,法师,攻速,53,0.42,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1614
 43,飞行员,Aviator,射手,法师,坚韧,45,0.65,56,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1630
 43,飞行员,Aviator,射手,法师,意志,43,0.55,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1646
 43,飞行员,Aviator,射手,法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Plane/_.HROB.xdb#L1662
@@ -575,7 +575,7 @@
 44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,力量,55,0.5,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1273
 44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,智力,58,0.7,58,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1289
 44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,灵巧,55,0.3,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1305
-44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,攻速属性,58,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1321
+44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,攻速,58,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1321
 44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,坚韧,66,0.55,57,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1337
 44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,意志,68,0.75,59,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1353
 44,决斗家／盗贼王子,Duelist / Prince of Thieves,战士,坦克,生命固定再生,3.3,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Prince/_.HROB.xdb#L1369
@@ -588,7 +588,7 @@
 45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,力量,54,0.6,54,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L970
 45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,智力,57,0.85,57,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L986
 45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,灵巧,54.5,0.3,54.5,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L1002
-45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,攻速属性,53,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L1018
+45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,攻速,53,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L1018
 45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,坚韧,63,0.45,56,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L1034
 45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,意志,65,0.65,54.5,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L1050
 45,魔笛手／鼠王,Pied Piper / Rat Master,辅助,法师、坦克,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Ratcatcher/_.HROB.xdb#L1066
@@ -601,7 +601,7 @@
 46,图雷胡,Tu´Rehu,战士,坦克,力量,55,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1208
 46,图雷胡,Tu´Rehu,战士,坦克,智力,54,0.5,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1224
 46,图雷胡,Tu´Rehu,战士,坦克,灵巧,52,0.4,54,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1240
-46,图雷胡,Tu´Rehu,战士,坦克,攻速属性,53,0.6,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1256
+46,图雷胡,Tu´Rehu,战士,坦克,攻速,53,0.6,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1256
 46,图雷胡,Tu´Rehu,战士,坦克,坚韧,64,0.75,55,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1272
 46,图雷胡,Tu´Rehu,战士,坦克,意志,63,0.45,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1288
 46,图雷胡,Tu´Rehu,战士,坦克,生命固定再生,3.3,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Reaper/_.HROB.xdb#L1304
@@ -614,7 +614,7 @@
 47,斯普特尼克,S.Putnik,射手,法师,力量,58,0.6,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1001
 47,斯普特尼克,S.Putnik,射手,法师,智力,58,0.7,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1017
 47,斯普特尼克,S.Putnik,射手,法师,灵巧,55,0.6,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1033
-47,斯普特尼克,S.Putnik,射手,法师,攻速属性,53,0.5,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1049
+47,斯普特尼克,S.Putnik,射手,法师,攻速,53,0.5,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1049
 47,斯普特尼克,S.Putnik,射手,法师,坚韧,45,0.65,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1065
 47,斯普特尼克,S.Putnik,射手,法师,意志,43,0.45,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1081
 47,斯普特尼克,S.Putnik,射手,法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rifleman/_.HROB.xdb#L1097
@@ -628,7 +628,7 @@
 48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,力量,59,1,59,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L976
 48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,智力,20,0,20,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L992
 48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,灵巧,49,0.2,49,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L1008
-48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,攻速属性,50,0.2,50,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L1024
+48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,攻速,50,0.2,50,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L1024
 48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,坚韧,68,0.95,65,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L1040
 48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,意志,63,0.35,57,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L1056
 48,岩石巨人／震地者,Quarrier / Rumbler,坦克,战士,生命固定再生,3.3,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L1072
@@ -641,7 +641,7 @@
 49,义警,Vigilante,战士,坦克、射手,力量,53,0.7,55,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1126
 49,义警,Vigilante,战士,坦克、射手,智力,55,0.6,57,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1142
 49,义警,Vigilante,战士,坦克、射手,灵巧,52,0.55,49,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1158
-49,义警,Vigilante,战士,坦克、射手,攻速属性,54,0.55,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1174
+49,义警,Vigilante,战士,坦克、射手,攻速,54,0.55,56,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1174
 49,义警,Vigilante,战士,坦克、射手,坚韧,61,0.45,56,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1190
 49,义警,Vigilante,战士,坦克、射手,意志,65,0.65,54,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1206
 49,义警,Vigilante,战士,坦克、射手,生命固定再生,3.3,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shadow/_.HROB.xdb#L1222
@@ -655,7 +655,7 @@
 50,萨满,Shaman,战士,辅助、法师,力量,55,0.6,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1135
 50,萨满,Shaman,战士,辅助、法师,智力,55,0.6,59,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1151
 50,萨满,Shaman,战士,辅助、法师,灵巧,54,0.5,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1167
-50,萨满,Shaman,战士,辅助、法师,攻速属性,54,0.45,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1183
+50,萨满,Shaman,战士,辅助、法师,攻速,54,0.45,55,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1183
 50,萨满,Shaman,战士,辅助、法师,坚韧,55,0.65,53,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1199
 50,萨满,Shaman,战士,辅助、法师,意志,43,0.55,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1215
 50,萨满,Shaman,战士,辅助、法师,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Shaman/_.HROB.xdb#L1231
@@ -669,7 +669,7 @@
 51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,力量,51,0.7,49.5,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1107
 51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,智力,61,0.9,62.5,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1123
 51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,灵巧,53.5,0.5,53.5,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1139
-51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,攻速属性,47.5,0.25,46.5,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1155
+51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,攻速,47.5,0.25,46.5,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1155
 51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,坚韧,42,0.25,54.5,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1171
 51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,意志,44,0.55,55.5,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1187
 51,克里奥／暴风雪,Cryo / Blizzard,法师,辅助,生命固定再生,0,0,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/SnowQueen/_.HROB.xdb#L1203
@@ -682,7 +682,7 @@
 52,潜猎者,Stalker,战士,刺客、射手,力量,55,0.7,60,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L867
 52,潜猎者,Stalker,战士,刺客、射手,智力,54,0.7,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L883
 52,潜猎者,Stalker,战士,刺客、射手,灵巧,53,0.5,50,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L899
-52,潜猎者,Stalker,战士,刺客、射手,攻速属性,54,0.5,50,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L915
+52,潜猎者,Stalker,战士,刺客、射手,攻速,54,0.5,50,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L915
 52,潜猎者,Stalker,战士,刺客、射手,坚韧,65,0.65,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L931
 52,潜猎者,Stalker,战士,刺客、射手,意志,60,0.4,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L947
 52,潜猎者,Stalker,战士,刺客、射手,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Stalker/_.HROB.xdb#L963
@@ -695,7 +695,7 @@
 53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,力量,55,0.8,54.5,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L976
 53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,智力,60,0.6,59.6,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L992
 53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,灵巧,57,0.36,57,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L1008
-53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,攻速属性,49,0.3,49,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L1024
+53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,攻速,49,0.3,49,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L1024
 53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,坚韧,40,0.35,51.7,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L1040
 53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,意志,43,0.6,54.6,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L1056
 53,雷霆大师／风暴投手,Lightning Master / Storm Thrower,法师,射手、辅助,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/ThunderGod/_.HROB.xdb#L1072
@@ -708,7 +708,7 @@
 54,诡术师,Deceiver,射手,法师、刺客,力量,56,0.6,54.5,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1293
 54,诡术师,Deceiver,射手,法师、刺客,智力,58,0.6,59.6,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1309
 54,诡术师,Deceiver,射手,法师、刺客,灵巧,50,0.3,57,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1325
-54,诡术师,Deceiver,射手,法师、刺客,攻速属性,58,0.7,49,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1341
+54,诡术师,Deceiver,射手,法师、刺客,攻速,58,0.7,49,0.1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1341
 54,诡术师,Deceiver,射手,法师、刺客,坚韧,40,0.45,51.7,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1357
 54,诡术师,Deceiver,射手,法师、刺客,意志,42,0.75,54.6,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1373
 54,诡术师,Deceiver,射手,法师、刺客,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Trickster/_.HROB.xdb#L1389
@@ -721,7 +721,7 @@
 55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,力量,52.2,0.3,52.2,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L974
 55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,智力,54,0.75,54,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L990
 55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,灵巧,49,0.35,49,0.2,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L1006
-55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,攻速属性,55.4,0.5,55.4,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L1022
+55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,攻速,55.4,0.5,55.4,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L1022
 55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,坚韧,60,0.3,51,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L1038
 55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,意志,66,0.65,55.8,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L1054
 55,少女／宁芙,Maiden / Nymph,辅助,坦克、法师,生命固定再生,1.65,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Unicorn/_.HROB.xdb#L1070
@@ -734,7 +734,7 @@
 56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,力量,55,0.8,55,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1029
 56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,智力,54,0.6,54,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1045
 56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,灵巧,52,0.4,52,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1061
-56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,攻速属性,53,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1077
+56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,攻速,53,0.4,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1077
 56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,坚韧,64,0.65,55,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1093
 56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,意志,63,0.35,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1109
 56,吸血鬼／达哈卡,Vampire / Dahaka,法师,战士、刺客,生命固定再生,3.3,0.0f,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Vampire/_.HROB.xdb#L1125
@@ -747,7 +747,7 @@
 57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,力量,59.4,0.56,59.4,0.56,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L973
 57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,智力,40,0,40,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L989
 57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,灵巧,49,0.42,49,0.42,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L1005
-57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,攻速属性,47,0.42,47,0.42,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L1021
+57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,攻速,47,0.42,47,0.42,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L1021
 57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,坚韧,67,0.75,57.8,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L1037
 57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,意志,62,0.35,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L1053
 57,战争领主／将军,Warlord / Shogun,坦克,辅助、战士,生命固定再生,1.65,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Warlord/_.HROB.xdb#L1069
@@ -760,7 +760,7 @@
 58,温迪戈,Wendigo,刺客,战士,力量,55,0.7,60,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L865
 58,温迪戈,Wendigo,刺客,战士,智力,58,0.7,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L881
 58,温迪戈,Wendigo,刺客,战士,灵巧,57,0.55,50,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L897
-58,温迪戈,Wendigo,刺客,战士,攻速属性,55,0.4,50,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L913
+58,温迪戈,Wendigo,刺客,战士,攻速,55,0.4,50,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L913
 58,温迪戈,Wendigo,刺客,战士,坚韧,63,0.45,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L929
 58,温迪戈,Wendigo,刺客,战士,意志,66,0.55,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L945
 58,温迪戈,Wendigo,刺客,战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Wendigo/_.HROB.xdb#L961
@@ -773,7 +773,7 @@
 59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,力量,60,0.8,60,0.9,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L879
 59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,智力,57,0.7,57,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L895
 59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,灵巧,50,0,50,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L911
-59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,攻速属性,54,0.8,50,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L927
+59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,攻速,54,0.8,50,1,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L927
 59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,坚韧,66,0.65,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L943
 59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,意志,62,0.35,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L959
 59,獠牙／利爪,Fang / Claw,战士,刺客、坦克,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Werewolf/_.HROB.xdb#L975
@@ -786,7 +786,7 @@
 60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,力量,56,0.6,58,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1311
 60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,智力,58,0.4,56,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1327
 60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,灵巧,52,0.3,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1343
-60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,攻速属性,56,0.5,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1359
+60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,攻速,56,0.5,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1359
 60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,坚韧,42,0.35,56,0.75,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1375
 60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,意志,44,0.65,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1391
 60,女巫／莫伊拉,Witch / Moira,射手,辅助、法师,生命固定再生,0,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witch/_.HROB.xdb#L1407
@@ -799,7 +799,7 @@
 61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,力量,58,0.4,58,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1010
 61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,智力,60,0.8,60,0.8,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1026
 61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,灵巧,58,0.5,58,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1042
-61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,攻速属性,53,0.3,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1058
+61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,攻速,53,0.3,53,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1058
 61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,坚韧,43,0.65,55,0.7,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1074
 61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,意志,41,0.35,53,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1090
 61,林地贤者／巫医,Woodsman / Witch Doctor,法师,辅助,生命固定再生,0.0f,0.0f,0,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WitchDoctor/_.HROB.xdb#L1106
@@ -812,7 +812,7 @@
 62,漫游者,Wanderer,坦克,辅助、战士,力量,58,0.65,58,0.65,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L969
 62,漫游者,Wanderer,坦克,辅助、战士,智力,56,0.85,56,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L985
 62,漫游者,Wanderer,坦克,辅助、战士,灵巧,54,0.4,54,0.4,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L1001
-62,漫游者,Wanderer,坦克,辅助、战士,攻速属性,52,0.3,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L1017
+62,漫游者,Wanderer,坦克,辅助、战士,攻速,52,0.3,52,0.3,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L1017
 62,漫游者,Wanderer,坦克,辅助、战士,坚韧,66,0.7,56,0.75,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L1033
 62,漫游者,Wanderer,坦克,辅助、战士,意志,64,0.45,55,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L1049
 62,漫游者,Wanderer,坦克,辅助、战士,生命固定再生,3.3,0,3.3,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Witcher/_.HROB.xdb#L1065
@@ -825,7 +825,7 @@
 63,陨落领主,Fallen Lord,坦克,辅助、战士,力量,55,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1117
 63,陨落领主,Fallen Lord,坦克,辅助、战士,智力,54,0.5,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1133
 63,陨落领主,Fallen Lord,坦克,辅助、战士,灵巧,52,0.4,54,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1149
-63,陨落领主,Fallen Lord,坦克,辅助、战士,攻速属性,53,0.6,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1165
+63,陨落领主,Fallen Lord,坦克,辅助、战士,攻速,53,0.6,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1165
 63,陨落领主,Fallen Lord,坦克,辅助、战士,坚韧,64,0.75,55,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1181
 63,陨落领主,Fallen Lord,坦克,辅助、战士,意志,63,0.45,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1197
 63,陨落领主,Fallen Lord,坦克,辅助、战士,生命固定再生,0,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/WraithKing/_.HROB.xdb#L1213
@@ -838,7 +838,7 @@
 64,狂信者,Fanatic,辅助,战士、坦克,力量,58,0.6,58,0.6,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1106
 64,狂信者,Fanatic,辅助,战士、坦克,智力,54,0.8,10,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1122
 64,狂信者,Fanatic,辅助,战士、坦克,灵巧,54,0.4,54,0.31,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1138
-64,狂信者,Fanatic,辅助,战士、坦克,攻速属性,52,0.4,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1154
+64,狂信者,Fanatic,辅助,战士、坦克,攻速,52,0.4,56,0.35,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1154
 64,狂信者,Fanatic,辅助,战士、坦克,坚韧,64,0.4,55,0.85,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1170
 64,狂信者,Fanatic,辅助,战士、坦克,意志,67,0.7,52,0.5,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1186
 64,狂信者,Fanatic,辅助,战士、坦克,生命固定再生,3.3,0,1.65,0,https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Zealot/_.HROB.xdb#L1202

@@ -91,6 +91,17 @@ artSwitches.forEach(button=>button.addEventListener('click',()=>{
   artSwitches.forEach(option=>option.classList.toggle('active',option===button));
 }));
 function revealHash(){if(!location.hash)return;let id;try{id=decodeURIComponent(location.hash.slice(1))}catch(e){return}const el=document.getElementById(id);if(!el)return;let p=el.parentElement;while(p){if(p.tagName==='DETAILS')p.open=true;p=p.parentElement}requestAnimationFrame(()=>el.scrollIntoView({behavior:'auto',block:'start'}))}window.addEventListener('hashchange',revealHash);revealHash();
+const kitActivation = document.getElementById('kit-activation');
+if (kitActivation) {
+  document.querySelectorAll('a[href="#kit-activation"]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (location.hash !== '#kit-activation') return;
+      event.preventDefault();
+      kitActivation.scrollIntoView({behavior:'instant',block:'start'});
+    });
+  });
+}
 const toc=$('#toc-list');if(toc){const headings=$$('.article-body>h2,.article-body>section>h2,.article-body>h3').filter(x=>x.id);toc.innerHTML=headings.slice(0,45).map(x=>`<a href="#${encodeURIComponent(x.id)}" class="${x.tagName==='H3'?'sub':''}">${esc(x.textContent)}</a>`).join('')}
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting||!e.target.id)return;$$('.toc a,.anchor-tabs a').forEach(a=>{try{a.classList.toggle('current',decodeURIComponent(a.hash.slice(1))===e.target.id)}catch(err){}})})},{rootMargin:'-150px 0px -65% 0px',threshold:0});$$('.article-body h2[id],.article-body>section[id]').forEach(x=>observer.observe(x));
 const read=$('.read-toggle');if(read){const key=document.body.dataset.page;let done=load('-read',{});function sync(){read.classList.toggle('is-read',!!done[key]);read.textContent=done[key]?'已标记读完 ✓':'标记本页已读';read.setAttribute('aria-pressed',String(!!done[key]))}read.addEventListener('click',()=>{done=load('-read',{});if(done[key])delete done[key];else done[key]=Date.now();save('-read',done);sync()});sync()}

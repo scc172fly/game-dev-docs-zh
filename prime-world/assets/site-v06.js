@@ -5,6 +5,50 @@ function ready(fn){if(document.readyState==='loading')document.addEventListener(
 ready(function(){
   const body=document.body;
   body.classList.add('v6-site');
+  const shortEnglishTerm = /^[A-Za-z][A-Za-z0-9_.-]*(?:[ /-]+[A-Za-z0-9_.-]+){0,4}$/;
+  const numberOrCost = /^[+−-]?\d+(?:[,，]\d{3})*(?:\.\d+)?(?:\s*(?:Prime|%))?$/i;
+  const protectedText = /[+−-]?\d+(?:[,，]\d{3})*(?:\.\d+)?[  　]*Prime|(?:[A-Za-z][\w]*[_.][\w.]+|[a-z]+[A-Z][A-Za-z0-9]*)/gi;
+  document.querySelectorAll('table').forEach(table => {
+    let needsRoom = false;
+    for (const cell of table.querySelectorAll('th, td')) {
+      const value = cell.textContent.trim();
+      if (!cell.matches(".formula-cell") && value.length <= 36 && (shortEnglishTerm.test(value) || numberOrCost.test(value))) {
+        cell.classList.add('pw-table-unbroken');
+        needsRoom = true;
+        continue;
+      }
+      const walker = document.createTreeWalker(cell, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+          return node.parentElement.closest('script,style,pre,table table')
+            ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+        },
+      });
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      for (const node of nodes) {
+        const matches = [...node.data.matchAll(protectedText)];
+        if (!matches.length) continue;
+        const fragment = document.createDocumentFragment();
+        let end = 0;
+        for (const match of matches) {
+          fragment.append(node.data.slice(end, match.index));
+          const token = document.createElement('span');
+          token.className = 'pw-table-unbroken';
+          token.textContent = match[0];
+          fragment.append(token);
+          end = match.index + match[0].length;
+        }
+        fragment.append(node.data.slice(end));
+        node.replaceWith(fragment);
+        needsRoom = true;
+      }
+    }
+    if (!needsRoom || table.parentElement.matches('.table-wrap,.table-scroll,.a5-table-wrap,.pw-table-scroll')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'pw-table-scroll';
+    table.before(wrapper);
+    wrapper.append(table);
+  });
   // Hero role deep-links from the home portal use the existing filter controls.
   try{
     const role=new URLSearchParams(location.search).get('role');
@@ -19,7 +63,7 @@ ready(function(){
     const ribbon=document.createElement('div');ribbon.className='v6-stat-ribbon';
     ribbon.innerHTML='<span>HERO PARAMETERS</span><strong>原版基础数据</strong><em>基础参数与实际对战最终属性不同</em>';
     statGrid.parentNode.insertBefore(ribbon,statGrid);
-    const statIcons={'生命':'♥','能量':'✦','力量':'⚔','智力':'✧','灵巧':'➶','攻速属性':'⚡','坚韧':'⛨','意志':'◆'};
+    const statIcons={'生命':'♥','能量':'✦','力量':'⚔','智力':'✧','灵巧':'➶','攻速':'⚡','坚韧':'⛨','意志':'◆'};
     statGrid.querySelectorAll('.stat-box').forEach(cell=>{
       const k=cell.querySelector('small')?.textContent.trim();
       if(k && !cell.querySelector('.v6-stat-icon')){
@@ -112,7 +156,8 @@ function init(){
    const row=cell.closest('tr');if(!row)return;
    const label=(row.cells[0]?.childNodes[0]?.textContent||'此参数').trim();
    const values=row.querySelector('td.values-cell');
-   const result=(values?.querySelector('.state-facts dd:last-child')||values)?.textContent?.trim()||'';
+   const examples=Array.from(values?.querySelectorAll('.formula-example')||[], example=>example.textContent.trim());
+   const result=examples.length>1 ? [values.querySelector('small')?.textContent,...examples].filter(Boolean).join(' / ') : (values?.querySelector('.state-facts dd:last-child')||values)?.textContent?.trim()||'';
    const value=cell.textContent.trim();
    if(!value)return;
    const d=document.createElement('details');d.className='pw-math-detail';
@@ -126,5 +171,16 @@ function init(){
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
 
-/* The current atlas release label; this does not touch navigation dimensions. */
-(function(){function set(){document.querySelectorAll('.pw-brand-copy small').forEach(e=>{e.textContent=e.textContent.replace(/V0\.7(?:\.1)?/, 'V0.7.2');});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',set,{once:true});else set();})();
+/* Keep the shared masthead subtitle independent of release numbers. */
+(function () {
+  function normalizeSubtitle() {
+    document.querySelectorAll('.pw-brand-copy small').forEach(subtitle => {
+      subtitle.textContent = subtitle.textContent.replace(/\s*[\u00b7\u2022]\s*v?\d+(?:\.\d+)+\s*$/i, '');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', normalizeSubtitle, { once: true });
+  } else {
+    normalizeSubtitle();
+  }
+})();
