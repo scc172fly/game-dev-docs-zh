@@ -2272,9 +2272,9 @@
       "A2_AddRegen": "生命恢复属性加成",
       "A2_BuffDuration_TT": "保护效果持续时间",
       "A2_DamReducPercent": "受到伤害的削减幅度",
-      "A2_Duration": "第二招效果持续时间",
+      "A2_Duration": "守护仙灵跟随指针时长",
       "A2_TerrBuffDuration": "己方土地延长的保护时间",
-      "A2u_Duration": "第二招强化效果持续时间"
+      "A2u_Duration": "守护花粉生命恢复加成时长"
     },
     "notes": []
   },
@@ -2291,7 +2291,7 @@
     "effect_zh": "使用「守护仙灵」后，生命恢复增加 {A2_AddRegen}，持续 {A2u_Duration} 秒；恢复加成随智力变化。这是「守护仙灵」的强化天赋。",
     "parameter_labels": {
       "A2_AddRegen": "生命恢复属性加成",
-      "A2u_Duration": "第二招强化效果持续时间"
+      "A2u_Duration": "守护花粉生命恢复加成时长"
     },
     "notes": []
   },
@@ -2551,8 +2551,8 @@
     "name_zh": "玩火",
     "effect_zh": "攻击与专属天赋点燃目标，在 {BurnDuration} 秒内追加相当于原始伤害 {TT_Burn_BaseDamageMult}% 的纯粹伤害。最多叠加 {A2_MaxStacks} 层，未强化的基础上限为 {A2_MaxStacksBase} 层。",
     "parameter_labels": {
-      "A2_MaxStacks": "第二招叠层上限",
-      "A2_MaxStacksBase": "第二招基础叠层上限",
+      "A2_MaxStacks": "燃烧叠层上限",
+      "A2_MaxStacksBase": "燃烧基础叠层上限",
       "BurnDuration": "燃烧持续时间",
       "TT_Burn_BaseDamageMult": "对燃烧目标的伤害倍率"
     },
@@ -2697,8 +2697,8 @@
     "name_zh": "怕了吧！",
     "effect_zh": "普通形态：持续 {A2_Duration} 秒，不能成为敌方攻击与天赋的指定目标，可穿过生物，但自身不能攻击；首次接触敌人时造成 {A2Damage} 魔法伤害。激活「追上你！」后，期间移动速度还提高 {Haste_Percent}%。怒兽形态：使周围敌人的攻击伤害降低 {Fear_Penalty}，持续 {Fear_Duration} 秒，削减随力量变化；激活强化后，还使其沉默 {Silence_Duration} 秒，不能使用天赋。",
     "parameter_labels": {
-      "A2Damage": "第二招伤害",
-      "A2_Duration": "第二招效果持续时间",
+      "A2Damage": "普通形态首次接触伤害",
+      "A2_Duration": "普通形态穿行保护时长",
       "Fear_Duration": "恐惧持续时间",
       "Fear_Penalty": "敌人攻击伤害削减量",
       "Haste_Percent": "移动速度增幅",
@@ -2841,8 +2841,8 @@
     "name_zh": "冰针之环",
     "effect_zh": "使指定敌人无法移动，持续 {Root_Duration} 秒，或直到其承受 {A2_StopDamage} 伤害；伤害阈值随力量变化。激活「寒冰纽带」后，目标受到的任何伤害都会为自身恢复等量生命，累计最多恢复 {A2_HealTotal}，上限随力量变化。从己方土地施放时，恢复时间缩短 {A2_CdReduction} 秒。",
     "parameter_labels": {
-      "A2_CdReduction": "第二招冷却缩减",
-      "A2_HealTotal": "第二招总治疗量",
+      "A2_CdReduction": "己方土地施放冷却缩短量",
+      "A2_HealTotal": "寒冰纽带累计治疗上限",
       "A2_StopDamage": "解除控制的伤害阈值",
       "Root_Duration": "定身持续时间"
     },
@@ -2852,7 +2852,7 @@
     "name_zh": "寒冰纽带",
     "effect_zh": "「冰针之环」中的目标受到任何伤害时，为自身恢复等量生命，累计最多恢复 {A2_HealTotal}，上限随力量变化。这是「冰针之环」的强化。",
     "parameter_labels": {
-      "A2_HealTotal": "第二招总治疗量"
+      "A2_HealTotal": "寒冰纽带累计治疗上限"
     },
     "notes": []
   },
@@ -3070,7 +3070,7 @@
     "effect_zh": "保护指定友军 {A2_Duration} 秒，最多吸收 {A2_DamageCapacity} 伤害，护盾量随力量与智力中较高者变化。激活「苦痛之能」后，护盾每次受击为施法者恢复 {A2u_EnergyFeedback} 能量；激活「冥界防护」后，每次受击还为被保护的友方英雄恢复 {A2_LifeFeedback} 生命。两项反馈可同时生效，恢复量均随智力变化。从己方土地施放时，目标移动速度提高 {Haste_Percent}%。",
     "parameter_labels": {
       "A2_DamageCapacity": "护盾最多吸收的伤害",
-      "A2_Duration": "第二招效果持续时间",
+      "A2_Duration": "幽灵护盾持续时间",
       "A2_LifeFeedback": "护盾受击时给予目标的治疗",
       "A2u_EnergyFeedback": "护盾受击给予施法者的能量",
       "Haste_Percent": "移动速度增幅"
@@ -3206,8 +3206,8 @@
     "name_zh": "紧急起飞",
     "effect_zh": "引爆脚下地面，对周围敌人造成 {A2_Damage} 魔法伤害，并飞往指定位置。激活「空中包扎」后，还恢复自身 {A2u_HealAmount} 生命，治疗量随力量与智力中较高者变化。",
     "parameter_labels": {
-      "A2_Damage": "第二招伤害",
-      "A2u_HealAmount": "第二招强化治疗量"
+      "A2_Damage": "起飞前脚下爆炸伤害",
+      "A2u_HealAmount": "空中包扎自身治疗量"
     },
     "notes": []
   },
@@ -3215,7 +3215,7 @@
     "name_zh": "空中包扎",
     "effect_zh": "使用「紧急起飞」时，恢复自身 {A2u_HealAmount} 生命，治疗量随力量与智力中较高者变化。这是「紧急起飞」的强化。",
     "parameter_labels": {
-      "A2u_HealAmount": "第二招强化治疗量"
+      "A2u_HealAmount": "空中包扎自身治疗量"
     },
     "notes": []
   },
@@ -3320,7 +3320,7 @@
     "effect_zh": "每次攻击额外造成 {TT_A2_Damage} 魔法伤害，并消耗 {Rage_Per_AA} 点怒气。激活「弹雨」后，每秒攻击次数提高 {TT_A2_SpeedBurst}%。激活「爆裂装药」后，开启期间的攻击会在敌人身上积累层数；达到第三层时，造成 {A2_SUP_Damage} 魔法伤害并清空层数，伤害随力量与智力中较高者变化。斗志高涨：本招附加伤害提高 {A0_DmgUp}%。",
     "parameter_labels": {
       "A0_DmgUp": "斗志高涨时的伤害增幅",
-      "A2_SUP_Damage": "第二招进一步强化伤害",
+      "A2_SUP_Damage": "爆裂装药叠满三层的伤害",
       "Rage_Per_AA": "每次攻击消耗的怒气",
       "TT_A2_Damage": "灼热枪管每次攻击附加伤害",
       "TT_A2_SpeedBurst": "灼热枪管攻击频率增幅"
@@ -3331,7 +3331,7 @@
     "name_zh": "爆裂装药",
     "effect_zh": "「灼热枪管」开启期间，攻击在敌人身上积累层数；达到第三层时，造成 {A2_SUP_Damage} 魔法伤害并清空层数，伤害随力量与智力中较高者变化。",
     "parameter_labels": {
-      "A2_SUP_Damage": "第二招进一步强化伤害"
+      "A2_SUP_Damage": "爆裂装药叠满三层的伤害"
     },
     "notes": [
       "关联条件中的 Gunslinger_А2 使用了西里尔字母 А，可能与拉丁字母 A 的标识不一致；保留为数据疑点。"
@@ -3476,7 +3476,7 @@
     "effect_zh": "自身坚韧与意志各增加 {A2AddDefence}，加成随最大能量变化。「治疗」的指定目标，以及被「生命凯旋」治疗的友军，也会获得此防御加成，持续 {A2Duration} 秒。",
     "parameter_labels": {
       "A2AddDefence": "坚韧与意志加成",
-      "A2Duration": "第二招效果持续时间"
+      "A2Duration": "友军坚韧与意志加成时长"
     },
     "notes": []
   },
@@ -3592,8 +3592,8 @@
     "effect_zh": "每次攻击增加 {A2_AddDrainLife} 点生命偷取，持续 {A2Duration} 秒，最多叠加 {A2MaxStacks} 层；加成随力量变化。站在己方土地时，攻速额外增加 {A2AddAtkSpeed}，加成随力量变化。激活「狂烈渴望」后，攻速加成不再受土地限制，数值随该强化变化。激活「怒气凝聚」后，层数达到 {A2MaxStacks} 时，移动速度提高 {A2_10Stack_SpeedBuff_Percent}%。",
     "parameter_labels": {
       "A2AddAtkSpeed": "攻速加成",
-      "A2Duration": "第二招效果持续时间",
-      "A2MaxStacks": "第二招效果叠层上限",
+      "A2Duration": "生命偷取增益持续时间",
+      "A2MaxStacks": "生命偷取叠层上限",
       "A2_10Stack_SpeedBuff_Percent": "满层移动速度增幅",
       "A2_AddDrainLife": "每层生命偷取增量"
     },
@@ -3605,7 +3605,7 @@
     "name_zh": "怒气凝聚",
     "effect_zh": "「战斗渴望」叠至 {A2MaxStacks} 层时，移动速度提高 {A2_10Stack_SpeedBuff_Percent}%。这是「战斗渴望」的满层强化。",
     "parameter_labels": {
-      "A2MaxStacks": "第二招效果叠层上限",
+      "A2MaxStacks": "生命偷取叠层上限",
       "A2_10Stack_SpeedBuff_Percent": "满层移动速度增幅"
     },
     "notes": []
@@ -3710,7 +3710,7 @@
       "A2_AddDexterity": "自身灵巧加成",
       "A2_AddDexterityAllyBase": "友方英雄灵巧加成",
       "A2_AddDexterityTerr": "己方土地的灵巧加成倍数",
-      "A2_Duration": "第二招效果持续时间"
+      "A2_Duration": "灵巧增益持续时间"
     },
     "notes": []
   },
@@ -3979,7 +3979,7 @@
     "name_zh": "暗影保护",
     "effect_zh": "使目标进入遮蔽并隐身 {A2_Duration} 秒。基础情况下，对友军使用会暴露自身位置 {A2_InvisFall} 秒；激活「双人暗影」后，对友军使用也让自身获得效果。激活「出其不意」后，目标在遮蔽期间及现身后 {A2u_AfterDuration} 秒，力量、智力、坚韧、意志各增加 {A2u_AddStats}，加成随力量变化。从己方土地施放时，目标移动速度提高 {Haste_Percent}%。",
     "parameter_labels": {
-      "A2_Duration": "第二招效果持续时间",
+      "A2_Duration": "暗影保护隐身时长",
       "A2_InvisFall": "对友军施放后的自身暴露时间",
       "A2u_AddStats": "遮蔽带来的四项属性加成",
       "A2u_AfterDuration": "现身后继续维持属性的时间",
@@ -4092,12 +4092,12 @@
     "name_zh": "震荡投斧",
     "effect_zh": "向指定位置投出斧头，对路径上的敌人造成 {A2_Damage} 伤害，并使其移动速度降低 {A2_SlowEffect}%，持续 {A2_SlowDuration} 秒。激活「抓牢」后，可在 {A2u_RepeatTime} 秒内再次使用，将自身拉至斧头落点，对路径上的敌人造成 {A2u_Damage} 伤害，随最大生命变化。再激活「野蛮投斧」后，到达落点还对周围敌人造成 {A2_SUP_Damage} 伤害，随力量变化。",
     "parameter_labels": {
-      "A2_Damage": "第二招伤害",
-      "A2_SUP_Damage": "第二招进一步强化伤害",
-      "A2_SlowDuration": "第二招减速持续时间",
-      "A2_SlowEffect": "第二招减速幅度",
-      "A2u_Damage": "第二招强化附加伤害",
-      "A2u_RepeatTime": "第二次使用的时间窗口"
+      "A2_Damage": "首次投斧命中伤害",
+      "A2_SUP_Damage": "拉拽抵达落点的追加伤害",
+      "A2_SlowDuration": "首次投斧命中减速时长",
+      "A2_SlowEffect": "首次投斧命中减速幅度",
+      "A2u_Damage": "再次施放拉拽路径伤害",
+      "A2u_RepeatTime": "再次施放窗口"
     },
     "notes": []
   },
@@ -4105,8 +4105,8 @@
     "name_zh": "野蛮投斧",
     "effect_zh": "「震荡投斧」的减速幅度额外增加 {A2_SUP_Slow} 个百分点。将自身拉到斧头落点后，额外对周围敌人造成 {A2_SUP_Damage} 伤害，随力量变化。",
     "parameter_labels": {
-      "A2_SUP_Damage": "第二招进一步强化伤害",
-      "A2_SUP_Slow": "第二招额外减速百分点"
+      "A2_SUP_Damage": "拉拽抵达落点的追加伤害",
+      "A2_SUP_Slow": "首次投斧额外减速百分点"
     },
     "notes": []
   },
@@ -4114,8 +4114,8 @@
     "name_zh": "抓牢",
     "effect_zh": "首次使用「震荡投斧」后，可在 {A2u_RepeatTime} 秒内再次使用，将自身拉到斧头落点，对路径上的所有敌人造成 {A2u_Damage} 伤害，随最大生命变化。",
     "parameter_labels": {
-      "A2u_Damage": "第二招强化附加伤害",
-      "A2u_RepeatTime": "第二次使用的时间窗口"
+      "A2u_Damage": "再次施放拉拽路径伤害",
+      "A2u_RepeatTime": "再次施放窗口"
     },
     "notes": []
   },
@@ -4236,7 +4236,7 @@
     "name_zh": "虎跃",
     "effect_zh": "移动到指定位置，对附近所有敌人造成 {A2_Damage} 魔法伤害，并使其眩晕 {Stun_Duration} 秒，伤害随力量与智力中较高者变化。激活「战术移动」后，「虎跃」处于冷却时，使用「裂空斩」可立即将其重置，但随后 5 秒内的「虎跃」不造成伤害，也不眩晕。",
     "parameter_labels": {
-      "A2_Damage": "第二招伤害",
+      "A2_Damage": "虎跃落点范围伤害",
       "A2_DebuffTime": "原说明的禁伤与禁眩晕时间（6秒；已核实际施加5秒）",
       "Stun_Duration": "眩晕持续时间"
     },
@@ -13815,7 +13815,7 @@
       "Stun_Duration": "触发眩晕时间"
     },
     "notes": [
-      "原条件 IsG300Available 检查 tal(\"G300\")；需结合该基础天赋及套装共同效果阅读，不能把此段当作任何情况下都可独立施放的第二招。",
+      "原条件 IsG300Available 检查 tal(\"G300\")；需结合该基础天赋及套装共同效果阅读，这段效果随套装条件启用。",
       "共享说明展开自 TTKitV2CommonDescription；参数与启用门槛按独立套装库。",
       "已核核心G313在缺少G304、G310、G315任一项时禁用。宏未写位移距离，不自行填数；不能把“自己或敌方英雄”扩成任意友军。"
     ]

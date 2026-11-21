@@ -141,6 +141,11 @@
  const hitChance=(miss,evade)=>(1-miss)*(1-evade);
  const baseAttackRate=as=>Math.min(as*.00365+.49,2);
  const attackRate=(as,explicit)=>Math.max(explicit>0?explicit:baseAttackRate(as),.01);
+ const defenceMultiplier=(x,basic)=>{
+  const q=x>0||basic?1:.75;
+  const bounded=clampDefence(x);
+  return {q,bounded,M:1-q*bounded};
+ };
  const shieldSpend=(damage,shield,ignore)=>ignore||shield===0?0:Math.min(damage,shield);
  const burnEnergy=(energy,amount)=>Math.min(energy,amount);
  const percent=ratio=>fixed(100*ratio,2)+'%';
@@ -200,6 +205,36 @@
    '实际扣血 = 0，护盾保持原值。'
   ]);
  }
+ function calculateIronKnightAxe(){
+  const id='v08-axe-';
+  const value=key=>nonnegative(id+key);
+  const preview=value('preview'),launch=value('launch'),impact=value('impact');
+  const refine=num(id+'refine');
+  const stamina=value('stamina'),will=value('will'),penetration=value('pen')/100;
+  const reduction=value('reduction')/100,shield=value('shield'),hp=value('hp');
+  const scale=strength=>Math.max(73,73+(strength-50)*477/208);
+  const raw=Math.round(scale(impact));
+  const defence=defenceFromStats(stamina,will),x=defence-penetration;
+  const {q,bounded,M}=defenceMultiplier(x,false);
+  const alive=isAlive(hp);
+  const event=alive?raw*(1-reduction)*M:0;
+  const absorbed=shieldSpend(event,shield,false);
+  const loss=Math.min(Math.max(event-absorbed,0),hp);
+  put(id+'preview-damage',String(Math.round(scale(preview))));
+  put(id+'launch-damage','出手时若按 '+launch+' 力量估算：'+Math.round(scale(launch))+'，仅供对照');
+  put(id+'raw',alive?String(raw):'—');
+  put(id+'event',alive?'进入护盾：'+fixed(event,2):'目标已死亡，跳过伤害应用');
+  put(id+'loss',fixed(loss,2));
+  put(id+'absorbed',absorbed<0?'护盾容量增加 '+fixed(-absorbed,2):'护盾吸收 '+fixed(absorbed,2));
+  steps(id+'steps',[
+   '预览按 '+preview+' 力量算出 '+Math.round(scale(preview))+'。出手时 '+launch+' 力量可估算出 '+Math.round(scale(launch))+'，实际伤害应用时读 '+impact+'。',
+   '原始伤害 = 取整〔取较大值（73，73 ＋（'+impact+' − 50）× 477 ÷ 208）〕 = 取整（'+fixed(scale(impact),4)+'）= '+raw+'。强化 '+refine+' 级没有直接进入此式。',
+   '物理基础防御 = 0.00536 ×（'+stamina+' ＋ 0.3 × '+will+'）− 0.2 ≈ '+fixed(defence,5)+'。扣掉总穿透 '+fixed(penetration,5)+'，剩余防御 ≈ '+fixed(x,5)+'。',
+   '伤害乘数 = 1 − '+q+' × '+fixed(bounded,5)+' ≈ '+fixed(M,5)+'。代入的是限幅后的防御。',
+   alive?'进入护盾的伤害 = '+raw+' ×（1 − '+percent(reduction)+'）× '+fixed(M,5)+' ≈ '+fixed(event,4)+'。':'目标已死亡，跳过伤害应用。',
+   alive?'护盾处理后伤害 ≈ '+fixed(event,4)+' −（'+fixed(absorbed,4)+'）。按非负和当前生命 '+hp+' 截断，实际扣血 ≈ '+fixed(loss,4)+'。':'实际扣血 = 0。'
+  ]);
+ }
  function calculateNival(){
   const AS=Math.max(0,num('v08-as')),dex=Math.max(0,num('v08-dex'));
   const stamina=Math.max(0,num('v08-stamina')),will=Math.max(0,num('v08-will'));
@@ -214,8 +249,8 @@
   const body=defenceFromStats(stamina,will),spirit=defenceFromStats(will,stamina);
   const defence=type==='energy'?spirit:body;
   const spellDef=attack==='skill'?num('v08-spell-def'):0,spellPierce=attack==='skill'?num('v08-spell-pierce'):0;
-  const x=defence+spellDef-(P+spellPierce),q=(x>0||attack==='basic')?1:.75;
-  const bounded=clampDefence(x),M=1-q*bounded;
+  const x=defence+spellDef-(P+spellPierce);
+  const { q,bounded,M }=defenceMultiplier(x,attack==='basic');
   const rollHit=attack==='basic'&&evadable&&!tick('v08-friendly');
   const hit=rollHit?hitChance(procRate(num('v08-miss')),procRate(num('v08-evasion'))):1;
   const critmult=Math.max(0,num('v08-crit-mult'));
@@ -276,7 +311,7 @@
  const sectionCalculators={
   'damage-reduction':calculateReduction,penetration:calculatePenetration,critical:calculateCritical,
   'hit-evasion':calculateHitEvasion,'attack-speed':calculateAttackSpeed,'shield-absorb':calculateShield,
-  'mana-burn':calculateManaBurn,nova:calculateNova,nival:calculateNival,heal:calculateHeal
+  'mana-burn':calculateManaBurn,'iron-knight-axe':calculateIronKnightAxe,nova:calculateNova,nival:calculateNival,heal:calculateHeal
  };
  const lab=document.querySelector('.v08-lab-page');if(!lab)return;
  function updateSection(event){
