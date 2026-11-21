@@ -69,7 +69,7 @@
 <p>如果未来重制，应把“属性到派生值”“原始技能参数”“命中与防御”“状态事件”“最终扣血与恢复”分别写成规则，再逐个英雄接入。当前原版的复杂性来自这些环节相互作用，而不只是英雄技能数量多。下面的核验卡逐条给出公式、中文变量、前提、算例和来源，供数值策划直接核对；这些卡是对原版的说明，并未提出要保留或删改哪些机制。</p>
 <h2 id="公式核验卡">公式核验卡</h2>
 <h3 id="c01-属性修饰顺序">C01 · 属性修饰顺序</h3>
-<p><strong>实际规则</strong>：clamp((base*PRODUCT(normalMul)+SUM(normalAdd))*PRODUCT(topMul)+SUM(topAdd), lower, upper)。</p>
+<p><strong>实际规则</strong>：clamp((base*PRODUCT(normalMul)+SUM(normalAdd))*PRODUCT(topMul)+SUM(topAdd), lower, upper)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>最终属性 = 把（基础值 × 普通倍率的乘积 + 普通加值的总和）× 顶层倍率的乘积 + 顶层加值的总和，限制在下限到上限</p>
 <table>
 <thead>
 <tr>
@@ -121,7 +121,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/ValueWithModifiers.hpp#L36-L96">Src/PF_GameLogic/ValueWithModifiers.hpp · L36—96</a></li>
 </ul>
 <h3 id="c02-移动属性换算实际移动速率">C02 · 移动属性换算实际移动速率</h3>
-<p><strong>实际规则</strong>：sMoveSpeed/(sMoveSpeed + 172) * 30 * (sender.vMoveSpeedMult == 0 ? 1.0f : sender.vMoveSpeedMult)。</p>
+<p><strong>实际规则</strong>：sMoveSpeed/(sMoveSpeed + 172) * 30 * (sender.vMoveSpeedMult == 0 ? 1.0f : sender.vMoveSpeedMult)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>实际移速 = 移速点数 ÷（移速点数 + 172）× 30 × 移速倍率<br>移速倍率为 0 时按 1</p>
 <table>
 <thead>
 <tr>
@@ -155,7 +155,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L34">Data/GameLogic/DerivateStats.DSTCN.xdb · L34</a>；字段 derivativeStats/Item[5]</li>
 </ul>
 <h3 id="c03-生命与能量再生">C03 · 生命与能量再生</h3>
-<p><strong>实际规则</strong>：生命每秒再生=绝对生命再生+百分比生命再生*最大生命/100；能量同构。</p>
+<p><strong>实际规则</strong>：生命每秒再生=绝对生命再生+百分比生命再生*最大生命/100；能量同构。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>每秒生命恢复 = 固定生命再生 + 百分比生命再生 × 最大生命 ÷ 100<br>每秒能量恢复 = 固定能量再生 + 百分比能量再生 × 最大能量 ÷ 100</p>
 <table>
 <thead>
 <tr>
@@ -196,7 +196,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L525-L565">Src/PF_GameLogic/PFHero.cpp · L525—565</a></li>
 </ul>
 <h3 id="c04-公共英雄普攻原始伤害">C04 · 公共英雄普攻原始伤害</h3>
-<p><strong>实际规则</strong>：Dmin=BaseAttack*(NativeAttackIndex ? Intellect : Strength)*0.9+DamageSummand；Dmax同式将0.9换1.1；公共APLR取random(f2l(Dmin),f2l(Dmax))。</p>
+<p><strong>实际规则</strong>：Dmin=BaseAttack*(NativeAttackIndex ? Intellect : Strength)*0.9+DamageSummand；Dmax同式将0.9换1.1；公共APLR取random(f2l(Dmin),f2l(Dmax))。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>普攻主属性 = 原生攻击索引非零时取智力，否则取力量<br>普攻伤害下限 = 基础普攻系数 × 普攻主属性 × 0.9 + 伤害加值<br>上限将 0.9 换成 1.1<br>两端整数化后在区间内随机取值</p>
 <table>
 <thead>
 <tr>
@@ -245,7 +245,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/Rockman/_.HROB.xdb#L688-L697">Data/Heroes/Rockman/_.HROB.xdb · L688—697</a></li>
 </ul>
 <h3 id="c05-攻击速度与攻击周期">C05 · 攻击速度与攻击周期</h3>
-<p><strong>实际规则</strong>：max( sender.vExplicitAttacksPerSecond &gt; 0 ? sender.vExplicitAttacksPerSecond : min( sAttackSpeed * 0.00365f + 0.49f, 2.0f ), 0.01f )。</p>
+<p><strong>实际规则</strong>：max( sender.vExplicitAttacksPerSecond &gt; 0 ? sender.vExplicitAttacksPerSecond : min( sAttackSpeed * 0.00365f + 0.49f, 2.0f ), 0.01f )。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>每秒攻击次数 = 指定每秒攻击次数大于 0 时取指定值，否则取（攻速点数 × 0.00365 + 0.49）与 2 中的较小值<br>最后至少为 0.01</p>
 <table>
 <thead>
 <tr>
@@ -287,7 +287,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseAttackData.cpp#L192-L199">Src/PF_GameLogic/PFBaseAttackData.cpp · L192—199</a></li>
 </ul>
 <h3 id="c06-暴击概率与倍率">C06 · 暴击概率与倍率</h3>
-<p><strong>实际规则</strong>：d'=Dexterity-max(0,Dexterity-500)*0.25；C=clamp(90.9*d'/(d'+128)-28+CritChanceBonus,0,100)；可暴击伤害在成功时乘CriticalMultiplier。</p>
+<p><strong>实际规则</strong>：d'=Dexterity-max(0,Dexterity-500)*0.25；C=clamp(90.9*d'/(d'+128)-28+CritChanceBonus,0,100)；可暴击伤害在成功时乘CriticalMultiplier。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>有效灵巧 = 灵巧 − 取较大值（0，灵巧 − 500）× 0.25<br>暴击率（%）= 把 90.9 × 有效灵巧 ÷（有效灵巧 + 128）− 28 + 暴击率加成限制在 0 到 100<br>暴击成功时，可暴击伤害乘暴击倍率</p>
 <table>
 <thead>
 <tr>
@@ -330,7 +330,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/Hero.UNLP.xdb#L160-L165">Data/GameLogic/Hero.UNLP.xdb · L160—165</a></li>
 </ul>
 <h3 id="c07-坚韧与意志形成双防御">C07 · 坚韧与意志形成双防御</h3>
-<p><strong>实际规则</strong>：Body=0.00536*(Stamina+0.3*Will)-0.2；Spirit=0.00536*(Will+0.3*Stamina)-0.2。</p>
+<p><strong>实际规则</strong>：Body=0.00536*(Stamina+0.3*Will)-0.2；Spirit=0.00536*(Will+0.3*Stamina)-0.2<br><strong>中文公式</strong><br>物理防御比例 = 0.00536 ×（坚韧 + 0.3 × 意志）− 0.2<br>魔法防御比例 = 0.00536 ×（意志 + 0.3 × 坚韧）− 0.2。</p>
 <table>
 <thead>
 <tr>
@@ -374,7 +374,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L54">Data/GameLogic/DerivateStats.DSTCN.xdb · L54</a>；字段 derivativeStats/Item[9]</li>
 </ul>
 <h3 id="c08-攻速与灵巧形成穿透">C08 · 攻速与灵巧形成穿透</h3>
-<p><strong>实际规则</strong>：a'=AS-max(0,AS-500)*0.25；d'=Dex-max(0,Dex-500)*0.25；P_AS=.00536*a'-.2-(1-.6667/clamp(AS*.00365+.49,.702,2))；Cbase=clamp(90.9*d'/(d'+128)-28,0,100)；P_Dex=.00536*d'-.2-Cbase/(100+Cbase)；P=max(P_AS+P_Dex,0)。</p>
+<p><strong>实际规则</strong>：a'=AS-max(0,AS-500)*0.25；d'=Dex-max(0,Dex-500)*0.25；P_AS=.00536*a'-.2-(1-.6667/clamp(AS*.00365+.49,.702,2))；Cbase=clamp(90.9*d'/(d'+128)-28,0,100)；P_Dex=.00536*d'-.2-Cbase/(100+Cbase)；P=max(P_AS+P_Dex,0)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>有效攻速 = 攻速点数 − 取较大值（0，攻速点数 − 500）× 0.25<br>有效灵巧 = 灵巧 − 取较大值（0，灵巧 − 500）× 0.25<br>攻速穿透 = 0.00536 × 有效攻速 − 0.2 −（1 − 0.6667 ÷ 把攻速点数 × 0.00365 + 0.49 限制在 0.702 到 2）<br>基础暴击率（%）= 把 90.9 × 有效灵巧 ÷（有效灵巧 + 128）− 28 限制在 0 到 100<br>灵巧穿透 = 0.00536 × 有效灵巧 − 0.2 − 基础暴击率 ÷（100 + 基础暴击率）<br>总穿透 = 取较大值（攻速穿透 + 灵巧穿透，0）</p>
 <table>
 <thead>
 <tr>
@@ -421,7 +421,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/DerivateStats.DSTCN.xdb#L69">Data/GameLogic/DerivateStats.DSTCN.xdb · L69</a>；字段 derivativeStats/Item[12]</li>
 </ul>
 <h3 id="c09-防御与穿透共同决定伤害乘数">C09 · 防御与穿透共同决定伤害乘数</h3>
-<p><strong>实际规则</strong>：x=(Defence+SpellDef)-(PenetrationTotal+SpellPierce)；q=(x&gt;0或本次为普攻)?1:0.75；M=1-q*clamp(x,-0.75,0.75)。</p>
+<p><strong>实际规则</strong>：x=(Defence+SpellDef)-(PenetrationTotal+SpellPierce)；q=(x&gt;0或本次为普攻)?1:0.75；M=1-q*clamp(x,-0.75,0.75)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>防御差值 =（对应防御 + 技能防护）−（总穿透 + 技能穿透）<br>差值大于 0 或本次为普攻时，系数取 1，否则取 0.75<br>伤害乘数 = 1 − 系数 × 把防御差值限制在 −0.75 到 0.75</p>
 <table>
 <thead>
 <tr>
@@ -468,7 +468,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L2846">Data/GameLogic/AILogic.AILP.xdb · L2846</a>；字段 globalConstants/SpellDef</li>
 </ul>
 <h3 id="c10-普通伤害减免">C10 · 普通伤害减免</h3>
-<p><strong>实际规则</strong>：普通伤害=max(damageDealed,0)*(1-对应DamageDecrease/100)*对应DamagePenetrationMultiplier。</p>
+<p><strong>实际规则</strong>：普通伤害=max(damageDealed,0)*(1-对应DamageDecrease/100)*对应DamagePenetrationMultiplier。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>普通伤害 = 取较大值（原始伤害，0）×（1 − 对应类型减伤百分点 ÷ 100）× 对应防御与穿透乘数</p>
 <table>
 <thead>
 <tr>
@@ -505,7 +505,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2143-L2153">Src/PF_GameLogic/PFBaseUnit.cpp · L2143—2153</a></li>
 </ul>
 <h3 id="c11-可闪避普攻的命中检查">C11 · 可闪避普攻的命中检查</h3>
-<p><strong>实际规则</strong>：命中概率=(1-clamp(int(MissChance),0,100)/100)*(1-clamp(int(Evasion),0,100)/100)。</p>
+<p><strong>实际规则</strong>：命中概率=(1-clamp(int(MissChance),0,100)/100)*(1-clamp(int(Evasion),0,100)/100)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>命中概率 =（1 − 取整后的未命中率限制在 0 到 100 再除以 100）×（1 − 取整后的闪避率限制在 0 到 100 再除以 100）</p>
 <table>
 <thead>
 <tr>
@@ -541,7 +541,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2020-L2050">Src/PF_GameLogic/PFBaseUnit.cpp · L2020—2050</a></li>
 </ul>
 <h3 id="c12-护盾与实际扣血">C12 · 护盾与实际扣血</h3>
-<p><strong>实际规则</strong>：单个正吸收盾：剩余伤害=max(进入盾的伤害-盾量,0)，剩余盾=max(盾量-进入盾的伤害,0)；最后扣血=min(max(事件后伤害,0),当前生命)。</p>
+<p><strong>实际规则</strong>：单个正吸收盾：剩余伤害=max(进入盾的伤害-盾量,0)，剩余盾=max(盾量-进入盾的伤害,0)；最后扣血=min(max(事件后伤害,0),当前生命)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>剩余伤害 = 取较大值（进入护盾的伤害 − 护盾容量，0）<br>剩余盾量 = 取较大值（护盾容量 − 进入护盾的伤害，0）<br>实际扣血 = 取较小值（取较大值〔受伤事件后的伤害，0〕，当前生命）</p>
 <table>
 <thead>
 <tr>
@@ -584,7 +584,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnitAppl.cpp#L328-L368">Src/PF_GameLogic/PFBaseUnitAppl.cpp · L328—368</a></li>
 </ul>
 <h3 id="c13-治疗量及溢出">C13 · 治疗量及溢出</h3>
-<p><strong>实际规则</strong>：生命变化=min(最大生命-当前生命, amount*(1+HealingScale)+HealingBias)；禁止治疗时为0；忽略修正时直接使用 amount；负值可降低生命。</p>
+<p><strong>实际规则</strong>：生命变化=min(最大生命-当前生命, amount*(1+HealingScale)+HealingBias)；禁止治疗时为0；忽略修正时直接使用 amount；负值可降低生命。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>生命变化 = 取较小值（最大生命 − 当前生命，原始治疗量 ×〔1 + 治疗倍率修正〕+ 治疗固定修正）<br>禁止治疗时为 0<br>忽略修正时直接使用原始治疗量<br>负值可降低生命</p>
 <table>
 <thead>
 <tr>
@@ -625,7 +625,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFBaseUnit.cpp#L2314-L2346">Src/PF_GameLogic/PFBaseUnit.cpp · L2314—2346</a></li>
 </ul>
 <h3 id="c14-生命吸取与能量吸取">C14 · 生命吸取与能量吸取</h3>
-<p><strong>实际规则</strong>：LifeDrainAmount=min(目标扣血前生命,攻击者LifeDrain,本次实际伤害)；EnergyDrainAmount=min(攻击者EnergyDrain,本次实际伤害,目标当前能量)。</p>
+<p><strong>实际规则</strong>：LifeDrainAmount=min(目标扣血前生命,攻击者LifeDrain,本次实际伤害)；EnergyDrainAmount=min(攻击者EnergyDrain,本次实际伤害,目标当前能量)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>生命偷取量 = 取较小值（目标扣血前生命，攻击者生命偷取上限，本次实际伤害）<br>能量偷取量 = 取较小值（攻击者能量偷取上限，本次实际伤害，目标当前能量）</p>
 <table>
 <thead>
 <tr>
@@ -667,7 +667,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/DBAbility.h#L752-L760">Src/PF_GameLogic/DBAbility.h · L752—760</a></li>
 </ul>
 <h3 id="c15-技能与强化缩放">C15 · 技能与强化缩放</h3>
-<p><strong>实际规则</strong>：ability/damage=max(A+(x-L)*(B-A)/(R-L),A)，默认Round；refine=A+d*(星级-1)。</p>
+<p><strong>实际规则</strong>：ability/damage=max(A+(x-L)*(B-A)/(R-L),A)，默认Round；refine=A+d*(星级-1)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>属性或伤害标尺结果 = 取较大值（低端结果 +〔输入属性 − 低端属性〕×〔高端结果 − 低端结果〕÷〔高端属性 − 低端属性〕，低端结果），默认四舍五入<br>强化后数值 = 基础值 + 每级增量 ×（强化等级 − 1）</p>
 <table>
 <thead>
 <tr>
@@ -713,7 +713,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/GameLogic/AILogic.AILP.xdb#L6-L19">Data/GameLogic/AILogic.AILP.xdb · L6—19</a></li>
 </ul>
 <h3 id="c16-标准控制时间缩短与减速抵抗">C16 · 标准控制时间缩短与减速抵抗</h3>
-<p><strong>实际规则</strong>：名单内有限控制的新时长=旧时长*(1-cDecrease_TimeControl/100)；无限时长-1保持-1；DecSlowPower增加cDecrease_TimeControl/100。</p>
+<p><strong>实际规则</strong>：名单内有限控制的新时长=旧时长*(1-cDecrease_TimeControl/100)；无限时长-1保持-1；DecSlowPower增加cDecrease_TimeControl/100。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>名单内有限控制的新时长 = 旧时长 ×（1 − 控制缩短百分点 ÷ 100）<br>无限时长 −1 原样保留<br>减速削弱比例增加控制缩短百分点 ÷ 100</p>
 <table>
 <thead>
 <tr>
@@ -749,7 +749,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/List_AllControlStatusesWithoutSlow.APLS.xdb#L12-L32">Data/Heroes/DefaultStatus/List_AllControlStatusesWithoutSlow.APLS.xdb · L12—32</a></li>
 </ul>
 <h3 id="c17-标准减速的强度">C17 · 标准减速的强度</h3>
-<p><strong>实际规则</strong>：有效减速百分比=cDec_MoveSpeed*(1-DecSlowPower)；普通移动属性乘(1-有效减速百分比/100)；TOP版本另见源配置。</p>
+<p><strong>实际规则</strong>：有效减速百分比=cDec_MoveSpeed*(1-DecSlowPower)；普通移动属性乘(1-有效减速百分比/100)；TOP版本另见源配置。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>有效减速百分比 = 原始减速百分比 ×（1 − 减速削弱比例）<br>普通移速属性乘以（1 − 有效减速百分比 ÷ 100）<br>顶层版本见原配置</p>
 <table>
 <thead>
 <tr>
@@ -788,7 +788,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Heroes/DefaultStatus/_SLOW_MOVE_TOP.APLR.xdb#L35-L35">Data/Heroes/DefaultStatus/_SLOW_MOVE_TOP.APLR.xdb · L35</a></li>
 </ul>
 <h3 id="c18-死亡后的复活计时">C18 · 死亡后的复活计时</h3>
-<p><strong>实际规则</strong>：t0=base+局内等级*multiplier；若对局分钟m&gt;overtime，则加overtimeDelay*ceil(m-overtime)；t1=max(minimum,t0)*(1+ReviveTimeScale)+ReviveTimeShift；最终max(t1,advanceTime,deathTime)。</p>
+<p><strong>实际规则</strong>：t0=base+局内等级*multiplier；若对局分钟m&gt;overtime，则加overtimeDelay*ceil(m-overtime)；t1=max(minimum,t0)*(1+ReviveTimeScale)+ReviveTimeShift；最终max(t1,advanceTime,deathTime)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>基础复活时间 = 基础秒数 + 局内等级 × 每级增加秒数<br>越过加时门槛后，另加每分钟延长秒数 × 向上取整（已进行分钟 − 加时门槛分钟）<br>修正后复活时间 = 取较大值（最低秒数，基础复活时间）×（1 + 复活时间比例修正）+ 复活时间固定修正<br>最终取修正后时间、提前通知时间与死亡时间三者的最大值</p>
 <table>
 <thead>
 <tr>
@@ -843,7 +843,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1929-L1942">Src/PF_GameLogic/PFAIWorld.cpp · L1929—1942</a></li>
 </ul>
 <h3 id="c19-源码残留的赎回费用计算">C19 · 源码残留的赎回费用计算</h3>
-<p><strong>实际规则</strong>：redeem=200+(局内等级*50)*剩余复活时间/(局内等级*复活倍率)。</p>
+<p><strong>实际规则</strong>：redeem=200+(局内等级*50)*剩余复活时间/(局内等级*复活倍率)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>买活费用 = 200 +（局内等级 × 50）× 剩余复活时间 ÷（局内等级 × 复活倍率）</p>
 <table>
 <thead>
 <tr>

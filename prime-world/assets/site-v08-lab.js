@@ -5,7 +5,32 @@
  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
  const fixed=(v,k=4)=>Number.isFinite(v)?v.toFixed(k):'—';
  const put=(id,text)=>{let e=get(id);if(e)e.textContent=text};
- const steps=(id,lines)=>{const el=get(id);if(!el)return;el.replaceChildren();for(const line of lines){const li=document.createElement('li');li.textContent=line;el.appendChild(li)}};
+ const formulaTerms = {
+  Pbase:'基准穿透', x:'防御差值', Δ:'差值', APS:'每秒攻击次数', ExplicitAPS:'指定每秒攻击次数',
+  AS:'攻速点数', 'AS′':'有效攻速', Dex:'灵巧', 'Dex′':'有效灵巧', Cbase:'基础暴击率',
+  P_AS:'攻速穿透', P_Dex:'灵巧穿透', P:'总穿透', Body:'物理防御比例', Spirit:'魔法防御比例',
+  Stamina:'坚韧', Will:'意志', Defence:'对应防御', SpellDef:'技能防护', SpellPierce:'技能穿透',
+  q:'防御系数', M:'伤害乘数', MissChance:'未命中率', Evasion:'闪避率',
+  max:'取较大值', min:'取较小值', clamp:'限制范围', int:'向零取整',
+ };
+ const formulaTokens = /(?<![A-Za-z\d_])(?:Pbase|Δ|APS|ExplicitAPS|AS′?|Dex′?|Cbase|P_AS|P_Dex|P|Body|Spirit|Stamina|Will|Defence|SpellDef|SpellPierce|x|q|M|MissChance|Evasion|max|min|clamp|int)(?![A-Za-z\d_])/g;
+ const steps = (id, lines) => {
+  const list = get(id);
+  if (!list) return;
+  list.replaceChildren();
+  for (const line of lines) {
+   const item = document.createElement('li');
+   item.textContent = line;
+   const translated = line.replace(formulaTokens, token => id === 'v08-nova-steps' && token === 'x' ? '系数影响参数' : formulaTerms[token]);
+   if (translated !== line && line.includes('=')) {
+    const chinese = document.createElement('div');
+    chinese.className = 'pw-formula-zh';
+    chinese.textContent = '中文公式　'+translated;
+    item.appendChild(chinese);
+   }
+   list.appendChild(item);
+  }
+ };
  // PFLogicObject::IsDead compares float health with EPS_VALUE.
  const isAlive=hp=>Math.fround(hp)>=2**-23;
  function calculateNova(){

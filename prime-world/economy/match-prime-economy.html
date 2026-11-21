@@ -71,7 +71,7 @@
 <p>这些是从当前计算规则得出的设计解释。它们并不证明历史版本已达到理想平衡；要判断是否过度滚雪球，仍须使用真实地图单位奖励、玩家分路、击杀频率、发薪 tick 与购买顺序模拟。下方保留可核验公式，避免拿假设收益曲线冒充原版。</p>
 <h2 id="公式核验卡">公式核验卡</h2>
 <h3 id="p01-开局prime">P01 · 开局Prime</h3>
-<p><strong>实际规则</strong>：每名英雄开局Prime=int(startPrimePerTeam/地图声明teamSize)。</p>
+<p><strong>实际规则</strong>：每名英雄开局Prime=int(startPrimePerTeam/地图声明teamSize)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>每名英雄开局原质 = 队伍开局原质 ÷ 地图声明队伍人数，结果取整数</p>
 <table>
 <thead>
 <tr>
@@ -106,7 +106,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb#L78-L78">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb · L78</a></li>
 </ul>
 <h3 id="p02-被动prime收入">P02 · 被动Prime收入</h3>
-<p><strong>实际规则</strong>：一次发薪=giveWorldPrimeAmount+NaftaForTimeBonus；倒计时&lt;0时发放一次并重设为1秒。</p>
+<p><strong>实际规则</strong>：一次发薪=giveWorldPrimeAmount+NaftaForTimeBonus；倒计时&lt;0时发放一次并重设为1秒。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>单次被动收入 = 地图每次基础原质 + 时间原质加成<br>倒计时小于 0 时发放一次，并重设为 1 秒</p>
 <table>
 <thead>
 <tr>
@@ -147,7 +147,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb#L63-L66">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb · L63—66</a></li>
 </ul>
 <h3 id="p03-经典英雄击杀助攻和邻近奖励">P03 · 经典英雄击杀、助攻和邻近奖励</h3>
-<p><strong>实际规则</strong>：B=clamp((V-300)*.019,0,240)；x=clamp(V-S,-4000,4000)/1000；F=.016*x²+.2*x+1；D=deathStreak&lt;=1?1:.7^(deathStreak-1)；E=(Spec+B)/(N+1)+100+clamp((V-300)*.013,0,156)；击杀=max((2*(Kill+B)/(A+2)+E)*F*D,50)；助攻=max((Kill+B)/(A+2)*F*D,20)；邻近=max((Spec+B)/(N+1)*F*D,25)。</p>
+<p><strong>实际规则</strong>：B=clamp((V-300)*.019,0,240)；x=clamp(V-S,-4000,4000)/1000；F=.016*x²+.2*x+1；D=deathStreak&lt;=1?1:.7^(deathStreak-1)；E=(Spec+B)/(N+1)+100+clamp((V-300)*.013,0,156)；击杀=max((2*(Kill+B)/(A+2)+E)*F*D,50)；助攻=max((Kill+B)/(A+2)*F*D,20)；邻近=max((Spec+B)/(N+1)*F*D,25)。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>累计原质附加项 = 把（受害者累计原质 − 300）× 0.019 限制在 0 到 240<br>经济差 = 把（受害者累计原质 − 领取者累计原质）限制在 −4000 到 4000 再除以 1000<br>经济差倍率 = 0.016 × 经济差² + 0.2 × 经济差 + 1<br>连死倍率 = 连死次数不超过 1 时取 1，否则取 0.7 的（连死次数 − 1）次方<br>击杀专属加项 =（邻近奖励基数 + 累计原质附加项）÷（邻近奖励人数 + 1）+ 100 + 把（受害者累计原质 − 300）× 0.013 限制在 0 到 156<br>击杀奖励 = 取较大值（〔2 ×（击杀奖励基数 + 累计原质附加项）÷（助攻人数 + 2）+ 击杀专属加项〕× 经济差倍率 × 连死倍率，50）<br>助攻奖励 = 取较大值（（击杀奖励基数 + 累计原质附加项）÷（助攻人数 + 2）× 经济差倍率 × 连死倍率，20）<br>邻近奖励 = 取较大值（（邻近奖励基数 + 累计原质附加项）÷（邻近奖励人数 + 1）× 经济差倍率 × 连死倍率，25）</p>
 <table>
 <thead>
 <tr>
@@ -207,7 +207,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFHero.cpp#L724-L732">Src/PF_GameLogic/PFHero.cpp · L724—732</a></li>
 </ul>
 <h3 id="p04-小兵建筑邻近奖励与队伍奖励">P04 · 小兵/建筑邻近奖励与队伍奖励</h3>
-<p><strong>实际规则</strong>：非英雄邻近单人基础奖励=(VictimNaftaSpecForKill/N)*地图multipliers[min(N-1,last)]；再乘领取者修正；队伍presence奖按活跃成员数分；TeamNaftaForKill另逐人发。</p>
+<p><strong>实际规则</strong>：非英雄邻近单人基础奖励=(VictimNaftaSpecForKill/N)*地图multipliers[min(N-1,last)]；再乘领取者修正；队伍presence奖按活跃成员数分；TeamNaftaForKill另逐人发。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>非英雄邻近单人基础奖励 = 受害单位邻近奖励基数 ÷ 邻近领取人数 × 对应人数档地图倍率<br>倍率索引为领取人数减 1，超出时取最后一档<br>再乘领取者修正<br>队伍到场奖按活跃成员数分配，全队击杀奖逐人发放</p>
 <table>
 <thead>
 <tr>
@@ -252,7 +252,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb#L67-L74">Data/Maps/Multiplayer/MOBA/_.ADMPSTTN.xdb · L67—74</a></li>
 </ul>
 <h3 id="p05-击杀和助攻归属">P05 · 击杀和助攻归属</h3>
-<p><strong>实际规则</strong>：按伤害/应用器历史、召唤物主人及时间窗归属，不是单靠最后视觉命中者。</p>
+<p><strong>实际规则</strong>：按伤害/应用器历史、召唤物主人及时间窗归属，不是单靠最后视觉命中者。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>击杀归属按伤害记录、应用器历史、召唤物主人关系和对应时间窗判定</p>
 <table>
 <thead>
 <tr>
@@ -293,7 +293,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L698-L800">Src/PF_GameLogic/PFAIWorld.cpp · L698—800</a></li>
 </ul>
 <h3 id="p06-经典小兵与塔的真实赏金字段">P06 · 经典小兵与塔的真实赏金字段</h3>
-<p><strong>实际规则</strong>：普通近战兵：最后击杀36、队伍到场33；远程兵：32与30；攻城兵：43与50。塔1/2/3：最后击杀0、邻近奖200/250/150、每位队员击杀方全队奖200/250/150。。</p>
+<p><strong>实际规则</strong>：普通近战兵：最后击杀36、队伍到场33；远程兵：32与30；攻城兵：43与50。塔1/2/3：最后击杀0、邻近奖200/250/150、每位队员击杀方全队奖200/250/150。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>近战兵：击杀奖 36、队伍到场奖 33<br>远程兵：32 和 30<br>攻城兵：43 和 50。三级塔型的个人击杀奖均为 0，邻近奖和每位队员的击杀方全队奖分别为 200／250／150</p>
 <table>
 <thead>
 <tr>
@@ -336,7 +336,7 @@
 <li><a href="https://github.com/nival/Prime-World/blob/8de5df31fa122b6f51cd099883de74bf4a21228d/pw/branches/r1117/Src/PF_GameLogic/PFAIWorld.cpp#L1413-L1483">Src/PF_GameLogic/PFAIWorld.cpp · L1413—1483</a></li>
 </ul>
 <h3 id="p07-额外prime来源与转移">P07 · 额外Prime来源与转移</h3>
-<p><strong>实际规则</strong>：天赋AddNafta直接增减对应英雄余额；转移取得量=实际扣除量*multiplier+addition；成就满足并授予时，naftaAward&gt;0则额外发放。。</p>
+<p><strong>实际规则</strong>：天赋AddNafta直接增减对应英雄余额；转移取得量=实际扣除量*multiplier+addition；成就满足并授予时，naftaAward&gt;0则额外发放。。</p><p class="pw-formula-zh"><strong>中文公式</strong><br>原质增减应用器直接修改英雄余额<br>原质转移所得 = 实际扣除量 × 转移倍率 + 固定追加量<br>成就授予时，配置奖励为正才额外发放</p>
 <table>
 <thead>
 <tr>

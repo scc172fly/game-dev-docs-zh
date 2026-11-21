@@ -436,3 +436,5 @@ html{scrollbar-gutter:stable}
 
 .pw-table-scroll{max-width:100%;overflow-x:auto}
 table .pw-table-unbroken{white-space:nowrap;overflow-wrap:normal;word-break:normal}
+
+.pw-formula-zh {margin:.55em 0 1em;padding:.45em .8em;border-inline-start:2px solid var(--gold);line-height:1.7;overflow-wrap:anywhere}
