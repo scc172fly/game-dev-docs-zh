@@ -30,7 +30,7 @@ html[data-theme="light"] .pw-site-header{background:linear-gradient(95deg,rgba(2
 .pw-top-glow{height:1px;background:linear-gradient(90deg,transparent,rgba(240,197,115,.58),rgba(237,170,73,.2),transparent)}
 .pw-nav-shell{max-width:1650px;gap:22px;padding:0 28px}
 .pw-brand{min-width:242px;gap:12px;align-items:center}
-.pw-emblem{flex:0 0 auto;align-self:center;width:55px;height:61px;clip-path:none;border:0!important;background:url("ui/v6-crest.webp") center / contain no-repeat!important;filter:drop-shadow(0 0 8px rgba(225,177,80,.24))}
+.pw-emblem{flex:0 0 auto;align-self:center;width:55px;height:61px;clip-path:none;border:0!important;background:#0c141c url("ui/v6-crest.webp") calc(50% - 5px) center / contain no-repeat!important;filter:drop-shadow(0 0 8px rgba(225,177,80,.24))}
 .pw-emblem::before,.pw-emblem span{display:none!important}
 .pw-brand-copy strong{font-family:Georgia,"Noto Serif CJK SC",serif;font-size:23px;letter-spacing:.07em;line-height:1;color:#f5e4bf}
 .pw-brand-copy small{font-size:10px;letter-spacing:.29em;color:#d4a860;margin-top:8px}
