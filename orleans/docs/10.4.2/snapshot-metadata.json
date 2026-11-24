@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/dotnet/orleans",
+  "branch": "main",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "workflowRunId": 45144169009,
+  "workflowRunUrl": "https://github.com/dotnet/orleans/actions/runs/45144169009",
+  "artifactId": 14804107035,
+  "artifactCreatedUtc": "2026-11-23T09:19:45Z",
+  "artifactZipSha256": "137cf4e9e193eeb0744cfe286f04d8a4f1824dc3524b0a9ca7a210fdab2e36f8",
+  "sitemapSha256": "7768b928b16316e4c60509d23f4837f9b2af9c338bfe61479a8e5cfd1ac3ae28",
+  "llmsFullSha256": "7e56504a13a423270a425def7880d82dc6fd0234a15b21b4f669716511731da3",
+  "sitemapPages": 15235,
+  "conceptualPages": 254,
+  "apiPages": 14981,
+  "artifactMarkdownFiles": 15233,
+  "artifactHtmlFiles": 15466,
+  "extractedAssets": 27,
+  "rawHtmlScratchPath": "/workspace/scratch/cbbee76bb734/source-audit/artifact-html",
+  "syntheticMarkdownPages": [
+    "https://dotnet.github.io/orleans/",
+    "https://dotnet.github.io/orleans/samples/"
+  ],
+  "existingPageMismatches": [],
+  "license": "MIT",
+  "copyright": "Copyright (c) .NET Foundation",
+  "licenseUrl": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/LICENSE"
+}

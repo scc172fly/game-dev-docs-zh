@@ -1,0 +1,1507 @@
+{
+  "status": "pass",
+  "completedAtUtc": "2026-11-24T06:20:44.941Z",
+  "method": "Executed unmodified final index inline bootstrap, official-icons and complete frontend/app.js in isolated Node VM/JSDOM. Real native details/summary clicks, collapse button clicks, hash/navigation events and language buttons drive the product listeners. Catalog/content fixtures contain only representative data, not the navigation algorithm.",
+  "cases": 31,
+  "passed": 31,
+  "failed": 0,
+  "fixture": {
+    "groups": [
+      "overview",
+      "start",
+      "grains",
+      "hosting",
+      "deployment",
+      "streaming",
+      "architecture",
+      "security",
+      "tutorials",
+      "howto",
+      "migration",
+      "resources",
+      "diagnostics",
+      "api"
+    ],
+    "visibleBoundaryCounts": {
+      "grains": 35,
+      "hosting": 70,
+      "deployment": 36,
+      "streaming": 34
+    },
+    "pages": 197,
+    "deepApiPages": [
+      "/docs/api/csharp/nav-fixture-0/example.service/methods/do-work/",
+      "/docs/api/csharp/nav-fixture-0/example.service/properties/value/"
+    ],
+    "file": "nav-catalog-fixture.json",
+    "sha256": "c4a87cea01c9d8168cb5dc2d406a54b76392ac1b88f16b55afcce2f328219e10"
+  },
+  "sourceArtifacts": [
+    {
+      "file": "/workspace/sites/orleans-zh-reference/frontend/index.html",
+      "sha256": "5897be5d318fbf8d909ce51538a62444cca7dc3c3d9fbf8742208a41e4b1e575"
+    },
+    {
+      "file": "/workspace/sites/orleans-zh-reference/frontend/app.js",
+      "sha256": "912ac9a21b695ce4f765ea7225f87b3c5f637963684bbc520daad18434d8005f"
+    },
+    {
+      "file": "/workspace/sites/orleans-zh-reference/frontend/assets/official-icons/icons.js",
+      "sha256": "f3b14b9178aed9374bfeb8e719fb193990de883e6e51a1c737b87197e80afb53"
+    }
+  ],
+  "results": [
+    {
+      "name": "collapse-disabled-until-catalog-preserves-saved-map",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Saved groups survive delayed catalog",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Collapse works after catalog",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 3,
+      "networkRequests": []
+    },
+    {
+      "name": "first-use-all-14-groups-open-at-34-35-36-70-boundaries",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Every group defaults open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "manual-close-and-open-survive-new-dom-reload",
+      "status": "pass",
+      "domInstances": 3,
+      "steps": [
+        {
+          "label": "Manually closed groups",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": false,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": false,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "New DOM restores both closed groups",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": false,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": false,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Second DOM restores reopened group",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": false,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 45,
+      "networkRequests": []
+    },
+    {
+      "name": "collapse-all-survives-reload",
+      "status": "pass",
+      "domInstances": 2,
+      "steps": [
+        {
+          "label": "All groups collapse",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Reload does not reopen current group",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 29,
+      "networkRequests": []
+    },
+    {
+      "name": "manually-closed-current-group-restored-exactly",
+      "status": "pass",
+      "domInstances": 2,
+      "steps": [
+        {
+          "label": "Current group manually closed",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": false,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Current group remains closed on refresh",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": false,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 29,
+      "networkRequests": []
+    },
+    {
+      "name": "immediate-summary-open-persists-before-any-await-and-reload",
+      "status": "pass",
+      "domInstances": 2,
+      "steps": [
+        {
+          "label": "Immediate open state before queued toggle event",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "New DOM restores the storage snapshot taken immediately after click",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 3,
+      "networkRequests": []
+    },
+    {
+      "name": "immediate-summary-close-persists-before-any-await-and-reload",
+      "status": "pass",
+      "domInstances": 2,
+      "steps": [
+        {
+          "label": "Immediate closed state before queued toggle event",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": false,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "New DOM restores the storage snapshot taken immediately after click",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": false,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 29,
+      "networkRequests": []
+    },
+    {
+      "name": "native-summary-semantics-and-enter-space-defaults-not-cancelled",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Keyboard-event source check does not replace actual native activation test",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "sidebar-home-entry-removed-header-brand-retained",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Removing sidebar home does not affect group state",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "desktop-mobile-theme-options-chinese-values-unchanged",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Theme label localization does not change navigation state",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "mixed-complete-persisted-map-restored",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Every boolean restored exactly",
+          "states": {
+            "overview": true,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": true,
+            "streaming": false,
+            "architecture": true,
+            "security": false,
+            "tutorials": true,
+            "howto": false,
+            "migration": true,
+            "resources": false,
+            "diagnostics": true,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 7,
+      "networkRequests": []
+    },
+    {
+      "name": "cross-group-navigation-opens-only-target-and-saves",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Initial saved closed state",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Target group only opened",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/host/topic-000/"
+        },
+        {
+          "label": "Second target opens without closing previous state",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": true,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/security/topic-000/"
+        }
+      ],
+      "persistedWrites": 4,
+      "networkRequests": []
+    },
+    {
+      "name": "same-group-navigation-keeps-current-group-closed",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Same-group navigation does not reopen manually closed group",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-001/"
+        }
+      ],
+      "persistedWrites": 0,
+      "networkRequests": []
+    },
+    {
+      "name": "same-page-anchor-keeps-all-group-states",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Anchor-only route preserves groups",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/::section-two"
+        },
+        {
+          "label": "Second anchor preserves groups",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/::section-one"
+        }
+      ],
+      "persistedWrites": 0,
+      "networkRequests": []
+    },
+    {
+      "name": "language-switches-preserve-group-states",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Language en preserves groups",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": true,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Language compare preserves groups",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": true,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Language zh preserves groups",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": true,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 2,
+      "networkRequests": []
+    },
+    {
+      "name": "deep-api-cross-group-uses-catalog-api-group",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Deep API opens API group despite hidden leaf",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": true
+          },
+          "route": "#/docs/api/csharp/nav-fixture-0/example.service/methods/do-work/"
+        },
+        {
+          "label": "Same API group deep navigation does not reopen it",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/api/csharp/nav-fixture-0/example.service/properties/value/"
+        }
+      ],
+      "persistedWrites": 4,
+      "networkRequests": []
+    },
+    {
+      "name": "deep-api-refresh-respects-manually-closed-api-group",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Direct deep API reload does not override saved collapsed API state",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/api/csharp/nav-fixture-0/example.service/methods/do-work/"
+        }
+      ],
+      "persistedWrites": 0,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-malformed-json",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-null",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-array",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-old-version",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-future-version",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-string-version",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-groups-array",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-groups-null",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-or-expired-persistence-nonboolean-values",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Invalid data defaults all known groups open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 14,
+      "networkRequests": []
+    },
+    {
+      "name": "partial-valid-values-and-unknown-groups",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Valid booleans retained; absent/invalid groups default open",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": false,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        }
+      ],
+      "persistedWrites": 13,
+      "networkRequests": []
+    },
+    {
+      "name": "storage-failure-getter",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Storage failure has a usable initial state",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Collapse works in session despite storage failure",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Native toggle works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Cross-group navigation works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/host/topic-000/"
+        }
+      ],
+      "persistedWrites": 0,
+      "networkRequests": []
+    },
+    {
+      "name": "storage-failure-getItem",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Storage failure has a usable initial state",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Collapse works in session despite storage failure",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Native toggle works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Cross-group navigation works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/host/topic-000/"
+        }
+      ],
+      "persistedWrites": 33,
+      "networkRequests": []
+    },
+    {
+      "name": "storage-failure-setItem",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Storage failure has a usable initial state",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Collapse works in session despite storage failure",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Native toggle works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Cross-group navigation works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/host/topic-000/"
+        }
+      ],
+      "persistedWrites": 0,
+      "networkRequests": []
+    },
+    {
+      "name": "storage-failure-allMethods",
+      "status": "pass",
+      "domInstances": 1,
+      "steps": [
+        {
+          "label": "Storage failure has a usable initial state",
+          "states": {
+            "overview": true,
+            "start": true,
+            "grains": true,
+            "hosting": true,
+            "deployment": true,
+            "streaming": true,
+            "architecture": true,
+            "security": true,
+            "tutorials": true,
+            "howto": true,
+            "migration": true,
+            "resources": true,
+            "diagnostics": true,
+            "api": true
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Collapse works in session despite storage failure",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": false,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Native toggle works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": false,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/grains/topic-000/"
+        },
+        {
+          "label": "Cross-group navigation works in session",
+          "states": {
+            "overview": false,
+            "start": false,
+            "grains": true,
+            "hosting": true,
+            "deployment": false,
+            "streaming": false,
+            "architecture": false,
+            "security": false,
+            "tutorials": false,
+            "howto": false,
+            "migration": false,
+            "resources": false,
+            "diagnostics": false,
+            "api": false
+          },
+          "route": "#/docs/host/topic-000/"
+        }
+      ],
+      "persistedWrites": 0,
+      "networkRequests": []
+    }
+  ],
+  "keyboardSourceCheck": {
+    "status": "pass",
+    "nativeSummaryMarkupPreserved": true,
+    "handlerOrder": [
+      "preventDefault",
+      "group.open toggle",
+      "saveNavExpansion"
+    ],
+    "clickHandlerAsync": false,
+    "awaitInsideClickHandler": false,
+    "toggleFallbackListenerRetained": true,
+    "summaryKeyHandlersInstalledByRenderNav": 0,
+    "actualHandlerSource": "$('summary',group).addEventListener('click',event=>{\n        event.preventDefault();\n        group.open=!group.open;\n        saveNavExpansion();\n      })",
+    "limit": "Native Enter/Space activation is verified by root in a real browser. This Node test checks preserved summary semantics, synchronous click behavior and uncancelled keyboard events; synthetic JSDOM keyboard events do not prove native activation."
+  },
+  "themeOptionContract": {
+    "controls": [
+      "theme-select",
+      "theme-select-mobile"
+    ],
+    "options": [
+      {
+        "value": "dark",
+        "label": "深色"
+      },
+      {
+        "value": "light",
+        "label": "浅色"
+      },
+      {
+        "value": "auto",
+        "label": "自动"
+      }
+    ],
+    "scope": "Both actual native selects have Chinese option text and unchanged stored preference values; the report is bound to the latest index.html."
+  },
+  "regressionBoundary": {
+    "previousReport": "nav-state-report.before-synchronous-summary-save.json",
+    "previousCases": 26,
+    "previousLimitation": "Earlier manual toggle tests waited for queued events and did not cover an immediate reload.",
+    "newChecks": "Open and close each assert persisted JSON immediately after summary.click() returns, without awaiting any event-loop turn. A separate Map copy freezes the persisted storage at that exact moment, and a new DOM reloads from only that snapshot.",
+    "jsdomTeardownHandling": "JSDOM 26 can dispatch a host-timer details toggle after window.close(), although the old document is destroyed. The old DOM is therefore disposed after the new DOM is initialized. Its later queued writes target its old Map only and cannot change the frozen reload snapshot. This does not delay or weaken the immediate persistence assertion.",
+    "initialSimulatorObservation": "nav-state-report.jsdom-teardown-observation.json"
+  },
+  "networkRequests": [],
+  "repoWrites": 0,
+  "browserUsed": false,
+  "serverStarted": false,
+  "fullSiteValidatorsRepeated": false,
+  "limitations": [
+    "JSDOM verifies DOM event/state/persistence behavior, not visual disclosure animation, scrolling geometry or actual browser rendering.",
+    "Storage failure is simulated. Failed writes cannot guarantee state across a real reload; the tested requirement is graceful in-session behavior and read-failure defaults."
+  ]
+}

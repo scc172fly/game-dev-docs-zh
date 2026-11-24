@@ -1,0 +1,66 @@
+{
+  "file": "/workspace/sites/orleans-zh-reference/translations/review-resources-examples.json",
+  "beforeSha256": "67f489598804a47c0a6e87b2181d8d427025f5b3614b17af1006462287495640",
+  "afterSha256": "fa1ffc24e38596dde5d87f6e50e683b6f036687aa80514df99e968e37a681157",
+  "changedUnitCount": 4,
+  "changes": [
+    {
+      "unitId": "307337d79442a524fa92",
+      "before": {
+        "text": "C# · Razor · 日志记录 · Aspire · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审"
+      },
+      "after": {
+        "text": "C# · Razor · 日志化 · Aspire · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审",
+        "reviewReason": "独立全站复核：此示例标签指 Orleans Journaling 功能，统一为“日志化”；仅修改该功能标签，不改变一般 logging 的译法。"
+      }
+    },
+    {
+      "unitId": "3ec058993851ad4f8c94",
+      "before": {
+        "text": "C# · 持久作业 · 日志记录 · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审"
+      },
+      "after": {
+        "text": "C# · 持久作业 · 日志化 · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审",
+        "reviewReason": "独立全站复核：此示例标签指 Orleans Journaling 功能，统一为“日志化”；仅修改该功能标签，不改变一般 logging 的译法。"
+      }
+    },
+    {
+      "unitId": "25e9ffdc23f1a6c9dd7e",
+      "before": {
+        "text": "C# · 日志记录 · Azure Storage · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审"
+      },
+      "after": {
+        "text": "C# · 日志化 · Azure Storage · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审",
+        "reviewReason": "独立全站复核：此示例标签指 Orleans Journaling 功能，统一为“日志化”；仅修改该功能标签，不改变一般 logging 的译法。"
+      }
+    },
+    {
+      "unitId": "d064970d31f50f105c4e",
+      "before": {
+        "text": "C# · 消息传递 · 日志记录 · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审"
+      },
+      "after": {
+        "text": "C# · 消息传递 · 日志化 · 查看源代码 →",
+        "status": "reviewed",
+        "reviewMethod": "AI 逐句语义译审",
+        "reviewReason": "独立全站复核：此示例标签指 Orleans Journaling 功能，统一为“日志化”；仅修改该功能标签，不改变一般 logging 的译法。"
+      }
+    }
+  ],
+  "scope": "Exactly the four authorized sample tag units. Existing status/reviewMethod and other fields retained; reviewReason appended.",
+  "builderExecuted": false
+}

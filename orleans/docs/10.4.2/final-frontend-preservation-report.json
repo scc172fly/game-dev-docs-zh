@@ -1,0 +1,321 @@
+{
+  "status": "pass",
+  "completedAtUtc": "2026-11-24T05:53:17.849Z",
+  "scope": "Final frontend-only incremental check: freeze the actually theme-tested JavaScript and ensure frontend/dist byte identity, classic-script and local-reference compatibility, plus unchanged fingerprints for all authoritative data payloads.",
+  "frontendArtifacts": [
+    {
+      "file": "index.html",
+      "sha256": "5a490286880b7edf30da837b520783a66f7b791ee2e08c44b41c9c5821b9c1bc",
+      "bytes": 12707,
+      "frontendDistIdentical": true
+    },
+    {
+      "file": "app.js",
+      "sha256": "73ba0b41d54c11954ec4b563d7f8be093f244f3f7078b91a24ad07add39da4b8",
+      "bytes": 67577,
+      "frontendDistIdentical": true
+    },
+    {
+      "file": "app.css",
+      "sha256": "dafe28d1c27386adb9a1f1c17a5bb25e032723eadb659ac4567e2c7d50d29c35",
+      "bytes": 61615,
+      "frontendDistIdentical": true
+    },
+    {
+      "file": "data-loader.js",
+      "sha256": "e6c444afb1fe1281f5d2585f03219312a13f8e2ee166d1234c3ac38102825fed",
+      "bytes": 3777,
+      "frontendDistIdentical": true
+    },
+    {
+      "file": "assets/official-icons/icons.js",
+      "sha256": "f3b14b9178aed9374bfeb8e719fb193990de883e6e51a1c737b87197e80afb53",
+      "bytes": 34058,
+      "frontendDistIdentical": true
+    }
+  ],
+  "themeTestCases": 19,
+  "themeTestsPassed": 19,
+  "themeReportSha256": "b277adfb2f10b143dcf3d795258c8b3032f35da7046e80cb6d2bef506e43d336",
+  "dataPayloadCount": 191,
+  "all191PayloadsUnchangedFromPriorCompleteAudit": true,
+  "manifestSha256": "58f50c9a964c46351926cbd03d7f57a17e965547ee05acf98eb3b3716d54a428",
+  "contentPreservationReportSha256": "582166444d6ab27e6ef8a363132ee88b6e26d289fd7c96c5f327e538ae0813ef",
+  "scriptChecks": [
+    {
+      "file": "index.html:inline:0",
+      "sha256": "53f72a2e3a54d4a0e0ead17a9f7a9f883d8f2fc5a324daa42d29474125052135",
+      "classicScriptParse": true,
+      "imports": 0,
+      "importMeta": 0,
+      "fetchCalls": 0,
+      "xhrConstructors": 0
+    },
+    {
+      "file": "app.js",
+      "sha256": "73ba0b41d54c11954ec4b563d7f8be093f244f3f7078b91a24ad07add39da4b8",
+      "classicScriptParse": true,
+      "imports": 0,
+      "importMeta": 0,
+      "fetchCalls": 0,
+      "xhrConstructors": 0
+    },
+    {
+      "file": "data-loader.js",
+      "sha256": "e6c444afb1fe1281f5d2585f03219312a13f8e2ee166d1234c3ac38102825fed",
+      "classicScriptParse": true,
+      "imports": 0,
+      "importMeta": 0,
+      "fetchCalls": 0,
+      "xhrConstructors": 0
+    },
+    {
+      "file": "assets/official-icons/icons.js",
+      "sha256": "f3b14b9178aed9374bfeb8e719fb193990de883e6e51a1c737b87197e80afb53",
+      "classicScriptParse": true,
+      "imports": 0,
+      "importMeta": 0,
+      "fetchCalls": 0,
+      "xhrConstructors": 0
+    }
+  ],
+  "staticResourceReferences": [
+    {
+      "owner": "index.html",
+      "kind": "script-src",
+      "reference": "assets/official-icons/icons.js",
+      "target": "assets/official-icons/icons.js",
+      "exists": true
+    },
+    {
+      "owner": "index.html",
+      "kind": "script-src",
+      "reference": "data-loader.js",
+      "target": "data-loader.js",
+      "exists": true
+    },
+    {
+      "owner": "index.html",
+      "kind": "script-src",
+      "reference": "app.js",
+      "target": "app.js",
+      "exists": true
+    },
+    {
+      "owner": "index.html",
+      "kind": "link",
+      "reference": "app.css",
+      "target": "app.css",
+      "exists": true
+    },
+    {
+      "owner": "index.html",
+      "kind": "link",
+      "reference": "assets/brand/favicon.svg",
+      "target": "assets/brand/favicon.svg",
+      "exists": true
+    },
+    {
+      "owner": "index.html",
+      "kind": "img",
+      "reference": "assets/brand/orleans-header.png",
+      "target": "assets/brand/orleans-header.png",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "catalog.json",
+      "target": "data/catalog.js",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "diagrams.json",
+      "target": "data/diagrams.js",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/mermaid.bundle.js",
+      "target": "assets/mermaid.bundle.js",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/original/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp",
+      "target": "assets/original/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/original/_astro/web-application.mdTGpSsm_Z1r4fB0.webp",
+      "target": "assets/original/_astro/web-application.mdTGpSsm_Z1r4fB0.webp",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "target": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/original/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+      "target": "assets/original/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/original/_astro/heterogeneous.C0meRUB5_V6RbB.webp",
+      "target": "assets/original/_astro/heterogeneous.C0meRUB5_V6RbB.webp",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-static-string",
+      "reference": "assets/original/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp",
+      "target": "assets/original/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "source-issues.json",
+      "target": "source-issues.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "documentation-version.json",
+      "target": "documentation-version.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "audit-report.json",
+      "target": "audit-report.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "static-compatibility.json",
+      "target": "static-compatibility.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "publication-verification.json",
+      "target": "publication-verification.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "code-verification.json",
+      "target": "code-verification.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "code-comments-review.json",
+      "target": "code-comments-review.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "code-comments-cross-review.json",
+      "target": "code-comments-cross-review.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "review-register.json",
+      "target": "review-register.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "unit-review-register.json",
+      "target": "unit-review-register.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "contextual-reviews.json",
+      "target": "contextual-reviews.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "cross-review-report.json",
+      "target": "cross-review-report.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "source-issues.json",
+      "target": "source-issues.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-href",
+      "reference": "snapshot-metadata.json",
+      "target": "snapshot-metadata.json",
+      "exists": true
+    },
+    {
+      "owner": "app.js",
+      "kind": "script-markup-src",
+      "reference": "assets/brand/orleans-logo.svg",
+      "target": "assets/brand/orleans-logo.svg",
+      "exists": true
+    }
+  ],
+  "resolvedStaticReferenceCount": 30,
+  "distinctResolvedStaticTargets": 29,
+  "nonResourceFilenameComparisonKeys": [
+    "cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+    "grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+    "generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp"
+  ],
+  "nonResourceFilenameKeyEvidence": "sourceLightboxImages stores only basename comparison keys; hasSourceLightbox checks img src split by slash and pop(). Each basename has a separately verified complete assets/original path. These keys do not request files from the site root.",
+  "errors": [],
+  "browserUsed": false,
+  "serverStarted": false,
+  "repoWrites": 0,
+  "expensiveContentValidatorsRepeated": false,
+  "evidenceFiles": [
+    "payload-baseline.json",
+    "content-preservation-report.json",
+    "source-icon-expectations.json",
+    "source-fragment-fixtures.json",
+    "theme-test-plan.json",
+    "test_theme_behavior.cjs",
+    "theme-behavior-report.json",
+    "verify_final_frontend.cjs"
+  ],
+  "limitations": [
+    "Content preservation is inherited only because every authoritative payload byte is unchanged from the passing full audit.",
+    "This is a static/VM check. Root browser QA determines actual responsive alignment, per-column icon placement and native dropdown appearance."
+  ]
+}

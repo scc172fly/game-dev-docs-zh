@@ -1,0 +1,354 @@
+{
+  "classicEvaluation": "passed",
+  "globalContract": "window.OrleansMermaid.initialize/render",
+  "diagramRecords": 22,
+  "bilingualParseCases": 44,
+  "runtimeRequests": [],
+  "artifacts": {
+    "bundleFile": "/workspace/sites/orleans-zh-reference/dist/assets/mermaid.bundle.js",
+    "bundleSha256": "d8e9cc1f609fc7e4cfa8eeb06f98200acd99ae81fb29f712188e0f39f86c5acf",
+    "diagramScript": "dist/data/diagrams.js",
+    "diagramScriptSha256": "f74878a761c152d6e3f885bef8f0fe3c17f88b24a94d96e02eed7882aaf2408e"
+  },
+  "inspection": {
+    "globalFetchCalls": 0,
+    "XMLHttpRequestConstructors": 0,
+    "WebSocketConstructors": 0,
+    "WorkerConstructors": 1,
+    "remoteUrlLiterals": [
+      "http://",
+      "http:///org/eclipse/emf/ecore/util/ExtendedMetaData",
+      "http://www.eclipse.org/elk/ElkGraph",
+      "http://www.eclipse.org/emf/2002/Ecore",
+      "http://www.eclipse.org/emf/2003/XMLType",
+      "http://www.w3.org/1998/Math/MathML",
+      "http://www.w3.org/1999/xhtml",
+      "http://www.w3.org/1999/xlink",
+      "http://www.w3.org/2000/svg",
+      "http://www.w3.org/2000/xmlns/",
+      "http://www.w3.org/2001/XMLSchema#boolean",
+      "http://www.w3.org/2001/XMLSchema#byte",
+      "http://www.w3.org/2001/XMLSchema#decimal",
+      "http://www.w3.org/2001/XMLSchema#double",
+      "http://www.w3.org/2001/XMLSchema#float",
+      "http://www.w3.org/2001/XMLSchema#hexBinary",
+      "http://www.w3.org/2001/XMLSchema#int",
+      "http://www.w3.org/2001/XMLSchema#integer",
+      "http://www.w3.org/2001/XMLSchema#long",
+      "http://www.w3.org/2001/XMLSchema#short",
+      "http://www.w3.org/2001/XMLSchema#string",
+      "http://www.w3.org/XML/1998/namespace"
+    ]
+  },
+  "results": [
+    {
+      "hash": "a250769c00d486e6eaa68feb71b85436ad2694eb03e38636f570cab602c6363e",
+      "page": "/docs/grains/durable-tasks-idempotency/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "a250769c00d486e6eaa68feb71b85436ad2694eb03e38636f570cab602c6363e",
+      "page": "/docs/grains/durable-tasks-idempotency/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "31a21e6b3c6c79b1c9950d5d223b8231526ad2b272cce8329d230b32a363196e",
+      "page": "/docs/grains/durable-tasks-structured-concurrency/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "31a21e6b3c6c79b1c9950d5d223b8231526ad2b272cce8329d230b32a363196e",
+      "page": "/docs/grains/durable-tasks-structured-concurrency/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "9f6e57d89ec2de64a7c87f39059093235389fb1e6f1c5e34f14f6972d9599653",
+      "page": "/docs/grains/durable-tasks-structured-concurrency/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "9f6e57d89ec2de64a7c87f39059093235389fb1e6f1c5e34f14f6972d9599653",
+      "page": "/docs/grains/durable-tasks-structured-concurrency/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "7cd18d86165ab2266c5f8cedd76eec8454d16e42a84e64ee78addfd9db797e67",
+      "page": "/docs/implementation/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "7cd18d86165ab2266c5f8cedd76eec8454d16e42a84e64ee78addfd9db797e67",
+      "page": "/docs/implementation/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "4ac0d6928df1fefee0bcf0e38c7f77d309f2c6b19a3fb51c7796ad303b634fde",
+      "page": "/docs/implementation/activation-lifecycle/",
+      "language": "source",
+      "diagramType": "stateDiagram",
+      "passed": true
+    },
+    {
+      "hash": "4ac0d6928df1fefee0bcf0e38c7f77d309f2c6b19a3fb51c7796ad303b634fde",
+      "page": "/docs/implementation/activation-lifecycle/",
+      "language": "zh",
+      "diagramType": "stateDiagram",
+      "passed": true
+    },
+    {
+      "hash": "4ccfd119f4202e5abb7d342734933650f4bca71d0bd736fe30a8efdb774fbdb1",
+      "page": "/docs/implementation/activation-lifecycle/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "4ccfd119f4202e5abb7d342734933650f4bca71d0bd736fe30a8efdb774fbdb1",
+      "page": "/docs/implementation/activation-lifecycle/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "db1ad3cb2510b67d95741bcf7cea459afb06b4aaa70ef092401983b7a762e1e8",
+      "page": "/docs/implementation/cluster-management/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "db1ad3cb2510b67d95741bcf7cea459afb06b4aaa70ef092401983b7a762e1e8",
+      "page": "/docs/implementation/cluster-management/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "06cf7bc7d455ca56a595e9d9411e7e0baa57166cd55b8507d5e5d8c5cdfc7138",
+      "page": "/docs/implementation/cluster-management/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "06cf7bc7d455ca56a595e9d9411e7e0baa57166cd55b8507d5e5d8c5cdfc7138",
+      "page": "/docs/implementation/cluster-management/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "3f03a84625cfa7ba56441ce7ff7e74a41cef94ec809d76ad461d33bc1feb85d5",
+      "page": "/docs/implementation/grain-directory/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "3f03a84625cfa7ba56441ce7ff7e74a41cef94ec809d76ad461d33bc1feb85d5",
+      "page": "/docs/implementation/grain-directory/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "fd1c0a068424f9396a9617dfa2bb085496560847e160963bacecdd4cf18d9381",
+      "page": "/docs/implementation/grain-directory/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "fd1c0a068424f9396a9617dfa2bb085496560847e160963bacecdd4cf18d9381",
+      "page": "/docs/implementation/grain-directory/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "9676b88d3a60b09cedcf3f349bd23447c80cb41431089944aa26dc2c98c0e6cd",
+      "page": "/docs/implementation/load-balancing/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "9676b88d3a60b09cedcf3f349bd23447c80cb41431089944aa26dc2c98c0e6cd",
+      "page": "/docs/implementation/load-balancing/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "186d5bd02991dada3724138c9b25d9dff058b8747644c7fc4636005aa4d2f154",
+      "page": "/docs/implementation/messaging-delivery-guarantees/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "186d5bd02991dada3724138c9b25d9dff058b8747644c7fc4636005aa4d2f154",
+      "page": "/docs/implementation/messaging-delivery-guarantees/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "4006e2bc9eb87c0727d87a80fb59f1a4a45239eb24c440bc0ceecff7af3f5af1",
+      "page": "/docs/implementation/orleans-lifecycle/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "4006e2bc9eb87c0727d87a80fb59f1a4a45239eb24c440bc0ceecff7af3f5af1",
+      "page": "/docs/implementation/orleans-lifecycle/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "3df3d8d581ec3d6aefa6631fff7562c98674fb076ed8d51ac90d1aed70e5e17f",
+      "page": "/docs/implementation/runtime-architecture/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "3df3d8d581ec3d6aefa6631fff7562c98674fb076ed8d51ac90d1aed70e5e17f",
+      "page": "/docs/implementation/runtime-architecture/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "63dc8b20fbea3b78ca220375deef47b7ac9123ce5283cc3e4105babaaa7b67f0",
+      "page": "/docs/implementation/scheduler/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "63dc8b20fbea3b78ca220375deef47b7ac9123ce5283cc3e4105babaaa7b67f0",
+      "page": "/docs/implementation/scheduler/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "e42e437973f5f4baa3c99858c14b399822fc1d74bdb5baca37f42c327dae486f",
+      "page": "/docs/implementation/serialization/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "e42e437973f5f4baa3c99858c14b399822fc1d74bdb5baca37f42c327dae486f",
+      "page": "/docs/implementation/serialization/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "ce2eb362655e2c0bd503cbd23a1c9e4ec51a43c042dfb3c078ae0f1b9a624fe1",
+      "page": "/docs/implementation/serialization/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "ce2eb362655e2c0bd503cbd23a1c9e4ec51a43c042dfb3c078ae0f1b9a624fe1",
+      "page": "/docs/implementation/serialization/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "743557d2a48d47cdab85f9a342882700a6d3daddb03c9e55795b6f8f1d9b3e8a",
+      "page": "/docs/implementation/streams-implementation/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "743557d2a48d47cdab85f9a342882700a6d3daddb03c9e55795b6f8f1d9b3e8a",
+      "page": "/docs/implementation/streams-implementation/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "7dcdcb76ed4f00de568f1aebd83fa383c6206d1d2044fe36517aa8500197af40",
+      "page": "/docs/implementation/streams-implementation/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "7dcdcb76ed4f00de568f1aebd83fa383c6206d1d2044fe36517aa8500197af40",
+      "page": "/docs/implementation/streams-implementation/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "ff36ed0c545cc9f2fc1dfde6e7574bd21221050a030ac639e6449086eaa9bee6",
+      "page": "/docs/implementation/streams-implementation/azure-queue-streams/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "ff36ed0c545cc9f2fc1dfde6e7574bd21221050a030ac639e6449086eaa9bee6",
+      "page": "/docs/implementation/streams-implementation/azure-queue-streams/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "2c51a58d249f5b36cd95de3089632a90a19c3c5e07408a4b0df0fee35dbce76c",
+      "page": "/docs/implementation/testing/",
+      "language": "source",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "2c51a58d249f5b36cd95de3089632a90a19c3c5e07408a4b0df0fee35dbce76c",
+      "page": "/docs/implementation/testing/",
+      "language": "zh",
+      "diagramType": "flowchart-v2",
+      "passed": true
+    },
+    {
+      "hash": "6de0a437633905f9bb0c972a96d2f9711708e4de072c2dba8967e4ae1fb11c5c",
+      "page": "/docs/implementation/transactions/",
+      "language": "source",
+      "diagramType": "sequence",
+      "passed": true
+    },
+    {
+      "hash": "6de0a437633905f9bb0c972a96d2f9711708e4de072c2dba8967e4ae1fb11c5c",
+      "page": "/docs/implementation/transactions/",
+      "language": "zh",
+      "diagramType": "sequence",
+      "passed": true
+    }
+  ],
+  "renderingScope": "Fresh Node.js JSDOM parser evaluation only; no browser or SVG geometry verification in this audit."
+}

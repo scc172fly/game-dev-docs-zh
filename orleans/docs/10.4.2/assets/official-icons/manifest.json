@@ -1,0 +1,362 @@
+{
+  "sourceRepository": "https://github.com/dotnet/orleans",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "homepageSourceSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+  "description": "SVG 从冻结官方 HTML 原样抽取；类名与 SVG 几何数据均保留。图标色彩和尺寸遵循同快照官方 CSS。",
+  "icons": [
+    {
+      "name": "virtual-actors",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Virtual actors",
+      "svgSha256": "694f1379a1577fcb45233ea8523b3b63455d503d41b753e18e14dbdc4eeb6b33",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M17 22H5a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h1a4 4 0 0 1 7.3-2.18c.448.64.692 1.4.7 2.18h3a1 1 0 0 1 1 1v3a4 4 0 0 1 2.18 7.3A3.86 3.86 0 0 1 18 18v3a1 1 0 0 1-1 1ZM5 8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11v-3.18a1 1 0 0 1 1.33-.95 1.77 1.77 0 0 0 1.74-.23 2 2 0 0 0 .93-1.37 2 2 0 0 0-.48-1.59 1.89 1.89 0 0 0-2.17-.55 1 1 0 0 1-1.33-.95V8h-3.2a1 1 0 0 1-1-1.33 1.77 1.77 0 0 0-.23-1.74 1.939 1.939 0 0 0-3-.43A2 2 0 0 0 8 6c.002.23.046.456.13.67A1 1 0 0 1 7.18 8H5Z"
+      ]
+    },
+    {
+      "name": "durable-state",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Durable state",
+      "svgSha256": "9def0af96627b5abacd741dd7d4abec61dd07600659b2a3459f4a2e06f0f42d4",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M8 16.5a1 1 0 1 0 1 1 1 1 0 0 0-1-1M12 2C8 2 4 3.37 4 6v12c0 2.63 4 4 8 4s8-1.37 8-4V6c0-2.63-4-4-8-4m6 16c0 .71-2.28 2-6 2s-6-1.29-6-2v-3.27A13 13 0 0 0 12 16a13 13 0 0 0 6-1.27Zm0-6c0 .71-2.28 2-6 2s-6-1.29-6-2V8.73A13 13 0 0 0 12 10a13 13 0 0 0 6-1.27Zm-6-4C8.28 8 6 6.71 6 6s2.28-2 6-2 6 1.29 6 2-2.28 2-6 2m-4 2.5a1 1 0 1 0 1 1 1 1 0 0 0-1-1"
+      ]
+    },
+    {
+      "name": "streams",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Streams and event processing",
+      "svgSha256": "1fad42cfb47a9806b1ee221bc9798b6c27ba7cdcf09b8b82de01248f34d2b1a7",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M8.7 10a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-6.27-6.3a1 1 0 0 0-1.42 1.42ZM21 14a1 1 0 0 0-1 1v3.59L15.44 14A1 1 0 0 0 14 15.44L18.59 20H15a1 1 0 0 0 0 2h6a1 1 0 0 0 .38-.08 1 1 0 0 0 .54-.54A1 1 0 0 0 22 21v-6a1 1 0 0 0-1-1Zm.92-11.38a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L2.29 20.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z"
+      ]
+    },
+    {
+      "name": "scheduling",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Durable scheduling and execution",
+      "svgSha256": "1f496099c50abae96c0c62f1f1bf8f62ce324ad7ea83d89fbe5e56b0e3374441",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M15.1 12.6 13 11.4V7a1 1 0 0 0-2 0v5a1 1 0 0 0 .5.9l2.6 1.5a1 1 0 1 0 1-1.8M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8"
+      ]
+    },
+    {
+      "name": "transactions",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Transactions",
+      "svgSha256": "26c469bd046187f0f5213d5b5e1a92285bdfbae453929c0b6b94d1cd67e20d4a",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 5.29 13l3.84 3.84a1.001 1.001 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z"
+      ]
+    },
+    {
+      "name": "event-sourcing",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Event sourcing",
+      "svgSha256": "79d1da920408b8d29eeb5e6789983345a5db71efb67db17ac649fd25cf801128",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M17 6.06a3 3 0 0 0-1.15 5.77A2 2 0 0 1 14 13.06h-4a4 4 0 0 0-2 .56V7.88a3 3 0 1 0-2 0v8.36a3 3 0 1 0 2.16.05A2 2 0 0 1 10 15.06h4a4 4 0 0 0 3.91-3.16A3 3 0 0 0 17 6.06m-10-2a1 1 0 1 1-1 1 1 1 0 0 1 1-1m0 16a1 1 0 1 1 1-1 1 1 0 0 1-1 1m10-10a1 1 0 1 1 1-1 1 1 0 0 1-1 1"
+      ]
+    },
+    {
+      "name": "scaling",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Elastic scaling and load balancing",
+      "svgSha256": "14ca38787e67489a464b4c039a02042c90ee6f298712b6bc22466d7d9f3c38f7",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M5 12a1 1 0 0 0-1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0-1-1m5-10a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1m10 14a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1m-5-8a1 1 0 0 0-1 1v12a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1"
+      ]
+    },
+    {
+      "name": "fault-tolerance",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Fault tolerance",
+      "svgSha256": "9afe9f7d0c56fa89a4271a30b045dafe2d99859aee9b9dfae6075fc33f78e8e6",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M15 17a1 1 0 1 0 1 1 1 1 0 0 0-1-1m-6 0H6a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2m9 0a1 1 0 1 0 1 1 1 1 0 0 0-1-1m-3-6a1 1 0 1 0 1 1 1 1 0 0 0-1-1m-6 0H6a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2m9-6a1 1 0 1 0 1 1 1 1 0 0 0-1-1m0 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1m4-6a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v2a3 3 0 0 0 .78 2A3 3 0 0 0 2 11v2a3 3 0 0 0 .78 2A3 3 0 0 0 2 17v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a3 3 0 0 0-.78-2 3 3 0 0 0 .78-2v-2a3 3 0 0 0-.78-2A3 3 0 0 0 22 7Zm-2 14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Zm0-6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Zm0-6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Zm-5-2a1 1 0 1 0 1 1 1 1 0 0 0-1-1M9 5H6a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2"
+      ]
+    },
+    {
+      "name": "ai-agents",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "AI agents and conversational sessions",
+      "svgSha256": "aff1f02017b341042e671e7fd2f3d57fdbdbcc05c398155ce3f67dd1de21954b",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M19 2H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11.6l3.7 3.7a1 1 0 0 0 .7.3.8.8 0 0 0 .4 0 1 1 0 0 0 .6-1V5a3 3 0 0 0-3-3m1 16.6-2.3-2.3a1 1 0 0 0-.7-.3H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"
+      ]
+    },
+    {
+      "name": "fraud-risk",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Fraud, risk, and real-time decisioning",
+      "svgSha256": "b07552dda7c895dea9d2f0290cf591512a6948104cd853c4388b64d291e5c4bb",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M12 13a1.5 1.5 0 0 0-1 2.6V17a1 1 0 0 0 2 0v-1.4a1.5 1.5 0 0 0-1-2.6m5-4V7A5 5 0 0 0 7 7v2a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-7a3 3 0 0 0-3-3M9 7a3 3 0 0 1 6 0v2H9Zm9 12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"
+      ]
+    },
+    {
+      "name": "iot",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "IoT and digital twins",
+      "svgSha256": "c1cbcf3bf2e634eea10f5b3c990bcd81b27a2cb039ba6f1d9fe0af66df241dc9",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "m12.71 16.29-.15-.12-.18-.09-.18-.08a1 1 0 0 0-.91.27 1 1 0 0 0-.21.33 1 1 0 0 0 1.3 1.31l.33-.22a1 1 0 0 0 .21-1.09 1 1 0 0 0-.21-.31M16 2H8a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m1 17a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1Z"
+      ]
+    },
+    {
+      "name": "monitoring",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Monitoring and job orchestration",
+      "svgSha256": "14ca38787e67489a464b4c039a02042c90ee6f298712b6bc22466d7d9f3c38f7",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M5 12a1 1 0 0 0-1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0-1-1m5-10a1 1 0 0 0-1 1v18a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1m10 14a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1m-5-8a1 1 0 0 0-1 1v12a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1"
+      ]
+    },
+    {
+      "name": "games",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Multiplayer and online games",
+      "svgSha256": "66b950141fc0882d5ce726a7f3e0862617364eb98935da285975e47e0d43467b",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M22 9.67a1 1 0 0 0-.86-.67l-5.69-.83L12.9 3a1 1 0 0 0-1.8 0L8.55 8.16 2.86 9a1 1 0 0 0-.81.68 1 1 0 0 0 .25 1l4.13 4-1 5.68a1 1 0 0 0 1.45 1.07L12 18.76l5.1 2.68c.14.08.3.12.46.12a1 1 0 0 0 .99-1.19l-1-5.68 4.13-4A1 1 0 0 0 22 9.67Zm-6.15 4a1 1 0 0 0-.29.89l.72 4.19-3.76-2a1 1 0 0 0-.94 0l-3.76 2 .72-4.19a1 1 0 0 0-.29-.89l-3-3 4.21-.61a1 1 0 0 0 .76-.55L12 5.7l1.88 3.82a1 1 0 0 0 .76.55l4.21.61-3 2.99Z"
+      ]
+    },
+    {
+      "name": "commerce",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "article.card > p.title > svg",
+      "sourceTitle": "Commerce and reservations",
+      "svgSha256": "9def0af96627b5abacd741dd7d4abec61dd07600659b2a3459f4a2e06f0f42d4",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M8 16.5a1 1 0 1 0 1 1 1 1 0 0 0-1-1M12 2C8 2 4 3.37 4 6v12c0 2.63 4 4 8 4s8-1.37 8-4V6c0-2.63-4-4-8-4m6 16c0 .71-2.28 2-6 2s-6-1.29-6-2v-3.27A13 13 0 0 0 12 16a13 13 0 0 0 6-1.27Zm0-6c0 .71-2.28 2-6 2s-6-1.29-6-2V8.73A13 13 0 0 0 12 10a13 13 0 0 0 6-1.27Zm-6-4C8.28 8 6 6.71 6 6s2.28-2 6-2 6 1.29 6 2-2.28 2-6 2m-4 2.5a1 1 0 1 0 1 1 1 1 0 0 0-1-1"
+      ]
+    },
+    {
+      "name": "arrow-right",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "//*[contains(concat(\" \",normalize-space(@class),\" \"),\" sl-link-card \")]//svg",
+      "svgSha256": "2a464e7893569e3307b691a4a5801d9616a63876e40c81a69afdddd4cb7eb2d5",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"
+      ]
+    },
+    {
+      "name": "heading-anchor",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "//a[contains(concat(\" \",normalize-space(@class),\" \"),\" sl-anchor-link \")]//svg",
+      "svgSha256": "9587e1e7efc9d5ac9f9e55921a78ccef4e058f9d76e6fe7db6572dace8db8ca7",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"
+      ]
+    },
+    {
+      "name": "aside-note",
+      "svgSha256": "d6acbc4ea2525da93c56ccc5fccf02ddcbd3d2e116b88f3193659e22e9d1455b",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M12 11a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Zm.38-3.92a1 1 0 0 0-.76 0 1 1 0 0 0-.33.21 1.15 1.15 0 0 0-.21.33 1 1 0 0 0 .21 1.09c.097.088.209.16.33.21A1 1 0 0 0 13 8a1.05 1.05 0 0 0-.29-.71 1 1 0 0 0-.33-.21ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16.001A8 8 0 0 1 12 20Z"
+      ],
+      "sourcePath": "/docs/deployment/",
+      "sourceHtmlSha256": "1524925550cf95e17ced2d7e27970956e89b990dc0dbcaaeace00a972caf6aa8",
+      "sourceSelector": ".starlight-aside--note .starlight-aside__icon"
+    },
+    {
+      "name": "aside-tip",
+      "svgSha256": "b37f53639faf80a6f206c0a2733a5a09713aba64f7a63f50877305321340b038",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M1.44 8.855v-.001l3.527-3.516c.34-.344.802-.541 1.285-.548h6.649l.947-.947c3.07-3.07 6.207-3.072 7.62-2.868a1.821 1.821 0 0 1 1.557 1.557c.204 1.413.203 4.55-2.868 7.62l-.946.946v6.649a1.845 1.845 0 0 1-.549 1.286l-3.516 3.528a1.844 1.844 0 0 1-3.11-.944l-.858-4.275-4.52-4.52-2.31-.463-1.964-.394A1.847 1.847 0 0 1 .98 10.693a1.843 1.843 0 0 1 .46-1.838Zm5.379 2.017-3.873-.776L6.32 6.733h4.638l-4.14 4.14Zm8.403-5.655c2.459-2.46 4.856-2.463 5.89-2.33.134 1.035.13 3.432-2.329 5.891l-6.71 6.71-3.561-3.56 6.71-6.711Zm-1.318 15.837-.776-3.873 4.14-4.14v4.639l-3.364 3.374Z",
+        "M9.318 18.345a.972.972 0 0 0-1.86-.561c-.482 1.435-1.687 2.204-2.934 2.619a8.22 8.22 0 0 1-1.23.302c.062-.365.157-.79.303-1.229.415-1.247 1.184-2.452 2.62-2.935a.971.971 0 1 0-.62-1.842c-.12.04-.236.084-.35.13-2.02.828-3.012 2.588-3.493 4.033a10.383 10.383 0 0 0-.51 2.845l-.001.016v.063c0 .536.434.972.97.972H2.24a7.21 7.21 0 0 0 .878-.065c.527-.063 1.248-.19 2.02-.447 1.445-.48 3.205-1.472 4.033-3.494a5.828 5.828 0 0 0 .147-.407Z"
+      ],
+      "sourcePath": "/docs/overview/",
+      "sourceHtmlSha256": "5add98cb8ac77f9c417b78b308b54b0f23c3876fe5e7fb8b8e76ac10658c63af",
+      "sourceSelector": ".starlight-aside--tip .starlight-aside__icon"
+    },
+    {
+      "name": "aside-caution",
+      "svgSha256": "a06e892e617c44c8ca27e2decd0b08e79f2613748ab8b5eee024402b44fed13a",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M12 16a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm10.67 1.47-8.05-14a3 3 0 0 0-5.24 0l-8 14A3 3 0 0 0 3.94 22h16.12a3 3 0 0 0 2.61-4.53Zm-1.73 2a1 1 0 0 1-.88.51H3.94a1 1 0 0 1-.88-.51 1 1 0 0 1 0-1l8-14a1 1 0 0 1 1.78 0l8.05 14a1 1 0 0 1 .05 1.02v-.02ZM12 8a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"
+      ],
+      "sourcePath": "/docs/dashboard/",
+      "sourceHtmlSha256": "5f0622007da82df01572bc7748006eb2bf89823de4d14f6bbd0edc8ed45f4553",
+      "sourceSelector": ".starlight-aside--caution .starlight-aside__icon"
+    },
+    {
+      "name": "aside-danger",
+      "svgSha256": "d9e5889176938297e10f60f01eba9877b04642301739ae4325eef8e7476875a0",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M12 7a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1Zm0 8a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm9.71-7.44-5.27-5.27a1.05 1.05 0 0 0-.71-.29H8.27a1.05 1.05 0 0 0-.71.29L2.29 7.56a1.05 1.05 0 0 0-.29.71v7.46c.004.265.107.518.29.71l5.27 5.27c.192.183.445.286.71.29h7.46a1.05 1.05 0 0 0 .71-.29l5.27-5.27a1.05 1.05 0 0 0 .29-.71V8.27a1.05 1.05 0 0 0-.29-.71ZM20 15.31 15.31 20H8.69L4 15.31V8.69L8.69 4h6.62L20 8.69v6.62Z"
+      ],
+      "sourcePath": "/docs/grains/event-sourcing/journaledgrain-basics/",
+      "sourceHtmlSha256": "e52ce2350cf08a838a5c8790447f3ba28d235758da1270e3902dc6dde4c4f874",
+      "sourceSelector": ".starlight-aside--danger .starlight-aside__icon"
+    },
+    {
+      "name": "github",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "header a[href=\"https://github.com/dotnet/orleans\"] svg",
+      "svgSha256": "db6a3a3e9a07bd55eb227eb884f601e9fa61c434dcb1f6391c671a1ac5b2f5ed",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"
+      ]
+    },
+    {
+      "name": "discord",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "header a[href=\"https://aka.ms/orleans-discord\"] svg",
+      "svgSha256": "e1289a4f5fc113f085370828493c69b0bba4de0b05cd3e1160af170bdc8b37e3",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M20.32 4.37a19.8 19.8 0 0 0-4.93-1.51 13.78 13.78 0 0 0-.64 1.28 18.27 18.27 0 0 0-5.5 0 12.64 12.64 0 0 0-.64-1.28h-.05A19.74 19.74 0 0 0 3.64 4.4 20.26 20.26 0 0 0 .11 18.09l.02.02a19.9 19.9 0 0 0 6.04 3.03l.04-.02a14.24 14.24 0 0 0 1.23-2.03.08.08 0 0 0-.05-.07 13.1 13.1 0 0 1-1.9-.92.08.08 0 0 1 .02-.1 10.2 10.2 0 0 0 .41-.31h.04a14.2 14.2 0 0 0 12.1 0l.04.01a9.63 9.63 0 0 0 .4.32.08.08 0 0 1-.03.1 12.29 12.29 0 0 1-1.9.91.08.08 0 0 0-.02.1 15.97 15.97 0 0 0 1.27 2.01h.04a19.84 19.84 0 0 0 6.03-3.05v-.03a20.12 20.12 0 0 0-3.57-13.69ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42Zm7.97 0c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.22 0 2.18 1.1 2.16 2.42 0 1.34-.94 2.42-2.16 2.42Z"
+      ]
+    },
+    {
+      "name": "theme-dark",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "#theme-icons > svg.dark",
+      "svgSha256": "2bdf3dc4e98f3cd13907b3c81fd6f6e215ee10a0fec9da5c8bb2b3efeedb5a43",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"
+      ]
+    },
+    {
+      "name": "theme-light",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "#theme-icons > svg.light",
+      "svgSha256": "ceae216ae9e9661cda2c92d45ac1f79afeb4d7594549ab2b3a8316d36b80abac",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"
+      ]
+    },
+    {
+      "name": "theme-auto",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "#theme-icons > svg.auto",
+      "svgSha256": "661b7e2ffdfc244f4151e070c698646c541a8d8755592b9952d710da258da2b4",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"
+      ]
+    },
+    {
+      "name": "theme-chevron",
+      "sourcePath": "/",
+      "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "sourceSelector": "starlight-theme-select svg.caret",
+      "svgSha256": "37def3d50ede3d0a87d218e09902310c9402832471eb3ebe8f852a3226709100",
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"
+      ]
+    }
+  ],
+  "cssSources": [
+    {
+      "artifactPath": "./_astro/middleware.Bkh0pSoo.css",
+      "bytes": 69310,
+      "sha256": "e3ffd795ffdc5673691255d20a20b4b5b0d2c89576ad5cadd4ddbdc2cae7b965"
+    },
+    {
+      "artifactPath": "./_astro/print.ehPL0gv-.css",
+      "bytes": 3318,
+      "sha256": "4d7d25c3d697e6d36e64afb9edef136e6d2e4c50f70a48000ca90f9b059e3622"
+    },
+    {
+      "artifactPath": "./_astro/ec.xc97j.css",
+      "bytes": 18166,
+      "sha256": "645ed861509c7818b36af78aabf46c00df83413d9cab2ed4c71e3841e44ebdfc"
+    },
+    {
+      "artifactPath": "./pagefind/pagefind-ui.css",
+      "bytes": 14482,
+      "sha256": "e113b816110ed07b017613e901addfe635350f2a5b84990aa76c91a74b158084"
+    },
+    {
+      "artifactPath": "./pagefind/pagefind-modular-ui.css",
+      "bytes": 7336,
+      "sha256": "653ab29e4de5629f6ddf5f6fcdf5d2b3eb539a8c07fff8a56b8ce2156a570788"
+    },
+    {
+      "artifactPath": "./pagefind/pagefind-component-ui.css",
+      "bytes": 41830,
+      "sha256": "de389c7e5d87d6e2b10d65fb1e36e8989a12a2ad8dd6239b7e070d81fb5d8b0d"
+    }
+  ],
+  "sampleCardStructure": {
+    "sourcePath": "/samples/",
+    "sourceHtmlSha256": "c271752a0f3bcd34babaf4d127e8c9acefa69d571251013d24e88ded8f10427e",
+    "cardCount": 29,
+    "matching": "Exact href and complete reviewed tail text; retain separators as text nodes.",
+    "terminologyCompatibility": "已审 journaling 芯片兼容旧译“日志记录”和统一修订“日志化”；界面不自行改写译文。"
+  },
+  "themePicker": {
+    "sourcePath": "/",
+    "sourceHtmlSha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+    "sourceCss": "/_astro/middleware.Bkh0pSoo.css",
+    "control": "native select",
+    "options": [
+      "Dark",
+      "Light",
+      "Auto"
+    ],
+    "sourceBreakpoint": "header visible at >=50rem; native duplicate in document sidebar below50rem",
+    "preferenceStorage": "orleans-theme: auto | dark | light; compatible with existing light/dark values",
+    "effectiveTheme": "data-theme is always light or dark; data-theme-preference records auto/light/dark"
+  }
+}

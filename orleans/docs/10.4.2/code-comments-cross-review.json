@@ -1,0 +1,1875 @@
+{
+  "scope": "316 个独特注释单元全部经过译审及独立 AI 逐条交叉复核；不是人工专家签审。",
+  "reviewedUnitCount": 316,
+  "reports": [
+    {
+      "group": "a",
+      "report": {
+        "reviewMethod": "AI逐句语义译审",
+        "reviewStage": "独立交叉复核",
+        "reviewer": "source_audit",
+        "createdAt": "2026-11-24T03:58:56.283572+00:00",
+        "scope": "逐条复核 A 组全部 110 条及新增 2 条。每项实际阅读 source、译文、protected 和全部工作包上下文；必要时读取冻结原文完整代码。",
+        "primaryGroupUnits": 110,
+        "additionalUnits": 2,
+        "reviewedUnits": 112,
+        "correctedUnits": 2,
+        "semanticCorrections": 1,
+        "protectedCountCorrections": 1,
+        "additionalCheckedIds": [
+          "c94be99fb5d96a43e7e1ab30",
+          "e986b588f1ca5927ad136b4e"
+        ],
+        "inputs": [
+          "comments-a.json",
+          "translations-a.json",
+          "translations-extra.json",
+          "comments.json"
+        ],
+        "beforeTranslationSha256": "15d6d6b303a005a6b682e3d69c776908e0963e241f64c975f85681dc442d43e3",
+        "afterTranslationSha256": "0c165bfa2adda59aa4546fa2aebef8d620a485a14309bb8a7019046f7c8a4e4f",
+        "extraFullContextFiles": [
+          "source/pages/8eb487c5e2850143.md",
+          "source/pages/e53cea706f6350ad.md",
+          "source/pages/f80648b9ac8e03e6.md",
+          "source/pages/148368e6e0a817a4.md"
+        ],
+        "validation": {
+          "primaryIdsComplete": true,
+          "sourceFieldsUnchanged": true,
+          "protectedStringCountsUnchanged": true,
+          "pascalCaseIdentifiersPreserved": true,
+          "pureCodeExpressionsUnchanged": true,
+          "sqlPrefixUnchanged": true,
+          "crossLineBookingSentenceChecked": true
+        },
+        "entries": [
+          {
+            "id": "2864f5aff7c257f309cce5ab",
+            "index": 0,
+            "group": "A",
+            "source": "Basic usage",
+            "text": "基本用法",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.servicecollectionextensions/methods/",
+              "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.servicecollectionextensions/methods/maporleansdashboard-this-microsoft-aspnetcore-routing-iendpointroutebuilder-stri-63077252/"
+            ]
+          },
+          {
+            "id": "33cd48efb1455f1d5e7dc701",
+            "index": 1,
+            "group": "A",
+            "source": "With authentication",
+            "text": "使用身份验证",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.servicecollectionextensions/methods/",
+              "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.servicecollectionextensions/methods/maporleansdashboard-this-microsoft-aspnetcore-routing-iendpointroutebuilder-stri-63077252/"
+            ]
+          },
+          {
+            "id": "54fd19d9f21c4e87781a3433",
+            "index": 2,
+            "group": "A",
+            "source": "With custom base path",
+            "text": "使用自定义基础路径",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.servicecollectionextensions/methods/",
+              "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.servicecollectionextensions/methods/maporleansdashboard-this-microsoft-aspnetcore-routing-iendpointroutebuilder-stri-63077252/"
+            ]
+          },
+          {
+            "id": "25db592c8a8cfceff38b6b8c",
+            "index": 3,
+            "group": "A",
+            "source": "Process the durable job",
+            "text": "处理持久作业",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.jobs.idurablejobhandler/"
+            ]
+          },
+          {
+            "id": "b9a406639d5ec982d2672095",
+            "index": 4,
+            "group": "A",
+            "source": "This token requests cancellation of this execution attempt, for example during silo shutdown.",
+            "text": "此令牌用于请求取消本次执行尝试，例如在 Silo 关闭期间。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "明确取消的是本次执行尝试，没有误译为删除持久作业。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.jobs.idurablejobhandler/"
+            ]
+          },
+          {
+            "id": "d778922862b4ae7895946ae8",
+            "index": 5,
+            "group": "A",
+            "source": "The durable job remains eligible for another attempt on another host.",
+            "text": "该持久作业仍可在另一台主机上再次尝试执行。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与前行连读，保留作业仍可在另一宿主重试的资格。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.jobs.idurablejobhandler/"
+            ]
+          },
+          {
+            "id": "034cd3af453b2470f6729df0",
+            "index": 6,
+            "group": "A",
+            "source": "Perform job logic here",
+            "text": "在此执行作业逻辑",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.jobs.idurablejobhandler/"
+            ]
+          },
+          {
+            "id": "92f57cac2533cf9065a683aa",
+            "index": 7,
+            "group": "A",
+            "source": "key.ToString() == \"workflow/task-123\"",
+            "text": "key.ToString() == \"workflow/task-123\"",
+            "reviewMethod": "代码表达式保留核对",
+            "conclusion": "passed",
+            "note": "纯代码表达式逐字保留，含调用、相等运算符和字符串字面量。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/",
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/tohierarchicalkey-this-orleans-durable-tasks-taskid-11f97919/"
+            ]
+          },
+          {
+            "id": "24d5d3af1303e6fc09835bf4",
+            "index": 8,
+            "group": "A",
+            "source": "taskId.ToString() == \"workflow/task-123\"",
+            "text": "taskId.ToString() == \"workflow/task-123\"",
+            "reviewMethod": "代码表达式保留核对",
+            "conclusion": "passed",
+            "note": "纯代码表达式逐字保留，含调用、相等运算符和字符串字面量。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/",
+              "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/totaskid-this-orleans-durable-messaging-hierarchicalkey-4521b2e1/"
+            ]
+          },
+          {
+            "id": "ddc9fdff7a34f4581616e119",
+            "index": 9,
+            "group": "A",
+            "source": "Preferred: let Orleans construct the entry.",
+            "text": "首选方式：让 Orleans 构造该条目。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.configuration.typemanifestoptions/properties/",
+              "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.configuration.typemanifestoptions/properties/allowedtypes-35d154ef/"
+            ]
+          },
+          {
+            "id": "63a21b000267668d4ea5f443",
+            "index": 10,
+            "group": "A",
+            "source": "Supported when a string entry is required.",
+            "text": "需要字符串形式的条目时，可使用此方式。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.configuration.typemanifestoptions/properties/",
+              "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.configuration.typemanifestoptions/properties/allowedtypes-35d154ef/"
+            ]
+          },
+          {
+            "id": "0d93a3217b594fb4a699335e",
+            "index": 11,
+            "group": "A",
+            "source": "Configure one production clustering provider here.",
+            "text": "在此配置一种生产环境使用的集群提供程序。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/deployment/kubernetes/"
+            ]
+          },
+          {
+            "id": "884db58ceb0500e5aaf56df5",
+            "index": 12,
+            "group": "A",
+            "source": "Map application-owned startup, readiness, and liveness endpoints.",
+            "text": "映射由应用负责提供的启动、就绪和存活检查端点。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/deployment/kubernetes/"
+            ]
+          },
+          {
+            "id": "b062bdcd226a133bcb0cf8e0",
+            "index": 13,
+            "group": "A",
+            "source": "A replay runs this line again after the reminder was sent, and counts it twice.",
+            "text": "回放时，即使提醒已发送，这一行也会再次运行，导致重复计数。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留提醒已发送后回放造成重复计数的失败机制。",
+            "paths": [
+              "/docs/diagnostics/orleans0200/"
+            ]
+          },
+          {
+            "id": "efa47ab01fb86cc1fef33c91",
+            "index": 14,
+            "group": "A",
+            "source": "A replay reads the status which the \"ship\" step wrote, takes the other branch, and skips the recorded step.",
+            "text": "回放会读取 \"ship\" 步骤写入的状态，进入另一个分支，并跳过已记录的步骤。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留读取后续步骤写入的状态导致回放进入另一分支、跳过已记录步骤的因果关系。",
+            "paths": [
+              "/docs/diagnostics/orleans0200/"
+            ]
+          },
+          {
+            "id": "bd42a2e544311910542791e4",
+            "index": 15,
+            "group": "A",
+            "source": "The effect runs once, and its change commits with its record. A replay returns the recorded count.",
+            "text": "副作用只运行一次，其更改与记录一同提交。回放会返回已记录的计数。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留副作用运行一次、更改与记录共同提交、回放返回记录计数的约束。",
+            "paths": [
+              "/docs/diagnostics/orleans0200/"
+            ]
+          },
+          {
+            "id": "1cac62fdc2b9118dbc6f8f26",
+            "index": 16,
+            "group": "A",
+            "source": "A replay returns the status which the first run read, so it takes the same branch.",
+            "text": "回放会返回首次运行时读取的状态，因此会进入相同的分支。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "明确返回首次运行读取的状态，而不是再次读取当前状态。",
+            "paths": [
+              "/docs/diagnostics/orleans0200/"
+            ]
+          },
+          {
+            "id": "ba7b168aca0d664221b36207",
+            "index": 17,
+            "group": "A",
+            "source": "No durable operation follows, so this change commits with the task's result and no replay runs it again.",
+            "text": "后面没有持久操作，因此此更改与任务结果一同提交，回放不会再次执行它。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "无后续持久操作、结果共同提交及回放不重执行的条件完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0200/"
+            ]
+          },
+          {
+            "id": "d920104b4b8cb1f1ef97e1d1",
+            "index": 18,
+            "group": "A",
+            "source": "A local step: its whole body is its final code, so its change commits with its recorded result.",
+            "text": "本地步骤：整个步骤体就是它的最终代码，因此其更改与已记录的结果一同提交。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "额外读冻结原文完整代码及正文；整个步骤体属于末尾代码，更改与记录结果一起提交。现译含义正确。",
+            "paths": [
+              "/docs/diagnostics/orleans0200/"
+            ]
+          },
+          {
+            "id": "674907fe3c346a84bf30e0c7",
+            "index": 19,
+            "group": "A",
+            "source": "A replay draws another key and computes another deadline.",
+            "text": "回放会生成另一个键，并计算出另一个截止时间。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0201/"
+            ]
+          },
+          {
+            "id": "05e1201049bdcf02f82a194b",
+            "index": 20,
+            "group": "A",
+            "source": "The grain, the task's identifier, and its incarnation name this run in every replay, so together they identify",
+            "text": "Grain、任务标识符及其运行代次在每次回放中标识此次运行，因此它们共同标识",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与后行连读，Grain、任务标识符及运行代次共同标识本次运行。",
+            "paths": [
+              "/docs/diagnostics/orleans0201/"
+            ]
+          },
+          {
+            "id": "807576758e8f08ebbabb5505",
+            "index": 21,
+            "group": "A",
+            "source": "the charge, and a later run of the same identifier charges under another key.",
+            "text": "这笔扣款；相同标识符的后续运行会使用另一个键扣款。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "相同任务标识符的后续运行使用另一幂等键，区别保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0201/"
+            ]
+          },
+          {
+            "id": "243fabe304d262e790d981dd",
+            "index": 22,
+            "group": "A",
+            "source": "Logical time: the runtime records it, so a replay computes the same deadline.",
+            "text": "逻辑时间：运行时会记录该时间，因此回放会计算出相同的截止时间。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "记录逻辑时间使回放计算相同截止时间，没有与真实时钟混淆。",
+            "paths": [
+              "/docs/diagnostics/orleans0201/"
+            ]
+          },
+          {
+            "id": "364f1f28d6a777e5d0f964d4",
+            "index": 23,
+            "group": "A",
+            "source": "A replay calls the service again: it can return another rate, or fail where the first run succeeded.",
+            "text": "回放会再次调用该服务：它可能返回另一个汇率，也可能在首次运行成功的地方失败。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "GetRateAsync(currency, ...) 语境下 rate 为汇率，现译正确；保留服务可能失败的条件。",
+            "paths": [
+              "/docs/diagnostics/orleans0202/"
+            ]
+          },
+          {
+            "id": "c583e776cbecac610dee18c0",
+            "index": 24,
+            "group": "A",
+            "source": "The step records the rate, so a replay returns it without calling the service.",
+            "text": "该步骤会记录汇率，因此回放会直接返回它，而不调用该服务。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "记录汇率、回放不调用服务，限定完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0202/"
+            ]
+          },
+          {
+            "id": "2ca54e9435a2f13e45bff1f1",
+            "index": 25,
+            "group": "A",
+            "source": "A local step: a replay returns its recorded completion without sending the email again.",
+            "text": "本地步骤：回放会返回其已记录的完成结果，而不再次发送邮件。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0202/"
+            ]
+          },
+          {
+            "id": "b9efde8a4965cfdacfe18332",
+            "index": 26,
+            "group": "A",
+            "source": "No durable operation follows, so only a run which completes the task sends the email. A run which ends",
+            "text": "后面没有持久操作，因此只有执行到任务完成阶段的运行才会发送邮件。如果一次运行",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与后行连读，保留末尾代码发送邮件及提交前中止会重发的风险，未承诺外部邮件恰好一次。",
+            "paths": [
+              "/docs/diagnostics/orleans0202/"
+            ]
+          },
+          {
+            "id": "e219af96b35ec3992c9a68a7",
+            "index": 27,
+            "group": "A",
+            "source": "before the result commits sends it again.",
+            "text": "在结果提交之前结束，后续运行就会再次发送邮件。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "补明后续运行再次发送，与前行及完整语句含义一致。",
+            "paths": [
+              "/docs/diagnostics/orleans0202/"
+            ]
+          },
+          {
+            "id": "15d9296a8d134dd77c5b3f0d",
+            "index": 28,
+            "group": "A",
+            "source": "Another journal write can commit this change while the email is sending, without the step's result.",
+            "text": "另一次日志写入可能在邮件发送过程中提交此更改，却没有同时提交步骤结果。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留发送期间另一次日志写入可能先提交更改但未提交步骤结果的风险。",
+            "paths": [
+              "/docs/diagnostics/orleans0203/"
+            ]
+          },
+          {
+            "id": "6600a200823d67d2c292afd2",
+            "index": 29,
+            "group": "A",
+            "source": "The step then runs again and counts the notice twice.",
+            "text": "随后，该步骤会再次运行，导致通知被重复计数。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0203/"
+            ]
+          },
+          {
+            "id": "9d9ff16a2fa72bfc586d263c",
+            "index": 30,
+            "group": "A",
+            "source": "The step's final synchronous code: the change commits in the same journal write as the step's result.",
+            "text": "步骤最后的同步代码：更改与步骤结果在同一次日志写入中提交。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "同步末尾的更改与步骤结果在同一次日志写入中提交。",
+            "paths": [
+              "/docs/diagnostics/orleans0203/"
+            ]
+          },
+          {
+            "id": "18accd29e8388e0a10303bec",
+            "index": 31,
+            "group": "A",
+            "source": "A replay returns the recorded result without running the effect, so these assignments don't happen.",
+            "text": "回放会直接返回已记录的结果，而不运行副作用，因此这些赋值不会发生。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "直接返回记录结果，不再次运行副作用或闭包赋值。",
+            "paths": [
+              "/docs/diagnostics/orleans0204/"
+            ]
+          },
+          {
+            "id": "8477452a89829e23b03d33e9",
+            "index": 32,
+            "group": "A",
+            "source": "The effect returns its outputs, so every replay receives the recorded values.",
+            "text": "副作用返回其输出，因此每次回放都能获得已记录的值。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0204/"
+            ]
+          },
+          {
+            "id": "2bf6b03c682b005e09e77627",
+            "index": 33,
+            "group": "A",
+            "source": "Creates a definition and discards it: the receipt never sends.",
+            "text": "创建任务定义后将其丢弃：收据永远不会发送。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0205/"
+            ]
+          },
+          {
+            "id": "d36a61f9215c88db748e2290",
+            "index": 34,
+            "group": "A",
+            "source": "Starts the receipt and continues; the execution owns it and observes its outcome before it returns.",
+            "text": "启动收据发送任务后继续执行；当前执行实例拥有该任务，并会在返回前观察其结果。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留启动后继续、子任务归属及返回前观察结果。",
+            "paths": [
+              "/docs/diagnostics/orleans0205/"
+            ]
+          },
+          {
+            "id": "b096aeafdc0a115dc8fc56cd",
+            "index": 35,
+            "group": "A",
+            "source": "Stages the receipt with the execution's next journal write, without waiting for it to start.",
+            "text": "将收据发送操作暂存，随当前执行实例的下一次日志写入一同提交，而不等待它启动。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留暂存、下次日志写入提交以及不等待启动三个时间点。",
+            "paths": [
+              "/docs/diagnostics/orleans0205/"
+            ]
+          },
+          {
+            "id": "91d1b6b56a5276fb0f569fd8",
+            "index": 36,
+            "group": "A",
+            "source": "The definition ran in the first iteration, so the second iteration throws.",
+            "text": "该任务定义已在第一次迭代中运行，因此第二次迭代会抛出异常。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "第二次迭代复用已运行定义抛异常，条件准确。",
+            "paths": [
+              "/docs/diagnostics/orleans0206/"
+            ]
+          },
+          {
+            "id": "e8fa7f7e040cec7a8e4e9a75",
+            "index": 37,
+            "group": "A",
+            "source": "Each call creates a new definition for this iteration's run.",
+            "text": "每次调用都会为本次迭代的运行创建新的任务定义。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0206/"
+            ]
+          },
+          {
+            "id": "a28733c0917e12ee20088982",
+            "index": 38,
+            "group": "A",
+            "source": "A factory creates a definition for each run.",
+            "text": "工厂为每次运行创建一个任务定义。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0206/"
+            ]
+          },
+          {
+            "id": "f78788d1620ec63f02ba75d9",
+            "index": 39,
+            "group": "A",
+            "source": "Recorded as \"email$2\". After a deployment removes the welcome email, a replay identifies this call as \"email\",",
+            "text": "记录为 \"email$2\"。在某次部署移除欢迎邮件后，回放会将此调用标识为 \"email\"，",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与后行连读，email 标识及部署后调用标识偏移保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0208/"
+            ]
+          },
+          {
+            "id": "e4abe4d813f1e1204bcf7096",
+            "index": 40,
+            "group": "A",
+            "source": "which holds the welcome email's record.",
+            "text": "而该标识下保存的是欢迎邮件的记录。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "明确错误匹配的是欢迎邮件记录，与前行连读完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0208/"
+            ]
+          },
+          {
+            "id": "7e454bf6619593e85d530dbf",
+            "index": 41,
+            "group": "A",
+            "source": "One call site which a loop repeats is named once: its occurrences are \"lesson\", \"lesson$2\", and so on. A name",
+            "text": "循环重复执行的同一个调用点只需命名一次：各次调用依次为 \"lesson\"、\"lesson$2\" 等。也可以",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "循环同一调用点命名一次，重复后缀保留；与后行输入派生命名方案连读。",
+            "paths": [
+              "/docs/diagnostics/orleans0208/"
+            ]
+          },
+          {
+            "id": "7ba81062cfd48ffa0baa5e81",
+            "index": 42,
+            "group": "A",
+            "source": "derived from each input also identifies it.",
+            "text": "根据每个输入派生名称，以标识相应调用。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "根据输入派生名称也是有效方式，未译为强制要求。",
+            "paths": [
+              "/docs/diagnostics/orleans0208/"
+            ]
+          },
+          {
+            "id": "53aa0913d2e0d03ae450e203",
+            "index": 43,
+            "group": "A",
+            "source": "The hash delegate runs on the thread pool; the await resumes on the activation's scheduler.",
+            "text": "哈希计算委托在线程池上运行；await 之后的执行会回到激活实例的调度器。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "区分委托在线程池运行与 await 后回到激活实例调度器。",
+            "paths": [
+              "/docs/diagnostics/orleans0209/"
+            ]
+          },
+          {
+            "id": "94af6b6f6a10810c329f640e",
+            "index": 44,
+            "group": "A",
+            "source": "The effect records the hash, and runs on the activation's scheduler.",
+            "text": "副作用记录哈希值，并在激活实例的调度器上运行。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0209/"
+            ]
+          },
+          {
+            "id": "54ea74e9f0096a1a891b55da",
+            "index": 45,
+            "group": "A",
+            "source": "Heavy work runs in a service, such as a stateless worker grain, which the step awaits.",
+            "text": "繁重的工作在某个服务中运行，例如无状态工作器 Grain，步骤会等待该服务完成。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "无状态工作器 Grain 术语正确，步骤等待服务调用完成的含义清楚。",
+            "paths": [
+              "/docs/diagnostics/orleans0209/"
+            ]
+          },
+          {
+            "id": "f5d36f8191e175a1b1a950a5",
+            "index": 46,
+            "group": "A",
+            "source": "Each lambda schedules its child in input order, with a separate journal write for each invocation.",
+            "text": "每个 lambda 表达式按输入顺序调度其子任务，每次调用分别进行一次日志写入。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留输入顺序以及每次调用分别进行日志写入。",
+            "paths": [
+              "/docs/diagnostics/orleans0210/"
+            ]
+          },
+          {
+            "id": "353efce016af8970de9e6dfb",
+            "index": 47,
+            "group": "A",
+            "source": "The inputs are reserve/0, reserve/1, and so on, in input order, and their invocations commit in one write.",
+            "text": "输入按顺序标识为 reserve/0、reserve/1 等，它们的调用在一次写入中一同提交。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留输入顺序、reserve 编号和单次写入共同提交。",
+            "paths": [
+              "/docs/diagnostics/orleans0210/"
+            ]
+          },
+          {
+            "id": "ec8d2c25fd7e2e9a3043a73f",
+            "index": 48,
+            "group": "A",
+            "source": "Instead of Task.WhenAny: the first warehouse to answer wins, and the others are canceled and awaited.",
+            "text": "替代 Task.WhenAny：采用第一个响应的仓库的结果，并取消其他调用、等待其结束。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留首先响应获胜、取消其他调用并等待其结束，没有直接遗弃其他任务。",
+            "paths": [
+              "/docs/diagnostics/orleans0210/"
+            ]
+          },
+          {
+            "id": "bf19449d12a3cabdcf569dde",
+            "index": 49,
+            "group": "A",
+            "source": "The wait lives in memory: a deactivation loses it, and the replay waits the full 14 days again.",
+            "text": "等待只存在于内存中：停用会使其丢失，回放时会重新等待完整的 14 天。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留停用丢失内存等待后重新等待完整 14 天的风险。",
+            "paths": [
+              "/docs/diagnostics/orleans0211/"
+            ]
+          },
+          {
+            "id": "3da23d66566a17bbc22d7b5c",
+            "index": 50,
+            "group": "A",
+            "source": "The runtime records the due time, and Durable Jobs reactivates the grain when it is due.",
+            "text": "运行时会记录到期时间，Durable Jobs 会在到期时重新激活该 Grain。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "记录到期时间，到期重新激活 Grain，语义完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0211/"
+            ]
+          },
+          {
+            "id": "42dab4768c68f17ac9b79bad",
+            "index": 51,
+            "group": "A",
+            "source": "Instead of racing the work with Task.Delay: a durable timeout which counts from the first run.",
+            "text": "替代将工作与 Task.Delay 竞速的做法：使用从首次运行开始计时的持久超时。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "持久超时从首次运行计时，不是每次回放重新计时。",
+            "paths": [
+              "/docs/diagnostics/orleans0211/"
+            ]
+          },
+          {
+            "id": "16e1546399211d0e73cc97e6",
+            "index": 52,
+            "group": "A",
+            "source": "Also runs when the host cancels the attempt, for example when the activation stops: the handler compensates",
+            "text": "宿主取消本次尝试时（例如激活实例停止时）也会运行：处理程序会补偿",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "结合完整原代码和新增 booking. 单元连读；未混淆执行尝试取消与预订业务被取消。",
+            "paths": [
+              "/docs/diagnostics/orleans0212/"
+            ]
+          },
+          {
+            "id": "aaf370111f42ec7441ecf461",
+            "index": 53,
+            "group": "A",
+            "source": "for a booking which nobody canceled, and its status change commits while the next attempt confirms the",
+            "text": "一个无人取消的预订；其状态更改会在下一次尝试期间提交，而那次尝试正在确认这个",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与新增单元 c94be99fb5d96a43e7e1ab30 的“预订。”连读，整句完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0212/"
+            ]
+          },
+          {
+            "id": "2fb677c45fe6a5ee517ffb70",
+            "index": 54,
+            "group": "A",
+            "source": "Runs for task cancellation only. When the host cancels the attempt, the exception ends it, and the next",
+            "text": "仅在任务被取消时运行。宿主取消本次尝试时，异常会结束该次尝试，下一次",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留仅任务取消时运行、宿主取消尝试时由异常结束该次尝试。",
+            "paths": [
+              "/docs/diagnostics/orleans0212/"
+            ]
+          },
+          {
+            "id": "f7f05a31c6d85556a5c359e8",
+            "index": 55,
+            "group": "A",
+            "source": "attempt replays the task.",
+            "text": "尝试会回放此任务。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与前行连读，明确下一次尝试回放任务。",
+            "paths": [
+              "/docs/diagnostics/orleans0212/"
+            ]
+          },
+          {
+            "id": "9d06a1d2a241131d70bd14ed",
+            "index": 56,
+            "group": "A",
+            "source": "Rethrows after compensating, so the task ends canceled, and a canceled attempt ends too.",
+            "text": "执行补偿后重新抛出异常，使任务以取消状态结束；已取消的执行尝试也会随之结束。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "补偿后重抛异常，保持任务取消与尝试取消的结束语义。",
+            "paths": [
+              "/docs/diagnostics/orleans0212/"
+            ]
+          },
+          {
+            "id": "52812c13508968eaeabab0ac",
+            "index": 57,
+            "group": "A",
+            "source": "The body returns before the email is sent, and a failure to send escapes the body.",
+            "text": "任务体在邮件发送之前就返回，且无法观察到发送失败。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "提前返回且无法观察发送失败的风险完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0213/"
+            ]
+          },
+          {
+            "id": "5b3818c7db7718557c8562c3",
+            "index": 58,
+            "group": "A",
+            "source": "A step which the body awaits: the body observes its completion and its failure, and a replay returns its record.",
+            "text": "任务体会等待该步骤：它会观察步骤的完成和失败，回放则会返回该步骤的记录。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留等待完成/失败及回放返回记录。",
+            "paths": [
+              "/docs/diagnostics/orleans0213/"
+            ]
+          },
+          {
+            "id": "e706e4ac0c8261ac8733d40a",
+            "index": 59,
+            "group": "A",
+            "source": "A delegate which returns a task, run as a step which the body awaits.",
+            "text": "返回任务的委托，作为任务体会等待的步骤运行。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0213/"
+            ]
+          },
+          {
+            "id": "aeadc9f4cce7ef509f63e0ea",
+            "index": 60,
+            "group": "A",
+            "source": "Every iteration returns the first review, so one rejection rejects every round at once.",
+            "text": "每次迭代都会返回第一次审核结果，因此一次拒绝就会同时拒绝每一轮。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "复用同一持久信号会每轮读取首次审核结果，拒绝语义正确。",
+            "paths": [
+              "/docs/diagnostics/orleans0214/"
+            ]
+          },
+          {
+            "id": "29f47be5df59adab395fdfe9",
+            "index": 61,
+            "group": "A",
+            "source": "Each round waits for its own signal name: \"reviewed/round-1\", \"reviewed/round-2\", and so on.",
+            "text": "每一轮等待各自的信号名称：\"reviewed/round-1\"、\"reviewed/round-2\" 等。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "每轮使用独立信号名称，编号和字面量完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0214/"
+            ]
+          },
+          {
+            "id": "a68b4e138a3fe23d7308eae2",
+            "index": 62,
+            "group": "A",
+            "source": "Logged again for every completed partition each time the task replays.",
+            "text": "任务每次回放时，都会为每个已完成的分区再次记录日志。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0215/"
+            ]
+          },
+          {
+            "id": "9f10d493d5d27c6d18bb46a9",
+            "index": 63,
+            "group": "A",
+            "source": "Skips events while a task replays, so each is logged once. Ordinary grain methods can use the same logger.",
+            "text": "任务回放期间跳过事件，因此每个事件只记录一次。普通 Grain 方法也可使用同一个日志记录器。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "回放跳过日志事件，普通 Grain 方法也可使用该记录器，范围完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0215/"
+            ]
+          },
+          {
+            "id": "c306319389de3a376254fefe",
+            "index": 64,
+            "group": "A",
+            "source": "A client has no durable outbox, so Post throws InvalidOperationException.",
+            "text": "客户端没有持久发件箱，因此 Post 会抛出 InvalidOperationException。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "客户端没有持久发件箱，Post 抛出具体异常的条件保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0216/"
+            ]
+          },
+          {
+            "id": "b852c5906419a7696aa1602c",
+            "index": 65,
+            "group": "A",
+            "source": "Returns once the order's grain has accepted and stored the task. A retry with the same ID reaches the same task.",
+            "text": "订单 Grain 接受并存储该任务后就返回。使用相同 ID 重试会到达同一个任务。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "返回条件为目标接受并存储任务，不是任务执行完成；相同 ID 重试一致。",
+            "paths": [
+              "/docs/diagnostics/orleans0216/"
+            ]
+          },
+          {
+            "id": "7e8186ff2bc2c6c57b548bef",
+            "index": 66,
+            "group": "A",
+            "source": "In a durable grain, Post stages the start in the grain's outbox, and it commits with the grain's state change.",
+            "text": "在持久 Grain 中，Post 会将启动操作暂存到 Grain 的发件箱中，并与 Grain 的状态更改一同提交。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "Post 暂存启动操作，随 Grain 状态更改一同提交。",
+            "paths": [
+              "/docs/diagnostics/orleans0216/"
+            ]
+          },
+          {
+            "id": "15ef9f5b1825a919b5bbbc02",
+            "index": 67,
+            "group": "A",
+            "source": "Task cancellation has already canceled CancellationToken, so the release ends at once.",
+            "text": "任务取消已使 CancellationToken 进入取消状态，因此释放操作会立即结束。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "任务令牌已取消使释放立即结束，失败机制准确。",
+            "paths": [
+              "/docs/diagnostics/orleans0217/"
+            ]
+          },
+          {
+            "id": "b7b0d46c989c4fca6d2da0cd",
+            "index": 68,
+            "group": "A",
+            "source": "AttemptCancellationToken is canceled only when the host cancels the attempt, so the release runs to completion.",
+            "text": "AttemptCancellationToken 仅在宿主取消执行尝试时才会被取消，因此释放操作能够运行至完成。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "AttemptCancellationToken 仅随宿主取消执行尝试而取消，限定保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0217/"
+            ]
+          },
+          {
+            "id": "766afe59d6fcc01d12a943a2",
+            "index": 69,
+            "group": "A",
+            "source": "The task's cancellation doesn't reach a shielded step, and the step records the release.",
+            "text": "任务的取消不会传播到屏蔽取消的步骤，该步骤会记录释放操作。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "shielded 明确译为屏蔽取消，未误写权限保护或任务分离。",
+            "paths": [
+              "/docs/diagnostics/orleans0217/"
+            ]
+          },
+          {
+            "id": "47eb322f49e328ee0b1d30d5",
+            "index": 70,
+            "group": "A",
+            "source": "The name depends on the region, and the range on the caller.",
+            "text": "名称取决于区域，版本范围取决于调用方。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "名称依赖区域、范围依赖调用方，两个因素分别保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0218/"
+            ]
+          },
+          {
+            "id": "1638ff55242ca48fa3b23558",
+            "index": 71,
+            "group": "A",
+            "source": "Every replay reads the version which the execution recorded under this name.",
+            "text": "每次回放都会读取该执行实例在此名称下记录的版本。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "读取执行已记录的版本，没有误译为重新选择最新版本。",
+            "paths": [
+              "/docs/diagnostics/orleans0218/"
+            ]
+          },
+          {
+            "id": "ca62487274745fca122d378e",
+            "index": 72,
+            "group": "A",
+            "source": "Starts the notice and discards its handle: the notice's failure reaches no code.",
+            "text": "启动通知任务后将其句柄丢弃：没有代码能够观察到通知任务的失败。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "丢弃句柄导致失败无人观察，没有误译为任务未启动。",
+            "paths": [
+              "/docs/diagnostics/orleans0219/"
+            ]
+          },
+          {
+            "id": "14836091ac6198e1b46bd842",
+            "index": 73,
+            "group": "A",
+            "source": "The notice runs while the body packs, and the body observes its outcome before it completes.",
+            "text": "任务体执行打包操作时，通知任务同时运行；任务体会在自身完成之前观察通知任务的结果。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "通知与打包同时执行，任务体结束前观察通知结果。",
+            "paths": [
+              "/docs/diagnostics/orleans0219/"
+            ]
+          },
+          {
+            "id": "fe64fb9dd1a8c9db2f4af541",
+            "index": 74,
+            "group": "A",
+            "source": "A durable grain call, started as an independent root task, which continues after this execution completes and",
+            "text": "一个作为独立根任务启动的持久 Grain 调用；即使当前执行实例已完成并且",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与后行连读，独立根任务在原执行完成并删除后继续存在。",
+            "paths": [
+              "/docs/diagnostics/orleans0219/"
+            ]
+          },
+          {
+            "id": "503885dc6d88675eced29859",
+            "index": 75,
+            "group": "A",
+            "source": "is deleted.",
+            "text": "被删除，该任务也会继续运行。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与前行连读，被删除的是原执行，不是独立根任务。",
+            "paths": [
+              "/docs/diagnostics/orleans0219/"
+            ]
+          },
+          {
+            "id": "2a2b008143864c783b70964c",
+            "index": 76,
+            "group": "A",
+            "source": "$child-1, in the executions of first orders only.",
+            "text": "$child-1，仅存在于首次下单的执行实例中。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留仅首次下单执行时存在的条件和未命名子任务编号。",
+            "paths": [
+              "/docs/diagnostics/orleans0220/"
+            ]
+          },
+          {
+            "id": "842e2b00b036b0d65f8cb91c",
+            "index": 77,
+            "group": "A",
+            "source": "$child-1 or $child-2, and the statement $child-2 or $child-3, depending on the condition.",
+            "text": "根据条件，可能是 $child-1 或 $child-2，而对账单可能是 $child-2 或 $child-3。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "额外读 AwardAsync 完整代码，SendStatement 对应对账单，现译正确；$child 编号保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0220/"
+            ]
+          },
+          {
+            "id": "0dd2d2a37a39cd04df177a72",
+            "index": 78,
+            "group": "A",
+            "source": "Each name identifies its call site, whichever operations ran before it.",
+            "text": "无论之前运行过哪些操作，每个名称都能标识其对应的调用点。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "逐句对照原文、译文和全部工作包上下文，含义完整，未发现译错或代码标识符变化。",
+            "paths": [
+              "/docs/diagnostics/orleans0220/"
+            ]
+          },
+          {
+            "id": "5ac82eca964807a84d8f0e5c",
+            "index": 79,
+            "group": "A",
+            "source": "A synchronous state change, which the step runs as a child execution with a journal write of its own.",
+            "text": "同步状态更改；步骤会将其作为子执行实例运行，并单独进行一次日志写入。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "同步状态更改仍作为子执行单独写日志，语义完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0221/"
+            ]
+          },
+          {
+            "id": "b91e9f5ed5686031e1214503",
+            "index": 80,
+            "group": "A",
+            "source": "The effect runs in the current work item, and its record commits with the execution's next journal write.",
+            "text": "副作用在当前工作项中运行，其记录随执行实例的下一次日志写入一同提交。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "区分当前工作项运行与下次日志写入提交。",
+            "paths": [
+              "/docs/diagnostics/orleans0221/"
+            ]
+          },
+          {
+            "id": "8e3733dbe69cddf8fd1603d2",
+            "index": 81,
+            "group": "A",
+            "source": "Executions which recorded the step replay it.",
+            "text": "已记录该步骤的执行实例会回放该步骤。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "仅已记录该步骤的执行会回放该步骤，条件正确。",
+            "paths": [
+              "/docs/diagnostics/orleans0221/"
+            ]
+          },
+          {
+            "id": "9eb0ff2e995eea2aec4082e6",
+            "index": 82,
+            "group": "A",
+            "source": "SendWelcome returns at its first await, so the step records its completion before the email is sent.",
+            "text": "SendWelcome 会在首次 await 时返回，因此步骤会在邮件发送之前记录其已完成。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "首次 await 提前返回导致步骤过早记录完成，SendWelcome 标识符保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0222/"
+            ]
+          },
+          {
+            "id": "df2aacceb99d48e162c52d4d",
+            "index": 83,
+            "group": "A",
+            "source": "The step completes when the returned task completes, after the email is sent.",
+            "text": "返回的任务在邮件发送后完成，此时该步骤才会完成。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "返回任务在邮件发送后完成，此时步骤才完成，顺序正确。",
+            "paths": [
+              "/docs/diagnostics/orleans0222/"
+            ]
+          },
+          {
+            "id": "5f56bf4eb10ea084060481dc",
+            "index": 84,
+            "group": "A",
+            "source": "Changes the list which the value holds: no journal record holds the new item.",
+            "text": "修改该值所持有的列表：没有任何日志记录包含新增的项。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "直接修改内部列表没有新增日志记录，否定语义完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0223/"
+            ]
+          },
+          {
+            "id": "73e17294bbdbe5dde92a0feb",
+            "index": 85,
+            "group": "A",
+            "source": "The assignment passes through the value's API, which records the new list.",
+            "text": "赋值会经过该值的 API，由它记录新的列表。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "corrected",
+            "note": "原译重复写出 API 两次；改用代词承接，将受保护标识符次数恢复为原文的一次，语义不变。",
+            "paths": [
+              "/docs/diagnostics/orleans0223/"
+            ],
+            "previousText": "赋值通过该值的 API 执行，该 API 会记录新的列表。",
+            "changeKind": "protected_count"
+          },
+          {
+            "id": "a5c7dd37d0857547a7e6eba6",
+            "index": 86,
+            "group": "A",
+            "source": "The poll throws NotSupportedException in a durable task body.",
+            "text": "在持久任务体中进行此轮询会抛出 NotSupportedException。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "仅持久任务体中轮询不支持，异常类型准确。",
+            "paths": [
+              "/docs/diagnostics/orleans0225/"
+            ]
+          },
+          {
+            "id": "d94297771e7b850cef675d28",
+            "index": 87,
+            "group": "A",
+            "source": "The body resumes when the export completes, and a replay returns its recorded result.",
+            "text": "导出完成时，任务体会恢复执行；回放会返回已记录的结果。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "导出完成后恢复执行，回放返回原结果。",
+            "paths": [
+              "/docs/diagnostics/orleans0225/"
+            ]
+          },
+          {
+            "id": "6c380084b8c4b0b8ec8b1b9c",
+            "index": 88,
+            "group": "A",
+            "source": "A durable delay races the export, and the execution records which completed first.",
+            "text": "持久延迟与导出操作竞速，执行实例会记录哪一个先完成。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "延迟与导出竞速，记录谁先完成，语义完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0225/"
+            ]
+          },
+          {
+            "id": "645aedc7e38e039ff24cad91",
+            "index": 89,
+            "group": "A",
+            "source": "The continuation runs on the thread pool: the state change races with the grain's other turns, and commits",
+            "text": "续体在线程池上运行：状态更改会与 Grain 的其他执行轮次产生竞态，并且其提交",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与后行连读，保留线程池续体与其他执行轮次竞态，以及状态不与结果共同提交。",
+            "paths": [
+              "/docs/diagnostics/orleans0226/"
+            ]
+          },
+          {
+            "id": "5bf7d89587469c4582c1b8b1",
+            "index": 90,
+            "group": "A",
+            "source": "apart from the result.",
+            "text": "与结果的提交相互独立。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与前行连读，状态提交与结果提交分开。",
+            "paths": [
+              "/docs/diagnostics/orleans0226/"
+            ]
+          },
+          {
+            "id": "7b1ce27eb17b67c401ec773d",
+            "index": 91,
+            "group": "A",
+            "source": "The continuation returns to the activation's scheduler, and the state change commits with the result.",
+            "text": "续体回到激活实例的调度器执行，状态更改与结果一同提交。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "回到激活实例调度器，状态与结果共同提交。",
+            "paths": [
+              "/docs/diagnostics/orleans0226/"
+            ]
+          },
+          {
+            "id": "6186a90fc64a62fddd06e17c",
+            "index": 92,
+            "group": "A",
+            "source": "The version check throws InvalidOperationException, which the effect records as its outcome.",
+            "text": "版本检查会抛出 InvalidOperationException，副作用会将该异常记录为其结果。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "版本检查抛异常，该异常成为副作用记录结果，机制正确。",
+            "paths": [
+              "/docs/diagnostics/orleans0227/"
+            ]
+          },
+          {
+            "id": "a54482ca1f787a0866c04bd0",
+            "index": 93,
+            "group": "A",
+            "source": "The effect returns the seat, and the body checks the version and starts the welcome.",
+            "text": "副作用返回名额编号，任务体再检查版本并启动欢迎操作。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "corrected",
+            "note": "完整 EnrollAndWelcomeAsync(string student) 代码以 ++_enrolled.Value 产生整数编号；seat 指报名名额，不是物理座位。",
+            "paths": [
+              "/docs/diagnostics/orleans0227/"
+            ],
+            "previousText": "副作用返回座位，任务体再检查版本并启动欢迎操作。",
+            "changeKind": "semantic"
+          },
+          {
+            "id": "398d6e264d5346e99b16a37e",
+            "index": 94,
+            "group": "A",
+            "source": "A local method runs as part of this execution, so starting it detached throws InvalidOperationException.",
+            "text": "本地方法作为当前执行实例的一部分运行，因此以分离方式启动它会抛出 InvalidOperationException。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "本地方法属于当前执行，不支持分离启动，异常类型保留。",
+            "paths": [
+              "/docs/diagnostics/orleans0228/"
+            ]
+          },
+          {
+            "id": "a284c9fe074aa09bc6ea83ec",
+            "index": 95,
+            "group": "A",
+            "source": "The surveys grain stores and runs the call as a root task, which continues after this execution completes.",
+            "text": "问卷 Grain 会将此调用作为根任务存储并运行；当前执行实例完成后，该根任务仍会继续运行。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "远程 Grain 以根任务存储并执行调用，原执行完成后仍继续。",
+            "paths": [
+              "/docs/diagnostics/orleans0228/"
+            ]
+          },
+          {
+            "id": "46c76e42d86bbcbe25333e73",
+            "index": 96,
+            "group": "A",
+            "source": "The step runs as a child of this execution, which waits for it.",
+            "text": "步骤作为当前执行实例的子任务运行，当前执行实例会等待它完成。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "本地步骤为受父执行等待的子任务，没有误译为独立根。",
+            "paths": [
+              "/docs/diagnostics/orleans0228/"
+            ]
+          },
+          {
+            "id": "e5b6f73665793488cdd88f7d",
+            "index": 97,
+            "group": "A",
+            "source": "The caller requested cancellation.",
+            "text": "调用方请求了取消。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "读两处不同缩进的上下文，均为调用方请求取消。",
+            "paths": [
+              "/docs/grains/cancellation-tokens/",
+              "/docs/grains/response-streaming/"
+            ]
+          },
+          {
+            "id": "aa05a4aff010508348540358",
+            "index": 98,
+            "group": "A",
+            "source": "The grain, the task's ID, and its incarnation identify this run in every replay and every retry. The operation's",
+            "text": "Grain、任务 ID 及其运行代次在每次回放和重试中标识此次运行。操作",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "与后行连读，Grain、任务 ID 和运行代次在回放与重试中稳定标识此次运行。",
+            "paths": [
+              "/docs/grains/durable-tasks-idempotency/",
+              "/docs/grains/durable-tasks-integrations/"
+            ]
+          },
+          {
+            "id": "626899cf89b169677b4967bc",
+            "index": 99,
+            "group": "A",
+            "source": "name distinguishes the run's external requests from each other.",
+            "text": "名称用于区分此次运行发出的各个外部请求。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "操作名区分同次运行的不同外部请求，没有与运行代次混淆。",
+            "paths": [
+              "/docs/grains/durable-tasks-idempotency/",
+              "/docs/grains/durable-tasks-integrations/"
+            ]
+          },
+          {
+            "id": "a7c727fa8402f0b54b8cb620",
+            "index": 100,
+            "group": "A",
+            "source": "An ordinary method which callers outside durable tasks retry: the operation ID and the credit commit together,",
+            "text": "供持久任务外部的调用方重试的普通方法：操作 ID 与入账操作一同提交，",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "持久任务外调用方可重试普通方法，操作 ID 与入账共同提交。",
+            "paths": [
+              "/docs/grains/durable-tasks-idempotency/"
+            ]
+          },
+          {
+            "id": "2dad62810c5c85be72f81d77",
+            "index": 101,
+            "group": "A",
+            "source": "so a retry finds the operation and returns the balance which it produced.",
+            "text": "因此重试会找到该操作，并返回该操作产生的余额。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "返回原操作产生的余额，不是重新入账后的余额。",
+            "paths": [
+              "/docs/grains/durable-tasks-idempotency/"
+            ]
+          },
+          {
+            "id": "441a91174d1e6811083495ba",
+            "index": 102,
+            "group": "A",
+            "source": "The caller starts this task under the root ID \"publish-{reportId}\", which DurableTask.Current.Id reports.",
+            "text": "调用方以根 ID \"publish-{reportId}\" 启动该任务，DurableTask.Current.Id 会返回此 ID。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "根 ID 字面量与 DurableTask.Current.Id 路径完整保留。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "cb9eede9a703524c36267cfc",
+            "index": 103,
+            "group": "A",
+            "source": "publish-{reportId}/version, a named recorded effect, as WithId(\"version\") names a step.",
+            "text": "publish-{reportId}/version：一个具名的已记录副作用，类似于用 WithId(\"version\") 为步骤命名。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "具名副作用与 WithId 命名步骤的类比正确，表达式保留。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "dc5fac7309be78161affb848",
+            "index": 104,
+            "group": "A",
+            "source": "publish-{reportId}/$child-1, the execution's first unnamed operation.",
+            "text": "publish-{reportId}/$child-1：当前执行实例的第一个未命名操作。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "保留第一个未命名操作与完整层级 ID。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "bf339b4606d2035a249acb78",
+            "index": 105,
+            "group": "A",
+            "source": "publish-{reportId}/render/0, render/1, and so on: a named combinator's inputs, in input order. Each renderer",
+            "text": "publish-{reportId}/render/0、render/1 等：按输入顺序排列的具名组合器输入。每个渲染器",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "具名组合器输入按输入顺序编号，与后两行连读完整。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "5d7f5a7a9c426fa035d68a9d",
+            "index": 106,
+            "group": "A",
+            "source": "stores its call under the caller's scope, $caller/{reportGrainId}/{incarnation}/publish-{reportId}/render/{i},",
+            "text": "将调用存储在调用方作用域下，即 $caller/{reportGrainId}/{incarnation}/publish-{reportId}/render/{i}，",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "完整 $caller 层级路径逐字保留。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "c92a4e85ccbeba7e7f096740",
+            "index": 107,
+            "group": "A",
+            "source": "where {incarnation} identifies this run of publish-{reportId}.",
+            "text": "其中 {incarnation} 标识 publish-{reportId} 的此次运行。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "{incarnation} 标识本次运行，两个占位表达式保留。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "a1768275e444c8c3ab05d1e1",
+            "index": 108,
+            "group": "A",
+            "source": "publish-{reportId}/check, then check$2, check$3, and so on: one name which this run repeats.",
+            "text": "publish-{reportId}/check，之后是 check$2、check$3 等：本次运行重复使用的同一个名称。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "重复名称的后缀递增语义及表达式保留。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "9ebe2cd0cc4e7b3a2ad6e178",
+            "index": 109,
+            "group": "A",
+            "source": "publish-{reportId}/$signal:approved, the signal's record beneath the invoked task.",
+            "text": "publish-{reportId}/$signal:approved：被调用任务下的信号记录。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "信号记录位于被调用任务之下，完整层级 ID 保留。",
+            "paths": [
+              "/docs/grains/durable-tasks-identity/"
+            ]
+          },
+          {
+            "id": "c94be99fb5d96a43e7e1ab30",
+            "group": "extra",
+            "source": "booking.",
+            "text": "预订。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "结合 A52/A53 及 ORLEANS0212 完整代码复核；接在“确认这个”之后，跨行句子完整。",
+            "paths": [
+              "/docs/diagnostics/orleans0212/"
+            ]
+          },
+          {
+            "id": "e986b588f1ca5927ad136b4e",
+            "group": "extra",
+            "source": "INSERT ... ON CONFLICT (operation_id) DO NOTHING: a repeated write with the same operation ID changes nothing.",
+            "text": "INSERT ... ON CONFLICT (operation_id) DO NOTHING：使用相同操作 ID 重复写入不会产生任何变化。",
+            "reviewMethod": "AI逐句语义译审",
+            "conclusion": "passed",
+            "note": "SQL 前缀、operation_id 与 ID 保留；只译冒号后的同一操作 ID 重复写入不产生变化的说明，与 UpsertAsync 上下文一致。",
+            "paths": [
+              "/docs/grains/durable-tasks-integrations/"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "group": "b",
+      "report": {
+        "method": "独立 AI 全组逐条交叉复核，结合代码上下文检查原意及术语",
+        "checkedIds": [
+          "92a80108ae60c515c6e99b8f",
+          "b9a5c402709896da4f43dc58",
+          "ccb14072993338ca457550e8",
+          "8906130353ccc91b2d4123fa",
+          "964f979b99b380815e4644fe",
+          "50ba36dfd1734aa5c993129a",
+          "55336566b7844091a3b45216",
+          "3734484494395dbe32eca26a",
+          "d51b7bbc9acc630bf02e50ef",
+          "07df671ecc2d73e5bcd44f33",
+          "10b700eda74ade90a71e74cc",
+          "74d46e829a6abb2b4f9e19ef",
+          "7ae5c5f81677b0e0410eea1a",
+          "2a4b6a7d0ca607c20999d3ac",
+          "cea0fddc8ff16ae2278b6a91",
+          "081ba4d5f5e733488ace080b",
+          "dd4790dcd2fd07888e089989",
+          "bb72b947ee88d2c1b3013f3f",
+          "1e313d0cea50c2f5b396551c",
+          "bf969c1174199e40cb8aab0d",
+          "9702bb9803186ef8ac034f23",
+          "029d1b3a11da32bd8d86a692",
+          "50808084a748d517f2c361fa",
+          "ba82027b9e06a3f8852a574a",
+          "e4df0e0a21552111c8ae59ab",
+          "7f31e1e8664d584d9e49ddae",
+          "8191711b4ffe561b03720abd",
+          "61f4b337f411c1831a03d039",
+          "e5a39b5de70b89fde7ff47db",
+          "821531f3bf3699f75e4512dd",
+          "604796469927ef1927862cd8",
+          "92a65c04514490a16ee8631b",
+          "5938f9da67a008d70e468256",
+          "63f86309225a12adb1196ac5",
+          "f65f41ae76853c4d9c605bb6",
+          "f24371e1dc3e360ba1f2fa6d",
+          "10516c5177ca34dbbf4f245e",
+          "135f66b7f3ccd49d9bc62c63",
+          "9966ef1c57a6496c6d7df470",
+          "f2bfb7864dc0a99302de2963",
+          "9267bc7682e48fae1778e038",
+          "917c412ba35ee8efc9f75eeb",
+          "1b0b93524159b4dfc6a9b770",
+          "1e5144ea1c986b614b407382",
+          "140605e8c6f71a0383d9f8b7",
+          "f5657e0b001c342d49c98fe8",
+          "8446b84cabe51ff36ead0a0e",
+          "e79f46be3ef117424c73905e",
+          "e135962612cf49d20797b677",
+          "df2fafefba192693727b18d2",
+          "1378aa3d44cf6d3a5974e5a6",
+          "3e84bf9580c1e0c5f6a6f05d",
+          "f29de8aec0325f956931b9c8",
+          "fd59903d4c08f1cf2871bb83",
+          "d8094585d5ce69bd5ba9e371",
+          "35863f911215e2a9eef408b8",
+          "44565f918420eafbe54666b4",
+          "87e600c2ec2e492a23cfaecc",
+          "10ec9d56e799f9c707fbaf44",
+          "7a0fafd41ca506bcad54d88b",
+          "6a3579748e19a36cbadbc610",
+          "22c396533c6d2ac9a8b9df6c",
+          "2f97f3ca6418ab683067b33e",
+          "a83ffece98207d3e176f244a",
+          "a9e3759b1b4a229dff21e755",
+          "e23bc578fb71612cb9849498",
+          "aafea9cc08373664b5d12714",
+          "cfd0d2dca27ab2e0c2601087",
+          "7a8f89b7c7d3508679f448da",
+          "f5db76ec343d5a7745287b1d",
+          "81bc6aa5d6a4e5c71477865c",
+          "20f45f6c87672aeb4b96fdf1",
+          "7de753a00b48754ed2bf033f",
+          "81536431ee31ef5e33b57068",
+          "c2f9ebb946730c7c92991224",
+          "265f46a2dc0a8d136888e258",
+          "4fbf53553a53f51fd6743864",
+          "4ebcead10f75e325f29dc643",
+          "f1964ebd2fa625db0e485643",
+          "0ecf0f654fd7aaa0e49bc5de",
+          "5f3e98207726edc868700f20",
+          "922eb048e3b5a96d4db1fbd5",
+          "5eb597093034c4669bc25bdc",
+          "a99b59ee6a33c37f5c474f93",
+          "6cbcb1d9fec53447b8f64b29",
+          "8db4c6a4afd63da80da49ce7",
+          "8794809d52d7205e60f462a6",
+          "2cc4f0c764058b0d68bf1526",
+          "5570d7528ece3773dc986b20",
+          "3c1e6309593b0a2a4a8f2c12",
+          "24b7bde90ba50bab1ebd48d2",
+          "847193134e723305c6ef73de",
+          "b68edbb0e219b6248ab43b22",
+          "05d8d5b2b03a45ef520945ab",
+          "ad0649212fb04d71d202ffa4",
+          "f3912dee4e33641ab04be40b",
+          "f433ef07fb5a4e85ae9c33dc",
+          "aaf9229e52fc0a6aed7126d9",
+          "27e2c9c56f50cb8f620d58bd",
+          "e17668d140366b5a6e52b71e",
+          "80f5b903c1f2f1914602e09d",
+          "d1fd9b9df57c0f3463056d17",
+          "973f6e64f9b257158d777ff3",
+          "ef9415d2b4a55f4e0d94defe",
+          "23719e649ac6ded8e32d590d",
+          "4be171e072d24098362bfd4e",
+          "e5e6cb69837362ee8658bf1c",
+          "437b41e0f04054bd271206ed",
+          "1e03a19f9d8a6beb3289abf1",
+          "04dcc7c57a126d74b79fd707"
+        ],
+        "checkedCount": 110,
+        "changes": [
+          {
+            "id": "63f86309225a12adb1196ac5",
+            "before": "生成器添加的处理程序（例如复原能力处理程序）位于键处理程序之后，因此它们发起的重试",
+            "after": "构建器添加的处理程序（例如弹性处理程序）位于键处理程序之后，因此它们发起的重试",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          },
+          {
+            "id": "a9e3759b1b4a229dff21e755",
+            "before": "会重新执行的代码：每次回放都会运行，并通过支持安全回放的日志记录器仅记录一次日志。",
+            "after": "会重新执行的代码：每次回放都会运行，并通过回放安全的日志记录器仅记录一次日志。",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          },
+          {
+            "id": "0ecf0f654fd7aaa0e49bc5de",
+            "before": "通知客户。待处理的执行保留其记录的版本。",
+            "after": "通知客户。待处理的执行实例保留其记录的版本。",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          },
+          {
+            "id": "922eb048e3b5a96d4db1fbd5",
+            "before": "没有待处理的执行再采用版本 0，因此移除了仓库分支。记录了版本",
+            "after": "没有待处理的执行实例再采用版本 0，因此移除了仓库分支。记录了版本",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          },
+          {
+            "id": "5eb597093034c4669bc25bdc",
+            "before": "0 的执行会在此停滞，直到支持该版本的代码对其进行回放，或者运维人员将其终止。",
+            "after": "0 的执行实例会在此停滞，直到支持该版本的代码对其进行回放，或者运维人员将其终止。",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          },
+          {
+            "id": "a99b59ee6a33c37f5c474f93",
+            "before": "有执行记录旧版本，就表明该版本仍在使用。",
+            "after": "有执行实例记录旧版本，就表明该版本仍在使用。",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          },
+          {
+            "id": "847193134e723305c6ef73de",
+            "before": "该步骤在被等待时作为具有自身上下文的子执行运行，并记录在",
+            "after": "该步骤在被等待时作为具有自身上下文的子执行实例运行，并记录在",
+            "reason": "统一构建器、回放安全日志记录器、执行实例等技术术语。"
+          }
+        ],
+        "unresolved": []
+      }
+    },
+    {
+      "group": "c",
+      "report": {
+        "method": "独立 AI 全组逐条交叉复核；实际阅读 94 项 EN/ZH，并对跨行、epoch、模板格式、继承前提及延迟计算读取完整原始代码上下文。",
+        "checkedIds": [
+          "327bc22c9a19d1429637345a",
+          "a0ae155ff0efbcf81edc16f4",
+          "4fc7e000e31abcf54c334a01",
+          "737565baddd63de64e49e78b",
+          "968c4fa0e8b8e05e4febebd2",
+          "debeef91d4f74646a643d803",
+          "c7eb858f07557300ec5b9c1f",
+          "296371982948c9e14e1b53d5",
+          "c3fcb63bd9dee3319d76d5a0",
+          "d6e0973df94d2a541eeb922d",
+          "48eb5d4b74d27643f2f509e2",
+          "02da0841c982f6d912ed376e",
+          "eee0c079d6a407076ce39451",
+          "76e5ee4d774f4ac59c2cc15e",
+          "7e7ccd2f2eab8fd408c9702e",
+          "fed24f08dd62705fadf03c13",
+          "c5874043db1297d51891ffcf",
+          "3d19438a6ff968d663d02f53",
+          "293c595688680103d0a334cc",
+          "5aa6be1e69c946b041c94cd5",
+          "8258b4c0c4572ebdc9e8202f",
+          "4d5156d7eccd0a98b150dddb",
+          "0bf39216a8c1d8b1c2c03973",
+          "5881910e47d0bce942e18f67",
+          "a66f5f0dbfe1c683d526b33c",
+          "dacadb37432e9ac8bbd4239b",
+          "42f0545b6f910e9734b641f3",
+          "991d668a3e215a524fe6af95",
+          "291b4b4bee5d1707b046ede9",
+          "4db7cb52ea6fb460daf7f018",
+          "f39abe3e5415c06d12e672b0",
+          "56943e937e4762f38a443dc0",
+          "04ac6010313a82e2f0fdde33",
+          "3a2024d5e84a77e932be85ed",
+          "69cdad77bbc7ca312749e957",
+          "3485e042458effcf43fbf06a",
+          "1f5bebd372e22304d5fbd524",
+          "d7b6b581ed72cc4104cfb0bc",
+          "e535c9faffd68f21192bf5d8",
+          "df8733a21c25a1267fd61414",
+          "3f765c45a5e15d962f1cbcb0",
+          "65b48caae3c047d1adfd3fbd",
+          "0f7a492b624600b1081411c8",
+          "688ce4a5971e06fb36aafe39",
+          "046b72d3dcd81dc955bc7c36",
+          "d2ce668ccc15598b128a8f45",
+          "2f86274b96108f613fd54177",
+          "e07cbc3450dc5424533ab3f5",
+          "969e2de0ddd2a2c92a8631f2",
+          "fb384e9336477c73b9544fae",
+          "710e69829e94d7087fb45228",
+          "69fe8aa51705f128f4fa3e13",
+          "41d8fe0e4c0c08a39b61dfdb",
+          "45ffce28e20b65fd82b6dc0d",
+          "2b83ad0994e8ecf9da884da6",
+          "aedc1bb7c26ae95d155f8abb",
+          "850db2c4ec3338c4ed0e5c58",
+          "78c184781d316fec5215401a",
+          "da8550f0c6c0f95d305356d0",
+          "308249d8da7527e79ec0cb38",
+          "691180dee6783ce8253cca2e",
+          "1bcc34e448e6dec4f6119684",
+          "43f83a6c25ad08bf9ccfbf5f",
+          "726fe9c7f2f229f9ad874a5f",
+          "a8a2becf830fdc4ea6aa2a28",
+          "4cd407aa6498821eb93562ba",
+          "b1d91f54ee2372b1d75d410b",
+          "b24237f252f71b236d646948",
+          "3f54160215b4e1078a4c8f86",
+          "5ad2614069ec2a4909f22f74",
+          "5912b1d1e43314f0c2fc9108",
+          "b458d372940788ace7808dd2",
+          "0cc654ef4e11247660b5e881",
+          "7bd3a7cb57ffe4a2d9041489",
+          "ee0fbbb7401279e53933120a",
+          "baddb75e37dfe0cd3ca1ea22",
+          "a6988d5e2054b616c02ba09c",
+          "c3deba2bdc11d25064210ea6",
+          "eb5837d9dd6440b7f2e1468d",
+          "5f1bfe6e51e2adb36181d512",
+          "de206c026135804ebd8339af",
+          "98757efda29efa25e684a80c",
+          "5768014141744245208bebed",
+          "4db9e36ffd2737f2281df835",
+          "15cb82ef468544cbbaf2ff47",
+          "4a765bad68a6e69bcd57cae7",
+          "504c9f6e43136c595330f5be",
+          "58b05972ff2ceb0ecd938e2a",
+          "a518988cdf92d3c534cfc17e",
+          "ef0f4c1516e0b90a491a2c25",
+          "4e2737f8321f43118135f6ad",
+          "461a9a7e6cccd480ff75f7ef",
+          "2e8185339f7c617d0ece7c2e",
+          "850a2fb8ce746b5c1b7467ad"
+        ],
+        "checkedCount": 94,
+        "changes": [
+          {
+            "id": "3d19438a6ff968d663d02f53",
+            "before": "从指定位置读取已提交的历史记录。epoch 为 0 时读取当前历史记录。",
+            "after": "从指定位置读取已提交的历史记录。纪元（epoch）为 0 时读取当前历史记录。",
+            "reason": "与同页正文的纪元术语一致，并保留对应参数 epoch。"
+          },
+          {
+            "id": "4d5156d7eccd0a98b150dddb",
+            "before": "每个条目都具有持久性，因此 epoch 与最新条目之后的位置共同构成有效的恢复点。",
+            "after": "每个条目都具有持久性，因此纪元（epoch）与最新条目之后的位置共同构成有效的恢复点。",
+            "reason": "与同页正文的纪元术语一致，并保留代码变量 epoch。"
+          },
+          {
+            "id": "3f765c45a5e15d962f1cbcb0",
+            "before": "避免在同一帐户之间转入和转出，因为这没有意义。",
+            "after": "避免转出帐户与转入帐户相同，因为这样做没有意义。",
+            "reason": "根据完整代码的 fromIndex/toIndex 相等检查，明确原文 same account 的含义，避免“同一帐户之间”歧义。"
+          },
+          {
+            "id": "308249d8da7527e79ec0cb38",
+            "before": "当前版本没有可用于覆盖此推断结果的公共 API。",
+            "after": "在当前版本中，尚无公共 API 可覆盖",
+            "reason": "与下一行合读，恢复 current version of Aspire.Hosting.Orleans 的范围限定，避免库名被误接到变通方案。"
+          },
+          {
+            "id": "691180dee6783ce8253cca2e",
+            "before": "在 Aspire.Hosting.Orleans 中，可采用的变通方案是将 Orleans 提供程序",
+            "after": "Aspire.Hosting.Orleans 的这项推断。作为变通方案，可将 Orleans 提供程序",
+            "reason": "与前一行合读，将 Aspire.Hosting.Orleans 明确限定为缺少该公共 API 的库，而非仅是变通方案的位置。"
+          }
+        ],
+        "preservationDecisions": [
+          {
+            "id": "737565baddd63de64e49e78b",
+            "note": "OrleansContracts format: 2 是协定清单的格式声明，作为固定格式内容保留；一般解释性注释均已翻译。"
+          },
+          {
+            "ids": [
+              "5aa6be1e69c946b041c94cd5",
+              "8258b4c0c4572ebdc9e8202f",
+              "a66f5f0dbfe1c683d526b33c"
+            ],
+            "note": "Token 在该段表示生成式响应中的流式词元；保留常用技术名，不误译为身份认证令牌。"
+          },
+          {
+            "id": "15cb82ef468544cbbaf2ff47",
+            "note": "结合前文未密封的 MyForeignLibraryType 及 sealed 派生示例，原文 they 指可被继承的外部类型；译文此前提正确。"
+          },
+          {
+            "id": "850a2fb8ce746b5c1b7467ad",
+            "note": "保留原文“使用已用时间计算 15 秒的延迟”的语义，没有用译文悄悄修正原示例的实现。"
+          }
+        ],
+        "sourceCodeObservations": [
+          {
+            "id": "850a2fb8ce746b5c1b7467ad",
+            "page": "/docs/streaming/broadcast-channel/",
+            "note": "原示例用 Stopwatch.GetElapsedTime(startingTimestamp).Milliseconds 计算 elapsed，再从 15_000 减去该值；Milliseconds 是毫秒分量，不能表达完整经过的毫秒数。这属于原代码问题，代码和原意均未擅自修正。"
+          }
+        ],
+        "unresolvedTranslationIssues": []
+      }
+    }
+  ],
+  "applicationValidation": {
+    "mappingUnits": 316,
+    "sourceInventoryUnits": 316,
+    "checks": "All reviewed actual translations applied to every occurrence in the source corpus; protected literals, line boundaries, highlighter confirmation, DOM structure and independent non-comment equality checked.",
+    "results": {
+      "candidateHtmlBlocks": 175,
+      "changedHtmlBlocks": 171,
+      "translatedOccurrences": 344,
+      "reviewedOccurrences": 350,
+      "reviewedUnchangedOccurrences": 6
+    }
+  },
+  "boundaryValidation": {
+    "testPurpose": "Synthetic Chinese-prefix substitutions verify boundaries and preservation; these are not translation deliverables.",
+    "boundaries": {
+      "boundaryCases": 10,
+      "negativeGuards": 8,
+      "nestedPreAndSpanPreservation": true
+    },
+    "corpus": {
+      "htmlBlocks": 21352,
+      "preBlocks": 21362,
+      "changedHtmlBlocks": 175,
+      "changedPreBlocks": 175,
+      "translatedOccurrences": 350
+    }
+  }
+}

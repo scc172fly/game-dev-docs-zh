@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "page": "/docs/grains/durable-tasks-recipes/",
+  "pageId": "089bf7bed2e53442",
+  "blockId": "089bf7bed2e53442-19",
+  "unitId": "1e3be39d0a1f2d229d6d",
+  "reason": "Correct the first API label only, restoring the original reviewed DurableTaskExtensions.WaitAsync binding; the later WaitUntilAsync binding remains unchanged.",
+  "authority": "Current classic-script payloads; optional raw JSON verified identical before synchronization.",
+  "fullOldChineseHtml": "<p><a href=\"#/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> 让调用 <code>ground-quote/0</code> 与持久延迟 <code>ground-quote/1</code> 竞速。运行时记录延迟的到期时间，因此停用后的回放仍保留原截止时间：超时从首次运行开始计时。如果延迟先到期，调用会收到原因为 <code>The operation timed out after 00:02:00.</code> 的取消请求，而 <code>WaitAsync</code> 等待承运商的结果。若调用以取消状态结束，则引发 <a href=\"https://learn.microsoft.com/dotnet/api/system.timeoutexception\" target=\"_blank\" rel=\"noopener noreferrer\"> TimeoutException </a>，其内部异常是该调用的 <code>OperationCanceledException</code>；如果承运商仍然返回报价，则将该报价作为结果。如果调用先完成，<code>WaitAsync</code> 会取消延迟，并返回调用结果或引发其失败。<a href=\"#/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> 接受的则是绝对截止时间。</p>",
+  "fullNewChineseHtml": "<p><a href=\"#/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">DurableTaskExtensions.WaitAsync</a> 让调用 <code>ground-quote/0</code> 与持久延迟 <code>ground-quote/1</code> 竞速。运行时记录延迟的到期时间，因此停用后的回放仍保留原截止时间：超时从首次运行开始计时。如果延迟先到期，调用会收到原因为 <code>The operation timed out after 00:02:00.</code> 的取消请求，而 <code>WaitAsync</code> 等待承运商的结果。若调用以取消状态结束，则引发 <a href=\"https://learn.microsoft.com/dotnet/api/system.timeoutexception\" target=\"_blank\" rel=\"noopener noreferrer\"> TimeoutException </a>，其内部异常是该调用的 <code>OperationCanceledException</code>；如果承运商仍然返回报价，则将该报价作为结果。如果调用先完成，<code>WaitAsync</code> 会取消延迟，并返回调用结果或引发其失败。<a href=\"#/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> 接受的则是绝对截止时间。</p>",
+  "sourceApiBindingsPreserved": true,
+  "completeOldParagraphMatched": true,
+  "oneCompleteParagraphSearchReplacement": true,
+  "contentMutationScope": "one Chinese HTML field in one block of one page",
+  "searchMutationScope": "one text field of the same page, exactly one complete paragraph",
+  "allOtherContentDataUnchanged": true,
+  "allOtherSearchDataUnchanged": true,
+  "allOtherManifestEntriesUnchanged": 189,
+  "payloadCount": 191,
+  "entries": [
+    {
+      "key": "content/c0175.json",
+      "before": {
+        "key": "content/c0175.json",
+        "script": "data/content/c0175.js",
+        "jsonSha256": "5cf0bc13bfacf6ce1652c2d301116a8284020c7f9dc2f8e6e5968436c5881635",
+        "scriptSha256": "3eb17900d53c3849dc13708947b81182e11538280407e36c5ca6386165012bfa"
+      },
+      "after": {
+        "key": "content/c0175.json",
+        "script": "data/content/c0175.js",
+        "jsonSha256": "7ad6ecaaea720aa348d6b15cc1566235eb297d7abed9e97263b66ed14bad82f5",
+        "scriptSha256": "0eae74efa665737b0faca5137093863cc3fe717da29b5f18e3c6cf97f000156b"
+      },
+      "optionalRawJsonSynchronized": true
+    },
+    {
+      "key": "search.json",
+      "before": {
+        "key": "search.json",
+        "script": "data/search.js",
+        "jsonSha256": "221277e566915c4a63dbd1a0852dba18e47809bd42633306fa6ce9f0f44105a2",
+        "scriptSha256": "b4a172bf0c876a0dd99f78132d723e334a1e8bf0364a057664a9e86e0ee99628"
+      },
+      "after": {
+        "key": "search.json",
+        "script": "data/search.js",
+        "jsonSha256": "d70cafe844c4ed002a559a86dabfb6f29b8a50197045fac68f36c813f743c5c9",
+        "scriptSha256": "786d4a6b2e4eb6b76155d04b8eaac3309dacc2a94a273c7a5cd37c0643550c3f"
+      },
+      "optionalRawJsonSynchronized": true
+    }
+  ],
+  "builderExecuted": false
+}

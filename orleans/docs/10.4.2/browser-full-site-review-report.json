@@ -1,0 +1,303 @@
+{
+  "reviewDate": "2026-11-24",
+  "status": "pass",
+  "environment": "Chromium HTTP static preview at http://127.0.0.1:4173/; application DOM inspected through browser UI automation",
+  "scope": "浏览器自动逐页几何检查与代表性页面目视核对；不是对15,235页逐页目视审阅。",
+  "layoutSweep": {
+    "status": "passed",
+    "uniqueRoutes": 338,
+    "routeInventory": "browser-audit-routes.json",
+    "allGuides": 254,
+    "allApiPackagePages": 64,
+    "apiIndex": 1,
+    "representativeApiTypeCategoryMemberPages": 19,
+    "cases": 676,
+    "frameCSSWidths": [
+      1280,
+      375
+    ],
+    "documentClientWidths": [
+      1265,
+      360
+    ],
+    "casesPerWidth": 338,
+    "mode": "zh",
+    "errors": [],
+    "checks": [
+      "等待目标页面ID及中文模式",
+      "页面无水平溢出；代码、表格和图表滚动容器另行处理",
+      "原站提示框SVG具有有效几何",
+      "已载入图片naturalWidth有效",
+      "页头PNG宽高比为1",
+      "文档内Mermaid渲染无错误"
+    ],
+    "asidesObserved": 72,
+    "linkCardsObserved": 20,
+    "diagramsRendered": 44,
+    "imagesObserved": 748,
+    "lazyImageObservationsPending": 72,
+    "imageCompletionFollowup": "随后独立浏览器实际载入全部25个被引用的唯一图片文件，包括页头、favicon、Hero与正文／示例图；全部成功。"
+  },
+  "homepageFidelity": [
+    {
+      "mode": "zh",
+      "status": "pass",
+      "sourceBlocks": 49,
+      "checkedLanguageFragments": 49,
+      "uniqueSourceAnchors": 5,
+      "errors": []
+    },
+    {
+      "mode": "en",
+      "status": "pass",
+      "sourceBlocks": 49,
+      "checkedLanguageFragments": 49,
+      "uniqueSourceAnchors": 5,
+      "errors": []
+    },
+    {
+      "mode": "compare",
+      "status": "pass",
+      "sourceBlocks": 49,
+      "checkedLanguageFragments": 98,
+      "uniqueSourceAnchors": 5,
+      "errors": []
+    }
+  ],
+  "homepageResponsive": [
+    {
+      "frameCSSWidth": 320,
+      "documentClientWidth": 305,
+      "documentScrollWidth": 305,
+      "mode": "zh",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 320,
+      "documentClientWidth": 305,
+      "documentScrollWidth": 305,
+      "mode": "en",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 320,
+      "documentClientWidth": 305,
+      "documentScrollWidth": 305,
+      "mode": "compare",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 375,
+      "documentClientWidth": 360,
+      "documentScrollWidth": 360,
+      "mode": "zh",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 375,
+      "documentClientWidth": 360,
+      "documentScrollWidth": 360,
+      "mode": "en",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 375,
+      "documentClientWidth": 360,
+      "documentScrollWidth": 360,
+      "mode": "compare",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "mode": "zh",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "mode": "en",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "mode": "compare",
+      "brandWidth": 32,
+      "brandHeight": 32,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "mode": "zh",
+      "brandWidth": 40,
+      "brandHeight": 40,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "mode": "en",
+      "brandWidth": 40,
+      "brandHeight": 40,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    },
+    {
+      "frameCSSWidth": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "mode": "compare",
+      "brandWidth": 40,
+      "brandHeight": 40,
+      "cards": 14,
+      "horizontalOverflow": false,
+      "heroAspectRatioWithin0_02OfSource": true,
+      "status": "pass"
+    }
+  ],
+  "sourceStyleComparison": {
+    "viewportCSSWidth": 1348,
+    "contentWidth": 1080,
+    "cardWidth": 528,
+    "cardPadding": 40,
+    "cardRadius": 0,
+    "h1FontSize": 64,
+    "h1LineHeight": 76.8,
+    "headerLogoSize": [
+      40,
+      40
+    ],
+    "headerLogoBackground": "transparent",
+    "cardIcons": 14,
+    "officialSvgFill": "currentColor",
+    "officialSvgStroke": "none",
+    "manualComparison": "与同一冻结官方首页HTML及原CSS参照页直接比较；同时目视核对桌面、320px手机、768px平板与亮暗主题。"
+  },
+  "imageFileLoadCheck": {
+    "status": "pass",
+    "uniqueImages": 25,
+    "failed": 0,
+    "covers": "全部实际引用的22个正文／示例图片路径，加页头PNG、Hero SVG与标签页favicon；重复favicon引用合并。"
+  },
+  "sampleGallery": {
+    "chineseCards": 29,
+    "englishCards": 29,
+    "chipContainersPerLanguage": 29,
+    "chipsPerLanguage": 102,
+    "chineseFilter": "日志化",
+    "filterMatches": 4,
+    "sourcePlaceholderIconSize": [
+      52,
+      52
+    ],
+    "status": "pass"
+  },
+  "readOnlyTasks": {
+    "representativePage": "/docs/deployment/production-readiness/",
+    "checkboxes": 38,
+    "disabled": 38,
+    "checked": 0,
+    "allSourceCheckboxes": 81,
+    "fullSourceInventory": "source-presentation-audit.json"
+  },
+  "imageLightbox": {
+    "observedPage": "/docs/overview/",
+    "openedOriginalImage": true,
+    "imageLoaded": true,
+    "escapeCloses": true,
+    "closingClearsSrcAndAlt": true,
+    "sourceEnabledImages": 3,
+    "enabledPageCount": 2,
+    "scope": "按钮、遮罩和键盘行为另经实现核对；浏览器实测原图打开与Escape关闭。"
+  },
+  "imageAlt": {
+    "status": "pass",
+    "uniqueImages": 6,
+    "modes": [
+      "zh",
+      "en",
+      "compare"
+    ],
+    "observedLanguageChecks": 24,
+    "errors": [],
+    "reviewFile": "image-alt-review.json"
+  },
+  "versionAndBrand": {
+    "headerSubtitleRemoved": true,
+    "singleLineBrand": "Microsoft Orleans",
+    "releaseLabel": "最新 v10.4.2",
+    "releaseHref": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+    "releasePublishedDate": "2026-10-30",
+    "releaseCheckedDate": "2026-11-24",
+    "snapshotShownSeparately": true,
+    "documentVersionDetailsInitiallyClosed": true,
+    "documentVersionSummaryDesktopHeight": 30.390625,
+    "phoneHeaderLogoSize": [
+      32,
+      32
+    ]
+  },
+  "finalIncrementalChange": "676次布局巡检后仅新增6张正文图片的精确中文alt映射；随后以24次中英/对照浏览器检查验证，并复看窄屏、亮暗首页及版本说明。最终语法与静态引用复核见runtime-payload-result.json。",
+  "limits": [
+    "浏览器禁止file://导航，未完成真实本地双击浏览器验收；本地路径与经典脚本加载已通过Node VM及HTTP预览验证。",
+    "未实际向用户GitHub仓库发布；ZIP包含已构建静态文件和发布步骤。",
+    "首次QA夹具受后台帧等待与并发语言切换影响；调整等待方式后从头重跑，676个最终用例全部完成，无产品错误。"
+  ],
+  "scopeCorrection": "这是此前中文模式布局与首页整体检查的历史证据，未逐卡要求中英各自拥有图标；本轮新增的逐列对照检查见compare-theme-review-report.json。",
+  "followupReview": "compare-theme-review-report.json"
+}

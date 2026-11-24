@@ -1,0 +1,43 @@
+name: Publish Orleans documentation
+
+"on":
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  # Directory containing the ready-to-publish index.html. Use dist for the source repository.
+  SITE_DIR: .
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
+      - name: Check out site files
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Check site entry
+        shell: bash
+        run: test -f "$SITE_DIR/index.html"
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ env.SITE_DIR }}
+      - name: Publish site
+        id: publish
+        uses: actions/deploy-pages@v4

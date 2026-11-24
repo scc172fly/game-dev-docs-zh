@@ -1,0 +1,78 @@
+{
+  "revision": "comments-official-icons-version-2026-11-24",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "codeComments": {
+    "uniqueReviewedUnits": 316,
+    "uniqueTranslatedUnits": 312,
+    "uniqueCodeOrFormatPreservedUnits": 4,
+    "reviewedOccurrences": 350,
+    "translatedOccurrences": 344,
+    "preservedOccurrences": 6,
+    "changedCodeBlocks": 171,
+    "independentCrossReview": "316 / 316",
+    "allExecutableCodeBlocksVerified": 21362,
+    "nonCommentChanges": 0
+  },
+  "officialAssets": [
+    {
+      "original": "source/assets-snapshot/_astro/orleans-logo.CmH61o_o.svg",
+      "published": "assets/brand/orleans-logo.svg",
+      "sha256": "b58440093d32eb429595bfb2b8713529d26b51351de7d986a5ec42984baf2549",
+      "exactBytesMatch": true
+    },
+    {
+      "original": "source/assets-snapshot/favicon.svg",
+      "published": "assets/brand/favicon.svg",
+      "sha256": "eada1f298e183ca95b0ee5bd1ba3fe2946dcb354a70a74bd6a56384429419966",
+      "exactBytesMatch": true
+    }
+  ],
+  "documentationVersion": {
+    "source": "documentation-version.json",
+    "snapshot": "2026-11-23 17:19:45（UTC+8）",
+    "branch": "main",
+    "examplePackageBaseline": "10.2.2",
+    "apiPackageVersions": [
+      "10.0.0",
+      "10.0.0-alpha.1"
+    ],
+    "scope": "固定官方 main 文档快照；各页适用版本分别注明。"
+  },
+  "browserChecks": {
+    "environment": "Chromium HTTP 静态预览",
+    "screenshotReportedComment": "当前执行轮次完成后结束此激活实例。",
+    "chineseCodeCommentVisible": true,
+    "englishOriginalCommentPreserved": true,
+    "compareModeTwoCodePanes": true,
+    "nestedListCodeCommentVisible": true,
+    "headerLogoLoaded": true,
+    "faviconRelativeHref": "assets/brand/favicon.svg",
+    "lightAndDarkThemeVisualCheck": "passed",
+    "versionHeaderAndAuditTable": "passed",
+    "responsiveIframeCSSWidths": [
+      320,
+      375,
+      768
+    ],
+    "responsiveDocumentClientWidths": [
+      305,
+      360,
+      753
+    ],
+    "responsiveDocumentScrollWidths": [
+      305,
+      360,
+      753
+    ],
+    "responsiveHorizontalDocumentOverflow": false,
+    "copyButtonSuccessState": "已复制",
+    "clipboardReadback": "浏览器虚拟剪贴板接口未返回页面复制内容；未将回读列为通过。复制按钮的数据来源为当前可见代码文本。"
+  },
+  "reviewScope": "代码注释完成 AI 逐条译审及全组独立交叉复核，程序完成全站代码与结构校验；不表示真人专家签审。",
+  "reports": [
+    "code-comments-review.json",
+    "code-comments-cross-review.json",
+    "publication-verification.json",
+    "documentation-version.json"
+  ]
+}

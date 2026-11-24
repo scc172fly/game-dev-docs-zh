@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "checks": {
+    "pages": 15235,
+    "blocks": 164126,
+    "inlineCodeSpans": 57937,
+    "tables": 332,
+    "tableCells": 8610,
+    "internalLinkReferences": 95532,
+    "executableCodeBlocksVerified": 21362,
+    "codeCommentOccurrencesReviewed": 350,
+    "codeBlocksWithTranslatedComments": 171,
+    "codeBlocks": 21362,
+    "reviewedPages": 15235,
+    "imageReferences": 70,
+    "originalAssets": 27,
+    "uniqueCodeCommentUnitsReviewed": 316
+  },
+  "errors": [],
+  "sourceAnchorWarnings": [],
+  "scope": "Page set and source block order; original English code-block SHA-256; Chinese code equals only approved exact-source comment replacements, with independent re-lexing of all non-comment characters; inline code, table shape, local assets, original anchors and internal link targets. Semantic review status is recorded separately."
+}

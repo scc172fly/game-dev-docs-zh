@@ -1,0 +1,226 @@
+{
+  "revision": "bilingual-components-and-original-theme-2026-11-24",
+  "reviewDate": "2026-11-24",
+  "status": "pass",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "requestedChanges": [
+    "补齐中英对照中文侧的官方图标并审查全站同类问题",
+    "主题选择器恢复原站 Dark / Light / Auto 原生下拉样式和响应式位置"
+  ],
+  "previousAuditGap": "此前只检查首页卡片与整体图标存在，未逐卡要求英文和中文列各有自己的图标；676项既有布局巡检运行的是中文模式，不能证明对照模式组件对称。本轮以逐列归属、源几何与排版断言补齐该缺口。",
+  "fixes": [
+    "14张首页卡片在每个显示的语言列中生成各自的官方SVG；中文或英文单列各14，对照模式14+14。",
+    "移除共同外层的图标占位，修复标题与正文分隔线错位；所有首页矩阵用例的边界差值为0px。",
+    "首页链接卡片箭头成为源片段的兄弟节点，原文片段不再混入辅助图标。",
+    "用原生select替代主题按钮，选项Dark/Light/Auto，复用原站月亮、太阳、电脑、下拉箭头完整SVG。",
+    "Auto跟随系统主题并响应系统变化；手动选择保留优先级；刷新、跨标签及桌面/手机同步正常。",
+    "原站800px断点：桌面页头显示主题控件，窄屏文档侧栏底部显示；窄屏首页沿用原站隐藏策略。",
+    "去掉额外的select焦点环，保留原生焦点外观。"
+  ],
+  "browser": {
+    "environment": "Chromium managed HTTP static preview at http://127.0.0.1:4173/",
+    "compareSweep": {
+      "routes": 338,
+      "routeInventory": "browser-audit-routes.json",
+      "mode": "compare",
+      "viewportCSSWidths": [
+        1280,
+        375
+      ],
+      "cases": 676,
+      "errors": 0,
+      "pairedBlockObservations": 24232,
+      "sharedBlockObservations": 1214,
+      "componentObservations": {
+        "pairedBlocks": 24232,
+        "sharedBlocks": 1214,
+        "iconsEN": 8724,
+        "iconsZH": 8724,
+        "imagesEN": 70,
+        "imagesZH": 70,
+        "asidesEN": 72,
+        "asidesZH": 72,
+        "tablesEN": 484,
+        "tablesZH": 484,
+        "checkboxesEN": 162,
+        "checkboxesZH": 162,
+        "codeControlsEN": 422,
+        "codeControlsZH": 422,
+        "diagramsEN": 44,
+        "diagramsZH": 44
+      },
+      "scope": "全部254个指南、64个API包、1个API总目录和19个API类型/分类/成员代表。不是全部15,235页逐页浏览器验收。"
+    },
+    "homeMatrix": {
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "modes": [
+        "zh",
+        "en",
+        "compare"
+      ],
+      "viewportCSSWidths": [
+        320,
+        375,
+        768,
+        1280
+      ],
+      "cases": 24,
+      "errors": 0,
+      "sourceFragmentChecks": 1568,
+      "maxTitleBodyBoundaryDeltaPx": 0
+    },
+    "interactiveThemeChecks": {
+      "status": "pass",
+      "environment": "Chromium managed HTTP preview",
+      "themeOptions": [
+        "Dark",
+        "Light",
+        "Auto"
+      ],
+      "themeIcons": {
+        "source": "frozen original HTML",
+        "moonSunComputerCSSSize": [
+          14,
+          14
+        ],
+        "chevronCSSSize": [
+          20,
+          20
+        ]
+      },
+      "desktopDarkSelectionAndRefresh": {
+        "selected": "dark",
+        "effective": "dark"
+      },
+      "mobileSidebarAt320px": {
+        "document": "/docs/quickstarts/build-your-first-orleans-app/",
+        "menuOpened": true,
+        "themeControlVisible": true,
+        "selectedAutoEffective": "light",
+        "desktopControlSynced": "auto"
+      },
+      "autoRefresh": {
+        "selected": "auto",
+        "preference": "auto",
+        "effective": "light"
+      },
+      "nativeFocus": {
+        "sourceCSSOverridesRemoved": true,
+        "observedOutline": "rgb(238, 238, 238) auto 1px",
+        "observedOffset": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none",
+        "fontSize": "14px",
+        "note": "Native popup and focus rendering follow the browser and operating system; no fixed Windows popup pixel match is claimed."
+      },
+      "reportedCards": [
+        {
+          "card": "games",
+          "languages": [
+            "en",
+            "zh"
+          ],
+          "iconBoxes": [
+            [
+              31.984375,
+              31.984375
+            ],
+            [
+              31.984375,
+              31.984375
+            ]
+          ]
+        },
+        {
+          "card": "commerce",
+          "languages": [
+            "en",
+            "zh"
+          ],
+          "iconBoxes": [
+            [
+              31.984375,
+              31.984375
+            ],
+            [
+              31.984375,
+              31.984375
+            ]
+          ]
+        }
+      ],
+      "finalHomeIconCounts": {
+        "en": 14,
+        "zh": 14
+      },
+      "systemChangeScope": "Real-source VM exercises matchMedia changes; the browser OS theme was not changed.",
+      "incrementalChangeAfterSweeps": "Removed only the custom theme select focus-visible rule to match original native focus styling. Rechecked actual desktop/mobile controls and the reported bilingual cards, then reran final frontend/data fingerprint checks. No renderer, JavaScript or content change followed the sweeps."
+    }
+  },
+  "themeBehaviorVM": {
+    "cases": 19,
+    "passed": 19,
+    "failed": 0,
+    "method": "Unmodified actual frontend/index.html inline scripts, official icon library and frontend/app.js executed by vm.Script in a JSDOM-backed isolated Node VM; catalog promise deliberately pending after theme binding. Media-query and storage events are controlled test doubles. No browser, no server.",
+    "realSourceUnchanged": true
+  },
+  "contentPreservation": {
+    "pages": 15235,
+    "blocks": 164126,
+    "authoritativePayloads": 191,
+    "byteIdenticalToPriorPassingAudit": true,
+    "newTranslationEdits": 0,
+    "fullContentBaseline": "full-content-audit.json",
+    "scope": "沿用此前全量语义/代码/链接/表格审校证据，所有191个权威数据载荷SHA完全相同。本轮不声称再次逐句语义重审全部正文。"
+  },
+  "staticCompatibility": {
+    "runtimeRequiresServer": false,
+    "runtimeRequiresBuild": false,
+    "classicScripts": true,
+    "localReferencesChecked": 30,
+    "localReferenceErrors": 0
+  },
+  "limits": [
+    "本轮逐列浏览器验收覆盖338条路线，不表示15,235页全部完成逐页视觉审阅。",
+    "原生下拉弹出菜单的系统绘制细节随浏览器与操作系统变化；复用官方HTML/CSS/SVG结构与原生控件，不固定模拟某个系统的弹出菜单。",
+    "浏览器禁止file://导航，未完成真实本地双击浏览器验收；路径及经典脚本加载沿用已通过的Node VM和HTTP预览证据。",
+    "未向用户GitHub仓库实际发布；下载包包含可直接部署的静态文件和工作流模板。"
+  ],
+  "reports": {
+    "compare-component-audit.json": {
+      "file": "compare-component-audit.json",
+      "sha256": "76201efe015fc87d057eb982468590b082d5198f2812633c34204486652745d1"
+    },
+    "compare-browser-component-report.json": {
+      "file": "compare-browser-component-report.json",
+      "sha256": "e1b523bbc33cb8a1ce7b304dbb454b5865f535f07c60dab37368aca22acaecb0"
+    },
+    "homepage-bilingual-theme-report.json": {
+      "file": "homepage-bilingual-theme-report.json",
+      "sha256": "42b4c8b6ca3533181ca6766d87841b68ded6f0cb738b155ddc10916fbf8ce965"
+    },
+    "theme-browser-review.json": {
+      "file": "theme-browser-review.json",
+      "sha256": "82acb45745d3612d8a9da41049eac4793dbc5fec37e0f97dbfd43e2b2cd39f9f"
+    },
+    "theme-behavior-report.json": {
+      "file": "theme-behavior-report.json",
+      "sha256": "b277adfb2f10b143dcf3d795258c8b3032f35da7046e80cb6d2bef506e43d336"
+    },
+    "content-preservation-report.json": {
+      "file": "content-preservation-report.json",
+      "sha256": "582166444d6ab27e6ef8a363132ee88b6e26d289fd7c96c5f327e538ae0813ef"
+    },
+    "final-frontend-preservation-report.json": {
+      "file": "final-frontend-preservation-report.json",
+      "sha256": "7ebaddf1d5ac116b5f59bd4a587ab037f475bc7dc28229750507e23b41614232"
+    },
+    "full-content-audit.json": {
+      "file": "full-content-audit.json",
+      "sha256": "e9a1c682943c2c13ed43f552c4fafbc91e85372e360f85c9e7971560503bc884"
+    }
+  }
+}

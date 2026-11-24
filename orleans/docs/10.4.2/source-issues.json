@@ -1,0 +1,1306 @@
+[
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/",
+    "unitId": "ae5389e29484ae8140fb",
+    "note": "原站说明将用于类比的类型也显示为 GrainCancellationToken，与当前类型同名；译文忠实保留这一引用。请结合源码链接核对所指的取消令牌类型。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/",
+    "unitId": "434668d9dafc7060fbba",
+    "note": "Zero 撤销此前调用设置并恢复常规激活回收规则的语义准确；上游调用链接仅显示 Grain 类型，属于原文交叉引用信息缺失。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/",
+    "unitId": "434668d9dafc7060fbba",
+    "note": "Zero 撤销此前调用设置并恢复常规激活回收规则的语义准确；上游调用链接仅显示 Grain 类型，属于原文交叉引用信息缺失。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/delaydeactivation-system-timespan-18d4c545/",
+    "unitId": "434668d9dafc7060fbba",
+    "note": "Zero 撤销此前调用设置并恢复常规激活回收规则的语义准确；上游调用链接仅显示 Grain 类型，属于原文交叉引用信息缺失。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtoken/",
+    "note": "原站生成的 API 签名及其复制内容中，Obsolete 特性的消息参数未显示字符串引号。本页按原文保留该签名；实际源代码请参阅源码链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtoken/",
+    "unitId": "0a94436df92ba81e2cb1",
+    "note": "原站说明将用于类比的类型也显示为 GrainCancellationToken，与当前类型同名；译文忠实保留这一引用。请结合源码链接核对所指的取消令牌类型。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtoken/methods/",
+    "unitId": "4f0ff1228f28d59d93d4",
+    "note": "原站说明将用于类比的类型也显示为 GrainCancellationToken，与当前类型同名；译文忠实保留这一引用。请结合源码链接核对所指的取消令牌类型。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtoken/properties/",
+    "unitId": "a267286934ad9058783c",
+    "note": "原站说明将用于类比的类型也显示为 GrainCancellationToken，与当前类型同名；译文忠实保留这一引用。请结合源码链接核对所指的取消令牌类型。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtokensource/",
+    "unitId": "4c6f2acd49569fc38e04",
+    "note": "原文交叉引用问题：Token 属性说明重复显示 GrainCancellationTokenSource，表述为获取与此 GrainCancellationTokenSource 关联的 GrainCancellationTokenSource，未区分令牌与令牌源。译文按原文保留，不擅自修正文档引用。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtokensource/properties/",
+    "unitId": "5d7659bd0a52c4f34131",
+    "note": "原文交叉引用问题：Token 属性说明重复显示 GrainCancellationTokenSource，表述为获取与此 GrainCancellationTokenSource 关联的 GrainCancellationTokenSource，未区分令牌与令牌源。译文按原文保留，不擅自修正文档引用。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graincancellationtokensource/properties/token-85e324e8/",
+    "unitId": "5d7659bd0a52c4f34131",
+    "note": "原文交叉引用问题：Token 属性说明重复显示 GrainCancellationTokenSource，表述为获取与此 GrainCancellationTokenSource 关联的 GrainCancellationTokenSource，未区分令牌与令牌源。译文按原文保留，不擅自修正文档引用。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graindirectory.igraindirectory/",
+    "unitId": "52b8a1dd5c0b3bf6efd3",
+    "note": "原文交叉引用问题：目录注册说明中的两个不同角色都显示为 GrainAddress，形成“每个 GrainAddress 只能注册一个 GrainAddress”的表述；引用均指向同一类型页。译文保留原文，未自行替换键或属性名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graindirectory.igraindirectory/",
+    "unitId": "ff8e442533ac65c239a0",
+    "note": "原文交叉引用问题：目录注册说明中的两个不同角色都显示为 GrainAddress，形成“每个 GrainAddress 只能注册一个 GrainAddress”的表述；引用均指向同一类型页。译文保留原文，未自行替换键或属性名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graindirectory.igraindirectory/methods/",
+    "unitId": "bf39d761ddd2c2e97deb",
+    "note": "原文交叉引用问题：目录注册说明中的两个不同角色都显示为 GrainAddress，形成“每个 GrainAddress 只能注册一个 GrainAddress”的表述；引用均指向同一类型页。译文保留原文，未自行替换键或属性名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graindirectory.igraindirectory/methods/register-orleans-runtime-grainaddress-13d13df7/",
+    "unitId": "bf39d761ddd2c2e97deb",
+    "note": "原文交叉引用问题：目录注册说明中的两个不同角色都显示为 GrainAddress，形成“每个 GrainAddress 只能注册一个 GrainAddress”的表述；引用均指向同一类型页。译文保留原文，未自行替换键或属性名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.graindirectory.igraindirectory/methods/register-orleans-runtime-grainaddress-orleans-runtime-grainaddress-nullable-1ef84e9d/",
+    "unitId": "bf39d761ddd2c2e97deb",
+    "note": "原文交叉引用问题：目录注册说明中的两个不同角色都显示为 GrainAddress，形成“每个 GrainAddress 只能注册一个 GrainAddress”的表述；引用均指向同一类型页。译文保留原文，未自行替换键或属性名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.grainaddress/",
+    "unitId": "40e96a89046706b3cf9e",
+    "note": "原文交叉引用问题：GrainAddress.Matches 的四个比较对象均显示并链接到 GrainAddress 类型，未显示各自的具体成员名，导致无法仅从该段区分被比较的属性。译文保留原链接及 AND/OR 条件，不自行补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.grainaddress/methods/",
+    "unitId": "9a5bf772ab27e499f393",
+    "note": "原文交叉引用问题：GrainAddress.Matches 的四个比较对象均显示并链接到 GrainAddress 类型，未显示各自的具体成员名，导致无法仅从该段区分被比较的属性。译文保留原链接及 AND/OR 条件，不自行补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.grainaddress/methods/matches-orleans-runtime-grainaddress-nullable-0ac76c65/",
+    "unitId": "9a5bf772ab27e499f393",
+    "note": "原文交叉引用问题：GrainAddress.Matches 的四个比较对象均显示并链接到 GrainAddress 类型，未显示各自的具体成员名，导致无法仅从该段区分被比较的属性。译文保留原链接及 AND/OR 条件，不自行补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.guidid/",
+    "unitId": "af60745e48d035cfc623",
+    "note": "原文与签名不一致：GetGuidId 的签名输入为 Guid，说明却将所提供的值引用为 GuidId；两处类型链接都指向 GuidId。译文保留原文显示的类型名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.guidid/methods/",
+    "unitId": "a620dfc4df4f274646c6",
+    "note": "原文与签名不一致：GetGuidId 的签名输入为 Guid，说明却将所提供的值引用为 GuidId；两处类型链接都指向 GuidId。译文保留原文显示的类型名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.guidid/methods/",
+    "unitId": "e20e68b96358445049c6",
+    "note": "原文与签名不一致：GetGuidId 的签名输入为 Guid，说明却将所提供的值引用为 GuidId；两处类型链接都指向 GuidId。译文保留原文显示的类型名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.guidid/methods/getguidid-system-guid-a21c603d/",
+    "unitId": "a620dfc4df4f274646c6",
+    "note": "原文与签名不一致：GetGuidId 的签名输入为 Guid，说明却将所提供的值引用为 GuidId；两处类型链接都指向 GuidId。译文保留原文显示的类型名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.guidid/methods/getguidid-system-guid-a21c603d/",
+    "unitId": "e20e68b96358445049c6",
+    "note": "原文与签名不一致：GetGuidId 的签名输入为 Guid，说明却将所提供的值引用为 GuidId；两处类型链接都指向 GuidId。译文保留原文显示的类型名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.irehydrationcontext/",
+    "unitId": "e457e1cf42b7ccf33bb6",
+    "note": "原文问题：IRehydrationContext.TryGetValue 的前句说明键存在且有序列化器时会反序列化并返回 true，后句却写成“键已被添加时不添加该值并返回 false”，混入了添加操作的措辞，与前句和读取方法的用途不一致。译文保留原文，不据推测改写失败条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.irehydrationcontext/methods/",
+    "unitId": "688ccf1a58c4dd628b04",
+    "note": "原文问题：IRehydrationContext.TryGetValue 的前句说明键存在且有序列化器时会反序列化并返回 true，后句却写成“键已被添加时不添加该值并返回 false”，混入了添加操作的措辞，与前句和读取方法的用途不一致。译文保留原文，不据推测改写失败条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.irehydrationcontext/methods/trygetvalue-1-string-out-t-nullable-ddee708e/",
+    "unitId": "688ccf1a58c4dd628b04",
+    "note": "原文问题：IRehydrationContext.TryGetValue 的前句说明键存在且有序列化器时会反序列化并返回 true，后句却写成“键已被添加时不添加该值并返回 false”，混入了添加操作的措辞，与前句和读取方法的用途不一致。译文保留原文，不据推测改写失败条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "059223594eff969b2eea",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "3521063ae39e86617045",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "5122a41a7173c9c3182b",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "52cf4cc60122fd7e36c9",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "548a6ff73665c2e3d5f2",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "7713bac8e756dee031db",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "cfcb8f7f13cdad6d4c64",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/",
+    "unitId": "d5893345fffa35a9dee9",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/",
+    "unitId": "434dd9da0833d6a16a48",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/",
+    "unitId": "9143dc754351df04af3f",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/",
+    "unitId": "c1545431072ff9193855",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/",
+    "unitId": "d9acbe1c22dec3b4f79f",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/parse-string-06c075f0/",
+    "unitId": "c1545431072ff9193855",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/parse-string-system-iformatprovider-nullable-3965b0c7/",
+    "unitId": "c1545431072ff9193855",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/parse-system-readonlyspan-byte-3ad9cd54/",
+    "unitId": "434dd9da0833d6a16a48",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/parse-system-readonlyspan-byte-system-iformatprovider-nullable-0a3f0ef3/",
+    "unitId": "434dd9da0833d6a16a48",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/tryparse-string-nullable-out-orleans-runtime-siloaddress-nullable-6326efa2/",
+    "unitId": "d9acbe1c22dec3b4f79f",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/tryparse-string-nullable-system-iformatprovider-nullable-out-orleans-runtime-sil-ba04b9c5/",
+    "unitId": "d9acbe1c22dec3b4f79f",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/tryparse-system-readonlyspan-byte-out-orleans-runtime-siloaddress-nullable-cd1e3f4f/",
+    "unitId": "9143dc754351df04af3f",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.siloaddress/methods/tryparse-system-readonlyspan-byte-system-iformatprovider-nullable-out-orleans-ru-d777589e/",
+    "unitId": "9143dc754351df04af3f",
+    "note": "原文交叉引用问题：SiloAddress 的解析说明将“返回标准形式”的引用显示为 SiloAddress 类型，而未显示具体格式化方法，且链接指向类型页。译文保留原链接，不补写未在该段正确显示的方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.systemtargetgrainid/",
+    "unitId": "b5326e15bb176ad73e86",
+    "note": "原文与签名不一致：SystemTargetGrainId.TryParse 的输入签名为 GrainId，但说明把源类型和目标类型都显示为 SystemTargetGrainId。译文保留原文显示及链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.systemtargetgrainid/methods/",
+    "unitId": "c60ac658143813905c83",
+    "note": "原文与签名不一致：SystemTargetGrainId.TryParse 的输入签名为 GrainId，但说明把源类型和目标类型都显示为 SystemTargetGrainId。译文保留原文显示及链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.runtime.systemtargetgrainid/methods/tryparse-orleans-runtime-grainid-out-orleans-runtime-systemtargetgrainid-1d49a208/",
+    "unitId": "c60ac658143813905c83",
+    "note": "原文与签名不一致：SystemTargetGrainId.TryParse 的输入签名为 GrainId，但说明把源类型和目标类型都显示为 SystemTargetGrainId。译文保留原文显示及链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/",
+    "unitId": "9263d4f71c74f6e21da4",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/",
+    "unitId": "a0ecded2ec3b2a3fb259",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/",
+    "unitId": "a141d36916ad942a309b",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/",
+    "unitId": "c5d8aae752ee8fc5f291",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/",
+    "unitId": "d313fd952337e6ebcf87",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "079923299ff58e6a17ff",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "0b4f3fc95312c84a20f5",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "6eaf265659a95930d6a5",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "98bef40f716b36198332",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "9ffbcd59a36768847fa6",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "a19b19342c71690ae97b",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/",
+    "unitId": "d57671704a07da4d3c31",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/defunctsilocleanupperiod-834b9c1f/",
+    "unitId": "a19b19342c71690ae97b",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/defunctsiloexpiration-c3321c8a/",
+    "unitId": "d57671704a07da4d3c31",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/defunctsilominimumretention-20339501/",
+    "unitId": "6eaf265659a95930d6a5",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/evictwhenmaxjoinattempttimeexceeded-57a06798/",
+    "unitId": "0b4f3fc95312c84a20f5",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/maxprobetimeout-3777f4ee/",
+    "unitId": "079923299ff58e6a17ff",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/minprobetimeout-dc3f1400/",
+    "unitId": "9ffbcd59a36768847fa6",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clustermembershipoptions/properties/numvotesfordeathdeclaration-caa3cf4b/",
+    "unitId": "98bef40f716b36198332",
+    "note": "原文交叉引用问题：此段涉及时间、数量限制或倍数的引用均显示为 ClusterMembershipOptions 类名，未显示所引用的具体选项成员。因此不能仅凭“类名的一半/四倍”等文字确定配置值。译文保留原文和链接，未推测补全成员。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clusteroptions/",
+    "unitId": "10962c3848ee07d21283",
+    "note": "原文交叉引用问题：ServiceId 跨部署保持不变的对比对象显示并链接为 ClusterOptions 类，而未显示具体标识属性。译文保留原文，不替换为推测的属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clusteroptions/properties/",
+    "unitId": "a04747cb5c3316f9669e",
+    "note": "原文交叉引用问题：ServiceId 跨部署保持不变的对比对象显示并链接为 ClusterOptions 类，而未显示具体标识属性。译文保留原文，不替换为推测的属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.clusteroptions/properties/serviceid-f94bf623/",
+    "unitId": "a04747cb5c3316f9669e",
+    "note": "原文交叉引用问题：ServiceId 跨部署保持不变的对比对象显示并链接为 ClusterOptions 类，而未显示具体标识属性。译文保留原文，不替换为推测的属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.messagingoptions/",
+    "unitId": "8e6e2eb40a278097befb",
+    "note": "原文交叉引用问题：调试器附加时所使用的有效超时值被显示为 MessagingOptions 类型，未显示具体选项成员。译文保留原文及其链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.messagingoptions/properties/",
+    "unitId": "fe8a3e12f1d6451a6e1c",
+    "note": "原文交叉引用问题：调试器附加时所使用的有效超时值被显示为 MessagingOptions 类型，未显示具体选项成员。译文保留原文及其链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.configuration.messagingoptions/properties/responsetimeoutwithdebugger-ccefd8a6/",
+    "unitId": "fe8a3e12f1d6451a6e1c",
+    "note": "原文交叉引用问题：调试器附加时所使用的有效超时值被显示为 MessagingOptions 类型，未显示具体选项成员。译文保留原文及其链接。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "261f2884d6b118408810",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "45d41c3e53414f8cac7a",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "4d9b78a51698d19cd0ea",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "697a9b3ca05b99b81b01",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "6e9ce83557bb8636e038",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "a3987232028ed0fd9b53",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/",
+    "unitId": "ede3d8468f9914b0014a",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/methods/",
+    "unitId": "6d79ff8d0a0a35093c49",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/methods/allowanyremotecertificate-82fec4d4/",
+    "unitId": "6d79ff8d0a0a35093c49",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/",
+    "unitId": "261f2884d6b118408810",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/",
+    "unitId": "37db38a0e0bc56cc4703",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/",
+    "unitId": "45d41c3e53414f8cac7a",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/",
+    "unitId": "91d64c47e4b6d61636ba",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/",
+    "unitId": "ea35a61d6a0920ce3898",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/",
+    "unitId": "ede3d8468f9914b0014a",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/clientcertificatemode-27ddeefc/",
+    "unitId": "91d64c47e4b6d61636ba",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/localcertificate-46ec40cb/",
+    "unitId": "45d41c3e53414f8cac7a",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/localcertificate-46ec40cb/",
+    "unitId": "ede3d8468f9914b0014a",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/localclientcertificateselector-4857f10a/",
+    "unitId": "261f2884d6b118408810",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/remotecertificatemode-494be61f/",
+    "unitId": "ea35a61d6a0920ce3898",
+    "note": "原文交叉引用问题：TLS 证书模式的默认值或条件分支均显示为 RemoteCertificateMode 枚举类型，未显示具体枚举成员；部分属性引用同时仅显示 TlsOptions。因此原文不能完整区分相关证书模式。译文保留条件、null 结果和原链接，未推测填入模式名称。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.connections.transport.security.tlsoptions/properties/remotecertificatevalidation-b4491387/",
+    "unitId": "37db38a0e0bc56cc4703",
+    "note": "原文交叉引用问题：TLS 回调或设置之间的覆盖/忽略关系中，所引用的成员仅显示为 TlsOptions 类名，未显示具体回调、属性或方法。译文忠实保留原文，不把推测的成员写进操作条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.hosting.clientbuilderextensions/",
+    "unitId": "ae969cebc40a5aa956ec",
+    "note": "译文忠实保留原文，但此重载签名接收 IClientConnectionRetryFilter，正文仍称 provided delegate，属于上游重载说明不准确。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.iservicelifecyclestage/methods/",
+    "unitId": "f849abe8a8b7307a32da",
+    "note": "原文交叉引用问题：死锁警告中的调用对象显示为 IServiceLifecycleStage 接口类型，而未显示应避免在回调中调用的具体方法。译文保留该警告及原链接，未自行补全方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.iservicelifecyclestage/methods/register-system-func-object-nullable-system-threading-cancellationtoken-system-t-b47589c3/",
+    "unitId": "f849abe8a8b7307a32da",
+    "note": "原文交叉引用问题：死锁警告中的调用对象显示为 IServiceLifecycleStage 接口类型，而未显示应避免在回调中调用的具体方法。译文保留该警告及原链接，未自行补全方法名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.runtime.imanagementgrain/",
+    "unitId": "7537c0ce2427a337d5cb",
+    "note": "原文与当前签名不一致：控制命令说明要求同时匹配 providerTypeFullName 和 providerName 两个参数，但该页当前方法签名只显示一个 string 参数，且为泛型方法。译文保留原参数名与限定，不据推测重写调用协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.runtime.imanagementgrain/methods/",
+    "unitId": "60e965ec3b81e41f1219",
+    "note": "原文与当前签名不一致：控制命令说明要求同时匹配 providerTypeFullName 和 providerName 两个参数，但该页当前方法签名只显示一个 string 参数，且为泛型方法。译文保留原参数名与限定，不据推测重写调用协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.runtime.imanagementgrain/methods/sendcontrolcommandtoprovider-1-string-int-object-nullable-74f878fc/",
+    "unitId": "60e965ec3b81e41f1219",
+    "note": "原文与当前签名不一致：控制命令说明要求同时匹配 providerTypeFullName 和 providerName 两个参数，但该页当前方法签名只显示一个 string 参数，且为泛型方法。译文保留原参数名与限定，不据推测重写调用协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.runtime.timeprovidernames/",
+    "unitId": "6a84dd0853ea05a49047",
+    "note": "上游原文/渲染问题：时钟成员引用被显示并链接为类型 TimeProviderNames，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.runtime.timeprovidernames/fields/",
+    "unitId": "9e6b135c52ffeaebe2c6",
+    "note": "上游原文/渲染问题：时钟成员引用被显示并链接为类型 TimeProviderNames，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.core/orleans.runtime.timeprovidernames/fields/systemtimers-fc6996a5/",
+    "unitId": "9e6b135c52ffeaebe2c6",
+    "note": "上游原文/渲染问题：时钟成员引用被显示并链接为类型 TimeProviderNames，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.grainprofileroptions/",
+    "unitId": "6d0d58fd0ac7bf58fd41",
+    "note": "上游原文/渲染问题：停用等待时长被显示为 GrainProfilerOptions，将类型名放在时长属性的位置；具体属性名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.grainprofileroptions/",
+    "unitId": "7b2816e194968a1b8099",
+    "note": "上游原文/渲染问题：条件中的引用被显示为 GrainProfilerOptions is false，将类型名放在布尔属性的位置；具体属性名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.grainprofileroptions/properties/",
+    "unitId": "c5fa5f2adb25f2e134a8",
+    "note": "上游原文/渲染问题：停用等待时长被显示为 GrainProfilerOptions，将类型名放在时长属性的位置；具体属性名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.grainprofileroptions/properties/",
+    "unitId": "e27b6786299ef30f8b0f",
+    "note": "上游原文/渲染问题：条件中的引用被显示为 GrainProfilerOptions is false，将类型名放在布尔属性的位置；具体属性名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.grainprofileroptions/properties/deactivationtime-bfd21251/",
+    "unitId": "e27b6786299ef30f8b0f",
+    "note": "上游原文/渲染问题：条件中的引用被显示为 GrainProfilerOptions is false，将类型名放在布尔属性的位置；具体属性名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.dashboard/orleans.dashboard.grainprofileroptions/properties/tracealways-bad3c922/",
+    "unitId": "c5fa5f2adb25f2e134a8",
+    "note": "上游原文/渲染问题：停用等待时长被显示为 GrainProfilerOptions，将类型名放在时长属性的位置；具体属性名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.ijournalstorage/",
+    "unitId": "98120fef0615bf82fdbe",
+    "note": "上游原文/渲染问题：日志存储操作的成员引用均显示并链接为 IJournalStorage 类型，导致不同读取、追加、替换或创建操作无法从引用文字中区分。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.ijournalstorage/",
+    "unitId": "ac5b606c8e20aa80dc5d",
+    "note": "上游原文/渲染问题：日志存储操作的成员引用均显示并链接为 IJournalStorage 类型，导致不同读取、追加、替换或创建操作无法从引用文字中区分。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.ijournalstorage/",
+    "unitId": "cc47c09009edba81655f",
+    "note": "上游原文/渲染问题：日志存储操作的成员引用均显示并链接为 IJournalStorage 类型，导致不同读取、追加、替换或创建操作无法从引用文字中区分。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.ijournalstorage/",
+    "unitId": "cf61600ef471638aed15",
+    "note": "上游原文/渲染问题：日志存储操作的成员引用均显示并链接为 IJournalStorage 类型，导致不同读取、追加、替换或创建操作无法从引用文字中区分。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.istatemachine/",
+    "unitId": "6e7ce641e3ba83f707fc",
+    "note": "上游原文/渲染问题：状态机生命周期回调引用显示并链接为 IStateMachine 类型，回调的具体成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.istatemachine/",
+    "unitId": "6f28810ba2996aa4cdc0",
+    "note": "上游原文/渲染问题：状态机生命周期回调引用显示并链接为 IStateMachine 类型，回调的具体成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.istatemachine/",
+    "unitId": "79797557b59c8186bfb0",
+    "note": "上游原文/渲染问题：状态机生命周期回调引用显示并链接为 IStateMachine 类型，回调的具体成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/",
+    "unitId": "6a2e481173f8c9b67714",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/",
+    "unitId": "7ca30541d233083cd50e",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/",
+    "unitId": "8113effb9e7f8197d0c9",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/",
+    "unitId": "894d5a8af7c8cf3ebcbc",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/",
+    "unitId": "bb74fac9c2e10e4d36ce",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/",
+    "unitId": "396b2ae2d71156c75d93",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/",
+    "unitId": "4107a54a36dbf5ff62b5",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/",
+    "unitId": "47e0c7777143556e4ffc",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/",
+    "unitId": "b399015248c3c8d2ef5f",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/",
+    "unitId": "b55251405a82938962bb",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/abandonreason-efc10625/",
+    "unitId": "4107a54a36dbf5ff62b5",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/count-a5c22228/",
+    "unitId": "b399015248c3c8d2ef5f",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/item-b899bb22/",
+    "unitId": "396b2ae2d71156c75d93",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/message-aa12a407/",
+    "unitId": "47e0c7777143556e4ffc",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.journaling.logevent-1/properties/sequence-ffd45659/",
+    "unitId": "b55251405a82938962bb",
+    "note": "上游原文/渲染问题：事件分支引用均显示并链接为 LogEventKind 枚举类型，具体枚举成员名缺失，影响判断各属性在哪一种事件下有效。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/",
+    "unitId": "8ec6ea95318fff098583",
+    "note": "上游原文/渲染问题：已处理消息的返回分支显示为 DeliveryResult 类型，具体分支名称在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/methods/",
+    "unitId": "166fdd81d0030fdf4b74",
+    "note": "上游原文/渲染问题：数值或时长约束中的成员引用显示为 DurableMessagingOptions 类型，而不是具体配置属性，无法直接从此引用判断比较对象。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/methods/validate-2b14f472/",
+    "unitId": "166fdd81d0030fdf4b74",
+    "note": "上游原文/渲染问题：数值或时长约束中的成员引用显示为 DurableMessagingOptions 类型，而不是具体配置属性，无法直接从此引用判断比较对象。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/properties/",
+    "unitId": "0df4218ce8b6aac8a6c0",
+    "note": "上游原文/渲染问题：数值或时长约束中的成员引用显示为 DurableMessagingOptions 类型，而不是具体配置属性，无法直接从此引用判断比较对象。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/properties/",
+    "unitId": "2f3eb099ae3cb26e3df3",
+    "note": "上游原文/渲染问题：数值或时长约束中的成员引用显示为 DurableMessagingOptions 类型，而不是具体配置属性，无法直接从此引用判断比较对象。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/properties/",
+    "unitId": "8f4fb842eee256b5dd68",
+    "note": "上游原文/渲染问题：已处理消息的返回分支显示为 DeliveryResult 类型，具体分支名称在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/properties/deduplicationwindow-850f3f43/",
+    "unitId": "2f3eb099ae3cb26e3df3",
+    "note": "上游原文/渲染问题：数值或时长约束中的成员引用显示为 DurableMessagingOptions 类型，而不是具体配置属性，无法直接从此引用判断比较对象。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/properties/deduplicationwindow-850f3f43/",
+    "unitId": "8f4fb842eee256b5dd68",
+    "note": "上游原文/渲染问题：已处理消息的返回分支显示为 DeliveryResult 类型，具体分支名称在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.configuration.durablemessagingoptions/properties/outboxretrytimeout-a6d1ca8e/",
+    "unitId": "0df4218ce8b6aac8a6c0",
+    "note": "上游原文/渲染问题：数值或时长约束中的成员引用显示为 DurableMessagingOptions 类型，而不是具体配置属性，无法直接从此引用判断比较对象。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.iinbox/",
+    "unitId": "94d4dfa97138b829f852",
+    "note": "上游原文/渲染问题：两个不同终态操作均被显示并链接为 IInboxHandlerContext 类型，具体方法名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.iinboxhandler/",
+    "unitId": "c1d384b155e782b79895",
+    "note": "上游原文/渲染问题：处理程序选择和执行的成员引用均显示为 IInboxHandler 类型，具体方法名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.iinboxmessagesink/",
+    "unitId": "348dfd1ec1b5d989ce73",
+    "note": "上游原文/渲染问题：发送时间和过期投递结果的成员引用分别显示为 InboxMessage 与 DeliveryResult 类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.iinboxmessagesink/",
+    "unitId": "a5a6fbed0bc3d9ad02dd",
+    "note": "上游原文/渲染问题：计划处理时间和写入完成回调的引用分别显示为 Envelope 与 IStateMachine 类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.iinboxmessagesink/",
+    "unitId": "ead534925b54dc77438f",
+    "note": "上游原文/渲染问题：计划处理时间的属性引用被显示为 Envelope 类型，出现 once their Envelope has passed 的原文；具体时间属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.imessagingextension/methods/",
+    "unitId": "4ee6b7bba8ab06457cf8",
+    "note": "上游原文/渲染问题：应参与时间比较的消息成员被显示为 InboxMessage 类型，具体时间属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.imessagingextension/methods/deliverasync-orleans-durable-messaging-inboxmessage-system-threading-cancellatio-29879376/",
+    "unitId": "4ee6b7bba8ab06457cf8",
+    "note": "上游原文/渲染问题：应参与时间比较的消息成员被显示为 InboxMessage 类型，具体时间属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.ioutbox/",
+    "unitId": "7051274a52a1c26be91d",
+    "note": "上游原文/渲染问题：逻辑发送时间和若干方法引用被显示为 InboxMessage、IOutbox、IOutboxMessageSource 类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.ioutboxmessagesource/",
+    "unitId": "2519cc707179e3d42017",
+    "note": "上游原文/渲染问题：消息源的取消息与退役回调等不同成员均显示为 IOutboxMessageSource 类型；部分信封或目标成员也仅显示所属类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.ioutboxmessagesource/",
+    "unitId": "899a4d749fa2bd95f417",
+    "note": "上游原文/渲染问题：消息源的取消息与退役回调等不同成员均显示为 IOutboxMessageSource 类型；部分信封或目标成员也仅显示所属类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.ioutboxmessagesource/",
+    "unitId": "c9992f71cc12545fd9c6",
+    "note": "上游原文/渲染问题：消息源的取消息与退役回调等不同成员均显示为 IOutboxMessageSource 类型；部分信封或目标成员也仅显示所属类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.ioutboxmessagesource/methods/",
+    "unitId": "0b0e6b03fc4891d9ea1c",
+    "note": "上游原文/渲染问题：信封中的消息标识成员被显示为 Envelope，出现 envelope's Envelope is messageId 的原文；具体属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.ioutboxmessagesource/methods/trygetmessage-orleans-durable-messaging-messageid-out-orleans-durable-messaging-9cb53b68/",
+    "unitId": "0b0e6b03fc4891d9ea1c",
+    "note": "上游原文/渲染问题：信封中的消息标识成员被显示为 Envelope，出现 envelope's Envelope is messageId 的原文；具体属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.outboxextensions/",
+    "unitId": "353079cd61c260ff931f",
+    "note": "上游原文/渲染问题：上游显示的元组泛型参数为 IEnumerable<MessageId MessageId, GrainId Destination, T Body)>，元组起始左括号缺失，属于原站签名显示问题。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.outboxextensions/methods/",
+    "unitId": "a824f3fdb38c15b741f2",
+    "note": "上游原文/渲染问题：上游显示的元组泛型参数为 IEnumerable<MessageId MessageId, GrainId Destination, T Body)>，元组起始左括号缺失，属于原站签名显示问题。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.messaging.outboxextensions/methods/send-1-this-orleans-durable-messaging-ioutbox-orleans-durable-messaging-messaget-ba04d009/",
+    "unitId": "a824f3fdb38c15b741f2",
+    "note": "上游原文/渲染问题：上游显示的元组泛型参数为 IEnumerable<MessageId MessageId, GrainId Destination, T Body)>，元组起始左括号缺失，属于原站签名显示问题。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.diagnostics.durabletaskevents.executionstalled/constructors/",
+    "unitId": "caef78b5825984907a7f",
+    "note": "上游原文/渲染问题：两个不同停滞原因均显示为 DurableTaskAttemptCancellationReason 类型，具体枚举成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.diagnostics.durabletaskevents.executionstalled/constructors/constructor-orleans-runtime-igraincontext-orleans-durable-tasks-taskid-orleans-d-5ecf7ada/",
+    "unitId": "caef78b5825984907a7f",
+    "note": "上游原文/渲染问题：两个不同停滞原因均显示为 DurableTaskAttemptCancellationReason 类型，具体枚举成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.durabletaskgrainextensions/methods/",
+    "unitId": "cfc9acb198f7e61f9284",
+    "note": "上游原文/渲染问题：两个不同信号处理结果均显示为 DurableSignalResult 类型，具体枚举成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.durabletaskgrainextensions/methods/trysignaldurabletaskasync-1-this-orleans-runtime-iaddressable-orleans-durable-ta-945c62a6/",
+    "unitId": "cfc9acb198f7e61f9284",
+    "note": "上游原文/渲染问题：两个不同信号处理结果均显示为 DurableSignalResult 类型，具体枚举成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.durabletaskrejectedexception/",
+    "unitId": "652b82a4d217a1d6c1fb",
+    "note": "上游原文/渲染问题：拒绝代码与异常属性的成员引用显示为 DurableTaskRejectionCodes 或 DurableTaskRejectedException 类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.durabletaskrejectioncodes/",
+    "unitId": "db334bfca09e68c60225",
+    "note": "上游原文/渲染问题：拒绝代码与异常属性的成员引用显示为 DurableTaskRejectionCodes 或 DurableTaskRejectedException 类型，具体成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.idurabletaskmanager/methods/",
+    "unitId": "cfc9acb198f7e61f9284",
+    "note": "上游原文/渲染问题：两个不同信号处理结果均显示为 DurableSignalResult 类型，具体枚举成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.durable.tasks.idurabletaskmanager/methods/trysignalasync-1-orleans-durable-tasks-taskid-orleans-durable-tasks-durablesigna-e79ab2f1/",
+    "unitId": "cfc9acb198f7e61f9284",
+    "note": "上游原文/渲染问题：两个不同信号处理结果均显示为 DurableSignalResult 类型，具体枚举成员名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/",
+    "unitId": "498fd107f344bead93cc",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/",
+    "unitId": "4f9e764b555781532ff2",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/",
+    "unitId": "5cf88047a8ab281ff081",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/",
+    "unitId": "7d1011a9a2327da43674",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/",
+    "unitId": "1dcafa02ab87a99849f5",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/",
+    "unitId": "3722e18241c14b41bae7",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/",
+    "unitId": "488c68ef5b0fcec8ac08",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/",
+    "unitId": "e7158774b42cbb9d82fe",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/concurrencyslowstartenabled-e82edf5e/",
+    "unitId": "1dcafa02ab87a99849f5",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/shardclaiminitialbudget-6bda1ddb/",
+    "unitId": "488c68ef5b0fcec8ac08",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/shardclaimmaxbudget-7c16a051/",
+    "unitId": "3722e18241c14b41bae7",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.hosting.durablejobsoptions/properties/slowstartinitialconcurrency-de9af68a/",
+    "unitId": "e7158774b42cbb9d82fe",
+    "note": "上游原文/渲染问题：并发度、时间间隔或分片预算约束中的多个属性引用均显示为 DurableJobsOptions 类型，具体配置属性名缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/",
+    "unitId": "0b412db15cea86f47427",
+    "note": "上游原文/渲染问题：未设置键对应的返回值被显示为 TaskId 类型，而不是具体静态成员或值，导致原文出现两种结果都写作 TaskId 的情况。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/",
+    "unitId": "bcce79d0ae7a914a0295",
+    "note": "上游原文/渲染问题：未设置键对应的返回值被显示为 TaskId 类型，而不是具体静态成员或值，导致原文出现两种结果都写作 TaskId 的情况。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/totaskid-this-orleans-durable-messaging-hierarchicalkey-4521b2e1/",
+    "unitId": "0b412db15cea86f47427",
+    "note": "上游原文/渲染问题：未设置键对应的返回值被显示为 TaskId 类型，而不是具体静态成员或值，导致原文出现两种结果都写作 TaskId 的情况。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.durable/orleans.taskidextensions/methods/totaskid-this-orleans-durable-messaging-hierarchicalkey-nullable-2fd1e1dc/",
+    "unitId": "bcce79d0ae7a914a0295",
+    "note": "上游原文/渲染问题：未设置键对应的返回值被显示为 TaskId 类型，而不是具体静态成员或值，导致原文出现两种结果都写作 TaskId 的情况。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/",
+    "unitId": "7f1e8bbacad1aa96d576",
+    "note": "上游原文/渲染问题：声明类型为结构 RecordedConnectionIssue，但原文概述称其为 Utility class；这是上游类型说明与声明不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/",
+    "unitId": "ed600a6ef868c04f5639",
+    "note": "上游原文/渲染问题：声明类型为接口 INotificationMessage，但原文概述称其为 Base class，并使用 subclasses 一词；这是上游类型说明与声明不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.inotificationmessage/",
+    "unitId": "7315e85f5a9bd4bf9641",
+    "note": "上游原文/渲染问题：声明类型为接口 INotificationMessage，但原文概述称其为 Base class，并使用 subclasses 一词；这是上游类型说明与声明不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.inotificationmessage/properties/",
+    "unitId": "908743b2a4e37750503c",
+    "note": "上游原文/渲染问题：声明类型为接口 INotificationMessage，但原文概述称其为 Base class，并使用 subclasses 一词；这是上游类型说明与声明不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/",
+    "unitId": "13d3dc567b72708bc46e",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/",
+    "unitId": "50d8e6eaa1c06b773130",
+    "note": "上游原文/渲染问题：GetStats 的原文说明为 Get states；该方法名及相关诊断接口说明指向统计信息，原文 states 疑为 stats 的笔误。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/",
+    "unitId": "551908b4ccf5671f1f39",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/",
+    "unitId": "87bb62003d9f5eb44423",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/",
+    "unitId": "1b28f16f078f40045358",
+    "note": "上游原文/渲染问题：GetStats 的原文说明为 Get states；该方法名及相关诊断接口说明指向统计信息，原文 states 疑为 stats 的笔误。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/",
+    "unitId": "3e49e5ebf5c665070252",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/",
+    "unitId": "6583dcd6056fd32aadd0",
+    "note": "原文问题：RetrieveLogSegment 的 Returns 说明段落仅包含英语冠词 a，缺少后续名词，无法从该段确定完整的返回值说明。已核对官方快照的段落及上下文；译文保留原文残片，不凭推测补写返回对象或返回值协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/",
+    "unitId": "8a8867f1ac56b4a313dd",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/",
+    "unitId": "c006e1dab57f4a7075a0",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/getstats-1254af30/",
+    "unitId": "1b28f16f078f40045358",
+    "note": "上游原文/渲染问题：GetStats 的原文说明为 Get states；该方法名及相关诊断接口说明指向统计信息，原文 states 疑为 stats 的笔误。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/postonactivate-9c257f17/",
+    "unitId": "c006e1dab57f4a7075a0",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/postondeactivate-57591dfc/",
+    "unitId": "3e49e5ebf5c665070252",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/preonactivate-2bbe6c88/",
+    "unitId": "8a8867f1ac56b4a313dd",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.primarybasedlogviewadaptor-3/methods/retrievelogsegment-int-int-22303705/",
+    "unitId": "6583dcd6056fd32aadd0",
+    "note": "原文问题：RetrieveLogSegment 的 Returns 说明段落仅包含英语冠词 a，缺少后续名词，无法从该段确定完整的返回值说明。已核对官方快照的段落及上下文；译文保留原文残片，不凭推测补写返回对象或返回值协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.recordedconnectionissue/",
+    "unitId": "4275bdae3604755fe41a",
+    "note": "上游原文/渲染问题：声明类型为结构 RecordedConnectionIssue，但原文概述称其为 Utility class；这是上游类型说明与声明不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.common.recordedconnectionissue/methods/",
+    "unitId": "6327840c79a05dc87484",
+    "note": "上游原文/渲染问题：声明类型为结构 RecordedConnectionIssue，但原文概述称其为 Utility class；这是上游类型说明与声明不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptor-2/methods/",
+    "unitId": "3e49e5ebf5c665070252",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptor-2/methods/",
+    "unitId": "8a8867f1ac56b4a313dd",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptor-2/methods/",
+    "unitId": "c006e1dab57f4a7075a0",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptor-2/methods/postonactivate-d5873d4a/",
+    "unitId": "c006e1dab57f4a7075a0",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptor-2/methods/postondeactivate-27c7ff4d/",
+    "unitId": "3e49e5ebf5c665070252",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptor-2/methods/preonactivate-1b12dd57/",
+    "unitId": "8a8867f1ac56b4a313dd",
+    "note": "上游原文/渲染问题：激活或停用生命周期方法引用被显示为 Grain 类型，具体用户回调成员名在上游渲染中缺失。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptorhost-2/",
+    "unitId": "054dd1ae06959990deb2",
+    "note": "上游原文/渲染问题：上游正文末尾包含未清理的 XML 样式残片 />.，已在对照正文中保留。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptorhost-2/",
+    "unitId": "4183a6d8cfa994268a29",
+    "note": "上游原文/渲染问题：上游正文末尾包含未清理的 XML 样式残片 />.，已在对照正文中保留。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptorhost-2/methods/",
+    "unitId": "ba820eff0f45fc7f0364",
+    "note": "上游原文/渲染问题：上游正文末尾包含未清理的 XML 样式残片 />.，已在对照正文中保留。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptorhost-2/methods/",
+    "unitId": "faaf7df8931628e1e1f1",
+    "note": "上游原文/渲染问题：上游正文末尾包含未清理的 XML 样式残片 />.，已在对照正文中保留。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptorhost-2/methods/onviewchanged-bool-bool-ac783798/",
+    "unitId": "ba820eff0f45fc7f0364",
+    "note": "上游原文/渲染问题：上游正文末尾包含未清理的 XML 样式残片 />.，已在对照正文中保留。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewadaptorhost-2/methods/updateview-tlogview-tlogentry-efddb8cb/",
+    "unitId": "faaf7df8931628e1e1f1",
+    "note": "上游原文/渲染问题：上游正文末尾包含未清理的 XML 样式残片 />.，已在对照正文中保留。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewread-2/methods/",
+    "unitId": "6583dcd6056fd32aadd0",
+    "note": "原文问题：RetrieveLogSegment 的 Returns 说明段落仅包含英语冠词 a，缺少后续名词，无法从该段确定完整的返回值说明。已核对官方快照的段落及上下文；译文保留原文残片，不凭推测补写返回对象或返回值协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.ilogviewread-2/methods/retrievelogsegment-int-int-281619a0/",
+    "unitId": "6583dcd6056fd32aadd0",
+    "note": "原文问题：RetrieveLogSegment 的 Returns 说明段落仅包含英语冠词 a，缺少后续名词，无法从该段确定完整的返回值说明。已核对官方快照的段落及上下文；译文保留原文残片，不凭推测补写返回对象或返回值协定。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.logstorage.logstatewithmetadataandetag-1/",
+    "unitId": "ed1272240f224f93dc80",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.logstorage.logstatewithmetadataandetag-1/",
+    "unitId": "f466e959817b9c712f6a",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.logstorage.logstatewithmetadataandetag-1/constructors/",
+    "unitId": "2c0cd9d62577d863f376",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.logstorage.logstatewithmetadataandetag-1/constructors/constructor-fe62182f/",
+    "unitId": "2c0cd9d62577d863f376",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.logstorage.logstatewithmetadataandetag-1/methods/",
+    "unitId": "184e5dba204b03682922",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.logstorage.logstatewithmetadataandetag-1/methods/tostring-22b18c1a/",
+    "unitId": "184e5dba204b03682922",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.statestorage.grainstatewithmetadataandetag-1/constructors/",
+    "unitId": "2c0cd9d62577d863f376",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.statestorage.grainstatewithmetadataandetag-1/constructors/constructor-90340c1a/",
+    "unitId": "2c0cd9d62577d863f376",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.statestorage.grainstatewithmetadataandetag-1/methods/",
+    "unitId": "184e5dba204b03682922",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.eventsourcing/orleans.eventsourcing.statestorage.grainstatewithmetadataandetag-1/methods/tostring-1401b32c/",
+    "unitId": "184e5dba204b03682922",
+    "note": "上游原文/渲染问题：当前类型为 LogStateWithMetaDataAndETag<TEntry>，但上游构造函数或 ToString 说明写成 GrainStateWithMetaDataAndETag，类型名称不一致。 中文译文忠实保留原文信息；此说明为独立译注。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.persistence.adonet/orleans.storage.istoragehasherpicker/methods/",
+    "unitId": "ba713e3c9ccea3f29eec",
+    "note": "原文的 PickHasher 返回说明写作“serializer”，但该方法的用途是选择哈希实现，签名返回 IHasher?；这里存在原文术语矛盾。译文忠实保留“序列化器”，不擅自改写为哈希实现。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.persistence.adonet/orleans.storage.istoragehasherpicker/methods/pickhasher-1-string-string-string-orleans-runtime-grainid-orleans-igrainstate-t-fce80ad8/",
+    "unitId": "ba713e3c9ccea3f29eec",
+    "note": "原文的 PickHasher 返回说明写作“serializer”，但该方法的用途是选择哈希实现，签名返回 IHasher?；这里存在原文术语矛盾。译文忠实保留“序列化器”，不擅自改写为哈希实现。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.reminders/orleans.grainreminderextensions/methods/",
+    "unitId": "32e1cb291bb654535ec2",
+    "note": "原文的提醒触发周期下界引用被渲染为 ReminderOptions 类型名，未显示具体下界选项成员或其值。译文忠实保留该引用，不据此推断具体最小周期。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.reminders/orleans.grainreminderextensions/methods/registerorupdatereminder-this-orleans-grain-string-system-timespan-system-timesp-d11e0c96/",
+    "unitId": "32e1cb291bb654535ec2",
+    "note": "原文的提醒触发周期下界引用被渲染为 ReminderOptions 类型名，未显示具体下界选项成员或其值。译文忠实保留该引用，不据此推断具体最小周期。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.reminders/orleans.grainreminderextensions/methods/registerorupdatereminder-this-orleans-igrainbase-string-system-timespan-system-t-d8a6f830/",
+    "unitId": "32e1cb291bb654535ec2",
+    "note": "原文的提醒触发周期下界引用被渲染为 ReminderOptions 类型名，未显示具体下界选项成员或其值。译文忠实保留该引用，不据此推断具体最小周期。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.runtime/",
+    "unitId": "8c5ec8f80505dd5abc27",
+    "note": "原文异常说明止于“which was expected to be present”，未说明该成员管理条目的实际状态，句意不完整。译文保留原文已给出的信息，不根据异常类名补写“缺失”条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.runtime/orleans.configuration.activationrebalanceroptions/",
+    "unitId": "75c58a98768b1ae3e98f",
+    "note": "原文中 ScaledEntropyDeviationActivationThreshold 的说明有两处选项引用被渲染为类型名 ActivationRebalancerOptions，造成类型被描述为 true 等表面矛盾；引用显示内容缺少具体选项成员。译文保留原有链接文字，不猜测替换为成员名。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.runtime/orleans.runtime.membershipservice.orleansmissingmembershipentryexception/",
+    "unitId": "1cefa56e5663a9e96bea",
+    "note": "原文异常说明止于“which was expected to be present”，未说明该成员管理条目的实际状态，句意不完整。译文保留原文已给出的信息，不根据异常类名补写“缺失”条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.runtime/orleans.runtime.membershipservice.orleansmissingmembershipentryexception/constructors/",
+    "unitId": "04024d7ee0248d4aab24",
+    "note": "原文异常说明止于“which was expected to be present”，未说明该成员管理条目的实际状态，句意不完整。译文保留原文已给出的信息，不根据异常类名补写“缺失”条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization.abstractions/orleans.iconverter-2/",
+    "unitId": "fb6a3fa51d5e7fe0449b",
+    "note": "原文将 ConvertToSurrogate 描述为转换为“value type”，但方法名、TValue 输入、TSurrogate 返回类型以及返回说明“The surrogate”均指向转换为代理项。译文忠实保留“值类型”，将此方向矛盾单独提示。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization.abstractions/orleans.iconverter-2/methods/",
+    "unitId": "beab5d51a55460467470",
+    "note": "原文将 ConvertToSurrogate 描述为转换为“value type”，但方法名、TValue 输入、TSurrogate 返回类型以及返回说明“The surrogate”均指向转换为代理项。译文忠实保留“值类型”，将此方向矛盾单独提示。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization.abstractions/orleans.iconverter-2/methods/converttosurrogate-in-tvalue-77e350e0/",
+    "unitId": "beab5d51a55460467470",
+    "note": "原文将 ConvertToSurrogate 描述为转换为“value type”，但方法名、TValue 输入、TSurrogate 返回类型以及返回说明“The surrogate”均指向转换为代理项。译文忠实保留“值类型”，将此方向矛盾单独提示。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization/",
+    "unitId": "6d05e5b7c1bc82c8e3df",
+    "note": "原文对 UnexpectedLengthPrefixValueException 的说明止于“A length encoded field which is expected to have a length”，未给出完整的异常触发条件。译文保留现有片语，不补写预期长度与实际长度不符等条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.unexpectedlengthprefixvalueexception/",
+    "unitId": "d76c9317a845eb592443",
+    "note": "原文对 UnexpectedLengthPrefixValueException 的说明止于“A length encoded field which is expected to have a length”，未给出完整的异常触发条件。译文保留现有片语，不补写预期长度与实际长度不符等条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.unexpectedlengthprefixvalueexception/constructors/",
+    "unitId": "a03cb235914a3814f226",
+    "note": "原文对 UnexpectedLengthPrefixValueException 的说明止于“A length encoded field which is expected to have a length”，未给出完整的异常触发条件。译文保留现有片语，不补写预期长度与实际长度不符等条件。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.utilities.valuetypegetter-2/",
+    "unitId": "9780c14690dffa1393f1",
+    "note": "原文将 ValueTypeGetter 描述为用于“set fields”的委托，但委托名称为 Getter，签名接收实例并返回 TField，未接收待设置的字段值。此说明疑似沿用了 Setter 文案；译文忠实保留“设置”，单独提示原文矛盾。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.utilities.valuetypegetter-2/constructors/",
+    "unitId": "76f12a4fcccc9a8a52b9",
+    "note": "原文将 ValueTypeGetter 描述为用于“set fields”的委托，但委托名称为 Getter，签名接收实例并返回 TField，未接收待设置的字段值。此说明疑似沿用了 Setter 文案；译文忠实保留“设置”，单独提示原文矛盾。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.serialization/orleans.serialization.utilities.valuetypegetter-2/methods/",
+    "unitId": "a0db5f3c29d0b51eef01",
+    "note": "原文将 ValueTypeGetter 描述为用于“set fields”的委托，但委托名称为 Getter，签名接收实例并返回 TField，未接收待设置的字段值。此说明疑似沿用了 Setter 文案；译文忠实保留“设置”，单独提示原文矛盾。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.streaming.azurestorage/orleans.azureutils.azurequeuedatamanager/",
+    "unitId": "2b4b0974b45b8c8a6ede",
+    "note": "原文在 AzureQueueDataManager 的 QueueName 说明中写作“table”，与队列管理类及属性名称不一致，疑似表存储说明遗留。译文保留“表”，不据上下文替换为“队列”。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.streaming.azurestorage/orleans.azureutils.azurequeuedatamanager/constructors/",
+    "unitId": "f82a18045355d8805e7d",
+    "note": "原文在 AzureQueueDataManager 构造函数的连接字符串参数说明中写作承载“this table”，与队列管理上下文不一致，疑似表存储说明遗留。译文忠实保留“此表”，单独提示。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.streaming.azurestorage/orleans.azureutils.azurequeuedatamanager/constructors/constructor-microsoft-extensions-logging-iloggerfactory-string-string-system-tim-72a8c60b/",
+    "unitId": "f82a18045355d8805e7d",
+    "note": "原文在 AzureQueueDataManager 构造函数的连接字符串参数说明中写作承载“this table”，与队列管理上下文不一致，疑似表存储说明遗留。译文忠实保留“此表”，单独提示。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.streaming.azurestorage/orleans.azureutils.azurequeuedatamanager/properties/",
+    "unitId": "b0f4dcd4ff8d6b46e03f",
+    "note": "原文在 AzureQueueDataManager 的 QueueName 说明中写作“table”，与队列管理类及属性名称不一致，疑似表存储说明遗留。译文保留“表”，不据上下文替换为“队列”。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.streaming.azurestorage/orleans.azureutils.azurequeuedatamanager/properties/queuename-b4b30852/",
+    "unitId": "b0f4dcd4ff8d6b46e03f",
+    "note": "原文在 AzureQueueDataManager 的 QueueName 说明中写作“table”，与队列管理类及属性名称不一致，疑似表存储说明遗留。译文保留“表”，不据上下文替换为“队列”。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.configuration.transactionalstateoptions/",
+    "unitId": "1d65011a5adc3d86c120",
+    "note": "原文交叉引用问题：DefaultLockAcquireTimeout 的默认值说明将参照对象显示并链接为 TransactionalStateOptions 类型，未显示具体选项成员。译文保留原文和链接，不推测补全所指属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.configuration.transactionalstateoptions/",
+    "unitId": "c895d4ae6661c8fe3227",
+    "note": "原文交叉引用问题：DefaultLockAcquireTimeout 的默认值说明将参照对象显示并链接为 TransactionalStateOptions 类型，未显示具体选项成员。译文保留原文和链接，不推测补全所指属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.configuration.transactionalstateoptions/properties/",
+    "unitId": "8ef90c2637c1da7cbc3e",
+    "note": "原文交叉引用问题：DefaultLockAcquireTimeout 的默认值说明将参照对象显示并链接为 TransactionalStateOptions 类型，未显示具体选项成员。译文保留原文和链接，不推测补全所指属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.configuration.transactionalstateoptions/properties/defaultlockacquiretimeout-3ad3a700/",
+    "unitId": "8ef90c2637c1da7cbc3e",
+    "note": "原文交叉引用问题：DefaultLockAcquireTimeout 的默认值说明将参照对象显示并链接为 TransactionalStateOptions 类型，未显示具体选项成员。译文保留原文和链接，不推测补全所指属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.configuration.transactionalstateoptions/properties/defaultpreparetimeout-27fcb9aa/",
+    "unitId": "8ef90c2637c1da7cbc3e",
+    "note": "原文交叉引用问题：DefaultLockAcquireTimeout 的默认值说明将参照对象显示并链接为 TransactionalStateOptions 类型，未显示具体选项成员。译文保留原文和链接，不推测补全所指属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.transactions.participantid/",
+    "unitId": "72350e82b7c5961d1f6d",
+    "note": "原文交叉引用问题：ParticipantId.Comparer 的两个比较依据都显示并链接为 ParticipantId 类型，未区分它们各自对应的成员。译文保留原文呈现及“不考虑支持的角色”这一限定，不凭推测替换为具体属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.transactions.participantid/fields/",
+    "unitId": "4c26c3683ceb1592178b",
+    "note": "原文交叉引用问题：ParticipantId.Comparer 的两个比较依据都显示并链接为 ParticipantId 类型，未区分它们各自对应的成员。译文保留原文呈现及“不考虑支持的角色”这一限定，不凭推测替换为具体属性。"
+  },
+  {
+    "path": "/docs/api/csharp/microsoft.orleans.transactions/orleans.transactions.participantid/fields/comparer-7e545cb3/",
+    "unitId": "4c26c3683ceb1592178b",
+    "note": "原文交叉引用问题：ParticipantId.Comparer 的两个比较依据都显示并链接为 ParticipantId 类型，未区分它们各自对应的成员。译文保留原文呈现及“不考虑支持的角色”这一限定，不凭推测替换为具体属性。"
+  },
+  {
+    "path": "/docs/grains/durable-tasks-identity/",
+    "note": "本页与 Durable Tasks 总览对派生分离根任务名称的分隔符示例存在差异。译文分别保留原文，请结合本快照的 API 与运行时实现核对。",
+    "scope": "同一固定快照中不同页面的措辞或版本差异"
+  },
+  {
+    "path": "/docs/grains/durable-tasks/",
+    "note": "本页与“任务标识和引用”页对派生分离根任务名称的分隔符示例存在差异（冒号与斜杠）。译文分别保留原文，未将这两种写法擅自统一。",
+    "scope": "同一固定快照中不同页面的措辞或版本差异"
+  },
+  {
+    "path": "/docs/grains/transactions/",
+    "note": "本页的 RunTransaction 说明提及 Task<T> 泛型形式与返回 true 提交的规则。本译文保留原文措辞；使用具体重载时请对照同一快照的 API 签名。",
+    "scope": "同一固定快照中不同页面的措辞或版本差异"
+  },
+  {
+    "path": "/docs/overview/",
+    "note": "本页把初学者示例描述为 ASP.NET Core 与 Silo 同进程托管，而本次快照的“构建第一个应用”教程使用独立客户端项目。两处译文均保留各自原文，阅读时请以对应教程的实际步骤和代码为准。",
+    "scope": "同一固定快照中不同页面的措辞或版本差异"
+  }
+]

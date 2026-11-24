@@ -1,0 +1,2320 @@
+{
+  "artifactHtmlFiles": 15466,
+  "manifestPages": 15235,
+  "additionalHtmlFiles": 231,
+  "counts": {
+    "404-page": 1,
+    "redirect": 230
+  },
+  "entries": [
+    {
+      "file": "404.html",
+      "classification": "404-page",
+      "title": "404 | Microsoft Orleans",
+      "sha256": "35bc7afc20f0e9351ad5b0aec75e8ffd5285b5a5473548edd812b5a24be0c73e",
+      "bytes": 15420,
+      "mainCount": 1,
+      "bodyExcerpt": "404Page not found. Check the URL or try using the search bar.Close"
+    },
+    {
+      "file": "Advanced-Concepts/Activation-Garbage-Collection.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c300751fcf437ef48b5ca90a1e6b3b9a2024c3031055115681789757a7a2ddf7",
+      "bytes": 716,
+      "target": "/orleans/docs/host/configuration-guide/activation-collection/",
+      "resolvedPath": "/docs/host/configuration-guide/activation-collection/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Application-Bootstrap-within-a-Silo.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "697c854c7c0cce94a0f393e768bc5a8a06ccf05b7613b318dbbf1fbcc5fcb75d",
+      "bytes": 676,
+      "target": "/orleans/docs/host/configuration-guide/startup-tasks/",
+      "resolvedPath": "/docs/host/configuration-guide/startup-tasks/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Client-Error-Code-Monitoring.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "3ed233e3af8bdeeccf9b162cf0f64e9d61ee68c8d063d95818a81c30242518e6",
+      "bytes": 706,
+      "target": "/orleans/docs/host/monitoring/client-error-code-monitoring/",
+      "resolvedPath": "/docs/host/monitoring/client-error-code-monitoring/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Configuring-.NET-Garbage-Collection.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c36e35d923bcda5505ba3ee5660d66d36df8612644ed19bff0a2456265c0dbb7",
+      "bytes": 761,
+      "target": "/orleans/docs/host/configuration-guide/configuring-garbage-collection/",
+      "resolvedPath": "/docs/host/configuration-guide/configuring-garbage-collection/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Configuring-SQL-Tables.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a885ac43319ecafe684241014f62d4997bfbfbc20de815dd33a96055be0e5ab6",
+      "bytes": 776,
+      "target": "/orleans/docs/host/configuration-guide/configuring-ado-dot-net-providers/",
+      "resolvedPath": "/docs/host/configuration-guide/configuring-ado-dot-net-providers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/External-Tasks-and-Grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5e513f50628ebb75bb4498849e19c0921c5d8130e8b7bcb5c58121dadc2e7803",
+      "bytes": 646,
+      "target": "/orleans/docs/grains/external-tasks-and-grains/",
+      "resolvedPath": "/docs/grains/external-tasks-and-grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Getting-Started-using-Azure-Web-Apps.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ff578e455c2659dd7f97171d0c61272549134c4c36c99b2948e1fb2b6e45fb3b",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/deploy-to-azure-app-service/",
+      "resolvedPath": "/docs/deployment/deploy-to-azure-app-service/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Interceptors.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "75592d1f5d37ab5a9a3209326c5519560ac5e15d788f3a77e9d4d860a4813d6e",
+      "bytes": 581,
+      "target": "/orleans/docs/grains/interceptors/",
+      "resolvedPath": "/docs/grains/interceptors/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Orleans-Streams.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "76dfad54511fa3653773ca3a46bcfe7f3de2a51fc4795aeccf651da8aae55d6b",
+      "bytes": 531,
+      "target": "/orleans/docs/streaming/",
+      "resolvedPath": "/docs/streaming/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Powershell-Client.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1c0f4155bf24ea0acdcb940d0db467adba0c1de63a40d7a4a2def497aa12d0c8",
+      "bytes": 541,
+      "target": "/orleans/docs/host/client/",
+      "resolvedPath": "/docs/host/client/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Reentrant-Grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "44b98c0cc2d74fcfa9e827542509952f3f821fae575be9e65b220ba61f87c9ce",
+      "bytes": 611,
+      "target": "/orleans/docs/grains/request-scheduling/",
+      "resolvedPath": "/docs/grains/request-scheduling/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Relational-Storage-Design-Rationale.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e352747fbb6573aaca3e84c8b5936324a2bd0d626fe2ed757abf611ff40e9a47",
+      "bytes": 701,
+      "target": "/orleans/docs/grains/grain-persistence/relational-storage/",
+      "resolvedPath": "/docs/grains/grain-persistence/relational-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Request-Context.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "4527bc63725a73a8f96a8fd44f7e381d2c0c644614d4887a0afb69efe705a025",
+      "bytes": 596,
+      "target": "/orleans/docs/grains/request-context/",
+      "resolvedPath": "/docs/grains/request-context/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Runtime-Monitoring.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "19192d72c71774b35ea7ed1f0a42deae5145cde5f65e2d33c1719007facea470",
+      "bytes": 561,
+      "target": "/orleans/docs/host/monitoring/",
+      "resolvedPath": "/docs/host/monitoring/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/SQL-Tables.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a885ac43319ecafe684241014f62d4997bfbfbc20de815dd33a96055be0e5ab6",
+      "bytes": 776,
+      "target": "/orleans/docs/host/configuration-guide/configuring-ado-dot-net-providers/",
+      "resolvedPath": "/docs/host/configuration-guide/configuring-ado-dot-net-providers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Serialization.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "39a5130f3035b52cea42e4cfd75793ac2ba25fe3f679dac3fbde3b98e84e690e",
+      "bytes": 676,
+      "target": "/orleans/docs/host/configuration-guide/serialization/",
+      "resolvedPath": "/docs/host/configuration-guide/serialization/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Silo-Error-Code-Monitoring.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "44adce340a41750067a8208e6243b0d64a86bd7e20a2bbc3a7728db57765f60f",
+      "bytes": 696,
+      "target": "/orleans/docs/host/monitoring/silo-error-code-monitoring/",
+      "resolvedPath": "/docs/host/monitoring/silo-error-code-monitoring/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Timers-and-Reminders.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "37ca07c53b28edb247f742d4be6308151b61b5880e7510bfd2d2edcf3a32819a",
+      "bytes": 621,
+      "target": "/orleans/docs/grains/timers-and-reminders/",
+      "resolvedPath": "/docs/grains/timers-and-reminders/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Two-Way-Client-Observers-old.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d4ed293bb94f178b986762d89c032c84ee9c71c950d5e9aba26bc3e9601fe7e8",
+      "bytes": 566,
+      "target": "/orleans/docs/grains/observers/",
+      "resolvedPath": "/docs/grains/observers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Two-Way-Client-Observers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d4ed293bb94f178b986762d89c032c84ee9c71c950d5e9aba26bc3e9601fe7e8",
+      "bytes": 566,
+      "target": "/orleans/docs/grains/observers/",
+      "resolvedPath": "/docs/grains/observers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Using-Azure-Web-Apps.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ff578e455c2659dd7f97171d0c61272549134c4c36c99b2948e1fb2b6e45fb3b",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/deploy-to-azure-app-service/",
+      "resolvedPath": "/docs/deployment/deploy-to-azure-app-service/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Using-Immutable-to-Optimize-Copying.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "be4047963e85de0d46ece77a0dca4659cf89fba835bfe18ad5499e3c14b946da",
+      "bytes": 741,
+      "target": "/orleans/docs/host/configuration-guide/serialization-immutability/",
+      "resolvedPath": "/docs/host/configuration-guide/serialization-immutability/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/Writing-Custom-Serializers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "62e8027ed2a264a92884a5c49651c36e91e838051d514ea334c96d473578f3f3",
+      "bytes": 746,
+      "target": "/orleans/docs/host/configuration-guide/serialization-customization/",
+      "resolvedPath": "/docs/host/configuration-guide/serialization-customization/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Advanced-Concepts/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Benefits.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e9c5747508a68afeb903466cd71a88fcb3999fd21707aceb60097cfa6ae0b15e",
+      "bytes": 526,
+      "target": "/orleans/docs/benefits/",
+      "resolvedPath": "/docs/benefits/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Contributing.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Convert-Orleans-v0.9-csproj-to-Use-v1.0-NuGet.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fd886f4d753e581a49196f4da5c637449a80c3c569702533735a75df9893e04f",
+      "bytes": 561,
+      "target": "/orleans/docs/migration-guide/",
+      "resolvedPath": "/docs/migration-guide/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Deployment-and-Versioning-of-Dependencies.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "603035937ad0846259b679ec0e731bf2654536a746fad21648621437631c4197",
+      "bytes": 581,
+      "target": "/orleans/docs/deployment/upgrades/",
+      "resolvedPath": "/docs/deployment/upgrades/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Documentation/Getting-Started-With-Orleans/Running-the-Application.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Documentation-Guidelines.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Frequently-Asked-Questions.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "aa739c599ab82844c074b0b1ce4861dc8fca6de126463047865253e950dd9887",
+      "bytes": 666,
+      "target": "/orleans/docs/resources/frequently-asked-questions/",
+      "resolvedPath": "/docs/resources/frequently-asked-questions/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Asynchrony-and-Tasks.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "44b98c0cc2d74fcfa9e827542509952f3f821fae575be9e65b220ba61f87c9ce",
+      "bytes": 611,
+      "target": "/orleans/docs/grains/request-scheduling/",
+      "resolvedPath": "/docs/grains/request-scheduling/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Clients.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1c0f4155bf24ea0acdcb940d0db467adba0c1de63a40d7a4a2def497aa12d0c8",
+      "bytes": 541,
+      "target": "/orleans/docs/host/client/",
+      "resolvedPath": "/docs/host/client/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Core-Concepts.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b56c04b1bbb6580272dd38fcedb43f67ee4be730d2a4b4a3c7c98aaebabaa596",
+      "bytes": 526,
+      "target": "/orleans/docs/overview/",
+      "resolvedPath": "/docs/overview/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Debugging.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ac74c47c3f8e9afc9eff428762ab895c38fb96c2c30b206e7854e07f73856e58",
+      "bytes": 641,
+      "target": "/orleans/docs/host/monitoring/troubleshooting/",
+      "resolvedPath": "/docs/host/monitoring/troubleshooting/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Developing-a-Client.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1c0f4155bf24ea0acdcb940d0db467adba0c1de63a40d7a4a2def497aa12d0c8",
+      "bytes": 541,
+      "target": "/orleans/docs/host/client/",
+      "resolvedPath": "/docs/host/client/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Developing-a-Grain.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "888cb2ac199aeaf5a5feaeb975d92a31da30722190b7694f912d3af8cffff8ca",
+      "bytes": 516,
+      "target": "/orleans/docs/grains/",
+      "resolvedPath": "/docs/grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Grain-Persistence.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "6c25f7b94daf91999fa77c0d539b2b9be2df108e81613b83625030287c5c69dc",
+      "bytes": 606,
+      "target": "/orleans/docs/grains/grain-persistence/",
+      "resolvedPath": "/docs/grains/grain-persistence/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "888cb2ac199aeaf5a5feaeb975d92a31da30722190b7694f912d3af8cffff8ca",
+      "bytes": 516,
+      "target": "/orleans/docs/grains/",
+      "resolvedPath": "/docs/grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Observers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d4ed293bb94f178b986762d89c032c84ee9c71c950d5e9aba26bc3e9601fe7e8",
+      "bytes": 566,
+      "target": "/orleans/docs/grains/observers/",
+      "resolvedPath": "/docs/grains/observers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Running-the-Application.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Silos.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "06ff04771a6958d2f38d44d8d5ba6b8e3fbf55adfc3a5940608655edc22ecf9d",
+      "bytes": 606,
+      "target": "/orleans/docs/host/configuration-guide/",
+      "resolvedPath": "/docs/host/configuration-guide/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/Troubleshooting-Deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "38cac6cca0e986036dd8bf96eea1e5469a81bc6974993b63e4dae3f0c2488668",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/troubleshooting-deployments/",
+      "resolvedPath": "/docs/deployment/troubleshooting-deployments/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Getting-Started-With-Orleans/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b56c04b1bbb6580272dd38fcedb43f67ee4be730d2a4b4a3c7c98aaebabaa596",
+      "bytes": 526,
+      "target": "/orleans/docs/overview/",
+      "resolvedPath": "/docs/overview/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Ideas-for-Contributions.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Installation.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Introduction.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b56c04b1bbb6580272dd38fcedb43f67ee4be730d2a4b4a3c7c98aaebabaa596",
+      "bytes": 526,
+      "target": "/orleans/docs/overview/",
+      "resolvedPath": "/docs/overview/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Links/Orleans-Architecture-Principles-and-Approach-I.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cc312f0f7f8a77380e1d5c8c0fe3039fbe25643204f71e1edab647c395eedd97",
+      "bytes": 756,
+      "target": "/orleans/docs/resources/orleans-architecture-principles-and-approach/",
+      "resolvedPath": "/docs/resources/orleans-architecture-principles-and-approach/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Links/Orleans-Thinking-Big-and-Small.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1d4cd16566090c3e6ef9047fcfae22653f88445b908dae1a1483abb950453a50",
+      "bytes": 686,
+      "target": "/orleans/docs/resources/orleans-thinking-big-and-small/",
+      "resolvedPath": "/docs/resources/orleans-thinking-big-and-small/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Links/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5b5f34bb45909555ec3eb0c62de19e5bf5bfb717a8bfd5bbe304c005a1f5c5e8",
+      "bytes": 561,
+      "target": "/orleans/docs/resources/links/",
+      "resolvedPath": "/docs/resources/links/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Links.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5b5f34bb45909555ec3eb0c62de19e5bf5bfb717a8bfd5bbe304c005a1f5c5e8",
+      "bytes": 561,
+      "target": "/orleans/docs/resources/links/",
+      "resolvedPath": "/docs/resources/links/",
+      "targetInManifest": true
+    },
+    {
+      "file": "NuGets.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cb8ca60ba29fced2e2893f96a34c146e14462e8c30212e757048faed1dde554e",
+      "bytes": 606,
+      "target": "/orleans/docs/resources/nuget-packages/",
+      "resolvedPath": "/docs/resources/nuget-packages/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Configuration-Guide/Client-Configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f1cc62b10b0ace7112ea24219f52fdbead1aa6f61a9c3bd6a619ca15b22ae5e3",
+      "bytes": 711,
+      "target": "/orleans/docs/host/configuration-guide/client-configuration/",
+      "resolvedPath": "/docs/host/configuration-guide/client-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Configuration-Guide/Server-Configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "26c1c9fd6be938a5e1c4720738c6d91007a3a97a9ebc2f19f77be3d778b4ebaf",
+      "bytes": 711,
+      "target": "/orleans/docs/host/configuration-guide/server-configuration/",
+      "resolvedPath": "/docs/host/configuration-guide/server-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Configuration-Guide/Typical-Configurations.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "01c994502ad06713902365a5d36af5d3569e014c0dad1fe12c9743ec74fba447",
+      "bytes": 721,
+      "target": "/orleans/docs/host/configuration-guide/typical-configurations/",
+      "resolvedPath": "/docs/host/configuration-guide/typical-configurations/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Configuration-Guide/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "06ff04771a6958d2f38d44d8d5ba6b8e3fbf55adfc3a5940608655edc22ecf9d",
+      "bytes": 606,
+      "target": "/orleans/docs/host/configuration-guide/",
+      "resolvedPath": "/docs/host/configuration-guide/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Extensibility.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "4f3f4a43d7cf134e785e9604024b4129c4c32c88c51aa6f7cb7044e1cedf7eec",
+      "bytes": 636,
+      "target": "/orleans/docs/streaming/custom-queue-adapter/",
+      "resolvedPath": "/docs/streaming/custom-queue-adapter/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Stream-Providers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d237ea9dbd77d98ca99d3fa63164b2a39d1fc8dfd158702517fa7095f0d305fa",
+      "bytes": 616,
+      "target": "/orleans/docs/streaming/stream-providers/",
+      "resolvedPath": "/docs/streaming/stream-providers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Streams-Extensibility.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "4f3f4a43d7cf134e785e9604024b4129c4c32c88c51aa6f7cb7044e1cedf7eec",
+      "bytes": 636,
+      "target": "/orleans/docs/streaming/custom-queue-adapter/",
+      "resolvedPath": "/docs/streaming/custom-queue-adapter/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Streams-Implementation.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a33d3789ca5e4c6fcb869931df78cbed1d6e41358a53a6b0398333a5ee2c7ed4",
+      "bytes": 671,
+      "target": "/orleans/docs/implementation/streams-implementation/",
+      "resolvedPath": "/docs/implementation/streams-implementation/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Streams-Programming-APIs.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "54b8449db2252699c06013e34245d651b4ec6f42c965e28f196fa02b32a9f5c1",
+      "bytes": 656,
+      "target": "/orleans/docs/streaming/streams-programming-apis/",
+      "resolvedPath": "/docs/streaming/streams-programming-apis/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Streams-Quick-Start.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "697b42af00317bfc16f9cf2f0bd3e557a09a2e63b68d33b776d2880b5aea4ae1",
+      "bytes": 631,
+      "target": "/orleans/docs/streaming/streams-quick-start/",
+      "resolvedPath": "/docs/streaming/streams-quick-start/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/Streams-Why.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "be1a971f584cb83303bc05e445357b6310a8b1aa424ef391af778857d951ad05",
+      "bytes": 591,
+      "target": "/orleans/docs/streaming/streams-why/",
+      "resolvedPath": "/docs/streaming/streams-why/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Orleans-Streams/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "76dfad54511fa3653773ca3a46bcfe7f3de2a51fc4795aeccf651da8aae55d6b",
+      "bytes": 531,
+      "target": "/orleans/docs/streaming/",
+      "resolvedPath": "/docs/streaming/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Prerequisites.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Presentations/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5b5f34bb45909555ec3eb0c62de19e5bf5bfb717a8bfd5bbe304c005a1f5c5e8",
+      "bytes": 561,
+      "target": "/orleans/docs/resources/links/",
+      "resolvedPath": "/docs/resources/links/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Cluster-Management.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "232f1a7f96f4ee346d693358c708cb2b2e5e57e6dd096cc6b1163cc2da741a26",
+      "bytes": 651,
+      "target": "/orleans/docs/implementation/cluster-management/",
+      "resolvedPath": "/docs/implementation/cluster-management/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Consul-Deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cb6ab37f238ccd4e0e8c7adb48a167668bc64f910ff15922bfeb9c3e1a627b78",
+      "bytes": 696,
+      "target": "/orleans/docs/host/configuration-guide/clustering/consul/",
+      "resolvedPath": "/docs/host/configuration-guide/clustering/consul/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Consul.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cb6ab37f238ccd4e0e8c7adb48a167668bc64f910ff15922bfeb9c3e1a627b78",
+      "bytes": 696,
+      "target": "/orleans/docs/host/configuration-guide/clustering/consul/",
+      "resolvedPath": "/docs/host/configuration-guide/clustering/consul/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Load-Balancing.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "07f42ef816819ed7235adc4c9d2ce9c9084729a5aa34101589422452d77ba43e",
+      "bytes": 631,
+      "target": "/orleans/docs/implementation/load-balancing/",
+      "resolvedPath": "/docs/implementation/load-balancing/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Messaging-Delivery-Guarantees.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "18d7c8d137018cc2c0f5f1dde13fd7715aa2857477d9aaf359e24306a4f7727d",
+      "bytes": 706,
+      "target": "/orleans/docs/implementation/messaging-delivery-guarantees/",
+      "resolvedPath": "/docs/implementation/messaging-delivery-guarantees/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Relational-Storage-Design-Rationale.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e352747fbb6573aaca3e84c8b5936324a2bd0d626fe2ed757abf611ff40e9a47",
+      "bytes": 701,
+      "target": "/orleans/docs/grains/grain-persistence/relational-storage/",
+      "resolvedPath": "/docs/grains/grain-persistence/relational-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Relational-Storage.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e352747fbb6573aaca3e84c8b5936324a2bd0d626fe2ed757abf611ff40e9a47",
+      "bytes": 701,
+      "target": "/orleans/docs/grains/grain-persistence/relational-storage/",
+      "resolvedPath": "/docs/grains/grain-persistence/relational-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/Runtime-Tables.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "232f1a7f96f4ee346d693358c708cb2b2e5e57e6dd096cc6b1163cc2da741a26",
+      "bytes": 651,
+      "target": "/orleans/docs/implementation/cluster-management/",
+      "resolvedPath": "/docs/implementation/cluster-management/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Runtime-Implementation-Details/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c4fa2ac8d83e12e99aae03fcafa7ee9c179683cc0ff10b48d5bfc633184071bf",
+      "bytes": 556,
+      "target": "/orleans/docs/implementation/",
+      "resolvedPath": "/docs/implementation/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Adventure.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c2afd646f5b3b84197e0869a13545ae72047609fd169010955323e44d34feca1",
+      "bytes": 641,
+      "target": "/orleans/docs/tutorials-and-samples/adventure/",
+      "resolvedPath": "/docs/tutorials-and-samples/adventure/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Azure-Web-Sample.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ff578e455c2659dd7f97171d0c61272549134c4c36c99b2948e1fb2b6e45fb3b",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/deploy-to-azure-app-service/",
+      "resolvedPath": "/docs/deployment/deploy-to-azure-app-service/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Chirper.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fa9370ce1fc29115c935d992a1a86f1df545fce05f856222bab02bfeead33801",
+      "bytes": 496,
+      "target": "/orleans/samples/",
+      "resolvedPath": "/samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/GPS-Tracker.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fa9370ce1fc29115c935d992a1a86f1df545fce05f856222bab02bfeead33801",
+      "bytes": 496,
+      "target": "/orleans/samples/",
+      "resolvedPath": "/samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Hello-World.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f40ca52b396168874923d550971d6b1b3d2f33b2319712c1f8f369570479379c",
+      "bytes": 651,
+      "target": "/orleans/docs/tutorials-and-samples/hello-world/",
+      "resolvedPath": "/docs/tutorials-and-samples/hello-world/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Presence-Service.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fa9370ce1fc29115c935d992a1a86f1df545fce05f856222bab02bfeead33801",
+      "bytes": 496,
+      "target": "/orleans/samples/",
+      "resolvedPath": "/samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Storage-Providers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d2d427b19e6c96cfd495f1d8d36e14b22cc2ee7b5c9af5541d8e675d7c075a9c",
+      "bytes": 696,
+      "target": "/orleans/docs/tutorials-and-samples/custom-grain-storage/",
+      "resolvedPath": "/docs/tutorials-and-samples/custom-grain-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Tic-Tac-Toe.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fa9370ce1fc29115c935d992a1a86f1df545fce05f856222bab02bfeead33801",
+      "bytes": 496,
+      "target": "/orleans/samples/",
+      "resolvedPath": "/samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/Twitter-Sentiment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fa9370ce1fc29115c935d992a1a86f1df545fce05f856222bab02bfeead33801",
+      "bytes": 496,
+      "target": "/orleans/samples/",
+      "resolvedPath": "/samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Samples-Overview/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fa9370ce1fc29115c935d992a1a86f1df545fce05f856222bab02bfeead33801",
+      "bytes": 496,
+      "target": "/orleans/samples/",
+      "resolvedPath": "/samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/A-Service-is-a-Collection-of-Communicating-Actors.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "888cb2ac199aeaf5a5feaeb975d92a31da30722190b7694f912d3af8cffff8ca",
+      "bytes": 516,
+      "target": "/orleans/docs/grains/",
+      "resolvedPath": "/docs/grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Actor-Identity.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "70b2aeb56e1f55c41c6bb0d254cca3aa4d16ac5120b3d55666379b1e8eebf960",
+      "bytes": 591,
+      "target": "/orleans/docs/grains/grain-identity/",
+      "resolvedPath": "/docs/grains/grain-identity/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Cloud-Deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "04e2d523ecc837e56781a4382871ff15f74968b6594d1d2d8a3081ec2ccddee8",
+      "bytes": 691,
+      "target": "/orleans/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "resolvedPath": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Concurrency.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "44b98c0cc2d74fcfa9e827542509952f3f821fae575be9e65b220ba61f87c9ce",
+      "bytes": 611,
+      "target": "/orleans/docs/grains/request-scheduling/",
+      "resolvedPath": "/docs/grains/request-scheduling/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Custom-Storage-Providers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d2d427b19e6c96cfd495f1d8d36e14b22cc2ee7b5c9af5541d8e675d7c075a9c",
+      "bytes": 696,
+      "target": "/orleans/docs/tutorials-and-samples/custom-grain-storage/",
+      "resolvedPath": "/docs/tutorials-and-samples/custom-grain-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Declarative-Persistence.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "6c25f7b94daf91999fa77c0d539b2b9be2df108e81613b83625030287c5c69dc",
+      "bytes": 606,
+      "target": "/orleans/docs/grains/grain-persistence/",
+      "resolvedPath": "/docs/grains/grain-persistence/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Failure-Handling.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1119eed5b01fd3d3414e4d643272ddef82ad12534b2ee5113f869d5d056e9322",
+      "bytes": 626,
+      "target": "/orleans/docs/deployment/handling-failures/",
+      "resolvedPath": "/docs/deployment/handling-failures/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Front-Ends-for-Orleans-Services.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1c0f4155bf24ea0acdcb940d0db467adba0c1de63a40d7a4a2def497aa12d0c8",
+      "bytes": 541,
+      "target": "/orleans/docs/host/client/",
+      "resolvedPath": "/docs/host/client/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Interaction-with-Libraries-and-Services.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5e513f50628ebb75bb4498849e19c0921c5d8130e8b7bcb5c58121dadc2e7803",
+      "bytes": 646,
+      "target": "/orleans/docs/grains/external-tasks-and-grains/",
+      "resolvedPath": "/docs/grains/external-tasks-and-grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Minimal-Orleans-Application.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f40ca52b396168874923d550971d6b1b3d2f33b2319712c1f8f369570479379c",
+      "bytes": 651,
+      "target": "/orleans/docs/tutorials-and-samples/hello-world/",
+      "resolvedPath": "/docs/tutorials-and-samples/hello-world/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/My-First-Orleans-Application.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/On-Premise-Deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a0c9dfae1e63c4e217b715aaf9342faf0fc353c4c5dac20163dabb87a4e58a33",
+      "bytes": 616,
+      "target": "/orleans/docs/deployment/platform-guides/",
+      "resolvedPath": "/docs/deployment/platform-guides/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Running-in-a-Stand-alone-Silo.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/Unit-Testing-Grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "bf7d179a26cb7856c3e13ca3d3ef319806202e9a2153b0d0f4149ebac8ec0480",
+      "bytes": 556,
+      "target": "/orleans/docs/grains/testing/",
+      "resolvedPath": "/docs/grains/testing/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Step-by-step-Tutorials/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "2d6208dbea492b1825d4d6be95de5ddfc6f1747e0d52b73a203a2c07ceedb019",
+      "bytes": 591,
+      "target": "/orleans/docs/tutorials-and-samples/",
+      "resolvedPath": "/docs/tutorials-and-samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Student-Projects.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a2a6ff578963973254b34e381785b128a3c65130651207cb5c976b6c892aab06",
+      "bytes": 616,
+      "target": "/orleans/docs/resources/student-projects/",
+      "resolvedPath": "/docs/resources/student-projects/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Troubleshooting-Deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "38cac6cca0e986036dd8bf96eea1e5469a81bc6974993b63e4dae3f0c2488668",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/troubleshooting-deployments/",
+      "resolvedPath": "/docs/deployment/troubleshooting-deployments/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Tutorials/Minimal-Orleans-Application.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f40ca52b396168874923d550971d6b1b3d2f33b2319712c1f8f369570479379c",
+      "bytes": 651,
+      "target": "/orleans/docs/tutorials-and-samples/hello-world/",
+      "resolvedPath": "/docs/tutorials-and-samples/hello-world/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Tutorials/Running-in-a-Stand-alone-Silo.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "What's-new-in-Orleans.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fd886f4d753e581a49196f4da5c637449a80c3c569702533735a75df9893e04f",
+      "bytes": 561,
+      "target": "/orleans/docs/migration-guide/",
+      "resolvedPath": "/docs/migration-guide/",
+      "targetInManifest": true
+    },
+    {
+      "file": "Who-Is-Using-Orleans.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "07c48dabb924b8df0c3c1aae0fb4edbdc1c045ac1d671e818f67549afe755e60",
+      "bytes": 531,
+      "target": "/orleans/docs/scenarios/",
+      "resolvedPath": "/docs/scenarios/",
+      "targetInManifest": true
+    },
+    {
+      "file": "archive.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/announcing-orleans-2.0-tech-preview-3.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/announcing-orleans-2.1.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/de-inventing-the-wheel.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/dmitry-vakulenko.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/fix-visual-studio-2015-with-orleans-tools-for-visual-studio-1.4.0 installed.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/latest-release-1.3.1.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/orleans-1.4-and-2.0-tech-preview-2-for-.net-core-released.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/orleans-2.0-tech-preview-supporting-.net-core.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/orleans-and-midori.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/refresh-of-orleans-2.0-tech-preview-with-orleanssqlutils-added.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/solving-a-transactions-performance-mystery.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "blog/welcome-to-orleans-blog.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "7b285aee1228d768d27a07f4b2e67b280747449ff3cc00f4003c661a5e8bee35",
+      "bytes": 456,
+      "target": "/orleans/",
+      "resolvedPath": "/",
+      "targetInManifest": true
+    },
+    {
+      "file": "categories.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "contributors.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/benefits.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e9c5747508a68afeb903466cd71a88fcb3999fd21707aceb60097cfa6ae0b15e",
+      "bytes": 526,
+      "target": "/orleans/docs/benefits/",
+      "resolvedPath": "/docs/benefits/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/azure_web_apps_with_azure_cloud_services.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ff578e455c2659dd7f97171d0c61272549134c4c36c99b2948e1fb2b6e45fb3b",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/deploy-to-azure-app-service/",
+      "resolvedPath": "/docs/deployment/deploy-to-azure-app-service/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/consul-deployment/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cb6ab37f238ccd4e0e8c7adb48a167668bc64f910ff15922bfeb9c3e1a627b78",
+      "bytes": 696,
+      "target": "/orleans/docs/host/configuration-guide/clustering/consul/",
+      "resolvedPath": "/docs/host/configuration-guide/clustering/consul/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/consul_deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cb6ab37f238ccd4e0e8c7adb48a167668bc64f910ff15922bfeb9c3e1a627b78",
+      "bytes": 696,
+      "target": "/orleans/docs/host/configuration-guide/clustering/consul/",
+      "resolvedPath": "/docs/host/configuration-guide/clustering/consul/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/docker_deployment.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ebf5b61e1815a51cef7b5c3ac63e2141eac684ae820d6b8bfac2627251b8ba2a",
+      "bytes": 536,
+      "target": "/orleans/docs/deployment/",
+      "resolvedPath": "/docs/deployment/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/handling_failures.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1119eed5b01fd3d3414e4d643272ddef82ad12534b2ee5113f869d5d056e9322",
+      "bytes": 626,
+      "target": "/orleans/docs/deployment/handling-failures/",
+      "resolvedPath": "/docs/deployment/handling-failures/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/kubernetes.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "9fffe7d2171c4828bdd70015cf8b21134dae9c0f56955838eb4b0c9be9f4454f",
+      "bytes": 591,
+      "target": "/orleans/docs/deployment/kubernetes/",
+      "resolvedPath": "/docs/deployment/kubernetes/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/multi-cluster_support/GlobalSingleInstance.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/multi-cluster_support/GossipChannels.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/multi-cluster_support/MultiClusterConfiguration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/multi-cluster_support/Overview.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b56c04b1bbb6580272dd38fcedb43f67ee4be730d2a4b4a3c7c98aaebabaa596",
+      "bytes": 526,
+      "target": "/orleans/docs/overview/",
+      "resolvedPath": "/docs/overview/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/multi-cluster_support/SiloConfiguration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/service_fabric.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "fc4ef62de67f1dce0af939850ca1b82e7297696581bf1dd77794e08991556661",
+      "bytes": 611,
+      "target": "/orleans/docs/deployment/service-fabric/",
+      "resolvedPath": "/docs/deployment/service-fabric/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/troubleshooting-azure-cloud-services-deployments/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "38cac6cca0e986036dd8bf96eea1e5469a81bc6974993b63e4dae3f0c2488668",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/troubleshooting-deployments/",
+      "resolvedPath": "/docs/deployment/troubleshooting-deployments/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/troubleshooting_azure_cloud_services_deployments.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "38cac6cca0e986036dd8bf96eea1e5469a81bc6974993b63e4dae3f0c2488668",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/troubleshooting-deployments/",
+      "resolvedPath": "/docs/deployment/troubleshooting-deployments/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/deployment/troubleshooting_deployments.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "38cac6cca0e986036dd8bf96eea1e5469a81bc6974993b63e4dae3f0c2488668",
+      "bytes": 676,
+      "target": "/orleans/docs/deployment/troubleshooting-deployments/",
+      "resolvedPath": "/docs/deployment/troubleshooting-deployments/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/cancellation_tokens.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e76bcecac6eb71d959631efb188025b8180cd1cf46c42e7be3af511e4c2c69c4",
+      "bytes": 616,
+      "target": "/orleans/docs/grains/cancellation-tokens/",
+      "resolvedPath": "/docs/grains/cancellation-tokens/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/code_generation.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b67e8227a0f4523091d24cc023606ab4d3c16f8438bb1f2377ba023d3271e88d",
+      "bytes": 596,
+      "target": "/orleans/docs/grains/code-generation/",
+      "resolvedPath": "/docs/grains/code-generation/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/event_sourcing_configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1d51f340e55165370ae21743690d97041f65ef43a1c447d87901ae226a1b27b7",
+      "bytes": 736,
+      "target": "/orleans/docs/grains/event-sourcing/event-sourcing-configuration/",
+      "resolvedPath": "/docs/grains/event-sourcing/event-sourcing-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/immediate_vs_delayed_confirmation.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "eca4e6ead809663ebe0f931c9f0cc127a81ad7266fdb8c5a72f277adea7ffaf1",
+      "bytes": 761,
+      "target": "/orleans/docs/grains/event-sourcing/immediate-vs-delayed-confirmation/",
+      "resolvedPath": "/docs/grains/event-sourcing/immediate-vs-delayed-confirmation/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "af3fcaf4820a98b87ac8a1ea472ced2b96b26545c325ac56c932f7263b50280c",
+      "bytes": 591,
+      "target": "/orleans/docs/grains/event-sourcing/",
+      "resolvedPath": "/docs/grains/event-sourcing/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/journaledgrain_basics.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ad933a360397c21634844330d072f18a2e15eec4c2feeac68bb1ffdc346c12e8",
+      "bytes": 701,
+      "target": "/orleans/docs/grains/event-sourcing/journaledgrain-basics/",
+      "resolvedPath": "/docs/grains/event-sourcing/journaledgrain-basics/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/journaledgrain_diagnostics.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "925e393ae81a721832630f5f367412a85e71d2b3ed5265f03f7f1779eb4c8fab",
+      "bytes": 726,
+      "target": "/orleans/docs/grains/event-sourcing/journaledgrain-diagnostics/",
+      "resolvedPath": "/docs/grains/event-sourcing/journaledgrain-diagnostics/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/log_consistency_providers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ad7c796748c5c8754c008013f188e3555a4aa8ea3f2210448adcc5ebeb1fb605",
+      "bytes": 721,
+      "target": "/orleans/docs/grains/event-sourcing/log-consistency-providers/",
+      "resolvedPath": "/docs/grains/event-sourcing/log-consistency-providers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/notifications.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "133858d922edb6d4b0c6005fb282fc1f5619a0b760c15e0d44ba518236d475a0",
+      "bytes": 661,
+      "target": "/orleans/docs/grains/event-sourcing/notifications/",
+      "resolvedPath": "/docs/grains/event-sourcing/notifications/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/event_sourcing/replicated_instances.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b93f42b9c003da312f0d9a6a70ace905e4ae471fc96fe52cc9445a152b820e2d",
+      "bytes": 696,
+      "target": "/orleans/docs/grains/event-sourcing/replicated-instances/",
+      "resolvedPath": "/docs/grains/event-sourcing/replicated-instances/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/external_tasks_and_grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5e513f50628ebb75bb4498849e19c0921c5d8130e8b7bcb5c58121dadc2e7803",
+      "bytes": 646,
+      "target": "/orleans/docs/grains/external-tasks-and-grains/",
+      "resolvedPath": "/docs/grains/external-tasks-and-grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_identity.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "70b2aeb56e1f55c41c6bb0d254cca3aa4d16ac5120b3d55666379b1e8eebf960",
+      "bytes": 591,
+      "target": "/orleans/docs/grains/grain-identity/",
+      "resolvedPath": "/docs/grains/grain-identity/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_lifecycle.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "3db62a77521e4409cae33034bef7a631d038739f49975fe2274fcb61ec3fa77c",
+      "bytes": 596,
+      "target": "/orleans/docs/grains/grain-lifecycle/",
+      "resolvedPath": "/docs/grains/grain-lifecycle/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_persistence/azure_storage.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5a66b7c9be3ee2225a8041b60acc1ceb1ac483193b4fe9f24726fa15b2fd846f",
+      "bytes": 676,
+      "target": "/orleans/docs/grains/grain-persistence/azure-storage/",
+      "resolvedPath": "/docs/grains/grain-persistence/azure-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_persistence/dynamodb_storage.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1343ebcef7d7f1741e4aa0ae8d2ede59e0dcabd7c97790930b639ff91fb0608d",
+      "bytes": 691,
+      "target": "/orleans/docs/grains/grain-persistence/dynamodb-storage/",
+      "resolvedPath": "/docs/grains/grain-persistence/dynamodb-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_persistence/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "6c25f7b94daf91999fa77c0d539b2b9be2df108e81613b83625030287c5c69dc",
+      "bytes": 606,
+      "target": "/orleans/docs/grains/grain-persistence/",
+      "resolvedPath": "/docs/grains/grain-persistence/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_persistence/relational_storage.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e352747fbb6573aaca3e84c8b5936324a2bd0d626fe2ed757abf611ff40e9a47",
+      "bytes": 701,
+      "target": "/orleans/docs/grains/grain-persistence/relational-storage/",
+      "resolvedPath": "/docs/grains/grain-persistence/relational-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_placement.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "24110a39cbe00add922c2f46d7e044abd286f14234f9fe7f9a009e3ae36a9549",
+      "bytes": 596,
+      "target": "/orleans/docs/grains/grain-placement/",
+      "resolvedPath": "/docs/grains/grain-placement/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_versioning/backward_compatibility_guidelines.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c42f09b94be4799acd53ed25f15411f68aecc0041dc2bb001c9b2e2cba9e3339",
+      "bytes": 771,
+      "target": "/orleans/docs/grains/grain-versioning/backward-compatibility-guidelines/",
+      "resolvedPath": "/docs/grains/grain-versioning/backward-compatibility-guidelines/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_versioning/compatible_grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "92850e63e129b6b4a0ab66328591803f2d0c92c984a19aec8d28ba0b7bccad21",
+      "bytes": 691,
+      "target": "/orleans/docs/grains/grain-versioning/compatible-grains/",
+      "resolvedPath": "/docs/grains/grain-versioning/compatible-grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_versioning/deploying_new_versions_of_grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "01335072197ca85a4af60610d0c201fc954a7836b1cde6e10f67fdd6cd6446b9",
+      "bytes": 766,
+      "target": "/orleans/docs/grains/grain-versioning/deploying-new-versions-of-grains/",
+      "resolvedPath": "/docs/grains/grain-versioning/deploying-new-versions-of-grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_versioning/grain_versioning.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "8c7e03cad65a37620cca52e96ef2f02e0e7b9b5fe8d9e35b5dad22b193b45f3f",
+      "bytes": 686,
+      "target": "/orleans/docs/grains/grain-versioning/grain-versioning/",
+      "resolvedPath": "/docs/grains/grain-versioning/grain-versioning/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grain_versioning/version_selector_strategy.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1bc169be00737c7af86b888a0a17be95435ef3eab36fb7d91c596cfe95b38090",
+      "bytes": 731,
+      "target": "/orleans/docs/grains/grain-versioning/version-selector-strategy/",
+      "resolvedPath": "/docs/grains/grain-versioning/version-selector-strategy/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/grainservices.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "31f31d3a876127b092795ec4a9af89bc2498f8ea6ae688aa36adfc6a0b296798",
+      "bytes": 586,
+      "target": "/orleans/docs/grains/grainservices/",
+      "resolvedPath": "/docs/grains/grainservices/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/interceptors.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "75592d1f5d37ab5a9a3209326c5519560ac5e15d788f3a77e9d4d860a4813d6e",
+      "bytes": 581,
+      "target": "/orleans/docs/grains/interceptors/",
+      "resolvedPath": "/docs/grains/interceptors/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/observers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d4ed293bb94f178b986762d89c032c84ee9c71c950d5e9aba26bc3e9601fe7e8",
+      "bytes": 566,
+      "target": "/orleans/docs/grains/observers/",
+      "resolvedPath": "/docs/grains/observers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/oneway.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "ad2aed270257fda07e9541d17ce76c2431ca2db28033492226373b29d6abb7ba",
+      "bytes": 551,
+      "target": "/orleans/docs/grains/oneway/",
+      "resolvedPath": "/docs/grains/oneway/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/reentrancy.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/request_context.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "4527bc63725a73a8f96a8fd44f7e381d2c0c644614d4887a0afb69efe705a025",
+      "bytes": 596,
+      "target": "/orleans/docs/grains/request-context/",
+      "resolvedPath": "/docs/grains/request-context/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/stateless_worker_grains.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "83d74ced92b5e743506dff7ad65390c02aa2265513cece12f8220e7b0b12eb3b",
+      "bytes": 636,
+      "target": "/orleans/docs/grains/stateless-worker-grains/",
+      "resolvedPath": "/docs/grains/stateless-worker-grains/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/timers_and_reminders.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "37ca07c53b28edb247f742d4be6308151b61b5880e7510bfd2d2edcf3a32819a",
+      "bytes": 621,
+      "target": "/orleans/docs/grains/timers-and-reminders/",
+      "resolvedPath": "/docs/grains/timers-and-reminders/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/grains/transactions.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "92e6ca79a08fe09903c611b7e33330b60f43b5308d5dfd1051313b990949edc8",
+      "bytes": 581,
+      "target": "/orleans/docs/grains/transactions/",
+      "resolvedPath": "/docs/grains/transactions/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/client.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1c0f4155bf24ea0acdcb940d0db467adba0c1de63a40d7a4a2def497aa12d0c8",
+      "bytes": 541,
+      "target": "/orleans/docs/host/client/",
+      "resolvedPath": "/docs/host/client/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/activation_garbage_collection.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/adonet_configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "6ada5ec5043c219168a1d7cb7496f13c9a2dea11cf71e3a687fbb04e7f060fdd",
+      "bytes": 711,
+      "target": "/orleans/docs/host/configuration-guide/adonet-configuration/",
+      "resolvedPath": "/docs/host/configuration-guide/adonet-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/client_configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f1cc62b10b0ace7112ea24219f52fdbead1aa6f61a9c3bd6a619ca15b22ae5e3",
+      "bytes": 711,
+      "target": "/orleans/docs/host/configuration-guide/client-configuration/",
+      "resolvedPath": "/docs/host/configuration-guide/client-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/configuring_.NET_garbage_collection.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/configuring_ADO.NET_providers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "06ff04771a6958d2f38d44d8d5ba6b8e3fbf55adfc3a5940608655edc22ecf9d",
+      "bytes": 606,
+      "target": "/orleans/docs/host/configuration-guide/",
+      "resolvedPath": "/docs/host/configuration-guide/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/list_of_options_classes.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "3aacc88491ccaaed41a4f448ea75e444bdd87d4f099c4d0505ff4d17813b140b",
+      "bytes": 726,
+      "target": "/orleans/docs/host/configuration-guide/list-of-options-classes/",
+      "resolvedPath": "/docs/host/configuration-guide/list-of-options-classes/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/local_development_configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5c0e0eeb0bcc103e157e1de3d4e8b9324809a6472add249f1d06be6198fa3ce1",
+      "bytes": 766,
+      "target": "/orleans/docs/host/configuration-guide/local-development-configuration/",
+      "resolvedPath": "/docs/host/configuration-guide/local-development-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/serialization.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "39a5130f3035b52cea42e4cfd75793ac2ba25fe3f679dac3fbde3b98e84e690e",
+      "bytes": 676,
+      "target": "/orleans/docs/host/configuration-guide/serialization/",
+      "resolvedPath": "/docs/host/configuration-guide/serialization/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/server_configuration.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "26c1c9fd6be938a5e1c4720738c6d91007a3a97a9ebc2f19f77be3d778b4ebaf",
+      "bytes": 711,
+      "target": "/orleans/docs/host/configuration-guide/server-configuration/",
+      "resolvedPath": "/docs/host/configuration-guide/server-configuration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/shutting_down_orleans.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e4c52187c3288c8691a2f0cfa12f66cdc39a611f56566e549afd1880ae692580",
+      "bytes": 716,
+      "target": "/orleans/docs/host/configuration-guide/shutting-down-orleans/",
+      "resolvedPath": "/docs/host/configuration-guide/shutting-down-orleans/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/startup_tasks.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "697c854c7c0cce94a0f393e768bc5a8a06ccf05b7613b318dbbf1fbcc5fcb75d",
+      "bytes": 676,
+      "target": "/orleans/docs/host/configuration-guide/startup-tasks/",
+      "resolvedPath": "/docs/host/configuration-guide/startup-tasks/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/configuration_guide/typical_configurations.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "01c994502ad06713902365a5d36af5d3569e014c0dad1fe12c9743ec74fba447",
+      "bytes": 721,
+      "target": "/orleans/docs/host/configuration-guide/typical-configurations/",
+      "resolvedPath": "/docs/host/configuration-guide/typical-configurations/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/grain_directory.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cd7ace3931823d1e96c075b1daa6fec3092c48d8c118af2749aba3e58de6917b",
+      "bytes": 586,
+      "target": "/orleans/docs/host/grain-directory/",
+      "resolvedPath": "/docs/host/grain-directory/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/heterogeneous_silos.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "92b6e5eb221e0dfd962797281cdc58dd77bf51d4b617bba1b191be808190979c",
+      "bytes": 606,
+      "target": "/orleans/docs/host/heterogeneous-silos/",
+      "resolvedPath": "/docs/host/heterogeneous-silos/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/monitoring/client_error_code_monitoring.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "3ed233e3af8bdeeccf9b162cf0f64e9d61ee68c8d063d95818a81c30242518e6",
+      "bytes": 706,
+      "target": "/orleans/docs/host/monitoring/client-error-code-monitoring/",
+      "resolvedPath": "/docs/host/monitoring/client-error-code-monitoring/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/monitoring/silo_error_code_monitoring.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "44adce340a41750067a8208e6243b0d64a86bd7e20a2bbc3a7728db57765f60f",
+      "bytes": 696,
+      "target": "/orleans/docs/host/monitoring/silo-error-code-monitoring/",
+      "resolvedPath": "/docs/host/monitoring/silo-error-code-monitoring/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/powershell_client.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1c0f4155bf24ea0acdcb940d0db467adba0c1de63a40d7a4a2def497aa12d0c8",
+      "bytes": 541,
+      "target": "/orleans/docs/host/client/",
+      "resolvedPath": "/docs/host/client/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/host/silo_lifecycle.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "35e10d0cf1383593d0041185af783b1386699ef7702df4c5abb944cd827ecda6",
+      "bytes": 581,
+      "target": "/orleans/docs/host/silo-lifecycle/",
+      "resolvedPath": "/docs/host/silo-lifecycle/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/cluster_management.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "232f1a7f96f4ee346d693358c708cb2b2e5e57e6dd096cc6b1163cc2da741a26",
+      "bytes": 651,
+      "target": "/orleans/docs/implementation/cluster-management/",
+      "resolvedPath": "/docs/implementation/cluster-management/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/load_balancing.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "07f42ef816819ed7235adc4c9d2ce9c9084729a5aa34101589422452d77ba43e",
+      "bytes": 631,
+      "target": "/orleans/docs/implementation/load-balancing/",
+      "resolvedPath": "/docs/implementation/load-balancing/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/messaging_delivery_guarantees.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "18d7c8d137018cc2c0f5f1dde13fd7715aa2857477d9aaf359e24306a4f7727d",
+      "bytes": 706,
+      "target": "/orleans/docs/implementation/messaging-delivery-guarantees/",
+      "resolvedPath": "/docs/implementation/messaging-delivery-guarantees/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/orleans_lifecycle.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "25219cde3a2e1a4eecd8003c2f43236efddae692e77ac3c0eade5de8b3eef9b9",
+      "bytes": 646,
+      "target": "/orleans/docs/implementation/orleans-lifecycle/",
+      "resolvedPath": "/docs/implementation/orleans-lifecycle/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/scheduler.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5e6abb21550115028d926e19b6745e7ab0754b310eb938116f314f4b02b16f6c",
+      "bytes": 606,
+      "target": "/orleans/docs/implementation/scheduler/",
+      "resolvedPath": "/docs/implementation/scheduler/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/streams_implementation/azure_queue_streams.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d4072729708592211803db23c78be9e2bc43595657c5b365f3dcd35b400b1741",
+      "bytes": 771,
+      "target": "/orleans/docs/implementation/streams-implementation/azure-queue-streams/",
+      "resolvedPath": "/docs/implementation/streams-implementation/azure-queue-streams/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/streams_implementation/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a33d3789ca5e4c6fcb869931df78cbed1d6e41358a53a6b0398333a5ee2c7ed4",
+      "bytes": 671,
+      "target": "/orleans/docs/implementation/streams-implementation/",
+      "resolvedPath": "/docs/implementation/streams-implementation/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/implementation/testing.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d43065e09c59dfbc5b4fd914b35edf82cead5d1ecdbb132082d36ec9dc28e2a2",
+      "bytes": 596,
+      "target": "/orleans/docs/implementation/testing/",
+      "resolvedPath": "/docs/implementation/testing/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/migration/codegen.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/migration/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b73b243b9adff04571fa81e9fcbb1c3472b5f0abe2a8e696643bde8ccc6cd7ae",
+      "bytes": 686,
+      "target": "/orleans/docs/grains/journaling/durable-jobs-migration/",
+      "resolvedPath": "/docs/grains/journaling/durable-jobs-migration/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/migration/migration-1.5.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/migration/migration-azure-2.0.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/best_practices.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "3dd8a7b652a9bf4f5ac39affdcb9ec8e655259712bbe64db0d4a8dfd13016b95",
+      "bytes": 606,
+      "target": "/orleans/docs/resources/best-practices/",
+      "resolvedPath": "/docs/resources/best-practices/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/contributing.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/documentation_guidelines.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c42f09b94be4799acd53ed25f15411f68aecc0041dc2bb001c9b2e2cba9e3339",
+      "bytes": 771,
+      "target": "/orleans/docs/grains/grain-versioning/backward-compatibility-guidelines/",
+      "resolvedPath": "/docs/grains/grain-versioning/backward-compatibility-guidelines/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/frequently_asked_questions.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "aa739c599ab82844c074b0b1ce4861dc8fca6de126463047865253e950dd9887",
+      "bytes": 666,
+      "target": "/orleans/docs/resources/frequently-asked-questions/",
+      "resolvedPath": "/docs/resources/frequently-asked-questions/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/links.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "5b5f34bb45909555ec3eb0c62de19e5bf5bfb717a8bfd5bbe304c005a1f5c5e8",
+      "bytes": 561,
+      "target": "/orleans/docs/resources/links/",
+      "resolvedPath": "/docs/resources/links/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/nuget_packages.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "cb8ca60ba29fced2e2893f96a34c146e14462e8c30212e757048faed1dde554e",
+      "bytes": 606,
+      "target": "/orleans/docs/resources/nuget-packages/",
+      "resolvedPath": "/docs/resources/nuget-packages/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/orleans_architecture_principles_and_approach_I.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/orleans_thinking_big_and_small.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "1d4cd16566090c3e6ef9047fcfae22653f88445b908dae1a1483abb950453a50",
+      "bytes": 686,
+      "target": "/orleans/docs/resources/orleans-thinking-big-and-small/",
+      "resolvedPath": "/docs/resources/orleans-thinking-big-and-small/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/presentations/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/resources/student_projects.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "a2a6ff578963973254b34e381785b128a3c65130651207cb5c976b6c892aab06",
+      "bytes": 616,
+      "target": "/orleans/docs/resources/student-projects/",
+      "resolvedPath": "/docs/resources/student-projects/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/streaming/stream_providers.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d237ea9dbd77d98ca99d3fa63164b2a39d1fc8dfd158702517fa7095f0d305fa",
+      "bytes": 616,
+      "target": "/orleans/docs/streaming/stream-providers/",
+      "resolvedPath": "/docs/streaming/stream-providers/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/streaming/streams_programming_APIs.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "54b8449db2252699c06013e34245d651b4ec6f42c965e28f196fa02b32a9f5c1",
+      "bytes": 656,
+      "target": "/orleans/docs/streaming/streams-programming-apis/",
+      "resolvedPath": "/docs/streaming/streams-programming-apis/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/streaming/streams_quick_start.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "697b42af00317bfc16f9cf2f0bd3e557a09a2e63b68d33b776d2880b5aea4ae1",
+      "bytes": 631,
+      "target": "/orleans/docs/streaming/streams-quick-start/",
+      "resolvedPath": "/docs/streaming/streams-quick-start/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/streaming/streams_why.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "be1a971f584cb83303bc05e445357b6310a8b1aa424ef391af778857d951ad05",
+      "bytes": 591,
+      "target": "/orleans/docs/streaming/streams-why/",
+      "resolvedPath": "/docs/streaming/streams-why/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials-and-samples/multi-project-orleans-application/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials-and-samples/overview-helloworld/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f40ca52b396168874923d550971d6b1b3d2f33b2319712c1f8f369570479379c",
+      "bytes": 651,
+      "target": "/orleans/docs/tutorials-and-samples/hello-world/",
+      "resolvedPath": "/docs/tutorials-and-samples/hello-world/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials-and-samples/tutorial-1/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/Adventure.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "c2afd646f5b3b84197e0869a13545ae72047609fd169010955323e44d34feca1",
+      "bytes": 641,
+      "target": "/orleans/docs/tutorials-and-samples/adventure/",
+      "resolvedPath": "/docs/tutorials-and-samples/adventure/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/Hello-World.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f40ca52b396168874923d550971d6b1b3d2f33b2319712c1f8f369570479379c",
+      "bytes": 651,
+      "target": "/orleans/docs/tutorials-and-samples/hello-world/",
+      "resolvedPath": "/docs/tutorials-and-samples/hello-world/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/custom_grain_storage.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "d2d427b19e6c96cfd495f1d8d36e14b22cc2ee7b5c9af5541d8e675d7c075a9c",
+      "bytes": 696,
+      "target": "/orleans/docs/tutorials-and-samples/custom-grain-storage/",
+      "resolvedPath": "/docs/tutorials-and-samples/custom-grain-storage/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/index.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "2d6208dbea492b1825d4d6be95de5ddfc6f1747e0d52b73a203a2c07ceedb019",
+      "bytes": 591,
+      "target": "/orleans/docs/tutorials-and-samples/",
+      "resolvedPath": "/docs/tutorials-and-samples/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/overview_helloworld.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "f40ca52b396168874923d550971d6b1b3d2f33b2319712c1f8f369570479379c",
+      "bytes": 651,
+      "target": "/orleans/docs/tutorials-and-samples/hello-world/",
+      "resolvedPath": "/docs/tutorials-and-samples/hello-world/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/testing.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/tutorials_and_samples/tutorial_1.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "b3361ea5d75883c42b23aa13981a6f2b8866181878d07e42def1bcf4a4b4b5af",
+      "bytes": 686,
+      "target": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "resolvedPath": "/docs/quickstarts/build-your-first-orleans-app/",
+      "targetInManifest": true
+    },
+    {
+      "file": "docs/whats_new_in_orleans.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "e4c52187c3288c8691a2f0cfa12f66cdc39a611f56566e549afd1880ae692580",
+      "bytes": 716,
+      "target": "/orleans/docs/host/configuration-guide/shutting-down-orleans/",
+      "resolvedPath": "/docs/host/configuration-guide/shutting-down-orleans/",
+      "targetInManifest": true
+    },
+    {
+      "file": "pages.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    },
+    {
+      "file": "tags.html",
+      "classification": "redirect",
+      "title": "Orleans documentation moved",
+      "sha256": "27b6fd89cc55517cce86622c36e17c3b9c21f541640aaf25bec5f6cb1994fca2",
+      "bytes": 481,
+      "target": "/orleans/docs/",
+      "resolvedPath": "/docs/",
+      "targetInManifest": true
+    }
+  ]
+}

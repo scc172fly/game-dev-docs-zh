@@ -1,0 +1,784 @@
+{
+  "revision": "navigation-state-and-chinese-controls-2026-11-24",
+  "purpose": "完整静态下载包：解压后打开 index.html；同一文件可部署到 GitHub Pages。",
+  "architecture": {
+    "entry": "index.html",
+    "runtimeRequiresServer": false,
+    "runtimeRequiresBuild": false,
+    "dataTransport": "经典 script 载荷；不使用 fetch 或 XMLHttpRequest 读取内容",
+    "mermaid": "本地单文件经典脚本",
+    "resourcePaths": "相对于站点目录",
+    "githubPagesJekyllDisabled": true
+  },
+  "contentPreservation": {
+    "pages": 15235,
+    "contentChunks": 188,
+    "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+    "englishOriginalCodeHashes": "all 21,362 verified",
+    "chineseNonCommentCode": "all 21,362 verified; no non-comment character changes",
+    "fullContentValidation": "publication-verification.json",
+    "commentsReview": "code-comments-review.json",
+    "homepageSourceBlocks": 49,
+    "latestRepositoryRelease": "v10.4.2 (checked 2026-11-24)",
+    "currentUiRevisionPayloads": "191个权威数据载荷与此前已通过全量审计的版本逐字节一致；仅更新界面及审校报告。"
+  },
+  "automatedChecks": {
+    "classicPayloadsExecutedAndEquivalent": 191,
+    "payloadErrors": 0,
+    "localReferenceErrors": 0,
+    "externalMediaDependencies": 0,
+    "fileURLWithSpacesAndChinesePath": "Node VM 合成 document 测试通过",
+    "httpRootAndRepositorySubpath": "Node VM 合成 document 测试通过",
+    "loaderCacheConcurrencyRetryAndCleanup": "passed",
+    "copyFallbackSuccessAndFailureCases": "passed",
+    "mermaidModuleImports": 0,
+    "currentFullContentAudit": "full-content-audit.json",
+    "currentApiLabelHrefBindingsVerified": 79708,
+    "currentContentErrors": 0,
+    "currentThemeBehaviorCases": 19,
+    "currentThemeBehaviorPassed": 19,
+    "currentIncrementalReport": "navigation-incremental-check.json",
+    "navigationStateCases": 31,
+    "navigationStatePassed": 31
+  },
+  "verificationLimits": [
+    "浏览器禁止file://导航，未完成真实本地双击浏览器验收；本地路径与经典脚本加载已通过Node VM及HTTP预览验证。",
+    "未实际向用户GitHub仓库发布；ZIP包含已构建静态文件和发布步骤。",
+    "原有58,463个单元的逐句AI译审记录继续沿用并进行全量结构、引用、代码与状态复核；本轮未宣称重新人工通读全部译文。",
+    "本轮逐列浏览器验收覆盖338条路线，不表示15,235页全部完成逐页视觉审阅。",
+    "原生下拉弹出菜单的系统绘制细节随浏览器与操作系统变化；复用官方HTML/CSS/SVG结构与原生控件，不固定模拟某个系统的弹出菜单。"
+  ],
+  "supportingReports": [
+    "payload-equivalence-report.json",
+    "loader-path-report.json",
+    "local-reference-report.json",
+    "comments-branding-version-report.json",
+    "homepage-restoration-report.json",
+    "full-site-review-report.json",
+    "full-content-audit.json",
+    "source-presentation-audit.json",
+    "browser-full-site-review-report.json",
+    "image-alt-review.json",
+    "compare-component-audit.json",
+    "compare-browser-component-report.json",
+    "homepage-bilingual-theme-report.json",
+    "theme-browser-review.json",
+    "theme-behavior-report.json",
+    "content-preservation-report.json",
+    "final-frontend-preservation-report.json",
+    "compare-theme-review-report.json",
+    "navigation-state-review.json",
+    "nav-state-report.json",
+    "navigation-incremental-check.json"
+  ],
+  "priorStaticEditionBrowserChecks": {
+    "environment": "Chromium，HTTP 静态预览",
+    "repositorySubpath": "passed",
+    "guideAndAPIReading": "passed",
+    "chineseEnglishAndBilingualModes": "passed",
+    "fullTextSearch": {
+      "query": "同进程托管",
+      "matches": 14,
+      "titleOnlyMatches": 0
+    },
+    "apiSearchAndNavigation": "passed",
+    "clipboard": "成功复制并读回 public interface IGrainFactory",
+    "mermaidSVGRendering": {
+      "englishAndChineseVersions": 44,
+      "rendered": 44,
+      "failed": 0,
+      "unexpectedFetchXHRWebSocketWorkerRequests": 0
+    },
+    "inDocumentDiagramsLightDarkAndEnlargement": "passed",
+    "readerWithFetchXHRAndWorkerDisabled": "passed",
+    "scope": "此前静态版的浏览器验证证据；本轮未修改加载器、图表引擎、图表源与搜索逻辑。"
+  },
+  "priorCommentsEditionBrowserChecks": {
+    "environment": "Chromium HTTP 静态预览",
+    "screenshotReportedComment": "当前执行轮次完成后结束此激活实例。",
+    "chineseCodeCommentVisible": true,
+    "englishOriginalCommentPreserved": true,
+    "compareModeTwoCodePanes": true,
+    "nestedListCodeCommentVisible": true,
+    "headerLogoLoaded": true,
+    "faviconRelativeHref": "assets/brand/favicon.svg",
+    "lightAndDarkThemeVisualCheck": "passed",
+    "versionHeaderAndAuditTable": "passed",
+    "responsiveIframeCSSWidths": [
+      320,
+      375,
+      768
+    ],
+    "responsiveDocumentClientWidths": [
+      305,
+      360,
+      753
+    ],
+    "responsiveDocumentScrollWidths": [
+      305,
+      360,
+      753
+    ],
+    "responsiveHorizontalDocumentOverflow": false,
+    "copyButtonSuccessState": "已复制",
+    "clipboardReadback": "浏览器虚拟剪贴板接口未返回页面复制内容；未将回读列为通过。复制按钮的数据来源为当前可见代码文本。",
+    "scope": "上一版注释、官方图标、版本说明的浏览器检查；本轮数据载荷未变。"
+  },
+  "priorHomepageEditionBrowserChecks": {
+    "environment": "Chromium HTTP 静态预览 http://127.0.0.1:4173/",
+    "fidelity": [
+      {
+        "mode": "zh",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 49,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      },
+      {
+        "mode": "en",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 49,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      },
+      {
+        "mode": "compare",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 98,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      }
+    ],
+    "fidelityMethod": "逐块比较源HTML与渲染片段的文本（仅折叠空白）、链接顺序和href；代码pre文本逐字符比较；原始block ID顺序及5个源锚点唯一性全部匹配。",
+    "compareModeDOMFragments": 96,
+    "compareModeSharedCodeFragments": 2,
+    "heroOfficialImageLoaded": true,
+    "ctaNavigation": [
+      {
+        "label": "开始使用",
+        "target": "#/docs/quickstarts/build-your-first-orleans-app/",
+        "observedHeading": "教程：构建第一个 Orleans 应用",
+        "status": "pass"
+      },
+      {
+        "label": "浏览文档",
+        "target": "#/docs/",
+        "observedHeading": "Orleans 文档",
+        "status": "pass"
+      },
+      {
+        "label": "查看示例",
+        "target": "#/samples/",
+        "observedHeading": "Orleans 示例",
+        "status": "pass"
+      }
+    ],
+    "normalDocumentSidebarAndTOCRestored": true,
+    "mobileMenuOverviewNavigationAndAutoClose": true,
+    "overviewHeading": "中文文档导航",
+    "homepageSearch": {
+      "query": "官网首页",
+      "matches": 1,
+      "openedRoute": "#/original-home/",
+      "status": "pass"
+    },
+    "legacyHomepageAnchor": {
+      "route": "#/original-home/::programming-model",
+      "target": "programming-model",
+      "unique": true,
+      "visibleAfterNavigation": true
+    },
+    "copyButtonSuccessState": "已复制",
+    "clipboardReadback": "本轮只确认复制按钮成功状态，未将剪贴板回读列为通过。",
+    "desktopLightDarkVisualCheck": "passed",
+    "bilingualDesktopAndMobileVisualCheck": "passed",
+    "responsive": [
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "zh",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "en",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "compare",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "zh",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "en",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "compare",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "zh",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "en",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "compare",
+        "horizontalOverflow": false
+      }
+    ],
+    "scope": "上一版恢复官网首页的检查记录，保留作为历史证据；本版浏览器复查见browser-full-site-review-report.json。"
+  },
+  "priorPresentationEditionBrowserChecks": {
+    "reviewDate": "2026-11-24",
+    "status": "pass",
+    "environment": "Chromium HTTP static preview at http://127.0.0.1:4173/; application DOM inspected through browser UI automation",
+    "scope": "浏览器自动逐页几何检查与代表性页面目视核对；不是对15,235页逐页目视审阅。",
+    "layoutSweep": {
+      "status": "passed",
+      "uniqueRoutes": 338,
+      "routeInventory": "browser-audit-routes.json",
+      "allGuides": 254,
+      "allApiPackagePages": 64,
+      "apiIndex": 1,
+      "representativeApiTypeCategoryMemberPages": 19,
+      "cases": 676,
+      "frameCSSWidths": [
+        1280,
+        375
+      ],
+      "documentClientWidths": [
+        1265,
+        360
+      ],
+      "casesPerWidth": 338,
+      "mode": "zh",
+      "errors": [],
+      "checks": [
+        "等待目标页面ID及中文模式",
+        "页面无水平溢出；代码、表格和图表滚动容器另行处理",
+        "原站提示框SVG具有有效几何",
+        "已载入图片naturalWidth有效",
+        "页头PNG宽高比为1",
+        "文档内Mermaid渲染无错误"
+      ],
+      "asidesObserved": 72,
+      "linkCardsObserved": 20,
+      "diagramsRendered": 44,
+      "imagesObserved": 748,
+      "lazyImageObservationsPending": 72,
+      "imageCompletionFollowup": "随后独立浏览器实际载入全部25个被引用的唯一图片文件，包括页头、favicon、Hero与正文／示例图；全部成功。"
+    },
+    "homepageFidelity": [
+      {
+        "mode": "zh",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 49,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      },
+      {
+        "mode": "en",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 49,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      },
+      {
+        "mode": "compare",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 98,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      }
+    ],
+    "homepageResponsive": [
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "zh",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "en",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "compare",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "zh",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "en",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "compare",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "zh",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "en",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "compare",
+        "brandWidth": 32,
+        "brandHeight": 32,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 1280,
+        "documentClientWidth": 1265,
+        "documentScrollWidth": 1265,
+        "mode": "zh",
+        "brandWidth": 40,
+        "brandHeight": 40,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 1280,
+        "documentClientWidth": 1265,
+        "documentScrollWidth": 1265,
+        "mode": "en",
+        "brandWidth": 40,
+        "brandHeight": 40,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      },
+      {
+        "frameCSSWidth": 1280,
+        "documentClientWidth": 1265,
+        "documentScrollWidth": 1265,
+        "mode": "compare",
+        "brandWidth": 40,
+        "brandHeight": 40,
+        "cards": 14,
+        "horizontalOverflow": false,
+        "heroAspectRatioWithin0_02OfSource": true,
+        "status": "pass"
+      }
+    ],
+    "sourceStyleComparison": {
+      "viewportCSSWidth": 1348,
+      "contentWidth": 1080,
+      "cardWidth": 528,
+      "cardPadding": 40,
+      "cardRadius": 0,
+      "h1FontSize": 64,
+      "h1LineHeight": 76.8,
+      "headerLogoSize": [
+        40,
+        40
+      ],
+      "headerLogoBackground": "transparent",
+      "cardIcons": 14,
+      "officialSvgFill": "currentColor",
+      "officialSvgStroke": "none",
+      "manualComparison": "与同一冻结官方首页HTML及原CSS参照页直接比较；同时目视核对桌面、320px手机、768px平板与亮暗主题。"
+    },
+    "imageFileLoadCheck": {
+      "status": "pass",
+      "uniqueImages": 25,
+      "failed": 0,
+      "covers": "全部实际引用的22个正文／示例图片路径，加页头PNG、Hero SVG与标签页favicon；重复favicon引用合并。"
+    },
+    "sampleGallery": {
+      "chineseCards": 29,
+      "englishCards": 29,
+      "chipContainersPerLanguage": 29,
+      "chipsPerLanguage": 102,
+      "chineseFilter": "日志化",
+      "filterMatches": 4,
+      "sourcePlaceholderIconSize": [
+        52,
+        52
+      ],
+      "status": "pass"
+    },
+    "readOnlyTasks": {
+      "representativePage": "/docs/deployment/production-readiness/",
+      "checkboxes": 38,
+      "disabled": 38,
+      "checked": 0,
+      "allSourceCheckboxes": 81,
+      "fullSourceInventory": "source-presentation-audit.json"
+    },
+    "imageLightbox": {
+      "observedPage": "/docs/overview/",
+      "openedOriginalImage": true,
+      "imageLoaded": true,
+      "escapeCloses": true,
+      "closingClearsSrcAndAlt": true,
+      "sourceEnabledImages": 3,
+      "enabledPageCount": 2,
+      "scope": "按钮、遮罩和键盘行为另经实现核对；浏览器实测原图打开与Escape关闭。"
+    },
+    "imageAlt": {
+      "status": "pass",
+      "uniqueImages": 6,
+      "modes": [
+        "zh",
+        "en",
+        "compare"
+      ],
+      "observedLanguageChecks": 24,
+      "errors": [],
+      "reviewFile": "image-alt-review.json"
+    },
+    "versionAndBrand": {
+      "headerSubtitleRemoved": true,
+      "singleLineBrand": "Microsoft Orleans",
+      "releaseLabel": "最新 v10.4.2",
+      "releaseHref": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+      "releasePublishedDate": "2026-10-30",
+      "releaseCheckedDate": "2026-11-24",
+      "snapshotShownSeparately": true,
+      "documentVersionDetailsInitiallyClosed": true,
+      "documentVersionSummaryDesktopHeight": 30.390625,
+      "phoneHeaderLogoSize": [
+        32,
+        32
+      ]
+    },
+    "finalIncrementalChange": "676次布局巡检后仅新增6张正文图片的精确中文alt映射；随后以24次中英/对照浏览器检查验证，并复看窄屏、亮暗首页及版本说明。最终语法与静态引用复核见runtime-payload-result.json。",
+    "limits": [
+      "浏览器禁止file://导航，未完成真实本地双击浏览器验收；本地路径与经典脚本加载已通过Node VM及HTTP预览验证。",
+      "未实际向用户GitHub仓库发布；ZIP包含已构建静态文件和发布步骤。",
+      "首次QA夹具受后台帧等待与并发语言切换影响；调整等待方式后从头重跑，676个最终用例全部完成，无产品错误。"
+    ],
+    "scopeCorrection": "这是此前中文模式布局与首页整体检查的历史证据，未逐卡要求中英各自拥有图标；本轮新增的逐列对照检查见compare-theme-review-report.json。"
+  },
+  "priorCompareThemeEditionBrowserChecks": {
+    "environment": "Chromium managed HTTP static preview at http://127.0.0.1:4173/",
+    "compareSweep": {
+      "routes": 338,
+      "routeInventory": "browser-audit-routes.json",
+      "mode": "compare",
+      "viewportCSSWidths": [
+        1280,
+        375
+      ],
+      "cases": 676,
+      "errors": 0,
+      "pairedBlockObservations": 24232,
+      "sharedBlockObservations": 1214,
+      "componentObservations": {
+        "pairedBlocks": 24232,
+        "sharedBlocks": 1214,
+        "iconsEN": 8724,
+        "iconsZH": 8724,
+        "imagesEN": 70,
+        "imagesZH": 70,
+        "asidesEN": 72,
+        "asidesZH": 72,
+        "tablesEN": 484,
+        "tablesZH": 484,
+        "checkboxesEN": 162,
+        "checkboxesZH": 162,
+        "codeControlsEN": 422,
+        "codeControlsZH": 422,
+        "diagramsEN": 44,
+        "diagramsZH": 44
+      },
+      "scope": "全部254个指南、64个API包、1个API总目录和19个API类型/分类/成员代表。不是全部15,235页逐页浏览器验收。"
+    },
+    "homeMatrix": {
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "modes": [
+        "zh",
+        "en",
+        "compare"
+      ],
+      "viewportCSSWidths": [
+        320,
+        375,
+        768,
+        1280
+      ],
+      "cases": 24,
+      "errors": 0,
+      "sourceFragmentChecks": 1568,
+      "maxTitleBodyBoundaryDeltaPx": 0
+    },
+    "interactiveThemeChecks": {
+      "status": "pass",
+      "environment": "Chromium managed HTTP preview",
+      "themeOptions": [
+        "Dark",
+        "Light",
+        "Auto"
+      ],
+      "themeIcons": {
+        "source": "frozen original HTML",
+        "moonSunComputerCSSSize": [
+          14,
+          14
+        ],
+        "chevronCSSSize": [
+          20,
+          20
+        ]
+      },
+      "desktopDarkSelectionAndRefresh": {
+        "selected": "dark",
+        "effective": "dark"
+      },
+      "mobileSidebarAt320px": {
+        "document": "/docs/quickstarts/build-your-first-orleans-app/",
+        "menuOpened": true,
+        "themeControlVisible": true,
+        "selectedAutoEffective": "light",
+        "desktopControlSynced": "auto"
+      },
+      "autoRefresh": {
+        "selected": "auto",
+        "preference": "auto",
+        "effective": "light"
+      },
+      "nativeFocus": {
+        "sourceCSSOverridesRemoved": true,
+        "observedOutline": "rgb(238, 238, 238) auto 1px",
+        "observedOffset": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none",
+        "fontSize": "14px",
+        "note": "Native popup and focus rendering follow the browser and operating system; no fixed Windows popup pixel match is claimed."
+      },
+      "reportedCards": [
+        {
+          "card": "games",
+          "languages": [
+            "en",
+            "zh"
+          ],
+          "iconBoxes": [
+            [
+              31.984375,
+              31.984375
+            ],
+            [
+              31.984375,
+              31.984375
+            ]
+          ]
+        },
+        {
+          "card": "commerce",
+          "languages": [
+            "en",
+            "zh"
+          ],
+          "iconBoxes": [
+            [
+              31.984375,
+              31.984375
+            ],
+            [
+              31.984375,
+              31.984375
+            ]
+          ]
+        }
+      ],
+      "finalHomeIconCounts": {
+        "en": 14,
+        "zh": 14
+      },
+      "systemChangeScope": "Real-source VM exercises matchMedia changes; the browser OS theme was not changed.",
+      "incrementalChangeAfterSweeps": "Removed only the custom theme select focus-visible rule to match original native focus styling. Rechecked actual desktop/mobile controls and the reported bilingual cards, then reran final frontend/data fingerprint checks. No renderer, JavaScript or content change followed the sweeps."
+    }
+  },
+  "browserChecks": {
+    "status": "pass",
+    "environment": "Chromium HTTP managed static preview",
+    "initialNavigation": {
+      "groups": 14,
+      "expanded": 14,
+      "including35And70PageGroups": true
+    },
+    "manualMixedStateRefresh": {
+      "closed": [
+        "overview",
+        "start",
+        "grains"
+      ],
+      "otherGroupsOpen": 11,
+      "restoredExactly": true,
+      "currentOverviewGroupRemainedClosed": true
+    },
+    "collapseAllRefresh": {
+      "groups": 14,
+      "open": 0
+    },
+    "crossGroupNavigation": {
+      "from": "/docs/",
+      "to": "/docs/grains/",
+      "openGroups": [
+        "grains"
+      ]
+    },
+    "languageChangeAndRefresh": {
+      "currentGroupKeptClosed": true,
+      "openGroups": []
+    },
+    "immediateClickThenRefresh": {
+      "afterOpening": true,
+      "afterClosing": false,
+      "synchronousPersistenceFixVerified": true
+    },
+    "keyboard": {
+      "EnterOpens": true,
+      "SpaceCloses": true,
+      "EnterThenRefreshRetains": [
+        "grains"
+      ]
+    },
+    "homepageNavigation": {
+      "sidebarTopLinks": [
+        "中文文档导航"
+      ],
+      "sidebarHomepageShortcutRemoved": true,
+      "headerBrandClicked": true,
+      "observedDestination": "http://127.0.0.1:4173/#/",
+      "homepageRendered": true
+    },
+    "themeLabels": {
+      "desktop": [
+        "深色",
+        "浅色",
+        "自动"
+      ],
+      "mobile": [
+        "深色",
+        "浅色",
+        "自动"
+      ],
+      "values": [
+        "dark",
+        "light",
+        "auto"
+      ],
+      "selectedTextObserved": "深色"
+    },
+    "scope": "目录交互的浏览器检查，加最终首页入口和中文控件核对；本轮没有重复全站676项对照巡检。"
+  }
+}

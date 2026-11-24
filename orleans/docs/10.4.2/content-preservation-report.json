@@ -1,0 +1,179 @@
+{
+  "status": "pass",
+  "completedAtUtc": "2026-11-24T05:44:23.164593+00:00",
+  "scope": "Data preservation and precise source-based test strategy for a frontend-only bilingual icon repair. This report does not claim the repaired UI has passed browser tests.",
+  "headline": "191 个数据载荷全部与上一轮已通过审计的版本逐字节一致；全站中英数据块完整。原站图标已逐源实例映射，供对照模式按列验证。",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "dataPreservation": {
+    "previousCompleteAudit": "/workspace/scratch/cbbee76bb734/site-audit-work/full-content-audit.json",
+    "previousAuditSha256": "e9a1c682943c2c13ed43f552c4fafbc91e85372e360f85c9e7971560503bc884",
+    "dataPayloadCount": 191,
+    "all191ScriptPayloadsUnchanged": true,
+    "allManifestPayloadEntriesUnchanged": true,
+    "contentPages": 15235,
+    "contentBlocks": 164126,
+    "missingEnglishOrChineseBlocks": 0,
+    "nonReviewedCurrentBlocks": 0,
+    "currentLightweightChecks": {
+      "contentChunks": 188,
+      "pages": 15235,
+      "blocks": 164126,
+      "sharedUnchangedCodeBlocks": 21128,
+      "embeddedCodeBlocksInNonCodeContainers": 33,
+      "differentEnglishChineseCodeBlocks": 169,
+      "diagramBlocks": 22
+    },
+    "unchangedTextCodeLinksAndTables": "All authoritative content JSON literals and classic script bytes are identical to the previously validated payloads. The previous complete source-to-English, Chinese reviewed-content, code/non-comment, link/API binding, table, anchor and image checks therefore remain applicable.",
+    "inheritedChecks": {
+      "pages": 15235,
+      "blocks": 164126,
+      "inlineCodeSpans": 57937,
+      "tables": 332,
+      "tableCells": 8610,
+      "internalLinkReferences": 95532,
+      "executableCodeBlocksVerified": 21362,
+      "codeCommentOccurrencesReviewed": 350,
+      "codeBlocksWithTranslatedComments": 171,
+      "codeBlocks": 21362,
+      "reviewedPages": 15235,
+      "imageReferences": 70,
+      "originalAssets": 27,
+      "uniqueCodeCommentUnitsReviewed": 316,
+      "runtimePayloadsDecoded": 191,
+      "contentChunks": 188,
+      "englishVisibleTextBlocksChecked": 164104,
+      "bodyInlineSvgOccurrencesEN": 36,
+      "bodyInlineSvgOccurrencesZH": 36,
+      "sourceLinkMappingsChecked": 136008,
+      "immutableApiLinkBindingsChecked": 79708,
+      "tableCellContentsChecked": 17220,
+      "chineseLinkReorderedBlocks": 133,
+      "bodyInlineSvgSourceOccurrences": 36,
+      "contextualOverridesVerified": 2,
+      "actualInternalTargetsChecked": 95532,
+      "actualAnchoredTargetsChecked": 490,
+      "sourceImageOccurrences": 35,
+      "sourceImageUniquePublishedPaths": 22,
+      "emptyInlineSvgSourceOccurrences": 36,
+      "emptyInlineSvgPages": 29,
+      "diagramOccurrences": 22,
+      "uniqueDiagrams": 22,
+      "sourceTranslationUnits": 58463,
+      "reviewedTranslationUnits": 58463,
+      "classicScriptPayloadsExecuted": 191,
+      "dataPayloadScriptBytes": 128385200,
+      "mermaidBilingualParseCases": 44,
+      "localResourceReferenceOccurrences": 76,
+      "distinctLocalResourceFiles": 28,
+      "appScriptStaticReferencesResolved": 23,
+      "actualExternalRuntimeResources": 0,
+      "unusedExternalFontUrlDeclarations": 2,
+      "errors": 0,
+      "sourceAnchorWarnings": 0
+    },
+    "expensiveValidatorsRepeated": false,
+    "baseline": "payload-baseline.json"
+  },
+  "sourceIconCoverage": {
+    "sourcePagesWithMainSvg": 253,
+    "rawPageSourceHashesVerified": 253,
+    "originalMainSvgOccurrences": 2356,
+    "sourceMappedArticleOccurrences": 1606,
+    "sourceMappedArticleInstancesInCompare": 3212,
+    "sharedOriginalFooterNavigationOccurrences": 750,
+    "countsByRole": {
+      "heading-anchor-icon": 1546,
+      "feature-or-scenario-card-icon": 14,
+      "link-card-arrow": 10,
+      "footer-edit-page-icon": 251,
+      "footer-previous-page-icon": 250,
+      "footer-next-page-icon": 249,
+      "aside-status-icon": 36
+    },
+    "mappingGranularity": "Every article occurrence maps to pageId + blockId + iconName; heading anchors include the original anchor. Every source SVG includes its original XPath and source geometry pattern identity.",
+    "all1606ArticleOccurrencesMappedUnambiguously": true,
+    "compareRequirement": "Each listed source occurrence has one icon associated with the English fragment and one with the Chinese fragment. A single shared icon outside both language lanes fails this requirement.",
+    "runtimeTotalSvgCountMustEqualSourceCount": false,
+    "additionalRuntimeIconsAllowed": "API section heading anchors and other application controls can add runtime icons. Source coverage is checked by the mapped block/language identity, never by assuming the entire DOM total must equal 1,606 or 3,212.",
+    "footerScope": "The 750 original edit/previous/next icons are source page chrome. Local navigation is shared; these are inventoried separately and are not asserted as bilingual article duplicates.",
+    "nonSvgSourceControls": {
+      "entries": 15235,
+      "pages": 15235,
+      "roles": {
+        "code-toolbar": 21340,
+        "image-dialog": 15235
+      },
+      "note": "Individual page button totals remain in pages[].raw.button. Verbose duplicate code-toolbar and universal lightbox-close examples are collapsed here; no article control is collapsed."
+    },
+    "expectationsFile": "source-icon-expectations.json"
+  },
+  "newFrontendRegressionFixtures": {
+    "file": "source-fragment-fixtures.json",
+    "realBlockCases": 98,
+    "iconBlockSourceFixtures": 1606,
+    "representativeCaseIds": {
+      "unchanged-shared-code": "bfa8f21cc2984261-40",
+      "table": "9a48d2b31f5086dc-10",
+      "embedded-code-in-other": "ee949d01a00ea6db-13",
+      "translated-code-comments": "a028a14c227a20e6-33",
+      "task-checkbox": "ae2969d2d2ce5a9e-3",
+      "bilingual-mermaid-source": "fa56fd085104c704-9",
+      "embedded-code-in-list": "d81b7104aadd8c22-20",
+      "source-form": "41ae4a844d4e1150-2"
+    },
+    "caseCoverage": [
+      "All 49 official homepage source blocks",
+      "All 36 source aside occurrences",
+      "All 10 original link-card occurrences",
+      "All 14 feature/scenario title icons",
+      "Unchanged shared code",
+      "Code with translated comments",
+      "Code embedded in other/list blocks",
+      "Mermaid source",
+      "Tables",
+      "Task checkboxes",
+      "Source form"
+    ],
+    "requiredRuntimeAssertions": [
+      "Render a case through the real app at en/zh/compare modes. Find source fragments by block ID plus data-source-language.",
+      "Compare fragment textContent exactly to the recorded textContent after excluding data-source-ui nodes. Do not normalize pre whitespace.",
+      "Compare each pre text exactly and by recorded SHA; copy controls must copy the same string.",
+      "For nonshared compare blocks require distinct EN and ZH fragments, not a fallback copy of English.",
+      "Verify href/text bindings and table-cell text order match the fixture for each language.",
+      "Use source-icon-expectations.json to check every expected icon by source block and language, not total SVG count alone."
+    ],
+    "preWhitespaceNormalizationAllowed": false,
+    "sourceTextNormalizationAllowed": false,
+    "helperUiExclusion": "Ignore only nodes explicitly marked data-source-ui when comparing source fragment text. Keep original links, original prose and code.",
+    "runtimeExecutionByThisAgent": false
+  },
+  "rootBrowserStrategyAlignment": {
+    "compareLanguageColumns": "Check icon kind plus SVG geometry separately in EN and ZH. Page totals alone cannot detect a missing Chinese icon offset by an unrelated English icon.",
+    "sharedCode": "Unchanged code is intentionally shared once; source-fragment must declare en zh sharing. Code with translated comments must have distinct language fragments.",
+    "dataColumns": "Source fixture text, pre contents, link href/text, images, aside types, table cells and checkboxes should be verified within the correct block/language fragment.",
+    "responsiveGeometry": "Title/body divider alignment and clipping are layout properties for root browser checks, not determined from immutable payload hashes."
+  },
+  "evidenceFiles": [
+    {
+      "file": "payload-baseline.json",
+      "sha256": "e54508f686e3f31c5c4a862ed209ffebd90f3823f65b86d854a756c7adc618be"
+    },
+    {
+      "file": "source-icon-expectations.json",
+      "sha256": "77754239d7a9ecb21b8fa07193f9bdff3d47266cca5f7a5295cc27ada7d525b1"
+    },
+    {
+      "file": "source-fragment-fixtures.json",
+      "sha256": "b62b198374fea5e0892dedcbebff5dd7e9f36e98b3f5f1aecfee1239f0e380e2"
+    }
+  ],
+  "finalDataHashesRechecked": 191,
+  "repoWrites": 0,
+  "browserUsed": false,
+  "serverStarted": false,
+  "limitations": [
+    "The prior passing content audit does not establish correctness of new frontend transformations; the new fixture cases and source icon mappings are intended for those runtime assertions.",
+    "No browser, layout engine, screenshot or server was used in this task. UI parity and visual geometry remain with root/browser QA.",
+    "The original source icon inventory is complete within official main/article/footer regions. Global application chrome and CSS-only toolbar symbols are separately scoped controls, not article SVG occurrences."
+  ]
+}

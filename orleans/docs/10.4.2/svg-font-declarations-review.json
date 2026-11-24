@@ -1,0 +1,52 @@
+{
+  "status": "not-required-for-current-svg-content",
+  "method": "解析两个原始 SVG 的全部文本节点、font-family 属性及去除 @font-face 后的完整内容；查找 Virgil/Cascadia 是否仍被引用，并映射已发布正文图片引用。",
+  "files": [
+    {
+      "file": "/workspace/sites/orleans-zh-reference/dist/assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX.svg",
+      "originalSnapshotFile": "/workspace/sites/orleans-zh-reference/source/assets-snapshot/_astro/cluster-silo-grain-relationship.BADVHeJX.svg",
+      "fontUrls": [
+        "https://excalidraw.com/Virgil.woff2",
+        "https://excalidraw.com/Cascadia.woff2"
+      ],
+      "textNodes": 7,
+      "activeFontFamilyAttributes": [
+        "Helvetica, Segoe UI Emoji"
+      ],
+      "fontFamilyNameUsedOutsideFontFaceDeclarations": {
+        "Virgil": false,
+        "Cascadia": false
+      },
+      "bodyReferences": [],
+      "conclusion": "两条 @font-face 声明未被图形内容使用；所有文字使用 Helvetica, Segoe UI Emoji。无需为现有图形显示内嵌 Virgil/Cascadia，保留原始资产字节。"
+    },
+    {
+      "file": "/workspace/sites/orleans-zh-reference/dist/assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "originalSnapshotFile": "/workspace/sites/orleans-zh-reference/source/assets-snapshot/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "fontUrls": [
+        "https://excalidraw.com/Virgil.woff2",
+        "https://excalidraw.com/Cascadia.woff2"
+      ],
+      "textNodes": 7,
+      "activeFontFamilyAttributes": [
+        "Helvetica, Segoe UI Emoji"
+      ],
+      "fontFamilyNameUsedOutsideFontFaceDeclarations": {
+        "Virgil": false,
+        "Cascadia": false
+      },
+      "bodyReferences": [
+        {
+          "page": "/docs/overview/",
+          "blockId": "382b25bad3cd2b5e-18",
+          "sourceSrc": "/orleans/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+          "publishedSrc": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg"
+        }
+      ],
+      "conclusion": "两条 @font-face 声明未被图形内容使用；所有文字使用 Helvetica, Segoe UI Emoji。无需为现有图形显示内嵌 Virgil/Cascadia，保留原始资产字节。"
+    }
+  ],
+  "browserUsed": false,
+  "networkUsed": false,
+  "limit": "未运行浏览器网络面板；结论是声明未被当前 SVG 元素或样式引用，不主张一般性 SVG 外部字体加载规则。"
+}

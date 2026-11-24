@@ -1,0 +1,44 @@
+{
+  "check": "Loader URL and registration VM checks with a synthetic document",
+  "browserUsed": false,
+  "fileProtocolBrowserTested": false,
+  "cases": [
+    {
+      "loaderUrl": "file:///C:/Users/Reader/Documents/Orleans%20%E4%B8%AD%E6%96%87/data-loader.js",
+      "scriptUrls": [
+        "file:///C:/Users/Reader/Documents/Orleans%20%E4%B8%AD%E6%96%87/data/catalog.js",
+        "file:///C:/Users/Reader/Documents/Orleans%20%E4%B8%AD%E6%96%87/data/content/c0000.js",
+        "file:///C:/Users/Reader/Documents/Orleans%20%E4%B8%AD%E6%96%87/data/diagrams.js",
+        "file:///C:/Users/Reader/Documents/Orleans%20%E4%B8%AD%E6%96%87/data/search.js"
+      ],
+      "pages": 15235,
+      "concurrentRequestShared": true,
+      "cacheUsed": true
+    },
+    {
+      "loaderUrl": "https://example.github.io/data-loader.js",
+      "scriptUrls": [
+        "https://example.github.io/data/catalog.js",
+        "https://example.github.io/data/content/c0000.js",
+        "https://example.github.io/data/diagrams.js",
+        "https://example.github.io/data/search.js"
+      ],
+      "pages": 15235,
+      "concurrentRequestShared": true,
+      "cacheUsed": true
+    },
+    {
+      "loaderUrl": "https://example.github.io/arbitrary-repository/data-loader.js",
+      "scriptUrls": [
+        "https://example.github.io/arbitrary-repository/data/catalog.js",
+        "https://example.github.io/arbitrary-repository/data/content/c0000.js",
+        "https://example.github.io/arbitrary-repository/data/diagrams.js",
+        "https://example.github.io/arbitrary-repository/data/search.js"
+      ],
+      "pages": 15235,
+      "concurrentRequestShared": true,
+      "cacheUsed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,76 @@
+{
+  "cause": "restore_api_names zips source and translated anchors by order even when legitimate Chinese grammar reorders them; different API names share the same category href.",
+  "reviewedSourceTranslationsCorrect": [
+    {
+      "unitId": "a32b3e35587b2295fc88",
+      "reviewFile": "review-storage-serialization.json",
+      "reviewedPreparedText": "未设置 X2 和 X3 时， X0 AWS SDK for .NET 的凭据与配置文件解析链 X1 会提供凭据。在生产环境中，应优先使用 IAM 角色等工作负载凭据，而不是长期密钥。当部署环境要求显式配置 SDK 时，可以使用 X4 、 X5 、 X6 和 X7 Token X8 。配置文件的设置方式请参阅 X9 AWS CLI 配置文件参考 X10 。"
+    },
+    {
+      "unitId": "a080583ff5dd09da68e1",
+      "reviewFile": "review-hosting.json",
+      "reviewedPreparedText": "X0 和 X1 的默认值均为 30 秒。超时后，Orleans 会取消传给 X4、X5 以及 Grain 生命周期参与者的 X2 CancellationToken X3，然后等待这些代码执行完成。在这些回调返回之前，激活实例会保留其 Grain 目录注册和激活实例作用域内的服务。如果激活超时，激活会在回调返回后失败。如果停用超时，停用会在回调返回后继续。"
+    }
+  ],
+  "findings": [
+    {
+      "kind": "api-link-label-target-binding",
+      "page": "/docs/grains/grain-persistence/dynamodb-storage/",
+      "blockId": "47a912b18f8fa322-3",
+      "language": "zh",
+      "pair": [
+        "AccessKey",
+        "#/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/"
+      ],
+      "expectedCount": 2,
+      "actualCount": 3
+    },
+    {
+      "kind": "api-link-label-target-binding",
+      "page": "/docs/grains/grain-persistence/dynamodb-storage/",
+      "blockId": "47a912b18f8fa322-3",
+      "language": "zh",
+      "pair": [
+        "SecretKey",
+        "#/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/"
+      ],
+      "expectedCount": 2,
+      "actualCount": 1
+    },
+    {
+      "kind": "api-link-label-target-binding",
+      "page": "/docs/host/configuration-guide/activation-collection/",
+      "blockId": "07301e996b646226-52",
+      "language": "zh",
+      "pair": [
+        "OnActivateAsync",
+        "#/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/"
+      ],
+      "expectedCount": 1,
+      "actualCount": 2
+    },
+    {
+      "kind": "api-link-label-target-binding",
+      "page": "/docs/host/configuration-guide/activation-collection/",
+      "blockId": "07301e996b646226-52",
+      "language": "zh",
+      "pair": [
+        "OnDeactivateAsync",
+        "#/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/"
+      ],
+      "expectedCount": 1,
+      "actualCount": 0
+    }
+  ],
+  "originalBuildScriptSha256": "8c85b6d66e843cced92d9aeb299246ff1b47d6d2dd725d3bdd899b25428c8e8d",
+  "originalFunction": "def restore_api_names(source,target):\n    \"\"\"API identifiers are immutable even when a template leaves them outside code.\"\"\"\n    s=html.fragment_fromstring(source,create_parent='div');t=html.fragment_fromstring(target,create_parent='div')\n    source_links=s.xpath('.//a');target_links=t.xpath('.//a')\n    for a,b in zip(source_links,target_links):\n        label=' '.join(a.text_content().split())\n        if label in {'Constructors','Methods','Properties','Fields','Events','Operators'} and a.get('href','').rstrip('/').split('/')[-1]==label.lower():continue\n        if a.get('href')==b.get('href') and '/docs/api/csharp/' in a.get('href','') and re.fullmatch(r'[A-Z][A-Za-z0-9_]*',label):set_inner(b,inner(a))\n    return inner(t)",
+  "qualifiedNameEdgeCase": {
+    "unitId": "1e3be39d0a1f2d229d6d",
+    "page": "/docs/grains/durable-tasks-recipes/",
+    "blockId": "089bf7bed2e53442-19",
+    "reviewFile": "review-durable-tasks.json",
+    "reviewedPreparedText": "X0 让调用 X1 与持久延迟 X2 竞速。运行时记录延迟的到期时间，因此停用后的回放仍保留原截止时间：超时从首次运行开始计时。如果延迟先到期，调用会收到原因为 X3 的取消请求，而 X4 等待承运商的结果。若调用以取消状态结束，则引发 X5 TimeoutException X6，其内部异常是该调用的 X7；如果承运商仍然返回报价，则将该报价作为结果。如果调用先完成，X8 会取消延迟，并返回调用结果或引发其失败。X9 接受的则是绝对截止时间。",
+    "sourceHtml": "<a href=\"/orleans/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">DurableTaskExtensions.WaitAsync</a>\nraces the call, <code>ground-quote/0</code>, with a durable delay, <code>ground-quote/1</code>. The runtime\nrecords the delay’s due time, so a replay after a deactivation keeps the original\ndeadline: the timeout counts from the first run. When the delay elapses first, the call\nreceives a cancellation request with the reason\n<code>The operation timed out after 00:02:00.</code>, and <code>WaitAsync</code> waits for the carrier’s\noutcome. A call which ends canceled throws <a href=\"https://learn.microsoft.com/dotnet/api/system.timeoutexception\">TimeoutException</a>, whose inner\nexception is the call’s <code>OperationCanceledException</code>; a quote which the carrier returns\nanyway is the result. When the call completes first, <code>WaitAsync</code> cancels the delay and\nreturns the call’s result or throws its failure.\n<a href=\"/orleans/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> takes an absolute\ndeadline instead.",
+    "cause": "The first href-group implementation collected only simple source identifiers, so a qualified API label sharing the category URL was omitted from the ambiguity set."
+  }
+}

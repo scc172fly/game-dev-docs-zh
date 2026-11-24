@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-24",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "reviewMethod": "AI逐句语义译审",
+  "scope": "六张正文图片的 alt 辅助文本；仅在显示层映射，不修改源 HTML、已审内容载荷或图片字节。",
+  "application": {
+    "pageId": "state.page.id 与条目 pageId 严格相等",
+    "src": "img.getAttribute(\"src\") 与条目 src 严格相等",
+    "originalAlt": "img.getAttribute(\"alt\") 与条目 originalAlt 严格相等",
+    "column": "img.closest(\".block-content[lang]\") 的 lang 匹配 /^zh(?:-|$)/i 才替换",
+    "singleChinese": "renderDocument 单语言中文列为 .block-content[lang=\"zh-CN\"]",
+    "comparisonChinese": "对照模式仅 .block-content.block-zh[lang=\"zh-CN\"] 替换",
+    "englishPreservation": "单语言英文 .block-content[lang=\"en\"] 与对照英文 .block-content.block-en[lang=\"en\"] 均不执行替换；原 alt 保留。",
+    "lightbox": "受影响的原站 lightbox 在打开时使用当前显示图片的 alt，英文列仍传入英文 alt。"
+  },
+  "translationWording": "采用根代理提供的六条译文，未调整术语或措辞。",
+  "entries": [
+    {
+      "pageId": "9144e01529752bdc",
+      "src": "assets/original/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp",
+      "originalAlt": "An animated image of the available code fix being suggested and applied on the GenerateSerializerAttribute when the containing type doesn't contain IdAttribute's on its members.",
+      "zh": "已标注 GenerateSerializerAttribute 的类型未在其成员上标注 IdAttribute 时，编辑器建议并应用可用代码修复的动图。",
+      "status": "reviewed",
+      "reviewMethod": "AI逐句语义译审"
+    },
+    {
+      "pageId": "1d3e2f583aa4b05f",
+      "src": "assets/original/_astro/heterogeneous.C0meRUB5_V6RbB.webp",
+      "originalAlt": "A cluster whose silos support different grain type sets.",
+      "zh": "一个集群，其中各个 Silo 支持的 Grain 类型集合不同。",
+      "status": "reviewed",
+      "reviewMethod": "AI逐句语义译审"
+    },
+    {
+      "pageId": "382b25bad3cd2b5e",
+      "src": "assets/original/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+      "originalAlt": "A grain is composed of a stable identity, behavior, and state.",
+      "zh": "Grain 由稳定的标识、行为和状态组成。",
+      "status": "reviewed",
+      "reviewMethod": "AI逐句语义译审"
+    },
+    {
+      "pageId": "382b25bad3cd2b5e",
+      "src": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "originalAlt": "A cluster has one or more silos, and each silo hosts grain activations.",
+      "zh": "集群包含一个或多个 Silo，每个 Silo 托管 Grain 激活实例。",
+      "status": "reviewed",
+      "reviewMethod": "AI逐句语义译审"
+    },
+    {
+      "pageId": "a48e234bd6ae9dd9",
+      "src": "assets/original/_astro/web-application.mdTGpSsm_Z1r4fB0.webp",
+      "originalAlt": "Screenshot of the running URL shortener web application.",
+      "zh": "正在运行的 URL 缩短 Web 应用程序的屏幕截图。",
+      "status": "reviewed",
+      "reviewMethod": "AI逐句语义译审"
+    },
+    {
+      "pageId": "a48e234bd6ae9dd9",
+      "src": "assets/original/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp",
+      "originalAlt": "A screenshot showing Orleans data in Azure Table Storage.",
+      "zh": "显示 Azure 表存储中 Orleans 数据的屏幕截图。",
+      "status": "reviewed",
+      "reviewMethod": "AI逐句语义译审"
+    }
+  ],
+  "validation": {
+    "nodeCheck": "passed: node --check frontend/app.js",
+    "diffCheck": "passed: git diff --check",
+    "displayGuardChecks": {
+      "passed": 30,
+      "cases": "每条映射验证中文列替换、英文列保留、错误pageId拒绝、错误src拒绝、错误originalAlt拒绝。"
+    },
+    "payloadCheck": "六条映射在当前EN和ZH载荷中分别唯一命中，共12处；只读取载荷，未写入。",
+    "browserVerification": {
+      "status": "pass",
+      "images": 6,
+      "modes": 3,
+      "languageChecks": 24,
+      "report": "browser-full-site-review-report.json"
+    }
+  }
+}

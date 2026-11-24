@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "baselineCommit": "610710c8edad29b9bb915b82461c90ce56cbd7d8",
+  "classicScriptParsed": true,
+  "unchangedFunctions": [
+    {
+      "name": "renderHome",
+      "unchanged": true
+    },
+    {
+      "name": "homepageBlock",
+      "unchanged": true
+    },
+    {
+      "name": "renderDocument",
+      "unchanged": true
+    },
+    {
+      "name": "enhanceSourceComponents",
+      "unchanged": true
+    },
+    {
+      "name": "enhanceContent",
+      "unchanged": true
+    },
+    {
+      "name": "enhanceSamples",
+      "unchanged": true
+    },
+    {
+      "name": "renderDiagrams",
+      "unchanged": true
+    },
+    {
+      "name": "bindThemePicker",
+      "unchanged": true
+    },
+    {
+      "name": "renderAudit",
+      "unchanged": true
+    }
+  ],
+  "themeBootstrapUnchanged": true,
+  "dataPayloadsUnchanged": 191,
+  "frontendDistIdentical": true,
+  "artifacts": [
+    {
+      "file": "app.js",
+      "sha256": "912ac9a21b695ce4f765ea7225f87b3c5f637963684bbc520daad18434d8005f"
+    },
+    {
+      "file": "index.html",
+      "sha256": "5897be5d318fbf8d909ce51538a62444cca7dc3c3d9fbf8742208a41e4b1e575"
+    },
+    {
+      "file": "app.css",
+      "sha256": "dafe28d1c27386adb9a1f1c17a5bb25e032723eadb659ac4567e2c7d50d29c35"
+    },
+    {
+      "file": "data-loader.js",
+      "sha256": "e6c444afb1fe1281f5d2585f03219312a13f8e2ee166d1234c3ac38102825fed"
+    },
+    {
+      "file": "assets/official-icons/icons.js",
+      "sha256": "f3b14b9178aed9374bfeb8e719fb193990de883e6e51a1c737b87197e80afb53"
+    },
+    {
+      "file": "assets/official-icons/manifest.json",
+      "sha256": "dee4f4c18b544cd07d4b5aa3d5915798840636fedc59636645132d62b8b920ed"
+    }
+  ],
+  "scope": "Navigation-only change. Prior full content and component reviews are preserved because all data payloads and relevant rendering/theme functions are unchanged; this is not a repeat of the full browser sweep.",
+  "additionalUIChanges": [
+    "移除侧栏官网首页入口，header .brand继续指向#/",
+    "桌面和手机主题选项改为深色、浅色、自动，持久值与主题行为保持一致"
+  ]
+}

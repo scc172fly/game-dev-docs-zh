@@ -1,0 +1,307 @@
+{
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "expectedPages": 15235,
+  "scannedPages": 15235,
+  "errors": [],
+  "sourceHashMismatches": [],
+  "rawSvgRoles": {
+    "heading-anchor-icon": 1546,
+    "feature-or-scenario-card-icon": 14,
+    "link-card-arrow": 10,
+    "footer-edit-page-icon": 251,
+    "footer-previous-page-icon": 250,
+    "footer-next-page-icon": 249,
+    "aside-status-icon": 36
+  },
+  "imageScope": {
+    "rawMainImgTags": 15271,
+    "universalEmptyDialogPlaceholders": 15235,
+    "actualContentImagesWithSrc": 36,
+    "actualImagesInStructured": 35,
+    "heroImages": 1,
+    "documentImages": 6,
+    "sampleImages": 29,
+    "originalLightboxWrappedImages": 3,
+    "explanation": "Empty img elements in one reusable image dialog per source page are UI placeholders, not 15,235 missing document images. Only the homepage hero image was omitted from the initial article extraction."
+  },
+  "uiOnlyControlRemovalSummary": {
+    "entries": 15235,
+    "pages": 15235,
+    "roles": {
+      "code-toolbar": 21340,
+      "image-dialog": 15235
+    },
+    "note": "Individual page button totals remain in pages[].raw.button. Verbose duplicate code-toolbar and universal lightbox-close examples are collapsed here; no article control is collapsed."
+  },
+  "confirmedFindings": [
+    {
+      "key": "article-prose-links-anchors-tables",
+      "classification": "content-preservation",
+      "scope": "all 15,235 formal source pages",
+      "result": "No normalized article-body text differences, outside-region article text, lost non-UI links, lost main IDs, or table row/cell-shape differences were detected.",
+      "counts": {
+        "textDifferences": 0,
+        "outsideTextCandidates": 0,
+        "lostLinks": 0,
+        "lostIds": 0,
+        "changedTableShapes": 0,
+        "tables": 332
+      },
+      "limits": "Text comparison exclusions and whitespace normalization are described in limitations. This is a source coverage check, not pixel-identical browser certification."
+    },
+    {
+      "key": "homepage-hero-image",
+      "classification": "content-asset-omission",
+      "page": "/",
+      "id": "bfa8f21cc2984261",
+      "count": 1,
+      "source": "/orleans/_astro/orleans-logo.CmH61o_o_SMe1d.svg",
+      "cause": "Homepage extraction selected h1, tagline, actions and article body, but did not select the image sibling in the hero.",
+      "runtimeStatus": "已恢复：原始官方 Hero 图片在首页直接显示；本文统计中的 1 个缺图是初始提取阶段的历史发现。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "homepage-card-icons",
+      "classification": "meaningful-visual-cues",
+      "page": "/",
+      "count": 14,
+      "cause": "aria-hidden SVG removal drops the original icon paths. Flattening article/card-grid classes also drops card layout and per-position palette.",
+      "evidence": "svgPatterns includes every original SVG, path geometry, container class, nth-child position and source palette. source-css/homepage-inline.css preserves the exact original rules.",
+      "runtimeStatus": "已恢复：14 个功能／场景图标使用冻结官方 SVG 几何数据，卡片、栅格、原有尺寸和配色规则一并恢复。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "aside-status-icons",
+      "classification": "semantic-status-visual-cues",
+      "count": 36,
+      "types": {
+        "note": 23,
+        "tip": 5,
+        "caution": 7,
+        "danger": 1
+      },
+      "cause": "SVG survives because it is not aria-hidden, but the extraction attribute whitelist removes viewBox, path d and other geometry attributes. The output contains 36 empty SVG elements.",
+      "preserved": "Aside text and starlight-aside--type classes were retained.",
+      "evidence": "source-asides/manifest.json and the four representative original HTML nodes retain precise geometry and provenance.",
+      "runtimeStatus": "已恢复：36 个提示框的原始图标几何数据和 note/tip/caution/danger 类型配色均接入前端。初始载荷中空 SVG 的计数保留作为发现记录。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "link-cards-and-permalink-affordances",
+      "classification": "navigation-decoration-and-layout",
+      "counts": {
+        "linkCardArrows": 10,
+        "headingPermalinkIcons": 1546,
+        "cardGrids": 4
+      },
+      "pagesForLinkCards": {
+        "/": 4,
+        "/docs/": 6
+      },
+      "preserved": "The destinations, labels, descriptions and content anchor IDs were retained.",
+      "cause": "aria-hidden SVG removal and wrapper/class flattening remove the visible affordances and layout.",
+      "runtimeStatus": "已恢复：10 个链接卡片箭头及相应卡片包装、栅格；标题锚点控件按原始内容锚点恢复。原站对应 1,546 个标题锚点图标。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "task-list-checkboxes",
+      "classification": "document-control-state-loss",
+      "counts": {
+        "pages": 6,
+        "checkboxes": 81,
+        "sourceDisabled": 81,
+        "sourceChecked": 0
+      },
+      "cause": "Initial extractor retained type but dropped disabled and task-list classes, making static checklists appear editable.",
+      "evidence": "inputControls provides exact per-page original DOM order, checked/disabled values and labels.",
+      "runtimeStatus": "已恢复：按照原始 6 页的 81 项映射保留 disabled=true、checked=false，并恢复任务列表样式。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "samples-gallery-layout",
+      "classification": "layout-and-filter-interaction",
+      "page": "/samples/",
+      "id": "41ae4a844d4e1150",
+      "cards": 29,
+      "preserved": "All card images, destination links, title/description/chip/footer text and the search input are present.",
+      "cause": "sample-card, body, chips and footer wrappers/classes were flattened; form/search data attributes, name, role and placeholder were stripped.",
+      "evidence": "sampleCardStructure maps exact href, original chips, source footer and published EN/ZH tail text. All 29 Chinese boundaries are confirmed from existing separators, never guessed.",
+      "runtimeStatus": "已恢复：29 个样例的卡片正文、标签、底部链接结构和过滤交互，图片按原站 16:9 cover 与 52px 图标占位规则呈现；4 个 Journaling 标签另已统一为“日志化”。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "images-and-lightbox",
+      "classification": "image-interaction-and-loading-attributes",
+      "counts": {
+        "originalLightboxImages": 3,
+        "pages": 2,
+        "imageAttributeChanges": 21
+      },
+      "pages": [
+        "/docs/overview/",
+        "/docs/host/configuration-guide/serialization/"
+      ],
+      "cause": "Wrapper flattening loses data-image-lightbox and source dialog UI. Image width/height/loading/decoding attributes are also stripped where present.",
+      "preserved": "All six non-hero document image URLs and all 29 gallery image URLs are retained.",
+      "runtimeStatus": "已恢复：缩放仅限原站带 data-image-lightbox 的 3 幅图片（overview 2 幅、serialization 1 幅）。支持点击、Enter/空格、currentSrc/alt、关闭按钮、遮罩和 Escape；aria-label 随语言切换，关闭后清除预览 src/alt。正文与样例图按原有响应式／比例规则呈现。",
+      "resolutionStatus": "implemented"
+    },
+    {
+      "key": "source-ui-replacement",
+      "classification": "non-article-ui",
+      "counts": {
+        "codeCopyButtons": 21340,
+        "universalLightboxCloseButtons": 15235,
+        "footerEditIcons": 251,
+        "footerPreviousIcons": 250,
+        "footerNextIcons": 249
+      },
+      "explanation": "These controls are outside retained article semantics. Original copy/lightbox/footer toolbars are intentionally removed and local site controls replace them. Raw counts must not be presented as missing prose."
+    },
+    {
+      "key": "tabs-details-and-embedded-media",
+      "classification": "absent-in-source",
+      "counts": {
+        "sourceTabs": 0,
+        "sourceDetails": 0,
+        "sourcePicture": 0,
+        "sourceVideo": 0,
+        "sourceAudio": 0,
+        "sourceCanvas": 0,
+        "sourceIframe": 0
+      },
+      "explanation": "No original body tabs, details, picture/source sets or media embeds were lost. The 22 published details/summary elements are added Mermaid source disclosures."
+    }
+  ],
+  "translationObservations": [
+    {
+      "unitId": "307337d79442a524fa92",
+      "page": "/samples/",
+      "sourceTerm": "journaling",
+      "observedChinese": "日志记录",
+      "requiredTerminology": "日志化",
+      "status": "fixed-in-reviewed-translations-and-published-content",
+      "currentChinese": "日志化"
+    },
+    {
+      "unitId": "3ec058993851ad4f8c94",
+      "page": "/samples/",
+      "sourceTerm": "journaling",
+      "observedChinese": "日志记录",
+      "requiredTerminology": "日志化",
+      "status": "fixed-in-reviewed-translations-and-published-content",
+      "currentChinese": "日志化"
+    },
+    {
+      "unitId": "25e9ffdc23f1a6c9dd7e",
+      "page": "/samples/",
+      "sourceTerm": "journaling",
+      "observedChinese": "日志记录",
+      "requiredTerminology": "日志化",
+      "status": "fixed-in-reviewed-translations-and-published-content",
+      "currentChinese": "日志化"
+    },
+    {
+      "unitId": "d064970d31f50f105c4e",
+      "page": "/samples/",
+      "sourceTerm": "journaling",
+      "observedChinese": "日志记录",
+      "requiredTerminology": "日志化",
+      "status": "fixed-in-reviewed-translations-and-published-content",
+      "currentChinese": "日志化"
+    }
+  ],
+  "supportingEvidenceFiles": {
+    "completeAudit": "source-presentation-audit.json",
+    "summary": "source-presentation-summary.json",
+    "readableReport": "SITE-REVIEW.md",
+    "browserAndFinalChecks": "full-site-review-report.json",
+    "sourceCssInSourcePackage": "source/official-presentation/（源码包内）",
+    "originalSvgInSourcePackage": "frontend/assets/official-icons/manifest.json（源码包内）",
+    "versionEvidenceInSourcePackage": "translations/documentation-version.json（源码包内）",
+    "embeddedEvidencePointers": {
+      "extraHtml": "/artifactScope",
+      "checkboxes": "/inputControls",
+      "lightbox": "/imageLightboxSource",
+      "samples": "/sampleCardStructure",
+      "svgGeometry": "/svgPatterns"
+    }
+  },
+  "limitations": [
+    "Text comparison excludes preformatted code, scripts/styles, SVG text, button/dialog/footer UI, heading-anchor accessibility text and API breadcrumbs; controls and source code are inventoried separately.",
+    "Whitespace is ignored for source text comparison. Raw outside-region segments and text differences are candidates requiring semantic classification, not automatically declared omissions.",
+    "历史载荷计数不包含前端运行时恢复的图标、布局包装和交互控件；最终呈现状态需结合已应用修复及最终浏览器报告。",
+    "本轮包含全部 15,235 个页面的原始 HTML 机器审计、异常分类与针对性 AI 复核；并非对 15,235 页重新逐页进行人工语义重审，也不表示逐页像素一致性认证。"
+  ],
+  "finalizedAt": "2026-11-24T04:52:26.959058+00:00",
+  "artifactScope": {
+    "artifactHtmlFiles": 15466,
+    "manifestPages": 15235,
+    "additionalHtmlFiles": 231,
+    "counts": {
+      "404-page": 1,
+      "redirect": 230
+    }
+  },
+  "reportInterpretation": {
+    "sourceScanStage": "原始官方 HTML → 初始结构化英文 → 扫描时发布英文/中文载荷；原始逐页计数与发现记录按扫描时间保留。",
+    "historicalFindings": "missingImages、emptyStructuredSvg、componentChanges、controlChanges、imageAttributeAndPictureChanges 及初始 sampleCardStructure 为修复前证据，不表示本次交付仍存在这些缺陷。",
+    "finalPresentationState": "已应用的修复见 confirmedFindings 中的 runtimeStatus 及 SITE-REVIEW.md。",
+    "browserVerification": "最终结果见 full-site-review-report.json；此报告不填入未经最终报告确认的浏览器通过数字。",
+    "reviewScope": "本轮包含全部 15,235 个页面的原始 HTML 机器审计、异常分类与针对性 AI 复核；并非对 15,235 页重新逐页进行人工语义重审，也不表示逐页像素一致性认证。",
+    "deliveryUpdatedAt": "2026-11-24T04:57:00.312739+00:00"
+  },
+  "releaseAndSnapshot": {
+    "sourceBranch": "main",
+    "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+    "snapshotTime": "2026-11-23 17:19:45（UTC+8）",
+    "snapshotScope": "固定 main 提交生成的官方文档快照，不是某一个 Orleans 正式发行版的专属完整手册。",
+    "latestRepositoryRelease": {
+      "repository": "dotnet/orleans",
+      "tag": "v10.4.2",
+      "version": "10.4.2",
+      "publishedDate": "2026-10-30",
+      "checkedDate": "2026-11-24",
+      "sourceUrl": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+      "discoveryUrl": "https://github.com/dotnet/orleans/releases/latest",
+      "prerelease": false,
+      "scope": "截至核验日，官方仓库标记为 Latest 的正式发行版。当前文档仍依据下列 main 提交快照，包含不同版本语境；静态包不会联网自动更新版本号。"
+    },
+    "exampleProjectPackageVersion": "10.2.2",
+    "apiVersions": [
+      "10.0.0",
+      "10.0.0-alpha.1"
+    ],
+    "additionalMentionedVersions": [
+      "10.4.0",
+      "11.0.0-preview.1"
+    ]
+  },
+  "finalCorrections": {
+    "confirmedApiGenerationFixes": [
+      {
+        "unitId": "a32b3e35587b2295fc88",
+        "page": "/docs/grains/grain-persistence/dynamodb-storage/",
+        "restoredIdentifier": "SecretKey",
+        "incorrectGeneratedIdentifier": "AccessKey",
+        "cause": "构建时按链接顺序恢复 API 标签，在中文调整语序且多个 API 名称共享分类 URL 时错配。",
+        "status": "fixed"
+      },
+      {
+        "unitId": "a080583ff5dd09da68e1",
+        "page": "/docs/host/configuration-guide/activation-collection/",
+        "restoredIdentifier": "OnDeactivateAsync",
+        "incorrectGeneratedIdentifier": "OnActivateAsync",
+        "cause": "同一链接顺序匹配问题；已修正构建逻辑并保留原有正确译审文本。",
+        "status": "fixed"
+      }
+    ],
+    "journalingTags": {
+      "count": 4,
+      "before": "日志记录",
+      "after": "日志化",
+      "status": "fixed"
+    },
+    "finalValidationResult": "以 full-site-review-report.json 的最终检查结果为准；这里仅记录已经确认的修复。"
+  }
+}

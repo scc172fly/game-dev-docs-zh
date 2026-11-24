@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "title": "中英对照模式组件归属与几何专项审计",
+  "reviewMethod": "AI 独立源码审查、冻结源结构核对、浏览器验证夹具设计；根代理接入已完成的浏览器逐列检查与真实主题源码 VM 结果",
+  "reviewedAt": "2026-11-24T05:49:31.373794+00:00",
+  "status": "pass",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "scope": {
+    "requestedIssue": "首页中英对照时，图标仅出现在英文侧；检查全站同类语言列归属风险。",
+    "sourceCode": "已检查 renderHome、homepageBlock、renderDocument、enhanceSourceComponents、enhanceContent、applyReviewedImageAlt、hasSourceLightbox、showSourceImage、enhanceSamples、restoreSampleCardTail、renderDiagrams、openDiagram、navigate 与新主题控件的语言／布局分支。",
+    "frozenContent": "复用已完成的 15,235 页原始 HTML 覆盖审计和固定数据清单；本轮未重新采集原文，也未重新逐页语义审阅这些正文。",
+    "browserStatus": "676 个 compare 浏览器用例、24 个首页主题/语言/宽度用例及原生控件交互已完成，错误为 0；具体结果见关联报告。"
+  },
+  "findings": [
+    {
+      "id": "CMP-001",
+      "severity": "high",
+      "status": "fixed-and-verified",
+      "location": "frontend/app.js: renderHome/cards and homepageBlock",
+      "issue": "旧 cards() 将一个图标放在 .official-card-heading 共同外层，随后才生成包含英文和中文两列的标题块。中文列没有属于自己的图标；外层图标还压缩标题栅格宽度，使标题与正文的分隔线错位。",
+      "fixObserved": "homepageBlock 接受 iconName，并在每个语言自己的 .official-card-title-row 内插入同源 SVG；图标与该列 .source-fragment 同级，标题共同外层不再通过 flex 为单个外层图标占位。",
+      "expectedCounts": {
+        "homeCards": 14,
+        "zhModeIcons": 14,
+        "enModeIcons": 14,
+        "compareEN": 14,
+        "compareZH": 14
+      },
+      "assertion": "逐卡核对每列恰有一个预期名称的图标、完整 SVG 几何与原始图标一致、两列尺寸及计算颜色一致，并比较同一语言标题／正文的左右边界；不能只通过卡片或 SVG 总数。"
+    },
+    {
+      "id": "CMP-002",
+      "severity": "medium",
+      "status": "fixed-and-verified",
+      "location": "frontend/app.js: enhanceSourceComponents / source-link-card",
+      "issue": "首页链接卡片的箭头曾在 .source-fragment 内新插入。虽两列均有箭头，但破坏了原始片段与辅助图标分离的约束。",
+      "fixObserved": "当 source-link-card 是 source-fragment 的唯一元素时，将整个 source-fragment 作为包装对象；箭头追加为该片段的兄弟。普通文档仍保留在所属 block-content 语言列内。",
+      "assertion": "首页所有 source-fragment 内新增 official-icon 数为 0；每个语言列中的每张链接卡片各自拥有一个 arrow-right。"
+    },
+    {
+      "id": "CMP-003",
+      "severity": "informational",
+      "status": "known-site-ui-language-policy",
+      "location": "heading anchor / lightbox / samples / copy / table / diagram dialog controls",
+      "issue": "部分辅助标签和控制文案依照全局 mode 或固定中文：例如 compare 英文列的锚点 aria-label、图片缩放提示、样例计数和表格／复制控件。",
+      "conclusion": "这不导致图标缺失或仅增强第一列。当前产品保留中文站点 UI 文案，未在本轮扩大修改范围。图表内容和 Expand 标签已按各 figure 的 diagramLanguage 判断；图片中文 alt 按 block-content[lang] 精确匹配。"
+    },
+    {
+      "id": "CMP-004",
+      "severity": "low",
+      "status": "fixed-and-verified",
+      "location": "frontend/app.css: .theme-picker select:focus-visible",
+      "issue": "本站显式3px accent焦点环不属于冻结原站theme select CSS；原站保留浏览器原生焦点表现。",
+      "scope": "该修正仅影响焦点外观；最终前端文件指纹重新核对。",
+      "resolution": "已移除额外 focus-visible 规则；浏览器确认原生 auto 1px 焦点外框与0px偏移。"
+    }
+  ],
+  "rendererReview": [
+    {
+      "component": "首页卡片与原始块",
+      "paths": [
+        "renderHome",
+        "homepageBlock",
+        "preserveHomepageAnchors"
+      ],
+      "modes": [
+        "zh",
+        "en",
+        "compare"
+      ],
+      "conclusion": "修复后的每个有标题图标的语言片段都有自己的图标；49 个正文块和 5 个原始锚点继续复用。完全相同的代码块允许显式共享。"
+    },
+    {
+      "component": "普通文档正文",
+      "paths": [
+        "renderDocument"
+      ],
+      "modes": [
+        "zh",
+        "en",
+        "compare"
+      ],
+      "conclusion": "非共享块生成各自的 .block-en 与 .block-zh；相同代码块仅生成一个 .shared-block，属于明确的共享显示策略。"
+    },
+    {
+      "component": "提示框",
+      "paths": [
+        "enhanceSourceComponents"
+      ],
+      "conclusion": "遍历全部 .starlight-aside，每个提示框内部识别类型、标题和图标；没有只处理第一列的全局 querySelector。"
+    },
+    {
+      "component": "链接卡片",
+      "paths": [
+        "enhanceSourceComponents"
+      ],
+      "conclusion": "遍历全部 source-link-card，逐个恢复自己的包装器与箭头；首页片段隔离修复已观察到。"
+    },
+    {
+      "component": "标题锚点",
+      "paths": [
+        "preserveHomepageAnchors",
+        "enhanceSourceComponents",
+        "scrollAnchor"
+      ],
+      "conclusion": "所有目标标题逐个增强；中英列链接指向同一稳定锚点。原始 ID 转为 data-source-anchor，页面共同锚点保持唯一。"
+    },
+    {
+      "component": "图片与替代文本",
+      "paths": [
+        "applyReviewedImageAlt",
+        "enhanceContent"
+      ],
+      "conclusion": "逐图片增强；六条中文替代文本仅用于准确匹配的中文 block-content[lang]，英文列保留原文。Hero 品牌图作为页面共同资产存在。"
+    },
+    {
+      "component": "任务清单",
+      "paths": [
+        "enhanceSourceComponents"
+      ],
+      "conclusion": "所有复选框逐个恢复禁用状态与列表类；冻结原文 81 项均未勾选，状态无语言分支。"
+    },
+    {
+      "component": "图片灯箱",
+      "paths": [
+        "hasSourceLightbox",
+        "showSourceImage",
+        "enhanceContent"
+      ],
+      "conclusion": "按源页面 ID 与三幅图片文件名确定缩放范围，两列都检查同一映射，交互绑定遍历全部匹配图片。"
+    },
+    {
+      "component": "表格",
+      "paths": [
+        "enhanceContent"
+      ],
+      "conclusion": "遍历所有表格并逐个增加可聚焦的滚动区域；不依赖全局 mode，也不只包装一列。"
+    },
+    {
+      "component": "代码复制",
+      "paths": [
+        "enhanceContent",
+        "copyText"
+      ],
+      "conclusion": "每个 pre 有所属 code-shell 和复制按钮；两列代码正文允许因已审中文注释而不同，不将全文相等设为错误条件。"
+    },
+    {
+      "component": "样例卡片与搜索",
+      "paths": [
+        "enhanceSamples",
+        "restoreSampleCardTail"
+      ],
+      "conclusion": "29 个样例的中英列表均遍历增强；标签结构根据精确 href 与尾文本恢复，搜索同步两列。匹配清单与公开 DOM 检查按每个语言列分别计数。"
+    },
+    {
+      "component": "Mermaid 图表",
+      "paths": [
+        "renderDiagrams",
+        "openDiagram"
+      ],
+      "conclusion": "按 figure 的 diagramKey 与 diagramLanguage 分别选取原文／中文数据，并逐个渲染。中文标签会影响布局尺寸，因此只比较结构键和控件数，不要求中英图表 SVG 像素或尺寸相同。"
+    },
+    {
+      "component": "附加导航与状态页面",
+      "paths": [
+        "renderOverview",
+        "renderGlossary",
+        "renderAudit",
+        "renderIndex",
+        "navigate"
+      ],
+      "conclusion": "这些属于中文站点自身导航／状态 UI，不是双语正文列；不以语言列组件相等断言要求复制整个站点外壳。"
+    }
+  ],
+  "browserPlan": {
+    "fixture": "qa-compare-site.html",
+    "fixtureSha256": "521e13cf77ea209d9ff9759be5191889b7f0e9402063b0cede24c0048928a660",
+    "fixtureSyntaxCheck": "node --check passed",
+    "runtimeStatus": "passed",
+    "routeFile": "browser-audit-routes.json",
+    "routeCount": 338,
+    "viewportWidths": [
+      1280,
+      375
+    ],
+    "expectedCases": 676,
+    "routeKinds": {
+      "guide": 254,
+      "api-index": 1,
+      "api-package": 64,
+      "api-type": 9,
+      "api-category": 5,
+      "api-member": 5
+    },
+    "mode": "compare",
+    "theme": "保持载入时的当前主题；夹具不读取或修改主题控制，不依赖旧 #theme-toggle。",
+    "driver": "只进行 UI hash 导航、点击 compare 阅读模式与 DOM 读取；不调用应用内部状态或函数。页面与图表就绪通过父级 setTimeout 轮询，避免 iframe requestAnimationFrame 或子计时器暂停。",
+    "outputs": {
+      "summary": "#result",
+      "progress": "#progress",
+      "fullResultsButton": "#show-details",
+      "fullResults": "#details",
+      "downloadButton": "#download"
+    },
+    "nonSharedPairAssertions": [
+      "每个块内存在 EN 与 ZH 语言列",
+      "official-icon 名称、完整 SVG viewBox／几何签名、源图标几何、计算尺寸和颜色",
+      "img 地址与 lightbox 所属关系",
+      "aside 类型及各自状态图标",
+      "表格逐行单元格类型和 colspan/rowspan，滚动包装器",
+      "checkbox checked/disabled 状态",
+      "pre 与各自 copy 按钮个数，不比较注释正文",
+      "source-link-card 地址与独立箭头",
+      "标题层级、锚点链接及独立控件",
+      "diagramKey、语言归属、SVG 渲染状态和放大控件",
+      "样例卡片 href、图片、标签数量及来源链接结构"
+    ],
+    "homeAssertions": [
+      "14 张卡片的每个语言列各有 1 个预期图标",
+      "图标完整原始几何匹配，两列颜色与尺寸相同",
+      "同语言标题／正文的左右边界 x 对齐",
+      "49 个 source block 唯一",
+      "5 个原始锚点各唯一一次",
+      "source-fragment 内不插入 official-icon"
+    ],
+    "layoutAssertions": [
+      "根文档 scrollWidth 不超过 clientWidth + 1 CSS px；允许表格、代码和图表自身滚动区域内溢出"
+    ],
+    "noAbsoluteGlobalAnchorOrSvgTotal": true,
+    "plannedComponentCoverageFromFrozenInventory": {
+      "svg": {
+        "sourcePages": 29,
+        "plannedBrowserPages": 29,
+        "sourceOccurrences": 36,
+        "plannedBrowserSourceOccurrences": 36,
+        "coverageKind": "all-pages-containing-this-component",
+        "unselectedPagesCount": 0
+      },
+      "img": {
+        "sourcePages": 5,
+        "plannedBrowserPages": 5,
+        "sourceOccurrences": 35,
+        "plannedBrowserSourceOccurrences": 35,
+        "coverageKind": "all-pages-containing-this-component",
+        "unselectedPagesCount": 0
+      },
+      "pre": {
+        "sourcePages": 15111,
+        "plannedBrowserPages": 214,
+        "sourceOccurrences": 21362,
+        "plannedBrowserSourceOccurrences": 818,
+        "coverageKind": "shared-renderer-representatives",
+        "unselectedPagesCount": 14897
+      },
+      "table": {
+        "sourcePages": 247,
+        "plannedBrowserPages": 157,
+        "sourceOccurrences": 332,
+        "plannedBrowserSourceOccurrences": 242,
+        "coverageKind": "shared-renderer-representatives",
+        "unselectedPagesCount": 90
+      },
+      "input": {
+        "sourcePages": 7,
+        "plannedBrowserPages": 7,
+        "sourceOccurrences": 82,
+        "plannedBrowserSourceOccurrences": 82,
+        "coverageKind": "all-pages-containing-this-component",
+        "unselectedPagesCount": 0
+      },
+      "form": {
+        "sourcePages": 1,
+        "plannedBrowserPages": 1,
+        "sourceOccurrences": 1,
+        "plannedBrowserSourceOccurrences": 1,
+        "coverageKind": "all-pages-containing-this-component",
+        "unselectedPagesCount": 0
+      }
+    },
+    "coverageLimit": "338 条路线覆盖全部 254 指南、64 API 包、API 索引与 19 个 API 类型／分类／成员代表。包含全部提示框、正文图片、复选框及样例搜索页面，但不是对 15,235 页逐一进行浏览器渲染。",
+    "fixtureBytes": 82852,
+    "htmlSafeEmbeddedJson": "内嵌路线和原 SVG JSON 中的 < 均序列化为 \\u003c，防止预览服务在字符串中的 </svg> 前注入热更新脚本。JS 解析后恢复原字符串，不改变 SVG 几何。"
+  },
+  "themeAudit": {
+    "sourceControl": "原站 native select，选项值 dark/light/auto，文案 Dark/Light/Auto；label-icon 为月亮／太阳／电脑，caret 为官方向下箭头。",
+    "sourceBehavior": "StarlightThemeProvider.updatePickers 同步选值并从 #theme-icons 模板替换图形。系统配色变化只在偏好 auto 时更新；手动 dark/light 不会被系统事件覆盖。root data-theme 是实际 light/dark。",
+    "sourceResponsive": "原站 header 主题组在小于 50rem（默认 800 CSS px）隐藏；普通文档有移动侧栏副本，首页没有该副本。当前样式遵循此策略。",
+    "currentSourceReview": "新 bindThemePicker 将 auto/dark/light 作为持久偏好，data-themePreference 记录选择，data-theme 与 color-scheme 记录实际效果；只在 auto 接收系统变化；storage 事件同步两个 picker／其他同源页面，刷新前内联引导逻辑读取同一偏好。",
+    "storageNamespace": "译站使用自己的 orleans-theme 键，auto 显式存为 auto；官方源使用 starlight-theme 并把 auto 存为空值。行为等价但存储命名属于本站实现。",
+    "nativeSelectOptions": [
+      {
+        "id": "theme-select",
+        "options": [
+          {
+            "value": "dark",
+            "text": "Dark"
+          },
+          {
+            "value": "light",
+            "text": "Light"
+          },
+          {
+            "value": "auto",
+            "text": "Auto"
+          }
+        ]
+      },
+      {
+        "id": "theme-select-mobile",
+        "options": [
+          {
+            "value": "dark",
+            "text": "Dark"
+          },
+          {
+            "value": "light",
+            "text": "Light"
+          },
+          {
+            "value": "auto",
+            "text": "Auto"
+          }
+        ]
+      }
+    ],
+    "officialSvgGeometryChecks": [
+      {
+        "icon": "dark",
+        "copies": 2,
+        "matchesOriginalGeometry": true
+      },
+      {
+        "icon": "light",
+        "copies": 2,
+        "matchesOriginalGeometry": true
+      },
+      {
+        "icon": "auto",
+        "copies": 2,
+        "matchesOriginalGeometry": true
+      },
+      {
+        "icon": "chevron",
+        "copies": 2,
+        "matchesOriginalGeometry": true
+      }
+    ],
+    "sourceEvidence": [
+      {
+        "artifactPath": "index.html",
+        "sha256": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555"
+      },
+      {
+        "artifactPath": "docs/overview/index.html",
+        "sha256": "5add98cb8ac77f9c417b78b308b54b0f23c3876fe5e7fb8b8e76ac10658c63af"
+      },
+      {
+        "artifactPath": "docs/api/csharp/index.html",
+        "sha256": "4135f2a087f0d5753e7229cf588551a238f74869ff64e922cb03c8250c5b68dc"
+      }
+    ],
+    "cssEvidence": "audit-evidence/official-presentation/middleware.Bkh0pSoo.css 中原站主题控件与响应式规则。",
+    "focusStyleReview": {
+      "source": "冻结官方 CSS 没有 theme select 的 :focus/:focus-visible、outline 或 border-radius 覆盖；主题 select 采用浏览器原生焦点表现。",
+      "currentAtReview": ".theme-picker select:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:3px}",
+      "difference": "当前3px强调色外框、2px偏移和3px圆角是本站新增规则，与冻结原站的CSS规则不一致。",
+      "sourceEvidence": "middleware.Bkh0pSoo.css 的 astro-r2p65idu select 规则；整份CSS仅2个 :focus-visible，分别属于图片灯箱触发器和样例卡片。",
+      "browserLimit": "原生焦点和下拉弹出框的实际细框颜色／像素取决于浏览器与系统，本次源码审查不推断其固定值。",
+      "action": "根代理已删除本站新增焦点规则并完成浏览器外观复查；保留原生焦点表现。"
+    },
+    "completedVerification": {
+      "browser": "theme-browser-review.json",
+      "vm": "theme-behavior-report.json",
+      "vmCases": 19,
+      "homeMatrix": "homepage-bilingual-theme-report.json",
+      "homeCases": 24
+    }
+  },
+  "inspectedFrontendSha256": {
+    "app.js": "73ba0b41d54c11954ec4b563d7f8be093f244f3f7078b91a24ad07add39da4b8",
+    "app.css": "2be9abeefbfa42e7268b780dfa7b8e7e84efc1fa767f82067031d300ac7598bd",
+    "index.html": "5a490286880b7edf30da837b520783a66f7b791ee2e08c44b41c9c5821b9c1bc"
+  },
+  "limitations": [
+    "本次全站范围通过共同渲染路径检查与冻结页面组件清单覆盖说明；不将338条代表路线称为15,235页浏览器逐页验收。",
+    "原始全文采集、译文语义及代码注释复审结果沿用此前记录，不在本专项中重新声明全部逐句通过。",
+    "站点共同 UI 的中文文案不是本次缺图标问题；不强求主题、品牌、共享代码及页面外壳按语言复制。",
+    "系统主题改变由执行真实源码的受控 matchMedia VM 场景验证；浏览器实测了主题选择、刷新与手机侧栏同步，未改变浏览器所在系统的主题设置。"
+  ],
+  "browserResults": {
+    "file": "compare-browser-component-report.json",
+    "cases": 676,
+    "errors": 0,
+    "pairedBlockObservations": 24232,
+    "counts": {
+      "pairedBlocks": 24232,
+      "sharedBlocks": 1214,
+      "iconsEN": 8724,
+      "iconsZH": 8724,
+      "imagesEN": 70,
+      "imagesZH": 70,
+      "asidesEN": 72,
+      "asidesZH": 72,
+      "tablesEN": 484,
+      "tablesZH": 484,
+      "checkboxesEN": 162,
+      "checkboxesZH": 162,
+      "codeControlsEN": 422,
+      "codeControlsZH": 422,
+      "diagramsEN": 44,
+      "diagramsZH": 44
+    }
+  },
+  "finalFrontendSha256": {
+    "app.js": "73ba0b41d54c11954ec4b563d7f8be093f244f3f7078b91a24ad07add39da4b8",
+    "app.css": "dafe28d1c27386adb9a1f1c17a5bb25e032723eadb659ac4567e2c7d50d29c35",
+    "index.html": "5a490286880b7edf30da837b520783a66f7b791ee2e08c44b41c9c5821b9c1bc"
+  }
+}

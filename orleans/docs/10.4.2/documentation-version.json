@@ -1,0 +1,154 @@
+{
+  "label": "官方 main 文档快照",
+  "summary": "本译站基于 Orleans 官方 main 分支于 2026-11-23 发布的文档快照。文档与示例项目的包版本基准为 10.2.2（允许明确声明的例外）；API 参考标注 10.0.0 或 10.0.0-alpha.1，部分迁移文档涉及 10.4.0 和 11.0.0-preview.1。文档覆盖多个版本语境，具体行为以各页版本、目标框架和实验性说明为准。",
+  "sourceBranch": "main",
+  "scope": "固定 main 提交生成的官方文档快照，不是某一个 Orleans 正式发行版的专属完整手册。",
+  "quickstartPackageVersion": "10.2.2",
+  "quickstartPackageVersionScope": "快速入门中的显式 NuGet 包版本。",
+  "exampleProjectPackageVersion": "10.2.2",
+  "exampleProjectPackageVersionScope": "docs/project-policy.json 中的文档与示例项目验证基准，允许明确声明的迁移及未发布包示例例外。",
+  "sourceVersionPrefix": "10.0.0",
+  "sourceVersionPrefixScope": "固定提交 Directory.Build.props 未被构建参数覆盖时的默认值，非当前稳定版声明。",
+  "apiVersions": [
+    "10.0.0",
+    "10.0.0-alpha.1"
+  ],
+  "apiVersionsScope": "固定发布产物中 API 包页面实际显示的版本标记，按包分别适用。",
+  "additionalMentionedVersions": [
+    "10.4.0",
+    "11.0.0-preview.1"
+  ],
+  "additionalMentionedVersionsScope": "迁移章节中明确讨论的版本，不表示全站统一采用这些版本。",
+  "evidence": [
+    {
+      "id": "example-project-policy",
+      "sourceType": "immutable-upstream-source",
+      "upstreamPath": "docs/project-policy.json",
+      "sourceUrl": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/docs/project-policy.json",
+      "sha256": "17ea0bb8cfafe02edab2557976854ebd5ffb85184016a2ad8786fe7ced07f5e4",
+      "excerpt": "{\n  \"targetFramework\": \"net10.0\",\n  \"exceptionTargetFramework\": \"net11.0\",\n  \"orleansPackageVersion\": \"10.2.2\"\n}",
+      "scope": "文档和示例项目的验证策略：一般包引用使用 10.2.2、目标 net10.0；可声明 net11.0 框架例外。迁移和未发布包示例还受单独的版本例外规则约束。"
+    },
+    {
+      "id": "example-policy-exceptions",
+      "sourceType": "immutable-upstream-source",
+      "upstreamPath": "docs/site/scripts/lib/project-policy.mjs",
+      "sourceUrl": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/docs/site/scripts/lib/project-policy.mjs",
+      "sha256": "6020f489656e46b99ed37b95b92c56ad1da851d5e231702b6b9879297dcf43de",
+      "excerpt": "Use exactly ${orleansPackageVersion}; an older migration snippet or same-version prerelease sample requires a meaningful OrleansDocumentationVersionException project property.",
+      "scope": "项目策略允许带有明确理由的历史迁移版本或同版本预发行示例；10.2.2 不代表所有文档内容的统一适用版本。"
+    },
+    {
+      "id": "source-default-version",
+      "sourceType": "immutable-upstream-source",
+      "upstreamPath": "Directory.Build.props",
+      "sourceUrl": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/Directory.Build.props",
+      "sha256": "d3e19ad6b0d6ba87f8357f7402a072aa2821beee4e93426e96310bd66cad3da0",
+      "excerpt": "<AssemblyVersion>10.0.0.0</AssemblyVersion>\n    <VersionPrefix Condition=\" '$(VersionPrefix)'=='' \">10.0.0</VersionPrefix>",
+      "scope": "固定提交的程序集版本与未被构建参数覆盖时的默认包版本前缀；不能据此推断 NuGet 当前稳定版，或把所有 main 分支功能等同于已发布 10.0.0。"
+    },
+    {
+      "id": "repository-sdk",
+      "sourceType": "immutable-upstream-source",
+      "upstreamPath": "global.json",
+      "sourceUrl": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/global.json",
+      "sha256": "3519d5504500ef40d6d169223c31c3edcf6f334421bcd28998016a4a45d262f3",
+      "excerpt": "\"version\": \"11.0.100\"",
+      "scope": "这是固定提交的构建 SDK 版本，不是 Orleans 包版本。"
+    },
+    {
+      "id": "quickstart-example",
+      "sourceType": "frozen-official-documentation",
+      "snapshotPath": "source/pages/af2f8b7c6afe250a.md",
+      "sourceUrl": "https://dotnet.github.io/orleans/docs/quickstarts/build-your-first-orleans-app/",
+      "markdownSha256": "c76c8c3fce68ae29f7d6e192acfdd1e58761d3e07a879e4d39c78a087f033252",
+      "htmlSha256": "d8fb0dbea25e57248d3805ec32dcd87dfde08fa30ed08f8b208af9b223d5f044",
+      "excerpt": "dotnet package add Microsoft.Orleans.Server --version 10.2.2 --project Silo/Silo.csproj",
+      "scope": "快速入门的显式包版本，与项目策略一致。",
+      "upstreamPath": "docs/site/src/content/docs/quickstarts/build-your-first-orleans-app.md",
+      "sourcePermalink": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/docs/site/src/content/docs/quickstarts/build-your-first-orleans-app.md"
+    },
+    {
+      "id": "api-core-version",
+      "sourceType": "frozen-official-documentation",
+      "snapshotPath": "source/pages/55d9d3cbfa35bade.md",
+      "sourceUrl": "https://dotnet.github.io/orleans/docs/api/csharp/microsoft.orleans.core/",
+      "markdownSha256": "29e38d6382b28279fa4a86e9d42b0588558553694b9ad5890e2dd6d0b0f64d54",
+      "htmlSha256": "a89f1f74cb914eedb697a03bd1fa6b536f5765d2c7b962f3455cf4f50c845455",
+      "excerpt": "10.0.0 | net10.0",
+      "scope": "此固定产物的 Microsoft.Orleans.Core API 页面显示的版本和目标框架；不是全站发行版号。"
+    },
+    {
+      "id": "api-durable-version",
+      "sourceType": "frozen-official-documentation",
+      "snapshotPath": "source/pages/dcc9f495cad18aa9.md",
+      "sourceUrl": "https://dotnet.github.io/orleans/docs/api/csharp/microsoft.orleans.durable/",
+      "markdownSha256": "f848ff0a9b37e54027ee5b9a9ad6624545f208db37fdc705530fdc460c3e0c9d",
+      "htmlSha256": "0883311b3b27b4807ec39eadf10db6dbfaa5ed179ba56e126d685686d3c9966e",
+      "excerpt": "10.0.0-alpha.1 | net11.0",
+      "scope": "此固定产物的实验性 Microsoft.Orleans.Durable API 页面显示的版本和目标框架。"
+    },
+    {
+      "id": "migration-10-4",
+      "sourceType": "frozen-official-documentation",
+      "snapshotPath": "source/pages/5c86716f5ab2cdc4.md",
+      "sourceUrl": "https://dotnet.github.io/orleans/docs/migration/contract-identities/",
+      "markdownSha256": "0c5468244ab42c523b192b0d570370ed128193c743225b9a27581efad21030f0",
+      "htmlSha256": "dcb5654f270ef3cc4086fb5f68aa5950ff586c641381d85b5103e4e3322a4718",
+      "excerpt": "Orleans 10.4.0 generated CLR-based interface identities even for aliased interfaces.",
+      "scope": "迁移章节讨论 10.4.0 的行为；正文包含超出快速入门 10.2.2 示例的版本语境。",
+      "upstreamPath": "docs/site/src/content/docs/migration/contract-identities.md",
+      "sourcePermalink": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/docs/site/src/content/docs/migration/contract-identities.md"
+    },
+    {
+      "id": "migration-11-preview",
+      "sourceType": "frozen-official-documentation",
+      "snapshotPath": "source/pages/cf1d73de2674df54.md",
+      "sourceUrl": "https://dotnet.github.io/orleans/docs/migration/grain-directory/",
+      "markdownSha256": "020dbbb0d1ef0a82ff1164ea6c7828fb72cdfc50a7146ed49af50ecb9e23d0cc",
+      "htmlSha256": "6d6c1f53a96d7ce4f6e6f437a3ee655d9e5d88fbacc1cca30e24de29479f99c4",
+      "excerpt": "Orleans 11.0.0-preview.1 uses the distributed grain directory by default.",
+      "scope": "迁移章节明确涉及 11.0.0-preview.1；不能把整站称为纯 10.x 发行版手册。",
+      "upstreamPath": "docs/site/src/content/docs/migration/grain-directory.md",
+      "sourcePermalink": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/docs/site/src/content/docs/migration/grain-directory.md"
+    },
+    {
+      "id": "experimental-durable",
+      "sourceType": "frozen-official-documentation",
+      "snapshotPath": "source/pages/414d791a720a00ba.md",
+      "sourceUrl": "https://dotnet.github.io/orleans/docs/grains/journaling/",
+      "markdownSha256": "4f799b7b346f55c6217b07283ec93e543acb3a8e509bf499f9d73b11ef60c593",
+      "htmlSha256": "ad049d3771cb4f9f3019c93ae876bff70b8ba653b8721af2b8cbee7d53c2fc09",
+      "excerpt": "`Microsoft.Orleans.Durable`, which contains Journaling, and its storage-provider packages are pre-release alpha packages which target .NET 11 (`net11.0`).",
+      "scope": "Journaling 及相关存储包明确属于 .NET 11 上的预发行 alpha 功能，需保留实验性说明。",
+      "upstreamPath": "docs/site/src/content/docs/grains/journaling/index.md",
+      "sourcePermalink": "https://github.com/dotnet/orleans/blob/6a0e937f544c35ffcf11b37e4c2b7de5a1580a03/docs/site/src/content/docs/grains/journaling/index.md"
+    },
+    {
+      "id": "repository-latest-release",
+      "sourceType": "official-GitHub-release",
+      "sourceUrl": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+      "discoveryUrl": "https://github.com/dotnet/orleans/releases/latest",
+      "checkedDate": "2026-11-24",
+      "releaseDate": "2026-10-30",
+      "tag": "v10.4.2",
+      "releaseCommitAbbreviation": "876ffe0",
+      "scope": "官方 latest 地址实际跳转到 v10.4.2，并标记 Latest；NuGet Microsoft.Orleans.Sdk 10.4.2 的发布日期交叉确认。",
+      "corroboratingUrl": "https://www.nuget.org/packages/Microsoft.Orleans.Sdk/10.4.2"
+    }
+  ],
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "snapshotTime": "2026-11-23 17:19:45（UTC+8）",
+  "artifactSha256": "137cf4e9e193eeb0744cfe286f04d8a4f1824dc3524b0a9ca7a210fdab2e36f8",
+  "latestRepositoryRelease": {
+    "repository": "dotnet/orleans",
+    "tag": "v10.4.2",
+    "version": "10.4.2",
+    "publishedDate": "2026-10-30",
+    "checkedDate": "2026-11-24",
+    "sourceUrl": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+    "discoveryUrl": "https://github.com/dotnet/orleans/releases/latest",
+    "prerelease": false,
+    "scope": "截至核验日，官方仓库标记为 Latest 的正式发行版。当前文档仍依据下列 main 提交快照，包含不同版本语境；静态包不会联网自动更新版本号。"
+  }
+}

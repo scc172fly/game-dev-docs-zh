@@ -1,0 +1,87 @@
+{
+  "status": "pass",
+  "environment": "Chromium managed HTTP preview",
+  "themeOptions": [
+    "Dark",
+    "Light",
+    "Auto"
+  ],
+  "themeIcons": {
+    "source": "frozen original HTML",
+    "moonSunComputerCSSSize": [
+      14,
+      14
+    ],
+    "chevronCSSSize": [
+      20,
+      20
+    ]
+  },
+  "desktopDarkSelectionAndRefresh": {
+    "selected": "dark",
+    "effective": "dark"
+  },
+  "mobileSidebarAt320px": {
+    "document": "/docs/quickstarts/build-your-first-orleans-app/",
+    "menuOpened": true,
+    "themeControlVisible": true,
+    "selectedAutoEffective": "light",
+    "desktopControlSynced": "auto"
+  },
+  "autoRefresh": {
+    "selected": "auto",
+    "preference": "auto",
+    "effective": "light"
+  },
+  "nativeFocus": {
+    "sourceCSSOverridesRemoved": true,
+    "observedOutline": "rgb(238, 238, 238) auto 1px",
+    "observedOffset": "0px",
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px none",
+    "fontSize": "14px",
+    "note": "Native popup and focus rendering follow the browser and operating system; no fixed Windows popup pixel match is claimed."
+  },
+  "reportedCards": [
+    {
+      "card": "games",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "iconBoxes": [
+        [
+          31.984375,
+          31.984375
+        ],
+        [
+          31.984375,
+          31.984375
+        ]
+      ]
+    },
+    {
+      "card": "commerce",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "iconBoxes": [
+        [
+          31.984375,
+          31.984375
+        ],
+        [
+          31.984375,
+          31.984375
+        ]
+      ]
+    }
+  ],
+  "finalHomeIconCounts": {
+    "en": 14,
+    "zh": 14
+  },
+  "systemChangeScope": "Real-source VM exercises matchMedia changes; the browser OS theme was not changed.",
+  "incrementalChangeAfterSweeps": "Removed only the custom theme select focus-visible rule to match original native focus styling. Rechecked actual desktop/mobile controls and the reported bilingual cards, then reran final frontend/data fingerprint checks. No renderer, JavaScript or content change followed the sweeps."
+}

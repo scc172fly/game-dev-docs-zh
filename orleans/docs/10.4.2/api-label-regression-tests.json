@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "tests": 7,
+  "realRegressions": 3,
+  "cases": [
+    {
+      "unitId": "a32b3e35587b2295fc88",
+      "oldBugReproduced": true,
+      "newOriginalApiPairsPreserved": true,
+      "reviewedTranslationTextPreserved": true,
+      "before": "未设置 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">AccessKey</a> 和 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">AccessKey</a> 时， <a href=\"https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/creds-assign.html\"> AWS SDK for .NET 的凭据与配置文件解析链 </a> 会提供凭据。在生产环境中，应优先使用 IAM 角色等工作负载凭据，而不是长期密钥。当部署环境要求显式配置 SDK 时，可以使用 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">ProfileName</a> 、 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">AccessKey</a> 、 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">SecretKey</a> 和 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">Token</a> 。配置文件的设置方式请参阅 <a href=\"https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html\"> AWS CLI 配置文件参考 </a> 。",
+      "after": "未设置 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">AccessKey</a> 和 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">SecretKey</a> 时， <a href=\"https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/creds-assign.html\"> AWS SDK for .NET 的凭据与配置文件解析链 </a> 会提供凭据。在生产环境中，应优先使用 IAM 角色等工作负载凭据，而不是长期密钥。当部署环境要求显式配置 SDK 时，可以使用 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">ProfileName</a> 、 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">AccessKey</a> 、 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\">SecretKey</a> 和 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.persistence.dynamodb/orleans.persistence.dynamodb.dynamodbclientoptions/properties/\"> Token </a> 。配置文件的设置方式请参阅 <a href=\"https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html\"> AWS CLI 配置文件参考 </a> 。"
+    },
+    {
+      "unitId": "a080583ff5dd09da68e1",
+      "oldBugReproduced": true,
+      "newOriginalApiPairsPreserved": true,
+      "reviewedTranslationTextPreserved": true,
+      "before": "<a href=\"/orleans/docs/api/csharp/microsoft.orleans.runtime/orleans.configuration.graincollectionoptions/properties/\">ActivationTimeout</a> 和 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.runtime/orleans.configuration.graincollectionoptions/properties/\">DeactivationTimeout</a> 的默认值均为 30 秒。超时后，Orleans 会取消传给 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/\">OnActivateAsync</a>、<a href=\"/orleans/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/\">OnActivateAsync</a> 以及 Grain 生命周期参与者的 <a href=\"https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken\"> CancellationToken </a>，然后等待这些代码执行完成。在这些回调返回之前，激活实例会保留其 Grain 目录注册和激活实例作用域内的服务。如果激活超时，激活会在回调返回后失败。如果停用超时，停用会在回调返回后继续。",
+      "after": "<a href=\"/orleans/docs/api/csharp/microsoft.orleans.runtime/orleans.configuration.graincollectionoptions/properties/\">ActivationTimeout</a> 和 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.runtime/orleans.configuration.graincollectionoptions/properties/\">DeactivationTimeout</a> 的默认值均为 30 秒。超时后，Orleans 会取消传给 <a href=\"/orleans/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/\">OnActivateAsync</a>、<a href=\"/orleans/docs/api/csharp/microsoft.orleans.core.abstractions/orleans.grain/methods/\">OnDeactivateAsync</a> 以及 Grain 生命周期参与者的 <a href=\"https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken\"> CancellationToken </a>，然后等待这些代码执行完成。在这些回调返回之前，激活实例会保留其 Grain 目录注册和激活实例作用域内的服务。如果激活超时，激活会在回调返回后失败。如果停用超时，停用会在回调返回后继续。"
+    },
+    {
+      "unitId": "1e3be39d0a1f2d229d6d",
+      "firstFixRegressionReproduced": true,
+      "qualifiedAndSimpleNamesPreserved": true,
+      "before": "<a href=\"/orleans/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> 让调用 <code>ground-quote/0</code> 与持久延迟 <code>ground-quote/1</code> 竞速。运行时记录延迟的到期时间，因此停用后的回放仍保留原截止时间：超时从首次运行开始计时。如果延迟先到期，调用会收到原因为 <code>The operation timed out after 00:02:00.</code> 的取消请求，而 <code>WaitAsync</code> 等待承运商的结果。若调用以取消状态结束，则引发 <a href=\"https://learn.microsoft.com/dotnet/api/system.timeoutexception\"> TimeoutException </a>，其内部异常是该调用的 <code>OperationCanceledException</code>；如果承运商仍然返回报价，则将该报价作为结果。如果调用先完成，<code>WaitAsync</code> 会取消延迟，并返回调用结果或引发其失败。<a href=\"/orleans/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> 接受的则是绝对截止时间。",
+      "after": "<a href=\"/orleans/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">DurableTaskExtensions.WaitAsync</a> 让调用 <code>ground-quote/0</code> 与持久延迟 <code>ground-quote/1</code> 竞速。运行时记录延迟的到期时间，因此停用后的回放仍保留原截止时间：超时从首次运行开始计时。如果延迟先到期，调用会收到原因为 <code>The operation timed out after 00:02:00.</code> 的取消请求，而 <code>WaitAsync</code> 等待承运商的结果。若调用以取消状态结束，则引发 <a href=\"https://learn.microsoft.com/dotnet/api/system.timeoutexception\"> TimeoutException </a>，其内部异常是该调用的 <code>OperationCanceledException</code>；如果承运商仍然返回报价，则将该报价作为结果。如果调用先完成，<code>WaitAsync</code> 会取消延迟，并返回调用结果或引发其失败。<a href=\"/orleans/docs/api/csharp/microsoft.orleans.durable.abstractions/orleans.durable.tasks.durabletaskextensions/methods/\">WaitUntilAsync</a> 接受的则是绝对截止时间。"
+    },
+    {
+      "case": "single-source-name-per-url",
+      "corrected": true
+    },
+    {
+      "case": "valid-reordered-names-sharing-one-url",
+      "preserved": true
+    },
+    {
+      "case": "ambiguous-unknown-name",
+      "notGuessed": true
+    },
+    {
+      "case": "localized-api-navigation-category",
+      "preserved": true
+    }
+  ],
+  "builderSha256": "4f2f1ef178712d9823e9c9cf5f9c9e81f201101db1475b37672f5df6db880068",
+  "method": "Extracted only inner/set_inner/restore_api_names AST definitions; site builder top-level code was not imported or executed. Two exact reviewed source units reproduce the original published defects; a third reproduces the qualified-name edge case found during the full regression audit. All three and four targeted behavior guards pass the final implementation.",
+  "builderExecuted": false
+}

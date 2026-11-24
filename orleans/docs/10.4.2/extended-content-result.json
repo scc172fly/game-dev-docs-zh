@@ -1,0 +1,1729 @@
+{
+  "status": "pass",
+  "scope": "Read-only all-page source-to-published text/link/anchor/image/table/diagram checks plus current review-register reconciliation.",
+  "counts": {
+    "runtimePayloadsDecoded": 191,
+    "contentChunks": 188,
+    "pages": 15235,
+    "blocks": 164126,
+    "englishVisibleTextBlocksChecked": 164104,
+    "bodyInlineSvgOccurrencesEN": 36,
+    "bodyInlineSvgOccurrencesZH": 36,
+    "sourceLinkMappingsChecked": 136008,
+    "immutableApiLinkBindingsChecked": 79708,
+    "tableCellContentsChecked": 17220,
+    "chineseLinkReorderedBlocks": 133,
+    "bodyInlineSvgSourceOccurrences": 36,
+    "contextualOverridesVerified": 2,
+    "actualInternalTargetsChecked": 95532,
+    "actualAnchoredTargetsChecked": 490,
+    "sourceImageOccurrences": 35,
+    "sourceImageUniquePublishedPaths": 22,
+    "emptyInlineSvgSourceOccurrences": 36,
+    "emptyInlineSvgPages": 29,
+    "diagramOccurrences": 22,
+    "uniqueDiagrams": 22
+  },
+  "errors": [],
+  "warnings": [],
+  "statusCounts": {
+    "catalog": {
+      "reviewed": 15235
+    },
+    "pageRegister": {
+      "reviewed": 15235
+    },
+    "runtimeBlocks": {
+      "reviewed": 164126
+    },
+    "unitRegister": {
+      "reviewed": 58463
+    }
+  },
+  "reviewCoverage": {
+    "sourceUnits": 58463,
+    "currentReviewedUnits": 58463,
+    "placeholderAndHtmlNestingValidated": 58463,
+    "methods": {
+      "AI 逐句语义译审": 29190,
+      "exact-reviewed-phrase": 16306,
+      "Individually reviewed exact-text API template with protected identifiers": 8417,
+      "AI 逐句语义译审；精确源文模板复用；保留代码标识符": 607,
+      "API identifier copied verbatim after source-link and identifier-grammar verification": 339,
+      "AI 逐句语义译审；代码标识符及 API 名称核对": 3206,
+      "已逐句审阅的完全相同英文正文；仅适配原站导航前缀与占位符编号": 398
+    },
+    "sourceFiles": {
+      "review-titles.json": 248,
+      "review-start.json": 237,
+      "review-common-units.json": 16306,
+      "review-api-a.json": 6310,
+      "review-api-templates.json": 9024,
+      "review-deployment-security.json": 1548,
+      "review-grains2.json": 252,
+      "review-host-operations.json": 982,
+      "review-api-identifiers.json": 339,
+      "review-durable-tasks.json": 856,
+      "review-cross-b.json": 19,
+      "review-hosting.json": 521,
+      "review-storage-serialization.json": 423,
+      "review-journaling-event.json": 560,
+      "review-diagnostics.json": 444,
+      "review-api-b.json": 4636,
+      "review-api-c.json": 5994,
+      "review-architecture.json": 815,
+      "review-streams-messaging.json": 894,
+      "review-api-d.json": 3206,
+      "review-api-reuse.json": 398,
+      "review-resources-examples.json": 858,
+      "review-api-d-b.json": 1181,
+      "review-api-d-a.json": 1198,
+      "review-grains-migration.json": 800,
+      "review-durable.json": 234,
+      "review-core.json": 180
+    }
+  },
+  "residualEnglishReview": {
+    "currentNoHanUnits": 11360,
+    "priorIndependentReview": "translations/cross-review-a-final.json",
+    "priorCounts": {
+      "sourceUnits": 58463,
+      "reviewedFinalUnits": 58463,
+      "withoutHanCharacters": 11360,
+      "multiwordCandidates": 217,
+      "explicitApiSyntaxOrUrlExcluded": 142,
+      "multiwordCandidatesActuallyRead": 75,
+      "singleWordNonCodeCandidatesActuallyRead": 103,
+      "additionalCodeContainingShortUnitsActuallyRead": 5,
+      "confirmedMissingNaturalLanguageUniqueUnits": 1,
+      "confirmedMissingNaturalLanguagePageOccurrences": 2,
+      "globalReviewCorrections": 0,
+      "contextualCorrections": 2
+    },
+    "all27InputReviewFilesAnd58463SourceUnitsByteIdentical": false,
+    "reviewInputsMatchBaselinePlusExactlyFourApprovedJournalingTagChanges": true,
+    "approvedFourUnitTermDeltaVerified": true,
+    "all75PreviouslyReadMultiwordCandidatesUnchanged": true,
+    "contextualOverridesVerified": 2,
+    "currentSemanticScope": "The existing AI sentence-level review and independent residual-English review remain applicable to unchanged units. All review inputs match their recorded hashes except exactly four explicitly reviewed Journaling tag corrections, recorded separately. This run revalidates structure, state, placeholders and contextual output; it does not claim to re-read 58463 translations semantically."
+  },
+  "images": [
+    {
+      "page": "/docs/host/configuration-guide/serialization/",
+      "blockId": "9144e01529752bdc-11",
+      "sourceSrc": "/orleans/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp",
+      "publishedSrc": "assets/original/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp"
+    },
+    {
+      "page": "/docs/host/heterogeneous-silos/",
+      "blockId": "1d3e2f583aa4b05f-2",
+      "sourceSrc": "/orleans/_astro/heterogeneous.C0meRUB5_V6RbB.webp",
+      "publishedSrc": "assets/original/_astro/heterogeneous.C0meRUB5_V6RbB.webp"
+    },
+    {
+      "page": "/docs/overview/",
+      "blockId": "382b25bad3cd2b5e-14",
+      "sourceSrc": "/orleans/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+      "publishedSrc": "assets/original/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg"
+    },
+    {
+      "page": "/docs/overview/",
+      "blockId": "382b25bad3cd2b5e-18",
+      "sourceSrc": "/orleans/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "publishedSrc": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-8",
+      "sourceSrc": "/orleans/_astro/web-application.mdTGpSsm_Z1r4fB0.webp",
+      "publishedSrc": "assets/original/_astro/web-application.mdTGpSsm_Z1r4fB0.webp"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-38",
+      "sourceSrc": "/orleans/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp",
+      "publishedSrc": "assets/original/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/adventure/BoxArt.jpg",
+      "publishedSrc": "assets/original/sample-images/adventure/BoxArt.jpg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/azure-app-service-deployment/shopping-cart-arch.png",
+      "publishedSrc": "assets/original/sample-images/azure-app-service-deployment/shopping-cart-arch.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/chirper/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/chirper/screenshot.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/gps-tracker/screenshot.jpeg",
+      "publishedSrc": "assets/original/sample-images/gps-tracker/screenshot.jpeg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/hello-world/code.png",
+      "publishedSrc": "assets/original/sample-images/hello-world/code.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/presence/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/presence/screenshot.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/shopping-cart/shopping-cart.png",
+      "publishedSrc": "assets/original/sample-images/shopping-cart/shopping-cart.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/bank-account/BankClient.png",
+      "publishedSrc": "assets/original/sample-images/bank-account/BankClient.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/blazor-server/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/blazor-server/screenshot.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/blazor-webassembly/screenshot.jpeg",
+      "publishedSrc": "assets/original/sample-images/blazor-webassembly/screenshot.jpeg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/chat-room/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/chat-room/screenshot.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/stocks/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/stocks/screenshot.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/tic-tac-toe/logo.png",
+      "publishedSrc": "assets/original/sample-images/tic-tac-toe/logo.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/transport-layer-security/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/transport-layer-security/screenshot.png"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/favicon.svg",
+      "publishedSrc": "assets/original/favicon.svg"
+    },
+    {
+      "page": "/samples/",
+      "blockId": "41ae4a844d4e1150-4",
+      "sourceSrc": "/orleans/sample-images/voting/screenshot.png",
+      "publishedSrc": "assets/original/sample-images/voting/screenshot.png"
+    }
+  ],
+  "emptyInlineSvgs": [
+    {
+      "page": "/docs/dashboard/",
+      "blockId": "bd83351bda946dd7-3",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/deployment/",
+      "blockId": "e77e03622ee84a2d-20",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/deployment/deploy-to-azure-app-service-linux/",
+      "blockId": "d0bb9aa6bc877794-9",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/deployment/deploy-to-azure-app-service/",
+      "blockId": "76d2d212c1d0fda8-11",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/deployment/kubernetes/",
+      "blockId": "487129cc7ba727a1-23",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/",
+      "blockId": "4646dcd2647a7e1f-14",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/durable-tasks/",
+      "blockId": "a389003d993e9b78-2",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/event-sourcing/journaledgrain-basics/",
+      "blockId": "46cb1ae6296ab3e7-12",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Caution"
+    },
+    {
+      "page": "/docs/grains/grain-persistence/",
+      "blockId": "dfc4b6b20a797156-13",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/grain-persistence/memory-storage/",
+      "blockId": "69b54201feefe1fd-2",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/grains/grain-persistence/redis-storage/",
+      "blockId": "e40f17a76dac07bd-13",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/grains/grain-placement-filtering/",
+      "blockId": "d3f05bf4c338d876-1",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/grains/grain-versioning/grain-versioning/",
+      "blockId": "2e61751fe4365a2c-10",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/journaling/",
+      "blockId": "414d791a720a00ba-2",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/journaling/runtime-behavior/",
+      "blockId": "2840524a16bda3b5-23",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/grains/transactions/",
+      "blockId": "db5edd894f591949-29",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Note"
+    },
+    {
+      "page": "/docs/host/aspire-integration/",
+      "blockId": "2f95c96ab3f58525-17",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/configuration-guide/",
+      "blockId": "66038f329ac32c55-16",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Note"
+    },
+    {
+      "page": "/docs/host/configuration-guide/adonet-configuration/",
+      "blockId": "52b76815b41aedd4-4",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/configuration-guide/configuring-ado-dot-net-providers/",
+      "blockId": "a27ed87246de8588-15",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/configuration-guide/configuring-ado-dot-net-providers/",
+      "blockId": "a27ed87246de8588-30",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/configuration-guide/local-development-configuration/",
+      "blockId": "2f35010322705f39-15",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/configuration-guide/serialization-configuration/",
+      "blockId": "b4a02378f876116d-28",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/host/silo-lifecycle/",
+      "blockId": "bee4756419456161-7",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/transport-layer-security/",
+      "blockId": "21723ad9c0432ec2-2",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/host/transport-layer-security/",
+      "blockId": "21723ad9c0432ec2-37",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/how-to/long-running-reminders/",
+      "blockId": "1712c35f7aed0fcf-4",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/migration-guide/",
+      "blockId": "1b8b7aa68e91d618-3",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/migration/3-to-7-archive/",
+      "blockId": "9aab4d500bc9a55d-1",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Warning"
+    },
+    {
+      "page": "/docs/overview/",
+      "blockId": "382b25bad3cd2b5e-3",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Note"
+    },
+    {
+      "page": "/docs/overview/",
+      "blockId": "382b25bad3cd2b5e-33",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path",
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path><path></path></svg>Next step"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-8",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path",
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path><path></path></svg>Tip"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-15",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path",
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path><path></path></svg>Tip"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-31",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path",
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path><path></path></svg>Tip"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-36",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path></svg>Important"
+    },
+    {
+      "page": "/docs/quickstarts/deploy-scale-orleans-on-azure/",
+      "blockId": "a48e234bd6ae9dd9-50",
+      "class": "starlight-aside__icon",
+      "children": [
+        "path",
+        "path"
+      ],
+      "sourceHtml": "<svg class=\"starlight-aside__icon\"><path></path><path></path></svg>Next step"
+    }
+  ],
+  "diagramOccurrences": [
+    {
+      "page": "/docs/grains/durable-tasks-idempotency/",
+      "blockId": "fa56fd085104c704-9",
+      "key": "a250769c00d486e6eaa68feb71b85436ad2694eb03e38636f570cab602c6363e"
+    },
+    {
+      "page": "/docs/grains/durable-tasks-structured-concurrency/",
+      "blockId": "05006a29fd51927a-4",
+      "key": "31a21e6b3c6c79b1c9950d5d223b8231526ad2b272cce8329d230b32a363196e"
+    },
+    {
+      "page": "/docs/grains/durable-tasks-structured-concurrency/",
+      "blockId": "05006a29fd51927a-17",
+      "key": "9f6e57d89ec2de64a7c87f39059093235389fb1e6f1c5e34f14f6972d9599653"
+    },
+    {
+      "page": "/docs/implementation/",
+      "blockId": "a0b534cc1d563612-6",
+      "key": "7cd18d86165ab2266c5f8cedd76eec8454d16e42a84e64ee78addfd9db797e67"
+    },
+    {
+      "page": "/docs/implementation/activation-lifecycle/",
+      "blockId": "dac889442668047b-2",
+      "key": "4ac0d6928df1fefee0bcf0e38c7f77d309f2c6b19a3fb51c7796ad303b634fde"
+    },
+    {
+      "page": "/docs/implementation/activation-lifecycle/",
+      "blockId": "dac889442668047b-24",
+      "key": "4ccfd119f4202e5abb7d342734933650f4bca71d0bd736fe30a8efdb774fbdb1"
+    },
+    {
+      "page": "/docs/implementation/cluster-management/",
+      "blockId": "ae32ab7bc5932a83-8",
+      "key": "db1ad3cb2510b67d95741bcf7cea459afb06b4aaa70ef092401983b7a762e1e8"
+    },
+    {
+      "page": "/docs/implementation/cluster-management/",
+      "blockId": "ae32ab7bc5932a83-28",
+      "key": "06cf7bc7d455ca56a595e9d9411e7e0baa57166cd55b8507d5e5d8c5cdfc7138"
+    },
+    {
+      "page": "/docs/implementation/grain-directory/",
+      "blockId": "e75ec04d9609457e-5",
+      "key": "3f03a84625cfa7ba56441ce7ff7e74a41cef94ec809d76ad461d33bc1feb85d5"
+    },
+    {
+      "page": "/docs/implementation/grain-directory/",
+      "blockId": "e75ec04d9609457e-16",
+      "key": "fd1c0a068424f9396a9617dfa2bb085496560847e160963bacecdd4cf18d9381"
+    },
+    {
+      "page": "/docs/implementation/load-balancing/",
+      "blockId": "843f6fe8e0b61215-6",
+      "key": "9676b88d3a60b09cedcf3f349bd23447c80cb41431089944aa26dc2c98c0e6cd"
+    },
+    {
+      "page": "/docs/implementation/messaging-delivery-guarantees/",
+      "blockId": "a4af1c81e68aed58-3",
+      "key": "186d5bd02991dada3724138c9b25d9dff058b8747644c7fc4636005aa4d2f154"
+    },
+    {
+      "page": "/docs/implementation/orleans-lifecycle/",
+      "blockId": "c0ae2512609ec9a3-5",
+      "key": "4006e2bc9eb87c0727d87a80fb59f1a4a45239eb24c440bc0ceecff7af3f5af1"
+    },
+    {
+      "page": "/docs/implementation/runtime-architecture/",
+      "blockId": "c931bd92b33eb627-2",
+      "key": "3df3d8d581ec3d6aefa6631fff7562c98674fb076ed8d51ac90d1aed70e5e17f"
+    },
+    {
+      "page": "/docs/implementation/scheduler/",
+      "blockId": "d3e22320744daca0-6",
+      "key": "63dc8b20fbea3b78ca220375deef47b7ac9123ce5283cc3e4105babaaa7b67f0"
+    },
+    {
+      "page": "/docs/implementation/serialization/",
+      "blockId": "7ebe178e9cfab505-6",
+      "key": "e42e437973f5f4baa3c99858c14b399822fc1d74bdb5baca37f42c327dae486f"
+    },
+    {
+      "page": "/docs/implementation/serialization/",
+      "blockId": "7ebe178e9cfab505-29",
+      "key": "ce2eb362655e2c0bd503cbd23a1c9e4ec51a43c042dfb3c078ae0f1b9a624fe1"
+    },
+    {
+      "page": "/docs/implementation/streams-implementation/",
+      "blockId": "3e72b6edecb18b2e-3",
+      "key": "743557d2a48d47cdab85f9a342882700a6d3daddb03c9e55795b6f8f1d9b3e8a"
+    },
+    {
+      "page": "/docs/implementation/streams-implementation/",
+      "blockId": "3e72b6edecb18b2e-28",
+      "key": "7dcdcb76ed4f00de568f1aebd83fa383c6206d1d2044fe36517aa8500197af40"
+    },
+    {
+      "page": "/docs/implementation/streams-implementation/azure-queue-streams/",
+      "blockId": "3294b495ffa41f0e-12",
+      "key": "ff36ed0c545cc9f2fc1dfde6e7574bd21221050a030ac639e6449086eaa9bee6"
+    },
+    {
+      "page": "/docs/implementation/testing/",
+      "blockId": "b028cff10c0cd8ea-4",
+      "key": "2c51a58d249f5b36cd95de3089632a90a19c3c5e07408a4b0df0fee35dbce76c"
+    },
+    {
+      "page": "/docs/implementation/transactions/",
+      "blockId": "6771be00cdd23a28-5",
+      "key": "6de0a437633905f9bb0c972a96d2f9711708e4de072c2dba8967e4ae1fb11c5c"
+    }
+  ],
+  "payloadHashesAtAudit": [
+    {
+      "key": "catalog.json",
+      "script": "data/catalog.js",
+      "sha256": "6ad44c639a2f3194c23d76161fe90b345d60af69dc22ea9905557cc59952c580"
+    },
+    {
+      "key": "search.json",
+      "script": "data/search.js",
+      "sha256": "786d4a6b2e4eb6b76155d04b8eaac3309dacc2a94a273c7a5cd37c0643550c3f"
+    },
+    {
+      "key": "diagrams.json",
+      "script": "data/diagrams.js",
+      "sha256": "f74878a761c152d6e3f885bef8f0fe3c17f88b24a94d96e02eed7882aaf2408e"
+    },
+    {
+      "key": "content/c0000.json",
+      "script": "data/content/c0000.js",
+      "sha256": "c588ca1792d285bf3763d85c2254761da80eedb37c40f30024fd1e9774bfc256"
+    },
+    {
+      "key": "content/c0001.json",
+      "script": "data/content/c0001.js",
+      "sha256": "742a013318e013c4e0a52daa9f7c00dcd0cf65f179565d6631d7cf52e942c9ef"
+    },
+    {
+      "key": "content/c0002.json",
+      "script": "data/content/c0002.js",
+      "sha256": "435bed5db00b206dc6edcd62c58f462ecef821cec26431addfb1885873b8a919"
+    },
+    {
+      "key": "content/c0003.json",
+      "script": "data/content/c0003.js",
+      "sha256": "74ff16870d1096684371e0c467e83eb368ae2c0898a5e251b509eca14f246979"
+    },
+    {
+      "key": "content/c0004.json",
+      "script": "data/content/c0004.js",
+      "sha256": "eb165d8b45de9a0dbd838adbb897fe1c9508feae1ea47b7f28d7bfaf299cef33"
+    },
+    {
+      "key": "content/c0005.json",
+      "script": "data/content/c0005.js",
+      "sha256": "9e15e939484aa18cdb5409b2f47439ebbe5fdc3c9dc51c820eb4a8209a14ceb7"
+    },
+    {
+      "key": "content/c0006.json",
+      "script": "data/content/c0006.js",
+      "sha256": "9d2533fa6696e06395a40877adee5b528da2b7eda780d76a487f11772f5bd0ae"
+    },
+    {
+      "key": "content/c0007.json",
+      "script": "data/content/c0007.js",
+      "sha256": "91e5d0118a65f187267e5789754d5e1fbe4055b18c0f36fd7fb3c6029206f559"
+    },
+    {
+      "key": "content/c0008.json",
+      "script": "data/content/c0008.js",
+      "sha256": "c3043c8df227cd62c59ee513ffbce15fdb12dd8749d882409c01ab2c1dc88109"
+    },
+    {
+      "key": "content/c0009.json",
+      "script": "data/content/c0009.js",
+      "sha256": "2e2f669e6799c46942980b1d1c05db07710550d5e2175dfd62f71cc8d3f14e6b"
+    },
+    {
+      "key": "content/c0010.json",
+      "script": "data/content/c0010.js",
+      "sha256": "99c9a4dc904625d069784a2f512e2260551fcfe14e02d85fc74ce65866d6ba77"
+    },
+    {
+      "key": "content/c0011.json",
+      "script": "data/content/c0011.js",
+      "sha256": "cd8cb20db14cd32c67665fa05d7fd73bf609cbbde43e8653e1dd3220d49809d2"
+    },
+    {
+      "key": "content/c0012.json",
+      "script": "data/content/c0012.js",
+      "sha256": "3ba06610054dd4c0ea92b1f72f2a00833a7420d763a8f43c005d47032925d865"
+    },
+    {
+      "key": "content/c0013.json",
+      "script": "data/content/c0013.js",
+      "sha256": "72b824c348d56d2375f1e4e470867b2e711780646dbdfe0b61599a6e93ee199e"
+    },
+    {
+      "key": "content/c0014.json",
+      "script": "data/content/c0014.js",
+      "sha256": "d9a8999dca6a42601780d3eefd2373cb026ca7ae0b9c4b3c33eda04cfdadc36c"
+    },
+    {
+      "key": "content/c0015.json",
+      "script": "data/content/c0015.js",
+      "sha256": "659c73e02f738912facc78d7b3826d828f940ac6e56c4e4fb9ca2ae9f9381d16"
+    },
+    {
+      "key": "content/c0016.json",
+      "script": "data/content/c0016.js",
+      "sha256": "94d074eb51c6aaf9045af03a2ea5374b3e4c79a8224f527aca507ffb9afdb54b"
+    },
+    {
+      "key": "content/c0017.json",
+      "script": "data/content/c0017.js",
+      "sha256": "49944d8f59dfcb3422e2de6ca9409ffa6faeb919b641b48e408a0028bc62ce4e"
+    },
+    {
+      "key": "content/c0018.json",
+      "script": "data/content/c0018.js",
+      "sha256": "f82b021f7195f2f6fc293784d170b9b42d0ebac755f725b50b7b99d24a7b400f"
+    },
+    {
+      "key": "content/c0019.json",
+      "script": "data/content/c0019.js",
+      "sha256": "3a8ff103e9d2202cea09efee89024f050a2789692eac19ef4313197887063190"
+    },
+    {
+      "key": "content/c0020.json",
+      "script": "data/content/c0020.js",
+      "sha256": "273d203b2c93f9948b23a43492e867712c6568e58bf442232d2d8a683f0bbcea"
+    },
+    {
+      "key": "content/c0021.json",
+      "script": "data/content/c0021.js",
+      "sha256": "a007f9f6d06916e9db4d7e388d9413c429aa0b06c5b018cc0339033e97448728"
+    },
+    {
+      "key": "content/c0022.json",
+      "script": "data/content/c0022.js",
+      "sha256": "ee28ba44ccc2b733c8097ae868dc0fb573c4c4bb16fa2c6e6da45fe451b7632d"
+    },
+    {
+      "key": "content/c0023.json",
+      "script": "data/content/c0023.js",
+      "sha256": "1b4033d73df4cd09bf69bc9316476241b320347af9cd780e55460da3529a36ba"
+    },
+    {
+      "key": "content/c0024.json",
+      "script": "data/content/c0024.js",
+      "sha256": "6bdca79453dac7d891ddd5a4dc7ea5968e69a26cc3d8c9259a2690f3054d366f"
+    },
+    {
+      "key": "content/c0025.json",
+      "script": "data/content/c0025.js",
+      "sha256": "d86c3c28dbe8106fb23b5e5683c2a4acad1a2b98cd3e634097afa03d456df028"
+    },
+    {
+      "key": "content/c0026.json",
+      "script": "data/content/c0026.js",
+      "sha256": "ad2e6e1f968aa9ee19b98d1405521903caed406680f192953143c36d1877ae37"
+    },
+    {
+      "key": "content/c0027.json",
+      "script": "data/content/c0027.js",
+      "sha256": "b490e0bd551f0306f8f23f44caec654cf7fb8bc90e967fe8d4c28ae367c31293"
+    },
+    {
+      "key": "content/c0028.json",
+      "script": "data/content/c0028.js",
+      "sha256": "4c7fdf6dc7d9e875481532a9c89b2677737a5a119abd88e1e3155ae68b8b7071"
+    },
+    {
+      "key": "content/c0029.json",
+      "script": "data/content/c0029.js",
+      "sha256": "e92bcdc1927fb438046d3eb9dae6a82ba00371ecf77d3e6b9ee18cdaa153457b"
+    },
+    {
+      "key": "content/c0030.json",
+      "script": "data/content/c0030.js",
+      "sha256": "1f96c7edd3c499337a3dfbe2d777ba857cda9f5235c904897dcc012718640977"
+    },
+    {
+      "key": "content/c0031.json",
+      "script": "data/content/c0031.js",
+      "sha256": "4440766a371b629dbe9e4fb811839b0113ea965d4c88c834cd9bbebfaf0c6e79"
+    },
+    {
+      "key": "content/c0032.json",
+      "script": "data/content/c0032.js",
+      "sha256": "f21b32bd8730c91e0c90675d35c299c9bdf10944c96a00634675369c36250b00"
+    },
+    {
+      "key": "content/c0033.json",
+      "script": "data/content/c0033.js",
+      "sha256": "8a711dd2c03e01593362e929feaa3ef5086e369c7bfb2c7a63d38ab3eb1d0c6d"
+    },
+    {
+      "key": "content/c0034.json",
+      "script": "data/content/c0034.js",
+      "sha256": "2dc090c55068233442bd355e04cb7c6a648a467353ad79db936febd70771a1dd"
+    },
+    {
+      "key": "content/c0035.json",
+      "script": "data/content/c0035.js",
+      "sha256": "fdb641dec6ad0db669f278b4d99aeb7d58e63b0821250fbe17965f89d57656ce"
+    },
+    {
+      "key": "content/c0036.json",
+      "script": "data/content/c0036.js",
+      "sha256": "236e7f06b5ae8a084f1908a6aac7ce8f1d0ad5a0322ced32c7862b7ad644f9ff"
+    },
+    {
+      "key": "content/c0037.json",
+      "script": "data/content/c0037.js",
+      "sha256": "d8d5b8b5959ff07b9cc4c19f8737bf9cc495ed6a49f971ba4cf3780f9052dac5"
+    },
+    {
+      "key": "content/c0038.json",
+      "script": "data/content/c0038.js",
+      "sha256": "e2d899503cecf707167af0d81866448a0fb7f2914d0db66b8292c702af7b8696"
+    },
+    {
+      "key": "content/c0039.json",
+      "script": "data/content/c0039.js",
+      "sha256": "b3240a61ba0d4ac35cca1851419b631365c80cc4cd602037c60efcc6b50aa0f6"
+    },
+    {
+      "key": "content/c0040.json",
+      "script": "data/content/c0040.js",
+      "sha256": "952f1140a2ed44c91f15b27ec90860a268c9e48d40eeda2a48676bb0d133d068"
+    },
+    {
+      "key": "content/c0041.json",
+      "script": "data/content/c0041.js",
+      "sha256": "e19818c66085ebd5f5287e1421f7bca34743d36f2a6c710f6f18ed191b751224"
+    },
+    {
+      "key": "content/c0042.json",
+      "script": "data/content/c0042.js",
+      "sha256": "17a2944837e141dc2014499d3b2ac5dd13da1dc7017a8899e1aa145fab6b6d10"
+    },
+    {
+      "key": "content/c0043.json",
+      "script": "data/content/c0043.js",
+      "sha256": "6fdffe37bc04ee77021121570c0fbbeeacc937852f4871af3771dffc4c9a99a5"
+    },
+    {
+      "key": "content/c0044.json",
+      "script": "data/content/c0044.js",
+      "sha256": "956affa0f0a446c49505f7ea5cd854e23c8e617600e4673ff893ff4af5a0d1cf"
+    },
+    {
+      "key": "content/c0045.json",
+      "script": "data/content/c0045.js",
+      "sha256": "7e5e166e01a6793e00e9775a320a06602e1df055b5b8d4ecd2e5049d62bcbf9f"
+    },
+    {
+      "key": "content/c0046.json",
+      "script": "data/content/c0046.js",
+      "sha256": "263d6262efa6bc18455bc2533768bd926d576f433bd0b3b002596afb14880cc9"
+    },
+    {
+      "key": "content/c0047.json",
+      "script": "data/content/c0047.js",
+      "sha256": "b70ac49933c22b1fd4e4bd4e735adaff96159966aa25a59851d138c7543098da"
+    },
+    {
+      "key": "content/c0048.json",
+      "script": "data/content/c0048.js",
+      "sha256": "0c3e583929414f75db23b86f44a24c9715595ca5629b9f5f8ec391d935a4d0fe"
+    },
+    {
+      "key": "content/c0049.json",
+      "script": "data/content/c0049.js",
+      "sha256": "f291b783c90fca987307afeafbc7ba435feefe001a498d117e97860b79e2279d"
+    },
+    {
+      "key": "content/c0050.json",
+      "script": "data/content/c0050.js",
+      "sha256": "d97e088b5a4f8ff54c845d923977e3bfa5ead77a2ea04c9d240b2ac40a1edbdd"
+    },
+    {
+      "key": "content/c0051.json",
+      "script": "data/content/c0051.js",
+      "sha256": "8cb86cc6f67037238ac2d423fcc33ff42ff0d12e5025c647124ad0c85f8cad5e"
+    },
+    {
+      "key": "content/c0052.json",
+      "script": "data/content/c0052.js",
+      "sha256": "c0c9844abe9bfcd09e83810e86f134796a7130b58df5360e6815fd2ff3260e05"
+    },
+    {
+      "key": "content/c0053.json",
+      "script": "data/content/c0053.js",
+      "sha256": "a8d830d3714ec0c2f092d6ee3643913c3189e0dcc2030f60003d247a9d90a13d"
+    },
+    {
+      "key": "content/c0054.json",
+      "script": "data/content/c0054.js",
+      "sha256": "dcdb6e1282df48276dc5480c4b3a12a9ca6108ab4d90325d4abd1d1c437beecd"
+    },
+    {
+      "key": "content/c0055.json",
+      "script": "data/content/c0055.js",
+      "sha256": "b01d08478bbe800d077cfd8544f996265654be27247fbc619e4c01ff1c32a725"
+    },
+    {
+      "key": "content/c0056.json",
+      "script": "data/content/c0056.js",
+      "sha256": "a9d2d58f064de4720b1e093173ce8f779d0b2b384d242b7e64f4c7fa454d8765"
+    },
+    {
+      "key": "content/c0057.json",
+      "script": "data/content/c0057.js",
+      "sha256": "f0b7fd0087bfdcbb957c868cf32238a1687c8f1ad07e0cfcefbd5bfc45b02f8a"
+    },
+    {
+      "key": "content/c0058.json",
+      "script": "data/content/c0058.js",
+      "sha256": "10958fc016465539e98aca09b25f951722254f4848d4eaeb75178831bd2ad92c"
+    },
+    {
+      "key": "content/c0059.json",
+      "script": "data/content/c0059.js",
+      "sha256": "f537dcbabed889be2a2e577e2ba0bda7978a176d5940b43a23ef8e171329dc47"
+    },
+    {
+      "key": "content/c0060.json",
+      "script": "data/content/c0060.js",
+      "sha256": "6873e8b25463cd40e0b49c6cbdca5c639ac875b964763f8771237ad8a5fa0cd5"
+    },
+    {
+      "key": "content/c0061.json",
+      "script": "data/content/c0061.js",
+      "sha256": "0fbbb27cc513e1ffaedab4fedd8265ca7fc539559a658424b05d6f9fe255bd60"
+    },
+    {
+      "key": "content/c0062.json",
+      "script": "data/content/c0062.js",
+      "sha256": "aa350695651acd98f87d06f3c2de6e2c1a54c66b2c98b11b90fa0f1bdaeb4144"
+    },
+    {
+      "key": "content/c0063.json",
+      "script": "data/content/c0063.js",
+      "sha256": "13e8b82fa7f6e6075b983bfc8425a6ee8f92ffb46da8948ec63eb8352e6a6e6b"
+    },
+    {
+      "key": "content/c0064.json",
+      "script": "data/content/c0064.js",
+      "sha256": "7f5d0d0defd7d08f09c3fd83c28c3bc2324927d615e573768a7403665dbee982"
+    },
+    {
+      "key": "content/c0065.json",
+      "script": "data/content/c0065.js",
+      "sha256": "5c453165fe3d030d275d0e90618b753349e94a86958d5e26c4dcc8172921da7e"
+    },
+    {
+      "key": "content/c0066.json",
+      "script": "data/content/c0066.js",
+      "sha256": "eb0551d287e010a595aabe33d8568f278b541726a4febfc2357f251c4b4bec74"
+    },
+    {
+      "key": "content/c0067.json",
+      "script": "data/content/c0067.js",
+      "sha256": "8d7791629fe513f45118253446548b403aa5a79a9b037eab35ec805e62cfd031"
+    },
+    {
+      "key": "content/c0068.json",
+      "script": "data/content/c0068.js",
+      "sha256": "e6671c0c904893cd1e99f95fb97a05793ea410f07d0e8e9870d6eb27ecd87d36"
+    },
+    {
+      "key": "content/c0069.json",
+      "script": "data/content/c0069.js",
+      "sha256": "f3fb8b56962e690ce3c6d96fcf2e69fc7121a728efe2d095d66d12aeb9f91220"
+    },
+    {
+      "key": "content/c0070.json",
+      "script": "data/content/c0070.js",
+      "sha256": "e2504899d4debe2bf5cea9bf2650f2f467fd0b93c1a0d1d92968a33b0d38a1ab"
+    },
+    {
+      "key": "content/c0071.json",
+      "script": "data/content/c0071.js",
+      "sha256": "bf165af01c5ca6b6131853e274d6c1cd56c148feb084c0474ba62dbba74b4df4"
+    },
+    {
+      "key": "content/c0072.json",
+      "script": "data/content/c0072.js",
+      "sha256": "c97b6a62381efed07997f943c25042b59d897ab68497b19bd2a1a95c10d8c66f"
+    },
+    {
+      "key": "content/c0073.json",
+      "script": "data/content/c0073.js",
+      "sha256": "1397f220165fa122bf5c589879d10a46ee0fa396ad9fbf2a9e55676b9287c17d"
+    },
+    {
+      "key": "content/c0074.json",
+      "script": "data/content/c0074.js",
+      "sha256": "f96c21a0e478e96a7d0283664d90d14747d6a5a3577923edef6d35e53d7a7966"
+    },
+    {
+      "key": "content/c0075.json",
+      "script": "data/content/c0075.js",
+      "sha256": "21f8d5e7d013b5a8c784a612a3b51455a0667195d8b7ceb3356aa8d919f4b91e"
+    },
+    {
+      "key": "content/c0076.json",
+      "script": "data/content/c0076.js",
+      "sha256": "8ca70c2c6c018c0200a8ef2af01e086912d648bba3ef5530359f68ffb79906e6"
+    },
+    {
+      "key": "content/c0077.json",
+      "script": "data/content/c0077.js",
+      "sha256": "d7fe629a86bbbd6a112396ad8638536ea5c02a9a697bc65a4e881316bcc719e3"
+    },
+    {
+      "key": "content/c0078.json",
+      "script": "data/content/c0078.js",
+      "sha256": "d6f9825d4203f3b75cd364e77ce7cf6549552bf5d174de1b5b84628628fd3cca"
+    },
+    {
+      "key": "content/c0079.json",
+      "script": "data/content/c0079.js",
+      "sha256": "e6be18129beca74c3f90fe4dbe83a0dfbef8f73c3611b1ec883f5103cc936c3d"
+    },
+    {
+      "key": "content/c0080.json",
+      "script": "data/content/c0080.js",
+      "sha256": "6c42c171309ef46385993aa9f3596d55372355d502dd28aea8429b43f073949e"
+    },
+    {
+      "key": "content/c0081.json",
+      "script": "data/content/c0081.js",
+      "sha256": "280ec33c170e11406a5aaedc8791ce2dd7e91b63f3b11dc747df047a3d0f162b"
+    },
+    {
+      "key": "content/c0082.json",
+      "script": "data/content/c0082.js",
+      "sha256": "fbec74caa5051437849c50acce626c5ebee4c76d29efd72f093f33442c0957ff"
+    },
+    {
+      "key": "content/c0083.json",
+      "script": "data/content/c0083.js",
+      "sha256": "f12c1d1f8da1e61c66f312f511e734240224d36c1de6002c122d81ed48b50240"
+    },
+    {
+      "key": "content/c0084.json",
+      "script": "data/content/c0084.js",
+      "sha256": "29137917718afdcc20f484e25e3adb0eff26d67e1237db082e81f47ca4d011ce"
+    },
+    {
+      "key": "content/c0085.json",
+      "script": "data/content/c0085.js",
+      "sha256": "57a8752989b72b2dcc55392103b534a849c1b223fc7f99b276fbaa16d507e8d3"
+    },
+    {
+      "key": "content/c0086.json",
+      "script": "data/content/c0086.js",
+      "sha256": "aa6e4603d307176b94b732297ffd1cd037ddbb8a8cd6b774b4e32ff9c164ce79"
+    },
+    {
+      "key": "content/c0087.json",
+      "script": "data/content/c0087.js",
+      "sha256": "8cba55d06a463fd131286952c22797c7a22f1d2da17c0e214d39e657782a915b"
+    },
+    {
+      "key": "content/c0088.json",
+      "script": "data/content/c0088.js",
+      "sha256": "d6c2317412ef63effae74e1067b811f77c1b53fb05cf63a8b3361c1cd789462d"
+    },
+    {
+      "key": "content/c0089.json",
+      "script": "data/content/c0089.js",
+      "sha256": "bcb97a91251722ee0ba062e53b05792a67d4f623796697d22e84790e1011e2ae"
+    },
+    {
+      "key": "content/c0090.json",
+      "script": "data/content/c0090.js",
+      "sha256": "c37dcbc18737c23443a38ecdd7ba65d7a98e7109757d83120ac16a82cb258f8f"
+    },
+    {
+      "key": "content/c0091.json",
+      "script": "data/content/c0091.js",
+      "sha256": "d5eab71af216b5b34857208da8f41ca793ee9eb05b86d09c1bf7aca9dec25ce8"
+    },
+    {
+      "key": "content/c0092.json",
+      "script": "data/content/c0092.js",
+      "sha256": "3d461ec92f7cbbb6e890de86db0e31a3496d9877cf78306856c8a7294b3fb9cb"
+    },
+    {
+      "key": "content/c0093.json",
+      "script": "data/content/c0093.js",
+      "sha256": "dbde513fbdc94f2e917c4d0b2f47b04ccf93954941664654a300d56b6cac5ce7"
+    },
+    {
+      "key": "content/c0094.json",
+      "script": "data/content/c0094.js",
+      "sha256": "3b89d1314fd181dacbc6aeddb3f177e5e1c38c061664691a9050d6498f4120c8"
+    },
+    {
+      "key": "content/c0095.json",
+      "script": "data/content/c0095.js",
+      "sha256": "a1d3d2cc7153f11eced3704b5207e5327ef59e841269d7fd7ced853834bec92c"
+    },
+    {
+      "key": "content/c0096.json",
+      "script": "data/content/c0096.js",
+      "sha256": "ce55ba449fe287ac9e2bb98626bd1dbbb1850a839cea4acc5d4da9f5de318f4e"
+    },
+    {
+      "key": "content/c0097.json",
+      "script": "data/content/c0097.js",
+      "sha256": "5038962d66fe5f27f89f1745b3bf13f7b93b0a4687199b03a9e229c44c029958"
+    },
+    {
+      "key": "content/c0098.json",
+      "script": "data/content/c0098.js",
+      "sha256": "c611412117666b61ad8d7a5e150cc2a87dd6989e72549c96c4a4736954ed070a"
+    },
+    {
+      "key": "content/c0099.json",
+      "script": "data/content/c0099.js",
+      "sha256": "5156328bb2d5eb1fd925cbc1ea508c217cb73ffb917feaf420cc41a324e6e9ef"
+    },
+    {
+      "key": "content/c0100.json",
+      "script": "data/content/c0100.js",
+      "sha256": "71ee4e00cfb35c1f272c34f31e26d889516c35f57760c8852b9b94efdf52aac0"
+    },
+    {
+      "key": "content/c0101.json",
+      "script": "data/content/c0101.js",
+      "sha256": "56c89817a8689a7ed4a1bcb61f07cb81d19d0f3d9fef6676ff70c28533d58cab"
+    },
+    {
+      "key": "content/c0102.json",
+      "script": "data/content/c0102.js",
+      "sha256": "40aa898042026025c84d09dce2767d2f57e7b528b7ace998238ef63643d4ae98"
+    },
+    {
+      "key": "content/c0103.json",
+      "script": "data/content/c0103.js",
+      "sha256": "32d028c33477ef400d4f871d3fd07df5e1a62ef7bf8004327d578e03ef4c2ca4"
+    },
+    {
+      "key": "content/c0104.json",
+      "script": "data/content/c0104.js",
+      "sha256": "9dad1d4bd38a2a2d1737c5188b5c70effeac68ab057a7544cef02181a76bc8b4"
+    },
+    {
+      "key": "content/c0105.json",
+      "script": "data/content/c0105.js",
+      "sha256": "641e51206eba4e36ede02ed010cf1930bc0e28fa20fa389ea58fb407930b2ea5"
+    },
+    {
+      "key": "content/c0106.json",
+      "script": "data/content/c0106.js",
+      "sha256": "21ba3cf971455d4752f6b32053efc626ecbed3dbdb37b0d447fa52cf07d4e4ef"
+    },
+    {
+      "key": "content/c0107.json",
+      "script": "data/content/c0107.js",
+      "sha256": "9cb46b40eaa30bd79b090d5a8f8b1eeed432e308b2ad1b063cb4c68280d8e8b1"
+    },
+    {
+      "key": "content/c0108.json",
+      "script": "data/content/c0108.js",
+      "sha256": "57eb354599676ea79a3e6f658286b394b6f5f3a66cc95636e82edd877ee2ac3f"
+    },
+    {
+      "key": "content/c0109.json",
+      "script": "data/content/c0109.js",
+      "sha256": "acf6d62f2940534d01ac055aa0ce23a7ccac709a9a3759370efecdd9dd950022"
+    },
+    {
+      "key": "content/c0110.json",
+      "script": "data/content/c0110.js",
+      "sha256": "ff23965749c3342ed83c155c931a454e8fb4393b4f0f2a950e34652a64a822d3"
+    },
+    {
+      "key": "content/c0111.json",
+      "script": "data/content/c0111.js",
+      "sha256": "0a818b0a72afdf86bd0178b58151d242a8915986aabde2d438088ba5f6b8871f"
+    },
+    {
+      "key": "content/c0112.json",
+      "script": "data/content/c0112.js",
+      "sha256": "2547efbee79b5c70a69546edd781ac55a6d6fa9bba8cce84b4332f827e756075"
+    },
+    {
+      "key": "content/c0113.json",
+      "script": "data/content/c0113.js",
+      "sha256": "e73ca8679e962111cdf1cc7dd3c45859090ed5463a04090e0d4387338cdf12a0"
+    },
+    {
+      "key": "content/c0114.json",
+      "script": "data/content/c0114.js",
+      "sha256": "b83b34ca3c8d02baecc9869c04bccfe0748cdb7841683d846467ff0ab26ed86f"
+    },
+    {
+      "key": "content/c0115.json",
+      "script": "data/content/c0115.js",
+      "sha256": "2691d27c203e2c4ab4d2f28a125d941f3002a67a460ed3255cf20a16ccca6fc7"
+    },
+    {
+      "key": "content/c0116.json",
+      "script": "data/content/c0116.js",
+      "sha256": "beb9b526e8e29ad996ce761664782b9f6ff5c32a689fa1b64904bc888f8f095e"
+    },
+    {
+      "key": "content/c0117.json",
+      "script": "data/content/c0117.js",
+      "sha256": "14f0495190c92b04e79d5d3d28534d997ecbffc4e245a714b2576251942000b5"
+    },
+    {
+      "key": "content/c0118.json",
+      "script": "data/content/c0118.js",
+      "sha256": "e80501a8860fff556096d32eb85e0bab8d04b279faafb960ceae5a73eae23b3f"
+    },
+    {
+      "key": "content/c0119.json",
+      "script": "data/content/c0119.js",
+      "sha256": "85dfcd8a54368353d67d4660e0c86717900ffedf347fd7e57d57a3ac381d9333"
+    },
+    {
+      "key": "content/c0120.json",
+      "script": "data/content/c0120.js",
+      "sha256": "7ad77283f8c82ef8ac540bbb085764eec1b25014b0ef693853b56b0521749de9"
+    },
+    {
+      "key": "content/c0121.json",
+      "script": "data/content/c0121.js",
+      "sha256": "ef7d8d17d566e1d66e3caad030bc9e8bfb0555097e41bebd8cfa56ff0c134587"
+    },
+    {
+      "key": "content/c0122.json",
+      "script": "data/content/c0122.js",
+      "sha256": "033ff903c00ff45c851273c3474ecac46864c5ded7ab3822995e29f4fff3001a"
+    },
+    {
+      "key": "content/c0123.json",
+      "script": "data/content/c0123.js",
+      "sha256": "218aa5fd54fc74b434d3b11eee1eb80392333ca47e98c21c76f349c8742fe53f"
+    },
+    {
+      "key": "content/c0124.json",
+      "script": "data/content/c0124.js",
+      "sha256": "dfeebbcc27414fd24d73689462b1659850edd5d2f7af811b70fa6b622f1abe95"
+    },
+    {
+      "key": "content/c0125.json",
+      "script": "data/content/c0125.js",
+      "sha256": "5190d2b6a1e5993db8351efb9d8e2e97b52b135a122849a4fde2740df50ac340"
+    },
+    {
+      "key": "content/c0126.json",
+      "script": "data/content/c0126.js",
+      "sha256": "cb6614e937fbb6f61c64647cbbcbc286afb8976a718ead15691e1472b1435b11"
+    },
+    {
+      "key": "content/c0127.json",
+      "script": "data/content/c0127.js",
+      "sha256": "b10f4530f92abe695605c9a7018dbb46ea57993647be7c67d7ed6e507c2dc1b6"
+    },
+    {
+      "key": "content/c0128.json",
+      "script": "data/content/c0128.js",
+      "sha256": "405024e5b8bb3ac0dd6563a17d9d393adc89bd010f8fceb95110d23df4319ed1"
+    },
+    {
+      "key": "content/c0129.json",
+      "script": "data/content/c0129.js",
+      "sha256": "769ab681003d3147f52f6a1ea65969f96dbeb07c7964a49fe77b5d67df0c3f3e"
+    },
+    {
+      "key": "content/c0130.json",
+      "script": "data/content/c0130.js",
+      "sha256": "8358f902c54aad80f7050074bc15a9766abeaf8c3b73b335b6ab736d47c8d32e"
+    },
+    {
+      "key": "content/c0131.json",
+      "script": "data/content/c0131.js",
+      "sha256": "60eff4ca9999d9a6775f270d618e11ea95fed14ae3cd7c8f9b09fb5ed5711283"
+    },
+    {
+      "key": "content/c0132.json",
+      "script": "data/content/c0132.js",
+      "sha256": "56212198308139c51e5ffc47be29f75b1f699a10aa7d33d580dadc6ba51ea5a7"
+    },
+    {
+      "key": "content/c0133.json",
+      "script": "data/content/c0133.js",
+      "sha256": "2283a87a16ae567b793a8e3148426666c7d78997ebd90dbfaa2a870ebdc43ad9"
+    },
+    {
+      "key": "content/c0134.json",
+      "script": "data/content/c0134.js",
+      "sha256": "abe85aedc0a0140e7e43ca0e1b1da4a51254271073cf2c2fa62fabdba0e53f7d"
+    },
+    {
+      "key": "content/c0135.json",
+      "script": "data/content/c0135.js",
+      "sha256": "b7fbcabfc49101a1f06b74c174a0e040915d9288e2b1f3b0f5b61c678b362756"
+    },
+    {
+      "key": "content/c0136.json",
+      "script": "data/content/c0136.js",
+      "sha256": "c6ba705f5105f90f4452dc8cefb66da1242b27a2add9a6d661879441e848dd23"
+    },
+    {
+      "key": "content/c0137.json",
+      "script": "data/content/c0137.js",
+      "sha256": "e5cc0200e6f4805f0883fe5ea6b0e1092b447e9d0b6dcbcd7dd8d4c078de3dc2"
+    },
+    {
+      "key": "content/c0138.json",
+      "script": "data/content/c0138.js",
+      "sha256": "c33913eb6574f1ba8a42dcc6c308790944ae250258d0c78e6be893a4cdf388fd"
+    },
+    {
+      "key": "content/c0139.json",
+      "script": "data/content/c0139.js",
+      "sha256": "4f703654ea227aeb9392f24ab394ab5920eb2ee0007eec15e4aa819c5f7b37c4"
+    },
+    {
+      "key": "content/c0140.json",
+      "script": "data/content/c0140.js",
+      "sha256": "1ca14873d30508ac04611ed3c17092b38edcc70078bcc76b75867dfd6c4db577"
+    },
+    {
+      "key": "content/c0141.json",
+      "script": "data/content/c0141.js",
+      "sha256": "6bf6b9712ae86f0a81a5c5ca5a0dbcbb157c2415abe5fd4ff821bb6f55a990fe"
+    },
+    {
+      "key": "content/c0142.json",
+      "script": "data/content/c0142.js",
+      "sha256": "d9b31b8f6ead1ab6b4a4a7ec048392290786c87a0cdb28e8c34bab3157f4bea4"
+    },
+    {
+      "key": "content/c0143.json",
+      "script": "data/content/c0143.js",
+      "sha256": "4d88a5cf0624cd373ceb482926d41707d93a21b6aec8e76bfc1702301b50fcdc"
+    },
+    {
+      "key": "content/c0144.json",
+      "script": "data/content/c0144.js",
+      "sha256": "b4fc092d6888556b4ed1eb310a34f8b9d7f9e7a6a5bea61de4415325372aec08"
+    },
+    {
+      "key": "content/c0145.json",
+      "script": "data/content/c0145.js",
+      "sha256": "6e9aee6e2ca2d7bfc5ebf0e8f4b20dde38f4f6da820ffa76a7288ecd1440b1de"
+    },
+    {
+      "key": "content/c0146.json",
+      "script": "data/content/c0146.js",
+      "sha256": "fe393367e776f763e3d842cd056881824e57a8b2b96879ea70b75493a53b6402"
+    },
+    {
+      "key": "content/c0147.json",
+      "script": "data/content/c0147.js",
+      "sha256": "63c6dee04f1a7f0bee07d139ac49cbfc62adee311c20b440f8cd3b69e40ab42f"
+    },
+    {
+      "key": "content/c0148.json",
+      "script": "data/content/c0148.js",
+      "sha256": "a2c3184fcae45d6f1030d5792c330a5446dc67a8944ba22f7d90e90f097d4fbe"
+    },
+    {
+      "key": "content/c0149.json",
+      "script": "data/content/c0149.js",
+      "sha256": "17186b0d1ee985dc334d66bcd69af6473e3a20a2c2ab5e7c5de48ff1a43240f5"
+    },
+    {
+      "key": "content/c0150.json",
+      "script": "data/content/c0150.js",
+      "sha256": "beb275aa7a7af8359705a07ad74e3854b0b22924ecd3ed19cc3bc4ac3a3d4542"
+    },
+    {
+      "key": "content/c0151.json",
+      "script": "data/content/c0151.js",
+      "sha256": "d18bffd666d509a10aedebb86655853baddba025d5d7835e861c2796c8f2d657"
+    },
+    {
+      "key": "content/c0152.json",
+      "script": "data/content/c0152.js",
+      "sha256": "1f23f789da063f25f546ae4c6ee60668b4c85efa0b94f46d6d26f4b0b288b085"
+    },
+    {
+      "key": "content/c0153.json",
+      "script": "data/content/c0153.js",
+      "sha256": "e523c631f9386bf798a540d5f1e04ed7f558e2ffbb19985fcdeeaa916b2b78a3"
+    },
+    {
+      "key": "content/c0154.json",
+      "script": "data/content/c0154.js",
+      "sha256": "e3699e0f48b05084e7a5512f86d1e12b012c7d02d3cd72fc08d7fe7955dca07f"
+    },
+    {
+      "key": "content/c0155.json",
+      "script": "data/content/c0155.js",
+      "sha256": "2b4acb5eed3b095d4ebc5c8edcb4628b8f45dad10c5243f643cb10d632b7d991"
+    },
+    {
+      "key": "content/c0156.json",
+      "script": "data/content/c0156.js",
+      "sha256": "94e3160c9be9cef48690ad2bf26f4b53f9a6231cff3bb2d29fd17cfd35bc273f"
+    },
+    {
+      "key": "content/c0157.json",
+      "script": "data/content/c0157.js",
+      "sha256": "68029c21c267d8459bfb2d75db316bd5a794ce2fdba5d60c935d177d2330e3a6"
+    },
+    {
+      "key": "content/c0158.json",
+      "script": "data/content/c0158.js",
+      "sha256": "57b2420c3b5d1ab5403da94f4a6c4c56e546590bdf5cdea45b0d6c796f069925"
+    },
+    {
+      "key": "content/c0159.json",
+      "script": "data/content/c0159.js",
+      "sha256": "32adf84347989e3129b68af3ae69dcfcc90c94a2c5f80079c039381a981d9a57"
+    },
+    {
+      "key": "content/c0160.json",
+      "script": "data/content/c0160.js",
+      "sha256": "8ef3dd3b2f81d575206073b64674e4b8fb56a64f0b8efee621aad26d3cb00b68"
+    },
+    {
+      "key": "content/c0161.json",
+      "script": "data/content/c0161.js",
+      "sha256": "dd5e81f441862b07d6fceceab80bdf554bb939a64bf506e86cadef3e579550fd"
+    },
+    {
+      "key": "content/c0162.json",
+      "script": "data/content/c0162.js",
+      "sha256": "cab462c12c932fac368f51510a436a85dea278e501408ebf73e7ca9a3ff78535"
+    },
+    {
+      "key": "content/c0163.json",
+      "script": "data/content/c0163.js",
+      "sha256": "a3bd18e81ef3523cc14b4d86e2815c43746b52fa2264cebb80a8f27023a16abc"
+    },
+    {
+      "key": "content/c0164.json",
+      "script": "data/content/c0164.js",
+      "sha256": "f4d4445ade8121c3e2ead3379664039fde45361b050b7e86fe5fc5edcaa02161"
+    },
+    {
+      "key": "content/c0165.json",
+      "script": "data/content/c0165.js",
+      "sha256": "fca7637698eca4fb3534ae7b4930309b3e74632a16ddc32da8a62a4932be27ce"
+    },
+    {
+      "key": "content/c0166.json",
+      "script": "data/content/c0166.js",
+      "sha256": "6e9a384485dc815cb3bc18960d9a5ad4207b5c905aba0f029d2ba7ee5be21d6c"
+    },
+    {
+      "key": "content/c0167.json",
+      "script": "data/content/c0167.js",
+      "sha256": "9f2ae202b2eec242028e0bc0911d415e7d62b77b196bf272d1d006f790dfdcdd"
+    },
+    {
+      "key": "content/c0168.json",
+      "script": "data/content/c0168.js",
+      "sha256": "13c1b08e2f7e92068d07db212a11cd5bc79500123fecbc0a24f274d9e4605b1e"
+    },
+    {
+      "key": "content/c0169.json",
+      "script": "data/content/c0169.js",
+      "sha256": "b2cb5f2633871bef0683850bfdc2ef320936da88d759c717241833799a98a035"
+    },
+    {
+      "key": "content/c0170.json",
+      "script": "data/content/c0170.js",
+      "sha256": "c3feba434e32728f58b23629158e874bde9a21712fef68786aa44418de73e48c"
+    },
+    {
+      "key": "content/c0171.json",
+      "script": "data/content/c0171.js",
+      "sha256": "7a25abd5fe4aa028b38675a5a576bd762343a14bee1cf8c1bcdfe36dc043b3f2"
+    },
+    {
+      "key": "content/c0172.json",
+      "script": "data/content/c0172.js",
+      "sha256": "eafd059822fdeab49e75af659f9353774d5377f5f55a9cda707fc6989ba421d9"
+    },
+    {
+      "key": "content/c0173.json",
+      "script": "data/content/c0173.js",
+      "sha256": "1871664c6030746ab001c9afe1ac16632f316f123ca07f79294f41e0fd034c46"
+    },
+    {
+      "key": "content/c0174.json",
+      "script": "data/content/c0174.js",
+      "sha256": "4b667bf7d60038a87452df2809963fdf5444a6c61e6f622c947792b0c2d8a376"
+    },
+    {
+      "key": "content/c0175.json",
+      "script": "data/content/c0175.js",
+      "sha256": "0eae74efa665737b0faca5137093863cc3fe717da29b5f18e3c6cf97f000156b"
+    },
+    {
+      "key": "content/c0176.json",
+      "script": "data/content/c0176.js",
+      "sha256": "f512fe8ee4c0b2deace63fe6fbb5166e7b990c4a1992fa799e92ec367da86598"
+    },
+    {
+      "key": "content/c0177.json",
+      "script": "data/content/c0177.js",
+      "sha256": "2d0c090b499814b5a5598fcf86ec13619d3305f4fc95c76dfeb9e967394da7a2"
+    },
+    {
+      "key": "content/c0178.json",
+      "script": "data/content/c0178.js",
+      "sha256": "59a09d357162d2faa2abb90dc2f95ecca783af8cea4053a71ee09511d9c68de8"
+    },
+    {
+      "key": "content/c0179.json",
+      "script": "data/content/c0179.js",
+      "sha256": "f1065968ae5d11aa647b7edf10c4f67345f87e42207438b404d98b68c13adf76"
+    },
+    {
+      "key": "content/c0180.json",
+      "script": "data/content/c0180.js",
+      "sha256": "60d24ae3612a97a8700b0a46008bcbcfe4bf31591dff512b9e963704eca9fbd9"
+    },
+    {
+      "key": "content/c0181.json",
+      "script": "data/content/c0181.js",
+      "sha256": "be6c3eefc4d82bd6443755f7bdec273a401e9af8903520801e28c4069130c798"
+    },
+    {
+      "key": "content/c0182.json",
+      "script": "data/content/c0182.js",
+      "sha256": "c3c37a6b11d56967c78653674998bc63cd4b667bb1a3bc80dee7cdd6fe101360"
+    },
+    {
+      "key": "content/c0183.json",
+      "script": "data/content/c0183.js",
+      "sha256": "eefa2c9f77ff7e7e344db55880d92b83f9e0dcae2f0ece87b52b61889f55624c"
+    },
+    {
+      "key": "content/c0184.json",
+      "script": "data/content/c0184.js",
+      "sha256": "ca2811047932e159cf5c645b8a051bc90228ed9e044f9c51c72be2c5b8c8a509"
+    },
+    {
+      "key": "content/c0185.json",
+      "script": "data/content/c0185.js",
+      "sha256": "0185be449cb5b4d2844757e1a9ead737ed39daea3dc6d1d264d6d54248411377"
+    },
+    {
+      "key": "content/c0186.json",
+      "script": "data/content/c0186.js",
+      "sha256": "4765e20f950678715b21eff29537e7c8f9ece2365012a30545d4963e128e3144"
+    },
+    {
+      "key": "content/c0187.json",
+      "script": "data/content/c0187.js",
+      "sha256": "366c709ff4e46a7f239182848c384b0b5fe56c4b17d2f7e51a020555e3c83afe"
+    }
+  ],
+  "knownPresentationIssue": "Empty inline SVG placeholders are counted separately from image references. The frontend agent is restoring their original geometry; the all-page text/asset checks do not by themselves establish the final visual icon result.",
+  "limitations": [
+    "Source-to-published comparisons use the captured structured source; raw-HTML extraction coverage is being independently audited by another agent.",
+    "External hyperlinks are checked for faithful target preservation, not remote HTTP availability.",
+    "All table cells are structurally checked and reviewed-unit states reconciled; this run is not a new sentence-by-sentence semantic reread of every cell.",
+    "SVG/image assets retain original bytes; no new OCR or embedded-image text translation review is claimed."
+  ]
+}

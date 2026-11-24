@@ -1,0 +1,146 @@
+{
+  "revision": "navigation-state-and-chinese-controls-2026-11-24",
+  "status": "pass",
+  "reviewDate": "2026-11-24",
+  "requests": [
+    "刷新后目录展开/折叠状态不一致",
+    "侧栏移除官网首页，通过顶部Microsoft Orleans返回首页",
+    "主题选项统一中文"
+  ],
+  "causes": [
+    "原先按非API分组条目数<=35决定默认展开，较大的组默认收起，造成不同默认状态。",
+    "手动展开/折叠未持久保存，收起全部只改当前DOM；刷新重新套用默认规则。",
+    "updateNavActive曾在刷新时无条件展开当前链接所在分组，覆盖手动收起。",
+    "原生details的toggle事件异步派发，极快刷新可能发生在保存前；最终改为在summary激活事件内同步保存。"
+  ],
+  "behavior": {
+    "firstVisit": "本地14个顶级组统一展开",
+    "manualChanges": "逐组记住手动展开/折叠，刷新精确恢复，包括手动关闭当前页分组",
+    "collapseAll": "全部收起并同步保存",
+    "navigation": "跨分组跳转只展开并保存目标分组；同组、同页锚点、语言切换不重置",
+    "api": "深层API页面依据catalog group定位API分组，不依赖侧栏存在精确叶节点",
+    "loading": "目录加载完成前收起按钮disabled，避免写入空组状态",
+    "home": "侧栏没有官网首页入口；顶部Microsoft Orleans标志与标题链接到首页",
+    "theme": "桌面和手机选项均为深色、浅色、自动，自动继续跟随系统"
+  },
+  "implementation": {
+    "storageKey": "orleans-nav-groups-v1",
+    "schemaVersion": 1,
+    "invalidValues": "非法或过期记录安全回退",
+    "storageUnavailable": "界面继续工作；浏览器阻止持久存储时无法承诺跨刷新保存",
+    "summaryActivation": "保留原生details/summary语义；click中preventDefault后切换open并立即保存，toggle监听兜底"
+  },
+  "sourceReview": "独立源码复查通过。原站指南目录默认展开，API目录另有当前祖先展开规则。本次统一的是本站14个扁平顶级组，不声称逐项复制原站API嵌套目录默认状态。",
+  "automated": {
+    "cases": 31,
+    "passed": 31,
+    "failed": 0,
+    "report": "nav-state-report.json",
+    "method": "执行真实index内联脚本、官方图标库与完整app.js；小型代表catalog提供14组、数量边界及深层API；通过实际summary/按钮/导航事件及新DOM重载验证，没有复制被测算法。"
+  },
+  "browser": {
+    "status": "pass",
+    "environment": "Chromium HTTP managed static preview",
+    "initialNavigation": {
+      "groups": 14,
+      "expanded": 14,
+      "including35And70PageGroups": true
+    },
+    "manualMixedStateRefresh": {
+      "closed": [
+        "overview",
+        "start",
+        "grains"
+      ],
+      "otherGroupsOpen": 11,
+      "restoredExactly": true,
+      "currentOverviewGroupRemainedClosed": true
+    },
+    "collapseAllRefresh": {
+      "groups": 14,
+      "open": 0
+    },
+    "crossGroupNavigation": {
+      "from": "/docs/",
+      "to": "/docs/grains/",
+      "openGroups": [
+        "grains"
+      ]
+    },
+    "languageChangeAndRefresh": {
+      "currentGroupKeptClosed": true,
+      "openGroups": []
+    },
+    "immediateClickThenRefresh": {
+      "afterOpening": true,
+      "afterClosing": false,
+      "synchronousPersistenceFixVerified": true
+    },
+    "keyboard": {
+      "EnterOpens": true,
+      "SpaceCloses": true,
+      "EnterThenRefreshRetains": [
+        "grains"
+      ]
+    },
+    "homepageNavigation": {
+      "sidebarTopLinks": [
+        "中文文档导航"
+      ],
+      "sidebarHomepageShortcutRemoved": true,
+      "headerBrandClicked": true,
+      "observedDestination": "http://127.0.0.1:4173/#/",
+      "homepageRendered": true
+    },
+    "themeLabels": {
+      "desktop": [
+        "深色",
+        "浅色",
+        "自动"
+      ],
+      "mobile": [
+        "深色",
+        "浅色",
+        "自动"
+      ],
+      "values": [
+        "dark",
+        "light",
+        "auto"
+      ],
+      "selectedTextObserved": "深色"
+    },
+    "scope": "目录交互的浏览器检查，加最终首页入口和中文控件核对；本轮没有重复全站676项对照巡检。"
+  },
+  "preservation": {
+    "dataPayloadsUnchanged": 191,
+    "pages": 15235,
+    "contentBlocks": 164126,
+    "priorContentAudit": "full-content-audit.json",
+    "presentationAndThemeFunctionsUnchanged": 9,
+    "themeBootstrapUnchanged": true,
+    "incrementalReport": "navigation-incremental-check.json"
+  },
+  "artifacts": {
+    "app.js": "912ac9a21b695ce4f765ea7225f87b3c5f637963684bbc520daad18434d8005f",
+    "index.html": "5897be5d318fbf8d909ce51538a62444cca7dc3c3d9fbf8742208a41e4b1e575",
+    "app.css": "dafe28d1c27386adb9a1f1c17a5bb25e032723eadb659ac4567e2c7d50d29c35",
+    "data-loader.js": "e6c444afb1fe1281f5d2585f03219312a13f8e2ee166d1234c3ac38102825fed",
+    "assets/official-icons/icons.js": "f3b14b9178aed9374bfeb8e719fb193990de883e6e51a1c737b87197e80afb53"
+  },
+  "reports": {
+    "nav-state-report.json": {
+      "file": "nav-state-report.json",
+      "sha256": "561877bc12a7bfd5885f8696d2ae514a37086d01c816fc14a69a46bc24292677"
+    },
+    "navigation-incremental-check.json": {
+      "file": "navigation-incremental-check.json",
+      "sha256": "d8b29fe32031cb55b4fe580a7816bc8b4a823dd18a020831d8048be5e1e598e3"
+    }
+  },
+  "limits": [
+    "浏览器验收使用HTTP预览；file://真实浏览器验收的环境限制继续保留，静态路径及经典脚本兼容性证据沿用。",
+    "目录记忆保存在当前浏览器；清除站点数据、更换浏览器或禁止存储会影响记忆。",
+    "本轮只修正界面与目录状态，未重新逐句语义审阅或逐页视觉检查所有正文。"
+  ]
+}

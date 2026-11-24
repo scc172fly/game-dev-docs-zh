@@ -1,0 +1,1918 @@
+{
+  "status": "pass",
+  "method": "Fresh Node.js vm execution of each published payload in an isolated registration-only context; no browser, fetch, filesystem APIs or network exposed to the payload.",
+  "payloads": 191,
+  "classicScriptsExecuted": 191,
+  "totalScriptBytes": 128385200,
+  "contentPages": 15235,
+  "contentChunks": 188,
+  "errors": [],
+  "entries": [
+    {
+      "key": "catalog.json",
+      "script": "data/catalog.js",
+      "sha256": "6ad44c639a2f3194c23d76161fe90b345d60af69dc22ea9905557cc59952c580",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "search.json",
+      "script": "data/search.js",
+      "sha256": "786d4a6b2e4eb6b76155d04b8eaac3309dacc2a94a273c7a5cd37c0643550c3f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "diagrams.json",
+      "script": "data/diagrams.js",
+      "sha256": "f74878a761c152d6e3f885bef8f0fe3c17f88b24a94d96e02eed7882aaf2408e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0000.json",
+      "script": "data/content/c0000.js",
+      "sha256": "c588ca1792d285bf3763d85c2254761da80eedb37c40f30024fd1e9774bfc256",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0001.json",
+      "script": "data/content/c0001.js",
+      "sha256": "742a013318e013c4e0a52daa9f7c00dcd0cf65f179565d6631d7cf52e942c9ef",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0002.json",
+      "script": "data/content/c0002.js",
+      "sha256": "435bed5db00b206dc6edcd62c58f462ecef821cec26431addfb1885873b8a919",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0003.json",
+      "script": "data/content/c0003.js",
+      "sha256": "74ff16870d1096684371e0c467e83eb368ae2c0898a5e251b509eca14f246979",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0004.json",
+      "script": "data/content/c0004.js",
+      "sha256": "eb165d8b45de9a0dbd838adbb897fe1c9508feae1ea47b7f28d7bfaf299cef33",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0005.json",
+      "script": "data/content/c0005.js",
+      "sha256": "9e15e939484aa18cdb5409b2f47439ebbe5fdc3c9dc51c820eb4a8209a14ceb7",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0006.json",
+      "script": "data/content/c0006.js",
+      "sha256": "9d2533fa6696e06395a40877adee5b528da2b7eda780d76a487f11772f5bd0ae",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0007.json",
+      "script": "data/content/c0007.js",
+      "sha256": "91e5d0118a65f187267e5789754d5e1fbe4055b18c0f36fd7fb3c6029206f559",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0008.json",
+      "script": "data/content/c0008.js",
+      "sha256": "c3043c8df227cd62c59ee513ffbce15fdb12dd8749d882409c01ab2c1dc88109",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0009.json",
+      "script": "data/content/c0009.js",
+      "sha256": "2e2f669e6799c46942980b1d1c05db07710550d5e2175dfd62f71cc8d3f14e6b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0010.json",
+      "script": "data/content/c0010.js",
+      "sha256": "99c9a4dc904625d069784a2f512e2260551fcfe14e02d85fc74ce65866d6ba77",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0011.json",
+      "script": "data/content/c0011.js",
+      "sha256": "cd8cb20db14cd32c67665fa05d7fd73bf609cbbde43e8653e1dd3220d49809d2",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0012.json",
+      "script": "data/content/c0012.js",
+      "sha256": "3ba06610054dd4c0ea92b1f72f2a00833a7420d763a8f43c005d47032925d865",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0013.json",
+      "script": "data/content/c0013.js",
+      "sha256": "72b824c348d56d2375f1e4e470867b2e711780646dbdfe0b61599a6e93ee199e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0014.json",
+      "script": "data/content/c0014.js",
+      "sha256": "d9a8999dca6a42601780d3eefd2373cb026ca7ae0b9c4b3c33eda04cfdadc36c",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0015.json",
+      "script": "data/content/c0015.js",
+      "sha256": "659c73e02f738912facc78d7b3826d828f940ac6e56c4e4fb9ca2ae9f9381d16",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0016.json",
+      "script": "data/content/c0016.js",
+      "sha256": "94d074eb51c6aaf9045af03a2ea5374b3e4c79a8224f527aca507ffb9afdb54b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0017.json",
+      "script": "data/content/c0017.js",
+      "sha256": "49944d8f59dfcb3422e2de6ca9409ffa6faeb919b641b48e408a0028bc62ce4e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0018.json",
+      "script": "data/content/c0018.js",
+      "sha256": "f82b021f7195f2f6fc293784d170b9b42d0ebac755f725b50b7b99d24a7b400f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0019.json",
+      "script": "data/content/c0019.js",
+      "sha256": "3a8ff103e9d2202cea09efee89024f050a2789692eac19ef4313197887063190",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0020.json",
+      "script": "data/content/c0020.js",
+      "sha256": "273d203b2c93f9948b23a43492e867712c6568e58bf442232d2d8a683f0bbcea",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0021.json",
+      "script": "data/content/c0021.js",
+      "sha256": "a007f9f6d06916e9db4d7e388d9413c429aa0b06c5b018cc0339033e97448728",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0022.json",
+      "script": "data/content/c0022.js",
+      "sha256": "ee28ba44ccc2b733c8097ae868dc0fb573c4c4bb16fa2c6e6da45fe451b7632d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0023.json",
+      "script": "data/content/c0023.js",
+      "sha256": "1b4033d73df4cd09bf69bc9316476241b320347af9cd780e55460da3529a36ba",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0024.json",
+      "script": "data/content/c0024.js",
+      "sha256": "6bdca79453dac7d891ddd5a4dc7ea5968e69a26cc3d8c9259a2690f3054d366f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0025.json",
+      "script": "data/content/c0025.js",
+      "sha256": "d86c3c28dbe8106fb23b5e5683c2a4acad1a2b98cd3e634097afa03d456df028",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0026.json",
+      "script": "data/content/c0026.js",
+      "sha256": "ad2e6e1f968aa9ee19b98d1405521903caed406680f192953143c36d1877ae37",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0027.json",
+      "script": "data/content/c0027.js",
+      "sha256": "b490e0bd551f0306f8f23f44caec654cf7fb8bc90e967fe8d4c28ae367c31293",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0028.json",
+      "script": "data/content/c0028.js",
+      "sha256": "4c7fdf6dc7d9e875481532a9c89b2677737a5a119abd88e1e3155ae68b8b7071",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0029.json",
+      "script": "data/content/c0029.js",
+      "sha256": "e92bcdc1927fb438046d3eb9dae6a82ba00371ecf77d3e6b9ee18cdaa153457b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0030.json",
+      "script": "data/content/c0030.js",
+      "sha256": "1f96c7edd3c499337a3dfbe2d777ba857cda9f5235c904897dcc012718640977",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0031.json",
+      "script": "data/content/c0031.js",
+      "sha256": "4440766a371b629dbe9e4fb811839b0113ea965d4c88c834cd9bbebfaf0c6e79",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0032.json",
+      "script": "data/content/c0032.js",
+      "sha256": "f21b32bd8730c91e0c90675d35c299c9bdf10944c96a00634675369c36250b00",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0033.json",
+      "script": "data/content/c0033.js",
+      "sha256": "8a711dd2c03e01593362e929feaa3ef5086e369c7bfb2c7a63d38ab3eb1d0c6d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0034.json",
+      "script": "data/content/c0034.js",
+      "sha256": "2dc090c55068233442bd355e04cb7c6a648a467353ad79db936febd70771a1dd",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0035.json",
+      "script": "data/content/c0035.js",
+      "sha256": "fdb641dec6ad0db669f278b4d99aeb7d58e63b0821250fbe17965f89d57656ce",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0036.json",
+      "script": "data/content/c0036.js",
+      "sha256": "236e7f06b5ae8a084f1908a6aac7ce8f1d0ad5a0322ced32c7862b7ad644f9ff",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0037.json",
+      "script": "data/content/c0037.js",
+      "sha256": "d8d5b8b5959ff07b9cc4c19f8737bf9cc495ed6a49f971ba4cf3780f9052dac5",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0038.json",
+      "script": "data/content/c0038.js",
+      "sha256": "e2d899503cecf707167af0d81866448a0fb7f2914d0db66b8292c702af7b8696",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0039.json",
+      "script": "data/content/c0039.js",
+      "sha256": "b3240a61ba0d4ac35cca1851419b631365c80cc4cd602037c60efcc6b50aa0f6",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0040.json",
+      "script": "data/content/c0040.js",
+      "sha256": "952f1140a2ed44c91f15b27ec90860a268c9e48d40eeda2a48676bb0d133d068",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0041.json",
+      "script": "data/content/c0041.js",
+      "sha256": "e19818c66085ebd5f5287e1421f7bca34743d36f2a6c710f6f18ed191b751224",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0042.json",
+      "script": "data/content/c0042.js",
+      "sha256": "17a2944837e141dc2014499d3b2ac5dd13da1dc7017a8899e1aa145fab6b6d10",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0043.json",
+      "script": "data/content/c0043.js",
+      "sha256": "6fdffe37bc04ee77021121570c0fbbeeacc937852f4871af3771dffc4c9a99a5",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0044.json",
+      "script": "data/content/c0044.js",
+      "sha256": "956affa0f0a446c49505f7ea5cd854e23c8e617600e4673ff893ff4af5a0d1cf",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0045.json",
+      "script": "data/content/c0045.js",
+      "sha256": "7e5e166e01a6793e00e9775a320a06602e1df055b5b8d4ecd2e5049d62bcbf9f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0046.json",
+      "script": "data/content/c0046.js",
+      "sha256": "263d6262efa6bc18455bc2533768bd926d576f433bd0b3b002596afb14880cc9",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0047.json",
+      "script": "data/content/c0047.js",
+      "sha256": "b70ac49933c22b1fd4e4bd4e735adaff96159966aa25a59851d138c7543098da",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0048.json",
+      "script": "data/content/c0048.js",
+      "sha256": "0c3e583929414f75db23b86f44a24c9715595ca5629b9f5f8ec391d935a4d0fe",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0049.json",
+      "script": "data/content/c0049.js",
+      "sha256": "f291b783c90fca987307afeafbc7ba435feefe001a498d117e97860b79e2279d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0050.json",
+      "script": "data/content/c0050.js",
+      "sha256": "d97e088b5a4f8ff54c845d923977e3bfa5ead77a2ea04c9d240b2ac40a1edbdd",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0051.json",
+      "script": "data/content/c0051.js",
+      "sha256": "8cb86cc6f67037238ac2d423fcc33ff42ff0d12e5025c647124ad0c85f8cad5e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0052.json",
+      "script": "data/content/c0052.js",
+      "sha256": "c0c9844abe9bfcd09e83810e86f134796a7130b58df5360e6815fd2ff3260e05",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0053.json",
+      "script": "data/content/c0053.js",
+      "sha256": "a8d830d3714ec0c2f092d6ee3643913c3189e0dcc2030f60003d247a9d90a13d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0054.json",
+      "script": "data/content/c0054.js",
+      "sha256": "dcdb6e1282df48276dc5480c4b3a12a9ca6108ab4d90325d4abd1d1c437beecd",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0055.json",
+      "script": "data/content/c0055.js",
+      "sha256": "b01d08478bbe800d077cfd8544f996265654be27247fbc619e4c01ff1c32a725",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0056.json",
+      "script": "data/content/c0056.js",
+      "sha256": "a9d2d58f064de4720b1e093173ce8f779d0b2b384d242b7e64f4c7fa454d8765",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0057.json",
+      "script": "data/content/c0057.js",
+      "sha256": "f0b7fd0087bfdcbb957c868cf32238a1687c8f1ad07e0cfcefbd5bfc45b02f8a",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0058.json",
+      "script": "data/content/c0058.js",
+      "sha256": "10958fc016465539e98aca09b25f951722254f4848d4eaeb75178831bd2ad92c",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0059.json",
+      "script": "data/content/c0059.js",
+      "sha256": "f537dcbabed889be2a2e577e2ba0bda7978a176d5940b43a23ef8e171329dc47",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0060.json",
+      "script": "data/content/c0060.js",
+      "sha256": "6873e8b25463cd40e0b49c6cbdca5c639ac875b964763f8771237ad8a5fa0cd5",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0061.json",
+      "script": "data/content/c0061.js",
+      "sha256": "0fbbb27cc513e1ffaedab4fedd8265ca7fc539559a658424b05d6f9fe255bd60",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0062.json",
+      "script": "data/content/c0062.js",
+      "sha256": "aa350695651acd98f87d06f3c2de6e2c1a54c66b2c98b11b90fa0f1bdaeb4144",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0063.json",
+      "script": "data/content/c0063.js",
+      "sha256": "13e8b82fa7f6e6075b983bfc8425a6ee8f92ffb46da8948ec63eb8352e6a6e6b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0064.json",
+      "script": "data/content/c0064.js",
+      "sha256": "7f5d0d0defd7d08f09c3fd83c28c3bc2324927d615e573768a7403665dbee982",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0065.json",
+      "script": "data/content/c0065.js",
+      "sha256": "5c453165fe3d030d275d0e90618b753349e94a86958d5e26c4dcc8172921da7e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0066.json",
+      "script": "data/content/c0066.js",
+      "sha256": "eb0551d287e010a595aabe33d8568f278b541726a4febfc2357f251c4b4bec74",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0067.json",
+      "script": "data/content/c0067.js",
+      "sha256": "8d7791629fe513f45118253446548b403aa5a79a9b037eab35ec805e62cfd031",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0068.json",
+      "script": "data/content/c0068.js",
+      "sha256": "e6671c0c904893cd1e99f95fb97a05793ea410f07d0e8e9870d6eb27ecd87d36",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0069.json",
+      "script": "data/content/c0069.js",
+      "sha256": "f3fb8b56962e690ce3c6d96fcf2e69fc7121a728efe2d095d66d12aeb9f91220",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0070.json",
+      "script": "data/content/c0070.js",
+      "sha256": "e2504899d4debe2bf5cea9bf2650f2f467fd0b93c1a0d1d92968a33b0d38a1ab",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0071.json",
+      "script": "data/content/c0071.js",
+      "sha256": "bf165af01c5ca6b6131853e274d6c1cd56c148feb084c0474ba62dbba74b4df4",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0072.json",
+      "script": "data/content/c0072.js",
+      "sha256": "c97b6a62381efed07997f943c25042b59d897ab68497b19bd2a1a95c10d8c66f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0073.json",
+      "script": "data/content/c0073.js",
+      "sha256": "1397f220165fa122bf5c589879d10a46ee0fa396ad9fbf2a9e55676b9287c17d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0074.json",
+      "script": "data/content/c0074.js",
+      "sha256": "f96c21a0e478e96a7d0283664d90d14747d6a5a3577923edef6d35e53d7a7966",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0075.json",
+      "script": "data/content/c0075.js",
+      "sha256": "21f8d5e7d013b5a8c784a612a3b51455a0667195d8b7ceb3356aa8d919f4b91e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0076.json",
+      "script": "data/content/c0076.js",
+      "sha256": "8ca70c2c6c018c0200a8ef2af01e086912d648bba3ef5530359f68ffb79906e6",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0077.json",
+      "script": "data/content/c0077.js",
+      "sha256": "d7fe629a86bbbd6a112396ad8638536ea5c02a9a697bc65a4e881316bcc719e3",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0078.json",
+      "script": "data/content/c0078.js",
+      "sha256": "d6f9825d4203f3b75cd364e77ce7cf6549552bf5d174de1b5b84628628fd3cca",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0079.json",
+      "script": "data/content/c0079.js",
+      "sha256": "e6be18129beca74c3f90fe4dbe83a0dfbef8f73c3611b1ec883f5103cc936c3d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0080.json",
+      "script": "data/content/c0080.js",
+      "sha256": "6c42c171309ef46385993aa9f3596d55372355d502dd28aea8429b43f073949e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0081.json",
+      "script": "data/content/c0081.js",
+      "sha256": "280ec33c170e11406a5aaedc8791ce2dd7e91b63f3b11dc747df047a3d0f162b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0082.json",
+      "script": "data/content/c0082.js",
+      "sha256": "fbec74caa5051437849c50acce626c5ebee4c76d29efd72f093f33442c0957ff",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0083.json",
+      "script": "data/content/c0083.js",
+      "sha256": "f12c1d1f8da1e61c66f312f511e734240224d36c1de6002c122d81ed48b50240",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0084.json",
+      "script": "data/content/c0084.js",
+      "sha256": "29137917718afdcc20f484e25e3adb0eff26d67e1237db082e81f47ca4d011ce",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0085.json",
+      "script": "data/content/c0085.js",
+      "sha256": "57a8752989b72b2dcc55392103b534a849c1b223fc7f99b276fbaa16d507e8d3",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0086.json",
+      "script": "data/content/c0086.js",
+      "sha256": "aa6e4603d307176b94b732297ffd1cd037ddbb8a8cd6b774b4e32ff9c164ce79",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0087.json",
+      "script": "data/content/c0087.js",
+      "sha256": "8cba55d06a463fd131286952c22797c7a22f1d2da17c0e214d39e657782a915b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0088.json",
+      "script": "data/content/c0088.js",
+      "sha256": "d6c2317412ef63effae74e1067b811f77c1b53fb05cf63a8b3361c1cd789462d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0089.json",
+      "script": "data/content/c0089.js",
+      "sha256": "bcb97a91251722ee0ba062e53b05792a67d4f623796697d22e84790e1011e2ae",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0090.json",
+      "script": "data/content/c0090.js",
+      "sha256": "c37dcbc18737c23443a38ecdd7ba65d7a98e7109757d83120ac16a82cb258f8f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0091.json",
+      "script": "data/content/c0091.js",
+      "sha256": "d5eab71af216b5b34857208da8f41ca793ee9eb05b86d09c1bf7aca9dec25ce8",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0092.json",
+      "script": "data/content/c0092.js",
+      "sha256": "3d461ec92f7cbbb6e890de86db0e31a3496d9877cf78306856c8a7294b3fb9cb",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0093.json",
+      "script": "data/content/c0093.js",
+      "sha256": "dbde513fbdc94f2e917c4d0b2f47b04ccf93954941664654a300d56b6cac5ce7",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0094.json",
+      "script": "data/content/c0094.js",
+      "sha256": "3b89d1314fd181dacbc6aeddb3f177e5e1c38c061664691a9050d6498f4120c8",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0095.json",
+      "script": "data/content/c0095.js",
+      "sha256": "a1d3d2cc7153f11eced3704b5207e5327ef59e841269d7fd7ced853834bec92c",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0096.json",
+      "script": "data/content/c0096.js",
+      "sha256": "ce55ba449fe287ac9e2bb98626bd1dbbb1850a839cea4acc5d4da9f5de318f4e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0097.json",
+      "script": "data/content/c0097.js",
+      "sha256": "5038962d66fe5f27f89f1745b3bf13f7b93b0a4687199b03a9e229c44c029958",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0098.json",
+      "script": "data/content/c0098.js",
+      "sha256": "c611412117666b61ad8d7a5e150cc2a87dd6989e72549c96c4a4736954ed070a",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0099.json",
+      "script": "data/content/c0099.js",
+      "sha256": "5156328bb2d5eb1fd925cbc1ea508c217cb73ffb917feaf420cc41a324e6e9ef",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0100.json",
+      "script": "data/content/c0100.js",
+      "sha256": "71ee4e00cfb35c1f272c34f31e26d889516c35f57760c8852b9b94efdf52aac0",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0101.json",
+      "script": "data/content/c0101.js",
+      "sha256": "56c89817a8689a7ed4a1bcb61f07cb81d19d0f3d9fef6676ff70c28533d58cab",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0102.json",
+      "script": "data/content/c0102.js",
+      "sha256": "40aa898042026025c84d09dce2767d2f57e7b528b7ace998238ef63643d4ae98",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0103.json",
+      "script": "data/content/c0103.js",
+      "sha256": "32d028c33477ef400d4f871d3fd07df5e1a62ef7bf8004327d578e03ef4c2ca4",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0104.json",
+      "script": "data/content/c0104.js",
+      "sha256": "9dad1d4bd38a2a2d1737c5188b5c70effeac68ab057a7544cef02181a76bc8b4",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0105.json",
+      "script": "data/content/c0105.js",
+      "sha256": "641e51206eba4e36ede02ed010cf1930bc0e28fa20fa389ea58fb407930b2ea5",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0106.json",
+      "script": "data/content/c0106.js",
+      "sha256": "21ba3cf971455d4752f6b32053efc626ecbed3dbdb37b0d447fa52cf07d4e4ef",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0107.json",
+      "script": "data/content/c0107.js",
+      "sha256": "9cb46b40eaa30bd79b090d5a8f8b1eeed432e308b2ad1b063cb4c68280d8e8b1",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0108.json",
+      "script": "data/content/c0108.js",
+      "sha256": "57eb354599676ea79a3e6f658286b394b6f5f3a66cc95636e82edd877ee2ac3f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0109.json",
+      "script": "data/content/c0109.js",
+      "sha256": "acf6d62f2940534d01ac055aa0ce23a7ccac709a9a3759370efecdd9dd950022",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0110.json",
+      "script": "data/content/c0110.js",
+      "sha256": "ff23965749c3342ed83c155c931a454e8fb4393b4f0f2a950e34652a64a822d3",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0111.json",
+      "script": "data/content/c0111.js",
+      "sha256": "0a818b0a72afdf86bd0178b58151d242a8915986aabde2d438088ba5f6b8871f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0112.json",
+      "script": "data/content/c0112.js",
+      "sha256": "2547efbee79b5c70a69546edd781ac55a6d6fa9bba8cce84b4332f827e756075",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0113.json",
+      "script": "data/content/c0113.js",
+      "sha256": "e73ca8679e962111cdf1cc7dd3c45859090ed5463a04090e0d4387338cdf12a0",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0114.json",
+      "script": "data/content/c0114.js",
+      "sha256": "b83b34ca3c8d02baecc9869c04bccfe0748cdb7841683d846467ff0ab26ed86f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0115.json",
+      "script": "data/content/c0115.js",
+      "sha256": "2691d27c203e2c4ab4d2f28a125d941f3002a67a460ed3255cf20a16ccca6fc7",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0116.json",
+      "script": "data/content/c0116.js",
+      "sha256": "beb9b526e8e29ad996ce761664782b9f6ff5c32a689fa1b64904bc888f8f095e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0117.json",
+      "script": "data/content/c0117.js",
+      "sha256": "14f0495190c92b04e79d5d3d28534d997ecbffc4e245a714b2576251942000b5",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0118.json",
+      "script": "data/content/c0118.js",
+      "sha256": "e80501a8860fff556096d32eb85e0bab8d04b279faafb960ceae5a73eae23b3f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0119.json",
+      "script": "data/content/c0119.js",
+      "sha256": "85dfcd8a54368353d67d4660e0c86717900ffedf347fd7e57d57a3ac381d9333",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0120.json",
+      "script": "data/content/c0120.js",
+      "sha256": "7ad77283f8c82ef8ac540bbb085764eec1b25014b0ef693853b56b0521749de9",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0121.json",
+      "script": "data/content/c0121.js",
+      "sha256": "ef7d8d17d566e1d66e3caad030bc9e8bfb0555097e41bebd8cfa56ff0c134587",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0122.json",
+      "script": "data/content/c0122.js",
+      "sha256": "033ff903c00ff45c851273c3474ecac46864c5ded7ab3822995e29f4fff3001a",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0123.json",
+      "script": "data/content/c0123.js",
+      "sha256": "218aa5fd54fc74b434d3b11eee1eb80392333ca47e98c21c76f349c8742fe53f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0124.json",
+      "script": "data/content/c0124.js",
+      "sha256": "dfeebbcc27414fd24d73689462b1659850edd5d2f7af811b70fa6b622f1abe95",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0125.json",
+      "script": "data/content/c0125.js",
+      "sha256": "5190d2b6a1e5993db8351efb9d8e2e97b52b135a122849a4fde2740df50ac340",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0126.json",
+      "script": "data/content/c0126.js",
+      "sha256": "cb6614e937fbb6f61c64647cbbcbc286afb8976a718ead15691e1472b1435b11",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0127.json",
+      "script": "data/content/c0127.js",
+      "sha256": "b10f4530f92abe695605c9a7018dbb46ea57993647be7c67d7ed6e507c2dc1b6",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0128.json",
+      "script": "data/content/c0128.js",
+      "sha256": "405024e5b8bb3ac0dd6563a17d9d393adc89bd010f8fceb95110d23df4319ed1",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0129.json",
+      "script": "data/content/c0129.js",
+      "sha256": "769ab681003d3147f52f6a1ea65969f96dbeb07c7964a49fe77b5d67df0c3f3e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0130.json",
+      "script": "data/content/c0130.js",
+      "sha256": "8358f902c54aad80f7050074bc15a9766abeaf8c3b73b335b6ab736d47c8d32e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0131.json",
+      "script": "data/content/c0131.js",
+      "sha256": "60eff4ca9999d9a6775f270d618e11ea95fed14ae3cd7c8f9b09fb5ed5711283",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0132.json",
+      "script": "data/content/c0132.js",
+      "sha256": "56212198308139c51e5ffc47be29f75b1f699a10aa7d33d580dadc6ba51ea5a7",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0133.json",
+      "script": "data/content/c0133.js",
+      "sha256": "2283a87a16ae567b793a8e3148426666c7d78997ebd90dbfaa2a870ebdc43ad9",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0134.json",
+      "script": "data/content/c0134.js",
+      "sha256": "abe85aedc0a0140e7e43ca0e1b1da4a51254271073cf2c2fa62fabdba0e53f7d",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0135.json",
+      "script": "data/content/c0135.js",
+      "sha256": "b7fbcabfc49101a1f06b74c174a0e040915d9288e2b1f3b0f5b61c678b362756",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0136.json",
+      "script": "data/content/c0136.js",
+      "sha256": "c6ba705f5105f90f4452dc8cefb66da1242b27a2add9a6d661879441e848dd23",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0137.json",
+      "script": "data/content/c0137.js",
+      "sha256": "e5cc0200e6f4805f0883fe5ea6b0e1092b447e9d0b6dcbcd7dd8d4c078de3dc2",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0138.json",
+      "script": "data/content/c0138.js",
+      "sha256": "c33913eb6574f1ba8a42dcc6c308790944ae250258d0c78e6be893a4cdf388fd",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0139.json",
+      "script": "data/content/c0139.js",
+      "sha256": "4f703654ea227aeb9392f24ab394ab5920eb2ee0007eec15e4aa819c5f7b37c4",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0140.json",
+      "script": "data/content/c0140.js",
+      "sha256": "1ca14873d30508ac04611ed3c17092b38edcc70078bcc76b75867dfd6c4db577",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0141.json",
+      "script": "data/content/c0141.js",
+      "sha256": "6bf6b9712ae86f0a81a5c5ca5a0dbcbb157c2415abe5fd4ff821bb6f55a990fe",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0142.json",
+      "script": "data/content/c0142.js",
+      "sha256": "d9b31b8f6ead1ab6b4a4a7ec048392290786c87a0cdb28e8c34bab3157f4bea4",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0143.json",
+      "script": "data/content/c0143.js",
+      "sha256": "4d88a5cf0624cd373ceb482926d41707d93a21b6aec8e76bfc1702301b50fcdc",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0144.json",
+      "script": "data/content/c0144.js",
+      "sha256": "b4fc092d6888556b4ed1eb310a34f8b9d7f9e7a6a5bea61de4415325372aec08",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0145.json",
+      "script": "data/content/c0145.js",
+      "sha256": "6e9aee6e2ca2d7bfc5ebf0e8f4b20dde38f4f6da820ffa76a7288ecd1440b1de",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0146.json",
+      "script": "data/content/c0146.js",
+      "sha256": "fe393367e776f763e3d842cd056881824e57a8b2b96879ea70b75493a53b6402",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0147.json",
+      "script": "data/content/c0147.js",
+      "sha256": "63c6dee04f1a7f0bee07d139ac49cbfc62adee311c20b440f8cd3b69e40ab42f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0148.json",
+      "script": "data/content/c0148.js",
+      "sha256": "a2c3184fcae45d6f1030d5792c330a5446dc67a8944ba22f7d90e90f097d4fbe",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0149.json",
+      "script": "data/content/c0149.js",
+      "sha256": "17186b0d1ee985dc334d66bcd69af6473e3a20a2c2ab5e7c5de48ff1a43240f5",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0150.json",
+      "script": "data/content/c0150.js",
+      "sha256": "beb275aa7a7af8359705a07ad74e3854b0b22924ecd3ed19cc3bc4ac3a3d4542",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0151.json",
+      "script": "data/content/c0151.js",
+      "sha256": "d18bffd666d509a10aedebb86655853baddba025d5d7835e861c2796c8f2d657",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0152.json",
+      "script": "data/content/c0152.js",
+      "sha256": "1f23f789da063f25f546ae4c6ee60668b4c85efa0b94f46d6d26f4b0b288b085",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0153.json",
+      "script": "data/content/c0153.js",
+      "sha256": "e523c631f9386bf798a540d5f1e04ed7f558e2ffbb19985fcdeeaa916b2b78a3",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0154.json",
+      "script": "data/content/c0154.js",
+      "sha256": "e3699e0f48b05084e7a5512f86d1e12b012c7d02d3cd72fc08d7fe7955dca07f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0155.json",
+      "script": "data/content/c0155.js",
+      "sha256": "2b4acb5eed3b095d4ebc5c8edcb4628b8f45dad10c5243f643cb10d632b7d991",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0156.json",
+      "script": "data/content/c0156.js",
+      "sha256": "94e3160c9be9cef48690ad2bf26f4b53f9a6231cff3bb2d29fd17cfd35bc273f",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0157.json",
+      "script": "data/content/c0157.js",
+      "sha256": "68029c21c267d8459bfb2d75db316bd5a794ce2fdba5d60c935d177d2330e3a6",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0158.json",
+      "script": "data/content/c0158.js",
+      "sha256": "57b2420c3b5d1ab5403da94f4a6c4c56e546590bdf5cdea45b0d6c796f069925",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0159.json",
+      "script": "data/content/c0159.js",
+      "sha256": "32adf84347989e3129b68af3ae69dcfcc90c94a2c5f80079c039381a981d9a57",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0160.json",
+      "script": "data/content/c0160.js",
+      "sha256": "8ef3dd3b2f81d575206073b64674e4b8fb56a64f0b8efee621aad26d3cb00b68",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0161.json",
+      "script": "data/content/c0161.js",
+      "sha256": "dd5e81f441862b07d6fceceab80bdf554bb939a64bf506e86cadef3e579550fd",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0162.json",
+      "script": "data/content/c0162.js",
+      "sha256": "cab462c12c932fac368f51510a436a85dea278e501408ebf73e7ca9a3ff78535",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0163.json",
+      "script": "data/content/c0163.js",
+      "sha256": "a3bd18e81ef3523cc14b4d86e2815c43746b52fa2264cebb80a8f27023a16abc",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0164.json",
+      "script": "data/content/c0164.js",
+      "sha256": "f4d4445ade8121c3e2ead3379664039fde45361b050b7e86fe5fc5edcaa02161",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0165.json",
+      "script": "data/content/c0165.js",
+      "sha256": "fca7637698eca4fb3534ae7b4930309b3e74632a16ddc32da8a62a4932be27ce",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0166.json",
+      "script": "data/content/c0166.js",
+      "sha256": "6e9a384485dc815cb3bc18960d9a5ad4207b5c905aba0f029d2ba7ee5be21d6c",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0167.json",
+      "script": "data/content/c0167.js",
+      "sha256": "9f2ae202b2eec242028e0bc0911d415e7d62b77b196bf272d1d006f790dfdcdd",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0168.json",
+      "script": "data/content/c0168.js",
+      "sha256": "13c1b08e2f7e92068d07db212a11cd5bc79500123fecbc0a24f274d9e4605b1e",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0169.json",
+      "script": "data/content/c0169.js",
+      "sha256": "b2cb5f2633871bef0683850bfdc2ef320936da88d759c717241833799a98a035",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0170.json",
+      "script": "data/content/c0170.js",
+      "sha256": "c3feba434e32728f58b23629158e874bde9a21712fef68786aa44418de73e48c",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0171.json",
+      "script": "data/content/c0171.js",
+      "sha256": "7a25abd5fe4aa028b38675a5a576bd762343a14bee1cf8c1bcdfe36dc043b3f2",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0172.json",
+      "script": "data/content/c0172.js",
+      "sha256": "eafd059822fdeab49e75af659f9353774d5377f5f55a9cda707fc6989ba421d9",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0173.json",
+      "script": "data/content/c0173.js",
+      "sha256": "1871664c6030746ab001c9afe1ac16632f316f123ca07f79294f41e0fd034c46",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0174.json",
+      "script": "data/content/c0174.js",
+      "sha256": "4b667bf7d60038a87452df2809963fdf5444a6c61e6f622c947792b0c2d8a376",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0175.json",
+      "script": "data/content/c0175.js",
+      "sha256": "0eae74efa665737b0faca5137093863cc3fe717da29b5f18e3c6cf97f000156b",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0176.json",
+      "script": "data/content/c0176.js",
+      "sha256": "f512fe8ee4c0b2deace63fe6fbb5166e7b990c4a1992fa799e92ec367da86598",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0177.json",
+      "script": "data/content/c0177.js",
+      "sha256": "2d0c090b499814b5a5598fcf86ec13619d3305f4fc95c76dfeb9e967394da7a2",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0178.json",
+      "script": "data/content/c0178.js",
+      "sha256": "59a09d357162d2faa2abb90dc2f95ecca783af8cea4053a71ee09511d9c68de8",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0179.json",
+      "script": "data/content/c0179.js",
+      "sha256": "f1065968ae5d11aa647b7edf10c4f67345f87e42207438b404d98b68c13adf76",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0180.json",
+      "script": "data/content/c0180.js",
+      "sha256": "60d24ae3612a97a8700b0a46008bcbcfe4bf31591dff512b9e963704eca9fbd9",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0181.json",
+      "script": "data/content/c0181.js",
+      "sha256": "be6c3eefc4d82bd6443755f7bdec273a401e9af8903520801e28c4069130c798",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0182.json",
+      "script": "data/content/c0182.js",
+      "sha256": "c3c37a6b11d56967c78653674998bc63cd4b667bb1a3bc80dee7cdd6fe101360",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0183.json",
+      "script": "data/content/c0183.js",
+      "sha256": "eefa2c9f77ff7e7e344db55880d92b83f9e0dcae2f0ece87b52b61889f55624c",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0184.json",
+      "script": "data/content/c0184.js",
+      "sha256": "ca2811047932e159cf5c645b8a051bc90228ed9e044f9c51c72be2c5b8c8a509",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0185.json",
+      "script": "data/content/c0185.js",
+      "sha256": "0185be449cb5b4d2844757e1a9ead737ed39daea3dc6d1d264d6d54248411377",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0186.json",
+      "script": "data/content/c0186.js",
+      "sha256": "4765e20f950678715b21eff29537e7c8f9ece2365012a30545d4963e128e3144",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    },
+    {
+      "key": "content/c0187.json",
+      "script": "data/content/c0187.js",
+      "sha256": "366c709ff4e46a7f239182848c384b0b5fe56c4b17d2f7e51a020555e3c83afe",
+      "registeredExactlyOnce": true,
+      "jsonEquivalent": true,
+      "manifestShaMatches": true
+    }
+  ],
+  "scriptChecks": [
+    {
+      "file": "app.js",
+      "sha256": "042cd8f8f396872d9c25730a22dda2f29f149ce6e3fd0df6872e45d793a2bcf1",
+      "classicScriptParse": true,
+      "imports": 0,
+      "importMeta": 0,
+      "fetchCalls": 0,
+      "xhrConstructors": 0,
+      "staticAssetStrings": []
+    },
+    {
+      "file": "data-loader.js",
+      "sha256": "e6c444afb1fe1281f5d2585f03219312a13f8e2ee166d1234c3ac38102825fed",
+      "classicScriptParse": true,
+      "imports": 0,
+      "importMeta": 0,
+      "fetchCalls": 0,
+      "xhrConstructors": 0,
+      "staticAssetStrings": []
+    }
+  ],
+  "scriptStaticReferences": [
+    {
+      "literal": "assets/brand/orleans-logo.svg",
+      "target": "assets/brand/orleans-logo.svg",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/mermaid.bundle.js",
+      "target": "assets/mermaid.bundle.js",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "target": "assets/original/_astro/cluster-silo-grain-relationship.BADVHeJX_OrNGc.svg",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/original/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp",
+      "target": "assets/original/_astro/generate-serializer-code-fix.BrBLQAWQ_Z1ilxaJ.webp",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/original/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+      "target": "assets/original/_astro/grain-formulation.CtOzAqNu_Z1FvyYE.svg",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/original/_astro/heterogeneous.C0meRUB5_V6RbB.webp",
+      "target": "assets/original/_astro/heterogeneous.C0meRUB5_V6RbB.webp",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/original/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp",
+      "target": "assets/original/_astro/storage-table-entities.DAOG8iOS_1vuzP0.webp",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "assets/original/_astro/web-application.mdTGpSsm_Z1r4fB0.webp",
+      "target": "assets/original/_astro/web-application.mdTGpSsm_Z1r4fB0.webp",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "audit-report.json",
+      "target": "audit-report.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "catalog.json",
+      "target": "data/catalog.js",
+      "declaredRuntimeKey": true,
+      "exists": true
+    },
+    {
+      "literal": "code-comments-cross-review.json",
+      "target": "code-comments-cross-review.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "code-comments-review.json",
+      "target": "code-comments-review.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "code-verification.json",
+      "target": "code-verification.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "contextual-reviews.json",
+      "target": "contextual-reviews.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "cross-review-report.json",
+      "target": "cross-review-report.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "diagrams.json",
+      "target": "data/diagrams.js",
+      "declaredRuntimeKey": true,
+      "exists": true
+    },
+    {
+      "literal": "documentation-version.json",
+      "target": "documentation-version.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "publication-verification.json",
+      "target": "publication-verification.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "review-register.json",
+      "target": "review-register.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "snapshot-metadata.json",
+      "target": "snapshot-metadata.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "source-issues.json",
+      "target": "source-issues.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "static-compatibility.json",
+      "target": "static-compatibility.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    },
+    {
+      "literal": "unit-review-register.json",
+      "target": "unit-review-register.json",
+      "declaredRuntimeKey": false,
+      "exists": true
+    }
+  ],
+  "versionMetadata": {
+    "allThreeCopiesEqual": true,
+    "latestRelease": {
+      "repository": "dotnet/orleans",
+      "tag": "v10.4.2",
+      "version": "10.4.2",
+      "publishedDate": "2026-10-30",
+      "checkedDate": "2026-11-24",
+      "sourceUrl": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+      "discoveryUrl": "https://github.com/dotnet/orleans/releases/latest",
+      "prerelease": false,
+      "scope": "截至核验日，官方仓库标记为 Latest 的正式发行版。当前文档仍依据下列 main 提交快照，包含不同版本语境；静态包不会联网自动更新版本号。"
+    },
+    "fixedSourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03"
+  },
+  "baselineComparison": {
+    "source": "delivery/payload-equivalence-report.json",
+    "nonCatalogPayloadsUnchanged": false,
+    "nonCatalogPayloadCount": 190,
+    "diagramsUnchanged": true,
+    "changedPayloads": [
+      "catalog.json",
+      "search.json",
+      "content/c0000.json",
+      "content/c0001.json",
+      "content/c0002.json",
+      "content/c0003.json",
+      "content/c0004.json",
+      "content/c0005.json",
+      "content/c0006.json",
+      "content/c0007.json",
+      "content/c0008.json",
+      "content/c0009.json",
+      "content/c0010.json",
+      "content/c0011.json",
+      "content/c0012.json",
+      "content/c0013.json",
+      "content/c0014.json",
+      "content/c0015.json",
+      "content/c0016.json",
+      "content/c0017.json",
+      "content/c0018.json",
+      "content/c0019.json",
+      "content/c0020.json",
+      "content/c0021.json",
+      "content/c0022.json",
+      "content/c0023.json",
+      "content/c0024.json",
+      "content/c0025.json",
+      "content/c0026.json",
+      "content/c0027.json",
+      "content/c0028.json",
+      "content/c0029.json",
+      "content/c0030.json",
+      "content/c0031.json",
+      "content/c0032.json",
+      "content/c0033.json",
+      "content/c0034.json",
+      "content/c0035.json",
+      "content/c0036.json",
+      "content/c0037.json",
+      "content/c0038.json",
+      "content/c0039.json",
+      "content/c0040.json",
+      "content/c0041.json",
+      "content/c0042.json",
+      "content/c0043.json",
+      "content/c0044.json",
+      "content/c0045.json",
+      "content/c0046.json",
+      "content/c0047.json",
+      "content/c0048.json",
+      "content/c0049.json",
+      "content/c0050.json",
+      "content/c0051.json",
+      "content/c0052.json",
+      "content/c0053.json",
+      "content/c0054.json",
+      "content/c0055.json",
+      "content/c0056.json",
+      "content/c0057.json",
+      "content/c0058.json",
+      "content/c0059.json",
+      "content/c0060.json",
+      "content/c0061.json",
+      "content/c0062.json",
+      "content/c0063.json",
+      "content/c0064.json",
+      "content/c0065.json",
+      "content/c0066.json",
+      "content/c0067.json",
+      "content/c0068.json",
+      "content/c0069.json",
+      "content/c0070.json",
+      "content/c0071.json",
+      "content/c0072.json",
+      "content/c0073.json",
+      "content/c0074.json",
+      "content/c0075.json",
+      "content/c0076.json",
+      "content/c0077.json",
+      "content/c0078.json",
+      "content/c0079.json",
+      "content/c0080.json",
+      "content/c0081.json",
+      "content/c0082.json",
+      "content/c0083.json",
+      "content/c0084.json",
+      "content/c0085.json",
+      "content/c0086.json",
+      "content/c0087.json",
+      "content/c0088.json",
+      "content/c0089.json",
+      "content/c0090.json",
+      "content/c0091.json",
+      "content/c0092.json",
+      "content/c0093.json",
+      "content/c0094.json",
+      "content/c0095.json",
+      "content/c0096.json",
+      "content/c0097.json",
+      "content/c0098.json",
+      "content/c0099.json",
+      "content/c0100.json",
+      "content/c0101.json",
+      "content/c0102.json",
+      "content/c0103.json",
+      "content/c0104.json",
+      "content/c0105.json",
+      "content/c0106.json",
+      "content/c0107.json",
+      "content/c0108.json",
+      "content/c0109.json",
+      "content/c0110.json",
+      "content/c0111.json",
+      "content/c0112.json",
+      "content/c0113.json",
+      "content/c0114.json",
+      "content/c0115.json",
+      "content/c0116.json",
+      "content/c0117.json",
+      "content/c0118.json",
+      "content/c0119.json",
+      "content/c0120.json",
+      "content/c0121.json",
+      "content/c0122.json",
+      "content/c0123.json",
+      "content/c0124.json",
+      "content/c0125.json",
+      "content/c0126.json",
+      "content/c0127.json",
+      "content/c0128.json",
+      "content/c0129.json",
+      "content/c0130.json",
+      "content/c0131.json",
+      "content/c0132.json",
+      "content/c0133.json",
+      "content/c0134.json",
+      "content/c0135.json",
+      "content/c0136.json",
+      "content/c0137.json",
+      "content/c0138.json",
+      "content/c0139.json",
+      "content/c0140.json",
+      "content/c0141.json",
+      "content/c0142.json",
+      "content/c0143.json",
+      "content/c0144.json",
+      "content/c0145.json",
+      "content/c0146.json",
+      "content/c0147.json",
+      "content/c0148.json",
+      "content/c0149.json",
+      "content/c0150.json",
+      "content/c0151.json",
+      "content/c0152.json",
+      "content/c0153.json",
+      "content/c0154.json",
+      "content/c0155.json",
+      "content/c0156.json",
+      "content/c0157.json",
+      "content/c0158.json",
+      "content/c0159.json",
+      "content/c0160.json",
+      "content/c0161.json",
+      "content/c0162.json",
+      "content/c0163.json",
+      "content/c0164.json",
+      "content/c0165.json",
+      "content/c0166.json",
+      "content/c0167.json",
+      "content/c0168.json",
+      "content/c0169.json",
+      "content/c0170.json",
+      "content/c0171.json",
+      "content/c0173.json",
+      "content/c0174.json",
+      "content/c0175.json",
+      "content/c0176.json",
+      "content/c0177.json",
+      "content/c0178.json",
+      "content/c0179.json",
+      "content/c0180.json",
+      "content/c0181.json",
+      "content/c0182.json",
+      "content/c0183.json",
+      "content/c0184.json",
+      "content/c0185.json",
+      "content/c0186.json",
+      "content/c0187.json"
+    ],
+    "note": "A subsequent full build applied the API-name restoration fix. Four authorized Journaling tags and one qualified API label were subsequently synchronized by complete-paragraph/card matches in their respective content blocks and same-page search records. These exact patches are separately recorded. Payload changes are recorded here, and final content correctness is independently revalidated against the source/review inputs."
+  },
+  "limitations": [
+    "This executes data registration and parses app scripts; it does not operate a browser or assert visual layout."
+  ]
+}

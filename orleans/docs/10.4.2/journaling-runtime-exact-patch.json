@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "scope": "Exactly four reviewed Journaling tag tails in the /samples/ list block, plus the matching four complete tail strings in only that page search-cache row.",
+  "contentKey": "content/c0187.json",
+  "pageId": "41ae4a844d4e1150",
+  "path": "/samples/",
+  "blockId": "41ae4a844d4e1150-4",
+  "replacements": [
+    {
+      "unitId": "307337d79442a524fa92",
+      "pageId": "41ae4a844d4e1150",
+      "blockId": "41ae4a844d4e1150-4",
+      "href": "https://github.com/dotnet/orleans/tree/main/samples/JournaledTodoList",
+      "oldCompleteTail": "C# · Razor · 日志记录 · Aspire · 查看源代码 →",
+      "newCompleteTail": "C# · Razor · 日志化 · Aspire · 查看源代码 →",
+      "oldCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/JournaledTodoList\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>日志化待办事项列表</h2><p>由 Aspire 托管的 Web 应用，演示持久的日志化 Grain 状态。</p><span>C# · Razor · 日志记录 · Aspire · 查看源代码 →</span></a>",
+      "newCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/JournaledTodoList\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>日志化待办事项列表</h2><p>由 Aspire 托管的 Web 应用，演示持久的日志化 Grain 状态。</p><span>C# · Razor · 日志化 · Aspire · 查看源代码 →</span></a>",
+      "replacementCount": 1
+    },
+    {
+      "unitId": "3ec058993851ad4f8c94",
+      "pageId": "41ae4a844d4e1150",
+      "blockId": "41ae4a844d4e1150-4",
+      "href": "https://github.com/dotnet/orleans/tree/main/samples/DurableJobsMigration",
+      "oldCompleteTail": "C# · 持久作业 · 日志记录 · 查看源代码 →",
+      "newCompleteTail": "C# · 持久作业 · 日志化 · 查看源代码 →",
+      "oldCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/DurableJobsMigration\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>Durable Jobs 提供程序迁移</h2><p>在提供程序 B 接收新工作的同时，排空 Azure Blob 提供程序 A 中的现有作业，并执行进程重启和全量清单检查。</p><span>C# · 持久作业 · 日志记录 · 查看源代码 →</span></a>",
+      "newCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/DurableJobsMigration\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>Durable Jobs 提供程序迁移</h2><p>在提供程序 B 接收新工作的同时，排空 Azure Blob 提供程序 A 中的现有作业，并执行进程重启和全量清单检查。</p><span>C# · 持久作业 · 日志化 · 查看源代码 →</span></a>",
+      "replacementCount": 1
+    },
+    {
+      "unitId": "25e9ffdc23f1a6c9dd7e",
+      "pageId": "41ae4a844d4e1150",
+      "blockId": "41ae4a844d4e1150-4",
+      "href": "https://github.com/dotnet/orleans/tree/main/samples/JournalingAzureBlobJson",
+      "oldCompleteTail": "C# · 日志记录 · Azure Storage · 查看源代码 →",
+      "newCompleteTail": "C# · 日志化 · Azure Storage · 查看源代码 →",
+      "oldCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/JournalingAzureBlobJson\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>使用 Azure Blob JSON 进行日志化</h2><p>使用 Orleans 日志化的 Aspire 示例，将 JSON 事件存储在 Azure Blob Storage 中。</p><span>C# · 日志记录 · Azure Storage · 查看源代码 →</span></a>",
+      "newCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/JournalingAzureBlobJson\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>使用 Azure Blob JSON 进行日志化</h2><p>使用 Orleans 日志化的 Aspire 示例，将 JSON 事件存储在 Azure Blob Storage 中。</p><span>C# · 日志化 · Azure Storage · 查看源代码 →</span></a>",
+      "replacementCount": 1
+    },
+    {
+      "unitId": "d064970d31f50f105c4e",
+      "pageId": "41ae4a844d4e1150",
+      "blockId": "41ae4a844d4e1150-4",
+      "href": "https://github.com/dotnet/orleans/tree/main/samples/Messaging",
+      "oldCompleteTail": "C# · 消息传递 · 日志记录 · 查看源代码 →",
+      "newCompleteTail": "C# · 消息传递 · 日志化 · 查看源代码 →",
+      "oldCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/Messaging\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>通过消息传递预留库存</h2><p>独立的订单和库存工作流，演示类型化主题、稳定的命令 ID、收件箱去重，以及经日志确认的回复。</p><span>C# · 消息传递 · 日志记录 · 查看源代码 →</span></a>",
+      "newCompleteAnchor": "<a href=\"https://github.com/dotnet/orleans/tree/main/samples/Messaging\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"assets/original/favicon.svg\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h2>通过消息传递预留库存</h2><p>独立的订单和库存工作流，演示类型化主题、稳定的命令 ID、收件箱去重，以及经日志确认的回复。</p><span>C# · 消息传递 · 日志化 · 查看源代码 →</span></a>",
+      "replacementCount": 1
+    }
+  ],
+  "writes": [
+    {
+      "key": "content/c0187.json",
+      "script": "data/content/c0187.js",
+      "beforeJsonSha256": "4fa7fc3f0e12192d12df8e335071404510209a1edaff2debaf5e1f5a2908f142",
+      "afterJsonSha256": "f66267cb5166831960d688b16d109c5eace88992308e5a88f4844f06434b3ced",
+      "beforeScriptSha256": "1cac8e6f7828c0e0ade55e660b6eb2ae8334aadeb6a4f9a212fdd8428ae6edb1",
+      "afterScriptSha256": "366c709ff4e46a7f239182848c384b0b5fe56c4b17d2f7e51a020555e3c83afe",
+      "jsonBytesDelta": -12
+    },
+    {
+      "key": "search.json",
+      "script": "data/search.js",
+      "beforeJsonSha256": "4ccc22c58dadc151845dccab184ca1d91658ed96eb5b894c5ed6ec1fe5ae5ebc",
+      "afterJsonSha256": "221277e566915c4a63dbd1a0852dba18e47809bd42633306fa6ce9f0f44105a2",
+      "beforeScriptSha256": "bd5ec87ff7ecd299bc901363b688404849acae7d94dad78d1b5a9b4032a38895",
+      "afterScriptSha256": "b4a172bf0c876a0dd99f78132d723e334a1e8bf0364a057664a9e86e0ee99628",
+      "jsonBytesDelta": -12
+    }
+  ],
+  "proof": {
+    "eachCardHrefUnique": true,
+    "eachCompleteOldAnchorAndTailReplacedExactlyOnce": true,
+    "allOtherContentRecordsAndFieldsUnchanged": true,
+    "allOtherSearchRecordsAndFieldsUnchanged": true,
+    "searchRecords": 15235,
+    "manifestPayloadCount": 191,
+    "unchangedManifestEntries": 189,
+    "englishHtmlAndCodeUnchanged": true
+  },
+  "builderExecuted": false
+}

@@ -1,0 +1,14 @@
+{
+  "check": "Independent static local-reference/package audit",
+  "browserUsed": false,
+  "pages": 15235,
+  "blocks": 164126,
+  "htmlTagsParsed": 1432495,
+  "localReferencedFiles": 27,
+  "hashReferences": 95538,
+  "externalMediaReferences": [],
+  "externalHyperlinks": 7947,
+  "copiedLicenseAndBundleMatches": true,
+  "distBytes": 294552300,
+  "issues": []
+}

@@ -1,0 +1,1836 @@
+{
+  "revision": "official-homepage-restored-2026-11-24",
+  "verifiedAt": "2026-11-24T12:24:24+08:00",
+  "status": "passed",
+  "scope": "恢复原官网首页的默认入口、展示结构及漏收的大标志；保留既有49个逐句译审块。",
+  "source": {
+    "url": "https://dotnet.github.io/orleans/",
+    "pageId": "bfa8f21cc2984261",
+    "sourceHash": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+    "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+    "snapshotDate": "2026-11-23"
+  },
+  "previousFindings": [
+    "默认首页原为自定义文档导览；官网首页位于 /original-home/，按普通文档呈现。",
+    "官网首页导航名称 Microsoft Orleans 与概述页重名，入口难以辨认。",
+    "49个正文块、23条正文链接和2段代码已收录；hero > img 在源抽取阶段遗漏。"
+  ],
+  "changes": {
+    "defaultHomepage": "#/",
+    "compatibleHomepage": "#/original-home/",
+    "documentationOverview": "#/__overview/",
+    "heroImage": {
+      "sourcePageHash": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+      "rawHTMLHashVerified": true,
+      "originalImage": {
+        "src": "/orleans/_astro/orleans-logo.CmH61o_o_SMe1d.svg",
+        "loading": "eager",
+        "decoding": "async",
+        "alt": "Microsoft Orleans",
+        "width": "400",
+        "height": "400",
+        "class": "astro-q2ezz3gc"
+      },
+      "publishedImage": "assets/brand/orleans-logo.svg",
+      "imageSHA256": "b58440093d32eb429595bfb2b8713529d26b51351de7d986a5ec42984baf2549",
+      "officialBytesMatch": true,
+      "previousExtractionOmission": "首页正文提取只包含 h1、tagline、actions 和 markdown，未提取 hero > img。",
+      "currentRestoration": "以首页布局资产恢复官方原始图片，49个冻结正文块及数据保持不变。"
+    },
+    "sections": {
+      "heroBlocks": 4,
+      "features": 8,
+      "scenarios": 6,
+      "codeExamples": 2,
+      "startCards": 4,
+      "sourceBlocks": 49
+    },
+    "readModes": [
+      "zh",
+      "en",
+      "compare"
+    ],
+    "officialAssetOriginalBytes": true
+  },
+  "independentTranslationReview": {
+    "task": "官网展示首页内容与译文的独立只读复核",
+    "method": "实际逐块阅读全部 49 块 EN/ZH；将已发布英文与原结构化英文逐字符比较；逐项核对术语和限定；核对 23 条正文链接的源目标/EN/ZH及内部页与 fragment；对两段代码做 SHA-256 与逐字符比较。另读取 source/home.html 核对官方分区和 hero 资产。没有修改仓库、访问浏览器或重跑全站。",
+    "pageId": "bfa8f21cc2984261",
+    "sourcePath": "/",
+    "sourceUrl": "https://dotnet.github.io/orleans/",
+    "sourceHash": "d820a1f77f133f4a8eaca7af1d881a13ccf72c450fae7c12d87655cff655f555",
+    "inputs": {
+      "source": "/workspace/sites/orleans-zh-reference/source/structured/source-000.json",
+      "published": "/workspace/sites/orleans-zh-reference/dist/data/content/c0000.js",
+      "originalHtml": "/workspace/sites/orleans-zh-reference/source/home.html",
+      "publishedFileSha256": "15fa3d5c86d1d4607851dbc930640b81e2f3bb50f5849be0bc179855cd9dca57"
+    },
+    "conclusion": {
+      "retranslationRequired": false,
+      "translationErrors": [],
+      "missingOrExtraBlocks": [],
+      "wrongLinkTargets": [],
+      "summary": "现有 49 块正文与译文忠实、完整、术语准确，无需重译。用户看不到官网展示首页的问题属于默认路由与布局展示；应复用这些既有块恢复首页结构，并补回独立的 hero 品牌图。"
+    },
+    "counts": {
+      "blocks": 49,
+      "uniqueBlockIds": 49,
+      "sourceUnitIds": 49,
+      "uniqueSourceUnitIds": 49,
+      "features": 8,
+      "scenarios": 6,
+      "codeExamples": 2,
+      "heroCtas": 3,
+      "startBuildingEntries": 4,
+      "bodyLinks": 23,
+      "internalBodyLinks": 22,
+      "internalAnchoredLinks": 8,
+      "originalHeadingAnchors": 5
+    },
+    "sections": [
+      {
+        "name": "hero",
+        "blockIndices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "blockIds": [
+          "bfa8f21cc2984261-0",
+          "bfa8f21cc2984261-1",
+          "bfa8f21cc2984261-2",
+          "bfa8f21cc2984261-3"
+        ],
+        "ctaCount": 3
+      },
+      {
+        "name": "features",
+        "headingBlockId": "bfa8f21cc2984261-4",
+        "introBlockId": "bfa8f21cc2984261-5",
+        "anchor": "features-for-stateful-distributed-applications",
+        "cards": [
+          {
+            "titleBlockId": "bfa8f21cc2984261-6",
+            "bodyBlockId": "bfa8f21cc2984261-7",
+            "enTitle": "Virtual actors",
+            "zhTitle": "虚拟 Actor"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-8",
+            "bodyBlockId": "bfa8f21cc2984261-9",
+            "enTitle": "Durable state",
+            "zhTitle": "持久状态"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-10",
+            "bodyBlockId": "bfa8f21cc2984261-11",
+            "enTitle": "Streams and event processing",
+            "zhTitle": "流与事件处理"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-12",
+            "bodyBlockId": "bfa8f21cc2984261-13",
+            "enTitle": "Durable scheduling and execution",
+            "zhTitle": "持久调度与执行"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-14",
+            "bodyBlockId": "bfa8f21cc2984261-15",
+            "enTitle": "Transactions",
+            "zhTitle": "事务"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-16",
+            "bodyBlockId": "bfa8f21cc2984261-17",
+            "enTitle": "Event sourcing",
+            "zhTitle": "事件溯源"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-18",
+            "bodyBlockId": "bfa8f21cc2984261-19",
+            "enTitle": "Elastic scaling and load balancing",
+            "zhTitle": "弹性伸缩与负载均衡"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-20",
+            "bodyBlockId": "bfa8f21cc2984261-21",
+            "enTitle": "Fault tolerance",
+            "zhTitle": "容错"
+          }
+        ]
+      },
+      {
+        "name": "scenarios",
+        "headingBlockId": "bfa8f21cc2984261-22",
+        "introBlockId": "bfa8f21cc2984261-23",
+        "anchor": "common-application-scenarios",
+        "cards": [
+          {
+            "titleBlockId": "bfa8f21cc2984261-24",
+            "bodyBlockId": "bfa8f21cc2984261-25",
+            "enTitle": "AI agents and conversational sessions",
+            "zhTitle": "AI 智能体与对话会话"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-26",
+            "bodyBlockId": "bfa8f21cc2984261-27",
+            "enTitle": "Fraud, risk, and real-time decisioning",
+            "zhTitle": "欺诈防范、风险与实时决策"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-28",
+            "bodyBlockId": "bfa8f21cc2984261-29",
+            "enTitle": "IoT and digital twins",
+            "zhTitle": "物联网与数字孪生"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-30",
+            "bodyBlockId": "bfa8f21cc2984261-31",
+            "enTitle": "Monitoring and job orchestration",
+            "zhTitle": "监控与作业编排"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-32",
+            "bodyBlockId": "bfa8f21cc2984261-33",
+            "enTitle": "Multiplayer and online games",
+            "zhTitle": "多人游戏与在线游戏"
+          },
+          {
+            "titleBlockId": "bfa8f21cc2984261-34",
+            "bodyBlockId": "bfa8f21cc2984261-35",
+            "enTitle": "Commerce and reservations",
+            "zhTitle": "商业交易与预订"
+          }
+        ]
+      },
+      {
+        "name": "programmingModel",
+        "headingBlockId": "bfa8f21cc2984261-36",
+        "introBlockId": "bfa8f21cc2984261-37",
+        "anchor": "programming-model",
+        "cards": [
+          {
+            "blockId": "bfa8f21cc2984261-40",
+            "labelBlockId": "bfa8f21cc2984261-38",
+            "captionBlockId": "bfa8f21cc2984261-39",
+            "caption": "Counter.cs",
+            "sourceEnZhSha256": "6ede9ac0db2d78a400f2d935c1c5a7ee59cacbb217d3bd8945e3e73b8ee8d260",
+            "allThreeEqual": true
+          },
+          {
+            "blockId": "bfa8f21cc2984261-43",
+            "labelBlockId": "bfa8f21cc2984261-41",
+            "captionBlockId": "bfa8f21cc2984261-42",
+            "caption": "Program.cs",
+            "sourceEnZhSha256": "5166c3157975d6fb26ed500b6d076da28abc93c0bb1da58dce5f2850b241601e",
+            "allThreeEqual": true
+          }
+        ]
+      },
+      {
+        "name": "startBuilding",
+        "headingBlockId": "bfa8f21cc2984261-44",
+        "anchor": "start-building",
+        "cards": [
+          {
+            "blockId": "bfa8f21cc2984261-45",
+            "sourceUnitIds": [
+              "8bf879c3626d2113d7bb",
+              "f503b8208f794f218459"
+            ],
+            "links": [
+              {
+                "blockId": "bfa8f21cc2984261-45",
+                "sourceLabel": "Build your first app",
+                "zhLabel": "构建你的第一个应用",
+                "sourceHref": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+                "localHref": "#/docs/quickstarts/build-your-first-orleans-app/",
+                "enZhTargetMatch": true,
+                "targetPageId": "af2f8b7c6afe250a",
+                "internalTargetExists": true
+              }
+            ]
+          },
+          {
+            "blockId": "bfa8f21cc2984261-46",
+            "sourceUnitIds": [
+              "138509fb67c05d490c70",
+              "c833cea77619e97df561"
+            ],
+            "links": [
+              {
+                "blockId": "bfa8f21cc2984261-46",
+                "sourceLabel": "Read the docs",
+                "zhLabel": "阅读文档",
+                "sourceHref": "/orleans/docs/",
+                "localHref": "#/docs/",
+                "enZhTargetMatch": true,
+                "targetPageId": "cf700b3ec7cb65cf",
+                "internalTargetExists": true
+              }
+            ]
+          },
+          {
+            "blockId": "bfa8f21cc2984261-47",
+            "sourceUnitIds": [
+              "f33da03310c5b899f248",
+              "403a4ee77c82d21fdd50"
+            ],
+            "links": [
+              {
+                "blockId": "bfa8f21cc2984261-47",
+                "sourceLabel": "Browse samples",
+                "zhLabel": "浏览示例",
+                "sourceHref": "/orleans/samples/",
+                "localHref": "#/samples/",
+                "enZhTargetMatch": true,
+                "targetPageId": "41ae4a844d4e1150",
+                "internalTargetExists": true
+              }
+            ]
+          },
+          {
+            "blockId": "bfa8f21cc2984261-48",
+            "sourceUnitIds": [
+              "04ae51153a34d78bd5f3",
+              "86899d71a6ffc19091e4"
+            ],
+            "links": [
+              {
+                "blockId": "bfa8f21cc2984261-48",
+                "sourceLabel": "Join the project",
+                "zhLabel": "参与项目",
+                "sourceHref": "https://github.com/dotnet/orleans",
+                "localHref": "https://github.com/dotnet/orleans",
+                "enZhTargetMatch": true,
+                "externalOriginalTargetPreserved": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "anchors": [
+      {
+        "blockId": "bfa8f21cc2984261-0",
+        "anchor": "_top",
+        "sourceUnitIds": [
+          "ab1f533c8a029bb9382a"
+        ]
+      },
+      {
+        "blockId": "bfa8f21cc2984261-4",
+        "anchor": "features-for-stateful-distributed-applications",
+        "sourceUnitIds": [
+          "304fb1fbc61c5ee01378"
+        ]
+      },
+      {
+        "blockId": "bfa8f21cc2984261-22",
+        "anchor": "common-application-scenarios",
+        "sourceUnitIds": [
+          "ff21def3568a943d026c"
+        ]
+      },
+      {
+        "blockId": "bfa8f21cc2984261-36",
+        "anchor": "programming-model",
+        "sourceUnitIds": [
+          "f9c7969fcc4488e4b5c4"
+        ]
+      },
+      {
+        "blockId": "bfa8f21cc2984261-44",
+        "anchor": "start-building",
+        "sourceUnitIds": [
+          "c5d0453e23e49add2942"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "blockId": "bfa8f21cc2984261-3",
+        "sourceLabel": "Get started",
+        "zhLabel": "开始使用",
+        "sourceHref": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+        "localHref": "#/docs/quickstarts/build-your-first-orleans-app/",
+        "enZhTargetMatch": true,
+        "targetPageId": "af2f8b7c6afe250a",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-3",
+        "sourceLabel": "Explore docs",
+        "zhLabel": "浏览文档",
+        "sourceHref": "/orleans/docs/",
+        "localHref": "#/docs/",
+        "enZhTargetMatch": true,
+        "targetPageId": "cf700b3ec7cb65cf",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-3",
+        "sourceLabel": "View samples",
+        "zhLabel": "查看示例",
+        "sourceHref": "/orleans/samples/",
+        "localHref": "#/samples/",
+        "enZhTargetMatch": true,
+        "targetPageId": "41ae4a844d4e1150",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-7",
+        "sourceLabel": "Explore grains",
+        "zhLabel": "了解 Grain",
+        "sourceHref": "/orleans/docs/grains/",
+        "localHref": "#/docs/grains/",
+        "enZhTargetMatch": true,
+        "targetPageId": "4646dcd2647a7e1f",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-9",
+        "sourceLabel": "Explore persistence",
+        "zhLabel": "了解持久化",
+        "sourceHref": "/orleans/docs/grains/grain-persistence/",
+        "localHref": "#/docs/grains/grain-persistence/",
+        "enZhTargetMatch": true,
+        "targetPageId": "dfc4b6b20a797156",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-11",
+        "sourceLabel": "Explore streaming",
+        "zhLabel": "了解流处理",
+        "sourceHref": "/orleans/docs/streaming/",
+        "localHref": "#/docs/streaming/",
+        "enZhTargetMatch": true,
+        "targetPageId": "a59efdf7b335e077",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-13",
+        "sourceLabel": "timers and reminders",
+        "zhLabel": "计时器和提醒器",
+        "sourceHref": "/orleans/docs/grains/timers-and-reminders/",
+        "localHref": "#/docs/grains/timers-and-reminders/",
+        "enZhTargetMatch": true,
+        "targetPageId": "f19430124f9fbd6e",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-13",
+        "sourceLabel": "durable jobs",
+        "zhLabel": "持久作业",
+        "sourceHref": "/orleans/docs/resources/nuget-packages/#durable-state-jobs-messaging-and-tasks",
+        "localHref": "#/docs/resources/nuget-packages/::durable-state-jobs-messaging-and-tasks",
+        "enZhTargetMatch": true,
+        "targetPageId": "960ff0d95c076992",
+        "internalTargetExists": true,
+        "anchor": "durable-state-jobs-messaging-and-tasks",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-15",
+        "sourceLabel": "Explore transactions",
+        "zhLabel": "了解事务",
+        "sourceHref": "/orleans/docs/grains/transactions/",
+        "localHref": "#/docs/grains/transactions/",
+        "enZhTargetMatch": true,
+        "targetPageId": "db5edd894f591949",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-17",
+        "sourceLabel": "Explore event sourcing",
+        "zhLabel": "了解事件溯源",
+        "sourceHref": "/orleans/docs/grains/event-sourcing/",
+        "localHref": "#/docs/grains/event-sourcing/",
+        "enZhTargetMatch": true,
+        "targetPageId": "858c3eacf36d4a94",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-19",
+        "sourceLabel": "Explore placement and load balancing",
+        "zhLabel": "了解放置与负载均衡",
+        "sourceHref": "/orleans/docs/grains/grain-placement/",
+        "localHref": "#/docs/grains/grain-placement/",
+        "enZhTargetMatch": true,
+        "targetPageId": "9cc5ab60acbb1402",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-21",
+        "sourceLabel": "Explore clusters and recovery",
+        "zhLabel": "了解集群与恢复",
+        "sourceHref": "/orleans/docs/overview/#silos-and-clusters",
+        "localHref": "#/docs/overview/::silos-and-clusters",
+        "enZhTargetMatch": true,
+        "targetPageId": "382b25bad3cd2b5e",
+        "internalTargetExists": true,
+        "anchor": "silos-and-clusters",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-23",
+        "sourceLabel": "Explore the full scenarios and use cases guide",
+        "zhLabel": "浏览完整的场景与用例指南",
+        "sourceHref": "/orleans/docs/scenarios/",
+        "localHref": "#/docs/scenarios/",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-25",
+        "sourceLabel": "Read about AI agent scenarios",
+        "zhLabel": "了解 AI 智能体场景",
+        "sourceHref": "/orleans/docs/scenarios/#ai-agents-and-conversational-sessions",
+        "localHref": "#/docs/scenarios/::ai-agents-and-conversational-sessions",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true,
+        "anchor": "ai-agents-and-conversational-sessions",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-27",
+        "sourceLabel": "Read about decisioning scenarios",
+        "zhLabel": "了解决策场景",
+        "sourceHref": "/orleans/docs/scenarios/#fraud-protection-risk-and-low-latency-decisioning",
+        "localHref": "#/docs/scenarios/::fraud-protection-risk-and-low-latency-decisioning",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true,
+        "anchor": "fraud-protection-risk-and-low-latency-decisioning",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-29",
+        "sourceLabel": "Read about IoT scenarios",
+        "zhLabel": "了解物联网场景",
+        "sourceHref": "/orleans/docs/scenarios/#internet-of-things-and-digital-twins",
+        "localHref": "#/docs/scenarios/::internet-of-things-and-digital-twins",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true,
+        "anchor": "internet-of-things-and-digital-twins",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-31",
+        "sourceLabel": "Read about orchestration scenarios",
+        "zhLabel": "了解编排场景",
+        "sourceHref": "/orleans/docs/scenarios/#monitoring-resource-governance-and-job-orchestration",
+        "localHref": "#/docs/scenarios/::monitoring-resource-governance-and-job-orchestration",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true,
+        "anchor": "monitoring-resource-governance-and-job-orchestration",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-33",
+        "sourceLabel": "Read about game scenarios",
+        "zhLabel": "了解游戏场景",
+        "sourceHref": "/orleans/docs/scenarios/#multiplayer-and-online-games",
+        "localHref": "#/docs/scenarios/::multiplayer-and-online-games",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true,
+        "anchor": "multiplayer-and-online-games",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-35",
+        "sourceLabel": "Read about commerce scenarios",
+        "zhLabel": "了解商业交易场景",
+        "sourceHref": "/orleans/docs/scenarios/#commerce-reservations-and-customer-services",
+        "localHref": "#/docs/scenarios/::commerce-reservations-and-customer-services",
+        "enZhTargetMatch": true,
+        "targetPageId": "1dde80d15d656b3d",
+        "internalTargetExists": true,
+        "anchor": "commerce-reservations-and-customer-services",
+        "anchorExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-45",
+        "sourceLabel": "Build your first app",
+        "zhLabel": "构建你的第一个应用",
+        "sourceHref": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+        "localHref": "#/docs/quickstarts/build-your-first-orleans-app/",
+        "enZhTargetMatch": true,
+        "targetPageId": "af2f8b7c6afe250a",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-46",
+        "sourceLabel": "Read the docs",
+        "zhLabel": "阅读文档",
+        "sourceHref": "/orleans/docs/",
+        "localHref": "#/docs/",
+        "enZhTargetMatch": true,
+        "targetPageId": "cf700b3ec7cb65cf",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-47",
+        "sourceLabel": "Browse samples",
+        "zhLabel": "浏览示例",
+        "sourceHref": "/orleans/samples/",
+        "localHref": "#/samples/",
+        "enZhTargetMatch": true,
+        "targetPageId": "41ae4a844d4e1150",
+        "internalTargetExists": true
+      },
+      {
+        "blockId": "bfa8f21cc2984261-48",
+        "sourceLabel": "Join the project",
+        "zhLabel": "参与项目",
+        "sourceHref": "https://github.com/dotnet/orleans",
+        "localHref": "https://github.com/dotnet/orleans",
+        "enZhTargetMatch": true,
+        "externalOriginalTargetPreserved": true
+      }
+    ],
+    "blocks": [
+      {
+        "index": 0,
+        "blockId": "bfa8f21cc2984261-0",
+        "type": "heading",
+        "sourceUnitIds": [
+          "ab1f533c8a029bb9382a"
+        ],
+        "anchor": "_top",
+        "sourceEn": "Microsoft Orleans",
+        "publishedEn": "Microsoft Orleans",
+        "publishedZh": "Microsoft Orleans",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "品牌名 Microsoft Orleans 保持原名。",
+        "links": []
+      },
+      {
+        "index": 1,
+        "blockId": "bfa8f21cc2984261-1",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "4f5cb77f17baf17327ff"
+        ],
+        "anchor": null,
+        "sourceEn": "Build business-critical distributed services in .NET. ",
+        "publishedEn": "Build business-critical distributed services in .NET. ",
+        "publishedZh": "使用 .NET 构建承载关键业务的分布式服务。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "business-critical 译为承载关键业务，保留 .NET 平台。",
+        "links": []
+      },
+      {
+        "index": 2,
+        "blockId": "bfa8f21cc2984261-2",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "d5b9e256b18c3c8bfbfd"
+        ],
+        "anchor": null,
+        "sourceEn": "Orleans combines the virtual actor model with runtime support for clustering, failure recovery, persistence, durable jobs, transactions, and streams.",
+        "publishedEn": "Orleans combines the virtual actor model with runtime support for clustering, failure recovery, persistence, durable jobs, transactions, and streams.",
+        "publishedZh": "Orleans 将虚拟 Actor 模型与运行时支持相结合，提供集群、故障恢复、持久化、持久作业、事务和流等能力。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "虚拟 Actor 模型及集群、故障恢复、持久化、持久作业、事务、流六类运行时能力齐全。",
+        "links": []
+      },
+      {
+        "index": 3,
+        "blockId": "bfa8f21cc2984261-3",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "4b9492cba53f661ee67f"
+        ],
+        "anchor": null,
+        "sourceEn": "Get startedExplore docsView samples",
+        "publishedEn": "Get startedExplore docsView samples",
+        "publishedZh": " 开始使用   浏览文档   查看示例 ",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-3",
+            "sourceLabel": "Get started",
+            "zhLabel": "开始使用",
+            "sourceHref": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+            "localHref": "#/docs/quickstarts/build-your-first-orleans-app/",
+            "enZhTargetMatch": true,
+            "targetPageId": "af2f8b7c6afe250a",
+            "internalTargetExists": true
+          },
+          {
+            "blockId": "bfa8f21cc2984261-3",
+            "sourceLabel": "Explore docs",
+            "zhLabel": "浏览文档",
+            "sourceHref": "/orleans/docs/",
+            "localHref": "#/docs/",
+            "enZhTargetMatch": true,
+            "targetPageId": "cf700b3ec7cb65cf",
+            "internalTargetExists": true
+          },
+          {
+            "blockId": "bfa8f21cc2984261-3",
+            "sourceLabel": "View samples",
+            "zhLabel": "查看示例",
+            "sourceHref": "/orleans/samples/",
+            "localHref": "#/samples/",
+            "enZhTargetMatch": true,
+            "targetPageId": "41ae4a844d4e1150",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "blockId": "bfa8f21cc2984261-4",
+        "type": "heading",
+        "sourceUnitIds": [
+          "304fb1fbc61c5ee01378"
+        ],
+        "anchor": "features-for-stateful-distributed-applications",
+        "sourceEn": "Features for stateful distributed applications",
+        "publishedEn": "Features for stateful distributed applications",
+        "publishedZh": "面向有状态分布式应用的功能",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 5,
+        "blockId": "bfa8f21cc2984261-5",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "6a30548711d2bfb9f4a0"
+        ],
+        "anchor": null,
+        "sourceEn": "Orleans combines a distributed programming model with runtime capabilities for building and operating stateful services. It is used across Microsoft to run critical services at large scale.",
+        "publishedEn": "Orleans combines a distributed programming model with runtime capabilities for building and operating stateful services. It is used across Microsoft to run critical services at large scale.",
+        "publishedZh": "Orleans 将分布式编程模型与运行时能力相结合，用于构建和运行有状态服务。Microsoft 内部广泛使用 Orleans 来大规模运行关键服务。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "分布式编程模型、构建与运行有状态服务、Microsoft 内部大规模关键服务三层信息均保留。",
+        "links": []
+      },
+      {
+        "index": 6,
+        "blockId": "bfa8f21cc2984261-6",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "bf4dd89cef611f12a553"
+        ],
+        "anchor": null,
+        "sourceEn": "Virtual actors",
+        "publishedEn": "Virtual actors",
+        "publishedZh": "虚拟 Actor",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 7,
+        "blockId": "bfa8f21cc2984261-7",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "9e26458e3a712dfb8489"
+        ],
+        "anchor": null,
+        "sourceEn": "Model application entities as grains with stable identities, isolated behavior, and turn-based execution. Explore grains.",
+        "publishedEn": "Model application entities as grains with stable identities, isolated behavior, and turn-based execution. Explore grains.",
+        "publishedZh": "将应用实体建模为 Grain，使其具备稳定的标识、相互隔离的行为以及基于轮次的执行方式。 了解 Grain 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "Grain 稳定标识、隔离行为和基于轮次的执行均保留，没有增添并行执行承诺。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-7",
+            "sourceLabel": "Explore grains",
+            "zhLabel": "了解 Grain",
+            "sourceHref": "/orleans/docs/grains/",
+            "localHref": "#/docs/grains/",
+            "enZhTargetMatch": true,
+            "targetPageId": "4646dcd2647a7e1f",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "blockId": "bfa8f21cc2984261-8",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "a15a4e2e99682ddb177f"
+        ],
+        "anchor": null,
+        "sourceEn": "Durable state",
+        "publishedEn": "Durable state",
+        "publishedZh": "持久状态",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 9,
+        "blockId": "bfa8f21cc2984261-9",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "76c49eb50fe43b9b8556"
+        ],
+        "anchor": null,
+        "sourceEn": "Persist grain state with providers for Azure, AWS, Google Cloud, relational databases, Redis, and custom storage systems. Explore persistence.",
+        "publishedEn": "Persist grain state with providers for Azure, AWS, Google Cloud, relational databases, Redis, and custom storage systems. Explore persistence.",
+        "publishedZh": "通过适用于 Azure、AWS、Google Cloud、关系数据库、Redis 和自定义存储系统的提供程序，持久化 Grain 状态。 了解持久化 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "Azure、AWS、Google Cloud、关系数据库、Redis、自定义存储六类存储选择与提供程序语义齐全。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-9",
+            "sourceLabel": "Explore persistence",
+            "zhLabel": "了解持久化",
+            "sourceHref": "/orleans/docs/grains/grain-persistence/",
+            "localHref": "#/docs/grains/grain-persistence/",
+            "enZhTargetMatch": true,
+            "targetPageId": "dfc4b6b20a797156",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "blockId": "bfa8f21cc2984261-10",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "f2db3be911277b604505"
+        ],
+        "anchor": null,
+        "sourceEn": "Streams and event processing",
+        "publishedEn": "Streams and event processing",
+        "publishedZh": "流与事件处理",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 11,
+        "blockId": "bfa8f21cc2984261-11",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "aba6b79e12c5ed1f706a"
+        ],
+        "anchor": null,
+        "sourceEn": "Connect producers and consumers using managed, persistent, or in-memory stream providers. Explore streaming.",
+        "publishedEn": "Connect producers and consumers using managed, persistent, or in-memory stream providers. Explore streaming.",
+        "publishedZh": "使用托管、持久或内存流提供程序连接生产者和消费者。 了解流处理 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "托管、持久、内存三类流提供程序及生产者/消费者关系齐全。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-11",
+            "sourceLabel": "Explore streaming",
+            "zhLabel": "了解流处理",
+            "sourceHref": "/orleans/docs/streaming/",
+            "localHref": "#/docs/streaming/",
+            "enZhTargetMatch": true,
+            "targetPageId": "a59efdf7b335e077",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "blockId": "bfa8f21cc2984261-12",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "9750c543fed0a53ee4be"
+        ],
+        "anchor": null,
+        "sourceEn": "Durable scheduling and execution",
+        "publishedEn": "Durable scheduling and execution",
+        "publishedZh": "持久调度与执行",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 13,
+        "blockId": "bfa8f21cc2984261-13",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "30a096b59dd7121e0610"
+        ],
+        "anchor": null,
+        "sourceEn": "Run activation-scoped callbacks, recurring durable reminders, and distributed one-time jobs. Explore timers and reminders and durable jobs.",
+        "publishedEn": "Run activation-scoped callbacks, recurring durable reminders, and distributed one-time jobs. Explore timers and reminders and durable jobs.",
+        "publishedZh": "运行作用域限定于激活实例的回调、周期性的持久提醒器以及分布式一次性作业。了解  计时器和提醒器 ，以及  持久作业 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "激活实例作用域回调、周期性持久提醒器、分布式一次性作业三种机制区分准确，两条详情链接均保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-13",
+            "sourceLabel": "timers and reminders",
+            "zhLabel": "计时器和提醒器",
+            "sourceHref": "/orleans/docs/grains/timers-and-reminders/",
+            "localHref": "#/docs/grains/timers-and-reminders/",
+            "enZhTargetMatch": true,
+            "targetPageId": "f19430124f9fbd6e",
+            "internalTargetExists": true
+          },
+          {
+            "blockId": "bfa8f21cc2984261-13",
+            "sourceLabel": "durable jobs",
+            "zhLabel": "持久作业",
+            "sourceHref": "/orleans/docs/resources/nuget-packages/#durable-state-jobs-messaging-and-tasks",
+            "localHref": "#/docs/resources/nuget-packages/::durable-state-jobs-messaging-and-tasks",
+            "enZhTargetMatch": true,
+            "targetPageId": "960ff0d95c076992",
+            "internalTargetExists": true,
+            "anchor": "durable-state-jobs-messaging-and-tasks",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "blockId": "bfa8f21cc2984261-14",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "3e5136fd4b11c0dd3c14"
+        ],
+        "anchor": null,
+        "sourceEn": "Transactions",
+        "publishedEn": "Transactions",
+        "publishedZh": "事务",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 15,
+        "blockId": "bfa8f21cc2984261-15",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "0e5eaa02bfb134c21b11"
+        ],
+        "anchor": null,
+        "sourceEn": "Coordinate supported persistent state across grains using ACID transactions with serializable isolation. Explore transactions.",
+        "publishedEn": "Coordinate supported persistent state across grains using ACID transactions with serializable isolation. Explore transactions.",
+        "publishedZh": "使用具有可串行化隔离级别的 ACID 事务，协调多个 Grain 中受支持的持久化状态。 了解事务 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "受支持的持久化状态这一范围限定保留；serializable isolation 准确译为可串行化隔离级别，没有误译为可序列化。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-15",
+            "sourceLabel": "Explore transactions",
+            "zhLabel": "了解事务",
+            "sourceHref": "/orleans/docs/grains/transactions/",
+            "localHref": "#/docs/grains/transactions/",
+            "enZhTargetMatch": true,
+            "targetPageId": "db5edd894f591949",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "blockId": "bfa8f21cc2984261-16",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "e01b0eda93d6bb80f33e"
+        ],
+        "anchor": null,
+        "sourceEn": "Event sourcing",
+        "publishedEn": "Event sourcing",
+        "publishedZh": "事件溯源",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 17,
+        "blockId": "bfa8f21cc2984261-17",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "68efebbdfdd05b567f36"
+        ],
+        "anchor": null,
+        "sourceEn": "Represent grain state as an ordered sequence of events using configurable log-consistency providers. Explore event sourcing.",
+        "publishedEn": "Represent grain state as an ordered sequence of events using configurable log-consistency providers. Explore event sourcing.",
+        "publishedZh": "使用可配置的日志一致性提供程序，将 Grain 状态表示为有序的事件序列。 了解事件溯源 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "日志一致性提供程序、事件顺序及状态表示关系准确。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-17",
+            "sourceLabel": "Explore event sourcing",
+            "zhLabel": "了解事件溯源",
+            "sourceHref": "/orleans/docs/grains/event-sourcing/",
+            "localHref": "#/docs/grains/event-sourcing/",
+            "enZhTargetMatch": true,
+            "targetPageId": "858c3eacf36d4a94",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "blockId": "bfa8f21cc2984261-18",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "0fca8019525caf05ee91"
+        ],
+        "anchor": null,
+        "sourceEn": "Elastic scaling and load balancing",
+        "publishedEn": "Elastic scaling and load balancing",
+        "publishedZh": "弹性伸缩与负载均衡",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 19,
+        "blockId": "bfa8f21cc2984261-19",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "d63d146b29b8188cba7f"
+        ],
+        "anchor": null,
+        "sourceEn": "Add or remove silos while resource-aware placement directs new activations; memory-pressure shedding reclaims capacity, and opt-in balancing or repartitioning migrates eligible activations. Explore placement and load balancing.",
+        "publishedEn": "Add or remove silos while resource-aware placement directs new activations; memory-pressure shedding reclaims capacity, and opt-in balancing or repartitioning migrates eligible activations. Explore placement and load balancing.",
+        "publishedZh": "添加或移除 Silo，同时由资源感知的放置策略决定新激活实例的位置；内存压力疏解机制会释放容量，而按需启用的均衡或重新分区功能则会迁移符合条件的激活实例。 了解放置与负载均衡 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "新激活实例由资源感知放置决定、内存压力释放容量、均衡/重新分区按需启用且只迁移符合条件的实例，四项限定均保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-19",
+            "sourceLabel": "Explore placement and load balancing",
+            "zhLabel": "了解放置与负载均衡",
+            "sourceHref": "/orleans/docs/grains/grain-placement/",
+            "localHref": "#/docs/grains/grain-placement/",
+            "enZhTargetMatch": true,
+            "targetPageId": "9cc5ab60acbb1402",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 20,
+        "blockId": "bfa8f21cc2984261-20",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "5b26de6637fdfc4e47bc"
+        ],
+        "anchor": null,
+        "sourceEn": "Fault tolerance",
+        "publishedEn": "Fault tolerance",
+        "publishedZh": "容错",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 21,
+        "blockId": "bfa8f21cc2984261-21",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "dadcf597cc4e663f9ad9"
+        ],
+        "anchor": null,
+        "sourceEn": "Detect failed silos and reactivate grains on healthy hosts, restoring state written to durable storage. Explore clusters and recovery.",
+        "publishedEn": "Detect failed silos and reactivate grains on healthy hosts, restoring state written to durable storage. Explore clusters and recovery.",
+        "publishedZh": "检测发生故障的 Silo，并在健康的主机上重新激活 Grain，恢复已写入持久存储的状态。 了解集群与恢复 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "故障检测、健康主机重新激活及仅恢复已写入持久存储的状态均保留，没有承诺恢复未持久化状态。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-21",
+            "sourceLabel": "Explore clusters and recovery",
+            "zhLabel": "了解集群与恢复",
+            "sourceHref": "/orleans/docs/overview/#silos-and-clusters",
+            "localHref": "#/docs/overview/::silos-and-clusters",
+            "enZhTargetMatch": true,
+            "targetPageId": "382b25bad3cd2b5e",
+            "internalTargetExists": true,
+            "anchor": "silos-and-clusters",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 22,
+        "blockId": "bfa8f21cc2984261-22",
+        "type": "heading",
+        "sourceUnitIds": [
+          "ff21def3568a943d026c"
+        ],
+        "anchor": "common-application-scenarios",
+        "sourceEn": "Common application scenarios",
+        "publishedEn": "Common application scenarios",
+        "publishedZh": "常见应用场景",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 23,
+        "blockId": "bfa8f21cc2984261-23",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "9359047c1620ffdd735a"
+        ],
+        "anchor": null,
+        "sourceEn": "Orleans is well suited to applications with many independently addressable entities whose state and work partition by identity. Explore the full scenarios and use cases guide.",
+        "publishedEn": "Orleans is well suited to applications with many independently addressable entities whose state and work partition by identity. Explore the full scenarios and use cases guide.",
+        "publishedZh": "Orleans 非常适合包含大量可独立寻址实体的应用，这些实体的状态和工作按标识进行分区。 浏览完整的场景与用例指南 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "可独立寻址的实体及按标识对状态/工作进行分区的适用条件保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-23",
+            "sourceLabel": "Explore the full scenarios and use cases guide",
+            "zhLabel": "浏览完整的场景与用例指南",
+            "sourceHref": "/orleans/docs/scenarios/",
+            "localHref": "#/docs/scenarios/",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 24,
+        "blockId": "bfa8f21cc2984261-24",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "c16798056930e59bb3c9"
+        ],
+        "anchor": null,
+        "sourceEn": "AI agents and conversational sessions",
+        "publishedEn": "AI agents and conversational sessions",
+        "publishedZh": "AI 智能体与对话会话",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 25,
+        "blockId": "bfa8f21cc2984261-25",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "ad2fd35f7f01e651632f"
+        ],
+        "anchor": null,
+        "sourceEn": "Manage conversation state, tool configuration, pending work, and coordination for each agent session. Read about AI agent scenarios.",
+        "publishedEn": "Manage conversation state, tool configuration, pending work, and coordination for each agent session. Read about AI agent scenarios.",
+        "publishedZh": "为每个智能体会话管理对话状态、工具配置、待处理工作以及协调工作。 了解 AI 智能体场景 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "对话状态、工具配置、待处理工作与每会话协调四项均保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-25",
+            "sourceLabel": "Read about AI agent scenarios",
+            "zhLabel": "了解 AI 智能体场景",
+            "sourceHref": "/orleans/docs/scenarios/#ai-agents-and-conversational-sessions",
+            "localHref": "#/docs/scenarios/::ai-agents-and-conversational-sessions",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true,
+            "anchor": "ai-agents-and-conversational-sessions",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 26,
+        "blockId": "bfa8f21cc2984261-26",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "f19ae3f76f6377f21704"
+        ],
+        "anchor": null,
+        "sourceEn": "Fraud, risk, and real-time decisioning",
+        "publishedEn": "Fraud, risk, and real-time decisioning",
+        "publishedZh": "欺诈防范、风险与实时决策",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 27,
+        "blockId": "bfa8f21cc2984261-27",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "c1d01ae7f29bf128f643"
+        ],
+        "anchor": null,
+        "sourceEn": "Apply rapidly changing account, market, policy, or event state to low-latency decisions. Read about decisioning scenarios.",
+        "publishedEn": "Apply rapidly changing account, market, policy, or event state to low-latency decisions. Read about decisioning scenarios.",
+        "publishedZh": "将快速变化的账户、市场、策略或事件状态应用于低延迟决策。 了解决策场景 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "快速变化的账户/市场/策略/事件状态与低延迟决策的关系保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-27",
+            "sourceLabel": "Read about decisioning scenarios",
+            "zhLabel": "了解决策场景",
+            "sourceHref": "/orleans/docs/scenarios/#fraud-protection-risk-and-low-latency-decisioning",
+            "localHref": "#/docs/scenarios/::fraud-protection-risk-and-low-latency-decisioning",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true,
+            "anchor": "fraud-protection-risk-and-low-latency-decisioning",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 28,
+        "blockId": "bfa8f21cc2984261-28",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "4ed0c964b8f3616c026a"
+        ],
+        "anchor": null,
+        "sourceEn": "IoT and digital twins",
+        "publishedEn": "IoT and digital twins",
+        "publishedZh": "物联网与数字孪生",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 29,
+        "blockId": "bfa8f21cc2984261-29",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "67bb323cd0adcf0ae38a"
+        ],
+        "anchor": null,
+        "sourceEn": "Represent devices and assets with stable identities, evolving state, ordered commands, and scheduled work. Read about IoT scenarios.",
+        "publishedEn": "Represent devices and assets with stable identities, evolving state, ordered commands, and scheduled work. Read about IoT scenarios.",
+        "publishedZh": "用稳定的标识、不断演变的状态、有序的命令以及计划执行的工作来表示设备和资产。 了解物联网场景 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "稳定标识、演变状态、有序命令、计划工作与设备/资产建模关系保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-29",
+            "sourceLabel": "Read about IoT scenarios",
+            "zhLabel": "了解物联网场景",
+            "sourceHref": "/orleans/docs/scenarios/#internet-of-things-and-digital-twins",
+            "localHref": "#/docs/scenarios/::internet-of-things-and-digital-twins",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true,
+            "anchor": "internet-of-things-and-digital-twins",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 30,
+        "blockId": "bfa8f21cc2984261-30",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "bb448086c1b8276ffe86"
+        ],
+        "anchor": null,
+        "sourceEn": "Monitoring and job orchestration",
+        "publishedEn": "Monitoring and job orchestration",
+        "publishedZh": "监控与作业编排",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 31,
+        "blockId": "bfa8f21cc2984261-31",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "b5d71992848c0e04caaa"
+        ],
+        "anchor": null,
+        "sourceEn": "Track resources, health, quotas, jobs, dependencies, retries, and progress over time. Read about orchestration scenarios.",
+        "publishedEn": "Track resources, health, quotas, jobs, dependencies, retries, and progress over time. Read about orchestration scenarios.",
+        "publishedZh": "持续跟踪资源、健康状况、配额、作业、依赖关系、重试以及进度。 了解编排场景 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "资源、健康、配额、作业、依赖、重试和随时间变化的进度七项齐全。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-31",
+            "sourceLabel": "Read about orchestration scenarios",
+            "zhLabel": "了解编排场景",
+            "sourceHref": "/orleans/docs/scenarios/#monitoring-resource-governance-and-job-orchestration",
+            "localHref": "#/docs/scenarios/::monitoring-resource-governance-and-job-orchestration",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true,
+            "anchor": "monitoring-resource-governance-and-job-orchestration",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 32,
+        "blockId": "bfa8f21cc2984261-32",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "d8f69a9e529a982f10e2"
+        ],
+        "anchor": null,
+        "sourceEn": "Multiplayer and online games",
+        "publishedEn": "Multiplayer and online games",
+        "publishedZh": "多人游戏与在线游戏",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 33,
+        "blockId": "bfa8f21cc2984261-33",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "aac3dc75661130547423"
+        ],
+        "anchor": null,
+        "sourceEn": "Coordinate players, rooms, matches, presence, progression, and authoritative session state. Read about game scenarios.",
+        "publishedEn": "Coordinate players, rooms, matches, presence, progression, and authoritative session state. Read about game scenarios.",
+        "publishedZh": "协调玩家、房间、对局、在线状态、成长进度以及权威会话状态。 了解游戏场景 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "玩家、房间、对局、在线状态、成长进度、权威会话状态六项齐全；authoritative 的游戏服务语境准确。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-33",
+            "sourceLabel": "Read about game scenarios",
+            "zhLabel": "了解游戏场景",
+            "sourceHref": "/orleans/docs/scenarios/#multiplayer-and-online-games",
+            "localHref": "#/docs/scenarios/::multiplayer-and-online-games",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true,
+            "anchor": "multiplayer-and-online-games",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 34,
+        "blockId": "bfa8f21cc2984261-34",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "afb6c10fc87e2dfbb5c2"
+        ],
+        "anchor": null,
+        "sourceEn": "Commerce and reservations",
+        "publishedEn": "Commerce and reservations",
+        "publishedZh": "商业交易与预订",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 35,
+        "blockId": "bfa8f21cc2984261-35",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "8e567f7323d36a1642a0"
+        ],
+        "anchor": null,
+        "sourceEn": "Manage carts, orders, accounts, reservations, subscriptions, and customer context. Read about commerce scenarios.",
+        "publishedEn": "Manage carts, orders, accounts, reservations, subscriptions, and customer context. Read about commerce scenarios.",
+        "publishedZh": "管理购物车、订单、账户、预订、订阅以及客户上下文。 了解商业交易场景 。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "购物车、订单、账户、预订、订阅、客户上下文六项齐全。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-35",
+            "sourceLabel": "Read about commerce scenarios",
+            "zhLabel": "了解商业交易场景",
+            "sourceHref": "/orleans/docs/scenarios/#commerce-reservations-and-customer-services",
+            "localHref": "#/docs/scenarios/::commerce-reservations-and-customer-services",
+            "enZhTargetMatch": true,
+            "targetPageId": "1dde80d15d656b3d",
+            "internalTargetExists": true,
+            "anchor": "commerce-reservations-and-customer-services",
+            "anchorExists": true
+          }
+        ]
+      },
+      {
+        "index": 36,
+        "blockId": "bfa8f21cc2984261-36",
+        "type": "heading",
+        "sourceUnitIds": [
+          "f9c7969fcc4488e4b5c4"
+        ],
+        "anchor": "programming-model",
+        "sourceEn": "Programming model",
+        "publishedEn": "Programming model",
+        "publishedZh": "编程模型",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 37,
+        "blockId": "bfa8f21cc2984261-37",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "33f406bfabb7712739d3"
+        ],
+        "anchor": null,
+        "sourceEn": "Define a grain contract, implement it as an ordinary .NET class, and call it from anywhere in the cluster.",
+        "publishedEn": "Define a grain contract, implement it as an ordinary .NET class, and call it from anywhere in the cluster.",
+        "publishedZh": "定义 Grain 协定，将其实现为普通的 .NET 类，然后从集群中的任意位置调用它。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "grain contract 采用项目统一术语 Grain 协定；普通 .NET 类和集群任意位置调用的原意保留。",
+        "links": []
+      },
+      {
+        "index": 38,
+        "blockId": "bfa8f21cc2984261-38",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "07bce59500bd35e1b4aa"
+        ],
+        "anchor": null,
+        "sourceEn": "Define a grain",
+        "publishedEn": "Define a grain",
+        "publishedZh": "定义 Grain",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 39,
+        "blockId": "bfa8f21cc2984261-39",
+        "type": "paragraph",
+        "sourceUnitIds": [],
+        "anchor": null,
+        "sourceEn": "Counter.cs",
+        "publishedEn": "Counter.cs",
+        "publishedZh": "Counter.cs",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "文件名 Counter.cs 保持原样。",
+        "links": []
+      },
+      {
+        "index": 40,
+        "blockId": "bfa8f21cc2984261-40",
+        "type": "code",
+        "sourceUnitIds": [],
+        "anchor": null,
+        "sourceEn": "public interface ICounter : IGrainWithStringKey\n{\n  Task<int> Add(int value);\n}\n\npublic sealed class Counter : Grain, ICounter\n{\n  private int _value;\n\n  public Task<int> Add(int value) =>\n      Task.FromResult(_value += value);\n}",
+        "publishedEn": "public interface ICounter : IGrainWithStringKey\n{\n  Task<int> Add(int value);\n}\n\npublic sealed class Counter : Grain, ICounter\n{\n  private int _value;\n\n  public Task<int> Add(int value) =>\n      Task.FromResult(_value += value);\n}",
+        "publishedZh": "public interface ICounter : IGrainWithStringKey\n{\n  Task<int> Add(int value);\n}\n\npublic sealed class Counter : Grain, ICounter\n{\n  private int _value;\n\n  public Task<int> Add(int value) =>\n      Task.FromResult(_value += value);\n}",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "ICounter/Counter 定义与原代码逐字符相同；不含待翻译注释。",
+        "links": [],
+        "codeVerification": {
+          "blockId": "bfa8f21cc2984261-40",
+          "labelBlockId": "bfa8f21cc2984261-38",
+          "captionBlockId": "bfa8f21cc2984261-39",
+          "caption": "Counter.cs",
+          "sourceEnZhSha256": "6ede9ac0db2d78a400f2d935c1c5a7ee59cacbb217d3bd8945e3e73b8ee8d260",
+          "allThreeEqual": true
+        }
+      },
+      {
+        "index": 41,
+        "blockId": "bfa8f21cc2984261-41",
+        "type": "paragraph",
+        "sourceUnitIds": [
+          "d7d05d637d70e0d6afa3"
+        ],
+        "anchor": null,
+        "sourceEn": "Call it from a client or another grain",
+        "publishedEn": "Call it from a client or another grain",
+        "publishedZh": "从客户端或另一个 Grain 调用它",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "客户端或另一 Grain 两个调用来源均保留。",
+        "links": []
+      },
+      {
+        "index": 42,
+        "blockId": "bfa8f21cc2984261-42",
+        "type": "paragraph",
+        "sourceUnitIds": [],
+        "anchor": null,
+        "sourceEn": "Program.cs",
+        "publishedEn": "Program.cs",
+        "publishedZh": "Program.cs",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "文件名 Program.cs 保持原样。",
+        "links": []
+      },
+      {
+        "index": 43,
+        "blockId": "bfa8f21cc2984261-43",
+        "type": "code",
+        "sourceUnitIds": [],
+        "anchor": null,
+        "sourceEn": "var counter = client.GetGrain<ICounter>(\"orders\");\nvar total = await counter.Add(1);",
+        "publishedEn": "var counter = client.GetGrain<ICounter>(\"orders\");\nvar total = await counter.Add(1);",
+        "publishedZh": "var counter = client.GetGrain<ICounter>(\"orders\");\nvar total = await counter.Add(1);",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "GetGrain<ICounter>(\"orders\") 与 Add(1) 两行原代码逐字符相同；不含待翻译注释。",
+        "links": [],
+        "codeVerification": {
+          "blockId": "bfa8f21cc2984261-43",
+          "labelBlockId": "bfa8f21cc2984261-41",
+          "captionBlockId": "bfa8f21cc2984261-42",
+          "caption": "Program.cs",
+          "sourceEnZhSha256": "5166c3157975d6fb26ed500b6d076da28abc93c0bb1da58dce5f2850b241601e",
+          "allThreeEqual": true
+        }
+      },
+      {
+        "index": 44,
+        "blockId": "bfa8f21cc2984261-44",
+        "type": "heading",
+        "sourceUnitIds": [
+          "c5d0453e23e49add2942"
+        ],
+        "anchor": "start-building",
+        "sourceEn": "Start building",
+        "publishedEn": "Start building",
+        "publishedZh": "开始构建",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "逐段语义、术语与对应标题/入口标签核对通过。",
+        "links": []
+      },
+      {
+        "index": 45,
+        "blockId": "bfa8f21cc2984261-45",
+        "type": "quote",
+        "sourceUnitIds": [
+          "8bf879c3626d2113d7bb",
+          "f503b8208f794f218459"
+        ],
+        "anchor": null,
+        "sourceEn": "Build your first appCreate a silo, define a grain, and make your first distributed call.",
+        "publishedEn": "Build your first appCreate a silo, define a grain, and make your first distributed call.",
+        "publishedZh": " 构建你的第一个应用 创建 Silo、定义 Grain，并发起你的第一次分布式调用。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "创建 Silo、定义 Grain、首次分布式调用三步骤齐全，指向官方对应入门页的本地译页。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-45",
+            "sourceLabel": "Build your first app",
+            "zhLabel": "构建你的第一个应用",
+            "sourceHref": "/orleans/docs/quickstarts/build-your-first-orleans-app/",
+            "localHref": "#/docs/quickstarts/build-your-first-orleans-app/",
+            "enZhTargetMatch": true,
+            "targetPageId": "af2f8b7c6afe250a",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 46,
+        "blockId": "bfa8f21cc2984261-46",
+        "type": "quote",
+        "sourceUnitIds": [
+          "138509fb67c05d490c70",
+          "c833cea77619e97df561"
+        ],
+        "anchor": null,
+        "sourceEn": "Read the docsExplore grains, hosting, deployment, streaming, persistence, and runtime concepts.",
+        "publishedEn": "Read the docsExplore grains, hosting, deployment, streaming, persistence, and runtime concepts.",
+        "publishedZh": " 阅读文档 了解 Grain、托管、部署、流处理、持久化以及运行时概念。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "Grain、托管、部署、流处理、持久化、运行时概念六项齐全。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-46",
+            "sourceLabel": "Read the docs",
+            "zhLabel": "阅读文档",
+            "sourceHref": "/orleans/docs/",
+            "localHref": "#/docs/",
+            "enZhTargetMatch": true,
+            "targetPageId": "cf700b3ec7cb65cf",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 47,
+        "blockId": "bfa8f21cc2984261-47",
+        "type": "quote",
+        "sourceUnitIds": [
+          "f33da03310c5b899f248",
+          "403a4ee77c82d21fdd50"
+        ],
+        "anchor": null,
+        "sourceEn": "Browse samplesLearn from complete applications and focused examples in this repository.",
+        "publishedEn": "Browse samplesLearn from complete applications and focused examples in this repository.",
+        "publishedZh": " 浏览示例 通过本仓库中的完整应用和专题示例进行学习。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "本仓库、完整应用和专题示例的来源与范围均保留。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-47",
+            "sourceLabel": "Browse samples",
+            "zhLabel": "浏览示例",
+            "sourceHref": "/orleans/samples/",
+            "localHref": "#/samples/",
+            "enZhTargetMatch": true,
+            "targetPageId": "41ae4a844d4e1150",
+            "internalTargetExists": true
+          }
+        ]
+      },
+      {
+        "index": 48,
+        "blockId": "bfa8f21cc2984261-48",
+        "type": "quote",
+        "sourceUnitIds": [
+          "04ae51153a34d78bd5f3",
+          "86899d71a6ffc19091e4"
+        ],
+        "anchor": null,
+        "sourceEn": "Join the projectRead the source, open an issue, or contribute to Orleans on GitHub.",
+        "publishedEn": "Join the projectRead the source, open an issue, or contribute to Orleans on GitHub.",
+        "publishedZh": " 参与项目 在 GitHub 上阅读源码、提交问题或为 Orleans 做贡献。",
+        "enTextUnchanged": true,
+        "reviewStatus": "passed",
+        "reviewNote": "阅读源码、提交问题、贡献项目三个参与方式齐全，GitHub 项目地址不变。",
+        "links": [
+          {
+            "blockId": "bfa8f21cc2984261-48",
+            "sourceLabel": "Join the project",
+            "zhLabel": "参与项目",
+            "sourceHref": "https://github.com/dotnet/orleans",
+            "localHref": "https://github.com/dotnet/orleans",
+            "enZhTargetMatch": true,
+            "externalOriginalTargetPreserved": true
+          }
+        ]
+      }
+    ],
+    "heroAsset": {
+      "sourceHref": "/orleans/_astro/orleans-logo.CmH61o_o_SMe1d.svg",
+      "alt": "Microsoft Orleans",
+      "sourceWidth": 400,
+      "sourceHeight": 400,
+      "presentIn49ContentBlocks": false,
+      "recommendation": "作为独立布局资产复用本地官方品牌 SVG，不删除或替换 block 0 的 Microsoft Orleans 标题，不将图形当成新增翻译正文单元。"
+    },
+    "layoutRecommendations": [
+      "保留 pageId bfa8f21cc2984261、sourceUrl、sourceHash、49 个 block.id 与其顺序；源单元 ID 映射也不重建。新布局仅组合现有 block.en/block.zh。",
+      "Hero 使用块 0–3；功能区为 4–5 加 6–21 的八组标题/正文；场景区为 22–23 加 24–35 的六组；编程模型为 36–37 加 38–40、41–43 两个代码卡；开始构建为 44 加 45–48。",
+      "完整保留 _top、features-for-stateful-distributed-applications、common-application-scenarios、programming-model、start-building 五个源锚点。",
+      "每个源锚点在 DOM 中只出现一次：双语列可将原内部 id 保存为 data-source-anchor，并将实际 id 放在共同的分区标题/容器上，避免 wrapper 与 h2 或中英文 h2 使用重复 id。块级定位仍使用源 block.id。",
+      "默认 #/ 渲染该官方首页；保留 #/original-home/ 以及其 ::anchor 深链接作为兼容别名。首页目录使用 #/::原锚点；源链接仍指向 https://dotnet.github.io/orleans/。",
+      "保留两段代码原文与 Counter.cs、Program.cs 文件名。两段代码都没有注释，中文/英文内容相同，中英对照可共用原代码显示。",
+      "保留所有 23 条正文链接；尤其 durable jobs 指向 NuGet 包页的 durable-state-jobs-messaging-and-tasks 锚点，容错指向 overview 的 silos-and-clusters，六场景链接分别指向对应场景锚点。不得为卡片美化改成泛化文档首页。",
+      "三个 hero CTA 与底部四个开始入口具有不同措辞和布局角色，均应显示，不因目标地址重复而去重。"
+    ],
+    "verificationLimits": [
+      "此次验证的外部 GitHub 链接只核对与原始链接一致，没有进行网络可达性测试。",
+      "此报告验证内容、映射和源结构，不对尚在修改的首页最终浏览器布局作验收。"
+    ]
+  },
+  "browserChecks": {
+    "environment": "Chromium HTTP 静态预览 http://127.0.0.1:4173/",
+    "fidelity": [
+      {
+        "mode": "zh",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 49,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      },
+      {
+        "mode": "en",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 49,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      },
+      {
+        "mode": "compare",
+        "status": "pass",
+        "sourceBlocks": 49,
+        "checkedLanguageFragments": 98,
+        "uniqueSourceAnchors": 5,
+        "errors": []
+      }
+    ],
+    "fidelityMethod": "逐块比较源HTML与渲染片段的文本（仅折叠空白）、链接顺序和href；代码pre文本逐字符比较；原始block ID顺序及5个源锚点唯一性全部匹配。",
+    "compareModeDOMFragments": 96,
+    "compareModeSharedCodeFragments": 2,
+    "heroOfficialImageLoaded": true,
+    "ctaNavigation": [
+      {
+        "label": "开始使用",
+        "target": "#/docs/quickstarts/build-your-first-orleans-app/",
+        "observedHeading": "教程：构建第一个 Orleans 应用",
+        "status": "pass"
+      },
+      {
+        "label": "浏览文档",
+        "target": "#/docs/",
+        "observedHeading": "Orleans 文档",
+        "status": "pass"
+      },
+      {
+        "label": "查看示例",
+        "target": "#/samples/",
+        "observedHeading": "Orleans 示例",
+        "status": "pass"
+      }
+    ],
+    "normalDocumentSidebarAndTOCRestored": true,
+    "mobileMenuOverviewNavigationAndAutoClose": true,
+    "overviewHeading": "中文文档导航",
+    "homepageSearch": {
+      "query": "官网首页",
+      "matches": 1,
+      "openedRoute": "#/original-home/",
+      "status": "pass"
+    },
+    "legacyHomepageAnchor": {
+      "route": "#/original-home/::programming-model",
+      "target": "programming-model",
+      "unique": true,
+      "visibleAfterNavigation": true
+    },
+    "copyButtonSuccessState": "已复制",
+    "clipboardReadback": "本轮只确认复制按钮成功状态，未将剪贴板回读列为通过。",
+    "desktopLightDarkVisualCheck": "passed",
+    "bilingualDesktopAndMobileVisualCheck": "passed",
+    "responsive": [
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "zh",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "en",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 320,
+        "documentClientWidth": 305,
+        "documentScrollWidth": 305,
+        "mode": "compare",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "zh",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "en",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 375,
+        "documentClientWidth": 360,
+        "documentScrollWidth": 360,
+        "mode": "compare",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "zh",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "en",
+        "horizontalOverflow": false
+      },
+      {
+        "frameCSSWidth": 768,
+        "documentClientWidth": 753,
+        "documentScrollWidth": 753,
+        "mode": "compare",
+        "horizontalOverflow": false
+      }
+    ]
+  },
+  "payloadIntegrity": {
+    "classicPayloads": 191,
+    "unchangedSHA256Matches": 191,
+    "changedFiles": [],
+    "contentChunks": 188,
+    "contentPages": 15235,
+    "previousFullValidationReused": "publication-verification.json"
+  },
+  "independentImplementationReview": "独立只读复核：路由、49块复用、状态恢复、相对资源路径及frontend/dist一致性未发现缺陷。",
+  "limits": [
+    "本轮修复首页结构与入口，并非复刻原站每个装饰图标或所有CSS像素。",
+    "file://浏览器导航受环境策略限制；本轮未进行真实本地双击验收，沿用既有经典脚本与路径模拟验证。",
+    "未向用户GitHub仓库提交或在GitHub Pages实际发布；下载包包含可直接部署的静态文件与说明。",
+    "其余正文及中文注释沿用此前译审成果；191个数据载荷SHA-256完全未变。"
+  ]
+}

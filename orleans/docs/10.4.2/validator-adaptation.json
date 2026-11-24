@@ -1,0 +1,14 @@
+{
+  "originalScript": "/workspace/sites/orleans-zh-reference/scripts/validate_site.py",
+  "originalSHA256": "6b76e4df01190606f717f83b20dc4cc1442bec8c427f0a34634dbcd6f5ef72ff",
+  "adaptedScript": "/workspace/scratch/cbbee76bb734/site-audit-work/existing-validator-adapted.py",
+  "adaptedSHA256": "e62b8bc4c99b1a747e88d27f68f485353c39a799e317cd06c5a7339a9d83880d",
+  "adaptations": [
+    "Fixed project ROOT while running scratch copy.",
+    "Read catalog/content JSON objects from strict classic-script registration wrappers; no evaluation.",
+    "Redirected both publication report writes to one scratch report.",
+    "Added progress logging every 3000 pages."
+  ],
+  "validationLogicPreserved": true,
+  "repoWrites": false
+}

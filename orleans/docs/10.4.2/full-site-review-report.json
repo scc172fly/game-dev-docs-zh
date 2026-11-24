@@ -1,0 +1,206 @@
+{
+  "revision": "navigation-state-and-chinese-controls-2026-11-24",
+  "status": "pass",
+  "reviewDate": "2026-11-24",
+  "sourceCommit": "6a0e937f544c35ffcf11b37e4c2b7de5a1580a03",
+  "latestRepositoryRelease": {
+    "repository": "dotnet/orleans",
+    "tag": "v10.4.2",
+    "version": "10.4.2",
+    "publishedDate": "2026-10-30",
+    "checkedDate": "2026-11-24",
+    "sourceUrl": "https://github.com/dotnet/orleans/releases/tag/v10.4.2",
+    "discoveryUrl": "https://github.com/dotnet/orleans/releases/latest",
+    "prerelease": false,
+    "scope": "截至核验日，官方仓库标记为 Latest 的正式发行版。当前文档仍依据下列 main 提交快照，包含不同版本语境；静态包不会联网自动更新版本号。"
+  },
+  "coverage": {
+    "pages": 15235,
+    "blocks": 164126,
+    "inlineCodeSpans": 57937,
+    "tables": 332,
+    "tableCells": 8610,
+    "internalLinkReferences": 95532,
+    "executableCodeBlocksVerified": 21362,
+    "codeCommentOccurrencesReviewed": 350,
+    "codeBlocksWithTranslatedComments": 171,
+    "codeBlocks": 21362,
+    "reviewedPages": 15235,
+    "imageReferences": 70,
+    "originalAssets": 27,
+    "uniqueCodeCommentUnitsReviewed": 316
+  },
+  "extendedChecks": {
+    "runtimePayloadsDecoded": 191,
+    "contentChunks": 188,
+    "pages": 15235,
+    "blocks": 164126,
+    "englishVisibleTextBlocksChecked": 164104,
+    "bodyInlineSvgOccurrencesEN": 36,
+    "bodyInlineSvgOccurrencesZH": 36,
+    "sourceLinkMappingsChecked": 136008,
+    "immutableApiLinkBindingsChecked": 79708,
+    "tableCellContentsChecked": 17220,
+    "chineseLinkReorderedBlocks": 133,
+    "bodyInlineSvgSourceOccurrences": 36,
+    "contextualOverridesVerified": 2,
+    "actualInternalTargetsChecked": 95532,
+    "actualAnchoredTargetsChecked": 490,
+    "sourceImageOccurrences": 35,
+    "sourceImageUniquePublishedPaths": 22,
+    "emptyInlineSvgSourceOccurrences": 36,
+    "emptyInlineSvgPages": 29,
+    "diagramOccurrences": 22,
+    "uniqueDiagrams": 22
+  },
+  "browser": {
+    "currentReview": "compare-theme-review-report.json",
+    "compareRoutes": 338,
+    "compareCases": 676,
+    "homepageThemeModeWidthCases": 24,
+    "pairedBlockObservations": 24232,
+    "homepageSourceFragmentChecks": 1568,
+    "themeVMScenarios": 19,
+    "errors": 0
+  },
+  "fixes": [
+    "恢复官方透明页头PNG及自然比例；删除页头副标题，恢复原单行品牌。",
+    "按原站恢复1080px首页正文、双列方角卡片、14个彩色图标、字体和间距。",
+    "恢复36个提示框、10个链接卡片箭头和文档标题锚点图标。",
+    "恢复29张示例卡的图像／占位图、标签及源代码入口；4个Journaling标签统一为日志化。",
+    "恢复81个原站禁用任务框与3个原站图片放大交互。",
+    "补充6张正文图的中文alt，英文及对照英文列保留原文。",
+    "修复API名称按链接顺序覆盖的逻辑，并覆盖SecretKey、OnDeactivateAsync和限定名DurableTaskExtensions.WaitAsync三例；7项针对性回归通过。",
+    "页头显示最新正式Release v10.4.2及官方链接，审校页记录发布日期和核验日期；文档main快照说明单独保留并默认折叠。",
+    "14张首页卡片在每个显示的语言列中生成各自的官方SVG；中文或英文单列各14，对照模式14+14。",
+    "移除共同外层的图标占位，修复标题与正文分隔线错位；所有首页矩阵用例的边界差值为0px。",
+    "首页链接卡片箭头成为源片段的兄弟节点，原文片段不再混入辅助图标。",
+    "用原生select替代主题按钮，选项Dark/Light/Auto，复用原站月亮、太阳、电脑、下拉箭头完整SVG。",
+    "Auto跟随系统主题并响应系统变化；手动选择保留优先级；刷新、跨标签及桌面/手机同步正常。",
+    "原站800px断点：桌面页头显示主题控件，窄屏文档侧栏底部显示；窄屏首页沿用原站隐藏策略。",
+    "去掉额外的select焦点环，保留原生焦点外观。",
+    "目录首次统一展开，手动开合和收起全部即时保存，刷新恢复；快速刷新竞态及加载中收起入口已修复。",
+    "移除侧栏官网首页，使用顶部Microsoft Orleans品牌返回首页。",
+    "桌面与手机主题选项中文化为深色、浅色、自动。"
+  ],
+  "reviewScope": "原有58,463个单元的逐句AI译审记录继续沿用并进行全量结构、引用、代码与状态复核；本轮未宣称重新人工通读全部译文。",
+  "machineErrorCount": 0,
+  "sourceContentOmissions": 0,
+  "limits": [
+    "浏览器禁止file://导航，未完成真实本地双击浏览器验收；本地路径与经典脚本加载已通过Node VM及HTTP预览验证。",
+    "未实际向用户GitHub仓库发布；ZIP包含已构建静态文件和发布步骤。"
+  ],
+  "reports": {
+    "full-content-audit.json": {
+      "file": "full-content-audit.json",
+      "sha256": "e9a1c682943c2c13ed43f552c4fafbc91e85372e360f85c9e7971560503bc884"
+    },
+    "existing-validator-result.json": {
+      "file": "existing-validator-result.json",
+      "sha256": "7888c61eb142c0f1e8ed771fd15c420b64aa051d03d028bf70aa32b36f1cd3a4"
+    },
+    "extended-content-result.json": {
+      "file": "extended-content-result.json",
+      "sha256": "9c04ff33595f8abc2d16c9e1d1e7869286e95f8de96649351db4557b32638698"
+    },
+    "runtime-payload-result.json": {
+      "file": "runtime-payload-result.json",
+      "sha256": "a6707f65f91f96dd607bb60b6ea704d60c2afc15bb606f6d048ea9c716179ee8"
+    },
+    "static-reference-result.json": {
+      "file": "static-reference-result.json",
+      "sha256": "e501d9503f824eeb5fe62cd3a3324a912624a87fbd7b0cfdbcc7864ef4ac5e1d"
+    },
+    "source-presentation-audit.json": {
+      "file": "source-presentation-audit.json",
+      "sha256": "5e089d9da6dc9d9ef7da1aa63ea87d77810884786cc15702a2fce592febcc2fe"
+    },
+    "source-presentation-summary.json": {
+      "file": "source-presentation-summary.json",
+      "sha256": "5fd5e9ec01af0c62f2628cf819752c5e9170e29513f69ebe70873c92af9635b1"
+    },
+    "browser-full-site-review-report.json": {
+      "file": "browser-full-site-review-report.json",
+      "sha256": "a520e272d3eb232c3dfc845034460a205148b5ddb70f9ed603afa37855f82ccd"
+    },
+    "image-alt-review.json": {
+      "file": "image-alt-review.json",
+      "sha256": "f5cd0e523614324e455d03f4c6dc3631c826208d409b5109747205615b5e53aa"
+    },
+    "compare-theme-review-report.json": {
+      "file": "compare-theme-review-report.json",
+      "sha256": "11e44884ce79210d3a5b8bba11038367128b23d35b2103138807b109a495277e"
+    },
+    "compare-component-audit.json": {
+      "file": "compare-component-audit.json",
+      "sha256": "76201efe015fc87d057eb982468590b082d5198f2812633c34204486652745d1"
+    },
+    "compare-browser-component-report.json": {
+      "file": "compare-browser-component-report.json",
+      "sha256": "e1b523bbc33cb8a1ce7b304dbb454b5865f535f07c60dab37368aca22acaecb0"
+    },
+    "homepage-bilingual-theme-report.json": {
+      "file": "homepage-bilingual-theme-report.json",
+      "sha256": "42b4c8b6ca3533181ca6766d87841b68ded6f0cb738b155ddc10916fbf8ce965"
+    },
+    "theme-behavior-report.json": {
+      "file": "theme-behavior-report.json",
+      "sha256": "b277adfb2f10b143dcf3d795258c8b3032f35da7046e80cb6d2bef506e43d336"
+    },
+    "theme-browser-review.json": {
+      "file": "theme-browser-review.json",
+      "sha256": "82acb45745d3612d8a9da41049eac4793dbc5fec37e0f97dbfd43e2b2cd39f9f"
+    },
+    "final-frontend-preservation-report.json": {
+      "file": "final-frontend-preservation-report.json",
+      "sha256": "7ebaddf1d5ac116b5f59bd4a587ab037f475bc7dc28229750507e23b41614232"
+    },
+    "content-preservation-report.json": {
+      "file": "content-preservation-report.json",
+      "sha256": "582166444d6ab27e6ef8a363132ee88b6e26d289fd7c96c5f327e538ae0813ef"
+    },
+    "navigation-state-review.json": {
+      "file": "navigation-state-review.json",
+      "sha256": "618f23b55ee540f75078d060a7c131893cd153bb8575679bc9ab9f9091209322"
+    },
+    "nav-state-report.json": {
+      "file": "nav-state-report.json",
+      "sha256": "561877bc12a7bfd5885f8696d2ae514a37086d01c816fc14a69a46bc24292677"
+    },
+    "navigation-incremental-check.json": {
+      "file": "navigation-incremental-check.json",
+      "sha256": "d8b29fe32031cb55b4fe580a7816bc8b4a823dd18a020831d8048be5e1e598e3"
+    }
+  },
+  "priorRevision": "official-presentation-full-audit-2026-11-24",
+  "priorPresentationBrowser": {
+    "uniqueLayoutRoutes": 338,
+    "layoutCases": 676,
+    "homepageResponsiveCases": 12,
+    "homepageContentBlocks": 49,
+    "homepageLanguageFragmentsChecked": 196,
+    "uniqueImageFilesLoaded": 25,
+    "imageAltLanguageChecks": 24,
+    "errors": 0
+  },
+  "currentReviewScope": "本轮修复目录展开状态、侧栏首页入口与主题中文文案；31项行为回归及针对性浏览器检查通过，191个正文载荷不变。此前全站检查记录保留，未在本轮重复执行。",
+  "contentPreservationThisRevision": {
+    "pages": 15235,
+    "blocks": 164126,
+    "authoritativePayloads": 191,
+    "byteIdenticalToPriorPassingAudit": true,
+    "newTranslationEdits": 0,
+    "fullContentBaseline": "full-content-audit.json",
+    "scope": "沿用此前全量语义/代码/链接/表格审校证据，所有191个权威数据载荷SHA完全相同。本轮不声称再次逐句语义重审全部正文。"
+  },
+  "revisionHistory": [
+    "bilingual-components-and-original-theme-2026-11-24"
+  ],
+  "previousReviewScope": "此前只检查首页卡片与整体图标存在，未逐卡要求英文和中文列各有自己的图标；676项既有布局巡检运行的是中文模式，不能证明对照模式组件对称。本轮以逐列归属、源几何与排版断言补齐该缺口。",
+  "navigationStateReview": {
+    "report": "navigation-state-review.json",
+    "cases": 31,
+    "passed": 31,
+    "browser": "针对性刷新、键盘、跨组导航、品牌首页及中文选项实测通过"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/docs/grains/durable-tasks-integrations/",
+    "unitId": "eebdbb25cbbc7651f951",
+    "text": "消息传递",
+    "status": "reviewed",
+    "reviewMethod": "AI 逐句语义译审；按页面语境区分标识符与自然语言"
+  },
+  {
+    "path": "/docs/grains/messaging/",
+    "unitId": "eebdbb25cbbc7651f951",
+    "text": "消息传递",
+    "status": "reviewed",
+    "reviewMethod": "AI 逐句语义译审；按页面语境区分标识符与自然语言"
+  }
+]

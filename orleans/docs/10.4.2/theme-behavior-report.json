@@ -1,0 +1,1436 @@
+{
+  "status": "pass",
+  "completedAtUtc": "2026-11-24T05:47:57.820Z",
+  "method": "Unmodified actual frontend/index.html inline scripts, official icon library and frontend/app.js executed by vm.Script in a JSDOM-backed isolated Node VM; catalog promise deliberately pending after theme binding. Media-query and storage events are controlled test doubles. No browser, no server.",
+  "cases": 19,
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "name": "no-preference-light-os",
+      "config": {
+        "stored": null,
+        "osDark": false
+      },
+      "status": "pass",
+      "bootstrapTheme": "light",
+      "steps": [
+        {
+          "step": "initial",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": null,
+          "colorScheme": "light"
+        },
+        {
+          "step": "OS becomes dark",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": null,
+          "colorScheme": "dark"
+        },
+        {
+          "step": "OS becomes light",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": null,
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "no-preference-dark-os",
+      "config": {
+        "stored": null,
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "initial",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": null,
+          "colorScheme": "dark"
+        },
+        {
+          "step": "OS becomes light",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": null,
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "saved-auto-follows-os",
+      "config": {
+        "stored": "auto",
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "initial",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "auto",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "OS changes",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "legacy-light-manual-override",
+      "config": {
+        "stored": "light",
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "light",
+      "steps": [
+        {
+          "step": "initial",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "OS changes cannot override manual light",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "legacy-dark-manual-override",
+      "config": {
+        "stored": "dark",
+        "osDark": false
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "initial",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "OS changes cannot override manual dark",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "manual-selection-and-return-to-auto",
+      "config": {
+        "stored": "auto",
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "selected light",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "manual light resists OS",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "selected dark",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "manual dark resists OS",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "return to auto uses current OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        },
+        {
+          "step": "auto resumes OS tracking",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "auto",
+          "colorScheme": "dark"
+        }
+      ],
+      "storageWrites": [
+        [
+          "orleans-theme",
+          "light"
+        ],
+        [
+          "orleans-theme",
+          "dark"
+        ],
+        [
+          "orleans-theme",
+          "auto"
+        ]
+      ],
+      "networkRequests": []
+    },
+    {
+      "name": "desktop-mobile-picker-sync",
+      "config": {
+        "stored": "auto",
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "desktop selection synchronizes mobile",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "mobile selection synchronizes desktop",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "mobile manual override resists OS",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "mobile auto selection synchronizes desktop",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        },
+        {
+          "step": "both pickers retain auto across OS changes",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "auto",
+          "colorScheme": "dark"
+        }
+      ],
+      "storageWrites": [
+        [
+          "orleans-theme",
+          "light"
+        ],
+        [
+          "orleans-theme",
+          "dark"
+        ],
+        [
+          "orleans-theme",
+          "auto"
+        ]
+      ],
+      "networkRequests": []
+    },
+    {
+      "name": "invalid-saved-preference",
+      "config": {
+        "stored": "sepia",
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "invalid value falls back",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "sepia",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "fallback follows OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "sepia",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "blocked-storage-getter",
+      "config": {
+        "stored": "light",
+        "osDark": true,
+        "storageFailure": "getter"
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "blocked read falls back to OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "light",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "in-session manual selection",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "in-session manual preference survives OS",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "in-session auto selection",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "light",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "in-session auto follows OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "blocked-storage-getItem",
+      "config": {
+        "stored": "light",
+        "osDark": true,
+        "storageFailure": "getItem"
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "blocked read falls back to OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "light",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "in-session manual selection",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "in-session manual preference survives OS",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "in-session auto selection",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "auto",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "in-session auto follows OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [
+        [
+          "orleans-theme",
+          "light"
+        ],
+        [
+          "orleans-theme",
+          "auto"
+        ]
+      ],
+      "networkRequests": []
+    },
+    {
+      "name": "blocked-storage-allMethods",
+      "config": {
+        "stored": "light",
+        "osDark": true,
+        "storageFailure": "allMethods"
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "blocked read falls back to OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "light",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "in-session manual selection",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "in-session manual preference survives OS",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "in-session auto selection",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "light",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "in-session auto follows OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "blocked-storage-write",
+      "config": {
+        "stored": "auto",
+        "osDark": true,
+        "storageFailure": "setItem"
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "manual selection despite failed write",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        },
+        {
+          "step": "failed write does not lose in-session manual preference",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        },
+        {
+          "step": "return to auto despite failed write",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "cross-tab-manual-and-auto",
+      "config": {
+        "stored": "auto",
+        "osDark": false
+      },
+      "status": "pass",
+      "bootstrapTheme": "light",
+      "steps": [
+        {
+          "step": "other tab selects dark",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "external manual dark resists OS",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "other tab selects light",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "external manual light resists OS",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "other tab selects auto",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "auto",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "external auto follows OS",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "cross-tab-invalid-remove-clear",
+      "config": {
+        "stored": "dark",
+        "osDark": true
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "external invalid value",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": "invalid-theme",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "external manual preference",
+          "preference": "light",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "light"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "light"
+            }
+          ],
+          "preferenceAttribute": "light",
+          "effective": "light",
+          "stored": "light",
+          "colorScheme": "light"
+        },
+        {
+          "step": "external removed preference",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": null,
+          "colorScheme": "dark"
+        },
+        {
+          "step": "external localStorage clear",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "dark",
+          "stored": null,
+          "colorScheme": "dark"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "unrelated-storage-keys-ignored",
+      "config": {
+        "stored": "dark",
+        "osDark": false
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "unrelated localStorage key",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "session-storage-event-ignored",
+      "config": {
+        "stored": "dark",
+        "osDark": false
+      },
+      "status": "pass",
+      "bootstrapTheme": "dark",
+      "steps": [
+        {
+          "step": "sessionStorage event is not the localStorage preference",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    },
+    {
+      "name": "matchmedia-missing",
+      "config": {
+        "stored": "auto",
+        "osDark": true,
+        "mediaMode": "missing"
+      },
+      "status": "pass",
+      "bootstrapTheme": "light",
+      "steps": [
+        {
+          "step": "safe default when media query unavailable",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        },
+        {
+          "step": "manual mode still works",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "auto safe default",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [
+        [
+          "orleans-theme",
+          "dark"
+        ],
+        [
+          "orleans-theme",
+          "auto"
+        ]
+      ],
+      "networkRequests": []
+    },
+    {
+      "name": "matchmedia-throws",
+      "config": {
+        "stored": "auto",
+        "osDark": true,
+        "mediaMode": "throws"
+      },
+      "status": "pass",
+      "bootstrapTheme": "light",
+      "steps": [
+        {
+          "step": "safe default when media query unavailable",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        },
+        {
+          "step": "manual mode still works",
+          "preference": "dark",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "dark"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "dark"
+            }
+          ],
+          "preferenceAttribute": "dark",
+          "effective": "dark",
+          "stored": "dark",
+          "colorScheme": "dark"
+        },
+        {
+          "step": "auto safe default",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [
+        [
+          "orleans-theme",
+          "dark"
+        ],
+        [
+          "orleans-theme",
+          "auto"
+        ]
+      ],
+      "networkRequests": []
+    },
+    {
+      "name": "accessible-native-select-contract",
+      "config": {
+        "stored": "auto",
+        "osDark": false
+      },
+      "status": "pass",
+      "bootstrapTheme": "light",
+      "steps": [
+        {
+          "step": "native selects initialized",
+          "preference": "auto",
+          "pickerPreferences": [
+            {
+              "id": "theme-select",
+              "value": "auto"
+            },
+            {
+              "id": "theme-select-mobile",
+              "value": "auto"
+            }
+          ],
+          "preferenceAttribute": "auto",
+          "effective": "light",
+          "stored": "auto",
+          "colorScheme": "light"
+        }
+      ],
+      "storageWrites": [],
+      "networkRequests": []
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "/workspace/sites/orleans-zh-reference/frontend/index.html",
+      "sha256": "5a490286880b7edf30da837b520783a66f7b791ee2e08c44b41c9c5821b9c1bc"
+    },
+    {
+      "file": "/workspace/sites/orleans-zh-reference/frontend/app.js",
+      "sha256": "73ba0b41d54c11954ec4b563d7f8be093f244f3f7078b91a24ad07add39da4b8"
+    },
+    {
+      "file": "/workspace/sites/orleans-zh-reference/frontend/assets/official-icons/icons.js",
+      "sha256": "f3b14b9178aed9374bfeb8e719fb193990de883e6e51a1c737b87197e80afb53"
+    }
+  ],
+  "networkRequests": [],
+  "browserUsed": false,
+  "serverStarted": false,
+  "repoWrites": 0,
+  "limitations": [
+    "This verifies JavaScript preference/system/storage state transitions and native select accessibility metadata. Visual dropdown styling, keyboard UI interaction and actual browser rendering are covered by root/browser QA.",
+    "Catalog loading is paused so this test does not claim to render the documentation content."
+  ]
+}
