@@ -34,7 +34,7 @@
   const groupNames = {'docs':'文档总览','get-started':'开始使用','getting-started':'开始使用','grains':'Grain 开发','host':'托管与配置','configuration-guide':'配置指南','monitoring':'可观测性','deployment':'部署与运维','streaming':'流处理','security':'安全','implementation':'运行时架构','tutorials-and-samples':'教程与示例','how-to':'操作指南','diagnostics':'分析器诊断','resources':'参考资料','api':'C# API 参考','api-packages':'API 包','samples':'示例','contributing':'参与贡献','overview':'概览','migration':'迁移指南'};
   function groupOf(p) { return p.group || (isApi(p) ? 'api-packages' : (p.path.split('/').filter(Boolean)[1] || 'docs')); }
   function groupLabel(id) {const v=state.groups.get(id); return (typeof v==='string'?v:(v?.label || v?.titleZh || v?.title)) || groupNames[id] || id;}
-  function sourceDate() { const d=state.catalog?.meta?.snapshot || state.catalog?.meta?.snapshotDate || '';return String(d).replace(/(?<=\d)T(?=\d)/,' ').replace(/\.\d+Z$/,' UTC'); }
+  function sourceDate() { const d=state.catalog?.meta?.snapshot || state.catalog?.meta?.snapshotDate || '';return String(d).replace(/(\d)T(?=\d)/g,'$1 ').replace(/\.\d+Z$/,' UTC'); }
   function documentationVersion(){
     const m=state.catalog?.meta||{},v=m.documentationVersion||state.catalog?.documentationVersion||{};
     const sourceBranch=String(v.sourceBranch||''),sourceCommit=String(v.sourceCommit||m.sourceCommit||'');
@@ -586,9 +586,10 @@
     $('#back-top').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});window.addEventListener('scroll',()=>{$('#back-top').hidden=window.scrollY<650;},{passive:true});window.addEventListener('hashchange',navigate);
   }
   async function init(){
-    bindUi();document.body.classList.toggle('landing-page',isHomepagePath(parseHash().path));try{state.catalog=await loadData('catalog.json');updateVersionHeader();state.pages=(state.catalog.pages||[]).map(p=>({...p,id:String(p.id??p.path),path:canonical(p.path||p.id),searchText:[p.title,p.titleZh,p.path,p.keywords,canonical(p.path||p.id)==='/original-home/'?'官网首页 原官网首页 首页 homepage landing':''].filter(Boolean).join(' ').toLowerCase()}));
+    try{bindUi();document.body.classList.toggle('landing-page',isHomepagePath(parseHash().path));state.catalog=await loadData('catalog.json');updateVersionHeader();state.pages=(state.catalog.pages||[]).map(p=>({...p,id:String(p.id??p.path),path:canonical(p.path||p.id),searchText:[p.title,p.titleZh,p.path,p.keywords,canonical(p.path||p.id)==='/original-home/'?'官网首页 原官网首页 首页 homepage landing':''].filter(Boolean).join(' ').toLowerCase()}));
       for(const p of state.pages){state.byPath.set(p.path,p);state.byId.set(p.id,p);}const groups=state.catalog.groups||[];if(Array.isArray(groups))groups.forEach(g=>state.groups.set(g.id,g));else Object.entries(groups).forEach(([k,v])=>state.groups.set(k,v));renderNav();await navigate();
     }catch(e){$('#content').innerHTML=`<div class="error-state"><div class="home-eyebrow">ORLEANS 中文文档</div><h1>文档内容暂时无法载入</h1><p>${esc(e.message)}</p><p>请完整解压文档包，并保持 index.html、data-loader.js、data 和 assets 的相对位置，然后重新打开 index.html。</p><button class="button-primary" type="button" id="reload-app">重新载入</button></div>`;$('#reload-app').onclick=()=>location.reload();$('#navigation').innerHTML='<p class="muted loading-label">目录尚未载入。</p>';}
   }
+  window.OrleansAppStarted = true;
   init();
 })();
