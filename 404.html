@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>页面未找到</title>
+  <script>
+    (function () {
+      var legacyEntry = '/game-dev-docs-zh/orleans';
+      var path = window.location.pathname;
+      if (path === legacyEntry || path === legacyEntry + '/') {
+        window.location.replace(legacyEntry + '/docs/10.4.2/' +
+          window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <h1>页面未找到</h1>
+    <p><a href="/game-dev-docs-zh/">返回文档导航首页</a></p>
+    <p><a href="/game-dev-docs-zh/orleans/docs/10.4.2/">阅读 Orleans 新版文档</a></p>
+  </main>
+</body>
+</html>
