@@ -20,15 +20,15 @@
   </script>
   <link rel="stylesheet" href="app.css">
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
-  <script src="assets/official-icons/icons.js" defer></script>
-  <script src="data-loader.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="assets/official-icons/icons.compat.js" defer></script>
+  <script src="data-loader.compat.js" defer></script>
+  <script src="app.compat.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       if (window.OrleansAppStarted) return;
       var loading = document.querySelector('#content .initial-loading');
       if (!loading) return;
-      loading.innerHTML = '<h1>文档脚本未能启动</h1><p>请刷新页面，或用系统浏览器打开此链接。</p>';
+      loading.innerHTML = '<h1>文档脚本未能启动</h1><p>请刷新页面，或用系统浏览器打开此链接。</p><p><a href="../10.4.0/">阅读旧版文档</a></p>';
     });
   </script>
 </head>
