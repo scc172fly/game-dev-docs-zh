@@ -354,6 +354,10 @@
       font-size: 12px;
     }
 
+    .orleans-links { flex-wrap: wrap; }
+    .orleans-links nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+    .orleans-links strong { color: var(--text); }
+
     .source-link {
       color: #b7c0ce;
       text-decoration: none;
@@ -515,13 +519,18 @@
           <p class="card-desc">基于虚拟 Actor 模型的 .NET 分布式应用框架，用于构建可伸缩的云原生服务。</p>
           <span class="tag">.NET · Distributed Systems</span>
         </a>
-        <div class="card-footer">
-          <span><a class="source-link" href="orleans/docs/10.4.2/" target="_blank" rel="noopener noreferrer">新版 ↗</a> · <a class="source-link" href="orleans/docs/10.4.0/" target="_blank" rel="noopener noreferrer">旧版 10.4.0 ↗</a></span>
+        <div class="card-footer orleans-links">
+          <nav aria-label="官方文档">
+            <strong>官方文档</strong>
+            <span><a class="source-link" href="orleans/docs/10.4.2/" target="_blank" rel="noopener noreferrer">新版 ↗</a> · <a class="source-link" href="orleans/docs/10.4.0/" target="_blank" rel="noopener noreferrer">旧版 10.4.0 ↗</a></span>
+          </nav>
           <a class="source-link" href="https://github.com/dotnet/orleans" target="_blank" rel="noopener noreferrer">官方仓库 ↗</a>
         </div>
-        <div class="card-footer">
-          <a class="source-link" href="orleans/guides/dotnet-orleans-fundamentals/" target="_blank" rel="noopener noreferrer">C#、.NET 与 Orleans 基础 ↗</a>
-          <a class="source-link" href="orleans/guides/orleans-solution-architecture/" target="_blank" rel="noopener noreferrer">Orleans 架构导读 ↗</a>
+        <div class="card-footer orleans-links">
+          <nav aria-label="教程">
+            <strong>教程</strong>
+            <span><a class="source-link" href="orleans/guides/dotnet-orleans-fundamentals/" target="_blank" rel="noopener noreferrer">基础指南 ↗</a> · <a class="source-link" href="orleans/guides/orleans-solution-architecture/" target="_blank" rel="noopener noreferrer">架构导读 ↗</a></span>
+          </nav>
         </div>
       </article>
 
