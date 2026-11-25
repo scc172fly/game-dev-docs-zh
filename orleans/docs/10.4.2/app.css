@@ -357,3 +357,11 @@
 }
 @media(max-width:360px){.site-header{padding-inline:12px;column-gap:6px}.brand{gap:8px}.brand strong{font-size:16px;letter-spacing:normal}.official-cta .source-fragment p{column-gap:20px}.official-cta .source-fragment a{padding-inline:16px}}
 @media print{.official-toolbar,.official-icon,.source-anchor-link,.repository-release{display:none!important}.official-hero{padding:24px 0}.official-feature-grid,.official-scenario-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.official-card{break-inside:avoid}.official-home pre{white-space:pre-wrap}}
+
+@media(max-width:799px){
+  .landing-page .site-header{
+    grid-template-areas:"brand search actions" "versions versions versions";
+    grid-template-columns:minmax(0,1fr) 32px auto;
+  }
+  .landing-page .header-actions{display:flex}
+}
