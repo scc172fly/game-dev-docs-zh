@@ -196,6 +196,7 @@
     clearTimeout(toast.timer);
     toast.timer = setTimeout(() => el.classList.remove("visible"), 2400);
   }
+  const homepageEntry = { id: "bfa8f21cc2984261", path: "/original-home/", chunk: "c0000", status: "reviewed" };
   const isHomepagePath = (path) => path === "/" || path === "/original-home/";
   function officialIcon(name, className = "") {
     var _a2;
@@ -670,13 +671,22 @@
         };
       }
     });
+    enhanceContentLinks();
+    if (state.route === "/samples/") enhanceSamples();
+    renderDiagrams();
+  }
+  function enhanceContentLinks() {
     $$(".doc-body a[href]").forEach((a) => {
       const h = a.getAttribute("href");
       if (h.startsWith("#") && !h.startsWith("#/")) a.href = link(state.route, h.slice(1));
       else if (/^https?:\/\/dotnet\.github\.io\/orleans\//.test(h)) {
         try {
           const u = new URL(h), p = canonical(u.pathname);
-          if (state.byPath.has(p)) a.href = link(p, u.hash.slice(1));
+          if (state.byPath.has(p)) {
+            a.href = link(p, u.hash.slice(1));
+            a.removeAttribute("target");
+            a.removeAttribute("rel");
+          }
         } catch (e) {
         }
       }
@@ -685,8 +695,6 @@
         a.rel = "noopener noreferrer";
       }
     });
-    if (state.route === "/samples/") enhanceSamples();
-    renderDiagrams();
   }
   function enhanceSamples() {
     const article = $(".doc-body");
@@ -957,7 +965,7 @@
     else if (path === "/__audit/") renderAudit();
     else if (path === "/__all/") renderIndex();
     else {
-      const p = isHomepagePath(path) ? state.byPath.get("/original-home/") || state.byId.get("bfa8f21cc2984261") : state.byPath.get(path) || state.byId.get(path.slice(1, -1));
+      const p = isHomepagePath(path) ? state.byPath.get("/original-home/") || state.byId.get(homepageEntry.id) : state.byPath.get(path) || state.byId.get(path.slice(1, -1));
       if (!p) {
         $("#content").innerHTML = '<div class="error-state"><div class="home-eyebrow">\u9875\u9762\u672A\u6536\u5F55</div><h1>\u6CA1\u6709\u627E\u5230\u8FD9\u7BC7\u6587\u6863</h1><p>\u5F53\u524D\u5FEB\u7167\u4E2D\u6CA1\u6709\u8DEF\u5F84 <code>'.concat(esc(path), '</code>\u3002\u53EF\u901A\u8FC7\u641C\u7D22\u6216\u5168\u7AD9\u7D22\u5F15\u5B9A\u4F4D\u5BF9\u5E94\u9875\u9762\u3002</p><a class="button-primary" href="#/__all/">\u6D4F\u89C8\u5168\u7AD9\u9875\u9762\u7D22\u5F15</a></div>');
         setToc([]);
@@ -1007,7 +1015,10 @@
     }
   }
   function runSearch(raw) {
-    if (!state.catalog) return;
+    if (!state.catalog) {
+      $("#search-meta").textContent = "\u6B63\u5728\u8F7D\u5165\u76EE\u5F55\u2026";
+      return;
+    }
     const q = raw.trim().toLowerCase();
     let hits = [];
     if (!q) {
@@ -1150,11 +1161,28 @@
     }, { passive: true });
     window.addEventListener("hashchange", navigate);
   }
+  async function renderInitialHome() {
+    try {
+      const page = await getPageData(homepageEntry);
+      const { path, anchor } = parseHash();
+      if (state.catalog || !isHomepagePath(path)) return;
+      state.route = path;
+      renderHome(page);
+      state.rendered = true;
+      navHasNavigated = true;
+      if (anchor) scrollAnchor(anchor);
+    } catch (e) {
+    }
+  }
   async function init() {
+    let initialHome;
     try {
       bindUi();
-      document.body.classList.toggle("landing-page", isHomepagePath(parseHash().path));
-      state.catalog = await loadData("catalog.json");
+      const isHome = isHomepagePath(parseHash().path);
+      document.body.classList.toggle("landing-page", isHome);
+      const catalog = loadData("catalog.json");
+      if (isHome) initialHome = renderInitialHome();
+      state.catalog = await catalog;
       updateVersionHeader();
       state.pages = (state.catalog.pages || []).map((p) => {
         var _a2;
@@ -1168,8 +1196,19 @@
       if (Array.isArray(groups)) groups.forEach((g) => state.groups.set(g.id, g));
       else Object.entries(groups).forEach(([k, v]) => state.groups.set(k, v));
       renderNav();
-      await navigate();
+      if (state.rendered && isHomepagePath(state.route)) {
+        $(".official-footer .version-summary").outerHTML = versionSummary(true);
+        enhanceContentLinks();
+      }
+      if ($("#search-dialog").open) runSearch($("#search-input").value);
+      const { path, anchor } = parseHash();
+      if (!state.rendered || path !== state.route || anchor) await navigate();
     } catch (e) {
+      await initialHome;
+      if (state.rendered && isHomepagePath(parseHash().path)) {
+        $("#navigation").innerHTML = '<p class="muted loading-label">\u76EE\u5F55\u672A\u80FD\u8F7D\u5165\uFF0C\u8BF7\u5237\u65B0\u91CD\u8BD5\u3002</p>';
+        return;
+      }
       $("#content").innerHTML = '<div class="error-state"><div class="home-eyebrow">ORLEANS \u4E2D\u6587\u6587\u6863</div><h1>\u6587\u6863\u5185\u5BB9\u6682\u65F6\u65E0\u6CD5\u8F7D\u5165</h1><p>'.concat(esc(e.message), '</p><p>\u8BF7\u5B8C\u6574\u89E3\u538B\u6587\u6863\u5305\uFF0C\u5E76\u4FDD\u6301 index.html\u3001data-loader.js\u3001data \u548C assets \u7684\u76F8\u5BF9\u4F4D\u7F6E\uFF0C\u7136\u540E\u91CD\u65B0\u6253\u5F00 index.html\u3002</p><button class="button-primary" type="button" id="reload-app">\u91CD\u65B0\u8F7D\u5165</button></div>');
       $("#reload-app").onclick = () => location.reload();
       $("#navigation").innerHTML = '<p class="muted loading-label">\u76EE\u5F55\u5C1A\u672A\u8F7D\u5165\u3002</p>';

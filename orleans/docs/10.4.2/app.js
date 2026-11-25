@@ -134,6 +134,7 @@
   }
   function closeMenu(){document.body.classList.remove('nav-open');$('#mobile-overlay').hidden=true;$('#menu-toggle').setAttribute('aria-expanded','false');}
   function toast(message){const el=$('#toast');el.textContent=message;el.classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove('visible'),2400);}
+  const homepageEntry={id:'bfa8f21cc2984261',path:'/original-home/',chunk:'c0000',status:'reviewed'};
   const isHomepagePath=path=>path==='/'||path==='/original-home/';
   function officialIcon(name,className=''){
     const svg=window.OrleansOfficialIcons?.[name];
@@ -396,14 +397,17 @@
     $$('.doc-body table').forEach(table=>{if(table.parentElement.classList.contains('table-wrap'))return;const wrap=document.createElement('div');wrap.className='table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','可横向滚动的表格');table.before(wrap);wrap.append(table);});
     $$('.doc-body pre').forEach(pre=>{if(pre.closest('.code-shell'))return;const shell=document.createElement('div');shell.className='code-shell';const fragment=pre.closest('.source-fragment'),host=fragment&&fragment.childElementCount===1&&fragment.firstElementChild===pre?fragment:pre;host.before(shell);shell.append(host);const lang=$('code',pre)?.className?.match(/language-([\w-]+)/)?.[1]||pre.dataset.language||'CODE';const label=document.createElement('span');label.className='code-label';label.textContent=lang.toUpperCase();shell.prepend(label);const b=document.createElement('button');b.type='button';b.className='copy-code';b.textContent='复制';b.setAttribute('aria-label','复制代码');b.onclick=async()=>{const t=$('code',pre)?.textContent||pre.textContent;if(await copyText(t)){b.textContent='已复制';setTimeout(()=>b.textContent='复制',1600)}else toast('自动复制未成功，请选中代码后复制。');};shell.append(b);});
     $$('.doc-body img').forEach(img=>{applyReviewedImageAlt(img);img.loading=img.classList.contains('official-logo')?'eager':'lazy';img.decoding='async';img.addEventListener('error',()=>{img.alt='图片未能加载：'+(img.alt||img.src);},{once:true});if(hasSourceLightbox(img)&&!img.closest('a')&&!img.classList.contains('source-image-zoom')){img.classList.add('source-image-zoom');img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label',(state.mode==='en'?'View image: ':'查看原尺寸图片：')+(img.alt||''));img.onclick=()=>showSourceImage(img);img.onkeydown=event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();showSourceImage(img);}};}});
+    enhanceContentLinks();
+    if(state.route==='/samples/')enhanceSamples();
+    renderDiagrams();
+  }
+  function enhanceContentLinks(){
     $$('.doc-body a[href]').forEach(a=>{
       const h=a.getAttribute('href');
       if(h.startsWith('#')&&!h.startsWith('#/'))a.href=link(state.route,h.slice(1));
-      else if(/^https?:\/\/dotnet\.github\.io\/orleans\//.test(h)) {try{const u=new URL(h),p=canonical(u.pathname);if(state.byPath.has(p))a.href=link(p,u.hash.slice(1));}catch{}}
+      else if(/^https?:\/\/dotnet\.github\.io\/orleans\//.test(h)) {try{const u=new URL(h),p=canonical(u.pathname);if(state.byPath.has(p)){a.href=link(p,u.hash.slice(1));a.removeAttribute('target');a.removeAttribute('rel');}}catch{}}
       if(/^https?:/.test(a.getAttribute('href'))){a.target='_blank';a.rel='noopener noreferrer';}
     });
-    if(state.route==='/samples/')enhanceSamples();
-    renderDiagrams();
   }
   function enhanceSamples(){
     const article=$('.doc-body');article.classList.add('samples-gallery');
@@ -524,7 +528,7 @@
     state.route=path;state.rendered=false;state.page=null;document.body.classList.toggle('landing-page',isHomepagePath(path));updateNavActive(revealNavGroup);const id=++state.loadId;
     if(state.observer)state.observer.disconnect();
     if(path==='/__overview/')renderOverview();else if(path==='/__glossary/')renderGlossary();else if(path==='/__audit/')renderAudit();else if(path==='/__all/')renderIndex();else{
-      const p=isHomepagePath(path)?(state.byPath.get('/original-home/')||state.byId.get('bfa8f21cc2984261')):(state.byPath.get(path)||state.byId.get(path.slice(1,-1)));
+      const p=isHomepagePath(path)?(state.byPath.get('/original-home/')||state.byId.get(homepageEntry.id)):(state.byPath.get(path)||state.byId.get(path.slice(1,-1)));
       if(!p){$('#content').innerHTML=`<div class="error-state"><div class="home-eyebrow">页面未收录</div><h1>没有找到这篇文档</h1><p>当前快照中没有路径 <code>${esc(path)}</code>。可通过搜索或全站索引定位对应页面。</p><a class="button-primary" href="#/__all/">浏览全站页面索引</a></div>`;setToc([]);}
       else{ $('#content').innerHTML='<div class="initial-loading"><span class="loading-spinner"></span><p>正在载入文档…</p></div>';setToc([]);try{const data=await getPageData(p);if(id!==state.loadId)return;if(isHomepagePath(path))renderHome(data);else renderDocument(data);}catch(e){if(id!==state.loadId)return;$('#content').innerHTML=`<div class="error-state"><h1>这篇文档暂时无法载入</h1><p>${esc(e.message)}</p><p>请确认文档包已完整解压，并保持 index.html、data 和 assets 的相对位置后重试。</p><button class="button-secondary" id="reload-page" type="button">重试</button> <a class="button-secondary" href="${esc(p.sourceUrl||(p.path==='/original-home/'?'https://dotnet.github.io/orleans/':'https://dotnet.github.io/orleans'+p.path))}" target="_blank" rel="noopener noreferrer">英文原文</a></div>`;$('#reload-page').onclick=()=>{state.rendered=false;navigate()};}}
     }
@@ -537,7 +541,7 @@
     state.searchLoading=true;try{state.searchIndex=await loadData(state.catalog.meta.searchIndex);if($('#search-input').value)runSearch($('#search-input').value);}catch{$('#search-meta').textContent+=' · 正文索引未载入，当前搜索标题与路径。请完整解压文档包并保持 data 目录的位置。';}finally{state.searchLoading=false;}
   }
   function runSearch(raw){
-    if(!state.catalog)return;const q=raw.trim().toLowerCase();let hits=[];
+    if(!state.catalog){$('#search-meta').textContent='正在载入目录…';return;}const q=raw.trim().toLowerCase();let hits=[];
     if(!q){hits=state.pages.filter(p=>!isApi(p)).slice(0,8).map(p=>({page:p,score:0}));$('#search-meta').textContent='常用文档 · 输入中文、英文或 API 标识符搜索';}
     else{
       const terms=q.split(/\s+/).filter(Boolean);
@@ -585,10 +589,41 @@
     $('#collapse-nav').onclick=()=>{$$('.nav-group', $('#navigation')).forEach(group=>group.open=false);saveNavExpansion();};
     $('#back-top').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});window.addEventListener('scroll',()=>{$('#back-top').hidden=window.scrollY<650;},{passive:true});window.addEventListener('hashchange',navigate);
   }
+  async function renderInitialHome() {
+    try {
+      const page=await getPageData(homepageEntry);
+      const {path,anchor}=parseHash();
+      if(state.catalog||!isHomepagePath(path))return;
+      state.route=path;
+      renderHome(page);
+      state.rendered=true;
+      navHasNavigated=true;
+      if(anchor)scrollAnchor(anchor);
+    } catch {
+      // The normal navigation path reports errors and lets readers retry.
+    }
+  }
   async function init(){
-    try{bindUi();document.body.classList.toggle('landing-page',isHomepagePath(parseHash().path));state.catalog=await loadData('catalog.json');updateVersionHeader();state.pages=(state.catalog.pages||[]).map(p=>({...p,id:String(p.id??p.path),path:canonical(p.path||p.id),searchText:[p.title,p.titleZh,p.path,p.keywords,canonical(p.path||p.id)==='/original-home/'?'官网首页 原官网首页 首页 homepage landing':''].filter(Boolean).join(' ').toLowerCase()}));
-      for(const p of state.pages){state.byPath.set(p.path,p);state.byId.set(p.id,p);}const groups=state.catalog.groups||[];if(Array.isArray(groups))groups.forEach(g=>state.groups.set(g.id,g));else Object.entries(groups).forEach(([k,v])=>state.groups.set(k,v));renderNav();await navigate();
-    }catch(e){$('#content').innerHTML=`<div class="error-state"><div class="home-eyebrow">ORLEANS 中文文档</div><h1>文档内容暂时无法载入</h1><p>${esc(e.message)}</p><p>请完整解压文档包，并保持 index.html、data-loader.js、data 和 assets 的相对位置，然后重新打开 index.html。</p><button class="button-primary" type="button" id="reload-app">重新载入</button></div>`;$('#reload-app').onclick=()=>location.reload();$('#navigation').innerHTML='<p class="muted loading-label">目录尚未载入。</p>';}
+    let initialHome;
+    try{
+      bindUi();
+      const isHome=isHomepagePath(parseHash().path);
+      document.body.classList.toggle('landing-page',isHome);
+      const catalog=loadData('catalog.json');
+      if(isHome)initialHome=renderInitialHome();
+      state.catalog=await catalog;updateVersionHeader();state.pages=(state.catalog.pages||[]).map(p=>({...p,id:String(p.id??p.path),path:canonical(p.path||p.id),searchText:[p.title,p.titleZh,p.path,p.keywords,canonical(p.path||p.id)==='/original-home/'?'官网首页 原官网首页 首页 homepage landing':''].filter(Boolean).join(' ').toLowerCase()}));
+      for(const p of state.pages){state.byPath.set(p.path,p);state.byId.set(p.id,p);}const groups=state.catalog.groups||[];if(Array.isArray(groups))groups.forEach(g=>state.groups.set(g.id,g));else Object.entries(groups).forEach(([k,v])=>state.groups.set(k,v));renderNav();
+      if(state.rendered&&isHomepagePath(state.route)){
+        $('.official-footer .version-summary').outerHTML=versionSummary(true);
+        enhanceContentLinks();
+      }
+      if($('#search-dialog').open)runSearch($('#search-input').value);
+      const {path,anchor}=parseHash();
+      if(!state.rendered||path!==state.route||anchor)await navigate();
+    }catch(e){
+      await initialHome;
+      if(state.rendered&&isHomepagePath(parseHash().path)){$('#navigation').innerHTML='<p class="muted loading-label">目录未能载入，请刷新重试。</p>';return;}
+      $('#content').innerHTML=`<div class="error-state"><div class="home-eyebrow">ORLEANS 中文文档</div><h1>文档内容暂时无法载入</h1><p>${esc(e.message)}</p><p>请完整解压文档包，并保持 index.html、data-loader.js、data 和 assets 的相对位置，然后重新打开 index.html。</p><button class="button-primary" type="button" id="reload-app">重新载入</button></div>`;$('#reload-app').onclick=()=>location.reload();$('#navigation').innerHTML='<p class="muted loading-label">目录尚未载入。</p>';}
   }
   window.OrleansAppStarted = true;
   init();
