@@ -106,7 +106,6 @@
 .theme-picker .theme-mode-icon{display:none;inset-inline-start:0;width:var(--theme-label-icon-size);height:var(--theme-label-icon-size)}
 .theme-picker .theme-caret{inset-inline-end:0;width:var(--theme-caret-size);height:var(--theme-caret-size)}
 :root[data-theme-preference=dark] .theme-mode-icon[data-theme-icon-for=dark],:root[data-theme-preference=light] .theme-mode-icon[data-theme-icon-for=light],:root[data-theme-preference=auto] .theme-mode-icon[data-theme-icon-for=auto]{display:inline-flex}
-.mobile-theme-preferences{display:none}
 
 /* 官方实心图标不继承站内线框按钮的 stroke 样式。 */
 .official-icon{display:inline-flex;align-items:center;justify-content:center;width:1em;height:1em;flex-shrink:0;line-height:1;vertical-align:middle}
@@ -315,7 +314,6 @@
   .brand .brand-mark,:root[data-theme=dark] .brand-mark{height:32px;width:auto}
   .brand strong{font-size:20px}
   .header-social,.header-actions{display:none}
-  .mobile-theme-preferences{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;column-gap:16px;border-top:1px solid var(--surface);padding:8px 0}
   .header-version strong{font-size:14px}.header-version span{display:none}
   .landing-page main{padding:24px 16px 40px}
   .official-toolbar{position:static;margin-bottom:24px}
@@ -359,9 +357,13 @@
 @media print{.official-toolbar,.official-icon,.source-anchor-link,.repository-release{display:none!important}.official-hero{padding:24px 0}.official-feature-grid,.official-scenario-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.official-card{break-inside:avoid}.official-home pre{white-space:pre-wrap}}
 
 @media(max-width:799px){
+  .site-header{
+    grid-template-areas:"menu brand search actions" "versions versions versions versions";
+    grid-template-columns:32px minmax(0,1fr) 32px auto;
+  }
   .landing-page .site-header{
     grid-template-areas:"brand search actions" "versions versions versions";
     grid-template-columns:minmax(0,1fr) 32px auto;
   }
-  .landing-page .header-actions{display:flex}
+  .header-actions{display:flex}
 }
