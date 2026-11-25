@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="624pt" height="434pt" viewBox="8.64 8.64 615.06 425.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 412.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-403.96 593.46,-403.96 593.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M268.72,-110.49C240.63,-126.06 209.6,-143.26 181.43,-158.88"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="179.97,-156.48 174.33,-162.81 182.68,-161.38 179.97,-156.48"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M332.74,-120.34C323.65,-141.68 313.85,-164.72 306.51,-181.96"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="303.32,-189.44 303.15,-180.67 304.66,-185.67 306.23,-181.99 306.46,-182.08 306.69,-182.18 305.12,-185.86 309.77,-183.49 303.32,-189.44 303.32,-189.44"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M378.84,-120.04C386.8,-142.6 394,-163 394,-163 394,-163 394,-257 394,-257 394,-257 364.63,-275.62 332.99,-295.68"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="326.21,-299.98 331.04,-292.66 329.46,-297.63 332.84,-295.49 332.97,-295.7 333.1,-295.91 329.72,-298.05 334.9,-298.74 326.21,-299.98 326.21,-299.98"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M423.76,-120.34C437.9,-133.11 452.72,-146.47 466.42,-158.85"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="472.64,-164.46 464.29,-161.77 469.5,-161.96 466.53,-159.28 466.7,-159.1 466.87,-158.91 469.84,-161.59 469.11,-156.42 472.64,-164.46 472.64,-164.46"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M148.25,-257.32C163.15,-269.38 179.27,-282.42 194.39,-294.65"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="200.8,-299.84 192.32,-297.61 197.54,-297.52 194.43,-295 194.58,-294.81 194.74,-294.61 197.85,-297.13 196.85,-292.01 200.8,-299.84 200.8,-299.84"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="269,0 269,-120 447,-120 447,0 269,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="270,-80 270,-119 446,-119 446,-80 270,-80"/>
+<text text-anchor="start" x="352" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="277" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">JournaledSampleGrain</text>
+<text text-anchor="start" x="277" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_activationId: Guid</text>
+<text text-anchor="start" x="277" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">RunScenario(…)</text>
+<text text-anchor="start" x="277" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">GetSummary(…)</text>
+<text text-anchor="start" x="277" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">Deactivate(…)</text>
+<polygon fill="none" stroke="#74879b" points="269,0 269,-120 447,-120 447,0 269,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-163 0,-257 182,-257 182,-163 0,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-217 1,-256 181,-256 181,-217 1,-217"/>
+<text text-anchor="start" x="79.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="8" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IJournaledSampleGrain</text>
+<text text-anchor="start" x="8" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">RunScenario(…)</text>
+<text text-anchor="start" x="8" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">GetSummary(…)</text>
+<text text-anchor="start" x="8" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">Deactivate(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-163 0,-257 182,-257 182,-163 0,-163"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="209.5,-189.5 209.5,-230.5 380.5,-230.5 380.5,-189.5 209.5,-189.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="211,-190 211,-229 380,-229 380,-190 211,-190"/>
+<text text-anchor="start" x="272.5" y="-214.2" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="218" y="-200.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IDurableStateManager</text>
+<polygon fill="none" stroke="#536c9b" points="209.5,-189.5 209.5,-230.5 380.5,-230.5 380.5,-189.5 209.5,-189.5"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="152.5,-300 152.5,-391 359.5,-391 359.5,-300 152.5,-300"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="154,-350.5 154,-389.5 359,-389.5 359,-350.5 154,-350.5"/>
+<text text-anchor="start" x="245" y="-374.7" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="161" y="-361.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">JournaledSampleSummary</text>
+<text text-anchor="start" x="160.5" y="-334.7" font-family="Noto Sans CJK SC" font-size="11.00">ActivationId: Guid</text>
+<text text-anchor="start" x="160.5" y="-322.7" font-family="Noto Sans CJK SC" font-size="11.00">Balance: AccountBalance</text>
+<text text-anchor="start" x="160.5" y="-310.7" font-family="Noto Sans CJK SC" font-size="11.00">Profile: ProfileState</text>
+<polygon fill="none" stroke="#618574" points="152.5,-300 152.5,-391 359.5,-391 359.5,-300 152.5,-300"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="463.5,-164.5 463.5,-255.5 580.5,-255.5 580.5,-164.5 463.5,-164.5"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="465,-215 465,-254 580,-254 580,-215 465,-215"/>
+<text text-anchor="start" x="511" y="-239.2" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="472" y="-225.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">InventoryItem</text>
+<text text-anchor="start" x="471.5" y="-199.2" font-family="Noto Sans CJK SC" font-size="11.00">Sku: string</text>
+<text text-anchor="start" x="471.5" y="-187.2" font-family="Noto Sans CJK SC" font-size="11.00">Quantity: int</text>
+<text text-anchor="start" x="471.5" y="-175.2" font-family="Noto Sans CJK SC" font-size="11.00">UnitPrice: decimal</text>
+<polygon fill="none" stroke="#618574" points="463.5,-164.5 463.5,-255.5 580.5,-255.5 580.5,-164.5 463.5,-164.5"/>
+</g>
+</g>
+</svg>

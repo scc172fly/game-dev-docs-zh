@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="858pt" height="300pt" viewBox="8.64 8.64 849.06 291.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 278.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-269.96 827.46,-269.96 827.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M337.23,-89.82C262.12,-119.98 155,-163 155,-163 155,-163 152.91,-164.14 149.39,-166.07"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="142.24,-169.99 147.53,-162.99 145.63,-167.85 149.14,-165.92 149.26,-166.14 149.38,-166.36 145.87,-168.28 150.99,-169.3 142.24,-169.99 142.24,-169.99"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M341.24,-120.34C327.22,-132.62 312.56,-145.45 298.9,-157.42"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="292.69,-162.86 296.34,-154.88 295.54,-160.03 298.54,-157.4 298.71,-157.59 298.87,-157.77 295.86,-160.41 301.08,-160.29 292.69,-162.86 292.69,-162.86"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M409,-120.34C409,-133.8 409,-147.93 409,-160.86"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="409,-169.16 405.4,-161.16 408.75,-165.16 408.75,-161.16 409,-161.16 409.25,-161.16 409.25,-165.16 412.6,-161.16 409,-169.16 409,-169.16"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M471.15,-120.34C486.63,-135.12 502.95,-150.71 517.53,-164.63"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="523.66,-170.48 515.39,-167.56 520.59,-167.9 517.7,-165.14 517.87,-164.96 518.04,-164.77 520.94,-167.54 520.36,-162.35 523.66,-170.48 523.66,-170.48"/>
+</g>
+<!-- n0&#45;&gt;n5 -->
+<g id="edge5" class="edge">
+<title>n0-&gt;n5</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M480.5,-93.41C546.38,-123.28 634,-163 634,-163 634,-163 636.29,-164.09 640.18,-165.93"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="647.49,-169.4 638.72,-169.22 643.77,-167.91 640.15,-166.19 640.26,-165.97 640.37,-165.74 643.98,-167.46 641.8,-162.72 647.49,-169.4 647.49,-169.4"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="337.5,0 337.5,-120 480.5,-120 480.5,0 337.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="339,-80 339,-119 480,-119 480,-80 339,-80"/>
+<text text-anchor="start" x="403.5" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="357" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">WorkflowGrain</text>
+<text text-anchor="start" x="345.5" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_activationId: Guid</text>
+<text text-anchor="start" x="345.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">RunBasicAsync(…)</text>
+<text text-anchor="start" x="345.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">RunFanOutAsync(…)</text>
+<text text-anchor="start" x="345.5" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">RunApprovalAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="337.5,0 337.5,-120 480.5,-120 480.5,0 337.5,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-163 0,-257 142,-257 142,-163 0,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-217 1,-256 141,-256 141,-217 1,-217"/>
+<text text-anchor="start" x="59.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="15.5" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IInventoryGrain</text>
+<text text-anchor="start" x="8" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">ReserveAsync(…)</text>
+<text text-anchor="start" x="8" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">ReleaseAsync(…)</text>
+<text text-anchor="start" x="8" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetSnapshotAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-163 0,-257 142,-257 142,-163 0,-163"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="169,-163 169,-257 311,-257 311,-163 169,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="170,-217 170,-256 310,-256 310,-217 170,-217"/>
+<text text-anchor="start" x="228.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="187.5" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IPaymentGrain</text>
+<text text-anchor="start" x="177" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">ChargeAsync(…)</text>
+<text text-anchor="start" x="177" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">RefundAsync(…)</text>
+<text text-anchor="start" x="177" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetSnapshotAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="169,-163 169,-257 311,-257 311,-163 169,-163"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="338,-169.5 338,-250.5 480,-250.5 480,-169.5 338,-169.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="339,-210 339,-249 479,-249 479,-210 339,-210"/>
+<text text-anchor="start" x="397.5" y="-234.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="360.5" y="-220.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IActivityGrain</text>
+<text text-anchor="start" x="346" y="-193.4" font-family="Noto Sans CJK SC" font-size="12.00">ExecuteAsync(…)</text>
+<text text-anchor="start" x="346" y="-180.4" font-family="Noto Sans CJK SC" font-size="12.00">GetSnapshotAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="338,-169.5 338,-250.5 480,-250.5 480,-169.5 338,-169.5"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="507.5,-170.5 507.5,-249.5 620.5,-249.5 620.5,-170.5 507.5,-170.5"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="509,-209 509,-248 620,-248 620,-209 509,-209"/>
+<text text-anchor="start" x="553" y="-233.2" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="516" y="-219.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">OrderRequest</text>
+<text text-anchor="start" x="515.5" y="-193.2" font-family="Noto Sans CJK SC" font-size="11.00">OrderId: string</text>
+<text text-anchor="start" x="515.5" y="-181.2" font-family="Noto Sans CJK SC" font-size="11.00">FailShipping: bool</text>
+<polygon fill="none" stroke="#618574" points="507.5,-170.5 507.5,-249.5 620.5,-249.5 620.5,-170.5 507.5,-170.5"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="white" stroke="transparent" points="647.5,-164.5 647.5,-255.5 814.5,-255.5 814.5,-164.5 647.5,-164.5"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="649,-215 649,-254 814,-254 814,-215 649,-215"/>
+<text text-anchor="start" x="720" y="-239.2" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="656" y="-225.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">OrderWorkflowResult</text>
+<text text-anchor="start" x="655.5" y="-199.2" font-family="Noto Sans CJK SC" font-size="11.00">OrderId: string</text>
+<text text-anchor="start" x="655.5" y="-187.2" font-family="Noto Sans CJK SC" font-size="11.00">Status: OrderWorkflowStatus</text>
+<text text-anchor="start" x="655.5" y="-175.2" font-family="Noto Sans CJK SC" font-size="11.00">Failure: string?</text>
+<polygon fill="none" stroke="#618574" points="647.5,-164.5 647.5,-255.5 814.5,-255.5 814.5,-164.5 647.5,-164.5"/>
+</g>
+</g>
+</svg>

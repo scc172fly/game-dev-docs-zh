@@ -1,0 +1,43 @@
+<svg width="765pt" height="71pt"
+ viewBox="0.00 0.00 765.04 71.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 59.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-59.52 753.52,-59.52 753.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 208,-48 208,0 0,0"/>
+<text text-anchor="start" x="84" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">JournaledTodoList.AppHost</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 208,-48 208,0 0,0"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="244,0 244,-48 449,-48 449,0 244,0"/>
+<text text-anchor="start" x="327" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="250.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">JournaledTodoList.WebApp</text>
+<polygon fill="none" stroke="#849daf" points="244,0 244,-48 449,-48 449,0 244,0"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M208.04,-24C217.3,-24 226.71,-24 236.02,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="243.82,-24 236.22,-27.42 240.02,-24 236.22,-24 236.22,-24 236.22,-24 240.02,-24 236.22,-20.58 243.82,-24 243.82,-24"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="485,0 485,-48 742,-48 742,0 485,0"/>
+<text text-anchor="start" x="594" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="491.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">JournaledTodoList.ServiceDefaults</text>
+<polygon fill="none" stroke="#849daf" points="485,0 485,-48 742,-48 742,0 485,0"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M449.2,-24C458.32,-24 467.65,-24 477,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="484.85,-24 477.25,-27.42 481.05,-24 477.25,-24 477.25,-24 477.25,-24 481.05,-24 477.25,-20.58 484.85,-24 484.85,-24"/>
+</g>
+</g>
+</svg>

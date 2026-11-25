@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="377pt" height="489pt" viewBox="8.64 8.64 368.56 480.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 467.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-458.96 346.96,-458.96 346.96,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M145.97,-120.04C140.9,-131.52 135.56,-143.63 130.39,-155.34"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="127.03,-162.97 126.97,-154.2 128.42,-159.21 130.03,-155.55 130.26,-155.65 130.49,-155.75 128.87,-159.41 133.55,-157.1 127.03,-162.97 127.03,-162.97"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M197.47,-120.04C207.2,-142.6 216,-163 216,-163 216,-163 226.85,-252.24 234.8,-317.56"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="235.8,-325.8 231.26,-318.29 235.07,-321.86 234.59,-317.89 234.83,-317.86 235.08,-317.83 235.57,-321.8 238.41,-317.42 235.8,-325.8 235.8,-325.8"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M87.43,-283.04C81.6,-308.43 75.05,-336.91 70.37,-357.3"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="67.61,-356.81 68.54,-365.24 73.06,-358.07 67.61,-356.81"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge4" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M153.07,-283.04C163.58,-294.96 174.7,-307.56 185.39,-319.68"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="190.94,-325.97 182.95,-322.35 188.1,-323.14 185.46,-320.14 185.65,-319.97 185.83,-319.81 188.48,-322.81 188.35,-317.59 190.94,-325.97 190.94,-325.97"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="70.5,0 70.5,-120 273.5,-120 273.5,0 70.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="72,-80 72,-119 273,-119 273,-80 72,-80"/>
+<text text-anchor="start" x="166.5" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="104.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">DefaultSiloServices</text>
+<text text-anchor="start" x="78.5" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">ServiceDescriptor: ServiceDescriptor</text>
+<text text-anchor="start" x="78.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">AddDefaultServices(…)</text>
+<text text-anchor="start" x="78.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">ApplyConfiguration(…)</text>
+<text text-anchor="start" x="78.5" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">ConfigureProvider(…)</text>
+<polygon fill="none" stroke="#74879b" points="70.5,0 70.5,-120 273.5,-120 273.5,0 70.5,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-163 0,-283 202,-283 202,-163 0,-163"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="1,-243 1,-282 201,-282 201,-243 1,-243"/>
+<text text-anchor="start" x="95" y="-267.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="37" y="-253.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">SiloHostedService</text>
+<text text-anchor="start" x="8" y="-227.2" font-family="Noto Sans CJK SC" font-size="11.00">logger: ILogger</text>
+<text text-anchor="start" x="8" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">StartAsync(…)</text>
+<text text-anchor="start" x="8" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">StopAsync(…)</text>
+<text text-anchor="start" x="8" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">ValidateSystemConfiguration(…)</text>
+<polygon fill="none" stroke="#74879b" points="0,-163 0,-283 202,-283 202,-163 0,-163"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="3,-365.5 3,-406.5 125,-406.5 125,-365.5 3,-365.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="4,-366 4,-405 124,-405 124,-366 4,-366"/>
+<text text-anchor="start" x="41" y="-390.2" font-family="Noto Sans CJK SC" font-size="11.00">.NET 接口</text>
+<text text-anchor="start" x="11" y="-376.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IHostedService</text>
+<polygon fill="none" stroke="#536c9b" points="3,-365.5 3,-406.5 125,-406.5 125,-365.5 3,-365.5"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="152,-326 152,-446 334,-446 334,-326 152,-326"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="153,-406 153,-445 333,-445 333,-406 153,-406"/>
+<text text-anchor="start" x="237" y="-430.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="229" y="-416.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Silo</text>
+<text text-anchor="start" x="160" y="-390.2" font-family="Noto Sans CJK SC" font-size="11.00">PrimarySiloName: string</text>
+<text text-anchor="start" x="160" y="-363.4" font-family="Noto Sans CJK SC" font-size="12.00">StartAsync(…)</text>
+<text text-anchor="start" x="160" y="-350.4" font-family="Noto Sans CJK SC" font-size="12.00">OnRuntimeInitializeStart(…)</text>
+<text text-anchor="start" x="160" y="-337.4" font-family="Noto Sans CJK SC" font-size="12.00">StartTaskWithPerfAnalysis(…)</text>
+<polygon fill="none" stroke="#74879b" points="152,-326 152,-446 334,-446 334,-326 152,-326"/>
+</g>
+</g>
+</svg>

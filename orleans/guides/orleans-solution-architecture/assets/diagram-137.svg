@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="662pt" height="396pt" viewBox="8.64 8.64 653.06 387.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 374.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-365.96 631.46,-365.96 631.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M99.36,-120.21C103.1,-131.96 106.95,-144.04 110.44,-155.01"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="112.92,-162.78 107.06,-156.25 111.47,-159.05 110.25,-155.24 110.49,-155.16 110.73,-155.09 111.94,-158.9 113.92,-154.07 112.92,-162.78 112.92,-162.78"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M213.86,-113.58C197.95,-128.09 180.98,-143.57 166.09,-157.15"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="163.87,-155.39 159.85,-162.85 167.64,-159.52 163.87,-155.39"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M315.9,-113.58C327.94,-127.83 340.76,-143.02 352.08,-156.42"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="357.5,-162.85 349.59,-159.06 354.73,-159.95 352.15,-156.89 352.34,-156.73 352.53,-156.57 355.11,-159.63 355.09,-154.41 357.5,-162.85 357.5,-162.85"/>
+</g>
+<!-- n1&#45;&gt;n5 -->
+<g id="edge4" class="edge">
+<title>n1-&gt;n5</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M279.89,-113.86C287.82,-163.76 298.5,-231 298.5,-231 298.5,-231 317.81,-249.09 338.23,-268.22"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="344.29,-273.9 335.99,-271.06 341.2,-271.35 338.28,-268.61 338.45,-268.43 338.63,-268.25 341.54,-270.98 340.92,-265.8 344.29,-273.9 344.29,-273.9"/>
+</g>
+<!-- n3&#45;&gt;n5 -->
+<g id="edge5" class="edge">
+<title>n3-&gt;n5</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M385.5,-231.12C385.5,-241.85 385.5,-253.98 385.5,-265.52"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="385.5,-273.8 381.9,-265.8 385.25,-269.8 385.25,-265.8 385.5,-265.8 385.75,-265.8 385.75,-269.8 389.1,-265.8 385.5,-273.8 385.5,-273.8"/>
+</g>
+<!-- n4&#45;&gt;n3 -->
+<g id="edge6" class="edge">
+<title>n4-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M450.06,-120.21C439.57,-132.53 428.76,-145.21 419.06,-156.6"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="416.85,-154.88 413.79,-162.78 421.11,-158.51 416.85,-154.88"/>
+</g>
+<!-- n4&#45;&gt;n5 -->
+<g id="edge7" class="edge">
+<title>n4-&gt;n5</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M490.71,-120.46C482.63,-169.48 472.5,-231 472.5,-231 472.5,-231 453.19,-249.09 432.77,-268.22"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="426.71,-273.9 430.08,-265.8 429.46,-270.98 432.37,-268.25 432.55,-268.43 432.72,-268.61 429.8,-271.35 435.01,-271.06 426.71,-273.9 426.71,-273.9"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="0,0 0,-120 161,-120 161,0 0,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="1.5,-80 1.5,-119 160.5,-119 160.5,-80 1.5,-80"/>
+<text text-anchor="start" x="75" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="42.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">LoadDriver</text>
+<text text-anchor="start" x="8" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">SFLatMin: double</text>
+<text text-anchor="start" x="8" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">DriveLoad(…)</text>
+<text text-anchor="start" x="8" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">DeviceLoop(…)</text>
+<text text-anchor="start" x="8" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">UpdateDevicePosition(…)</text>
+<polygon fill="none" stroke="#74879b" points="0,0 0,-120 161,-120 161,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="188,-6.5 188,-113.5 355,-113.5 355,-6.5 188,-6.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="189.5,-73 189.5,-112 354.5,-112 354.5,-73 189.5,-73"/>
+<text text-anchor="start" x="266" y="-97.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="230" y="-83.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">DeviceGrain</text>
+<text text-anchor="start" x="196" y="-57.2" font-family="Noto Sans CJK SC" font-size="11.00">_lastMessage: DeviceMessage</text>
+<text text-anchor="start" x="196" y="-30.4" font-family="Noto Sans CJK SC" font-size="12.00">ProcessMessage(…)</text>
+<text text-anchor="start" x="196" y="-17.4" font-family="Noto Sans CJK SC" font-size="12.00">GetSpeed(…)</text>
+<polygon fill="none" stroke="#74879b" points="188,-6.5 188,-113.5 355,-113.5 355,-6.5 188,-6.5"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="60,-163 60,-231 187,-231 187,-163 60,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="61.5,-191 61.5,-230 186.5,-230 186.5,-191 61.5,-191"/>
+<text text-anchor="start" x="112.5" y="-215.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="80" y="-201.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IDeviceGrain</text>
+<text text-anchor="start" x="68" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">ProcessMessage(…)</text>
+<polygon fill="none" stroke="#536c9b" points="60,-163 60,-231 187,-231 187,-163 60,-163"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="312.5,-163 312.5,-231 458.5,-231 458.5,-163 312.5,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="313.5,-191 313.5,-230 457.5,-230 457.5,-191 313.5,-191"/>
+<text text-anchor="start" x="374" y="-215.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="320.5" y="-201.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IPushNotifierGrain</text>
+<text text-anchor="start" x="320.5" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">SendMessage(…)</text>
+<polygon fill="none" stroke="#536c9b" points="312.5,-163 312.5,-231 458.5,-231 458.5,-163 312.5,-163"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="382.5,0 382.5,-120 618.5,-120 618.5,0 382.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="383.5,-80 383.5,-119 617.5,-119 617.5,-80 383.5,-80"/>
+<text text-anchor="start" x="494.5" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="438" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">PushNotifierGrain</text>
+<text text-anchor="start" x="390.5" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_messageQueue: Queue&lt;VelocityMessage&gt;</text>
+<text text-anchor="start" x="390.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">OnActivateAsync(…)</text>
+<text text-anchor="start" x="390.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">OnDeactivateAsync(…)</text>
+<text text-anchor="start" x="390.5" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">RefreshHubs(…)</text>
+<polygon fill="none" stroke="#74879b" points="382.5,0 382.5,-120 618.5,-120 618.5,0 382.5,0"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="white" stroke="transparent" points="297.5,-274 297.5,-353 473.5,-353 473.5,-274 297.5,-274"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="298.5,-312.5 298.5,-351.5 472.5,-351.5 472.5,-312.5 298.5,-312.5"/>
+<text text-anchor="start" x="374" y="-336.7" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="328" y="-323.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">VelocityMessage</text>
+<text text-anchor="start" x="305.5" y="-296.7" font-family="Noto Sans CJK SC" font-size="11.00">DeviceMessage: DeviceMessage</text>
+<text text-anchor="start" x="305.5" y="-284.7" font-family="Noto Sans CJK SC" font-size="11.00">Velocity: double</text>
+<polygon fill="none" stroke="#618574" points="297.5,-274 297.5,-353 473.5,-353 473.5,-274 297.5,-274"/>
+</g>
+</g>
+</svg>

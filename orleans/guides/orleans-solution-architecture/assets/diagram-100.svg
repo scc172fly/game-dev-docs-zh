@@ -1,0 +1,29 @@
+<svg width="326pt" height="71pt"
+ viewBox="0.00 0.00 326.04 71.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 59.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-59.52 314.52,-59.52 314.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 80,-48 80,0 0,0"/>
+<text text-anchor="start" x="20" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TicTacToe</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 80,-48 80,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eef7f2" stroke="transparent" points="116,0 116,-48 303,-48 303,0 116,0"/>
+<text text-anchor="start" x="189" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="122.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Server</text>
+<polygon fill="none" stroke="#849daf" points="116,0 116,-48 303,-48 303,0 116,0"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M80.27,-24C88.82,-24 98.23,-24 107.96,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="115.82,-24 108.22,-27.42 112.02,-24 108.22,-24 108.22,-24 108.22,-24 112.02,-24 108.22,-20.58 115.82,-24 115.82,-24"/>
+</g>
+</g>
+</svg>

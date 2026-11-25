@@ -1,0 +1,57 @@
+<svg width="340pt" height="199pt"
+ viewBox="0.00 0.00 340.04 199.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 187.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-187.52 328.52,-187.52 328.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-64 0,-112 85,-112 85,-64 0,-64"/>
+<text text-anchor="start" x="23" y="-98" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6.5" y="-74.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Messaging</text>
+<polygon fill="none" stroke="#849daf" points="0,-64 0,-112 85,-112 85,-64 0,-64"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eef7f2" stroke="transparent" points="121,-128 121,-176 317,-176 317,-128 121,-128"/>
+<text text-anchor="start" x="198" y="-162" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="127" y="-138.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Durable</text>
+<polygon fill="none" stroke="#849daf" points="121,-128 121,-176 317,-176 317,-128 121,-128"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M85.11,-105.83C96.66,-110.61 109.26,-115.65 121,-120 125.8,-121.78 130.76,-123.57 135.77,-125.34"/>
+<polygon fill="#405b78" stroke="#405b78" points="143.14,-127.91 134.84,-128.63 139.55,-126.66 135.96,-125.4 135.96,-125.4 135.96,-125.4 139.55,-126.66 137.09,-122.18 143.14,-127.91 143.14,-127.91"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eef7f2" stroke="transparent" points="135.5,-64 135.5,-112 302.5,-112 302.5,-64 135.5,-64"/>
+<text text-anchor="start" x="198.5" y="-98" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="142" y="-74.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Sdk</text>
+<polygon fill="none" stroke="#849daf" points="135.5,-64 135.5,-112 302.5,-112 302.5,-64 135.5,-64"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M85.3,-88C98.18,-88 112.89,-88 127.72,-88"/>
+<polygon fill="#405b78" stroke="#405b78" points="135.47,-88 127.87,-91.42 131.67,-88 127.87,-88 127.87,-88 127.87,-88 131.67,-88 127.87,-84.58 135.47,-88 135.47,-88"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="125.5,0 125.5,-48 312.5,-48 312.5,0 125.5,0"/>
+<text text-anchor="start" x="198.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="132" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Server</text>
+<polygon fill="none" stroke="#849daf" points="125.5,0 125.5,-48 312.5,-48 312.5,0 125.5,0"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0&#45;&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M85.11,-70.17C96.66,-65.39 109.26,-60.35 121,-56 125.8,-54.22 130.76,-52.43 135.77,-50.66"/>
+<polygon fill="#405b78" stroke="#405b78" points="143.14,-48.09 137.09,-53.82 139.55,-49.34 135.96,-50.6 135.96,-50.6 135.96,-50.6 139.55,-49.34 134.84,-47.37 143.14,-48.09 143.14,-48.09"/>
+</g>
+</g>
+</svg>

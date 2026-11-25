@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430pt" height="269pt" viewBox="0.00 0.00 429.92 268.92">
+<title>集群成员 · 云存储提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 255.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-255.96 416.96,-255.96 416.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="7.5,-195 7.5,-243 230.5,-243 230.5,-195 7.5,-195"/>
+<text text-anchor="start" x="99.5" y="-229" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="14" y="-205.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.DynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="7.5,-195 7.5,-243 230.5,-243 230.5,-195 7.5,-195"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="274,-97 274,-145 404,-145 404,-97 274,-97"/>
+<text text-anchor="start" x="319" y="-131" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="280" y="-107.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="274,-97 274,-145 404,-145 404,-97 274,-97"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M218.4,-194.91C225.12,-192.47 231.71,-189.84 238,-187 259.95,-177.09 282.5,-162.64 300.62,-149.79"/>
+<polygon fill="#405b78" stroke="#405b78" points="307.08,-145.14 302.97,-152.26 304.04,-147.33 301,-149.52 301,-149.52 301,-149.52 304.04,-147.33 299.02,-146.78 307.08,-145.14 307.08,-145.14"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-130 0,-178 238,-178 238,-130 0,-130"/>
+<text text-anchor="start" x="99" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.AzureStorage</text>
+<polygon fill="none" stroke="#849daf" points="0,-130 0,-178 238,-178 238,-130 0,-130"/>
+</g>
+<!-- n1&#45;&gt;n4 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M238.25,-136.1C247.79,-134.66 257.24,-133.23 266.29,-131.86"/>
+<polygon fill="#405b78" stroke="#405b78" points="273.8,-130.72 266.89,-135.18 270.09,-131.28 266.38,-131.84 266.38,-131.84 266.38,-131.84 270.09,-131.28 265.88,-128.5 273.8,-130.72 273.8,-130.72"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="19,-65 19,-113 219,-113 219,-65 19,-65"/>
+<text text-anchor="start" x="99" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="25" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.Cosmos</text>
+<polygon fill="none" stroke="#849daf" points="19,-65 19,-113 219,-113 219,-65 19,-65"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M219.11,-103.55C234.92,-105.87 251,-108.23 266.02,-110.43"/>
+<polygon fill="#405b78" stroke="#405b78" points="273.77,-111.57 265.86,-113.82 270.06,-111.03 266.35,-110.48 266.35,-110.48 266.35,-110.48 270.06,-111.03 266.84,-107.14 273.77,-111.57 273.77,-111.57"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="14.5,0 14.5,-48 223.5,-48 223.5,0 14.5,0"/>
+<text text-anchor="start" x="99.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="21" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="14.5,0 14.5,-48 223.5,-48 223.5,0 14.5,0"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M215.55,-48.07C223.24,-50.81 230.82,-53.78 238,-57 259.28,-66.53 281.28,-80.13 299.2,-92.35"/>
+<polygon fill="#405b78" stroke="#405b78" points="305.61,-96.77 297.52,-95.29 302.53,-94.64 299.44,-92.51 299.44,-92.51 299.44,-92.51 302.53,-94.64 301.36,-89.74 305.61,-96.77 305.61,-96.77"/>
+</g>
+</g>
+</svg>

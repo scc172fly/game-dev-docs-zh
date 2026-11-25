@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="582pt" height="548pt" viewBox="8.64 8.64 573.56 539.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 526.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-517.96 551.96,-517.96 551.96,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M209.9,-120.13C191.79,-132.71 172.82,-145.89 155.21,-158.13"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="153.24,-156.09 148.27,-162.95 156.44,-160.69 153.24,-156.09"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M259.11,-120.04C245.4,-142.6 233,-163 233,-163 233,-163 232.18,-237.74 231.59,-291.69"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="231.5,-299.82 227.99,-291.78 231.3,-295.82 231.34,-291.82 231.59,-291.82 231.84,-291.82 231.8,-295.82 235.19,-291.86 231.5,-299.82 231.5,-299.82"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M390.73,-101.02C459.09,-129.6 539,-163 539,-163 539,-163 539,-257 539,-257 539,-257 412.53,-370.19 343.97,-431.54"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="337.93,-436.95 341.49,-428.93 340.74,-434.1 343.72,-431.43 343.89,-431.62 344.05,-431.8 341.07,-434.47 346.29,-434.3 337.93,-436.95 337.93,-436.95"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M331.49,-120.34C340.33,-134.73 349.65,-149.88 358.03,-163.5"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="362.32,-170.48 355.06,-165.55 360.01,-167.2 357.91,-163.8 358.13,-163.67 358.34,-163.53 360.43,-166.94 361.19,-161.78 362.32,-170.48 362.32,-170.48"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" d="M132.86,-257.08C146.09,-269.07 160.44,-282.07 173.96,-294.32"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="172.31,-296.6 180.12,-299.9 176.07,-292.45 172.31,-296.6"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge6" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" d="M91.34,-257.18C102.3,-311.39 119,-394 119,-394 119,-394 171.1,-415.76 219.55,-435.99"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="218.51,-438.59 226.97,-439.09 220.67,-433.42 218.51,-438.59"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge7" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M257.46,-394.12C264.2,-405.86 271.38,-418.37 277.93,-429.79"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="281.91,-436.74 274.81,-431.59 279.71,-433.39 277.72,-429.92 277.93,-429.8 278.15,-429.67 280.14,-433.14 281.06,-428.01 281.91,-436.74 281.91,-436.74"/>
+</g>
+<!-- n4&#45;&gt;n2 -->
+<g id="edge8" class="edge">
+<title>n4-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M341.58,-249.69C325.57,-263.63 307.23,-279.6 290.16,-294.47"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="283.93,-299.9 287.6,-291.93 286.79,-297.08 289.8,-294.45 289.97,-294.64 290.13,-294.83 287.11,-297.46 292.33,-297.36 283.93,-299.9 283.93,-299.9"/>
+</g>
+<!-- n4&#45;&gt;n3 -->
+<g id="edge9" class="edge">
+<title>n4-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M376.88,-249.81C364.26,-303.53 343,-394 343,-394 343,-394 333.35,-411.46 323.3,-429.65"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="319.3,-436.89 320.02,-428.14 321.02,-433.26 322.95,-429.76 323.17,-429.88 323.39,-430.01 321.45,-433.51 326.32,-431.63 319.3,-436.89 319.3,-436.89"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="199.5,0 199.5,-120 390.5,-120 390.5,0 199.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="201,-80 201,-119 390,-119 390,-80 201,-80"/>
+<text text-anchor="start" x="289.5" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="241.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChirperAccount</text>
+<text text-anchor="start" x="207.5" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">ReceivedMessagesCacheSize: int</text>
+<text text-anchor="start" x="207.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">OnActivateAsync(…)</text>
+<text text-anchor="start" x="207.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">PublishMessageAsync(…)</text>
+<text text-anchor="start" x="207.5" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">GetReceivedMessagesAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="199.5,0 199.5,-120 390.5,-120 390.5,0 199.5,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-163 0,-257 164,-257 164,-163 0,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-217 1,-256 163,-256 163,-217 1,-217"/>
+<text text-anchor="start" x="70.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="26" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IChirperAccount</text>
+<text text-anchor="start" x="8" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">FollowUserIdAsync(…)</text>
+<text text-anchor="start" x="8" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">UnfollowUserIdAsync(…)</text>
+<text text-anchor="start" x="8" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetFollowingListAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-163 0,-257 164,-257 164,-163 0,-163"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="132.5,-300 132.5,-394 329.5,-394 329.5,-300 132.5,-300"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="134,-354 134,-393 329,-393 329,-354 134,-354"/>
+<text text-anchor="start" x="220" y="-378.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="170" y="-364.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IChirperPublisher</text>
+<text text-anchor="start" x="140.5" y="-337.4" font-family="Noto Sans CJK SC" font-size="12.00">GetPublishedMessagesAsync(…)</text>
+<text text-anchor="start" x="140.5" y="-324.4" font-family="Noto Sans CJK SC" font-size="12.00">AddFollowerAsync(…)</text>
+<text text-anchor="start" x="140.5" y="-311.4" font-family="Noto Sans CJK SC" font-size="12.00">RemoveFollowerAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="132.5,-300 132.5,-394 329.5,-394 329.5,-300 132.5,-300"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="227,-437 227,-505 375,-505 375,-437 227,-437"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="228,-465 228,-504 374,-504 374,-465 228,-465"/>
+<text text-anchor="start" x="289.5" y="-489.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="235" y="-475.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IChirperSubscriber</text>
+<text text-anchor="start" x="235" y="-448.4" font-family="Noto Sans CJK SC" font-size="12.00">NewChirpAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="227,-437 227,-505 375,-505 375,-437 227,-437"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="246.5,-170.5 246.5,-249.5 525.5,-249.5 525.5,-170.5 246.5,-170.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="248,-209 248,-248 525,-248 525,-209 248,-209"/>
+<text text-anchor="start" x="369.5" y="-233.2" font-family="Noto Sans CJK SC" font-size="11.00">记录类</text>
+<text text-anchor="start" x="314.5" y="-219.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChirperAccountState</text>
+<text text-anchor="start" x="254.5" y="-193.2" font-family="Noto Sans CJK SC" font-size="11.00">RecentReceivedMessages: Queue&lt;ChirperMessage&gt;</text>
+<text text-anchor="start" x="254.5" y="-181.2" font-family="Noto Sans CJK SC" font-size="11.00">MyPublishedMessages: Queue&lt;ChirperMessage&gt;</text>
+<polygon fill="none" stroke="#74879b" points="246.5,-170.5 246.5,-249.5 525.5,-249.5 525.5,-170.5 246.5,-170.5"/>
+</g>
+</g>
+</svg>

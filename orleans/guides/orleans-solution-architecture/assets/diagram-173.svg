@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="488pt" height="271pt" viewBox="8.64 8.64 479.06 262.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 249.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-240.96 457.46,-240.96 457.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M176.02,-94.32C158.42,-108.13 139.18,-123.24 121.74,-136.94"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="119.96,-134.78 115.4,-141.92 123.42,-139.19 119.96,-134.78"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M235,-94.32C235,-105.35 235,-117.2 235,-128.5"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="235,-136.62 231.4,-128.62 234.75,-132.62 234.75,-128.62 235,-128.62 235.25,-128.62 235.25,-132.62 238.6,-128.62 235,-136.62 235,-136.62"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M289.47,-94.32C314.03,-115.2 342.06,-139.04 362.6,-156.5"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="360.82,-158.66 368.72,-161.71 364.44,-154.39 360.82,-158.66"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="168,0 168,-94 302,-94 302,0 168,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="169,-54 169,-93 301,-93 301,-54 169,-54"/>
+<text text-anchor="start" x="229" y="-78.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="188" y="-64.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">CounterGrain</text>
+<text text-anchor="start" x="176" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">Increment(…)</text>
+<text text-anchor="start" x="176" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">EnsureReminder(…)</text>
+<text text-anchor="start" x="176" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">ReceiveReminder(…)</text>
+<polygon fill="none" stroke="#74879b" points="168,0 168,-94 302,-94 302,0 168,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-142 0,-223 130,-223 130,-142 0,-142"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-182.5 1,-221.5 129,-221.5 129,-182.5 1,-182.5"/>
+<text text-anchor="start" x="53.5" y="-206.7" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="15.5" y="-193.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ICounterGrain</text>
+<text text-anchor="start" x="8" y="-165.9" font-family="Noto Sans CJK SC" font-size="12.00">Increment(…)</text>
+<text text-anchor="start" x="8" y="-152.9" font-family="Noto Sans CJK SC" font-size="12.00">EnsureReminder(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-142 0,-223 130,-223 130,-142 0,-142"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="157.5,-137 157.5,-228 312.5,-228 312.5,-137 157.5,-137"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="159,-187.5 159,-226.5 312,-226.5 312,-187.5 159,-187.5"/>
+<text text-anchor="start" x="229.5" y="-211.7" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="189" y="-198.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">CounterState</text>
+<text text-anchor="start" x="165.5" y="-171.7" font-family="Noto Sans CJK SC" font-size="11.00">Value: int</text>
+<text text-anchor="start" x="165.5" y="-159.7" font-family="Noto Sans CJK SC" font-size="11.00">ReminderTicks: int</text>
+<text text-anchor="start" x="165.5" y="-147.7" font-family="Noto Sans CJK SC" font-size="11.00">LastUpdatedUtc: DateTime</text>
+<polygon fill="none" stroke="#74879b" points="157.5,-137 157.5,-228 312.5,-228 312.5,-137 157.5,-137"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="339.5,-162 339.5,-203 444.5,-203 444.5,-162 339.5,-162"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="341,-162.5 341,-201.5 444,-201.5 444,-162.5 341,-162.5"/>
+<text text-anchor="start" x="369.5" y="-186.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="348" y="-173.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IRemindable</text>
+<polygon fill="none" stroke="#536c9b" points="339.5,-162 339.5,-203 444.5,-203 444.5,-162 339.5,-162"/>
+</g>
+</g>
+</svg>

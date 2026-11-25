@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="681pt" height="358pt" viewBox="8.64 8.64 672.06 349.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 336.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-327.96 650.46,-327.96 650.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M121.78,-109.16C77.25,-135.57 31,-163 31,-163 31,-163 31,-231 31,-231 31,-231 38.34,-249.36 45.07,-266.18"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="42.52,-267.34 48.09,-273.72 47.72,-265.26 42.52,-267.34"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M162.21,-120.21C153.88,-132.3 145.31,-144.74 137.58,-155.97"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="132.88,-162.78 134.46,-154.15 134.94,-159.35 137.21,-156.05 137.42,-156.2 137.63,-156.34 135.36,-159.63 140.38,-158.24 132.88,-162.78 132.88,-162.78"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M243.79,-120.21C255.7,-137.5 268.12,-155.53 277.86,-169.66"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="282.41,-176.27 274.9,-171.72 279.93,-173.12 277.66,-169.82 277.87,-169.68 278.07,-169.54 280.34,-172.83 280.83,-167.64 282.41,-176.27 282.41,-176.27"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M284.34,-94.89C343.12,-119.38 420.92,-151.8 472.4,-173.25"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="479.8,-176.33 471.03,-176.58 476.01,-175.02 472.32,-173.49 472.41,-173.25 472.51,-173.02 476.2,-174.56 473.8,-169.93 479.8,-176.33 479.8,-176.33"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge5" class="edge">
+<title>n2-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M91.26,-231.13C84.67,-242.8 77.34,-255.76 71.09,-266.82"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="67.15,-273.79 67.95,-265.05 68.9,-270.18 70.87,-266.7 71.08,-266.82 71.3,-266.95 69.33,-270.43 74.22,-268.6 67.15,-273.79 67.15,-273.79"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="122,0 122,-120 284,-120 284,0 122,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="123,-80 123,-119 283,-119 283,-80 123,-80"/>
+<text text-anchor="start" x="197" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="162" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">StreamImpl</text>
+<text text-anchor="start" x="130" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">streamId: QualifiedStreamId</text>
+<text text-anchor="start" x="130" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">SubscribeAsync(…)</text>
+<text text-anchor="start" x="130" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">Cleanup(…)</text>
+<text text-anchor="start" x="130" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">OnNextAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="122,0 122,-120 284,-120 284,0 122,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-274 0,-315 112,-315 112,-274 0,-274"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-274.5 1,-313.5 111,-313.5 111,-274.5 1,-274.5"/>
+<text text-anchor="start" x="33" y="-298.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="8" y="-285.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IAsyncStream</text>
+<polygon fill="none" stroke="#536c9b" points="0,-274 0,-315 112,-315 112,-274 0,-274"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="44.5,-163 44.5,-231 175.5,-231 175.5,-163 44.5,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="46,-191 46,-230 175,-230 175,-191 46,-191"/>
+<text text-anchor="start" x="99" y="-215.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="53" y="-201.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IStreamProvider</text>
+<text text-anchor="start" x="52.5" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetStream(…)</text>
+<polygon fill="none" stroke="#536c9b" points="44.5,-163 44.5,-231 175.5,-231 175.5,-163 44.5,-163"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="202.5,-176.5 202.5,-217.5 389.5,-217.5 389.5,-176.5 202.5,-176.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="204,-177 204,-216 389,-216 389,-177 204,-177"/>
+<text text-anchor="start" x="273.5" y="-201.2" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="211" y="-187.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IInternalStreamProvider</text>
+<polygon fill="none" stroke="#536c9b" points="202.5,-176.5 202.5,-217.5 389.5,-217.5 389.5,-176.5 202.5,-176.5"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="416.5,-176.5 416.5,-217.5 637.5,-217.5 637.5,-176.5 416.5,-176.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="418,-177 418,-216 637,-216 637,-177 418,-177"/>
+<text text-anchor="start" x="504.5" y="-201.2" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="425" y="-187.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IInternalAsyncBatchObserver</text>
+<polygon fill="none" stroke="#536c9b" points="416.5,-176.5 416.5,-217.5 637.5,-217.5 637.5,-176.5 416.5,-176.5"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,65 @@
+<svg width="270pt" height="337pt"
+ viewBox="0.00 0.00 270.42 336.92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 323.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-323.96 257.46,-323.96 257.46,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#e9f0ff" stroke="transparent" points="1.5,-202.5 1.5,-224.5 168.5,-224.5 168.5,-202.5 1.5,-202.5"/>
+<text text-anchor="start" x="65.5" y="-210.7" font-family="Noto Sans CJK SC" font-size="11.00">VB 接口</text>
+<polygon fill="#e9f0ff" stroke="transparent" points="1.5,-177.5 1.5,-202.5 168.5,-202.5 168.5,-177.5 1.5,-177.5"/>
+<text text-anchor="start" x="45.5" y="-187.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IHelloGrain</text>
+<text text-anchor="start" x="6.5" y="-162.9" font-family="Noto Sans CJK SC" font-size="12.00">SayHello(greeting As String)</text>
+<text text-anchor="start" x="6.5" y="-139.9" font-family="Noto Sans CJK SC" font-size="12.00">返回 Task(Of String)</text>
+<polygon fill="none" stroke="#74879b" points="0,-131 0,-226 169,-226 169,-131 0,-131"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#e9f0ff" stroke="transparent" points="4.5,-287.5 4.5,-309.5 165.5,-309.5 165.5,-287.5 4.5,-287.5"/>
+<text text-anchor="start" x="62" y="-295.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<polygon fill="#e9f0ff" stroke="transparent" points="4.5,-262.5 4.5,-287.5 165.5,-287.5 165.5,-262.5 4.5,-262.5"/>
+<text text-anchor="start" x="9.5" y="-272.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IGrainWithIntegerKey</text>
+<polygon fill="none" stroke="#74879b" points="3,-262 3,-311 166,-311 166,-262 3,-262"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n3</title>
+<path fill="none" stroke="#405b78" d="M84.5,-226.3C84.5,-235.63 84.5,-245.22 84.5,-253.89"/>
+<polygon fill="none" stroke="#405b78" points="81.77,-254.09 84.5,-261.89 87.23,-254.09 81.77,-254.09"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#f2f4f9" stroke="transparent" points="68.5,-71.5 68.5,-93.5 235.5,-93.5 235.5,-71.5 68.5,-71.5"/>
+<text text-anchor="start" x="138" y="-79.7" font-family="Noto Sans CJK SC" font-size="11.00">VB 类</text>
+<polygon fill="#f2f4f9" stroke="transparent" points="68.5,-46.5 68.5,-71.5 235.5,-71.5 235.5,-46.5 68.5,-46.5"/>
+<text text-anchor="start" x="114.5" y="-56.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">HelloGrain</text>
+<text text-anchor="start" x="73.5" y="-31.9" font-family="Noto Sans CJK SC" font-size="12.00">SayHello(greeting As String)</text>
+<text text-anchor="start" x="73.5" y="-8.9" font-family="Noto Sans CJK SC" font-size="12.00">返回 Task(Of String)</text>
+<polygon fill="none" stroke="#74879b" points="67,0 67,-95 236,-95 236,0 67,0"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n1&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M127.31,-95.07C122.43,-104.48 117.25,-114.44 112.25,-124.06"/>
+<polygon fill="none" stroke="#405b78" points="109.83,-122.82 108.65,-131 114.67,-125.33 109.83,-122.82"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#f2f4f9" stroke="transparent" points="195.5,-179.5 195.5,-201.5 243.5,-201.5 243.5,-179.5 195.5,-179.5"/>
+<text text-anchor="start" x="202.5" y="-187.7" font-family="Noto Sans CJK SC" font-size="11.00">框架类</text>
+<polygon fill="#f2f4f9" stroke="transparent" points="195.5,-154.5 195.5,-179.5 243.5,-179.5 243.5,-154.5 195.5,-154.5"/>
+<text text-anchor="start" x="200.5" y="-164.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Grain</text>
+<polygon fill="none" stroke="#74879b" points="194.5,-154 194.5,-203 244.5,-203 244.5,-154 194.5,-154"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n1&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" d="M176.05,-95.07C185.07,-112.19 195.06,-131.14 203.18,-146.55"/>
+<polygon fill="none" stroke="#405b78" points="200.96,-148.17 207.01,-153.8 205.79,-145.63 200.96,-148.17"/>
+</g>
+</g>
+</svg>

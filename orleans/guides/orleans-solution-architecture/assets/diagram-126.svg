@@ -1,0 +1,43 @@
+<svg width="355pt" height="135pt"
+ viewBox="0.00 0.00 355.04 135.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 123.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-123.52 343.52,-123.52 343.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="5,-64 5,-112 137,-112 137,-64 5,-64"/>
+<text text-anchor="start" x="51" y="-98" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="11" y="-74.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChatRoom.Client</text>
+<polygon fill="none" stroke="#849daf" points="5,-64 5,-112 137,-112 137,-64 5,-64"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="178,-32 178,-80 332,-80 332,-32 178,-32"/>
+<text text-anchor="start" x="235" y="-66" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="184" y="-42.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChatRoom.Common</text>
+<polygon fill="none" stroke="#849daf" points="178,-32 178,-80 332,-80 332,-32 178,-32"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M137.19,-76.54C147.88,-74.66 159.09,-72.69 170.16,-70.74"/>
+<polygon fill="#405b78" stroke="#405b78" points="177.79,-69.4 170.9,-74.08 174.05,-70.06 170.3,-70.72 170.3,-70.72 170.3,-70.72 174.05,-70.06 169.71,-67.35 177.79,-69.4 177.79,-69.4"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 142,-48 142,0 0,0"/>
+<text text-anchor="start" x="51" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChatRoom.Service</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 142,-48 142,0 0,0"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M142.11,-36.33C151.35,-37.95 160.9,-39.63 170.34,-41.29"/>
+<polygon fill="#405b78" stroke="#405b78" points="177.88,-42.62 169.81,-44.67 174.14,-41.96 170.4,-41.3 170.4,-41.3 170.4,-41.3 174.14,-41.96 170.99,-37.93 177.88,-42.62 177.88,-42.62"/>
+</g>
+</g>
+</svg>

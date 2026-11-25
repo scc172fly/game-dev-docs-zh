@@ -1,0 +1,49 @@
+<svg width="403pt" height="96pt"
+ viewBox="0.00 0.00 403.04 96.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 84.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-84.52 391.52,-84.52 391.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="127,-25 127,-73 184,-73 184,-25 127,-25"/>
+<text text-anchor="start" x="136" y="-59" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="133.5" y="-35.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Grains</text>
+<polygon fill="none" stroke="#849daf" points="127,-25 127,-73 184,-73 184,-25 127,-25"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="220,0 220,-48 380,-48 380,0 220,0"/>
+<text text-anchor="start" x="280" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="226" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">HelloWorldInterfaces</text>
+<polygon fill="none" stroke="#849daf" points="220,0 220,-48 380,-48 380,0 220,0"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M184.31,-44.12C192.58,-42.67 202.1,-41 212.05,-39.25"/>
+<polygon fill="#405b78" stroke="#405b78" points="219.73,-37.91 212.83,-42.59 215.99,-38.56 212.24,-39.22 212.24,-39.22 212.24,-39.22 215.99,-38.56 211.65,-35.85 219.73,-37.91 219.73,-37.91"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 91,-48 91,0 0,0"/>
+<text text-anchor="start" x="26" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">HelloWorld</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 91,-48 91,0 0,0"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n1&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M91.05,-34.31C100.4,-36.48 110.14,-38.73 119.1,-40.8"/>
+<polygon fill="#405b78" stroke="#405b78" points="126.74,-42.57 118.56,-44.19 123.04,-41.72 119.34,-40.86 119.34,-40.86 119.34,-40.86 123.04,-41.72 120.11,-37.53 126.74,-42.57 126.74,-42.57"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n1&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M91.16,-19.42C102.82,-18.42 115.37,-17.5 127,-17 154.7,-15.8 184.91,-16.39 212.18,-17.63"/>
+<polygon fill="#405b78" stroke="#405b78" points="219.79,-17.99 212.03,-21.04 215.99,-17.81 212.2,-17.63 212.2,-17.63 212.2,-17.63 215.99,-17.81 212.36,-14.21 219.79,-17.99 219.79,-17.99"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260pt" height="306pt" viewBox="8.64 8.64 251.06 297.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 284.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-275.96 229.46,-275.96 229.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" d="M79.5,-179.13C79.5,-190.36 79.5,-202.77 79.5,-213.55"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="76.7,-213.79 79.5,-221.79 82.3,-213.79 76.7,-213.79"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n0</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M116.31,-68.3C110.92,-79.39 104.85,-91.87 99.22,-103.45"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="96.57,-102.49 95.59,-110.91 101.61,-104.94 96.57,-102.49"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" d="M148.69,-68.3C156.26,-83.86 165.16,-102.17 172.31,-116.87"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="169.86,-118.24 175.88,-124.21 174.89,-115.79 169.86,-118.24"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="32,-111 32,-179 127,-179 127,-111 32,-111"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="33.5,-139 33.5,-178 126.5,-178 126.5,-139 33.5,-139"/>
+<text text-anchor="start" x="68.5" y="-163.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="40.5" y="-149.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IHelloGrain</text>
+<text text-anchor="start" x="40" y="-122.4" font-family="Noto Sans CJK SC" font-size="12.00">SayHello(…)</text>
+<polygon fill="none" stroke="#536c9b" points="32,-111 32,-179 127,-179 127,-111 32,-111"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="87,0 87,-68 178,-68 178,0 87,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="88.5,-28 88.5,-67 177.5,-67 177.5,-28 88.5,-28"/>
+<text text-anchor="start" x="127" y="-52.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="95.5" y="-38.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">HelloGrain</text>
+<text text-anchor="start" x="95" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">SayHello(…)</text>
+<polygon fill="none" stroke="#74879b" points="87,0 87,-68 178,-68 178,0 87,0"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="154.5,-124.5 154.5,-165.5 216.5,-165.5 216.5,-124.5 154.5,-124.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="155.5,-125 155.5,-164 215.5,-164 215.5,-125 155.5,-125"/>
+<text text-anchor="start" x="162.5" y="-149.2" font-family="Noto Sans CJK SC" font-size="11.00">框架类</text>
+<text text-anchor="start" x="166.5" y="-135.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Grain</text>
+<polygon fill="none" stroke="#74879b" points="154.5,-124.5 154.5,-165.5 216.5,-165.5 216.5,-124.5 154.5,-124.5"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="0,-222 0,-263 159,-263 159,-222 0,-222"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1.5,-222.5 1.5,-261.5 158.5,-261.5 158.5,-222.5 1.5,-222.5"/>
+<text text-anchor="start" x="57" y="-246.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="8.5" y="-233.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IGrainWithStringKey</text>
+<polygon fill="none" stroke="#536c9b" points="0,-222 0,-263 159,-263 159,-222 0,-222"/>
+</g>
+</g>
+</svg>

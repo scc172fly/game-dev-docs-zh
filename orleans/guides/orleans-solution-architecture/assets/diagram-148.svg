@@ -1,0 +1,83 @@
+<svg width="402pt" height="201pt"
+ viewBox="0.00 0.00 402.04 201.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 189.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-189.52 390.52,-189.52 390.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="260,0 260,-48 379,-48 379,0 260,0"/>
+<text text-anchor="start" x="300" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="266.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainInterfaces</text>
+<polygon fill="none" stroke="#849daf" points="260,0 260,-48 379,-48 379,0 260,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="127.5,-32 127.5,-80 184.5,-80 184.5,-32 127.5,-32"/>
+<text text-anchor="start" x="136.5" y="-66" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="134" y="-42.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Grains</text>
+<polygon fill="none" stroke="#849daf" points="127.5,-32 127.5,-80 184.5,-80 184.5,-32 127.5,-32"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n1&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M184.76,-50.5C203.32,-46.82 228.55,-41.82 252.11,-37.16"/>
+<polygon fill="#405b78" stroke="#405b78" points="259.68,-35.65 252.89,-40.49 255.96,-36.39 252.23,-37.13 252.23,-37.13 252.23,-37.13 255.96,-36.39 251.56,-33.78 259.68,-35.65 259.68,-35.65"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eff4fc" stroke="transparent" points="281.5,-81 281.5,-129 357.5,-129 357.5,-81 281.5,-81"/>
+<text text-anchor="start" x="299.5" y="-115" font-family="Noto Sans CJK SC" font-size="10.00">共享工程</text>
+<text text-anchor="start" x="287.5" y="-91.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Common</text>
+<polygon fill="none" stroke="#849daf" points="281.5,-81 281.5,-129 357.5,-129 357.5,-81 281.5,-81"/>
+</g>
+<!-- n1&#45;&gt;n4 -->
+<g id="edge1" class="edge">
+<title>n1&#45;&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M184.76,-64.42C209.27,-71.86 245.43,-82.83 273.97,-91.49"/>
+<polygon fill="#405b78" stroke="#405b78" points="281.43,-93.75 273.16,-94.82 277.79,-92.65 274.16,-91.55 274.16,-91.55 274.16,-91.55 277.79,-92.65 275.15,-88.27 281.43,-93.75 281.43,-93.75"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="88,-130 88,-178 224,-178 224,-130 88,-130"/>
+<text text-anchor="start" x="136" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="94" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">NonOrleansClient</text>
+<polygon fill="none" stroke="#849daf" points="88,-130 88,-178 224,-178 224,-130 88,-130"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n2&#45;&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M224.09,-133.65C240.92,-128.54 258.57,-123.18 273.99,-118.5"/>
+<polygon fill="#405b78" stroke="#405b78" points="281.37,-116.27 275.09,-121.75 277.73,-117.37 274.1,-118.47 274.1,-118.47 274.1,-118.47 277.73,-117.37 273.1,-115.2 281.37,-116.27 281.37,-116.27"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-32 0,-80 52,-80 52,-32 0,-32"/>
+<text text-anchor="start" x="6" y="-66" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="12" y="-42.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Silo</text>
+<polygon fill="none" stroke="#849daf" points="0,-32 0,-80 52,-80 52,-32 0,-32"/>
+</g>
+<!-- n3&#45;&gt;n0 -->
+<g id="edge5" class="edge">
+<title>n3&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M52.02,-39.38C62.64,-33.27 75.46,-27.09 88,-24 142.11,-10.67 205.55,-11.84 252.16,-15.68"/>
+<polygon fill="#405b78" stroke="#405b78" points="259.79,-16.35 251.92,-19.09 256,-16.02 252.22,-15.69 252.22,-15.69 252.22,-15.69 256,-16.02 252.51,-12.28 259.79,-16.35 259.79,-16.35"/>
+</g>
+<!-- n3&#45;&gt;n1 -->
+<g id="edge6" class="edge">
+<title>n3&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M52.29,-56C71.41,-56 97.92,-56 119.22,-56"/>
+<polygon fill="#405b78" stroke="#405b78" points="127.1,-56 119.5,-59.42 123.3,-56 119.5,-56 119.5,-56 119.5,-56 123.3,-56 119.5,-52.58 127.1,-56 127.1,-56"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3&#45;&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M52.14,-72.16C62.78,-78.2 75.58,-84.45 88,-88 150.55,-105.88 226.32,-107.93 273.48,-107.03"/>
+<polygon fill="#405b78" stroke="#405b78" points="281.37,-106.85 273.85,-110.44 277.57,-106.94 273.77,-107.02 273.77,-107.02 273.77,-107.02 277.57,-106.94 273.69,-103.6 281.37,-106.85 281.37,-106.85"/>
+</g>
+</g>
+</svg>

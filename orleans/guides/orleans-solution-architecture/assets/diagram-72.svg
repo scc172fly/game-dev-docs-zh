@@ -1,0 +1,29 @@
+<svg width="395pt" height="71pt"
+ viewBox="0.00 0.00 395.04 71.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 59.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-59.52 383.52,-59.52 383.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 184,-48 184,0 0,0"/>
+<text text-anchor="start" x="72" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">BasicClustering.AppHost</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 184,-48 184,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="220,0 220,-48 372,-48 372,0 220,0"/>
+<text text-anchor="start" x="276" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="226" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">BasicClustering.Silo</text>
+<polygon fill="none" stroke="#849daf" points="220,0 220,-48 372,-48 372,0 220,0"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M184.25,-24C193.56,-24 202.98,-24 212.2,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="219.88,-24 212.28,-27.42 216.08,-24 212.28,-24 212.28,-24 212.28,-24 216.08,-24 212.28,-20.58 219.88,-24 219.88,-24"/>
+</g>
+</g>
+</svg>

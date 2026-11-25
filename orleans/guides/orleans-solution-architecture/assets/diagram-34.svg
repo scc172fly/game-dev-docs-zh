@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499pt" height="139pt" viewBox="0.00 0.00 498.92 138.92">
+<title>序列化 · JSON 集成</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 125.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-125.96 485.96,-125.96 485.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0.5,-65 0.5,-113 277.5,-113 277.5,-65 0.5,-65"/>
+<text text-anchor="start" x="119.5" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="7" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization.SystemTextJson</text>
+<polygon fill="none" stroke="#849daf" points="0.5,-65 0.5,-113 277.5,-113 277.5,-65 0.5,-65"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eef7f2" stroke="transparent" points="314,-32 314,-80 473,-80 473,-32 314,-32"/>
+<text text-anchor="start" x="374" y="-66" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="320.5" y="-42.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization</text>
+<polygon fill="none" stroke="#849daf" points="314,-32 314,-80 473,-80 473,-32 314,-32"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M277.7,-71C287.35,-69.74 296.91,-68.49 306.15,-67.29"/>
+<polygon fill="#405b78" stroke="#405b78" points="313.83,-66.28 306.83,-70.6 310.11,-66.77 306.39,-67.25 306.39,-67.25 306.39,-67.25 310.11,-66.77 305.95,-63.91 313.83,-66.28 313.83,-66.28"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 278,-48 278,0 0,0"/>
+<text text-anchor="start" x="119" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization.NewtonsoftJson</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 278,-48 278,0 0,0"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M278.07,-41.5C287.61,-42.71 297.05,-43.9 306.18,-45.06"/>
+<polygon fill="#405b78" stroke="#405b78" points="313.78,-46.02 305.91,-48.43 310.06,-45.55 306.34,-45.08 306.34,-45.08 306.34,-45.08 310.06,-45.55 306.76,-41.73 313.78,-46.02 313.78,-46.02"/>
+</g>
+</g>
+</svg>

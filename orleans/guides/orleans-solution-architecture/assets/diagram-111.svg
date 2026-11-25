@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="554pt" height="447pt" viewBox="8.64 8.64 545.06 438.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 425.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-416.96 523.46,-416.96 523.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M223.03,-94.17C205.81,-108.12 186.81,-123.51 169.22,-137.77"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="167.26,-135.76 162.8,-142.97 170.78,-140.11 167.26,-135.76"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M293.27,-94.21C309.83,-151.88 336,-243 336,-243 336,-243 341.19,-258.88 347.45,-278.05"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="349.99,-285.83 344.09,-279.35 348.51,-282.11 347.27,-278.31 347.51,-278.23 347.75,-278.15 348.99,-281.95 350.93,-277.11 349.99,-285.83 349.99,-285.83"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M266.97,-94.21C250.7,-151.88 225,-243 225,-243 225,-243 213.16,-266.44 200.9,-290.74"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="197.26,-297.93 197.65,-289.17 198.84,-294.25 200.64,-290.68 200.87,-290.79 201.09,-290.9 199.29,-294.48 204.08,-292.41 197.26,-297.93 197.26,-297.93"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M329.12,-94.17C341.71,-106.01 355.42,-118.89 368.55,-131.24"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="374.54,-136.87 366.24,-134.01 371.45,-134.31 368.54,-131.57 368.71,-131.39 368.88,-131.2 371.8,-133.94 371.18,-128.76 374.54,-136.87 374.54,-136.87"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M126.59,-237.32C134.04,-254.1 142.52,-273.18 150.23,-290.52"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="153.48,-297.84 146.94,-291.99 151.63,-294.28 150.01,-290.63 150.23,-290.53 150.46,-290.43 152.09,-294.08 153.52,-289.06 153.48,-297.84 153.48,-297.84"/>
+</g>
+<!-- n4&#45;&gt;n2 -->
+<g id="edge6" class="edge">
+<title>n4-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M409.18,-243.23C404.68,-254.52 399.86,-266.6 395.18,-278.33"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="392.13,-285.97 391.75,-277.21 393.38,-282.17 394.87,-278.45 395.1,-278.54 395.33,-278.64 393.85,-282.35 398.44,-279.88 392.13,-285.97 392.13,-285.97"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="174,0 174,-94 386,-94 386,0 174,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="175,-54 175,-93 385,-93 385,-54 175,-54"/>
+<text text-anchor="start" x="274" y="-78.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="231" y="-64.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TodoListGrain</text>
+<text text-anchor="start" x="182" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">GetHistoryAsync(…)</text>
+<text text-anchor="start" x="182" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">GetTodoListAtTimestampAsync(…)</text>
+<text text-anchor="start" x="182" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">GetTodoListAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="174,0 174,-94 386,-94 386,0 174,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-143 0,-237 212,-237 212,-143 0,-143"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-197 1,-236 211,-236 211,-197 1,-197"/>
+<text text-anchor="start" x="94.5" y="-221.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="54.5" y="-207.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ITodoListGrain</text>
+<text text-anchor="start" x="8" y="-180.4" font-family="Noto Sans CJK SC" font-size="12.00">GetTodoListAsync(…)</text>
+<text text-anchor="start" x="8" y="-167.4" font-family="Noto Sans CJK SC" font-size="12.00">GetTodoListAtTimestampAsync(…)</text>
+<text text-anchor="start" x="8" y="-154.4" font-family="Noto Sans CJK SC" font-size="12.00">AddTodoItemAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-143 0,-237 212,-237 212,-143 0,-143"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="288.5,-286 288.5,-404 449.5,-404 449.5,-286 288.5,-286"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="290,-364 290,-403 449,-403 449,-364 290,-364"/>
+<text text-anchor="start" x="352.5" y="-388.2" font-family="Noto Sans CJK SC" font-size="11.00">记录类</text>
+<text text-anchor="start" x="313.5" y="-374.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TodoItemAdded</text>
+<text text-anchor="start" x="296.5" y="-348.2" font-family="Noto Sans CJK SC" font-size="11.00">ItemId: int</text>
+<text text-anchor="start" x="296.5" y="-336.2" font-family="Noto Sans CJK SC" font-size="11.00">Timestamp: DateTimeOffset</text>
+<text text-anchor="start" x="296.5" y="-324.2" font-family="Noto Sans CJK SC" font-size="11.00">Title: string</text>
+<text text-anchor="start" x="296.5" y="-297.4" font-family="Noto Sans CJK SC" font-size="12.00">GetDescription(…)</text>
+<polygon fill="none" stroke="#74879b" points="288.5,-286 288.5,-404 449.5,-404 449.5,-286 288.5,-286"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="93.5,-298 93.5,-392 254.5,-392 254.5,-298 93.5,-298"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="95,-352 95,-391 254,-391 254,-352 95,-352"/>
+<text text-anchor="start" x="157.5" y="-376.2" font-family="Noto Sans CJK SC" font-size="11.00">记录类</text>
+<text text-anchor="start" x="124.5" y="-362.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TodoListEvent</text>
+<text text-anchor="start" x="101.5" y="-336.2" font-family="Noto Sans CJK SC" font-size="11.00">Timestamp: DateTimeOffset</text>
+<text text-anchor="start" x="101.5" y="-309.4" font-family="Noto Sans CJK SC" font-size="12.00">GetDescription(…)</text>
+<polygon fill="none" stroke="#74879b" points="93.5,-298 93.5,-392 254.5,-392 254.5,-298 93.5,-298"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="349.5,-137 349.5,-243 510.5,-243 510.5,-137 349.5,-137"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="351,-203 351,-242 510,-242 510,-203 351,-203"/>
+<text text-anchor="start" x="424.5" y="-227.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="364" y="-213.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TodoListProjection</text>
+<text text-anchor="start" x="357.5" y="-187.2" font-family="Noto Sans CJK SC" font-size="11.00">Timestamp: DateTimeOffset</text>
+<text text-anchor="start" x="357.5" y="-175.2" font-family="Noto Sans CJK SC" font-size="11.00">Name: string</text>
+<text text-anchor="start" x="357.5" y="-148.4" font-family="Noto Sans CJK SC" font-size="12.00">Apply(…)</text>
+<polygon fill="none" stroke="#74879b" points="349.5,-137 349.5,-243 510.5,-243 510.5,-137 349.5,-137"/>
+</g>
+</g>
+</svg>

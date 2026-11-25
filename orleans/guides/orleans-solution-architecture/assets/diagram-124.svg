@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390pt" height="448pt" viewBox="8.64 8.64 381.06 439.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 426.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-417.96 359.46,-417.96 359.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M90.42,-270C101.57,-285.83 114.04,-303.53 125.14,-319.29"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="129.81,-325.92 122.26,-321.45 127.3,-322.79 125,-319.52 125.2,-319.38 125.41,-319.23 127.71,-322.5 128.15,-317.3 129.81,-325.92 129.81,-325.92"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n0</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M89.03,-120.04C84.26,-135.7 79.14,-152.54 74.46,-167.93"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="71.7,-167.36 72.05,-175.83 77.06,-168.99 71.7,-167.36"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M119.73,-120.04C124.6,-142.6 129,-163 129,-163 129,-163 142.19,-257.95 150.47,-317.5"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="151.6,-325.65 146.93,-318.22 150.8,-321.72 150.25,-317.76 150.5,-317.72 150.75,-317.69 151.3,-321.65 154.07,-317.23 151.6,-325.65 151.6,-325.65"/>
+</g>
+<!-- n3&#45;&gt;n2 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M223.56,-283.18C213.62,-295.33 203.3,-307.93 193.85,-319.48"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="188.69,-325.78 190.97,-317.31 191.03,-322.53 193.56,-319.43 193.76,-319.59 193.95,-319.75 191.42,-322.85 196.54,-321.87 188.69,-325.78 188.69,-325.78"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="0,-176 0,-270 116,-270 116,-176 0,-176"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-230 1,-269 115,-269 115,-230 1,-230"/>
+<text text-anchor="start" x="46.5" y="-254.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="8" y="-240.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IChannelGrain</text>
+<text text-anchor="start" x="8" y="-213.4" font-family="Noto Sans CJK SC" font-size="12.00">Join(…)</text>
+<text text-anchor="start" x="8" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">Leave(…)</text>
+<text text-anchor="start" x="8" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">Message(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-176 0,-270 116,-270 116,-176 0,-176"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="30.5,0 30.5,-120 183.5,-120 183.5,0 30.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="32,-80 32,-119 183,-119 183,-80 32,-80"/>
+<text text-anchor="start" x="101.5" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="60" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChannelGrain</text>
+<text text-anchor="start" x="38.5" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_messages: List&lt;ChatMsg&gt;</text>
+<text text-anchor="start" x="38.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">OnActivateAsync(…)</text>
+<text text-anchor="start" x="38.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">Join(…)</text>
+<text text-anchor="start" x="38.5" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">Leave(…)</text>
+<polygon fill="none" stroke="#74879b" points="30.5,0 30.5,-120 183.5,-120 183.5,0 30.5,0"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="86,-326 86,-405 228,-405 228,-326 86,-326"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="87,-364.5 87,-403.5 227,-403.5 227,-364.5 87,-364.5"/>
+<text text-anchor="start" x="140" y="-388.7" font-family="Noto Sans CJK SC" font-size="11.00">记录类</text>
+<text text-anchor="start" x="127" y="-375.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ChatMsg</text>
+<text text-anchor="start" x="94" y="-348.7" font-family="Noto Sans CJK SC" font-size="11.00">Author: string</text>
+<text text-anchor="start" x="94" y="-336.7" font-family="Noto Sans CJK SC" font-size="11.00">Created: DateTimeOffset</text>
+<polygon fill="none" stroke="#74879b" points="86,-326 86,-405 228,-405 228,-326 86,-326"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="197.5,-163 197.5,-283 346.5,-283 346.5,-163 197.5,-163"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="199,-243 199,-282 346,-282 346,-243 199,-243"/>
+<text text-anchor="start" x="266.5" y="-267.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="215.5" y="-253.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">StreamObserver</text>
+<text text-anchor="start" x="205.5" y="-227.2" font-family="Noto Sans CJK SC" font-size="11.00">_roomName: string</text>
+<text text-anchor="start" x="205.5" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">OnCompletedAsync(…)</text>
+<text text-anchor="start" x="205.5" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">OnErrorAsync(…)</text>
+<text text-anchor="start" x="205.5" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">OnNextAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="197.5,-163 197.5,-283 346.5,-283 346.5,-163 197.5,-163"/>
+</g>
+</g>
+</svg>

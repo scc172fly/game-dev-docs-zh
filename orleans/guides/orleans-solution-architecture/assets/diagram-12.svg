@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="414pt" height="139pt" viewBox="0.00 0.00 413.92 138.92">
+<title>集群成员 · 服务发现与协调</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 125.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-125.96 400.96,-125.96 400.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="14.5,-65 14.5,-113 207.5,-113 207.5,-65 14.5,-65"/>
+<text text-anchor="start" x="91.5" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="21" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.Consul</text>
+<polygon fill="none" stroke="#849daf" points="14.5,-65 14.5,-113 207.5,-113 207.5,-65 14.5,-65"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eef7f2" stroke="transparent" points="258,-32 258,-80 388,-80 388,-32 258,-32"/>
+<text text-anchor="start" x="303" y="-66" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="264" y="-42.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="258,-32 258,-80 388,-80 388,-32 258,-32"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M207.78,-73.95C222.11,-71.7 236.67,-69.41 250.38,-67.25"/>
+<polygon fill="#405b78" stroke="#405b78" points="257.91,-66.07 251.02,-70.57 254.2,-66.65 250.5,-67.24 250.5,-67.24 250.5,-67.24 254.2,-66.65 249.98,-63.9 257.91,-66.07 257.91,-66.07"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 222,-48 222,0 0,0"/>
+<text text-anchor="start" x="91" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.ZooKeeper</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 222,-48 222,0 0,0"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M222.23,-40.8C231.74,-42.25 241.2,-43.69 250.29,-45.07"/>
+<polygon fill="#405b78" stroke="#405b78" points="257.83,-46.22 249.91,-48.43 254.12,-45.66 250.41,-45.09 250.41,-45.09 250.41,-45.09 254.12,-45.66 250.92,-41.76 257.83,-46.22 257.83,-46.22"/>
+</g>
+</g>
+</svg>

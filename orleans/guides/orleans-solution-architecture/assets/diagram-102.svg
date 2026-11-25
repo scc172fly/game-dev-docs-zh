@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700pt" height="300pt" viewBox="8.64 8.64 691.56 291.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 278.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-269.96 669.96,-269.96 669.96,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M86.5,-107.02C86.5,-122.12 86.5,-139.04 86.5,-154.7"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="83.7,-154.76 86.5,-162.76 89.3,-154.76 83.7,-154.76"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M152.11,-107.02C175.22,-123.23 201.32,-141.54 224.97,-158.13"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="231.57,-162.76 222.96,-161.11 228.15,-160.66 224.88,-158.37 225.02,-158.16 225.17,-157.96 228.44,-160.26 227.09,-155.22 231.57,-162.76 231.57,-162.76"/>
+</g>
+<!-- n3&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n3-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M442.21,-120.13C421.45,-132.88 399.69,-146.24 379.54,-158.62"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="377.83,-156.38 372.48,-162.95 380.76,-161.15 377.83,-156.38"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M534.49,-120.34C533.72,-131.73 532.92,-143.61 532.16,-154.82"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="531.62,-162.86 528.57,-154.63 531.64,-158.85 531.91,-154.86 532.16,-154.87 532.41,-154.89 532.14,-158.88 535.75,-155.12 531.62,-162.86 531.62,-162.86"/>
+</g>
+<!-- n5&#45;&gt;n2 -->
+<g id="edge5" class="edge">
+<title>n5-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M296.81,-107.02C296.91,-122.12 297.03,-139.04 297.13,-154.7"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="297.19,-162.76 293.53,-154.78 296.91,-158.76 296.88,-154.76 297.13,-154.76 297.38,-154.76 297.41,-158.76 300.73,-154.73 297.19,-162.76 297.19,-162.76"/>
+</g>
+<!-- n5&#45;&gt;n4 -->
+<g id="edge6" class="edge">
+<title>n5-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M368.63,-107.02C394.15,-123.3 423,-141.7 449.09,-158.34"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="447.76,-160.81 456.01,-162.76 450.77,-156.09 447.76,-160.81"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="0,-13 0,-107 173,-107 173,-13 0,-13"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="1.5,-67 1.5,-106 172.5,-106 172.5,-67 1.5,-67"/>
+<text text-anchor="start" x="81" y="-91.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="20" y="-77.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ShoppingCartGrain</text>
+<text text-anchor="start" x="8" y="-50.4" font-family="Noto Sans CJK SC" font-size="12.00">AddOrUpdateItemAsync(…)</text>
+<text text-anchor="start" x="8" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">EmptyCartAsync(…)</text>
+<text text-anchor="start" x="8" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAllItemsAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="0,-13 0,-107 173,-107 173,-13 0,-13"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-163 0,-257 173,-257 173,-163 0,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1.5,-217 1.5,-256 172.5,-256 172.5,-217 1.5,-217"/>
+<text text-anchor="start" x="75.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="17.5" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IShoppingCartGrain</text>
+<text text-anchor="start" x="8" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">AddOrUpdateItemAsync(…)</text>
+<text text-anchor="start" x="8" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">RemoveItemAsync(…)</text>
+<text text-anchor="start" x="8" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAllItemsAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-163 0,-257 173,-257 173,-163 0,-163"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="200,-163 200,-257 395,-257 395,-163 200,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="201.5,-217 201.5,-256 394.5,-256 394.5,-217 201.5,-217"/>
+<text text-anchor="start" x="286.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="249" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IProductGrain</text>
+<text text-anchor="start" x="208" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">TryTakeProductAsync(…)</text>
+<text text-anchor="start" x="208" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">ReturnProductAsync(…)</text>
+<text text-anchor="start" x="208" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetProductAvailabilityAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="200,-163 200,-257 395,-257 395,-163 200,-163"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="420,0 420,-120 657,-120 657,0 420,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="421.5,-80 421.5,-119 656.5,-119 656.5,-80 421.5,-80"/>
+<text text-anchor="start" x="533" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="492" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ProductGrain</text>
+<text text-anchor="start" x="428" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_product: IPersistentState&lt;ProductDetails&gt;</text>
+<text text-anchor="start" x="428" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">GetProductAvailabilityAsync(…)</text>
+<text text-anchor="start" x="428" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">GetProductDetailsAsync(…)</text>
+<text text-anchor="start" x="428" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">ReturnProductAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="420,0 420,-120 657,-120 657,0 420,0"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="432.5,-163 432.5,-257 624.5,-257 624.5,-163 432.5,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="433.5,-217 433.5,-256 623.5,-256 623.5,-217 433.5,-217"/>
+<text text-anchor="start" x="517" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="473" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IInventoryGrain</text>
+<text text-anchor="start" x="440.5" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAllProductsAsync(…)</text>
+<text text-anchor="start" x="440.5" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">AddOrUpdateProductAsync(…)</text>
+<text text-anchor="start" x="440.5" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">RemoveProductAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="432.5,-163 432.5,-257 624.5,-257 624.5,-163 432.5,-163"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="white" stroke="transparent" points="200.5,-13 200.5,-107 392.5,-107 392.5,-13 200.5,-13"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="201.5,-67 201.5,-106 391.5,-106 391.5,-67 201.5,-67"/>
+<text text-anchor="start" x="290.5" y="-91.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="243.5" y="-77.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">InventoryGrain</text>
+<text text-anchor="start" x="208.5" y="-50.4" font-family="Noto Sans CJK SC" font-size="12.00">OnActivateAsync(…)</text>
+<text text-anchor="start" x="208.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAllProductsAsync(…)</text>
+<text text-anchor="start" x="208.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">AddOrUpdateProductAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="200.5,-13 200.5,-107 392.5,-107 392.5,-13 200.5,-13"/>
+</g>
+</g>
+</svg>

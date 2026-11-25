@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="439pt" height="269pt" viewBox="0.00 0.00 438.92 268.92">
+<title>状态存储 · 云存储提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 255.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-255.96 425.96,-255.96 425.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="7.5,-195 7.5,-243 239.5,-243 239.5,-195 7.5,-195"/>
+<text text-anchor="start" x="103.5" y="-229" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="13.5" y="-205.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Persistence.DynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="7.5,-195 7.5,-243 239.5,-243 239.5,-195 7.5,-195"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="283,-97 283,-145 413,-145 413,-97 283,-97"/>
+<text text-anchor="start" x="328" y="-131" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="289" y="-107.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="283,-97 283,-145 413,-145 413,-97 283,-97"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M226.98,-194.95C233.84,-192.51 240.58,-189.86 247,-187 269,-177.19 291.55,-162.76 309.66,-149.88"/>
+<polygon fill="#405b78" stroke="#405b78" points="316.12,-145.22 312.01,-152.35 313.08,-147.42 310.04,-149.61 310.04,-149.61 310.04,-149.61 313.08,-147.42 308.06,-146.87 316.12,-145.22 316.12,-145.22"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-130 0,-178 247,-178 247,-130 0,-130"/>
+<text text-anchor="start" x="104" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Persistence.AzureStorage</text>
+<polygon fill="none" stroke="#849daf" points="0,-130 0,-178 247,-178 247,-130 0,-130"/>
+</g>
+<!-- n1&#45;&gt;n4 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M247.14,-135.81C256.74,-134.39 266.23,-132.98 275.31,-131.63"/>
+<polygon fill="#405b78" stroke="#405b78" points="282.84,-130.52 275.92,-134.95 279.13,-131.07 275.42,-131.62 275.42,-131.62 275.42,-131.62 279.13,-131.07 274.93,-128.28 282.84,-130.52 282.84,-130.52"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="19.5,-65 19.5,-113 227.5,-113 227.5,-65 19.5,-65"/>
+<text text-anchor="start" x="103.5" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="25.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Persistence.Cosmos</text>
+<polygon fill="none" stroke="#849daf" points="19.5,-65 19.5,-113 227.5,-113 227.5,-65 19.5,-65"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M227.61,-103.83C243.68,-106.14 259.97,-108.48 275.15,-110.67"/>
+<polygon fill="#405b78" stroke="#405b78" points="282.97,-111.79 275.07,-114.06 279.26,-111.26 275.55,-110.72 275.55,-110.72 275.55,-110.72 279.26,-111.26 276.03,-107.38 282.97,-111.79 282.97,-111.79"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="15,0 15,-48 232,-48 232,0 15,0"/>
+<text text-anchor="start" x="104" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="21.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Persistence.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="15,0 15,-48 232,-48 232,0 15,0"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M224.02,-48.01C231.9,-50.76 239.65,-53.75 247,-57 268.32,-66.43 290.33,-80.02 308.24,-92.25"/>
+<polygon fill="#405b78" stroke="#405b78" points="314.65,-96.69 306.57,-95.19 311.57,-94.55 308.49,-92.42 308.49,-92.42 308.49,-92.42 311.57,-94.55 310.41,-89.64 314.65,-96.69 314.65,-96.69"/>
+</g>
+</g>
+</svg>

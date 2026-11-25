@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334pt" height="74pt" viewBox="0.00 0.00 333.92 73.92">
+<title>流 · 流运行时</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 60.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-60.96 320.96,-60.96 320.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 142,-48 142,0 0,0"/>
+<text text-anchor="start" x="51" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Streaming</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 142,-48 142,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eef7f2" stroke="transparent" points="178,0 178,-48 308,-48 308,0 178,0"/>
+<text text-anchor="start" x="223" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="184" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="178,0 178,-48 308,-48 308,0 178,0"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M142.13,-24C151.34,-24 160.8,-24 170.05,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="177.76,-24 170.26,-27.38 174.01,-24 170.26,-24 170.26,-24 170.26,-24 174.01,-24 170.26,-20.63 177.76,-24 177.76,-24"/>
+</g>
+</g>
+</svg>

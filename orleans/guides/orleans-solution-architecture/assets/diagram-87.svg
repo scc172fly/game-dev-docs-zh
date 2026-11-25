@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="547pt" height="300pt" viewBox="8.64 8.64 538.06 291.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 278.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-269.96 516.46,-269.96 516.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M92,-120.34C92,-141.3 92,-163.89 92,-181.02"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="92,-189.44 88.4,-181.44 91.75,-185.44 91.75,-181.44 92,-181.44 92.25,-181.44 92.25,-185.44 95.6,-181.44 92,-189.44 92,-189.44"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M275.8,-120.34C275.57,-131.73 275.33,-143.61 275.1,-154.82"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="274.94,-162.86 271.5,-154.79 274.77,-158.85 274.85,-154.85 275.1,-154.86 275.35,-154.86 275.27,-158.86 278.7,-154.93 274.94,-162.86 274.94,-162.86"/>
+</g>
+<!-- n2&#45;&gt;n5 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n5</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M337.15,-120.34C349.47,-132.51 362.36,-145.22 374.4,-157.1"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="380.23,-162.86 372.01,-159.8 377.21,-160.23 374.36,-157.42 374.54,-157.24 374.71,-157.06 377.56,-159.87 377.07,-154.68 380.23,-162.86 380.23,-162.86"/>
+</g>
+<!-- n4&#45;&gt;n3 -->
+<g id="edge4" class="edge">
+<title>n4-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M377.36,-107.02C361.35,-122.81 343.32,-140.6 326.86,-156.85"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="324.6,-155.14 320.87,-162.76 328.53,-159.13 324.6,-155.14"/>
+</g>
+<!-- n4&#45;&gt;n5 -->
+<g id="edge5" class="edge">
+<title>n4-&gt;n5</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M424.93,-107.02C425.24,-122.12 425.58,-139.04 425.9,-154.7"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="426.06,-162.76 422.3,-154.83 425.73,-158.76 425.65,-154.76 425.9,-154.76 426.15,-154.75 426.23,-158.75 429.5,-154.69 426.06,-162.76 426.06,-162.76"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="0,0 0,-120 184,-120 184,0 0,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="1,-80 1,-119 183,-119 183,-80 1,-80"/>
+<text text-anchor="start" x="86" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="55" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ApiService</text>
+<text text-anchor="start" x="8" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_options: ApiServiceOptions</text>
+<text text-anchor="start" x="8" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">GetWeatherForecastAsync(…)</text>
+<text text-anchor="start" x="8" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">GetTodosAsync(…)</text>
+<text text-anchor="start" x="8" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">SetTodoAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="0,0 0,-120 184,-120 184,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="47.5,-189.5 47.5,-230.5 136.5,-230.5 136.5,-189.5 47.5,-189.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="49,-190 49,-229 136,-229 136,-190 49,-190"/>
+<text text-anchor="start" x="69.5" y="-214.2" font-family="Noto Sans CJK SC" font-size="11.00">.NET 类</text>
+<text text-anchor="start" x="56" y="-200.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">HttpClient</text>
+<polygon fill="none" stroke="#74879b" points="47.5,-189.5 47.5,-230.5 136.5,-230.5 136.5,-189.5 47.5,-189.5"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="211.5,0 211.5,-120 342.5,-120 342.5,0 211.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="213,-80 213,-119 342,-119 342,-80 213,-80"/>
+<text text-anchor="start" x="271.5" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="224.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TodoController</text>
+<text text-anchor="start" x="219.5" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_factory: IGrainFactory</text>
+<text text-anchor="start" x="219.5" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAsync(…)</text>
+<text text-anchor="start" x="219.5" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">DeleteAsync(…)</text>
+<text text-anchor="start" x="219.5" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">ListAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="211.5,0 211.5,-120 342.5,-120 342.5,0 211.5,0"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="225,-163 225,-257 323,-257 323,-163 225,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="226,-217 226,-256 322,-256 322,-217 226,-217"/>
+<text text-anchor="start" x="262.5" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="235.5" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ITodoGrain</text>
+<text text-anchor="start" x="233" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">SetAsync(…)</text>
+<text text-anchor="start" x="233" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">ClearAsync(…)</text>
+<text text-anchor="start" x="233" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="225,-163 225,-257 323,-257 323,-163 225,-163"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="375,-13 375,-107 473,-107 473,-13 375,-13"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="376,-67 376,-106 472,-106 472,-67 376,-67"/>
+<text text-anchor="start" x="418" y="-91.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="387.5" y="-77.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">TodoGrain</text>
+<text text-anchor="start" x="383" y="-50.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAsync(…)</text>
+<text text-anchor="start" x="383" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">SetAsync(…)</text>
+<text text-anchor="start" x="383" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">ClearAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="375,-13 375,-107 473,-107 473,-13 375,-13"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="white" stroke="transparent" points="350.5,-163 350.5,-257 503.5,-257 503.5,-163 350.5,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="352,-217 352,-256 503,-256 503,-217 352,-217"/>
+<text text-anchor="start" x="416" y="-241.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="359" y="-227.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ITodoManagerGrain</text>
+<text text-anchor="start" x="358.5" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">RegisterAsync(…)</text>
+<text text-anchor="start" x="358.5" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">UnregisterAsync(…)</text>
+<text text-anchor="start" x="358.5" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAllAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="350.5,-163 350.5,-257 503.5,-257 503.5,-163 350.5,-163"/>
+</g>
+</g>
+</svg>

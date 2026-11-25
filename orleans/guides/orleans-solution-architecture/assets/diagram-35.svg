@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="476pt" height="204pt" viewBox="0.00 0.00 475.92 203.92">
+<title>序列化 · F# 类型与二进制格式</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 190.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-190.96 462.96,-190.96 462.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="21.5,-130 21.5,-178 233.5,-178 233.5,-130 21.5,-130"/>
+<text text-anchor="start" x="107.5" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="27.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization.FSharp</text>
+<polygon fill="none" stroke="#849daf" points="21.5,-130 21.5,-178 233.5,-178 233.5,-130 21.5,-130"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="291,-65 291,-113 450,-113 450,-65 291,-65"/>
+<text text-anchor="start" x="351" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="297.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization</text>
+<polygon fill="none" stroke="#849daf" points="291,-65 291,-113 450,-113 450,-65 291,-65"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M224.94,-129.95C235.1,-127.32 245.27,-124.63 255,-122 264.23,-119.5 273.86,-116.83 283.44,-114.13"/>
+<polygon fill="#405b78" stroke="#405b78" points="290.76,-112.06 284.46,-117.35 287.15,-113.08 283.54,-114.1 283.54,-114.1 283.54,-114.1 287.15,-113.08 282.62,-110.86 290.76,-112.06 290.76,-112.06"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-65 0,-113 255,-113 255,-65 0,-65"/>
+<text text-anchor="start" x="108" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization.MessagePack</text>
+<polygon fill="none" stroke="#849daf" points="0,-65 0,-113 255,-113 255,-65 0,-65"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M255.35,-89C264.74,-89 274.08,-89 283.14,-89"/>
+<polygon fill="#405b78" stroke="#405b78" points="290.68,-89 283.18,-92.38 286.93,-89 283.18,-89 283.18,-89 283.18,-89 286.93,-89 283.18,-85.63 290.68,-89 290.68,-89"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="15,0 15,-48 240,-48 240,0 15,0"/>
+<text text-anchor="start" x="108" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="21.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Serialization.Protobuf</text>
+<polygon fill="none" stroke="#849daf" points="15,0 15,-48 240,-48 240,0 15,0"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M221.47,-48.06C232.77,-51.04 244.15,-54.07 255,-57 264.21,-59.49 273.83,-62.12 283.4,-64.76"/>
+<polygon fill="#405b78" stroke="#405b78" points="290.71,-66.79 282.58,-68.04 287.1,-65.79 283.48,-64.79 283.48,-64.79 283.48,-64.79 287.1,-65.79 284.38,-61.53 290.71,-66.79 290.71,-66.79"/>
+</g>
+</g>
+</svg>

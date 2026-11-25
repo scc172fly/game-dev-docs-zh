@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="537pt" height="410pt" viewBox="8.64 8.64 528.56 401.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 388.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-379.96 506.96,-379.96 506.96,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M94,-120.04C94,-137.77 94,-157.01 94,-173.95"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="91.2,-174.06 94,-182.06 96.8,-174.06 91.2,-174.06"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M304.37,-113.79C295.58,-138.68 287,-163 287,-163 287,-163 287,-283 287,-283 287,-283 299.26,-301.69 310.37,-318.63"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="308.3,-320.57 315.03,-325.72 312.98,-317.5 308.3,-320.57"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M347.23,-113.72C353.31,-126.95 359.92,-141.32 366.27,-155.14"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="369.77,-162.75 363.16,-156.99 367.87,-159.22 366.2,-155.59 366.43,-155.48 366.65,-155.38 368.33,-159.01 369.7,-153.98 369.77,-162.75 369.77,-162.75"/>
+</g>
+<!-- n4&#45;&gt;n3 -->
+<g id="edge4" class="edge">
+<title>n4-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M363.31,-283.33C356.26,-295.74 349.17,-308.22 343.21,-318.72"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="339.09,-325.98 339.91,-317.24 340.84,-322.38 342.82,-318.9 343.04,-319.02 343.25,-319.15 341.28,-322.62 346.17,-320.8 339.09,-325.98 339.09,-325.98"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="0,0 0,-120 188,-120 188,0 0,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="1,-80 1,-119 187,-119 187,-80 1,-80"/>
+<text text-anchor="start" x="88" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="43.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ProducerGrain</text>
+<text text-anchor="start" x="8" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">_logger: ILogger&lt;IProducerGrain&gt;</text>
+<text text-anchor="start" x="8" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">StartProducing(…)</text>
+<text text-anchor="start" x="8" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">TimerTick(…)</text>
+<text text-anchor="start" x="8" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">StopProducing(…)</text>
+<polygon fill="none" stroke="#74879b" points="0,0 0,-120 188,-120 188,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="33,-182.5 33,-263.5 155,-263.5 155,-182.5 33,-182.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="34,-223 34,-262 154,-262 154,-223 34,-223"/>
+<text text-anchor="start" x="82.5" y="-247.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="41" y="-233.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IProducerGrain</text>
+<text text-anchor="start" x="41" y="-206.4" font-family="Noto Sans CJK SC" font-size="12.00">StartProducing(…)</text>
+<text text-anchor="start" x="41" y="-193.4" font-family="Noto Sans CJK SC" font-size="12.00">StopProducing(…)</text>
+<polygon fill="none" stroke="#536c9b" points="33,-182.5 33,-263.5 155,-263.5 155,-182.5 33,-182.5"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="226,-6.5 226,-113.5 420,-113.5 420,-6.5 226,-6.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="227,-73 227,-112 419,-112 419,-73 227,-73"/>
+<text text-anchor="start" x="317" y="-97.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="268.5" y="-83.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ConsumerGrain</text>
+<text text-anchor="start" x="234" y="-57.2" font-family="Noto Sans CJK SC" font-size="11.00">_logger: ILogger&lt;IConsumerGrain&gt;</text>
+<text text-anchor="start" x="234" y="-30.4" font-family="Noto Sans CJK SC" font-size="12.00">OnSubscribed(…)</text>
+<text text-anchor="start" x="234" y="-17.4" font-family="Noto Sans CJK SC" font-size="12.00">OnActivateAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="226,-6.5 226,-113.5 420,-113.5 420,-6.5 226,-6.5"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="263.5,-326 263.5,-367 392.5,-367 392.5,-326 263.5,-326"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="265,-326.5 265,-365.5 392,-365.5 392,-326.5 265,-326.5"/>
+<text text-anchor="start" x="317" y="-350.7" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="272" y="-337.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IConsumerGrain</text>
+<polygon fill="none" stroke="#536c9b" points="263.5,-326 263.5,-367 392.5,-367 392.5,-326 263.5,-326"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="300,-163 300,-283 494,-283 494,-163 300,-163"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="301,-243 301,-282 493,-282 493,-243 301,-243"/>
+<text text-anchor="start" x="391" y="-267.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="341" y="-253.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">LoggerObserver</text>
+<text text-anchor="start" x="308" y="-227.2" font-family="Noto Sans CJK SC" font-size="11.00">_logger: ILogger&lt;IConsumerGrain&gt;</text>
+<text text-anchor="start" x="308" y="-200.4" font-family="Noto Sans CJK SC" font-size="12.00">OnCompletedAsync(…)</text>
+<text text-anchor="start" x="308" y="-187.4" font-family="Noto Sans CJK SC" font-size="12.00">OnErrorAsync(…)</text>
+<text text-anchor="start" x="308" y="-174.4" font-family="Noto Sans CJK SC" font-size="12.00">OnNextAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="300,-163 300,-283 494,-283 494,-163 300,-163"/>
+</g>
+</g>
+</svg>

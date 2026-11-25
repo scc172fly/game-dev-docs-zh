@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="602pt" height="285pt" viewBox="8.64 8.64 593.06 276.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 263.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-254.96 571.46,-254.96 571.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M190.26,-120.18C161.82,-140.16 131.63,-161.37 109.21,-177.11"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="102.52,-181.82 106.99,-174.27 105.65,-179.31 108.92,-177.01 109.06,-177.22 109.21,-177.42 105.93,-179.72 111.13,-180.16 102.52,-181.82 102.52,-181.82"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M274.5,-120.18C274.5,-131.65 274.5,-143.53 274.5,-154.55"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="274.5,-162.78 270.9,-154.78 274.25,-158.78 274.25,-154.78 274.5,-154.78 274.75,-154.78 274.75,-158.78 278.1,-154.78 274.5,-162.78 274.5,-162.78"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M360.84,-120.18C390,-140.16 420.94,-161.37 443.92,-177.11"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="450.78,-181.82 442.15,-180.26 447.34,-179.76 444.04,-177.5 444.18,-177.29 444.32,-177.09 447.62,-179.35 446.22,-174.33 450.78,-181.82 450.78,-181.82"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="176,0 176,-120 373,-120 373,0 176,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="177.5,-80 177.5,-119 372.5,-119 372.5,-80 177.5,-80"/>
+<text text-anchor="start" x="269" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="198.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ExternalScalerService</text>
+<text text-anchor="start" x="184" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">OrleansClusterClient: IClusterClient</text>
+<text text-anchor="start" x="184" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">GetMetrics(…)</text>
+<text text-anchor="start" x="184" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">GetMetricSpec(…)</text>
+<text text-anchor="start" x="184" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">StreamIsActive(…)</text>
+<polygon fill="none" stroke="#74879b" points="176,0 176,-120 373,-120 373,0 176,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-182 0,-223 149,-223 149,-182 0,-182"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1.5,-182.5 1.5,-221.5 148.5,-221.5 148.5,-182.5 1.5,-182.5"/>
+<text text-anchor="start" x="52" y="-206.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="8.5" y="-193.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IManagementGrain</text>
+<polygon fill="none" stroke="#536c9b" points="0,-182 0,-223 149,-223 149,-182 0,-182"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="176,-163 176,-242 373,-242 373,-163 176,-163"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="177.5,-201.5 177.5,-240.5 372.5,-240.5 372.5,-201.5 177.5,-201.5"/>
+<text text-anchor="start" x="263.5" y="-225.7" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="184.5" y="-212.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainSaturationSummary</text>
+<text text-anchor="start" x="184" y="-185.7" font-family="Noto Sans CJK SC" font-size="11.00">GrainCount: long</text>
+<text text-anchor="start" x="184" y="-173.7" font-family="Noto Sans CJK SC" font-size="11.00">SiloCount: long</text>
+<polygon fill="none" stroke="#618574" points="176,-163 176,-242 373,-242 373,-163 176,-163"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="400.5,-182 400.5,-223 558.5,-223 558.5,-182 400.5,-182"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="401.5,-182.5 401.5,-221.5 557.5,-221.5 557.5,-182.5 401.5,-182.5"/>
+<text text-anchor="start" x="456.5" y="-206.7" font-family="Noto Sans CJK SC" font-size="11.00">示例协议</text>
+<text text-anchor="start" x="408.5" y="-193.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GetMetricsResponse</text>
+<polygon fill="none" stroke="#74879b" points="400.5,-182 400.5,-223 558.5,-223 558.5,-182 400.5,-182"/>
+</g>
+</g>
+</svg>

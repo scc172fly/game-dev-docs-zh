@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="406pt" height="139pt" viewBox="0.00 0.00 405.92 138.92">
+<title>生成器、分析器与构建 · 编译期分析器与契约</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 125.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-125.96 392.96,-125.96 392.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="244,0 244,-48 380,-48 380,0 244,0"/>
+<text text-anchor="start" x="292" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="250" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Analyzers</text>
+<polygon fill="none" stroke="#849daf" points="244,0 244,-48 380,-48 380,0 244,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 208,-48 208,0 0,0"/>
+<text text-anchor="start" x="84" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Analyzers.Contracts</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 208,-48 208,0 0,0"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge1" class="edge">
+<title>n1-&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M208.3,-24C217.71,-24 227.12,-24 236.21,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="243.77,-24 236.27,-27.38 240.02,-24 236.27,-24 236.27,-24 236.27,-24 240.02,-24 236.27,-20.63 243.77,-24 243.77,-24"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="6,-65 6,-113 202,-113 202,-65 6,-65"/>
+<text text-anchor="start" x="84" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="12" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Durable.Analyzers</text>
+<polygon fill="none" stroke="#849daf" points="6,-65 6,-113 202,-113 202,-65 6,-65"/>
+</g>
+</g>
+</svg>

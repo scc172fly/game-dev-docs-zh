@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="389pt" height="204pt" viewBox="0.00 0.00 388.92 203.92">
+<title>运行时与宿主 · 客户端与服务端入口包</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 190.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-190.96 375.96,-190.96 375.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="2,-130 2,-178 114,-178 114,-130 2,-130"/>
+<text text-anchor="start" x="38" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="8" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Client</text>
+<polygon fill="none" stroke="#849daf" points="2,-130 2,-178 114,-178 114,-130 2,-130"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eef7f2" stroke="transparent" points="209,-130 209,-178 306,-178 306,-130 209,-130"/>
+<text text-anchor="start" x="238" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="215.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Sdk</text>
+<polygon fill="none" stroke="#849daf" points="209,-130 209,-178 306,-178 306,-130 209,-130"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M114.01,-154C141.24,-154 174.03,-154 201.29,-154"/>
+<polygon fill="#405b78" stroke="#405b78" points="208.82,-154 201.32,-157.38 205.07,-154 201.32,-154 201.32,-154 201.32,-154 205.07,-154 201.32,-150.63 208.82,-154 208.82,-154"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-65 0,-113 116,-113 116,-65 0,-65"/>
+<text text-anchor="start" x="38" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Server</text>
+<polygon fill="none" stroke="#849daf" points="0,-65 0,-113 116,-113 116,-65 0,-65"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge4" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M116.41,-109.82C128.15,-113.95 140.45,-118.18 152,-122 168.01,-127.29 185.51,-132.76 201.52,-137.66"/>
+<polygon fill="#405b78" stroke="#405b78" points="208.76,-139.86 200.6,-140.91 205.17,-138.77 201.59,-137.68 201.59,-137.68 201.59,-137.68 205.17,-138.77 202.57,-134.45 208.76,-139.86 208.76,-139.86"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="152,-65 152,-113 363,-113 363,-65 152,-65"/>
+<text text-anchor="start" x="238" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="158.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Persistence.Memory</text>
+<polygon fill="none" stroke="#849daf" points="152,-65 152,-113 363,-113 363,-65 152,-65"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M116.13,-89C125.02,-89 134.48,-89 144.1,-89"/>
+<polygon fill="#405b78" stroke="#405b78" points="151.86,-89 144.36,-92.38 148.11,-89 144.36,-89 144.36,-89 144.36,-89 148.11,-89 144.36,-85.63 151.86,-89 151.86,-89"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="192.5,0 192.5,-48 322.5,-48 322.5,0 192.5,0"/>
+<text text-anchor="start" x="237.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="198.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="192.5,0 192.5,-48 322.5,-48 322.5,0 192.5,0"/>
+</g>
+<!-- n1&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n1-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M116.47,-68.97C128.21,-64.95 140.49,-60.8 152,-57 162.67,-53.48 173.98,-49.83 185.07,-46.29"/>
+<polygon fill="#405b78" stroke="#405b78" points="192.31,-43.99 186.19,-49.48 188.74,-45.12 185.16,-46.26 185.16,-46.26 185.16,-46.26 188.74,-45.12 184.14,-43.04 192.31,-43.99 192.31,-43.99"/>
+</g>
+</g>
+</svg>

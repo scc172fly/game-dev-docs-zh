@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="598pt" height="247pt" viewBox="8.64 8.64 589.06 238.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 225.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-216.96 567.46,-216.96 567.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M182.9,-120.15C157.99,-133.91 132.87,-147.78 112.68,-158.93"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="111.12,-156.59 105.47,-162.91 113.83,-161.49 111.12,-156.59"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" d="M255.82,-120.33C248.6,-132.86 241.34,-145.47 235.25,-156.02"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="232.81,-154.65 231.25,-162.98 237.67,-157.44 232.81,-154.65"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M324.67,-120.33C331.99,-132.86 339.36,-145.47 345.53,-156.02"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="349.59,-162.98 342.45,-157.89 347.36,-159.65 345.34,-156.2 345.56,-156.07 345.77,-155.95 347.79,-159.4 348.66,-154.26 349.59,-162.98 349.59,-162.98"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M393.21,-120.15C417.21,-133.91 441.41,-147.78 460.87,-158.93"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="467.82,-162.91 459.09,-162.06 464.23,-161.14 460.76,-159.15 460.88,-158.93 461,-158.72 464.47,-160.71 462.67,-155.81 467.82,-162.91 467.82,-162.91"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="148,0 148,-120 432,-120 432,0 148,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="149,-80 149,-119 431,-119 431,-80 149,-80"/>
+<text text-anchor="start" x="284" y="-104.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="211.5" y="-90.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">LocalReminderService</text>
+<text text-anchor="start" x="156" y="-64.2" font-family="Noto Sans CJK SC" font-size="11.00">InitialReadRetryCountBeforeFastFailForUpdates: int</text>
+<text text-anchor="start" x="156" y="-37.4" font-family="Noto Sans CJK SC" font-size="12.00">StartReminderTable(…)</text>
+<text text-anchor="start" x="156" y="-24.4" font-family="Noto Sans CJK SC" font-size="12.00">StartReminderTableCoreAsync(…)</text>
+<text text-anchor="start" x="156" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">StopReminderTable(…)</text>
+<polygon fill="none" stroke="#74879b" points="148,0 148,-120 432,-120 432,0 148,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-163 0,-204 140,-204 140,-163 0,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-163.5 1,-202.5 139,-202.5 139,-163.5 1,-163.5"/>
+<text text-anchor="start" x="47" y="-187.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="8" y="-174.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IReminderService</text>
+<polygon fill="none" stroke="#536c9b" points="0,-163 0,-204 140,-204 140,-163 0,-163"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="167.5,-163 167.5,-204 272.5,-204 272.5,-163 167.5,-163"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="169,-163.5 169,-202.5 272,-202.5 272,-163.5 169,-163.5"/>
+<text text-anchor="start" x="197.5" y="-187.7" font-family="Noto Sans CJK SC" font-size="11.00">框架类</text>
+<text text-anchor="start" x="176" y="-174.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainService</text>
+<polygon fill="none" stroke="#74879b" points="167.5,-163 167.5,-204 272.5,-204 272.5,-163 167.5,-163"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="300,-163 300,-204 422,-204 422,-163 300,-163"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="301,-163.5 301,-202.5 421,-202.5 421,-163.5 301,-163.5"/>
+<text text-anchor="start" x="338" y="-187.7" font-family="Noto Sans CJK SC" font-size="11.00">框架类</text>
+<text text-anchor="start" x="308" y="-174.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ReminderEntry</text>
+<polygon fill="none" stroke="#74879b" points="300,-163 300,-204 422,-204 422,-163 300,-163"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="449.5,-163 449.5,-204 554.5,-204 554.5,-163 449.5,-163"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="451,-163.5 451,-202.5 554,-202.5 554,-163.5 451,-163.5"/>
+<text text-anchor="start" x="479.5" y="-187.7" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="458" y="-174.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IRemindable</text>
+<polygon fill="none" stroke="#536c9b" points="449.5,-163 449.5,-204 554.5,-204 554.5,-163 449.5,-163"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,63 @@
+<svg width="547pt" height="169pt"
+ viewBox="0.00 0.00 547.04 169.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 157.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-157.52 535.52,-157.52 535.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="167.5,-98 167.5,-146 294.5,-146 294.5,-98 167.5,-98"/>
+<text text-anchor="start" x="211.5" y="-132" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="174" y="-108.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AdventureClient</text>
+<polygon fill="none" stroke="#849daf" points="167.5,-98 167.5,-146 294.5,-146 294.5,-98 167.5,-98"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="332,-49 332,-97 524,-97 524,-49 332,-49"/>
+<text text-anchor="start" x="408" y="-83" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="338" y="-59.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AdventureGrainInterfaces</text>
+<polygon fill="none" stroke="#849daf" points="332,-49 332,-97 524,-97 524,-49 332,-49"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M294.5,-106.29C304.1,-103.88 314.21,-101.34 324.4,-98.78"/>
+<polygon fill="#405b78" stroke="#405b78" points="331.82,-96.92 325.28,-102.09 328.13,-97.84 324.45,-98.77 324.45,-98.77 324.45,-98.77 328.13,-97.84 323.62,-95.45 331.82,-96.92 331.82,-96.92"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="166,0 166,-48 296,-48 296,0 166,0"/>
+<text text-anchor="start" x="211" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="172" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AdventureGrains</text>
+<polygon fill="none" stroke="#849daf" points="166,0 166,-48 296,-48 296,0 166,0"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M296.12,-40.11C305.14,-42.38 314.6,-44.76 324.12,-47.15"/>
+<polygon fill="#405b78" stroke="#405b78" points="331.77,-49.07 323.56,-50.53 328.08,-48.14 324.4,-47.22 324.4,-47.22 324.4,-47.22 328.08,-48.14 325.23,-43.9 331.77,-49.07 331.77,-49.07"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-24 0,-72 130,-72 130,-24 0,-24"/>
+<text text-anchor="start" x="45" y="-58" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-34.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AdventureServer</text>
+<polygon fill="none" stroke="#849daf" points="0,-24 0,-72 130,-72 130,-24 0,-24"/>
+</g>
+<!-- n3&#45;&gt;n1 -->
+<g id="edge3" class="edge">
+<title>n3&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M130.01,-53.26C141.97,-54.21 154.36,-55.16 166,-56 218.12,-59.78 276.14,-63.6 324.2,-66.66"/>
+<polygon fill="#405b78" stroke="#405b78" points="331.83,-67.14 324.03,-70.07 328.04,-66.9 324.25,-66.66 324.25,-66.66 324.25,-66.66 328.04,-66.9 324.46,-63.25 331.83,-67.14 331.83,-67.14"/>
+</g>
+<!-- n3&#45;&gt;n2 -->
+<g id="edge4" class="edge">
+<title>n3&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M130.35,-38.58C139.46,-37.25 148.88,-35.87 158.12,-34.52"/>
+<polygon fill="#405b78" stroke="#405b78" points="165.84,-33.39 158.81,-37.87 162.08,-33.94 158.32,-34.49 158.32,-34.49 158.32,-34.49 162.08,-33.94 157.82,-31.11 165.84,-33.39 165.84,-33.39"/>
+</g>
+</g>
+</svg>

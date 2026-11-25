@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="364pt" height="74pt" viewBox="0.00 0.00 363.92 73.92">
+<title>事件溯源 · 日志式 Grain 与一致性适配器</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 60.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-60.96 350.96,-60.96 350.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 172,-48 172,0 0,0"/>
+<text text-anchor="start" x="66" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.EventSourcing</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 172,-48 172,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eef7f2" stroke="transparent" points="208,0 208,-48 338,-48 338,0 208,0"/>
+<text text-anchor="start" x="253" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="214" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="208,0 208,-48 338,-48 338,0 208,0"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M172.19,-24C181.6,-24 191.11,-24 200.33,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="208,-24 200.5,-27.38 204.25,-24 200.5,-24 200.5,-24 200.5,-24 204.25,-24 200.5,-20.63 208,-24 208,-24"/>
+</g>
+</g>
+</svg>

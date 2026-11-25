@@ -1,0 +1,49 @@
+<svg width="767pt" height="95pt"
+ viewBox="0.00 0.00 767.04 95.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 83.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-83.52 755.52,-83.52 755.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="485,-24 485,-72 744,-72 744,-24 485,-24"/>
+<text text-anchor="start" x="595" y="-58" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="491.5" y="-34.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.ShoppingCart.Abstractions</text>
+<polygon fill="none" stroke="#849daf" points="485,-24 485,-72 744,-72 744,-24 485,-24"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="234,0 234,-48 449,-48 449,0 234,0"/>
+<text text-anchor="start" x="322" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="240.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.ShoppingCart.Grains</text>
+<polygon fill="none" stroke="#849daf" points="234,0 234,-48 449,-48 449,0 234,0"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge1" class="edge">
+<title>n1&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M449.22,-33.45C458.36,-34.26 467.68,-35.09 477.01,-35.91"/>
+<polygon fill="#405b78" stroke="#405b78" points="484.85,-36.61 476.98,-39.34 481.07,-36.27 477.28,-35.94 477.28,-35.94 477.28,-35.94 481.07,-36.27 477.58,-32.53 484.85,-36.61 484.85,-36.61"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-24 0,-72 198,-72 198,-24 0,-24"/>
+<text text-anchor="start" x="79" y="-58" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-34.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.ShoppingCart.Silo</text>
+<polygon fill="none" stroke="#849daf" points="0,-24 0,-72 198,-72 198,-24 0,-24"/>
+</g>
+<!-- n2&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M198.04,-54.53C210.14,-55.14 222.35,-55.65 234,-56 329.51,-58.85 353.47,-58.32 449,-56 458.13,-55.78 467.55,-55.49 477.04,-55.15"/>
+<polygon fill="#405b78" stroke="#405b78" points="484.66,-54.86 477.19,-58.56 480.86,-55.01 477.06,-55.15 477.06,-55.15 477.06,-55.15 480.86,-55.01 476.94,-51.73 484.66,-54.86 484.66,-54.86"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge3" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M198.17,-38.2C207.3,-37.29 216.61,-36.36 225.87,-35.44"/>
+<polygon fill="#405b78" stroke="#405b78" points="233.64,-34.66 226.42,-38.82 229.86,-35.04 226.08,-35.42 226.08,-35.42 226.08,-35.42 229.86,-35.04 225.74,-32.02 233.64,-34.66 233.64,-34.66"/>
+</g>
+</g>
+</svg>

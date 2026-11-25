@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640pt" height="219pt" viewBox="0.00 0.00 639.92 218.92">
+<title>提醒 · 提醒服务与数据库提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 205.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-205.96 626.96,-205.96 626.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="238,-65 238,-113 383,-113 383,-65 238,-65"/>
+<text text-anchor="start" x="291" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="244.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders</text>
+<polygon fill="none" stroke="#849daf" points="238,-65 238,-113 383,-113 383,-65 238,-65"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="451.5,-130 451.5,-178 581.5,-178 581.5,-130 451.5,-130"/>
+<text text-anchor="start" x="496.5" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="457.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="451.5,-130 451.5,-178 581.5,-178 581.5,-130 451.5,-130"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M383.14,-111.83C402.87,-118.11 424.27,-124.93 444,-131.22"/>
+<polygon fill="#405b78" stroke="#405b78" points="451.18,-133.51 443.01,-134.45 447.61,-132.37 444.04,-131.23 444.04,-131.23 444.04,-131.23 447.61,-132.37 445.06,-128.01 451.18,-133.51 451.18,-133.51"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="419,-65 419,-113 614,-113 614,-65 419,-65"/>
+<text text-anchor="start" x="497" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="425.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Core.Abstractions</text>
+<polygon fill="none" stroke="#849daf" points="419,-65 419,-113 614,-113 614,-65 419,-65"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M383.14,-89C392.29,-89 401.79,-89 411.33,-89"/>
+<polygon fill="#405b78" stroke="#405b78" points="418.97,-89 411.47,-92.38 415.22,-89 411.47,-89 411.47,-89 411.47,-89 415.22,-89 411.47,-85.63 418.97,-89 418.97,-89"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="#eef7f2" stroke="transparent" points="468,0 468,-48 565,-48 565,0 468,0"/>
+<text text-anchor="start" x="497" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="474.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Sdk</text>
+<polygon fill="none" stroke="#849daf" points="468,0 468,-48 565,-48 565,0 468,0"/>
+</g>
+<!-- n0&#45;&gt;n5 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n5</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M383.14,-66.17C408.52,-58.09 436.67,-49.12 460.46,-41.54"/>
+<polygon fill="#405b78" stroke="#405b78" points="467.69,-39.23 461.57,-44.73 464.12,-40.37 460.55,-41.51 460.55,-41.51 460.55,-41.51 464.12,-40.37 459.52,-38.29 467.69,-39.23 467.69,-39.23"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-70 0,-118 202,-118 202,-70 0,-70"/>
+<text text-anchor="start" x="81" y="-104" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-80.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders.AdoNet</text>
+<polygon fill="none" stroke="#849daf" points="0,-70 0,-118 202,-118 202,-70 0,-70"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M202.1,-91.59C211.5,-91.36 220.93,-91.13 230.09,-90.91"/>
+<polygon fill="#405b78" stroke="#405b78" points="237.72,-90.73 230.3,-94.28 233.97,-90.82 230.22,-90.91 230.22,-90.91 230.22,-90.91 233.97,-90.82 230.14,-87.54 237.72,-90.73 237.72,-90.73"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge4" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M202.08,-115.65C214.16,-117.95 226.34,-120.13 238,-122 307.52,-133.14 387.43,-141.94 443.59,-147.47"/>
+<polygon fill="#405b78" stroke="#405b78" points="451.35,-148.22 443.56,-150.85 447.62,-147.86 443.89,-147.49 443.89,-147.49 443.89,-147.49 447.62,-147.86 444.22,-144.14 451.35,-148.22 451.35,-148.22"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="7,-145 7,-193 195,-193 195,-145 7,-145"/>
+<text text-anchor="start" x="81" y="-179" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="13" y="-155.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders.Redis</text>
+<polygon fill="none" stroke="#849daf" points="7,-145 7,-193 195,-193 195,-145 7,-145"/>
+</g>
+<!-- n2&#45;&gt;n0 -->
+<g id="edge7" class="edge">
+<title>n2-&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M164.26,-145C188.05,-135.82 215.33,-125.31 239.78,-115.88"/>
+<polygon fill="#405b78" stroke="#405b78" points="246.93,-113.12 241.14,-118.97 243.43,-114.47 239.93,-115.82 239.93,-115.82 239.93,-115.82 243.43,-114.47 238.72,-112.67 246.93,-113.12 246.93,-113.12"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge6" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M195.06,-165.62C270.27,-162.9 374.62,-159.11 443.55,-156.61"/>
+<polygon fill="#405b78" stroke="#405b78" points="451.35,-156.33 443.98,-159.97 447.61,-156.46 443.86,-156.6 443.86,-156.6 443.86,-156.6 447.61,-156.46 443.74,-153.23 451.35,-156.33 451.35,-156.33"/>
+</g>
+</g>
+</svg>

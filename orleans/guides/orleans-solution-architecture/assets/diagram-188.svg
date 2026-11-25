@@ -1,0 +1,82 @@
+<svg width="647pt" height="267pt"
+ viewBox="0.00 0.00 647.48 267.48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.24 255.24)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.24,12.24 -12.24,-255.24 635.24,-255.24 635.24,12.24 -12.24,12.24"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#edf3fb" stroke="transparent" points="0,0 0,-61 167,-61 167,0 0,0"/>
+<text text-anchor="start" x="64" y="-48.5" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="4.5" y="-29.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.ShoppingCart.</text>
+<text text-anchor="start" x="40" y="-8.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Abstractions</text>
+<polygon fill="none" stroke="#879aac" points="0,0 0,-61 167,-61 167,0 0,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#edf3fb" stroke="transparent" points="56,-91 56,-152 223,-152 223,-91 56,-91"/>
+<text text-anchor="start" x="120" y="-139.5" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="60.5" y="-120.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.ShoppingCart.</text>
+<text text-anchor="start" x="117.5" y="-99.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Grains</text>
+<polygon fill="none" stroke="#879aac" points="56,-91 56,-152 223,-152 223,-91 56,-91"/>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge1" class="edge">
+<title>n1&#45;&gt;n0</title>
+<path fill="none" stroke="#425d73" stroke-dasharray="5,2" d="M120.85,-90.86C116.22,-83.51 111.21,-75.54 106.4,-67.9"/>
+<polygon fill="#425d73" stroke="#425d73" points="102.07,-61.01 109.01,-65.62 104.09,-64.22 106.11,-67.44 106.11,-67.44 106.11,-67.44 104.09,-64.22 103.22,-69.26 102.07,-61.01 102.07,-61.01"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#edf3fb" stroke="transparent" points="151,-182 151,-243 318,-243 318,-182 151,-182"/>
+<text text-anchor="start" x="215" y="-230.5" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="155.5" y="-211.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.ShoppingCart.</text>
+<text text-anchor="start" x="221" y="-190.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Silo</text>
+<polygon fill="none" stroke="#879aac" points="151,-182 151,-243 318,-243 318,-182 151,-182"/>
+</g>
+<!-- n2&#45;&gt;n0 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n0</title>
+<path fill="none" stroke="#425d73" stroke-dasharray="5,2" d="M150.8,-206.77C112.53,-199.91 70.47,-184.73 46.5,-152 28.34,-127.2 41.24,-93.35 56.59,-67.83"/>
+<polygon fill="#425d73" stroke="#425d73" points="60.74,-61.2 59.61,-69.46 58.73,-64.42 56.71,-67.64 56.71,-67.64 56.71,-67.64 58.73,-64.42 53.81,-65.83 60.74,-61.2 60.74,-61.2"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge3" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#425d73" stroke-dasharray="5,2" d="M202.87,-181.86C194.53,-174.06 185.47,-165.56 176.86,-157.5"/>
+<polygon fill="#425d73" stroke="#425d73" points="171,-152.01 178.88,-154.71 173.77,-154.6 176.54,-157.2 176.54,-157.2 176.54,-157.2 173.77,-154.6 174.2,-159.7 171,-152.01 171,-152.01"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="242,-91 242,-152 419,-152 419,-91 242,-91"/>
+<text text-anchor="start" x="310" y="-139.5" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="266.5" y="-120.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.</text>
+<text text-anchor="start" x="246.5" y="-99.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Clustering.AzureStorage</text>
+<polygon fill="none" stroke="#879aac" points="242,-91 242,-152 419,-152 419,-91 242,-91"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge4" class="edge">
+<title>n2&#45;&gt;n3</title>
+<path fill="none" stroke="#425d73" stroke-dasharray="5,2" d="M266.47,-181.86C274.89,-174.06 284.05,-165.56 292.74,-157.5"/>
+<polygon fill="#425d73" stroke="#425d73" points="298.67,-152.01 295.42,-159.68 295.89,-154.59 293.1,-157.17 293.1,-157.17 293.1,-157.17 295.89,-154.59 290.77,-154.67 298.67,-152.01 298.67,-152.01"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="438,-91 438,-152 623,-152 623,-91 438,-91"/>
+<text text-anchor="start" x="510" y="-139.5" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="466.5" y="-120.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.</text>
+<text text-anchor="start" x="442.5" y="-99.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Persistence.AzureStorage</text>
+<polygon fill="none" stroke="#879aac" points="438,-91 438,-152 623,-152 623,-91 438,-91"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge5" class="edge">
+<title>n2&#45;&gt;n4</title>
+<path fill="none" stroke="#425d73" stroke-dasharray="5,2" d="M318.13,-186.35C353.01,-175.87 393.8,-163.6 430.27,-152.64"/>
+<polygon fill="#425d73" stroke="#425d73" points="437.98,-150.32 431.68,-155.78 434.34,-151.41 430.7,-152.51 430.7,-152.51 430.7,-152.51 434.34,-151.41 429.71,-149.23 437.98,-150.32 437.98,-150.32"/>
+</g>
+</g>
+</svg>

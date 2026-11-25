@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="409pt" height="204pt" viewBox="0.00 0.00 408.92 203.92">
+<title>集群成员 · 数据库提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 190.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-190.96 395.96,-190.96 395.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="9.5,-130 9.5,-178 207.5,-178 207.5,-130 9.5,-130"/>
+<text text-anchor="start" x="88.5" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="15.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.AdoNet</text>
+<polygon fill="none" stroke="#849daf" points="9.5,-130 9.5,-178 207.5,-178 207.5,-130 9.5,-130"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="253,-65 253,-113 383,-113 383,-65 253,-65"/>
+<text text-anchor="start" x="298" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="259" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="253,-65 253,-113 383,-113 383,-65 253,-65"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M191.16,-129.96C199.9,-127.31 208.64,-124.62 217,-122 226.24,-119.1 235.95,-115.99 245.52,-112.87"/>
+<polygon fill="#405b78" stroke="#405b78" points="252.81,-110.49 246.72,-116.03 249.24,-111.66 245.68,-112.82 245.68,-112.82 245.68,-112.82 249.24,-111.66 244.63,-109.61 252.81,-110.49 252.81,-110.49"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-65 0,-113 217,-113 217,-65 0,-65"/>
+<text text-anchor="start" x="89" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.Cassandra</text>
+<polygon fill="none" stroke="#849daf" points="0,-65 0,-113 217,-113 217,-65 0,-65"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M217.2,-89C226.68,-89 236.12,-89 245.2,-89"/>
+<polygon fill="#405b78" stroke="#405b78" points="252.73,-89 245.23,-92.38 248.98,-89 245.23,-89 245.23,-89 245.23,-89 248.98,-89 245.23,-85.63 252.73,-89 252.73,-89"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="16.5,0 16.5,-48 200.5,-48 200.5,0 16.5,0"/>
+<text text-anchor="start" x="88.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="22.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Clustering.Redis</text>
+<polygon fill="none" stroke="#849daf" points="16.5,0 16.5,-48 200.5,-48 200.5,0 16.5,0"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M188.21,-48.04C197.91,-51.04 207.69,-54.08 217,-57 226.22,-59.89 235.9,-62.95 245.47,-66"/>
+<polygon fill="#405b78" stroke="#405b78" points="252.75,-68.32 244.58,-69.26 249.18,-67.18 245.61,-66.04 245.61,-66.04 245.61,-66.04 249.18,-67.18 246.63,-62.82 252.75,-68.32 252.75,-68.32"/>
+</g>
+</g>
+</svg>

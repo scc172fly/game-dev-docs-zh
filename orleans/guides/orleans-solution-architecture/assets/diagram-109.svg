@@ -1,0 +1,63 @@
+<svg width="560pt" height="160pt"
+ viewBox="0.00 0.00 560.04 160.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 148.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-148.52 548.52,-148.52 548.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="130,-25 130,-73 303,-73 303,-25 130,-25"/>
+<text text-anchor="start" x="197" y="-59" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="136.5" y="-35.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AccountTransfer.Grains</text>
+<polygon fill="none" stroke="#849daf" points="130,-25 130,-73 303,-73 303,-25 130,-25"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="339,-25 339,-73 537,-73 537,-25 339,-25"/>
+<text text-anchor="start" x="418" y="-59" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="345" y="-35.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AccountTransfer.Interfaces</text>
+<polygon fill="none" stroke="#849daf" points="339,-25 339,-73 537,-73 537,-25 339,-25"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M303.31,-49C312.42,-49 321.76,-49 331.07,-49"/>
+<polygon fill="#405b78" stroke="#405b78" points="338.87,-49 331.27,-52.42 335.07,-49 331.27,-49 331.27,-49 331.27,-49 335.07,-49 331.27,-45.58 338.87,-49 338.87,-49"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="172,-89 172,-137 261,-137 261,-89 172,-89"/>
+<text text-anchor="start" x="197" y="-123" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="178.5" y="-99.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">BankClient</text>
+<polygon fill="none" stroke="#849daf" points="172,-89 172,-137 261,-137 261,-89 172,-89"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M261.13,-100.28C285.68,-93.12 317.27,-83.91 346.88,-75.28"/>
+<polygon fill="#405b78" stroke="#405b78" points="354.36,-73.09 348.02,-78.51 350.71,-74.16 347.07,-75.22 347.07,-75.22 347.07,-75.22 350.71,-74.16 346.11,-71.94 354.36,-73.09 354.36,-73.09"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 94,-48 94,0 0,0"/>
+<text text-anchor="start" x="27" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">BankServer</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 94,-48 94,0 0,0"/>
+</g>
+<!-- n3&#45;&gt;n0 -->
+<g id="edge3" class="edge">
+<title>n3&#45;&gt;n0</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M94.21,-30.9C103,-32.21 112.48,-33.62 122.14,-35.07"/>
+<polygon fill="#405b78" stroke="#405b78" points="129.91,-36.22 121.89,-38.49 126.15,-35.66 122.39,-35.1 122.39,-35.1 122.39,-35.1 126.15,-35.66 122.9,-31.72 129.91,-36.22 129.91,-36.22"/>
+</g>
+<!-- n3&#45;&gt;n1 -->
+<g id="edge4" class="edge">
+<title>n3&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M94.36,-19.35C105.98,-18.37 118.44,-17.49 130,-17 206.82,-13.73 226.64,-8.01 303,-17 315.61,-18.48 328.75,-20.73 341.66,-23.36"/>
+<polygon fill="#405b78" stroke="#405b78" points="349.23,-24.94 341.09,-26.73 345.51,-24.16 341.79,-23.38 341.79,-23.38 341.79,-23.38 345.51,-24.16 342.49,-20.04 349.23,-24.94 349.23,-24.94"/>
+</g>
+</g>
+</svg>

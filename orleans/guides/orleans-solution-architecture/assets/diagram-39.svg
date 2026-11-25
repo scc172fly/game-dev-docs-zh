@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="540pt" height="602pt" viewBox="0.00 0.00 539.60 601.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(10.8 590.8)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-10.8,10.8 -10.8,-590.8 528.8,-590.8 528.8,10.8 -10.8,10.8"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="64,-49 64,-71 165,-71 165,-49 64,-49"/>
+<text text-anchor="start" x="108.5" y="-57.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<polygon fill="#eaf1fa" stroke="transparent" points="64,-24 64,-49 165,-49 165,-24 64,-24"/>
+<text text-anchor="start" x="69" y="-33.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainFactory</text>
+<text text-anchor="start" x="72" y="-9.4" font-family="Noto Sans CJK SC" font-size="12.00">GetGrain(…)</text>
+<polygon fill="none" stroke="#7992a6" points="62.5,0 62.5,-72 165.5,-72 165.5,0 62.5,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="1,-556.5 1,-578.5 105,-578.5 105,-556.5 1,-556.5"/>
+<text text-anchor="start" x="36" y="-564.7" font-family="Noto Sans CJK SC" font-size="11.00">结构体</text>
+<polygon fill="#eaf1fa" stroke="transparent" points="1,-531.5 1,-556.5 105,-556.5 105,-531.5 1,-531.5"/>
+<text text-anchor="start" x="27" y="-541.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainId</text>
+<text text-anchor="start" x="9" y="-516.9" font-family="Noto Sans CJK SC" font-size="12.00">_type: GrainType</text>
+<text text-anchor="start" x="9" y="-493.9" font-family="Noto Sans CJK SC" font-size="12.00">_key: IdSpan</text>
+<text text-anchor="start" x="9" y="-470.9" font-family="Noto Sans CJK SC" font-size="12.00">Create(…)</text>
+<text text-anchor="start" x="9" y="-447.9" font-family="Noto Sans CJK SC" font-size="12.00">Equals(GrainId)</text>
+<polygon fill="none" stroke="#7992a6" points="0,-439 0,-580 106,-580 106,-439 0,-439"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M62.31,-59.93C42.9,-71.38 22.92,-87.29 12,-108 6.91,-117.66 6.99,-382.08 11,-403 12.82,-412.49 15.48,-422.21 18.6,-431.73"/>
+<polygon fill="#405b78" stroke="#405b78" points="21.06,-438.96 15.45,-432.95 19.85,-435.41 18.64,-431.86 18.64,-431.86 18.64,-431.86 19.85,-435.41 21.84,-430.77 21.06,-438.96 21.06,-438.96"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="23,-168.5 23,-190.5 205,-190.5 205,-168.5 23,-168.5"/>
+<text text-anchor="start" x="108" y="-176.7" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<polygon fill="#eaf1fa" stroke="transparent" points="23,-143.5 23,-168.5 205,-168.5 205,-143.5 23,-143.5"/>
+<text text-anchor="start" x="28" y="-153.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainReferenceActivator</text>
+<text text-anchor="start" x="31" y="-128.9" font-family="Noto Sans CJK SC" font-size="12.00">CreateReference(…)</text>
+<polygon fill="none" stroke="#7992a6" points="22,-119.5 22,-191.5 206,-191.5 206,-119.5 22,-119.5"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M114,-72.25C114,-84.57 114,-98.53 114,-111.42"/>
+<polygon fill="#405b78" stroke="#405b78" points="114,-119.27 110.63,-111.77 114,-115.52 114,-111.77 114,-111.77 114,-111.77 114,-115.52 117.38,-111.77 114,-119.27 114,-119.27"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="227,-179.5 227,-201.5 517,-201.5 517,-179.5 227,-179.5"/>
+<text text-anchor="start" x="366" y="-187.7" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<polygon fill="#eaf1fa" stroke="transparent" points="227,-154.5 227,-179.5 517,-179.5 517,-154.5 227,-154.5"/>
+<text text-anchor="start" x="232" y="-164.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainInterfaceTypeToGrainTypeResolver</text>
+<text text-anchor="start" x="235" y="-139.9" font-family="Noto Sans CJK SC" font-size="12.00">GetGrainType(…)</text>
+<text text-anchor="start" x="235" y="-116.9" font-family="Noto Sans CJK SC" font-size="12.00">TryGetGrainType(…)</text>
+<polygon fill="none" stroke="#7992a6" points="226,-108 226,-203 518,-203 518,-108 226,-108"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M165.59,-60.5C193.46,-73.19 228.98,-89.36 262.66,-104.71"/>
+<polygon fill="#405b78" stroke="#405b78" points="269.82,-107.97 261.6,-107.93 266.41,-106.41 263,-104.86 263,-104.86 263,-104.86 266.41,-106.41 264.4,-101.79 269.82,-107.97 269.82,-107.97"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eaf1fa" stroke="transparent" points="22,-380 22,-402 210,-402 210,-380 22,-380"/>
+<text text-anchor="start" x="110" y="-388.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<polygon fill="#eaf1fa" stroke="transparent" points="22,-355 22,-380 210,-380 210,-355 22,-355"/>
+<text text-anchor="start" x="62" y="-364.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainReference</text>
+<text text-anchor="start" x="30" y="-340.4" font-family="Noto Sans CJK SC" font-size="12.00">_shared: GrainReferenceShared</text>
+<text text-anchor="start" x="30" y="-317.4" font-family="Noto Sans CJK SC" font-size="12.00">FromGrainId(…)</text>
+<text text-anchor="start" x="30" y="-294.4" font-family="Noto Sans CJK SC" font-size="12.00">Cast&lt;TGrainInterface&gt;()</text>
+<text text-anchor="start" x="30" y="-271.4" font-family="Noto Sans CJK SC" font-size="12.00">Equals(object?)</text>
+<text text-anchor="start" x="30" y="-248.4" font-family="Noto Sans CJK SC" font-size="12.00">Equals(GrainReference?)</text>
+<polygon fill="none" stroke="#7992a6" points="21,-239 21,-403 211,-403 211,-239 21,-239"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge4" class="edge">
+<title>n2-&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M88.55,-403.26C85.35,-412.72 82.1,-422.36 78.92,-431.76"/>
+<polygon fill="#405b78" stroke="#405b78" points="76.51,-438.89 75.72,-430.71 77.71,-435.34 78.91,-431.79 78.91,-431.79 78.91,-431.79 77.71,-435.34 82.11,-432.87 76.51,-438.89 76.51,-438.89"/>
+</g>
+<!-- n3&#45;&gt;n2 -->
+<g id="edge5" class="edge">
+<title>n3-&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M114.43,-191.57C114.57,-203.37 114.74,-217.12 114.91,-231.14"/>
+<polygon fill="#405b78" stroke="#405b78" points="115.01,-238.96 111.54,-231.5 114.96,-235.21 114.92,-231.46 114.92,-231.46 114.92,-231.46 114.96,-235.21 118.29,-231.42 115.01,-238.96 115.01,-238.96"/>
+</g>
+</g>
+</svg>

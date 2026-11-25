@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="452pt" height="450pt" viewBox="8.64 8.64 443.56 441.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 428.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-419.96 421.96,-419.96 421.96,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M103.6,-81.29C97.33,-98.02 89.99,-117.63 83.43,-135.14"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="80.66,-134.54 80.48,-143.02 85.9,-136.51 80.66,-134.54"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M131.04,-81.3C137.69,-102.4 144.5,-124 144.5,-124 144.5,-124 155.76,-213.24 163.99,-278.56"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="165.03,-286.8 160.46,-279.31 164.28,-282.86 163.78,-278.89 164.03,-278.86 164.28,-278.83 164.78,-282.8 167.6,-278.41 165.03,-286.8 165.03,-286.8"/>
+</g>
+<!-- n1&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n1-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M91.95,-224.8C103.03,-241.47 116.21,-261.3 128.66,-280.04"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="133.21,-286.89 125.79,-282.22 130.79,-283.69 128.58,-280.36 128.79,-280.22 128.99,-280.09 131.21,-283.42 131.78,-278.23 133.21,-286.89 133.21,-286.89"/>
+</g>
+<!-- n3&#45;&gt;n2 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M260.53,-244.04C250.17,-256.03 239.22,-268.72 228.69,-280.91"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="223.23,-287.24 225.73,-278.83 225.66,-284.05 228.27,-281.02 228.46,-281.18 228.65,-281.35 226.03,-284.38 231.18,-283.54 223.23,-287.24 223.23,-287.24"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge5" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" d="M311.5,-244.04C311.5,-269.32 311.5,-297.66 311.5,-318.03"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="308.7,-318.24 311.5,-326.24 314.3,-318.24 308.7,-318.24"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="55.5,0 55.5,-81 181.5,-81 181.5,0 55.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="56.5,-40.5 56.5,-79.5 180.5,-79.5 180.5,-40.5 56.5,-40.5"/>
+<text text-anchor="start" x="112.5" y="-64.7" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="63.5" y="-51.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">CalculatorGrain</text>
+<text text-anchor="start" x="63.5" y="-23.9" font-family="Noto Sans CJK SC" font-size="12.00">Add(…)</text>
+<text text-anchor="start" x="63.5" y="-10.9" font-family="Noto Sans CJK SC" font-size="12.00">Fail(…)</text>
+<polygon fill="none" stroke="#74879b" points="55.5,0 55.5,-81 181.5,-81 181.5,0 55.5,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-143.5 0,-224.5 131,-224.5 131,-143.5 0,-143.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1.5,-184 1.5,-223 130.5,-223 130.5,-184 1.5,-184"/>
+<text text-anchor="start" x="54.5" y="-208.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="8.5" y="-194.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">ICalculatorGrain</text>
+<text text-anchor="start" x="8" y="-167.4" font-family="Noto Sans CJK SC" font-size="12.00">Add(…)</text>
+<text text-anchor="start" x="8" y="-154.4" font-family="Noto Sans CJK SC" font-size="12.00">Fail(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-143.5 0,-224.5 131,-224.5 131,-143.5 0,-143.5"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="122,-287 122,-407 223,-407 223,-287 122,-287"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="123.5,-367 123.5,-406 222.5,-406 222.5,-367 123.5,-367"/>
+<text text-anchor="start" x="167" y="-391.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="141" y="-377.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainCall</text>
+<text text-anchor="start" x="130" y="-351.2" font-family="Noto Sans CJK SC" font-size="11.00">_task: Task&lt;T?&gt;</text>
+<text text-anchor="start" x="130" y="-324.4" font-family="Noto Sans CJK SC" font-size="12.00">AsTask(…)</text>
+<text text-anchor="start" x="130" y="-311.4" font-family="Noto Sans CJK SC" font-size="12.00">GetAwaiter(…)</text>
+<text text-anchor="start" x="130" y="-298.4" font-family="Noto Sans CJK SC" font-size="12.00">FromResult(…)</text>
+<polygon fill="none" stroke="#74879b" points="122,-287 122,-407 223,-407 223,-287 122,-287"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="214,-124 214,-244 409,-244 409,-124 214,-124"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="215.5,-204 215.5,-243 408.5,-243 408.5,-204 215.5,-204"/>
+<text text-anchor="start" x="306" y="-228.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="251.5" y="-214.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">GrainCallRequest</text>
+<text text-anchor="start" x="222" y="-188.2" font-family="Noto Sans CJK SC" font-size="11.00">_runtime: IGrainReferenceRuntime</text>
+<text text-anchor="start" x="222" y="-161.4" font-family="Noto Sans CJK SC" font-size="12.00">InitializeRequest(…)</text>
+<text text-anchor="start" x="222" y="-148.4" font-family="Noto Sans CJK SC" font-size="12.00">Invoke(…)</text>
+<text text-anchor="start" x="222" y="-135.4" font-family="Noto Sans CJK SC" font-size="12.00">CompleteAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="214,-124 214,-244 409,-244 409,-124 214,-124"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="258,-326.5 258,-367.5 365,-367.5 365,-326.5 258,-326.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="259.5,-327 259.5,-366 364.5,-366 364.5,-327 259.5,-327"/>
+<text text-anchor="start" x="289" y="-351.2" font-family="Noto Sans CJK SC" font-size="11.00">框架类</text>
+<text text-anchor="start" x="266.5" y="-337.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">RequestBase</text>
+<polygon fill="none" stroke="#74879b" points="258,-326.5 258,-367.5 365,-367.5 365,-326.5 258,-326.5"/>
+</g>
+</g>
+</svg>

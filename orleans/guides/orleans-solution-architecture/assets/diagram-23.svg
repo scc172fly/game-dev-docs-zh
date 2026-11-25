@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="461pt" height="269pt" viewBox="0.00 0.00 460.92 268.92">
+<title>Grain 目录 · 目录存储提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 255.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-255.96 447.96,-255.96 447.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="20,-195 20,-243 249,-243 249,-195 20,-195"/>
+<text text-anchor="start" x="115" y="-229" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="26.5" y="-205.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.GrainDirectory.AdoNet</text>
+<polygon fill="none" stroke="#849daf" points="20,-195 20,-243 249,-243 249,-195 20,-195"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="305,-97 305,-145 435,-145 435,-97 305,-97"/>
+<text text-anchor="start" x="350" y="-131" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="311" y="-107.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="305,-97 305,-145 435,-145 435,-97 305,-97"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M248.24,-194.99C255.36,-192.55 262.33,-189.89 269,-187 291.26,-177.34 314.01,-162.78 332.16,-149.79"/>
+<polygon fill="#405b78" stroke="#405b78" points="338.64,-145.08 334.55,-152.22 335.6,-147.29 332.57,-149.49 332.57,-149.49 332.57,-149.49 335.6,-147.29 330.59,-146.76 338.64,-145.08 338.64,-145.08"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-130 0,-178 269,-178 269,-130 0,-130"/>
+<text text-anchor="start" x="115" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.GrainDirectory.AzureStorage</text>
+<polygon fill="none" stroke="#849daf" points="0,-130 0,-178 269,-178 269,-130 0,-130"/>
+</g>
+<!-- n1&#45;&gt;n4 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M269.3,-135.09C278.93,-133.73 288.4,-132.39 297.45,-131.11"/>
+<polygon fill="#405b78" stroke="#405b78" points="304.94,-130.05 297.99,-134.44 301.23,-130.58 297.52,-131.1 297.52,-131.1 297.52,-131.1 301.23,-130.58 297.04,-127.76 304.94,-130.05 304.94,-130.05"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="14.5,-65 14.5,-113 254.5,-113 254.5,-65 14.5,-65"/>
+<text text-anchor="start" x="114.5" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="20.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.GrainDirectory.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="14.5,-65 14.5,-113 254.5,-113 254.5,-65 14.5,-65"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M254.64,-105.33C269.25,-107.33 283.81,-109.33 297.41,-111.19"/>
+<polygon fill="#405b78" stroke="#405b78" points="304.85,-112.21 296.96,-114.53 301.14,-111.7 297.42,-111.19 297.42,-111.19 297.42,-111.19 301.14,-111.7 297.88,-107.85 304.85,-112.21 304.85,-112.21"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="27,0 27,-48 242,-48 242,0 27,0"/>
+<text text-anchor="start" x="115" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="33.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.GrainDirectory.Redis</text>
+<polygon fill="none" stroke="#849daf" points="27,0 27,-48 242,-48 242,0 27,0"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M242.21,-47.01C251.4,-50 260.45,-53.32 269,-57 290.59,-66.28 312.78,-79.98 330.76,-92.33"/>
+<polygon fill="#405b78" stroke="#405b78" points="337.18,-96.81 329.1,-95.29 334.1,-94.67 331.03,-92.52 331.03,-92.52 331.03,-92.52 334.1,-94.67 332.96,-89.75 337.18,-96.81 337.18,-96.81"/>
+</g>
+</g>
+</svg>

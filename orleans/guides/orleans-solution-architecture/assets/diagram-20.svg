@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="426pt" height="269pt" viewBox="0.00 0.00 425.92 268.92">
+<title>流 · 消息系统提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 255.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-255.96 412.96,-255.96 412.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="13,-195 13,-243 209,-243 209,-195 13,-195"/>
+<text text-anchor="start" x="91" y="-229" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="19" y="-205.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Streaming.Kinesis</text>
+<polygon fill="none" stroke="#849daf" points="13,-195 13,-243 209,-243 209,-195 13,-195"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="258,-97 258,-145 400,-145 400,-97 258,-97"/>
+<text text-anchor="start" x="309" y="-131" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="264" y="-107.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Streaming</text>
+<polygon fill="none" stroke="#849daf" points="258,-97 258,-145 400,-145 400,-97 258,-97"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M202.18,-194.98C208.97,-192.5 215.64,-189.84 222,-187 244.94,-176.76 268.84,-162.26 288.12,-149.46"/>
+<polygon fill="#405b78" stroke="#405b78" points="294.47,-145.19 290.13,-152.18 291.36,-147.28 288.25,-149.37 288.25,-149.37 288.25,-149.37 291.36,-147.28 286.37,-146.57 294.47,-145.19 294.47,-145.19"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="23.5,-130 23.5,-178 198.5,-178 198.5,-130 23.5,-130"/>
+<text text-anchor="start" x="91.5" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="30" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Streaming.SQS</text>
+<polygon fill="none" stroke="#849daf" points="23.5,-130 23.5,-178 198.5,-178 198.5,-130 23.5,-130"/>
+</g>
+<!-- n1&#45;&gt;n4 -->
+<g id="edge2" class="edge">
+<title>n1-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M198.61,-140.77C215.71,-138.16 233.55,-135.43 250.34,-132.87"/>
+<polygon fill="#405b78" stroke="#405b78" points="257.96,-131.7 251.06,-136.17 254.26,-132.27 250.55,-132.83 250.55,-132.83 250.55,-132.83 254.26,-132.27 250.04,-129.5 257.96,-131.7 257.96,-131.7"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-65 0,-113 222,-113 222,-65 0,-65"/>
+<text text-anchor="start" x="91" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Streaming.EventHubs</text>
+<polygon fill="none" stroke="#849daf" points="0,-65 0,-113 222,-113 222,-65 0,-65"/>
+</g>
+<!-- n2&#45;&gt;n4 -->
+<g id="edge3" class="edge">
+<title>n2-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M222.21,-105.33C231.72,-106.74 241.21,-108.14 250.37,-109.5"/>
+<polygon fill="#405b78" stroke="#405b78" points="257.99,-110.63 250.08,-112.87 254.28,-110.08 250.57,-109.53 250.57,-109.53 250.57,-109.53 254.28,-110.08 251.07,-106.19 257.99,-110.63 257.99,-110.63"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="19.5,0 19.5,-48 202.5,-48 202.5,0 19.5,0"/>
+<text text-anchor="start" x="91.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="26" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Streaming.NATS</text>
+<polygon fill="none" stroke="#849daf" points="19.5,0 19.5,-48 202.5,-48 202.5,0 19.5,0"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M199.5,-48.04C207.2,-50.82 214.8,-53.81 222,-57 244.05,-66.78 267.14,-80.28 286.12,-92.36"/>
+<polygon fill="#405b78" stroke="#405b78" points="292.91,-96.74 284.78,-95.52 289.76,-94.71 286.61,-92.68 286.61,-92.68 286.61,-92.68 289.76,-94.71 288.44,-89.84 292.91,-96.74 292.91,-96.74"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="626" viewBox="0 0 540 626" role="img" aria-labelledby="title desc">
+<title id="title">请求寻址中三个类型的调用依赖</title><desc id="desc">MessageCenter 调用 PlacementService 补全地址。PlacementService 通过 GrainLocator 查缓存和目录。图只保留这一条路径使用的成员。</desc>
+<defs><marker id="open-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#425e78" stroke-width="1.4"/></marker></defs>
+<rect width="540" height="626" rx="8" fill="#f8fafd"/>
+<g fill="#182d43" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif">
+<text x="24" y="29" font-size="18" font-weight="700">请求寻址：参与此路径的成员</text>
+<g><rect x="24" y="48" width="492" height="144" rx="5" fill="#fff" stroke="#8da8c0"/><rect x="24" y="48" width="492" height="38" rx="5" fill="#e8eff8"/>
+<text x="42" y="74" font-family="Consolas,monospace" font-size="18" font-weight="700">MessageCenter</text><path d="M24 86H516" stroke="#8da8c0"/>
+<text x="42" y="112" font-size="15">补齐地址后发送；目标 Silo 再接收消息。</text>
+<g font-family="Consolas,monospace" font-size="14"><text x="42" y="139">AddressAndSendMessage(Message) : Task</text><text x="42" y="160">SendMessage(Message) : void</text><text x="42" y="181">ReceiveMessage(Message) : void</text></g></g>
+<path d="M270 193V244" stroke="#425e78" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#open-arrow)"/><text x="287" y="222" font-size="14">调用：补全目标地址</text>
+<g><rect x="24" y="254" width="492" height="116" rx="5" fill="#fff" stroke="#8da8c0"/><rect x="24" y="254" width="492" height="38" rx="5" fill="#e8eff8"/>
+<text x="42" y="280" font-family="Consolas,monospace" font-size="18" font-weight="700">PlacementService</text><path d="M24 292H516" stroke="#8da8c0"/>
+<text x="42" y="319" font-size="15">先检查可用地址，必要时查询或选择位置。</text><text x="42" y="347" font-family="Consolas,monospace" font-size="14">AddressMessage(Message) : Task</text></g>
+<path d="M270 371V422" stroke="#425e78" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#open-arrow)"/><text x="287" y="401" font-size="14">调用：查缓存／查目录</text>
+<g><rect x="24" y="432" width="492" height="134" rx="5" fill="#fff" stroke="#8da8c0"/><rect x="24" y="432" width="492" height="38" rx="5" fill="#e8eff8"/>
+<text x="42" y="458" font-family="Consolas,monospace" font-size="18" font-weight="700">GrainLocator</text><path d="M24 470H516" stroke="#8da8c0"/>
+<text x="42" y="496" font-size="15">按 Grain 类型选定位实现，返回已知地址。</text>
+<g font-family="Consolas,monospace" font-size="14"><text x="42" y="523">TryLookupInCache(GrainId, out address) : bool</text><text x="42" y="546">Lookup(GrainId) : ValueTask&lt;GrainAddress?&gt;</text></g></g>
+<text x="24" y="597" font-size="14">虚线箭头：本次路径中的调用依赖；省略其他成员。</text>
+</g></svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="417pt" height="411pt" viewBox="8.64 8.64 408.06 402.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 389.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-380.96 386.46,-380.96 386.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M192.58,-231.13C177.42,-243.6 161.54,-256.66 146.76,-268.81"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="144.9,-266.71 140.5,-273.95 148.46,-271.04 144.9,-266.71"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M264.5,-231.34C264.5,-247.34 264.5,-264.3 264.5,-279.04"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="264.5,-287.45 260.9,-279.45 264.25,-283.45 264.25,-279.45 264.5,-279.45 264.75,-279.45 264.75,-283.45 268.1,-279.45 264.5,-287.45 264.5,-287.45"/>
+</g>
+<!-- n3&#45;&gt;n1 -->
+<g id="edge3" class="edge">
+<title>n3-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M35.4,-68.11C31.63,-88.59 27.5,-111 27.5,-111 27.5,-111 27.5,-231 27.5,-231 27.5,-231 38.37,-247.98 50.62,-267.11"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="55,-273.94 47.65,-269.14 52.63,-270.7 50.47,-267.33 50.68,-267.2 50.89,-267.06 53.05,-270.43 53.72,-265.26 55,-273.94 55,-273.94"/>
+</g>
+<!-- n3&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n3-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M52.02,-68.02C57.88,-86.41 65.22,-109.46 71.44,-129"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="68.84,-130.08 73.94,-136.85 74.18,-128.38 68.84,-130.08"/>
+</g>
+<!-- n4&#45;&gt;n1 -->
+<g id="edge5" class="edge">
+<title>n4-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M84.5,-205.21C84.5,-223.04 84.5,-245.46 84.5,-265.75"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="84.5,-273.99 80.9,-265.99 84.25,-269.99 84.25,-265.99 84.5,-265.99 84.75,-265.99 84.75,-269.99 88.1,-265.99 84.5,-273.99 84.5,-273.99"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="155.5,-111 155.5,-231 373.5,-231 373.5,-111 155.5,-111"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="156.5,-191 156.5,-230 372.5,-230 372.5,-191 156.5,-191"/>
+<text text-anchor="start" x="258.5" y="-215.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="217.5" y="-201.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AccountGrain</text>
+<text text-anchor="start" x="163.5" y="-175.2" font-family="Noto Sans CJK SC" font-size="11.00">_balance: ITransactionalState&lt;Balance&gt;</text>
+<text text-anchor="start" x="163.5" y="-148.4" font-family="Noto Sans CJK SC" font-size="12.00">Deposit(…)</text>
+<text text-anchor="start" x="163.5" y="-135.4" font-family="Noto Sans CJK SC" font-size="12.00">Withdraw(…)</text>
+<text text-anchor="start" x="163.5" y="-122.4" font-family="Noto Sans CJK SC" font-size="12.00">GetBalance(…)</text>
+<polygon fill="none" stroke="#74879b" points="155.5,-111 155.5,-231 373.5,-231 373.5,-111 155.5,-111"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="27.5,-274 27.5,-368 141.5,-368 141.5,-274 27.5,-274"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="28.5,-328 28.5,-367 140.5,-367 140.5,-328 28.5,-328"/>
+<text text-anchor="start" x="73" y="-352.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="35.5" y="-338.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IAccountGrain</text>
+<text text-anchor="start" x="35.5" y="-311.4" font-family="Noto Sans CJK SC" font-size="12.00">Withdraw(…)</text>
+<text text-anchor="start" x="35.5" y="-298.4" font-family="Noto Sans CJK SC" font-size="12.00">Deposit(…)</text>
+<text text-anchor="start" x="35.5" y="-285.4" font-family="Noto Sans CJK SC" font-size="12.00">GetBalance(…)</text>
+<polygon fill="none" stroke="#536c9b" points="27.5,-274 27.5,-368 141.5,-368 141.5,-274 27.5,-274"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="229,-287.5 229,-354.5 300,-354.5 300,-287.5 229,-287.5"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="230.5,-314 230.5,-353 299.5,-353 299.5,-314 230.5,-314"/>
+<text text-anchor="start" x="259" y="-338.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="237.5" y="-324.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Balance</text>
+<text text-anchor="start" x="237" y="-298.2" font-family="Noto Sans CJK SC" font-size="11.00">Value: int</text>
+<polygon fill="none" stroke="#74879b" points="229,-287.5 229,-354.5 300,-354.5 300,-287.5 229,-287.5"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="0,0 0,-68 83,-68 83,0 0,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="1.5,-28 1.5,-67 82.5,-67 82.5,-28 1.5,-28"/>
+<text text-anchor="start" x="36" y="-52.2" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="8.5" y="-38.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">AtmGrain</text>
+<text text-anchor="start" x="8" y="-11.4" font-family="Noto Sans CJK SC" font-size="12.00">Transfer(…)</text>
+<polygon fill="none" stroke="#74879b" points="0,0 0,-68 83,-68 83,0 0,0"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="41,-137 41,-205 128,-205 128,-137 41,-137"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="42.5,-165 42.5,-204 127.5,-204 127.5,-165 42.5,-165"/>
+<text text-anchor="start" x="73.5" y="-189.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="49.5" y="-175.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IAtmGrain</text>
+<text text-anchor="start" x="49" y="-148.4" font-family="Noto Sans CJK SC" font-size="12.00">Transfer(…)</text>
+<polygon fill="none" stroke="#536c9b" points="41,-137 41,-205 128,-205 128,-137 41,-137"/>
+</g>
+</g>
+</svg>

@@ -1,6 +1,6 @@
 # 游戏开发中文文档
 
-面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans、PureMVC 和 Unity MCP 五个项目，共七套中文网页文档，另附四册 PureMVC 中文 PDF 书籍。
+面向中文开发者整理的游戏开发技术文档合集，目前收录 Mirror、FishNet、Microsoft Orleans、PureMVC 和 Unity MCP 五个项目，共九套中文网页文档，另附四册 PureMVC 中文 PDF 书籍。
 
 **[进入中文文档导航首页](https://scc172fly.github.io/game-dev-docs-zh/)**
 
@@ -11,6 +11,8 @@
 | Mirror Networking | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/mirror-networking/) | [MirrorNetworking/Mirror](https://github.com/MirrorNetworking/Mirror) | [mirror-networking.gitbook.io/docs](https://mirror-networking.gitbook.io/docs/) |
 | FishNet | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/fish-net/) | [FirstGearGames/FishNet](https://github.com/FirstGearGames/FishNet) | [fish-networking.gitbook.io/docs](https://fish-networking.gitbook.io/docs/) |
 | Microsoft Orleans 官方文档中文译本 | [新版](https://scc172fly.github.io/game-dev-docs-zh/orleans/docs/10.4.2/) · [旧版 10.4.0](https://scc172fly.github.io/game-dev-docs-zh/orleans/docs/10.4.0/) | [dotnet/orleans](https://github.com/dotnet/orleans) | [dotnet.github.io/orleans/docs](https://dotnet.github.io/orleans/docs/) |
+| C#、.NET 与 Orleans 10 基础指南 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/orleans/guides/dotnet-orleans-fundamentals/) | [dotnet/orleans](https://github.com/dotnet/orleans) | [Orleans 官方文档](https://dotnet.github.io/orleans/docs/) |
+| Orleans 解决方案、框架与示例架构导读 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/orleans/guides/orleans-solution-architecture/) · [离线单文件](https://scc172fly.github.io/game-dev-docs-zh/orleans/guides/orleans-solution-architecture/offline.html) | [dotnet/orleans](https://github.com/dotnet/orleans) | [Orleans 官方文档](https://dotnet.github.io/orleans/docs/) |
 | PureMVC 三编文档 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/trilogy/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
 | PureMVC ActionScript 开发者指南 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/puremvc/actionscript-developers-guide/) | [PureMVC](https://github.com/PureMVC) | [puremvc.org](https://puremvc.org/) |
 | MCP for Unity 官方文档中文整理 | [在线阅读](https://scc172fly.github.io/game-dev-docs-zh/unity-mcp/official-docs/) | [CoplayDev/unity-mcp](https://github.com/CoplayDev/unity-mcp) | [官方仓库文档](https://github.com/CoplayDev/unity-mcp#readme) |

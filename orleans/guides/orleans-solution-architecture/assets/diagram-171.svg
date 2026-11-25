@@ -1,0 +1,85 @@
+<svg width="500pt" height="327pt"
+ viewBox="0.00 0.00 500.04 327.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 315.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-315.52 488.52,-315.52 488.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-128 0,-176 139,-176 139,-128 0,-128"/>
+<text text-anchor="start" x="50" y="-162" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6.5" y="-138.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">KinesisDynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="0,-128 0,-176 139,-176 139,-128 0,-128"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eef7f2" stroke="transparent" points="232.5,-256 232.5,-304 419.5,-304 419.5,-256 232.5,-256"/>
+<text text-anchor="start" x="305.5" y="-290" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="239" y="-266.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Server</text>
+<polygon fill="none" stroke="#849daf" points="232.5,-256 232.5,-304 419.5,-304 419.5,-256 232.5,-256"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M89.88,-176.01C109.11,-198.17 140.63,-230.26 175,-248 190.29,-255.89 207.41,-261.84 224.47,-266.32"/>
+<polygon fill="#405b78" stroke="#405b78" points="232.3,-268.28 224.09,-269.75 228.61,-267.35 224.92,-266.43 224.92,-266.43 224.92,-266.43 228.61,-267.35 225.75,-263.12 232.3,-268.28 232.3,-268.28"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eef7f2" stroke="transparent" points="179,-192 179,-240 473,-240 473,-192 179,-192"/>
+<text text-anchor="start" x="305" y="-226" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="185" y="-202.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Clustering.DynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="179,-192 179,-240 473,-240 473,-192 179,-192"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M139.12,-173.94C151.03,-177.48 163.34,-180.98 175,-184 183.17,-186.12 191.62,-188.2 200.16,-190.23"/>
+<polygon fill="#405b78" stroke="#405b78" points="207.67,-192 199.49,-193.59 203.97,-191.13 200.27,-190.26 200.27,-190.26 200.27,-190.26 203.97,-191.13 201.06,-186.93 207.67,-192 207.67,-192"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="175,-128 175,-176 477,-176 477,-128 175,-128"/>
+<text text-anchor="start" x="305" y="-162" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="181" y="-138.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Persistence.DynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="175,-128 175,-176 477,-176 477,-128 175,-128"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0&#45;&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M139.04,-152C147.98,-152 157.42,-152 167.11,-152"/>
+<polygon fill="#405b78" stroke="#405b78" points="174.94,-152 167.34,-155.42 171.14,-152 167.34,-152 167.34,-152 167.34,-152 171.14,-152 167.34,-148.58 174.94,-152 174.94,-152"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="177,-64 177,-112 475,-112 475,-64 177,-64"/>
+<text text-anchor="start" x="305" y="-98" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="183" y="-74.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Reminders.DynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="177,-64 177,-112 475,-112 475,-64 177,-64"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0&#45;&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M139.12,-130.06C151.03,-126.52 163.34,-123.02 175,-120 183.17,-117.88 191.62,-115.8 200.16,-113.77"/>
+<polygon fill="#405b78" stroke="#405b78" points="207.67,-112 201.06,-117.07 203.97,-112.87 200.27,-113.74 200.27,-113.74 200.27,-113.74 203.97,-112.87 199.49,-110.41 207.67,-112 207.67,-112"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="#eef7f2" stroke="transparent" points="192.5,0 192.5,-48 459.5,-48 459.5,0 192.5,0"/>
+<text text-anchor="start" x="305.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="199" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Streaming.Kinesis</text>
+<polygon fill="none" stroke="#849daf" points="192.5,0 192.5,-48 459.5,-48 459.5,0 192.5,0"/>
+</g>
+<!-- n0&#45;&gt;n5 -->
+<g id="edge5" class="edge">
+<title>n0&#45;&gt;n5</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M89.88,-127.99C109.11,-105.83 140.63,-73.74 175,-56 178.3,-54.3 181.69,-52.68 185.14,-51.15"/>
+<polygon fill="#405b78" stroke="#405b78" points="192.32,-48.14 186.64,-54.24 188.82,-49.61 185.31,-51.08 185.31,-51.08 185.31,-51.08 188.82,-49.61 183.99,-47.93 192.32,-48.14 192.32,-48.14"/>
+</g>
+</g>
+</svg>

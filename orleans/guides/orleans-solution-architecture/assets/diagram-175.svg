@@ -1,0 +1,99 @@
+<svg width="445pt" height="391pt"
+ viewBox="0.00 0.00 445.04 391.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 379.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-379.52 433.52,-379.52 433.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-160 0,-208 76,-208 76,-160 0,-160"/>
+<text text-anchor="start" x="18" y="-194" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6" y="-170.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Firestore</text>
+<polygon fill="none" stroke="#849daf" points="0,-160 0,-208 76,-208 76,-160 0,-160"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eef7f2" stroke="transparent" points="173.5,-320 173.5,-368 360.5,-368 360.5,-320 173.5,-320"/>
+<text text-anchor="start" x="246.5" y="-354" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="180" y="-330.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Server</text>
+<polygon fill="none" stroke="#849daf" points="173.5,-320 173.5,-368 360.5,-368 360.5,-320 173.5,-320"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M46.01,-208.2C55.81,-237.52 76.52,-286.2 112,-312 127.7,-323.41 146.54,-330.95 165.59,-335.9"/>
+<polygon fill="#405b78" stroke="#405b78" points="173.17,-337.73 164.98,-339.27 169.48,-336.84 165.79,-335.94 165.79,-335.94 165.79,-335.94 169.48,-336.84 166.59,-332.62 173.17,-337.73 173.17,-337.73"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eef7f2" stroke="transparent" points="183.5,-256 183.5,-304 350.5,-304 350.5,-256 183.5,-256"/>
+<text text-anchor="start" x="246.5" y="-290" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="190" y="-266.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Sdk</text>
+<polygon fill="none" stroke="#849daf" points="183.5,-256 183.5,-304 350.5,-304 350.5,-256 183.5,-256"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M60.39,-208.15C73.87,-221.88 92.39,-238.23 112,-248 131.68,-257.81 154.21,-264.61 175.85,-269.33"/>
+<polygon fill="#405b78" stroke="#405b78" points="183.46,-270.91 175.33,-272.71 179.74,-270.14 176.02,-269.36 176.02,-269.36 176.02,-269.36 179.74,-270.14 176.72,-266.02 183.46,-270.91 183.46,-270.91"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eef7f2" stroke="transparent" points="127,-192 127,-240 407,-240 407,-192 127,-192"/>
+<text text-anchor="start" x="246" y="-226" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="133" y="-202.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Clustering.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="127,-192 127,-240 407,-240 407,-192 127,-192"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0&#45;&gt;n3</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M76.23,-189.25C88.66,-191 103.36,-193.07 119,-195.28"/>
+<polygon fill="#405b78" stroke="#405b78" points="126.74,-196.37 118.74,-198.69 122.98,-195.84 119.22,-195.31 119.22,-195.31 119.22,-195.31 122.98,-195.84 119.69,-191.92 126.74,-196.37 126.74,-196.37"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="112,-128 112,-176 422,-176 422,-128 112,-128"/>
+<text text-anchor="start" x="246" y="-162" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="118" y="-138.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.GrainDirectory.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="112,-128 112,-176 422,-176 422,-128 112,-128"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0&#45;&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M76.23,-178.75C84.55,-177.58 93.89,-176.26 103.84,-174.86"/>
+<polygon fill="#405b78" stroke="#405b78" points="111.56,-173.77 104.51,-178.22 107.8,-174.3 104.04,-174.83 104.04,-174.83 104.04,-174.83 107.8,-174.3 103.56,-171.45 111.56,-173.77 111.56,-173.77"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="#eef7f2" stroke="transparent" points="123,-64 123,-112 411,-112 411,-64 123,-64"/>
+<text text-anchor="start" x="246" y="-98" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="129" y="-74.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Persistence.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="123,-64 123,-112 411,-112 411,-64 123,-64"/>
+</g>
+<!-- n0&#45;&gt;n5 -->
+<g id="edge5" class="edge">
+<title>n0&#45;&gt;n5</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M60.39,-159.85C73.87,-146.12 92.39,-129.77 112,-120 115.57,-118.22 119.24,-116.54 122.98,-114.95"/>
+<polygon fill="#405b78" stroke="#405b78" points="130.26,-112.01 124.49,-118.03 126.74,-113.43 123.21,-114.85 123.21,-114.85 123.21,-114.85 126.74,-113.43 121.93,-111.68 130.26,-112.01 130.26,-112.01"/>
+</g>
+<!-- n6 -->
+<g id="node7" class="node">
+<title>n6</title>
+<polygon fill="#eef7f2" stroke="transparent" points="125.5,0 125.5,-48 408.5,-48 408.5,0 125.5,0"/>
+<text text-anchor="start" x="246.5" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">NuGet 包</text>
+<text text-anchor="start" x="132" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Microsoft.Orleans.Reminders.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="125.5,0 125.5,-48 408.5,-48 408.5,0 125.5,0"/>
+</g>
+<!-- n0&#45;&gt;n6 -->
+<g id="edge6" class="edge">
+<title>n0&#45;&gt;n6</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M46.01,-159.8C55.81,-130.48 76.52,-81.8 112,-56 114.1,-54.47 116.25,-53.02 118.46,-51.63"/>
+<polygon fill="#405b78" stroke="#405b78" points="125.21,-47.65 120.39,-54.46 121.93,-49.58 118.66,-51.51 118.66,-51.51 118.66,-51.51 121.93,-49.58 116.92,-48.56 125.21,-47.65 125.21,-47.65"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499pt" height="269pt" viewBox="0.00 0.00 498.92 268.92">
+<title>提醒 · 云存储提供程序</title><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 255.96)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-255.96 485.96,-255.96 485.96,12.96 -12.96,12.96"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="7.5,-195 7.5,-243 234.5,-243 234.5,-195 7.5,-195"/>
+<text text-anchor="start" x="101.5" y="-229" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="14" y="-205.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders.DynamoDB</text>
+<polygon fill="none" stroke="#849daf" points="7.5,-195 7.5,-243 234.5,-243 234.5,-195 7.5,-195"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="#eef7f2" stroke="transparent" points="278,-195 278,-243 473,-243 473,-195 278,-195"/>
+<text text-anchor="start" x="356" y="-229" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="284.5" y="-205.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Core.Abstractions</text>
+<polygon fill="none" stroke="#849daf" points="278,-195 278,-243 473,-243 473,-195 278,-195"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M234.59,-219C246.46,-219 258.48,-219 270.25,-219"/>
+<polygon fill="#405b78" stroke="#405b78" points="277.94,-219 270.44,-222.38 274.19,-219 270.44,-219 270.44,-219 270.44,-219 274.19,-219 270.44,-215.63 277.94,-219 277.94,-219"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<polygon fill="#eef7f2" stroke="transparent" points="310.5,-130 310.5,-178 440.5,-178 440.5,-130 310.5,-130"/>
+<text text-anchor="start" x="355.5" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="316.5" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Runtime</text>
+<polygon fill="none" stroke="#849daf" points="310.5,-130 310.5,-178 440.5,-178 440.5,-130 310.5,-130"/>
+</g>
+<!-- n0&#45;&gt;n5 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n5</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M215.3,-194.98C244.2,-187.54 275.56,-179.47 302.76,-172.47"/>
+<polygon fill="#405b78" stroke="#405b78" points="310.31,-170.52 303.89,-175.66 306.68,-171.46 303.05,-172.39 303.05,-172.39 303.05,-172.39 306.68,-171.46 302.21,-169.13 310.31,-170.52 310.31,-170.52"/>
+</g>
+<!-- n6 -->
+<g id="node7" class="node">
+<title>n6</title>
+<polygon fill="#eef7f2" stroke="transparent" points="303,-65 303,-113 448,-113 448,-65 303,-65"/>
+<text text-anchor="start" x="356" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">依赖工程</text>
+<text text-anchor="start" x="309.5" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders</text>
+<polygon fill="none" stroke="#849daf" points="303,-65 303,-113 448,-113 448,-65 303,-65"/>
+</g>
+<!-- n0&#45;&gt;n6 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n6</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M230.12,-194.98C234.28,-192.57 238.26,-189.92 242,-187 268.03,-166.68 252.68,-143.21 278,-122 283.38,-117.49 289.41,-113.59 295.76,-110.21"/>
+<polygon fill="#405b78" stroke="#405b78" points="302.76,-106.75 297.54,-113.1 299.4,-108.41 296.04,-110.07 296.04,-110.07 296.04,-110.07 299.4,-108.41 294.54,-107.05 302.76,-106.75 302.76,-106.75"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,-130 0,-178 242,-178 242,-130 0,-130"/>
+<text text-anchor="start" x="101" y="-164" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="6" y="-140.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders.AzureStorage</text>
+<polygon fill="none" stroke="#849daf" points="0,-130 0,-178 242,-178 242,-130 0,-130"/>
+</g>
+<!-- n1&#45;&gt;n5 -->
+<g id="edge4" class="edge">
+<title>n1-&gt;n5</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M242.33,-154C262.99,-154 283.85,-154 302.71,-154"/>
+<polygon fill="#405b78" stroke="#405b78" points="310.39,-154 302.89,-157.38 306.64,-154 302.89,-154 302.89,-154 302.89,-154 306.64,-154 302.89,-150.63 310.39,-154 310.39,-154"/>
+</g>
+<!-- n1&#45;&gt;n6 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n6</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M215.3,-129.98C241.64,-123.2 270.04,-115.89 295.46,-109.35"/>
+<polygon fill="#405b78" stroke="#405b78" points="302.89,-107.43 296.47,-112.57 299.26,-108.37 295.63,-109.3 295.63,-109.3 295.63,-109.3 299.26,-108.37 294.79,-106.04 302.89,-107.43 302.89,-107.43"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="19,0 19,-48 223,-48 223,0 19,0"/>
+<text text-anchor="start" x="101" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="25" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders.Cosmos</text>
+<polygon fill="none" stroke="#849daf" points="19,0 19,-48 223,-48 223,0 19,0"/>
+</g>
+<!-- n2&#45;&gt;n6 -->
+<g id="edge6" class="edge">
+<title>n2-&gt;n6</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M215.3,-48.02C241.64,-54.8 270.04,-62.11 295.46,-68.65"/>
+<polygon fill="#405b78" stroke="#405b78" points="302.89,-70.57 294.79,-71.96 299.26,-69.63 295.63,-68.7 295.63,-68.7 295.63,-68.7 299.26,-69.63 296.47,-65.43 302.89,-70.57 302.89,-70.57"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="14.5,-65 14.5,-113 227.5,-113 227.5,-65 14.5,-65"/>
+<text text-anchor="start" x="101.5" y="-99" font-family="Noto Sans CJK SC" font-size="10.00">本组工程</text>
+<text text-anchor="start" x="21" y="-75.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Orleans.Reminders.Firestore</text>
+<polygon fill="none" stroke="#849daf" points="14.5,-65 14.5,-113 227.5,-113 227.5,-65 14.5,-65"/>
+</g>
+<!-- n3&#45;&gt;n5 -->
+<g id="edge7" class="edge">
+<title>n3-&gt;n5</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M215.3,-113.02C244.2,-120.46 275.56,-128.53 302.76,-135.53"/>
+<polygon fill="#405b78" stroke="#405b78" points="310.31,-137.48 302.21,-138.87 306.68,-136.54 303.05,-135.61 303.05,-135.61 303.05,-135.61 306.68,-136.54 303.89,-132.34 310.31,-137.48 310.31,-137.48"/>
+</g>
+<!-- n3&#45;&gt;n6 -->
+<g id="edge8" class="edge">
+<title>n3-&gt;n6</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M227.62,-89C250.13,-89 273.53,-89 294.87,-89"/>
+<polygon fill="#405b78" stroke="#405b78" points="302.63,-89 295.13,-92.38 298.88,-89 295.13,-89 295.13,-89 295.13,-89 298.88,-89 295.13,-85.63 302.63,-89 302.63,-89"/>
+</g>
+</g>
+</svg>

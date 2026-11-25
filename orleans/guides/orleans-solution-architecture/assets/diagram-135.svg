@@ -1,0 +1,57 @@
+<svg width="505pt" height="135pt"
+ viewBox="0.00 0.00 505.04 135.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(11.52 123.52)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-11.52,11.52 -11.52,-123.52 493.52,-123.52 493.52,11.52 -11.52,11.52"/>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="#eff4fc" stroke="transparent" points="150.5,-64 150.5,-112 259.5,-112 259.5,-64 150.5,-64"/>
+<text text-anchor="start" x="185.5" y="-98" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="157" y="-74.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Chirper.Client</text>
+<polygon fill="none" stroke="#849daf" points="150.5,-64 150.5,-112 259.5,-112 259.5,-64 150.5,-64"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="#eff4fc" stroke="transparent" points="297,-32 297,-80 482,-80 482,-32 297,-32"/>
+<text text-anchor="start" x="370" y="-66" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="303.5" y="-42.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Chirper.Grains.Interfaces</text>
+<polygon fill="none" stroke="#849daf" points="297,-32 297,-80 482,-80 482,-32 297,-32"/>
+</g>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M259.77,-78.57C269.07,-76.94 279,-75.2 289.06,-73.44"/>
+<polygon fill="#405b78" stroke="#405b78" points="296.77,-72.08 289.88,-76.76 293.03,-72.74 289.29,-73.4 289.29,-73.4 289.29,-73.4 293.03,-72.74 288.7,-70.03 296.77,-72.08 296.77,-72.08"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="#eff4fc" stroke="transparent" points="149,0 149,-48 261,-48 261,0 149,0"/>
+<text text-anchor="start" x="185" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="155" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Chirper.Grains</text>
+<polygon fill="none" stroke="#849daf" points="149,0 149,-48 261,-48 261,0 149,0"/>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge2" class="edge">
+<title>n2&#45;&gt;n1</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M261.25,-33.69C270.11,-35.24 279.51,-36.89 289.02,-38.56"/>
+<polygon fill="#405b78" stroke="#405b78" points="296.67,-39.9 288.6,-41.95 292.93,-39.24 289.19,-38.59 289.19,-38.59 289.19,-38.59 292.93,-39.24 289.78,-35.22 296.67,-39.9 296.67,-39.9"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="#eff4fc" stroke="transparent" points="0,0 0,-48 113,-48 113,0 0,0"/>
+<text text-anchor="start" x="37" y="-34" font-family="Noto Sans CJK SC" font-size="10.00">示例工程</text>
+<text text-anchor="start" x="6.5" y="-10.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">Chirper.Server</text>
+<polygon fill="none" stroke="#849daf" points="0,0 0,-48 113,-48 113,0 0,0"/>
+</g>
+<!-- n3&#45;&gt;n2 -->
+<g id="edge3" class="edge">
+<title>n3&#45;&gt;n2</title>
+<path fill="none" stroke="#405b78" stroke-dasharray="5,2" d="M113.3,-24C122.4,-24 131.88,-24 141.13,-24"/>
+<polygon fill="#405b78" stroke="#405b78" points="148.84,-24 141.24,-27.42 145.04,-24 141.24,-24 141.24,-24 141.24,-24 145.04,-24 141.24,-20.58 148.84,-24 148.84,-24"/>
+</g>
+</g>
+</svg>

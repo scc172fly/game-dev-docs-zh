@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="602pt" height="357pt" viewBox="8.64 8.64 593.06 348.56">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 335.6)">
+<title>G</title>
+<polygon fill="#f8fafd" stroke="transparent" points="-12.96,12.96 -12.96,-326.96 571.46,-326.96 571.46,12.96 -12.96,12.96"/>
+<!-- n0&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n0-&gt;n1</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M230.08,-76.97C187.25,-99.33 140,-124 140,-124 140,-124 130.95,-130.11 119.06,-138.14"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="117.26,-135.98 112.2,-142.77 120.4,-140.62 117.26,-135.98"/>
+</g>
+<!-- n0&#45;&gt;n2 -->
+<g id="edge2" class="edge">
+<title>n0-&gt;n2</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M279.73,-81.13C274.65,-92.16 269,-104.4 263.51,-116.32"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="260.12,-123.69 260.19,-114.91 261.56,-119.95 263.24,-116.32 263.46,-116.42 263.69,-116.53 262.02,-120.16 266.73,-117.93 260.12,-123.69 260.12,-123.69"/>
+</g>
+<!-- n0&#45;&gt;n3 -->
+<g id="edge3" class="edge">
+<title>n0-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M314.4,-81.3C323.1,-102.4 332,-124 332,-124 332,-124 332,-230 332,-230 332,-230 299.93,-250.88 272.86,-268.5"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="266.11,-272.9 270.85,-265.51 269.33,-270.5 272.68,-268.32 272.82,-268.53 272.95,-268.74 269.6,-270.92 274.78,-271.55 266.11,-272.9 266.11,-272.9"/>
+</g>
+<!-- n0&#45;&gt;n4 -->
+<g id="edge4" class="edge">
+<title>n0-&gt;n4</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M351.62,-81.13C382.55,-103.99 420.46,-132 447.03,-151.64"/>
+<polygon fill="none" stroke="#425e78" stroke-width="1.5" points="445.44,-153.94 453.54,-156.44 448.77,-149.44 445.44,-153.94"/>
+</g>
+<!-- n1&#45;&gt;n3 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M112.2,-211.23C127.29,-221.42 140,-230 140,-230 140,-230 172.07,-250.88 199.14,-268.5"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="205.89,-272.9 197.22,-271.55 202.4,-270.92 199.05,-268.74 199.18,-268.53 199.32,-268.32 202.67,-270.5 201.15,-265.51 205.89,-272.9 205.89,-272.9"/>
+</g>
+<!-- n2&#45;&gt;n3 -->
+<g id="edge6" class="edge">
+<title>n2-&gt;n3</title>
+<path fill="none" stroke="#425e78" stroke-width="1.5" stroke-dasharray="5,2" d="M236,-230.22C236,-242.11 236,-254.29 236,-264.69"/>
+<polygon fill="#425e78" stroke="#425e78" stroke-width="1.5" points="236,-272.96 232.4,-264.96 235.75,-268.96 235.75,-264.96 236,-264.96 236.25,-264.96 236.25,-268.96 239.6,-264.96 236,-272.96 236,-272.96"/>
+</g>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<polygon fill="white" stroke="transparent" points="230.5,0 230.5,-81 365.5,-81 365.5,0 230.5,0"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="232,-40.5 232,-79.5 365,-79.5 365,-40.5 232,-40.5"/>
+<text text-anchor="start" x="292.5" y="-64.7" font-family="Noto Sans CJK SC" font-size="11.00">类</text>
+<text text-anchor="start" x="245.5" y="-51.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">MigrationGrain</text>
+<text text-anchor="start" x="238.5" y="-23.9" font-family="Noto Sans CJK SC" font-size="12.00">ScheduleAsync(…)</text>
+<text text-anchor="start" x="238.5" y="-10.9" font-family="Noto Sans CJK SC" font-size="12.00">ExecuteJobAsync(…)</text>
+<polygon fill="none" stroke="#74879b" points="230.5,0 230.5,-81 365.5,-81 365.5,0 230.5,0"/>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<polygon fill="white" stroke="transparent" points="0,-143 0,-211 126,-211 126,-143 0,-143"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="1,-171 1,-210 125,-210 125,-171 1,-171"/>
+<text text-anchor="start" x="51.5" y="-195.2" font-family="Noto Sans CJK SC" font-size="11.00">接口</text>
+<text text-anchor="start" x="8" y="-181.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IMigrationGrain</text>
+<text text-anchor="start" x="8" y="-154.4" font-family="Noto Sans CJK SC" font-size="12.00">ScheduleAsync(…)</text>
+<polygon fill="none" stroke="#536c9b" points="0,-143 0,-211 126,-211 126,-143 0,-143"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<polygon fill="white" stroke="transparent" points="153.5,-124 153.5,-230 318.5,-230 318.5,-124 153.5,-124"/>
+<polygon fill="#e9f5ee" stroke="transparent" points="155,-190 155,-229 318,-229 318,-190 155,-190"/>
+<text text-anchor="start" x="225" y="-214.2" font-family="Noto Sans CJK SC" font-size="11.00">记录</text>
+<text text-anchor="start" x="188.5" y="-200.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">MigrationRun</text>
+<text text-anchor="start" x="161.5" y="-174.2" font-family="Noto Sans CJK SC" font-size="11.00">Phase: string</text>
+<text text-anchor="start" x="161.5" y="-162.2" font-family="Noto Sans CJK SC" font-size="11.00">Control: BlobContainerClient</text>
+<text text-anchor="start" x="161.5" y="-135.4" font-family="Noto Sans CJK SC" font-size="12.00">ReceiptBlob(…)</text>
+<polygon fill="none" stroke="#618574" points="153.5,-124 153.5,-230 318.5,-230 318.5,-124 153.5,-124"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<polygon fill="white" stroke="transparent" points="187.5,-273 187.5,-314 284.5,-314 284.5,-273 187.5,-273"/>
+<polygon fill="#f2f4f9" stroke="transparent" points="189,-273.5 189,-312.5 284,-312.5 284,-273.5 189,-273.5"/>
+<text text-anchor="start" x="213.5" y="-297.7" font-family="Noto Sans CJK SC" font-size="11.00">框架类</text>
+<text text-anchor="start" x="196" y="-284.3" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">DurableJob</text>
+<polygon fill="none" stroke="#74879b" points="187.5,-273 187.5,-314 284.5,-314 284.5,-273 187.5,-273"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<polygon fill="white" stroke="transparent" points="401.5,-156.5 401.5,-197.5 558.5,-197.5 558.5,-156.5 401.5,-156.5"/>
+<polygon fill="#e9f0ff" stroke="transparent" points="403,-157 403,-196 558,-196 558,-157 403,-157"/>
+<text text-anchor="start" x="457.5" y="-181.2" font-family="Noto Sans CJK SC" font-size="11.00">框架接口</text>
+<text text-anchor="start" x="410" y="-167.8" font-family="Noto Sans CJK SC" font-weight="bold" font-size="14.00">IDurableJobHandler</text>
+<polygon fill="none" stroke="#536c9b" points="401.5,-156.5 401.5,-197.5 558.5,-197.5 558.5,-156.5 401.5,-156.5"/>
+</g>
+</g>
+</svg>
